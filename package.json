@@ -1,0 +1,19 @@
+{
+  "name": "javascript_tutorial",
+  "version": "1.0.0",
+  "description": "Learn JavaScript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-sidebar-ad": "0.0.4",
+    "gitbook-plugin-theme-creative": "^1.0.6",
+    "honkit": "^4.0.4"
+  },
+  "scripts": {
+    "start": "honkit serve --port 3200"
+  },
+  "keywords": [],
+  "author": "Suman Kunwar",
+  "license": "CC-BY-SA-4.0"
+}

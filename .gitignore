@@ -1,0 +1,4 @@
+node_modules
+.grunt
+/_book/
+.vscode

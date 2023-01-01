@@ -1,0 +1,31 @@
+{  
+    "title": "Learn JavaScript: Beginners Edition",
+    "description": "Beginners guide for learning JavaScript",
+    "author": "Suman Kunwar",
+    "isbn": "",
+    "published": "12/22/2022",
+    "copyright": "Suman Kunwar",
+    "website": "https://js201.gitbook.io",
+    "keywords": "learn JavaScript, Beginners lessons",
+    "language": "en",
+    "totalpages": 104,
+    "hidepageheaders": [1,2, 3, 10, 40],
+    "hidepagefooters": [1,2, 3, 10, 40],
+    "plugins": [
+        "hints", "theme-creative", "sidebar-ad"
+    ],
+    "pdf": {
+        "margin": {
+            "right":32,
+            "left": 32
+        }
+    },
+    "pluginsConfig": {
+        "sidebar-ad": {
+            "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
+            "url": "https://leanpub.com/learnjavascriptbeginnersguide",
+            "description": "Get free pdf and epub version by joining on wishlist! ✨",
+            "btnText": "Read now!"
+        }
+    }
+}
