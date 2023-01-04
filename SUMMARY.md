@@ -79,7 +79,7 @@
     * [Prepend](template-literals/linked-list/prepend.md)
     * [Shift](template-literals/linked-list/shift.md)
 * [Exercises](exercises/console.md)
-  * [Console](exercises/console.md)
+  *
   * [Multiplication](exercises/multiplication.md)
   * [User Input Variables](exercises/user-input-variables.md)
   * [Constants](exercises/constants.md)
