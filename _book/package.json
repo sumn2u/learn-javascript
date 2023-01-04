@@ -11,7 +11,8 @@
     "honkit": "^4.0.4"
   },
   "scripts": {
-    "start": "honkit serve --port 3200"
+    "start": "honkit serve --port 3200",
+    "build": "exit 0"
   },
   "keywords": [],
   "author": "Suman Kunwar",
