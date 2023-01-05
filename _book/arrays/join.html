@@ -739,19 +739,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.7" data-path="../objects/global/_footprint.md">
-            
-                <a href="../objects/global/_footprint.md">
-            
-                    
-                    Global footprint
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1049,19 +1036,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18.2" data-path="../promise/debugging.html">
-            
-                <a href="../promise/debugging.html">
-            
-                    
-                    Debugging
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1191,6 +1165,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19.5" data-path="../template-literals/global/_footprint.md">
+            
+                <a href="../template-literals/global/_footprint.md">
+            
+                    
+                    Global footprint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../template-literals/debugging.html">
+            
+                <a href="../template-literals/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1210,20 +1210,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../exercises/console.html">
-            
-                <a href="../exercises/console.html">
-            
-                    
-                    Console
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.20.2" data-path="../exercises/multiplication.html">
+        <li class="chapter " data-level="1.20.1" data-path="../exercises/multiplication.html">
             
                 <a href="../exercises/multiplication.html">
             
@@ -1236,7 +1223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.3" data-path="../exercises/user-input-variables.html">
+        <li class="chapter " data-level="1.20.2" data-path="../exercises/user-input-variables.html">
             
                 <a href="../exercises/user-input-variables.html">
             
@@ -1249,7 +1236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.4" data-path="../exercises/constants.html">
+        <li class="chapter " data-level="1.20.3" data-path="../exercises/constants.html">
             
                 <a href="../exercises/constants.html">
             
@@ -1262,7 +1249,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.5" data-path="../exercises/concatenation.html">
+        <li class="chapter " data-level="1.20.4" data-path="../exercises/concatenation.html">
             
                 <a href="../exercises/concatenation.html">
             
@@ -1275,7 +1262,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.6" data-path="../exercises/functions.html">
+        <li class="chapter " data-level="1.20.5" data-path="../exercises/functions.html">
             
                 <a href="../exercises/functions.html">
             
@@ -1288,7 +1275,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.7" data-path="../exercises/conditional-statements.html">
+        <li class="chapter " data-level="1.20.6" data-path="../exercises/conditional-statements.html">
             
                 <a href="../exercises/conditional-statements.html">
             
@@ -1301,7 +1288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.8" data-path="../exercises/objects.html">
+        <li class="chapter " data-level="1.20.7" data-path="../exercises/objects.html">
             
                 <a href="../exercises/objects.html">
             
@@ -1314,7 +1301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.9" data-path="../exercises/fizzbuzz-problem.html">
+        <li class="chapter " data-level="1.20.8" data-path="../exercises/fizzbuzz-problem.html">
             
                 <a href="../exercises/fizzbuzz-problem.html">
             
@@ -1327,7 +1314,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.10" data-path="../exercises/get-the-titles.html">
+        <li class="chapter " data-level="1.20.9" data-path="../exercises/get-the-titles.html">
             
                 <a href="../exercises/get-the-titles.html">
             
@@ -1409,16 +1396,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="join">Join</h1>
-<p>The <code>join</code> method, makes an array turn into a string and joins it all together. It does not change the original array. </p>
+<p>The <code>join</code> method, makes an array turn into a string and joins it all together. It does not change the original array. Here&apos;s the syntax for using <code>join</code>:</p>
+<pre><code class="lang-c"><span class="hljs-built_in">array</span>.join([separator]);
+</code></pre>
+<p>The <code>separator</code> argument is optional and specifies the character to be used to separate the elements in the resulting string. If omitted, the array elements are separated with a comma (<code>,</code>).</p>
+<p>For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> array = [<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>]; 
 
 <span class="hljs-built_in">console</span>.log(array.join(<span class="hljs-string">&quot; &quot;</span>)); 
 
 <span class="hljs-comment">// Result: one two three four</span>
 </code></pre>
-<p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Any separator can be specified but the default one is a comma <code>(,)</code>.  </p>
+<p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Any separator can be specified but the default one is a comma <code>(,)</code>.</p>
 </div></div></p>
-<p>In the above example, a space is used as a separator. </p>
+<p>In the above example, a space is used as a separator. You can also use <code>join</code> to convert an array-like object (such as an arguments object or a NodeList object) to a string by first converting it to an array using the <code>Array.prototype.slice()</code> method:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printArguments</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>).join(<span class="hljs-string">&apos;, &apos;</span>));
+}
+
+printArguments(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>); <span class="hljs-comment">// Result: &quot;a, b, c&quot;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -1462,7 +1459,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Join","level":"1.6.6","depth":2,"next":{"title":"Length","level":"1.6.7","depth":2,"path":"arrays/length.md","ref":"arrays/length.md","articles":[]},"previous":{"title":"Pop","level":"1.6.5","depth":2,"path":"arrays/pop.md","ref":"arrays/pop.md","articles":[]},"dir":"ltr"},"config":{"totalpages":104,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://js201.gitbook.io","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"arrays/join.md","mtime":"2023-01-04T01:42:08.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-04T18:50:53.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Join","level":"1.6.6","depth":2,"next":{"title":"Length","level":"1.6.7","depth":2,"path":"arrays/length.md","ref":"arrays/length.md","articles":[]},"previous":{"title":"Pop","level":"1.6.5","depth":2,"path":"arrays/pop.md","ref":"arrays/pop.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"arrays/join.md","mtime":"2023-01-05T02:22:07.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T03:02:36.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

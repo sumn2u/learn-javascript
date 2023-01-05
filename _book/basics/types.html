@@ -739,19 +739,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.7" data-path="../objects/global/_footprint.md">
-            
-                <a href="../objects/global/_footprint.md">
-            
-                    
-                    Global footprint
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1049,19 +1036,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18.2" data-path="../promise/debugging.html">
-            
-                <a href="../promise/debugging.html">
-            
-                    
-                    Debugging
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1191,6 +1165,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19.5" data-path="../template-literals/global/_footprint.md">
+            
+                <a href="../template-literals/global/_footprint.md">
+            
+                    
+                    Global footprint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../template-literals/debugging.html">
+            
+                <a href="../template-literals/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1210,20 +1210,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../exercises/console.html">
-            
-                <a href="../exercises/console.html">
-            
-                    
-                    Console
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.20.2" data-path="../exercises/multiplication.html">
+        <li class="chapter " data-level="1.20.1" data-path="../exercises/multiplication.html">
             
                 <a href="../exercises/multiplication.html">
             
@@ -1236,7 +1223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.3" data-path="../exercises/user-input-variables.html">
+        <li class="chapter " data-level="1.20.2" data-path="../exercises/user-input-variables.html">
             
                 <a href="../exercises/user-input-variables.html">
             
@@ -1249,7 +1236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.4" data-path="../exercises/constants.html">
+        <li class="chapter " data-level="1.20.3" data-path="../exercises/constants.html">
             
                 <a href="../exercises/constants.html">
             
@@ -1262,7 +1249,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.5" data-path="../exercises/concatenation.html">
+        <li class="chapter " data-level="1.20.4" data-path="../exercises/concatenation.html">
             
                 <a href="../exercises/concatenation.html">
             
@@ -1275,7 +1262,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.6" data-path="../exercises/functions.html">
+        <li class="chapter " data-level="1.20.5" data-path="../exercises/functions.html">
             
                 <a href="../exercises/functions.html">
             
@@ -1288,7 +1275,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.7" data-path="../exercises/conditional-statements.html">
+        <li class="chapter " data-level="1.20.6" data-path="../exercises/conditional-statements.html">
             
                 <a href="../exercises/conditional-statements.html">
             
@@ -1301,7 +1288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.8" data-path="../exercises/objects.html">
+        <li class="chapter " data-level="1.20.7" data-path="../exercises/objects.html">
             
                 <a href="../exercises/objects.html">
             
@@ -1314,7 +1301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.9" data-path="../exercises/fizzbuzz-problem.html">
+        <li class="chapter " data-level="1.20.8" data-path="../exercises/fizzbuzz-problem.html">
             
                 <a href="../exercises/fizzbuzz-problem.html">
             
@@ -1327,7 +1314,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.10" data-path="../exercises/get-the-titles.html">
+        <li class="chapter " data-level="1.20.9" data-path="../exercises/get-the-titles.html">
             
                 <a href="../exercises/get-the-titles.html">
             
@@ -1412,20 +1399,17 @@
 <p>Computers are sophisticated and can make use of more complex variables than just numbers. This is where variable types come in. Variables come in several types and different languages support different types.</p>
 <p>The most common types are:</p>
 <ul>
-<li><strong>Numbers</strong><ul>
-<li><strong>Float</strong>: a number, like 1.21323, 4, -33.5, 100004 or 0.123</li>
-<li><strong>Integer</strong>: a number like 1, 12, -33, 140 but not 1.233</li>
+<li><strong>Number</strong>: Numbers can be integers (e.g., <code>1</code>, <code>-5</code>, <code>100</code>) or floating-point values (e.g., <code>3.14</code>, <code>-2.5</code>, <code>0.01</code>). JavaScript does not have a separate type for integers and floating-point values; it treats them both as numbers.</li>
+<li><strong>String</strong>: Strings are sequences of characters, represented by either single quotes (e.g., <code>&apos;hello&apos;</code>) or double quotes (e.g., <code>&quot;world&quot;</code>).</li>
+<li><strong>Boolean</strong>: Booleans represent a true or false value. They can be written as <code>true</code> or <code>false</code> (without quotes).</li>
+<li><strong>Null</strong>: The null type represents a null value, which means &quot;no value.&quot; It can be written as <code>null</code> (without quotes).</li>
+<li><strong>Undefined</strong>: The undefined type represents a value that has not been set. If a variable has been declared, but has not been assigned a value, it is undefined.</li>
+<li><strong>Object</strong>: An object is a collection of properties, each of which has a name and a value. You can create an object using curly braces (<code>{}</code>) and assigning properties to it using name-value pairs.</li>
+<li><strong>Array</strong>: An array is a special type of object that can hold a collection of items. You can create an array using square brackets (<code>[]</code>) and assigning a list of values to it.</li>
+<li><strong>Function</strong>: A function is a block of code that can be defined and then called by name. Functions can accept arguments (inputs) and return a value (output). You can create a function using the <code>function</code> keyword.</li>
 </ul>
-</li>
-<li><strong>String</strong>: a line of text like &quot;boat&quot;, &quot;elephant&quot; or &quot;damn, you are tall!&quot;</li>
-<li><strong>Boolean</strong>: either true or false, but nothing else</li>
-<li><strong>Arrays</strong>: a collection of values like 1, 2, 3, 4, &apos;I am bored now&apos;</li>
-<li><strong>Objects</strong>: a representation of a more complex object</li>
-<li><strong>null</strong>: a variable that contains null contains no valid Number, String, Boolean, Array, or Object</li>
-<li><strong>undefined</strong>: the undefined value is obtained when you use an object property that does not exist or a variable that has been declared but has no value assigned to it.</li>
-</ul>
-<p>JavaScript is a <em>&#x201C;<strong>loosely typed</strong>&#x201D;</em> language, which means that you don&apos;t have to explicitly declare what type of data the variables are. You just need to use the <code>var</code> keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.</p>
-<p>The <code>typeof</code> operator is used to checking the datatypes of a variable.  </p>
+<p>JavaScript is a &quot; <em>loosely typed</em>&quot;  language, which means that you don&apos;t have to explicitly declare what type of data the variables are. You just need to use the <code>var</code> keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.</p>
+<p>The <code>typeof</code> operator is used to checking the datatypes of a variable.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-string">&quot;John&quot;</span>                 <span class="hljs-comment">// Returns &quot;string&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-number">3.14</span>                   <span class="hljs-comment">// Returns &quot;number&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-literal">NaN</span>                    <span class="hljs-comment">// Returns &quot;number&quot;</span>
@@ -1437,7 +1421,7 @@
 <span class="hljs-keyword">typeof</span> myCar                  <span class="hljs-comment">// Returns &quot;undefined&quot; *</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span>                   <span class="hljs-comment">// Returns &quot;object</span>
 </code></pre>
-<p>Data types used in JavaScript can be differentiated into two categories based on containing values.  </p>
+<p>Data types used in JavaScript can be differentiated into two categories based on containing values.</p>
 <p>Data types that can contain values:</p>
 <ul>
 <li><code>string</code></li>
@@ -1448,12 +1432,12 @@
 </ul>
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><code>Object</code>, <code>Date</code>, <code>Array</code>, <code>String</code>, <code>Number</code>, and <code>Boolean</code> are the types of objects available in JavaScript.</p>
 </div></div></p>
-<p>Data types that  cannot contain values:</p>
+<p>Data types that cannot contain values:</p>
 <ul>
 <li><code>null</code></li>
 <li><code>undefined</code></li>
 </ul>
-<p>A primitive data value is a simple data value with no additional properties and methods and is not an object.  They are immutable, meaning that they can&apos;t be altered.  There are 7 primitive data types:</p>
+<p>A primitive data value is a simple data value with no additional properties and methods and is not an object. They are immutable, meaning that they can&apos;t be altered. There are 7 primitive data types:</p>
 <ul>
 <li>string</li>
 <li>number</li>
@@ -1506,7 +1490,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.2.3","depth":2,"next":{"title":"Equality","level":"1.2.4","depth":2,"path":"basics/equality.md","ref":"basics/equality.md","articles":[]},"previous":{"title":"Variables","level":"1.2.2","depth":2,"path":"basics/variables.md","ref":"basics/variables.md","articles":[]},"dir":"ltr"},"config":{"totalpages":104,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://js201.gitbook.io","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/types.md","mtime":"2023-01-04T01:42:08.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-04T18:50:53.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.2.3","depth":2,"next":{"title":"Equality","level":"1.2.4","depth":2,"path":"basics/equality.md","ref":"basics/equality.md","articles":[]},"previous":{"title":"Variables","level":"1.2.2","depth":2,"path":"basics/variables.md","ref":"basics/variables.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/types.md","mtime":"2023-01-05T02:45:20.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T03:02:36.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

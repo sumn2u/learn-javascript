@@ -739,19 +739,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.7" data-path="../objects/global/_footprint.md">
-            
-                <a href="../objects/global/_footprint.md">
-            
-                    
-                    Global footprint
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1049,19 +1036,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18.2" data-path="../promise/debugging.html">
-            
-                <a href="../promise/debugging.html">
-            
-                    
-                    Debugging
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1191,6 +1165,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19.5" data-path="../template-literals/global/_footprint.md">
+            
+                <a href="../template-literals/global/_footprint.md">
+            
+                    
+                    Global footprint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../template-literals/debugging.html">
+            
+                <a href="../template-literals/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1210,20 +1210,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../exercises/console.html">
-            
-                <a href="../exercises/console.html">
-            
-                    
-                    Console
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.20.2" data-path="../exercises/multiplication.html">
+        <li class="chapter " data-level="1.20.1" data-path="../exercises/multiplication.html">
             
                 <a href="../exercises/multiplication.html">
             
@@ -1236,7 +1223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.3" data-path="../exercises/user-input-variables.html">
+        <li class="chapter " data-level="1.20.2" data-path="../exercises/user-input-variables.html">
             
                 <a href="../exercises/user-input-variables.html">
             
@@ -1249,7 +1236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.4" data-path="../exercises/constants.html">
+        <li class="chapter " data-level="1.20.3" data-path="../exercises/constants.html">
             
                 <a href="../exercises/constants.html">
             
@@ -1262,7 +1249,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.5" data-path="../exercises/concatenation.html">
+        <li class="chapter " data-level="1.20.4" data-path="../exercises/concatenation.html">
             
                 <a href="../exercises/concatenation.html">
             
@@ -1275,7 +1262,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.6" data-path="../exercises/functions.html">
+        <li class="chapter " data-level="1.20.5" data-path="../exercises/functions.html">
             
                 <a href="../exercises/functions.html">
             
@@ -1288,7 +1275,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.7" data-path="../exercises/conditional-statements.html">
+        <li class="chapter " data-level="1.20.6" data-path="../exercises/conditional-statements.html">
             
                 <a href="../exercises/conditional-statements.html">
             
@@ -1301,7 +1288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.8" data-path="../exercises/objects.html">
+        <li class="chapter " data-level="1.20.7" data-path="../exercises/objects.html">
             
                 <a href="../exercises/objects.html">
             
@@ -1314,7 +1301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.9" data-path="../exercises/fizzbuzz-problem.html">
+        <li class="chapter " data-level="1.20.8" data-path="../exercises/fizzbuzz-problem.html">
             
                 <a href="../exercises/fizzbuzz-problem.html">
             
@@ -1327,7 +1314,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.10" data-path="../exercises/get-the-titles.html">
+        <li class="chapter " data-level="1.20.9" data-path="../exercises/get-the-titles.html">
             
                 <a href="../exercises/get-the-titles.html">
             
@@ -1409,28 +1396,28 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="promise-asyncawait">Promise, async/await</h1>
-<p>Imagine you are a popular book writer, and you are planning to release a new book on a certain day.  Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too.  On the release day, everyone gets notified and can buy the book making all parties happy.  This is a real-life analogy that happens in programming.  </p>
+<p>Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.</p>
 <ol>
 <li>A &quot;<em>producing code</em>&quot; is something that takes time and accomplishes something. Here it&apos;s a book writer.</li>
 <li>A &quot;<em>consuming code</em>&quot; is someone who consumes the &quot;producing code&quot; once it&apos;s ready. In this case, it&apos;s a &quot;reader&quot;.</li>
-<li>The linkage between the &quot;<em>producing code</em>&quot; and the &quot;<em>consuming code</em>&quot;  can be called a <em>promise</em> as it assures getting the results from the &quot;<em>producing code</em>&quot; to the &quot;<em>consuming code</em>&quot;.</li>
+<li>The linkage between the &quot;<em>producing code</em>&quot; and the &quot;<em>consuming code</em>&quot; can be called a <em>promise</em> as it assures getting the results from the &quot;<em>producing code</em>&quot; to the &quot;<em>consuming code</em>&quot;.</li>
 </ol>
-<p>The analogy that we made is also true for the JavaScript  <code>promise</code> object. The constructor syntax for the <code>promise</code> object is:</p>
+<p>The analogy that we made is also true for the JavaScript <code>promise</code> object. The constructor syntax for the <code>promise</code> object is:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
   <span class="hljs-comment">// executor (the producing code, &quot;writer&quot;)</span>
 });
 </code></pre>
-<p>Here, a function is passed to  <code>new Promise</code> also known as the <em>executor,</em> and runs automatically upon creation. It contains the producing code that gives the result. <code>resolve</code> and <code>rejects</code> are the arguments provided by the JavaScript itself and are called one of these upon results.</p>
+<p>Here, a function is passed to <code>new Promise</code> also known as the <em>executor,</em> and runs automatically upon creation. It contains the producing code that gives the result. <code>resolve</code> and <code>rejects</code> are the arguments provided by the JavaScript itself and are called one of these upon results.</p>
 <ul>
-<li><code>resolve(value):</code>  a callback function that returns <code>value</code> upon result</li>
-<li><code>reject(error)</code>:  a callback function that returns <code>error</code> upon error, it returns an error object</li>
+<li><code>resolve(value):</code> a callback function that returns <code>value</code> upon result</li>
+<li><code>reject(error)</code>: a callback function that returns <code>error</code> upon error, it returns an error object</li>
 </ul>
-<p>The internal properties of  <code>promise</code> object returned by the <code>new Promise</code> constructor are as follows: </p>
+<p>The internal properties of <code>promise</code> object returned by the <code>new Promise</code> constructor are as follows:</p>
 <ul>
-<li><code>state</code> - initially <code>pending,</code> then changes to either <code>fulfill</code> upon resolve  or <code>rejected</code> when <code>reject</code>  is called</li>
-<li>result - initially <code>undefined</code>, then changes to <code>value</code> upon <code>resolve</code> or <code>error</code> when <code>reject</code>  is called</li>
+<li><code>state</code> - initially <code>pending,</code> then changes to either <code>fulfill</code> upon resolve or <code>rejected</code> when <code>reject</code> is called</li>
+<li>result - initially <code>undefined</code>, then changes to <code>value</code> upon <code>resolve</code> or <code>error</code> when <code>reject</code> is called</li>
 </ul>
-<figure><img src="../.gitbook/assets/async_await.png" alt=""><figcaption><p>Promise with resolve and reject callbacks</p></figcaption></figure>
+<figure><img src="../_book/.gitbook/assets/async_await.png" alt=""><figcaption><p>Promise with resolve and reject callbacks</p></figcaption></figure>
 
 <p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>One cannot access promise properties: <code>state</code> and result. Promise methods are needed to handle promises.</p>
 </div></div></p>
@@ -1449,7 +1436,7 @@
   setTimeout(() =&gt; reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;Whoops!&quot;</span>)), <span class="hljs-number">1000</span>);
 })
 </code></pre>
-<p>Here, the <code>promiseOne</code> is an example of a &quot;<em>fulfilled promise</em>&quot; as it successfully resolves the values, whereas the <code>promiseTwo</code> is a &quot;<em>rejected promise</em>&quot; as it gets rejected.  A promise that is either rejected or resolved is called a <em>settled</em> promise, as opposed to an initially <em>pending</em> promise. Consuming function from the promise can be registered using the <code>.then</code> and <code>.catch</code> methods.  We can also add  <code>.finally</code> method for performing cleanup or finalizing after previous methods have been completed.</p>
+<p>Here, the <code>promiseOne</code> is an example of a &quot;<em>fulfilled promise</em>&quot; as it successfully resolves the values, whereas the <code>promiseTwo</code> is a &quot;<em>rejected promise</em>&quot; as it gets rejected. A promise that is either rejected or resolved is called a <em>settled</em> promise, as opposed to an initially <em>pending</em> promise. Consuming function from the promise can be registered using the <code>.then</code> and <code>.catch</code> methods. We can also add <code>.finally</code> method for performing cleanup or finalizing after previous methods have been completed.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> promiseOne = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
   setTimeout(() =&gt; resolve(<span class="hljs-string">&quot;done!&quot;</span>), <span class="hljs-number">1000</span>);
 });
@@ -1522,7 +1509,7 @@ promiseThree.catch(alert); <span class="hljs-comment">// shows &quot;Error: Whoo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Promise, async/await","level":"1.18","depth":1,"next":{"title":"Async/Await","level":"1.18.1","depth":2,"path":"promise-async-await/async-await.md","ref":"promise-async-await/async-await.md","articles":[]},"previous":{"title":"Events","level":"1.17","depth":1,"path":"events.md","ref":"events.md","articles":[]},"dir":"ltr"},"config":{"totalpages":104,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://js201.gitbook.io","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"promise-async-await/promise.md","mtime":"2023-01-04T01:42:08.270Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-04T18:50:53.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Promise, async/await","level":"1.18","depth":1,"next":{"title":"Async/Await","level":"1.18.1","depth":2,"path":"promise-async-await/async-await.md","ref":"promise-async-await/async-await.md","articles":[]},"previous":{"title":"Events","level":"1.17","depth":1,"path":"events.md","ref":"events.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"promise-async-await/promise.md","mtime":"2023-01-05T02:45:20.658Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T03:02:36.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

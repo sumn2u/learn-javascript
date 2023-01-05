@@ -739,19 +739,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.7" data-path="../objects/global/_footprint.md">
-            
-                <a href="../objects/global/_footprint.md">
-            
-                    
-                    Global footprint
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1049,19 +1036,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18.2" data-path="../promise/debugging.html">
-            
-                <a href="../promise/debugging.html">
-            
-                    
-                    Debugging
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -1191,6 +1165,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.19.5" data-path="../template-literals/global/_footprint.md">
+            
+                <a href="../template-literals/global/_footprint.md">
+            
+                    
+                    Global footprint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../template-literals/debugging.html">
+            
+                <a href="../template-literals/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1210,20 +1210,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../exercises/console.html">
-            
-                <a href="../exercises/console.html">
-            
-                    
-                    Console
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.20.2" data-path="../exercises/multiplication.html">
+        <li class="chapter " data-level="1.20.1" data-path="../exercises/multiplication.html">
             
                 <a href="../exercises/multiplication.html">
             
@@ -1236,7 +1223,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.3" data-path="../exercises/user-input-variables.html">
+        <li class="chapter " data-level="1.20.2" data-path="../exercises/user-input-variables.html">
             
                 <a href="../exercises/user-input-variables.html">
             
@@ -1249,7 +1236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.4" data-path="../exercises/constants.html">
+        <li class="chapter " data-level="1.20.3" data-path="../exercises/constants.html">
             
                 <a href="../exercises/constants.html">
             
@@ -1262,7 +1249,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.5" data-path="../exercises/concatenation.html">
+        <li class="chapter " data-level="1.20.4" data-path="../exercises/concatenation.html">
             
                 <a href="../exercises/concatenation.html">
             
@@ -1275,7 +1262,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.6" data-path="../exercises/functions.html">
+        <li class="chapter " data-level="1.20.5" data-path="../exercises/functions.html">
             
                 <a href="../exercises/functions.html">
             
@@ -1288,7 +1275,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.7" data-path="../exercises/conditional-statements.html">
+        <li class="chapter " data-level="1.20.6" data-path="../exercises/conditional-statements.html">
             
                 <a href="../exercises/conditional-statements.html">
             
@@ -1301,7 +1288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.8" data-path="../exercises/objects.html">
+        <li class="chapter " data-level="1.20.7" data-path="../exercises/objects.html">
             
                 <a href="../exercises/objects.html">
             
@@ -1314,7 +1301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.9" data-path="../exercises/fizzbuzz-problem.html">
+        <li class="chapter " data-level="1.20.8" data-path="../exercises/fizzbuzz-problem.html">
             
                 <a href="../exercises/fizzbuzz-problem.html">
             
@@ -1327,7 +1314,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.10" data-path="../exercises/get-the-titles.html">
+        <li class="chapter " data-level="1.20.9" data-path="../exercises/get-the-titles.html">
             
                 <a href="../exercises/get-the-titles.html">
             
@@ -1410,6 +1397,11 @@
                                 
                                 <h1 id="push">Push</h1>
 <p>One can push certain items to an array making the last index the newly added item. It changes the length of an array and returns a new length.</p>
+<p>Here&apos;s the syntax for using <code>push</code>:</p>
+<pre><code class="lang-c"><span class="hljs-built_in">array</span>.push(element1[, ...[, elementN]]);
+</code></pre>
+<p>The <code>element1, ..., elementN</code> arguments represent the elements to be added to the end of the array.</p>
+<p>For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]; 
 array.push(<span class="hljs-number">4</span>); 
 
@@ -1417,6 +1409,16 @@ array.push(<span class="hljs-number">4</span>);
 
 <span class="hljs-comment">// Result: array = [1, 2, 3, 4]</span>
 </code></pre>
+<p>You can also use <code>push</code> to add elements to the end of an array-like object (such as an arguments object or a NodeList object) by first converting it to an array using the <code>Array.prototype.slice()</code> method:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printArguments</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> args = <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>);
+  args.push(<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>);
+  <span class="hljs-built_in">console</span>.log(args);
+}
+
+printArguments(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>); <span class="hljs-comment">// Result: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]</span>
+</code></pre>
+<p>Note that the <code>push</code> method modifies the original array. It does not create a new array.</p>
 
                                 
                                 </section>
@@ -1460,7 +1462,7 @@ array.push(<span class="hljs-number">4</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Push","level":"1.6.8","depth":2,"next":{"title":"For Each","level":"1.6.9","depth":2,"path":"arrays/for-each.md","ref":"arrays/for-each.md","articles":[]},"previous":{"title":"Length","level":"1.6.7","depth":2,"path":"arrays/length.md","ref":"arrays/length.md","articles":[]},"dir":"ltr"},"config":{"totalpages":104,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://js201.gitbook.io","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"arrays/push.md","mtime":"2023-01-04T01:42:08.170Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-04T18:50:53.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Push","level":"1.6.8","depth":2,"next":{"title":"For Each","level":"1.6.9","depth":2,"path":"arrays/for-each.md","ref":"arrays/for-each.md","articles":[]},"previous":{"title":"Length","level":"1.6.7","depth":2,"path":"arrays/length.md","ref":"arrays/length.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"arrays/push.md","mtime":"2023-01-05T02:45:20.653Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T03:02:36.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
