@@ -25,6 +25,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1405,7 +1409,16 @@
 </code></pre>
 <p>In Javascript, Strings can contain UTF-8 characters:</p>
 <pre><code>&quot;&#x4E2D;&#x6587; espa&#xF1;ol English &#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629; portugu&#xEA;s &#x9AC;&#x9BE;&#x982;&#x9B2;&#x9BE; &#x440;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439; &#x65E5;&#x672C;&#x8A9E; &#xA2A;&#xA70;&#xA1C;&#xA3E;&#xA2C;&#xA40; &#xD55C;&#xAD6D;&#xC5B4;&quot;;
-</code></pre><p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Strings can not be subtracted, multiplied, or divided.</p>
+</code></pre><p>You can also use the <code>String</code> constructor to create a string object:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> stringObject = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&apos;This is a string&apos;</span>);
+</code></pre>
+<p>However, it is generally not recommended to use the <code>String</code> constructor to create strings, as it can cause confusion between string primitives and string objects. It is usually better to use string literals to create strings.</p>
+<p>You can also use template literals to create strings. Template literals are strings that are enclosed in backticks <code>(``)</code> and can contain placeholders for values. Placeholders are denoted with the <code>`${}` </code> syntax.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> name = <span class="hljs-string">&apos;John&apos;</span>;
+<span class="hljs-keyword">const</span> message = <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>;
+</code></pre>
+<p>Template literals can also contain multiple lines and can include any expression inside the placeholders.</p>
+<p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Strings can not be subtracted, multiplied, or divided.</p>
 </div></div></p>
 
                                 
@@ -1450,7 +1463,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Creation","level":"1.4.1","depth":2,"next":{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},"previous":{"title":"Strings","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"Length","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"Concatenation","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"strings/create.md","mtime":"2023-01-04T01:42:08.271Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T03:02:36.910Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Creation","level":"1.4.1","depth":2,"next":{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},"previous":{"title":"Strings","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"Length","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"Concatenation","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"strings/create.md","mtime":"2023-01-05T13:45:49.574Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1458,6 +1471,18 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
