@@ -28,5 +28,3 @@ console.log(array[5]); // Output: undefined
 array[5] = 'g';
 console.log(array); // Result: ['a', 'b', 'c', 'd', 'f', undefined, 'g']
 ```
-
-\

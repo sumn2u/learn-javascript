@@ -46,7 +46,6 @@
   * [Prototype](objects/prototype.md)
   * [Delete](objects/delete.md)
   * [Enumeration](objects/enumeration.md)
-  * [Global footprint](objects/global\_footprint.md)
 * [Date and Time](date-and-time.md)
 * [JSON](json.md)
 * [Error Handling](error-handling/try...-catch.md)
@@ -78,6 +77,7 @@
     * [Pop](template-literals/linked-list/pop.md)
     * [Prepend](template-literals/linked-list/prepend.md)
     * [Shift](template-literals/linked-list/shift.md)
+  * [Global footprint](template-literals/global\_footprint.md)
 * [Exercises](exercises/console.md)
   *
   * [Multiplication](exercises/multiplication.md)
