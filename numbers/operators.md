@@ -1,42 +1,11 @@
 # Basic Operators
 
-Mathematic operations to numbers can be performed using some basic operators like:
+&#x20;Mathematic operations to numbers can be performed using some basic operators like:
 
-* **Addition operator (`+`)**: The addition operator adds two numbers together. For example:
-
-```javascript
-console.log(1 + 2); // 3
-console.log(1 + (-2)); // -1
-```
-
-* **Subtraction operator (`-`)**: The subtraction operator subtracts one number from another. For example:
-
-```javascript
-console.log(3 - 2); // 1
-console.log(3 - (-2)); // 5
-```
-
-* **Multiplication operator (`*`)**: The multiplication operator multiplies two numbers. For example:
-
-```javascript
-console.log(2 * 3); // 6
-console.log(2 * (-3)); // -6
-```
-
-* **Division operator (`/`)**: The division operator divides one number by another. For example:
-
-```javascript
-console.log(6 / 2); // 3
-console.log(6 / (-2)); // -3
-```
-
-* **Remainder operator (`%`)**: The remainder operator returns the remainder of a division operation. For example:
-
-```javascript
-console.log(10 % 3); // 1
-console.log(11 % 3); // 2
-console.log(12 % 3); // 0
-```
+* **Addition**: `c = a + b`
+* **Subtraction**: `c = a - b`
+* **Multiplication**: `c = a * b`
+* **Division**: `c = a / b`
 
 The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: `c = (a / b) + d`
 
@@ -44,13 +13,13 @@ The JavaScript interpreter works from left to right. One can use parentheses jus
 JavaScript uses the `+` operator for both addition and concatenation. Numbers are added whereas strings are concatenated.
 {% endhint %}
 
-`NaN` is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in `NaN` (Not a Number).
+`NaN` is a  reserved word indicating that a number is not a legal number, this arises when we perform  arithmetic with a non-numeric string will result in `NaN` (Not a Number).
 
 ```javascript
 let x = 100 / "10";
 ```
 
-The `parseInt` method parses a value as a string and returns the first integer.
+The `parseInt` method parses a value as a string and returns the first integer.&#x20;
 
 ```javascript
 parseInt("10"); // 10
@@ -62,7 +31,7 @@ parseInt("40 years"); //40
 parseInt("He was 40"); //NaN
 ```
 
-In JavaScript, if we calculate a number outside the largest possible number it returns `Infinity` .
+In JavaScript, if we calculate a number outside the largest possible number it returns `Infinity` .&#x20;
 
 ```javascript
 let x =  2 / 0; // Infinity

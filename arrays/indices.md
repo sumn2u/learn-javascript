@@ -11,3 +11,22 @@ let fruits = ["apple", "banana", "pineapple", "strawberry"];
 // second element. Result: banana = "banana"
 let banana = fruits[1];
 ```
+
+You can also use an array index to set the value of an element in an array:
+
+```sql
+let array = ['a', 'b', 'c', 'd', 'e'];
+//  indices:  0    1    2    3    4
+array[4] = 'f';
+console.log(array); // Result: ['a', 'b', 'c', 'd', 'f']
+```
+
+Note that if you try to access or set an element using an index that is outside the bounds of the array (i.e., an index that is less than 0 or greater than or equal to the length of the array), you will get an `undefined` value.
+
+```sql
+console.log(array[5]); // Output: undefined
+array[5] = 'g';
+console.log(array); // Result: ['a', 'b', 'c', 'd', 'f', undefined, 'g']
+```
+
+\
