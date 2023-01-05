@@ -67,7 +67,6 @@
 * [Events](events.md)
 * [Promise, async/await](promise-async-await/promise.md)
   * [Async/Await](promise-async-await/async-await.md)
-  * [Debugging](promise/debugging.md)
 * [Miscellaneous](miscellaneous/template-literals.md)
   * [Hoisting](miscellaneous/hoisting.md)
   * [Currying](template-literals/currying.md)
@@ -78,6 +77,7 @@
     * [Prepend](template-literals/linked-list/prepend.md)
     * [Shift](template-literals/linked-list/shift.md)
   * [Global footprint](template-literals/global\_footprint.md)
+  * [Debugging](template-literals/debugging.md)
 * [Exercises](exercises/console.md)
   *
   * [Multiplication](exercises/multiplication.md)

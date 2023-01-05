@@ -1,6 +1,6 @@
 # Location
 
-`Location`  object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by
+`Location` object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by
 
 ```javascript
 window.location
@@ -10,12 +10,11 @@ document.location
 location
 ```
 
-> _**Note**_:  `window.location` and  `document.location` references the same location object.
+> _**Note**_: `window.location` and `document.location` references the same location object.
 
 Let's take an example of the following URL and explore the different properties of `location`
 
-``[`http://localhost:3000/js/index.html?type=listing&page=2#title`](http://localhost:8080/js/index.html?type=listing\&page=2#title)\
-
+[`http://localhost:3000/js/index.html?type=listing&page=2#title`](http://localhost:8080/js/index.html?type=listing\&page=2#title)
 
 ```javascript
 location.href //prints current document URL
@@ -27,8 +26,3 @@ location.pathname //prints pathname like /js/index.html
 location.search //prints query string like ?type=listing&page=2
 location.hash //prints fragment identifier like #title
 ```
-
-``
-
-
-

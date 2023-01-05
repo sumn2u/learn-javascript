@@ -1,6 +1,6 @@
 # Regular Expression
 
-A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a  regular expression are shown below.&#x20;
+A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a regular expression are shown below.
 
 ```javascript
 // using regular expression constructor
@@ -17,15 +17,15 @@ let re1 = new RegExp("xyz");
 let re2 = /xyz/;
 ```
 
-Both ways will create a regex object and have the same methods and properties. There are cases where we might need dynamic values to create a regular expression, in that case, literals won't work and have to go with the constructor. &#x20;
+Both ways will create a regex object and have the same methods and properties. There are cases where we might need dynamic values to create a regular expression, in that case, literals won't work and have to go with the constructor.
 
 {% hint style="info" %}
 In cases where we want to have a forward slash to be a part of a regular expression, we have to escape the forward slash `(/)` with backslash `(\)`.
 {% endhint %}
 
-The different modifiers that are used to  perform case-insensitive  searches are:
+The different modifiers that are used to perform case-insensitive searches are:
 
-* `g` -  global search (finds all  matches instead of stopping after the first match)&#x20;
+* `g` - global search (finds all matches instead of stopping after the first match)
 * `i`- case insensitive search
 * `m` - multiline matching
 
@@ -51,10 +51,10 @@ _Metacharacters_ are special character that has special meaning in the regular e
 | `\b`          | Match at the begining / end of a word                            |
 | `\B`          | Match but not at the begining / end of a word                    |
 | `\0`          | Match a `NULL` character                                         |
-| `\n`          | Match a new line character                                       |
+|               | Match a new line character                                       |
 | `\f`          | Match a form feed character                                      |
-| `\r`          | Match a carriage return character                                |
-| `\t`          | Match a tab character                                            |
+|               | Match a carriage return character                                |
+|               | Match a tab character                                            |
 | `\v`          | Match a tab vertical character                                   |
 | `\xxx`        | Match a character specified by an octal number `xxx`             |
 | `\xdd`        | Match a character specified by a hexadecimal number `dd`         |
@@ -62,20 +62,20 @@ _Metacharacters_ are special character that has special meaning in the regular e
 
 Properties and methods supported by RegEx are listed below.
 
-| Name           | Description                                                                        |
-| -------------- | ---------------------------------------------------------------------------------- |
-| `constructor`  | Returns function that created RegExp  object's protype                             |
-| `global`       | Checks if the `g` modifier is set                                                  |
-| `ignoreCase`   | Checksi if the `i` modifier is set                                                 |
-| `lastIndex`    | Specifies the index at which to start the next match                               |
-| `multiline`    | Checksi if the m modifier is set                                                   |
-| `source`       | Returns the text of the sttring                                                    |
-| `exec()`       | Test for the match and returns the first match, if no match then it returns `null` |
-| `test()`       | Test for the match and returns the `true` or `false`                               |
-| `toString()`   | Returns the string value of the regular exression                                  |
+| Name          | Description                                                                        |
+| ------------- | ---------------------------------------------------------------------------------- |
+| `constructor` | Returns function that created RegExp object's protype                              |
+| `global`      | Checks if the `g` modifier is set                                                  |
+| `ignoreCase`  | Checksi if the `i` modifier is set                                                 |
+| `lastIndex`   | Specifies the index at which to start the next match                               |
+| `multiline`   | Checksi if the m modifier is set                                                   |
+| `source`      | Returns the text of the sttring                                                    |
+| `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
+| `test()`      | Test for the match and returns the `true` or `false`                               |
+| `toString()`  | Returns the string value of the regular exression                                  |
 
 {% hint style="warning" %}
-`A complie()` method complies the regular expression and is deprecated.&#x20;
+A `complie()` method complies the regular expression and is deprecated.
 {% endhint %}
 
 Some examples of regular expressions are shown here.
