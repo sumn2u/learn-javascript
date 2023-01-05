@@ -15,3 +15,7 @@ console.log(emptyStringSize);
 ```
 
 The length property of an empty string is `0`.&#x20;
+
+{% hint style="warning" %}
+The `length` property is a read-only property, so you cannot assign a new value to it.
+{% endhint %}
