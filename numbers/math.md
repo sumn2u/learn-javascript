@@ -1,6 +1,6 @@
 # Math
 
-The `Math` object allows performing mathematical operations in JavaScript.  The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below: __&#x20;
+The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below: \_\_
 
 ```javascript
 Math.E        // returns Euler's number
@@ -13,39 +13,7 @@ Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E   // returns base 10 logarithm of E
 ```
 
-To access its method, one can call its methods directly with arguments wherever necessary.
-
-| Method             | Description                                                                      |
-| ------------------ | -------------------------------------------------------------------------------- |
-| `abs(x)`           | Returns absolute value of `x`                                                    |
-| `acos(x)`          | Returns arccosine of `x`, in radians                                             |
-| `acosh(x)`         | Returns hyperbolic arccosine of `x`                                              |
-| `asin(x)`          | Returns arcsine of `x`, in radians                                               |
-| `asinh(x)`         | Returns hyperbolic arcsine of `x`                                                |
-| `atan(x)`          | Returns  arctangent of `x` as a numeric value between `-PI/2` and `PI/2` radians |
-| `atan2(y,x)`       | Returns arctangent of the quotient of its arguments                              |
-| `atanh(x)`         | Returns  hyperbolic arctangent of `x`                                            |
-| `crbt(x)`          | Returns cubic root of `x`                                                        |
-| `ceil(x)`          | Returns rounded upwards to the nearest integer of `x`                            |
-| `cos(x)`           | Returns consine of `x`, in radians                                               |
-| `cosh(x)`          | Returns hyperbolic cosine of `x`                                                 |
-| `exp(x)`           | Returns exponential value of `x`                                                 |
-| `floor(x)`         | Returns round downwards to the neareast integer of `x`                           |
-| `log(x)`           | Returns natural logarithmetic of `x`                                             |
-| `max(x,y,z,... n)` | Returns number with the highest value                                            |
-| `min(x,y,z,... n)` | Returns number with the lowest value                                             |
-| `pow(x,y)`         | Returns value of `x` to the power of `y`                                         |
-| random()           | Returns number between 0 and 1                                                   |
-| round(x)           | Rounds number to the neareast x                                                  |
-| sign(x)            | Returns if x is negative, `null` or positive (-1,0,1)                            |
-| sin(x)             | Returns sine of x, in radians                                                    |
-| sinh(x)            | Returns hyperbolic sine of x                                                     |
-| sqrt(x)            | Returns square root of x                                                         |
-| tan(x)             | Returns tangent of an angle                                                      |
-| tanh(x)            | Returns hyperbolic tangent of x                                                  |
-| trunc(x)           | Returns integer part of a number (x)                                             |
-
-An example of some of the Math methods is shown below
+Examples of some of the math methods&#x20;
 
 ```javascript
 Math.pow(8, 2); // 64
@@ -65,3 +33,36 @@ Math.log(2); // 0.6931471805599453
 Math.log2(8); // 3
 Math.log10(1000); // 3
 ```
+
+To access its method, one can call its methods directly with arguments wherever necessary.
+
+| Method             | Description                                                                     |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `abs(x)`           | Returns absolute value of `x`                                                   |
+| `acos(x)`          | Returns arccosine of `x`, in radians                                            |
+| `acosh(x)`         | Returns hyperbolic arccosine of `x`                                             |
+| `asin(x)`          | Returns arcsine of `x`, in radians                                              |
+| `asinh(x)`         | Returns hyperbolic arcsine of `x`                                               |
+| `atan(x)`          | Returns arctangent of `x` as a numeric value between `-PI/2` and `PI/2` radians |
+| `atan2(y,x)`       | Returns arctangent of the quotient of its arguments                             |
+| `atanh(x)`         | Returns hyperbolic arctangent of `x`                                            |
+| `crbt(x)`          | Returns cubic root of `x`                                                       |
+| `ceil(x)`          | Returns rounded upwards to the nearest integer of `x`                           |
+| `cos(x)`           | Returns consine of `x`, in radians                                              |
+| `cosh(x)`          | Returns hyperbolic cosine of `x`                                                |
+| `exp(x)`           | Returns exponential value of `x`                                                |
+| `floor(x)`         | Returns round downwards to the neareast integer of `x`                          |
+| `log(x)`           | Returns natural logarithmetic of `x`                                            |
+| `max(x,y,z,... n)` | Returns number with the highest value                                           |
+| `min(x,y,z,... n)` | Returns number with the lowest value                                            |
+| `pow(x,y)`         | Returns value of `x` to the power of `y`                                        |
+| random()           | Returns number between 0 and 1                                                  |
+| round(x)           | Rounds number to the neareast x                                                 |
+| sign(x)            | Returns if x is negative, `null` or positive (-1,0,1)                           |
+| sin(x)             | Returns sine of x, in radians                                                   |
+| sinh(x)            | Returns hyperbolic sine of x                                                    |
+| sqrt(x)            | Returns square root of x                                                        |
+| tan(x)             | Returns tangent of an angle                                                     |
+| tanh(x)            | Returns hyperbolic tangent of x                                                 |
+| trunc(x)           | Returns integer part of a number (x)                                            |
+
