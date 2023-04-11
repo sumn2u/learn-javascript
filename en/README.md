@@ -4,7 +4,11 @@ Computers are common in today's world, as they are able to perform a wide variet
 
 Programming involves creating a set of instructions, called a program, for a computer to follow. It can be tedious and frustrating at times because computers are very precise and need specific instructions in order to complete tasks.
 
+<<<<<<< HEAD:README.md
 ![Intro Page](./.gitbook/assets/intro.png)
+=======
+![Wlecome Image](../.gitbook/assets/intro.png)
+>>>>>>> fdb023c (refactor: 💡 support internationalization):en/README.md
 
 Programming languages are artificial languages used to give instructions to computers. They are used in most programming tasks and are based on the way humans communicate with each other. Like human languages, programming languages allow words and phrases to be combined to express new concepts. It is interesting to note that the most effective way to communicate with computers involves using a language that is similar to human language.
 
