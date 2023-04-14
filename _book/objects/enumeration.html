@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 4.0.7">
         <meta name="author" content="Suman Kunwar">
         
         
@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -1404,9 +1408,9 @@
 <p>One way to enumerate the properties of an object is to use the <code>for-in</code> loop. The <code>for-in</code> loop iterates over the enumerable properties of an object in an arbitrary order, and for each property it executes a given block of code.</p>
 <p>The <code>for in</code> statement can loop over all of the property names in an object. The enumeration will include functions and prototype properties.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> fruit = {
-    apple: <span class="hljs-number">2</span>,
-    orange: <span class="hljs-number">5</span>,
-    pear: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">apple</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-attr">orange</span>: <span class="hljs-number">5</span>,
+    <span class="hljs-attr">pear</span>: <span class="hljs-number">1</span>,
   },
   sentence = <span class="hljs-string">&quot;I have &quot;</span>,
   quantity;
@@ -1420,14 +1424,14 @@ sentence = sentence.substr(<span class="hljs-number">0</span>, sentence.length -
 </code></pre>
 <p>Another way to enumerate the properties of an object is to use the <code>Object.keys()</code> method, which returns an array of the object&apos;s own enumerable property names.</p>
 <p>For example:</p>
-<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> object = {
-  foo: <span class="hljs-string">&apos;bar&apos;</span>,
-  baz: <span class="hljs-string">&apos;qux&apos;</span>
+<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> <span class="hljs-built_in">object</span> = {
+  <span class="hljs-attr">foo</span>: <span class="hljs-string">&apos;bar&apos;</span>,
+  <span class="hljs-attr">baz</span>: <span class="hljs-string">&apos;qux&apos;</span>
 };
 
-<span class="hljs-keyword">let</span> properties = <span class="hljs-built_in">Object</span>.keys(object);
+<span class="hljs-keyword">let</span> properties = <span class="hljs-built_in">Object</span>.keys(<span class="hljs-built_in">object</span>);
 properties.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">property</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(property + <span class="hljs-string">&apos;: &apos;</span> + object[property]);
+  <span class="hljs-built_in">console</span>.log(property + <span class="hljs-string">&apos;: &apos;</span> + <span class="hljs-built_in">object</span>[property]);
 });
 
 <span class="hljs-comment">// foo: bar</span>
@@ -1476,12 +1480,14 @@ properties.forEach(<span class="hljs-function"><span class="hljs-keyword">functi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Enumeration","level":"1.9.6","depth":2,"next":{"title":"Date and Time","level":"1.10","depth":1,"path":"date-and-time.md","ref":"date-and-time.md","articles":[]},"previous":{"title":"Delete","level":"1.9.5","depth":2,"path":"objects/delete.md","ref":"objects/delete.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"objects/enumeration.md","mtime":"2023-01-05T02:45:20.657Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Enumeration","level":"1.9.6","depth":2,"next":{"title":"Date and Time","level":"1.10","depth":1,"path":"date-and-time.md","ref":"date-and-time.md","articles":[]},"previous":{"title":"Delete","level":"1.9.5","depth":2,"path":"objects/delete.md","ref":"objects/delete.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"objects/enumeration.md","mtime":"2023-04-14T16:19:09.261Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1495,6 +1501,22 @@ properties.forEach(<span class="hljs-function"><span class="hljs-keyword">functi
     
         
         <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
         
     
         
@@ -1518,13 +1540,10 @@ properties.forEach(<span class="hljs-function"><span class="hljs-keyword">functi
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
 
     </body>
 </html>

@@ -12,7 +12,7 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc"
+        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "exercises"
     ],
     "pdf": {
         "margin": {

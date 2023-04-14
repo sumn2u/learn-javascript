@@ -68,3 +68,41 @@ In JavaScript, if we calculate a number outside the largest possible number it r
 let x =  2 / 0; // Infinity
 let y = -2 / 0; // -Infinity
 ```
+{% exercise %}
+Use the math operators +, -, *, /, and % to perform the following operations on `num1` and `num2`.
+
+{% initial %}
+let num1 = 10;
+let num2 = 5;
+
+// Add num1 and num2.
+let addResult =
+// Subtract num2 from num1.
+let subtractResult =
+// Multiply num1 and num2.
+let multiplyResult =
+// Divide num1 by num2.
+let divideResult =
+// Find the remainder num1 is divided by num2.
+let reminderResult =
+
+{% solution %}
+let num1 = 10;
+let num2 = 5;
+
+// Add num1 and num2.
+let addResult = (num1 + num2);
+// Subtract num2 from num1.
+let subtractResult = (num1 - num2);
+// Multiply num1 and num2.
+let multiplyResult = (num1 * num2);
+// Divide num1 by num2.
+let divideResult = (num1 / num2);
+// Find the remainder num1 is divided by num2.
+let reminderResult = (num1 % num2);
+
+{% validation %}
+assert(addResult === 15 && subtractResult === 5 && multiplyResult === 50 && divideResult === 2 && reminderResult === 0  );
+
+{% context %}
+{% endexercise %}

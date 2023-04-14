@@ -49,6 +49,20 @@ let y = 6;
 let result = x + y;
 ```
 
+{% exercise %}
+Define a variable `x` equal to 20.
+
+{% initial %}
+let x =
+
+{% solution %}
+let x = 20;
+
+{% validation %}
+assert(x == 20);
+
+{% context %}
+{% endexercise %}
 **ES6 Version**
 
 ECMAScript 2015 or ES2015 also known as E6  is a significant update to the JavaScript programming language since 2009. In ES6 we have three ways of declaring variables.&#x20;

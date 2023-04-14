@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 4.0.7">
         <meta name="author" content="Suman Kunwar">
         
         
@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -1401,18 +1405,18 @@
                                 
                                 <h1 id="events">Events</h1>
 <p>In programming, <em>events</em> are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input. </p>
-<p>Interactions from the keyboard such as keypresses need to be constantly read to catch the key&#x2019;s state before it&#x2019;s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called <em>polling</em>.</p>
+<p>Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called <em>polling</em>.</p>
 <p>The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs.  This is what modern browsers do by allowing us to register functions as <em>handlers</em> for specific events.</p>
 <pre><code class="lang-javascript">&lt;p&gt;Click me to activate the handler.&lt;/p&gt;
-&lt;script&gt;
-  window.addEventListener(&quot;click&quot;, () =&gt; {
-    console.log(&quot;clicked&quot;);
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;clicked&quot;</span>);
   });
-&lt;/script&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
 </code></pre>
 <p>Here, the <code>addEventListener</code> is called on the <code>window</code> object (built-in object provided by the browser) to register a handler for the whole <code>window</code>. Calling its <code>addEventListener</code> method registers the second argument to be called whenever the event described by its first argument occurs.</p>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Event listeners are called only when the event happens in the context of the object they are registered on.</p>
-</div></div></p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Event listeners are called only when the event happens in the context of the object they are registered on.</p>
+</div></div><p></p>
 <p>Some of the common HTML events are mentioned here.</p>
 <table>
 <thead>
@@ -1449,30 +1453,30 @@
 </tbody>
 </table>
 <p>It is common for handlers registered on nodes with children to also receive events from the children. For example, if a button inside a paragraph is clicked, handlers registered on the paragraph will also receive the click event. In case of the presence of handlers in both, the one at the bottom gets to go first. The event is said to <em>propagate</em> outward, from the initiating node to its parent node and on the root of the document.</p>
-<p>The event handler can call the <code>stopPropagation</code> method on the event object to prevent handlers further up from receiving the event. This is useful in cases like, you have a button inside a clickable element and you don&#x2019;t want to trigger the outer element&apos;s clickable behavior from a button click.</p>
+<p>The event handler can call the <code>stopPropagation</code> method on the event object to prevent handlers further up from receiving the event. This is useful in cases like, you have a button inside a clickable element and you don’t want to trigger the outer element&apos;s clickable behavior from a button click.</p>
 <pre><code class="lang-javascript">&lt;p&gt;A paragraph <span class="hljs-keyword">with</span> a &lt;button&gt;button&lt;<span class="hljs-regexp">/button&gt;.&lt;/</span>p&gt;
 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
   <span class="hljs-keyword">let</span> para = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;p&quot;</span>),
       button = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;button&quot;</span>);
-  para.addEventListener(<span class="hljs-string">&quot;mousedown&quot;</span>, () =&gt; {
+  para.addEventListener(<span class="hljs-string">&quot;mousedown&quot;</span>, <span class="hljs-function">() =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Paragraph handler.&quot;</span>);
   });
-  button.addEventListener(<span class="hljs-string">&quot;mousedown&quot;</span>, event =&gt; {
+  button.addEventListener(<span class="hljs-string">&quot;mousedown&quot;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Button handler.&quot;</span>);
     event.stopPropagation();
   });
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
 </code></pre>
-<p>Here, the &#x201C;<em><code>mousedown</code></em>&#x201D; handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls <code>stopPropagation</code>, which will prevent the handler on the paragraph from running.</p>
-<p>Events can have a default behavior. For example, links navigate to the link&#x2019;s target upon click, you get navigated to the bottom of a page upon clicking the down arrow, and so on. These default behaviors can be prevented by calling a <code>preventDefault</code> method on the event object.</p>
-<pre><code class="lang-javascript">&lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;MDN&lt;/a&gt;
-&lt;script&gt;
-  let link = document.querySelector(&quot;a&quot;);
-  link.addEventListener(&quot;click&quot;, event =&gt; {
-    console.log(&quot;Nope.&quot;);
+<p>Here, the “<em><code>mousedown</code></em>” handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls <code>stopPropagation</code>, which will prevent the handler on the paragraph from running.</p>
+<p>Events can have a default behavior. For example, links navigate to the link’s target upon click, you get navigated to the bottom of a page upon clicking the down arrow, and so on. These default behaviors can be prevented by calling a <code>preventDefault</code> method on the event object.</p>
+<pre><code class="lang-javascript">&lt;a href=<span class="hljs-string">&quot;https://developer.mozilla.org/&quot;</span>&gt;MDN&lt;/a&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> link = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;a&quot;</span>);
+  link.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Nope.&quot;</span>);
     event.preventDefault();
   });
-&lt;/script&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
 </code></pre>
 <p>link&apos;sHere, the default behavior of the link upon click is prevented, i.e. navigating towards the link&apos; target.</p>
 
@@ -1518,12 +1522,14 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Events","level":"1.17","depth":1,"next":{"title":"Promise, async/await","level":"1.18","depth":1,"path":"promise-async-await/promise.md","ref":"promise-async-await/promise.md","articles":[{"title":"Async/Await","level":"1.18.1","depth":2,"path":"promise-async-await/async-await.md","ref":"promise-async-await/async-await.md","articles":[]}]},"previous":{"title":"Location","level":"1.16.7","depth":2,"path":"browser-object-model-bom/location.md","ref":"browser-object-model-bom/location.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"events.md","mtime":"2023-01-04T01:42:08.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Events","level":"1.17","depth":1,"next":{"title":"Promise, async/await","level":"1.18","depth":1,"path":"promise-async-await/promise.md","ref":"promise-async-await/promise.md","articles":[{"title":"Async/Await","level":"1.18.1","depth":2,"path":"promise-async-await/async-await.md","ref":"promise-async-await/async-await.md","articles":[]}]},"previous":{"title":"Location","level":"1.16.7","depth":2,"path":"browser-object-model-bom/location.md","ref":"browser-object-model-bom/location.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"events.md","mtime":"2023-04-14T16:19:09.256Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <script src="gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -1537,6 +1543,22 @@
     
         
         <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/exercises.js"></script>
         
     
         
@@ -1560,13 +1582,10 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
 
     </body>
 </html>

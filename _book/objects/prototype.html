@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 4.0.7">
         <meta name="author" content="Suman Kunwar">
         
         
@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -1403,17 +1407,17 @@
 <p>Every object is linked to a prototype object from which it inherits properties.</p>
 <p>All objects created from object literals (<code>{}</code>) are automatically linked to <code>Object.prototype</code>, which is an object that comes standard with JavaScript.</p>
 <p>When a JavaScript interpreter (a module in your browser) tries to find a property, which You want to retrieve, like in the following code:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> adult = { age: <span class="hljs-number">26</span> },
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> adult = { <span class="hljs-attr">age</span>: <span class="hljs-number">26</span> },
   retrievedProperty = adult.age;
 <span class="hljs-comment">// The line above</span>
 </code></pre>
-<p>First, the interpreter looks through every property the object itself has. For example, <code>adult</code> has only one own property &#x2014; <code>age</code>. But besides that one, it actually has a few more properties, which were inherited from <code>Object.prototype.</code></p>
+<p>First, the interpreter looks through every property the object itself has. For example, <code>adult</code> has only one own property — <code>age</code>. But besides that one, it actually has a few more properties, which were inherited from <code>Object.prototype.</code></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> stringRepresentation = adult.toString();
 <span class="hljs-comment">// the variable has value of &apos;[object Object]&apos;</span>
 </code></pre>
 <p><code>toString</code> is an Object.prototype&apos;s property, which was inherited. It has a value of a function, which returns a string representation of the object. If you want it to return a more meaningful representation, then you can override it. Simply add a new property to the adult object.</p>
 <pre><code class="lang-javascript">adult.toString = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;I&apos;m &quot;</span> + <span class="hljs-keyword">this</span>.age;
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;I&apos;m &quot;</span> + <span class="hljs-built_in">this</span>.age;
 };
 </code></pre>
 <p>If you call the <code>toString</code> function now, the interpreter will find the new property in the object itself and stop.</p>
@@ -1473,12 +1477,14 @@ child.age = <span class="hljs-number">8</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prototype","level":"1.9.4","depth":2,"next":{"title":"Delete","level":"1.9.5","depth":2,"path":"objects/delete.md","ref":"objects/delete.md","articles":[]},"previous":{"title":"Reference","level":"1.9.3","depth":2,"path":"objects/reference.md","ref":"objects/reference.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"objects/prototype.md","mtime":"2023-01-04T01:42:08.268Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Prototype","level":"1.9.4","depth":2,"next":{"title":"Delete","level":"1.9.5","depth":2,"path":"objects/delete.md","ref":"objects/delete.md","articles":[]},"previous":{"title":"Reference","level":"1.9.3","depth":2,"path":"objects/reference.md","ref":"objects/reference.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"objects/prototype.md","mtime":"2023-04-14T16:19:09.262Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1492,6 +1498,22 @@ child.age = <span class="hljs-number">8</span>;
     
         
         <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
         
     
         
@@ -1515,13 +1537,10 @@ child.age = <span class="hljs-number">8</span>;
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
 
     </body>
 </html>

@@ -15,6 +15,24 @@ The most common types are:
 
 JavaScript is a " _loosely typed_"  language, which means that you don't have to explicitly declare what type of data the variables are. You just need to use the `var` keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.
 
+{% exercise %}
+Declare three variables and initialize them with the following values: `age` as a number, `name` as a string and `isMarried` as a boolean.
+
+{% initial %}
+let age =
+let name = 
+let isMarried =
+{% solution %}
+let age = 30
+let name = "Cecilia"
+let isMarried = true
+
+{% validation %}
+assert(typeof age === "number" && typeof name === "string" && typeof isMarried === "boolean");
+
+{% context %}
+{% endexercise %}
+
 The `typeof` operator is used to checking the datatypes of a variable.
 
 ```javascript
@@ -58,3 +76,22 @@ A primitive data value is a simple data value with no additional properties and 
 * undefined
 * symbol
 * null
+
+{% exercise %}
+Declare a variable called `person` and initialize it with an object that contains the following properties: `age` as a number, `name` as a string and `isMarried` as a boolean.
+
+{% initial %}
+let person =
+
+{% solution %}
+let person = {
+  name: "Mary",
+  age: 25,
+  isMarried: false
+};
+
+{% validation %}
+assert(typeof person.age === "number" && typeof person.name === "string" && typeof person.isMarried === "boolean");
+
+{% context %}
+{% endexercise %}

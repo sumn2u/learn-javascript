@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 4.0.7">
         <meta name="author" content="Suman Kunwar">
         
         
@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -1413,13 +1417,44 @@
 <li><strong>Function</strong>: A function is a block of code that can be defined and then called by name. Functions can accept arguments (inputs) and return a value (output). You can create a function using the <code>function</code> keyword.</li>
 </ul>
 <p>JavaScript is a &quot; <em>loosely typed</em>&quot;  language, which means that you don&apos;t have to explicitly declare what type of data the variables are. You just need to use the <code>var</code> keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.</p>
+<p></p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Declare three variables and initialize them with the following values: `age` as a number, `name` as a string and `isMarried` as a boolean.
+
+
+	</div>
+	<div class="editor" style="height: 60px">let age =
+let name = 
+let isMarried =</div>
+
+	<pre class="hidden code-solution">let age = 30
+let name = &quot;Cecilia&quot;
+let isMarried = true</pre>
+	<pre class="hidden code-validation">assert(typeof age === &quot;number&quot; &amp;&amp; typeof name === &quot;string&quot; &amp;&amp; typeof isMarried === &quot;boolean&quot;);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div><p></p>
 <p>The <code>typeof</code> operator is used to checking the datatypes of a variable.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-string">&quot;John&quot;</span>                 <span class="hljs-comment">// Returns &quot;string&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-number">3.14</span>                   <span class="hljs-comment">// Returns &quot;number&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-literal">NaN</span>                    <span class="hljs-comment">// Returns &quot;number&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-literal">false</span>                  <span class="hljs-comment">// Returns &quot;boolean&quot;</span>
 <span class="hljs-keyword">typeof</span> [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]              <span class="hljs-comment">// Returns &quot;object&quot;</span>
-<span class="hljs-keyword">typeof</span> {name:<span class="hljs-string">&apos;John&apos;</span>, age:<span class="hljs-number">34</span>}  <span class="hljs-comment">// Returns &quot;object&quot;</span>
+<span class="hljs-keyword">typeof</span> {<span class="hljs-attr">name</span>:<span class="hljs-string">&apos;John&apos;</span>, <span class="hljs-attr">age</span>:<span class="hljs-number">34</span>}  <span class="hljs-comment">// Returns &quot;object&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()             <span class="hljs-comment">// Returns &quot;object&quot;</span>
 <span class="hljs-keyword">typeof</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}         <span class="hljs-comment">// Returns &quot;function&quot;</span>
 <span class="hljs-keyword">typeof</span> myCar                  <span class="hljs-comment">// Returns &quot;undefined&quot; *</span>
@@ -1434,8 +1469,8 @@
 <li><code>object</code></li>
 <li><code>function</code></li>
 </ul>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><code>Object</code>, <code>Date</code>, <code>Array</code>, <code>String</code>, <code>Number</code>, and <code>Boolean</code> are the types of objects available in JavaScript.</p>
-</div></div></p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><code>Object</code>, <code>Date</code>, <code>Array</code>, <code>String</code>, <code>Number</code>, and <code>Boolean</code> are the types of objects available in JavaScript.</p>
+</div></div><p></p>
 <p>Data types that cannot contain values:</p>
 <ul>
 <li><code>null</code></li>
@@ -1451,6 +1486,37 @@
 <li>symbol</li>
 <li>null</li>
 </ul>
+<p></p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Declare a variable called `person` and initialize it with an object that contains the following properties: `age` as a number, `name` as a string and `isMarried` as a boolean.
+
+
+	</div>
+	<div class="editor" style="height: 100px">let person =</div>
+
+	<pre class="hidden code-solution">let person = {
+  name: &quot;Mary&quot;,
+  age: 25,
+  isMarried: false
+};</pre>
+	<pre class="hidden code-validation">assert(typeof person.age === &quot;number&quot; &amp;&amp; typeof person.name === &quot;string&quot; &amp;&amp; typeof person.isMarried === &quot;boolean&quot;);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div><p></p>
 
                                 
                                 </section>
@@ -1494,12 +1560,14 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.2.3","depth":2,"next":{"title":"Equality","level":"1.2.4","depth":2,"path":"basics/equality.md","ref":"basics/equality.md","articles":[]},"previous":{"title":"Variables","level":"1.2.2","depth":2,"path":"basics/variables.md","ref":"basics/variables.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/types.md","mtime":"2023-01-05T02:45:20.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.2.3","depth":2,"next":{"title":"Equality","level":"1.2.4","depth":2,"path":"basics/equality.md","ref":"basics/equality.md","articles":[]},"previous":{"title":"Variables","level":"1.2.2","depth":2,"path":"basics/variables.md","ref":"basics/variables.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/types.md","mtime":"2023-04-14T16:19:09.251Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1513,6 +1581,22 @@
     
         
         <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
         
     
         
@@ -1536,13 +1620,10 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
 
     </body>
 </html>

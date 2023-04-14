@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 4.0.7">
         <meta name="author" content="Suman Kunwar">
         
         
@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -1403,20 +1407,20 @@
 <p>JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to <a href="https://tc39.github.io/ecma262/" target="_blank">https://tc39.github.io/ecma262/ </a>and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced. </p>
 <p>To support the modern code in old browsers we used two tools: <code>transpilers</code> and <code>polyfills</code></p>
 <p><strong>Transpilers</strong></p>
-<p>It is a program that translates modern code and rewrites it using older syntax constructs so, that the older engine can understand it. For example, &quot;<code>nullish</code> coalescing operator&quot; <code>??</code>  was introduced in 2020, and outdated browsers can&#x2019;t understand it. </p>
-<p>Now, it&#x2019;s the transpiler&apos;s job to make the <code>nullish</code> coalescing operator&#x201D; <code>??</code> understandable to the old browsers. </p>
+<p>It is a program that translates modern code and rewrites it using older syntax constructs so, that the older engine can understand it. For example, &quot;<code>nullish</code> coalescing operator&quot; <code>??</code>  was introduced in 2020, and outdated browsers can’t understand it. </p>
+<p>Now, it’s the transpiler&apos;s job to make the <code>nullish</code> coalescing operator” <code>??</code> understandable to the old browsers. </p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// before running the transpiler</span>
 height = height ?? <span class="hljs-number">200</span>;
 
 <span class="hljs-comment">// after running the transpiler</span>
 height = (height !== <span class="hljs-literal">undefined</span> &amp;&amp; height !== <span class="hljs-literal">null</span>) ? height: <span class="hljs-number">200</span>;
 </code></pre>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p> <a href="https://babeljs.io/" target="_blank">Babel</a> is one of the most prominent transpilers. In the development process, we can use build tools like <a href="https://webpack.js.org/" target="_blank">webpack</a> or <a href="https://parceljs.org/" target="_blank">parcel</a> to transpile code.</p>
-</div></div></p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p> <a href="https://babeljs.io/" target="_blank">Babel</a> is one of the most prominent transpilers. In the development process, we can use build tools like <a href="https://webpack.js.org/" target="_blank">webpack</a> or <a href="https://parceljs.org/" target="_blank">parcel</a> to transpile code.</p>
+</div></div><p></p>
 <p><strong>Polyfills</strong></p>
-<p>There are times when new functionality isn&apos;t available in outdated browser engines. In this case, the code that uses the new functionality won&#x2019;t work. To fill the gaps, we add the missing functionality which is called a &#x201C;<code>polyfill</code>&#x201D;. For example, the <code>filter()</code> method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns <code>true</code></p>
+<p>There are times when new functionality isn&apos;t available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a “<code>polyfill</code>”. For example, the <code>filter()</code> method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns <code>true</code></p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>];
-<span class="hljs-keyword">const</span> filtered = arr.filter((e) =&gt; e % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>); <span class="hljs-comment">// filter outs the even number</span>
+<span class="hljs-keyword">const</span> filtered = arr.filter(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> e % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>); <span class="hljs-comment">// filter outs the even number</span>
 <span class="hljs-built_in">console</span>.log(filtered);
 
 <span class="hljs-comment">// [2, 4, 6]</span>
@@ -1425,19 +1429,19 @@ height = (height !== <span class="hljs-literal">undefined</span> &amp;&amp; heig
 <pre><code class="lang-javascript"><span class="hljs-built_in">Array</span>.prototype.filter = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">callback</span>) </span>{
   <span class="hljs-comment">// Store the new array</span>
   <span class="hljs-keyword">const</span> result = [];
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.length; i++) {
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">this</span>.length; i++) {
     <span class="hljs-comment">// call the callback with the current element, index, and context.</span>
     <span class="hljs-comment">//if it passes the text then add the element in the new array.</span>
-    <span class="hljs-keyword">if</span> (callback(<span class="hljs-keyword">this</span>[i], i, <span class="hljs-keyword">this</span>)) {
-      result.push(<span class="hljs-keyword">this</span>[i]);
+    <span class="hljs-keyword">if</span> (callback(<span class="hljs-built_in">this</span>[i], i, <span class="hljs-built_in">this</span>)) {
+      result.push(<span class="hljs-built_in">this</span>[i]);
     }
   }
   <span class="hljs-comment">//return the array</span>
   <span class="hljs-keyword">return</span> result
 }
 </code></pre>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><a href="https://caniuse.com/" target="_blank">caniuse</a> shows the updated functionality and syntax supported by different browser engines.</p>
-</div></div></p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p><a href="https://caniuse.com/" target="_blank">caniuse</a> shows the updated functionality and syntax supported by different browser engines.</p>
+</div></div><p></p>
 
                                 
                                 </section>
@@ -1481,12 +1485,14 @@ height = (height !== <span class="hljs-literal">undefined</span> &amp;&amp; heig
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Polyfills and Transpilers","level":"1.19.3","depth":2,"next":{"title":"Linked List","level":"1.19.4","depth":2,"path":"template-literals/linked-list/README.md","ref":"template-literals/linked-list/README.md","articles":[{"title":"Add","level":"1.19.4.1","depth":3,"path":"template-literals/linked-list/add.md","ref":"template-literals/linked-list/add.md","articles":[]},{"title":"Pop","level":"1.19.4.2","depth":3,"path":"template-literals/linked-list/pop.md","ref":"template-literals/linked-list/pop.md","articles":[]},{"title":"Prepend","level":"1.19.4.3","depth":3,"path":"template-literals/linked-list/prepend.md","ref":"template-literals/linked-list/prepend.md","articles":[]},{"title":"Shift","level":"1.19.4.4","depth":3,"path":"template-literals/linked-list/shift.md","ref":"template-literals/linked-list/shift.md","articles":[]}]},"previous":{"title":"Currying","level":"1.19.2","depth":2,"path":"template-literals/currying.md","ref":"template-literals/currying.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this Chapter","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"template-literals/polyfills-and-transpilers.md","mtime":"2023-01-04T01:42:08.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-05T13:53:29.314Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Polyfills and Transpilers","level":"1.19.3","depth":2,"next":{"title":"Linked List","level":"1.19.4","depth":2,"path":"template-literals/linked-list/README.md","ref":"template-literals/linked-list/README.md","articles":[{"title":"Add","level":"1.19.4.1","depth":3,"path":"template-literals/linked-list/add.md","ref":"template-literals/linked-list/add.md","articles":[]},{"title":"Pop","level":"1.19.4.2","depth":3,"path":"template-literals/linked-list/pop.md","ref":"template-literals/linked-list/pop.md","articles":[]},{"title":"Prepend","level":"1.19.4.3","depth":3,"path":"template-literals/linked-list/prepend.md","ref":"template-literals/linked-list/prepend.md","articles":[]},{"title":"Shift","level":"1.19.4.4","depth":3,"path":"template-literals/linked-list/shift.md","ref":"template-literals/linked-list/shift.md","articles":[]}]},"previous":{"title":"Currying","level":"1.19.2","depth":2,"path":"template-literals/currying.md","ref":"template-literals/currying.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"template-literals/polyfills-and-transpilers.md","mtime":"2023-04-14T16:19:09.268Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1500,6 +1506,22 @@ height = (height !== <span class="hljs-literal">undefined</span> &amp;&amp; heig
     
         
         <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
         
     
         
@@ -1523,13 +1545,10 @@ height = (height !== <span class="hljs-literal">undefined</span> &amp;&amp; heig
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
 
     </body>
 </html>
