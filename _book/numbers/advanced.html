@@ -1422,7 +1422,7 @@
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">12</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 0</span>
 </code></pre>
 <ul>
-<li><strong>Exponentiation operator (`</strong><code>)**: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the</code>Math.pow` function instead. For example:</li>
+<li><strong>Exponentiation operator (* *)</strong>: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the <code>Math.pow</code> function instead. For example:</li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span> ** <span class="hljs-number">3</span>); <span class="hljs-comment">// 8</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">3</span> ** <span class="hljs-number">2</span>); <span class="hljs-comment">// 9</span>
@@ -1450,6 +1450,58 @@ y--; <span class="hljs-comment">// y is now 2</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.random()); <span class="hljs-comment">// a random number between 0 and 1</span>
 </code></pre>
 <p>These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations in your code.</p>
+<p></p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Use the following advanced operators to perform operations on `num1` and `num2`.
+
+
+	</div>
+	<div class="editor" style="height: 320px">let num1 = 10;
+let num2 = 5;
+
+// ++ operator to increment the value of num1.
+const result1 =
+// -- operator to decrement the value of num2.
+const result2 =
+//  += operator to add num2 to num1.
+const result3 =
+// -= operator to subtract num2 from num1.
+const result4 =</div>
+
+	<pre class="hidden code-solution">let num1 = 10;
+let num2 = 5;
+
+// ++ operator to increment the value of num1.
+
+num1++;
+const result1 = num1; // 11
+// -- operator to decrement the value of num2.
+num2--;
+const result2 = num2; // 4
+//  += operator to add num2 to num1.
+num1 += num2;
+const result3 = num1 // 15
+// -= operator to subtract num2 from num1.
+num1 -= num2;
+const result4 = num1 // 11</pre>
+	<pre class="hidden code-validation">assert(result1 === 11 &amp;&amp; result2 === 4 &amp;&amp; result3 === 15 &amp;&amp; result4 === 11 );</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div><p></p>
 <h2 id="nullish-coalescing-operator-">Nullish coalescing operator &apos;??&apos;</h2>
 <p>The <code>nullish</code> coalescing operator returns the first argument if it&apos;s not <code>null/undefined</code>, else the second one. It is written as two question marks <code>??</code>. The result of <code>x ?? y</code> is:</p>
 <ul>
@@ -1501,7 +1553,7 @@ y--; <span class="hljs-comment">// y is now 2</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Advanced Operators","level":"1.3.3","depth":2,"next":{"title":"Strings","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"Length","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"Concatenation","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"previous":{"title":"Basic Operators","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/advanced.md","mtime":"2023-04-14T16:19:09.260Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-14T16:22:27.148Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Advanced Operators","level":"1.3.3","depth":2,"next":{"title":"Strings","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"Length","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"Concatenation","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"previous":{"title":"Basic Operators","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","exercises","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"exercises":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/advanced.md","mtime":"2023-04-15T11:31:28.980Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-15T11:32:24.948Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

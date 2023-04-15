@@ -36,3 +36,25 @@ Template literals can also contain multiple lines and can include any expression
 {% hint style="warning" %}
 Strings can not be subtracted, multiplied, or divided.
 {% endhint %}
+
+{% exercise %}
+Use a template literal to create a string that includes the values of `name` and `age`. The string should have the following format: "My name is John and I am 25 years old.".
+
+{% initial %}
+let name = "John";
+let age = 25;
+
+// My name is John and I am 25 years old.
+let result =  
+{% solution %}
+let name = "John";
+let age = 25;
+
+// My name is John and I am 25 years old.
+let result = `My name is ${name} and I am ${age} years old.`
+
+{% validation %}
+assert(result == "My name is John and I am 25 years old.");
+
+{% context %}
+{% endexercise %}

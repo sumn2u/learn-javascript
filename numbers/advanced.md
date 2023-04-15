@@ -23,7 +23,7 @@ console.log(11 % 3); // 2
 console.log(12 % 3); // 0
 ```
 
-* **Exponentiation operator (`**`)**: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the `Math.pow` function instead. For example:
+* **Exponentiation operator (\* *)**: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the `Math.pow` function instead. For example:
 
 ```javascript
 console.log(2 ** 3); // 8
@@ -56,6 +56,46 @@ console.log(Math.random()); // a random number between 0 and 1
 ```
 
 These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations in your code.
+
+{% exercise %}
+Use the following advanced operators to perform operations on `num1` and `num2`.
+
+{% initial %}
+let num1 = 10;
+let num2 = 5;
+
+// ++ operator to increment the value of num1.
+const result1 =
+// -- operator to decrement the value of num2.
+const result2 =
+//  += operator to add num2 to num1.
+const result3 =
+// -= operator to subtract num2 from num1.
+const result4 =
+
+{% solution %}
+let num1 = 10;
+let num2 = 5;
+
+// ++ operator to increment the value of num1.
+
+num1++;
+const result1 = num1; // 11
+// -- operator to decrement the value of num2.
+num2--;
+const result2 = num2; // 4
+//  += operator to add num2 to num1.
+num1 += num2;
+const result3 = num1 // 15
+// -= operator to subtract num2 from num1.
+num1 -= num2;
+const result4 = num1 // 11
+
+{% validation %}
+assert(result1 === 11 && result2 === 4 && result3 === 15 && result4 === 11 );
+
+{% context %}
+{% endexercise %}
 
 ## Nullish coalescing operator '??'
 

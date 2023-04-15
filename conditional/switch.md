@@ -45,3 +45,46 @@ switch (new Date().getDay()) {
 ```
 
 In multiple matching cases, the **first** matching value is selected, if not the default value is selected. In the absence of default and no matching case, the program continues to the next statement(s) after switch conditions.&#x20;
+
+{% exercise %}
+From the following values write a `switch` statement that checks the value of dayOfWeek. If dayOfWeek is "Monday", "Tuesday", "Wednesday", "Thursday", or "Friday", assign "It's a weekday" to the result variable. If `dayOfWeek` is "Saturday" or "Sunday", assign "It's the weekend" to the result.
+
+{% initial %}
+let dayOfWeek = "Monday";
+let result;
+// check if it's a weekday or the weekend
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+{% solution %}
+let dayOfWeek = "Monday";
+let result;
+// check if it's a weekday or the weekend
+switch (dayOfWeek) {
+  case "Monday":
+  case "Tuesday":
+  case "Wednesday":
+  case "Thursday":
+  case "Friday":
+    result = "It's a weekday";
+    break;
+  case "Saturday":
+  case "Sunday":
+    result = "It's the weekend";
+    break;
+  default:
+    result = "Invalid day of the week";
+    break;
+}
+{% validation %}
+assert(result == "It's a weekday" );
+
+{% context %}
+{% endexercise %}
