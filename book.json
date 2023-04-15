@@ -12,7 +12,7 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "exercises", "sitemap"
+        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap"
     ],
     "pdf": {
         "margin": {
@@ -26,6 +26,18 @@
         "url": "https://leanpub.com/learnjavascriptbeginnersguide",
         "description": "Get free pdf and epub version by joining on wishlist! ✨",
         "btnText": "Read now!"
+      },
+      "sharing": {
+        "facebook": true,
+        "twitter": true,
+        "google": false,
+        "weibo": false,
+        "instapaper": false,
+        "vk": false,
+        "all": [
+            "facebook", "google", "twitter",
+            "weibo", "instapaper"
+        ]
       },
       "intopic-toc": {
         "label": "In this Chapter"
