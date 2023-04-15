@@ -10,6 +10,7 @@
     "gitbook-plugin-theme-creative": "^1.0.6",
     "gitbook-plugin-exercises": "^3.0.0",
     "gitbook-plugin-intopic-toc": "^1.0.6",
+    "gitbook-plugin-sitemap": "^1.2.0",
     "honkit": "^4.0.4"
   },
   "scripts": {

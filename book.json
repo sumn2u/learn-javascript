@@ -12,7 +12,7 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "exercises"
+        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "exercises", "sitemap"
     ],
     "pdf": {
         "margin": {
@@ -21,14 +21,17 @@
         }
     },
     "pluginsConfig": {
-        "sidebar-ad": {
-            "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
-            "url": "https://leanpub.com/learnjavascriptbeginnersguide",
-            "description": "Get free pdf and epub version by joining on wishlist! ✨",
-            "btnText": "Read now!"
-        },
-        "intopic-toc": {
-            "label": "In this Chapter"
-        }
+      "sidebar-ad": {
+        "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
+        "url": "https://leanpub.com/learnjavascriptbeginnersguide",
+        "description": "Get free pdf and epub version by joining on wishlist! ✨",
+        "btnText": "Read now!"
+      },
+      "intopic-toc": {
+        "label": "In this Chapter"
+      },
+      "sitemap": {
+        "hostname": "https://javascript.sumankunwar.com.np/"
+      }
     }
 }
