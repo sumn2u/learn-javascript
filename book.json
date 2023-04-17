@@ -12,7 +12,7 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap"
+        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap", "i18nsettings"
     ],
     "pdf": {
         "margin": {
@@ -34,16 +34,26 @@
         "weibo": false,
         "instapaper": false,
         "vk": false,
-        "all": [
-            "facebook", "google", "twitter",
-            "weibo", "instapaper"
-        ]
+        "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
       },
       "intopic-toc": {
         "label": "In this Chapter"
       },
       "sitemap": {
         "hostname": "https://javascript.sumankunwar.com.np/"
+      },
+      "i18nsettings": {
+        "language": "en",
+        "languages": [
+          {
+            "config": "en",
+            "text": "English"
+          },
+          {
+            "config": "tr",
+            "text": "Turkish"
+          }
+        ]
       }
     }
 }

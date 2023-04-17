@@ -15,11 +15,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     var SITES = {
         douban: site('豆瓣', 'share', 'http://shuo.douban.com/!service/share?href=' + url + '&name=' + title),
-        facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url+ '&title=' + title),
+        facebook: site('Facebook', 'facebook', 'http://www.facebook.com/sharer/sharer.php?s=100&p[url]=' + url),
         google: site('Google+', 'google-plus', 'https://plus.google.com/share?url=' + url),
         instapaper: site('instapaper', 'instapaper', 'http://www.instapaper.com/text?u=' + url),
         line: site('LINE', 'comment', 'http://line.me/R/msg/text/?' + title + ' ' + url),
-        linkedin: site('Linkedin', 'linkedin', 'https://www.linkedin.com/shareArticle?mini=true&url=' + url+ '&title=' + title),
+        linkedin: site('Linkedin', 'linkedin', 'https://www.linkedin.com/shareArticle?mini=true&url=' + url),
         messenger: site('Facebook Messenger', 'commenting', 'fb-messenger://share?link=' + url),
         pocket: site('Pocket', 'get-pocket', 'https://getpocket.com/save?url=' + url + '&title=' + title),
         qq: site('QQ', 'qq', 'http://connect.qq.com/widget/shareqq/index.html?url=' + url + '&title=' + title),
