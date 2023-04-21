@@ -1,4 +1,10 @@
 # Learn JavaScript
+
+[![GitHub issues](https://img.shields.io/github/issues/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/network)
+[![GitHub stars](https://img.shields.io/github/stars/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/stargazers)
+[![GitHub license](https://img.shields.io/github/license/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/bagchal.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Flearn-javascript)
+
 This book provides a basic understanding of programming and JavaScript. The foundations and core concepts are described in simple terms in an organized manner. In-depth information and notes are provided with examples to understand the topic. Exercises are also present at the end.
 
 
@@ -30,6 +36,11 @@ console.log(txt);
 // Result: txt = '45491625'
 ```
 
+## Support the project ⭐
+
+If you feel awesome and want to support us in a small way, please consider starring and sharing the repo! This helps us get visability and allow the community to grow. 🙏
+
+<img alt="star_us" width="250" src="./star_us.gif">
 
 ## Getting started
 1. Clone this repository.
