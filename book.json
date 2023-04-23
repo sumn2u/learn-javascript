@@ -12,7 +12,7 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap", "i18nsettings"
+        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap", "i18nsettings", "favicon-custom"
     ],
     "pdf": {
         "margin": {
@@ -36,6 +36,8 @@
         "vk": false,
         "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
       },
+      "favicon": "favicon.ico",
+      "appleTouchIconPrecomposed152": "js.png",
       "intopic-toc": {
         "label": "In this Chapter"
       },

@@ -609,6 +609,11 @@ gitbook-plugin-exercises@^3.0.0:
   dependencies:
     lodash "3.0.1"
 
+gitbook-plugin-favicon-custom@^0.0.2:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-favicon-custom/-/gitbook-plugin-favicon-custom-1.0.0.tgz#0791bb5bab5ef3ece92b728d3b74282bb23cbd4d"
+  integrity sha512-yUueQxcOFEwwjM52o+G1j8lvx1oxebGmLoAIpvgVtZ3Y2n7QXsPnQMH3KRY2eQQQft8QG5F3bKtQysUSCKVdvA==
+
 gitbook-plugin-fontsettings@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-fontsettings/-/gitbook-plugin-fontsettings-2.0.0.tgz#835f900ae3dd111086fe7ed4425ee3de024861ab"

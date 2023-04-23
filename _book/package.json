@@ -5,6 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "gitbook-plugin-exercises": "^3.0.0",
+    "gitbook-plugin-favicon-custom": "^0.0.2",
     "gitbook-plugin-hints": "^1.0.2",
     "gitbook-plugin-intopic-toc": "^1.0.6",
     "gitbook-plugin-sharing": "https://github.com/sumn2u/plugin-sharing.git",
