@@ -47,7 +47,7 @@ If you feel awesome and want to support us in a small way, please consider starr
 2. Move to `learn-javascript` directory.
 3. Install dependencies using `yarn` or  `npm i`
 4. Run `yarn start` command.
-5. Visit http://localhost:3200 for preview
+5. Visit http://localhost:4000 for preview
 
 ## Structure
 The main contents are under the charset of each language directory . For English use `en` directory.

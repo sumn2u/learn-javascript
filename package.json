@@ -16,7 +16,7 @@
     "honkit-plugin-i18nsettings": "^1.0.0"
   },
   "scripts": {
-    "start": "honkit serve --port 3200",
+    "start": "honkit serve",
     "build": "exit 0"
   },
   "keywords": [],
