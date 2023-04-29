@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Strings · Learn JavaScript: Beginners Edition</title>
+        <title>Higher Order Functions · Learn JavaScript: Beginners Edition</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="create.html" />
+    <link rel="next" href="../objects/" />
     
     
-    <link rel="prev" href="../numbers/advanced.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -252,9 +252,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../strings/">
             
-                <a href="./">
+                <a href="../strings/">
             
                     
                     Strings
@@ -266,9 +266,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="create.html">
+        <li class="chapter " data-level="1.4.1" data-path="../strings/create.html">
             
-                <a href="create.html">
+                <a href="../strings/create.html">
             
                     
                     Creation
@@ -279,9 +279,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="replace.html">
+        <li class="chapter " data-level="1.4.2" data-path="../strings/replace.html">
             
-                <a href="replace.html">
+                <a href="../strings/replace.html">
             
                     
                     Replace
@@ -292,9 +292,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="length.html">
+        <li class="chapter " data-level="1.4.3" data-path="../strings/length.html">
             
-                <a href="length.html">
+                <a href="../strings/length.html">
             
                     
                     Length
@@ -305,9 +305,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="concat.html">
+        <li class="chapter " data-level="1.4.4" data-path="../strings/concat.html">
             
-                <a href="concat.html">
+                <a href="../strings/concat.html">
             
                     
                     Concatenation
@@ -627,9 +627,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../functions/">
+        <li class="chapter " data-level="1.8" data-path="./">
             
-                <a href="../functions/">
+                <a href="./">
             
                     
                     Functions
@@ -641,9 +641,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../functions/higher-order.html">
+        <li class="chapter active" data-level="1.8.1" data-path="higher-order.html">
             
-                <a href="../functions/higher-order.html">
+                <a href="higher-order.html">
             
                     
                     Higher Order Functions
@@ -1392,7 +1392,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Strings</a>
+        <a href=".." >Higher Order Functions</a>
     </h1>
 </div>
 
@@ -1407,143 +1407,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="strings">Strings</h1>
-<p>JavaScript strings share many similarities with string implementations from other high-level languages. They represent text-based messages and data.</p>
-<p>In this course, we will cover the basics. How to create new strings and perform common operations on them.</p>
-<p>Here is an example of a string:</p>
-<pre><code>&quot;Hello World&quot;
-</code></pre><p>String indexes are zero-based, meaning that starting position of the first character at <code>0</code> followed by others in incremental order.  </p>
-<p>Various methods are supported by string and return a new value. These methods are described below.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>charAt()</code></td>
-<td>Returns character at specified index</td>
-</tr>
-<tr>
-<td><code>charCodeAt()</code></td>
-<td>Returns Unicode character at specified index</td>
-</tr>
-<tr>
-<td><code>concat()</code></td>
-<td>Returns two or more combined strings</td>
-</tr>
-<tr>
-<td><code>constructor</code></td>
-<td>Returns string&apos;s constructor function</td>
-</tr>
-<tr>
-<td><code>endsWith()</code></td>
-<td>Checks if a string ends with a specified value</td>
-</tr>
-<tr>
-<td><code>fromCharCode()</code></td>
-<td>Returns Unicode values as characters</td>
-</tr>
-<tr>
-<td><code>includes()</code></td>
-<td>Checks if a string contains with a specified value</td>
-</tr>
-<tr>
-<td><code>indexOf()</code></td>
-<td>Returns the index of its first occurance</td>
-</tr>
-<tr>
-<td><code>lastIndexOf()</code></td>
-<td>Returns the index of its last occurance</td>
-</tr>
-<tr>
-<td><code>length</code></td>
-<td>Returns the length of the string</td>
-</tr>
-<tr>
-<td><code>localeCompare()</code></td>
-<td>Compares two strings with locale</td>
-</tr>
-<tr>
-<td><code>match()</code></td>
-<td>Matches a string against a value or regular expression</td>
-</tr>
-<tr>
-<td><code>prototype</code></td>
-<td>Used to add properties and method of an object</td>
-</tr>
-<tr>
-<td><code>repeat()</code></td>
-<td>Returns new string with number of copies specified</td>
-</tr>
-<tr>
-<td><code>replace()</code></td>
-<td>Returns a string with values replaced by a regular expression or a string with a value</td>
-</tr>
-<tr>
-<td><code>search()</code></td>
-<td>Returns an index based on a string&apos;s match against a value or regular expression</td>
-</tr>
-<tr>
-<td><code>slice()</code></td>
-<td>Returns a string containing part of a string</td>
-</tr>
-<tr>
-<td><code>split()</code></td>
-<td>Splits string into array of substrings</td>
-</tr>
-<tr>
-<td><code>startsWith()</code></td>
-<td>Checks strings begining against specifed character</td>
-</tr>
-<tr>
-<td><code>substr()</code></td>
-<td>Extracts part of string, from start index</td>
-</tr>
-<tr>
-<td><code>substring()</code></td>
-<td>Extracts part of string, between two indices</td>
-</tr>
-<tr>
-<td><code>toLocalLowerCase()</code></td>
-<td>Returns string with lowercase characters using host&apos;s locale</td>
-</tr>
-<tr>
-<td><code>toLocalUpperCase()</code></td>
-<td>Returns string with uppercase characters using host&apos;s locale</td>
-</tr>
-<tr>
-<td><code>toLowerCase()</code></td>
-<td>Returns string with lowercase characters</td>
-</tr>
-<tr>
-<td><code>toString()</code></td>
-<td>Returns string or string object as string</td>
-</tr>
-<tr>
-<td><code>toUpperCase()</code></td>
-<td>Returns string with uppercase characters</td>
-</tr>
-<tr>
-<td><code>trim()</code></td>
-<td>Returns string with removed whitespaces</td>
-</tr>
-<tr>
-<td><code>trimEnd()</code></td>
-<td>Returns string with removed whitespaces from end</td>
-</tr>
-<tr>
-<td><code>trimStart()</code></td>
-<td>Returns string with removed whitespaces from start</td>
-</tr>
-<tr>
-<td><code>valueOf()</code></td>
-<td>Returns primitive value of string or string object</td>
-</tr>
-</tbody>
-</table>
+                                <h1 id="higher-order">Higher order</h1>
+<p>Higher order functions are functions that manipulate other functions. For example, a function can take other functions as arguments and/or produce a function as its return value. Such <em>fancy</em> functional techniques are powerful constructs available to you in JavaScript and other high-level languages like python, lisp, etc.</p>
+<p>We will now create two simple functions, <code>add_2</code> and <code>double</code>, and a higher order function called <code>map</code>. <code>map</code> will accept two arguments, <code>func</code> and <code>list</code> (its declaration will therefore begin <code>map(func,list)</code>), and return an array. <code>func</code> (the first argument) will be a function that will be applied to each of the elements in the array <code>list</code> (the second argument).</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Define two simple functions</span>
+<span class="hljs-keyword">let</span> add_2 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{
+  <span class="hljs-keyword">return</span> x + <span class="hljs-number">2</span>;
+};
+<span class="hljs-keyword">let</span> double = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * x;
+};
+
+<span class="hljs-comment">// map is cool function that accepts 2 arguments:</span>
+<span class="hljs-comment">//  func    the function to call</span>
+<span class="hljs-comment">//  list    a array of values to call func on</span>
+<span class="hljs-keyword">let</span> map = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">func, list</span>) </span>{
+  <span class="hljs-keyword">let</span> output = []; <span class="hljs-comment">// output list</span>
+  <span class="hljs-keyword">for</span> (idx <span class="hljs-keyword">in</span> list) {
+    output.push(func(list[idx]));
+  }
+  <span class="hljs-keyword">return</span> output;
+};
+
+<span class="hljs-comment">// We use map to apply a function to an entire list</span>
+<span class="hljs-comment">// of inputs to &quot;map&quot; them to a list of corresponding outputs</span>
+map(add_2, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [7, 8, 9]</span>
+map(double, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [10, 12, 14]</span>
+</code></pre>
+<p>The functions in the above example are simple. However, when passed as arguments to other functions, they can be composed in unforeseen ways to build more complex functions.</p>
+<p>For example, if we notice that we use the invocations <code>map(add_2, ...)</code> and <code>map(double, ...)</code> very often in our code, we could decide we want to create two special-purpose list processing functions that have the desired operation baked into them. Using function composition, we could do this as follows:</p>
+<pre><code class="lang-javascript">process_add_2 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">list</span>) </span>{
+  <span class="hljs-keyword">return</span> map(add_2, list);
+};
+process_double = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">list</span>) </span>{
+  <span class="hljs-keyword">return</span> map(double, list);
+};
+process_add_2([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [7, 8, 9]</span>
+process_double([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [10, 12, 14]</span>
+</code></pre>
+<p>Now let&apos;s create a function called <code>buildProcessor</code> that takes a function <code>func</code> as input and returns a <code>func</code>-processor, that is, a function that applies <code>func</code> to each input in list.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// a function that generates a list processor that performs</span>
+<span class="hljs-keyword">let</span> buildProcessor = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">func</span>) </span>{
+  <span class="hljs-keyword">let</span> process_func = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">list</span>) </span>{
+    <span class="hljs-keyword">return</span> map(func, list);
+  };
+  <span class="hljs-keyword">return</span> process_func;
+};
+<span class="hljs-comment">// calling buildProcessor returns a function which is called with a list input</span>
+
+<span class="hljs-comment">// using buildProcessor we could generate the add_2 and double list processors as follows:</span>
+process_add_2 = buildProcessor(add_2);
+process_double = buildProcessor(double);
+
+process_add_2([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [7, 8, 9]</span>
+process_double([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]); <span class="hljs-comment">// =&gt; [10, 12, 14]</span>
+</code></pre>
+<p>Let&apos;s look at another example. We&apos;ll create a function called <code>buildMultiplier</code> that takes a number <code>x</code> as input and returns a function that multiplies its argument by <code>x</code> :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> buildMultiplier = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">y</span>) </span>{
+    <span class="hljs-keyword">return</span> x * y;
+  };
+};
+
+<span class="hljs-keyword">let</span> double = buildMultiplier(<span class="hljs-number">2</span>);
+<span class="hljs-keyword">let</span> triple = buildMultiplier(<span class="hljs-number">3</span>);
+
+double(<span class="hljs-number">3</span>); <span class="hljs-comment">// =&gt; 6</span>
+triple(<span class="hljs-number">3</span>); <span class="hljs-comment">// =&gt; 9</span>
+</code></pre>
 
                                 
                                 </section>
@@ -1571,12 +1502,12 @@
 
             
                 
-                <a href="../numbers/advanced.html" class="navigation navigation-prev " aria-label="Previous page: Advanced Operators">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Functions">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="create.html" class="navigation navigation-next " aria-label="Next page: Creation">
+                <a href="../objects/" class="navigation navigation-next " aria-label="Next page: Objects">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1587,7 +1518,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Strings","level":"1.4","depth":1,"next":{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},"previous":{"title":"Advanced Operators","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]},"articles":[{"title":"Creation","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"Replace","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"Length","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"Concatenation","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}],"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"strings/README.md","mtime":"2023-04-21T02:57:27.325Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-29T03:42:41.917Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Higher Order Functions","level":"1.8.1","depth":2,"next":{"title":"Objects","level":"1.9","depth":1,"path":"objects/README.md","ref":"objects/README.md","articles":[{"title":"Properties","level":"1.9.1","depth":2,"path":"objects/properties.md","ref":"objects/properties.md","articles":[]},{"title":"Mutable","level":"1.9.2","depth":2,"path":"objects/mutable.md","ref":"objects/mutable.md","articles":[]},{"title":"Reference","level":"1.9.3","depth":2,"path":"objects/reference.md","ref":"objects/reference.md","articles":[]},{"title":"Prototype","level":"1.9.4","depth":2,"path":"objects/prototype.md","ref":"objects/prototype.md","articles":[]},{"title":"Delete","level":"1.9.5","depth":2,"path":"objects/delete.md","ref":"objects/delete.md","articles":[]},{"title":"Enumeration","level":"1.9.6","depth":2,"path":"objects/enumeration.md","ref":"objects/enumeration.md","articles":[]}]},"previous":{"title":"Functions","level":"1.8","depth":1,"path":"functions/README.md","ref":"functions/README.md","articles":[{"title":"Higher Order Functions","level":"1.8.1","depth":2,"path":"functions/higher-order.md","ref":"functions/higher-order.md","articles":[]}]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"functions/higher-order.md","mtime":"2023-04-21T02:57:27.317Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-29T03:42:41.917Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

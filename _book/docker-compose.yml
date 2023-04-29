@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  book:
+    tty: true
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      -  .:/usr/src/app
+      - modules:/usr/src/app/node_modules
+    command: npm start
+    working_dir: /usr/src/app
+volumes:
+  modules:
+    driver: local
