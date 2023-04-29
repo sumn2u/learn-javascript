@@ -4,10 +4,11 @@
   "description": "Learn JavaScript",
   "main": "index.js",
   "devDependencies": {
+    "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-exercises": "^3.0.0",
-    "gitbook-plugin-edit-link-plus": "^0.1.1",
     "gitbook-plugin-favicon-custom": "^1.0.0",
+    "gitbook-plugin-hide-published-with": "0.0.1",
     "gitbook-plugin-hints": "^1.0.2",
     "gitbook-plugin-intopic-toc": "^1.0.6",
     "gitbook-plugin-sharing": "https://github.com/sumn2u/plugin-sharing.git",

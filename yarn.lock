@@ -428,7 +428,7 @@ domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.3.1:
   dependencies:
     domelementtype "^2.2.0"
 
-domhandler@^5.0.1, domhandler@^5.0.2, domhandler@^5.0.3:
+domhandler@^5.0.2, domhandler@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-5.0.3.tgz#cc385f7f751f1d1fc650c21374804254538c7d31"
   integrity sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==
@@ -445,13 +445,13 @@ domutils@^2.4.2, domutils@^2.5.2, domutils@^2.8.0:
     domhandler "^4.2.0"
 
 domutils@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.0.1.tgz#696b3875238338cb186b6c0612bd4901c89a4f1c"
-  integrity sha512-z08c1l761iKhDFtfXO04C7kTdPBLi41zwOZl00WS8b5eiaebNpY00HKbztwBq+e3vyqWNwWF3mP9YLUeqIrF+Q==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.1.0.tgz#c47f551278d3dc4b0b1ab8cbb42d751a6f0d824e"
+  integrity sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==
   dependencies:
     dom-serializer "^2.0.0"
     domelementtype "^2.3.0"
-    domhandler "^5.0.1"
+    domhandler "^5.0.3"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -607,10 +607,10 @@ gitbook-plugin-chapter-fold@^0.0.4:
   resolved "https://registry.yarnpkg.com/gitbook-plugin-chapter-fold/-/gitbook-plugin-chapter-fold-0.0.4.tgz#dcd5a21f80bcbc98c088419774c397ae6d4463ef"
   integrity sha512-pszjq24KVV7sZFsaYE/3e3fA9zkdMiK4QVlfxvlOiuPpoEWuZb1BbpurZTla8aNjyqbE5ifK4BxwKlHvgcAlsg==
 
-gitbook-plugin-edit-link-plus@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/gitbook-plugin-edit-link-plus/-/gitbook-plugin-edit-link-plus-0.1.1.tgz#654e1ae952f81406c88c6f7dd7a02cf989c491ec"
-  integrity sha512-1P5cXngXCKikqFMiK2cPFKoL/RAvlCaG1zzfU/k95S2hi4aHlTHFmLtBMgzkx3+llCT4cEoer5LpQan3+g7Ycg==
+gitbook-plugin-edit-link@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-edit-link/-/gitbook-plugin-edit-link-2.0.2.tgz#d8fcd927eced81e7a662a72d59db609eafd7e72f"
+  integrity sha512-huqV1rWX/zGoWR7bPgcyTMEgGM1Fe4l02GKTknVi4Fvn8S9QQZCVCn+o0BtAwEACbg5VGoonymzqyIE3j+ZYnQ==
 
 gitbook-plugin-exercises@^3.0.0:
   version "3.0.0"
@@ -628,6 +628,11 @@ gitbook-plugin-fontsettings@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-fontsettings/-/gitbook-plugin-fontsettings-2.0.0.tgz#835f900ae3dd111086fe7ed4425ee3de024861ab"
   integrity sha512-bZpz/Jev7lL1d3VNp41KHZD67UYqyqdOwbsJE6YEW93R2mGiLfZLpUs86d2nrY61BedhlNck1xF52FNT6sWeig==
+
+gitbook-plugin-hide-published-with@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-hide-published-with/-/gitbook-plugin-hide-published-with-0.0.1.tgz#90799e2a2a791d18b5738136f7137666830639dc"
+  integrity sha512-aa4Dch5lJ1xzNRpLur2P53IOLqyWR+me1wwU9hd90+WoHXqL/N7LM3QHwmfZcDVXmU74AxSbp6xoNf8YLAGxcg==
 
 gitbook-plugin-hints@^1.0.2:
   version "1.0.2"
@@ -893,7 +898,7 @@ is-binary-path@~2.1.0:
   dependencies:
     binary-extensions "^2.0.0"
 
-is-core-module@^2.12.0:
+is-core-module@^2.11.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.12.0.tgz#36ad62f6f73c8253fd6472517a12483cf03e7ec4"
   integrity sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==
@@ -1230,11 +1235,11 @@ require-directory@^2.1.1:
   integrity sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==
 
 resolve@^1.17.0:
-  version "1.22.3"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.3.tgz#4b4055349ffb962600972da1fdc33c46a4eb3283"
-  integrity sha512-P8ur/gp/AmbEzjr729bZnLjXK5Z+4P0zhIJgBgzqRih7hL7BOukHGtSTA3ACMY467GRFz3duQsi0bDZdR7DKdw==
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.2.tgz#0ed0943d4e301867955766c9f3e1ae6d01c6845f"
+  integrity sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==
   dependencies:
-    is-core-module "^2.12.0"
+    is-core-module "^2.11.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 

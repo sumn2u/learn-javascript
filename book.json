@@ -12,7 +12,18 @@
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
-        "hints", "theme-creative", "sidebar-ad", "intopic-toc", "sharing", "exercises", "sitemap", "i18nsettings", "favicon-custom", "chapter-fold", "edit-link-plus"
+      "hints",
+      "theme-creative",
+      "sidebar-ad",
+      "intopic-toc",
+      "sharing",
+      "exercises",
+      "sitemap",
+      "i18nsettings",
+      "favicon-custom",
+      "chapter-fold",
+      "hide-published-with",
+      "edit-link"
     ],
     "pdf": {
         "margin": {
@@ -27,9 +38,10 @@
         "description": "Get free pdf and epub version by joining on wishlist! ✨",
         "btnText": "Read now!"
       },
-      "edit-link-plus": {
-            "base": "https://github.com/sumn2u/learn-javascript/edit/main"
-      },
+      "edit-link": {
+                "base": "https://github.com/sumn2u/learn-javascript/edit/main",
+                "label": ""
+            },
       "sharing": {
         "facebook": true,
         "twitter": true,
