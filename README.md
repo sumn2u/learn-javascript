@@ -38,7 +38,7 @@ console.log(txt);
 
 ## Support the project ⭐
 
-If you feel awesome and want to support us in a small way, please consider starring and sharing the repo! This helps us get visability and allow the community to grow. 🙏
+If you feel awesome and want to support us in a small way, please consider starring and sharing the repo! This helps us get visibility and allow the community to grow. 🙏
 
 <img alt="star_us" width="250" src="./star_us.gif">
 
@@ -50,7 +50,7 @@ If you feel awesome and want to support us in a small way, please consider starr
 5. Visit http://localhost:4000 for preview
 
 ## Structure
-The main contents are under the charset of each language directory . For English use `en` directory.
+The main contents are under the charset of each language directory . For English, use `en` directory.
 
 directory | description
 
@@ -81,5 +81,5 @@ Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
 Contributions are always welcome. Feel free to report Issue or send Pull Request.
 
-Feel free to reach out to us at sumn2u@gmail.com, to Suman if you have any questions or feedback! Hope you find this useful 💜
+If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜
 
