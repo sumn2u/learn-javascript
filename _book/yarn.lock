@@ -602,6 +602,11 @@ get-intrinsic@^1.0.2:
     has "^1.0.3"
     has-symbols "^1.0.3"
 
+gitbook-plugin-chapter-fold@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-chapter-fold/-/gitbook-plugin-chapter-fold-0.0.4.tgz#dcd5a21f80bcbc98c088419774c397ae6d4463ef"
+  integrity sha512-pszjq24KVV7sZFsaYE/3e3fA9zkdMiK4QVlfxvlOiuPpoEWuZb1BbpurZTla8aNjyqbE5ifK4BxwKlHvgcAlsg==
+
 gitbook-plugin-exercises@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-exercises/-/gitbook-plugin-exercises-3.0.0.tgz#540a1e157c040deae0ad3cdd8e3f5f830f4cd761"
@@ -609,7 +614,7 @@ gitbook-plugin-exercises@^3.0.0:
   dependencies:
     lodash "3.0.1"
 
-gitbook-plugin-favicon-custom@^0.0.2:
+gitbook-plugin-favicon-custom@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-favicon-custom/-/gitbook-plugin-favicon-custom-1.0.0.tgz#0791bb5bab5ef3ece92b728d3b74282bb23cbd4d"
   integrity sha512-yUueQxcOFEwwjM52o+G1j8lvx1oxebGmLoAIpvgVtZ3Y2n7QXsPnQMH3KRY2eQQQft8QG5F3bKtQysUSCKVdvA==
