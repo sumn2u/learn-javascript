@@ -1,26 +1,34 @@
 ---
 layout: editorial
----
 
-# आधारभूत कुराहरू
+लेआउट: सम्पादकीय---
 
-यस पहिलो अध्यायमा, हामी प्रोग्रामिंग र जाभास्क्रिप्ट भाषाको आधारभूत कुराहरू सिक्नेछौं।
+# Basics
 
-प्रोग्रामिंग को अर्थ कोड लेखन हो। पुस्तक अध्यायहरू, अनुच्छेदहरू, वाक्यहरू, वाक्यांशहरू, शब्दहरू, र अन्तमा विराम चिन्हहरू र अक्षरहरू मिलेर बनेको हुन्छ, त्यस्तै गरी एक कार्यक्रमलाई साना र साना घटकहरूमा विभाजित गर्न सकिन्छ। अहिलेका लागि, सबैभन्दा महत्त्वपूर्ण एक स्ततेमेंट हो। एउटा कथन पुस्तकको वाक्यसँग मिल्दोजुल्दो हुन्छ। यसको आफ्नै संरचना र उद्देश्य छ, तर यसको वरिपरिका अन्य कथनहरूको सन्दर्भ बिना, यो त्यति अर्थपूर्ण छैन।
+In this first chapter, we'll learn the basics of programming and the Javascript language.
 
-एक स्ततेमेंट असामान्यतया कोडको एक लाइन को रूप मा जानिन्छ। किनभने स्ततेमेंटहरू व्यक्तिगत लाइनहरूमा लेखिएका हुन्छन्। जस्तै, कार्यक्रमहरू माथिदेखि तल, बायाँदेखि दायाँसम्म पढिन्छन्। तपाईं सोच्दै हुनुहुन्छ कि कोड (स्रोत कोड पनि भनिन्छ) के हो? यो एक व्यापक शब्द हुन जान्छ जुन सम्पूर्ण कार्यक्रम वा सबैभन्दा सानो भागलाई सन्दर्भ ित गर्न सक्छ। यसैले, कोड को एक लाइन बस आफ्नो कार्यक्रम को एक लाइन हो।
+यस पहिलो अध्यायमा हामी प्रोग्रामिंग र जाभास्क्रिप्ट भाषाको आधारभूत कुरा सिक्नेछौं।
 
+Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words, and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components. For now, the most important is a statement. A statement is analogous to a sentence in a book. On its own, it has structure and purpose, but without the context of the other statements around it, it isn't that meaningful.
 
+प्रोग्रामिंगको अर्थ कोड लेख्ने हो। अध्याय अध्याय, अनुच्छेद, वाक्य, वाक्यांशहरू, र अन्तमा विराम चिह्नहरू, र अन्तमा विराम चिह्नहरू मिलेर बनेको छ, त्यस्तै कार्यक्रमलाई साना र साना कम्पोनेन्टहरूमा बिच्छेद गर्न सकिन्छ। अहिलेको लागि, सबैभन्दा महत्त्वपूर्ण एक बयान हो। एक बयाई एक पुस्तक मा एक वाक्य को एक वाक्य को रूपैगी छ। आफ्नै आफ्नै संरचना र उद्देश्य छ, तर वरपर अन्य कथनहरूको सन्दर्भ बिना यो अर्थपूर्ण छैन।
 
+A statement is more casually (and commonly) known as a _line of code_. That's because statements tend to be written on individual lines. As such, programs are read from top to bottom, left to right. You might be wondering what code (also called source code) is. That happens to be a broad term which can refer to the whole of the program or the smallest part. Therefore, a line of code is simply a line of your program.
 
-यहाँ एक सरल उदाहरण छ:
+एक कथन अधिक अनौपचारिक (र सामान्य रूपमा) को 'को लागी एक _ लाईको रूपमा परिचित छ। त्यो किनभने बयान व्यक्तिगत लाइनहरूमा लेखिएको हुन्छ। त्यस्तै, कार्यक्रमहरू माथिबाट तलबाट तल पढिन्छ, बाँयामा दायाँ। तपाईं कुन कोडमा सोच्दै हुनुहुन्छ (स्रोत कोड पनि भनिन्छ) हो। त्यो एक फराकिलो अवधि हुन सक्छ जुन सम्पूर्ण कार्यक्रम वा सब भन्दा सानो भागमा सन्दर्भ गर्न सक्दछ। त्यसकारण, कोडको लाइन मात्र तपाईंको प्रोग्रामको लाइन हो।
+
+Here is a simple example:
+
+यहाँ एक साधारण उदाहरण छ:
 
 ```javascript
 let hello = "Hello";
 let world = "World";
 
-// मेसेज  बराबर "हेलो वर्ल्ड"
+// Message equals "Hello World"
 let message = hello + " " + world;
 ```
 
-यस कोडलाई _इन्तेर्प्रेटर_ भनिने अर्को कार्यक्रमद्वारा कार्यान्वयन गर्न सकिन्छ जसले कोड पढ्नेछ, र सबै कथनहरू सही क्रममा कार्यान्वयन गर्नेछ।
+This code can be executed by another program called an _interpreter_ that will read the code, and execute all the statements in the right order.
+
+यो कोड अर्को प्रोग्राम द्वारा कार्यान्वयन गर्न सकिन्छ एक _इन्टपरपरेटर_ भनिन्छ जुन कोड पढ्नेछ, र सही क्रममा सबै कथनहरू कार्यान्वयन गर्दछ।
