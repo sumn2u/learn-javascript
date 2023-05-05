@@ -1,22 +1,30 @@
-# कमेन्ट
+# Comments
 
-कमेन्टहरू बयानहरू हुन् जुन इन्तेर्प्रेटरद्वारा निष्पादित गरिने छैन, कमेन्टहरू अन्य प्रोग्रामरहरूको लागि एनोटेशनहरू चिन्ह लगाउन वा कोडले के गर्दछ भन्ने सानो विवरणचिन्ह लगाउन प्रयोग गरिन्छ, यसैले अरूलाई तपाईंको कोडले के गर्दछ भनेर बुझ्न सजिलो बनाउँदछ।
+Comments are statements that will not be executed by the interpreter, comments are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does.
 
-जाभास्क्रिप्टमा, कमेन्टहरू २ तरिकामा लेख्न सकिन्छ:
+टिप्पणीहरू हुन् जुन दोभाषे द्वारा मृत्युदण्ड दिइने बयानहरू हुन्, टिप्पणीहरू अन्य प्रोग्रामरहरू वा के कोडले के गर्दछ भनेर सहज बनाउँदछन्।
 
-* _एकल-रेखा कमेन्टहरू_ : यो दुई फरवार्ड स्ल्याशहरू (`//`) बाट सुरु हुन्छ र रेखाको अन्त्यसम्म जारी रहन्छ। स्ल्याशहरू पछिको कुनै पनि कुरा जाभास्क्रिप्ट इन्तेर्प्रेटरद्वारा उपेक्षा गरिएको छ। उदाहरणका लागि :&#x20;
+In JavaScript, comments can be written in 2 different ways:
+
+जाभास्क्रिप्टमा, टिप्पणीहरू 2 फरक तरीकाले लेख्न सकिन्छ:
+
+* _Single-line comments_: It starts with two forward slashes (`//`) and continue until the end of the line. Anything following the slashes is ignored by the JavaScript interpreter. For example :&#x20;
+
+* _Singly-लाइन टिप्पणीहरू_: यो दुई अगाडी स्ल्याश (`//`) को साथ सुरू हुन्छ र रेखाको अन्त्य सम्म जारी राख्नुहोस्। स्ल्याशलाई पछ्याउने सबै कुरा जाभास्क्रिप्ट दोभाषे द्वारा बेवास्ता गरिन्छ। उदाहरणका लागि: & # X20;
 
 ```javascript
-// यो कमेन्ट हो, यसलाई इन्तेर्प्रेटरले बेवास्ता गर्नेछ
+// This is a comment, it will be ignored by the interpreter
 let a = "this is a variable defined in a statement";
 ```
 
-* बहु-रेखा कमेन्टहरू: यो अगाडिको स्लेश र तारांकन (`/*`) बाट सुरु हुन्छ र तारांकन र अगाडिको स्लेश (`*/`) सँग समाप्त हुन्छ। उद्घाटन र समापन मार्करहरू बीचको कुनै पनि कुरा जाभास्क्रिप्ट इन्तेर्प्रेटरद्वारा उपेक्षा गरिएको छ। उदाहरणका लागि:
+* Multi-line comments: It starts with a forward slash and an asterisk (`/*`) and end with an asterisk and a forward slash (`*/`). Anything between the opening and closing markers is ignored by the JavaScript interpreter. For example:
+
+* बहु-लाइन टिप्पणीहरू: यो अगाडि स्ल्याश र एक तारा चिन्ह र एक तारा चिन्ह (`/ *`) को साथ सुरू हुन्छ उद्घाटन र बन्द मार्करहरू बीच केहि पनि जाभास्क्रिप्ट दोभाषे द्वारा बेवास्ता गरिन्छ। उदाहरण को लागी:
 
 ```javascript
 /*
-यो एक बहु-लाइन कमेन्ट हो,
-यसलाई इन्तेर्प्रेटरले बेवास्ता गर्नेछ
+This is a multi-line comment,
+it will be ignored by the interpreter
 */
 let a = "this is a variable defined in a statement";
 ```
