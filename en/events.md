@@ -1,6 +1,6 @@
 # Events
 
-In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.&#x20;
+In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
 
 Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
 
@@ -66,5 +66,5 @@ Events can have a default behavior. For example, links navigate to the link’s 
 </script>
 ```
 
-link'sHere, the default behavior of the link upon click is prevented, i.e. navigating towards the link' target.
+Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link' target.
 

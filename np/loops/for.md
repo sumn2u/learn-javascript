@@ -2,7 +2,7 @@
 
 The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
 
-लुपको सब भन्दा सजिलो रूप बयानका लागि हो। योसँग एउटा सिन्ट्याक्स छ जुन यदि कथनसँग मिल्दोजुल्दो छ भने, तर थप विकल्पहरूको साथ:
+लुपको सब भन्दा सजिलो रूप फर हो। 
 
 ```javascript
 for (condition; end condition; change) {
@@ -12,7 +12,7 @@ for (condition; end condition; change) {
 
 Let's see how to execute the same code ten-times using a `for` loop:
 
-हामी हेरौं कसरी उही कोडको लागि एक `को लागी एक` को लागी एक deponste ट्रिप प्रयोग गर्न को लागी।
+ हामीले `फर` लूप प्रयोग गरेर दस पटक एउटै कोड कसरी कार्यान्वयन गर्छौ, हेरौं ।
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
@@ -22,11 +22,11 @@ for (let i = 0; i < 10; i = i + 1) {
 
 > _**Note**_: `i = i + 1` can be written `i++`.
 
-> _ ** नोट ** _: _: _ I = + 1` + + 1 `लेख्न सकिन्छ` i ++ `` ++ `।
+> _**नोट**_:  `i = i + 1` लागि यसरि लेख्न सकिन्छ `i++`।
 
 To loop through the properties of an object or an array `for in` loop can also be used.
 
-एक वस्तु वा एर्रेको गुणवत्ताको गुणहरू मार्फत लुप गर्न पनि प्रयोग गर्न सकिन्छ।
+एक वस्तु वा एरे `फर इन`  लूपको गुणहरू मार्फत लूप गर्न पनि प्रयोग गर्न सकिन्छ।
 
 ```javascript
 for (key in object) {
@@ -36,7 +36,7 @@ for (key in object) {
 
 Examples of `for in` loop for an object and array is shown below:
 
-एक वस्तु र एर्रेको लागि एक वस्तु र एर्रेमा लुपमा `को उदाहरणहरू तल देखाइएको छ:
+वस्तु र एरेका लागि फर इन` लूपका उदाहरणहरू तल देखाइएको छ।
 
 ```javascript
 const person = {fname:"John", lname:"Doe", age:25};
@@ -56,9 +56,9 @@ for (let x in numbers) {
 // Result: txt = '45491625'
 ```
 
-The value of iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for of` statement.&#x20;
+The value of iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for of` statement.
 
-इट्नेर्डिंगेड वस्तुहरूको मान जस्तै `Anrails`s,` स्ट्रिंग्सको रूपमा, `नक्सा ',` nodelists` को उपयोग गर्न को लागी `& x20;
+पुनरावृत्ति योग्य वस्तुहरूको मान जस्तै `एरे`, `स्ट्रिङ्स`, `म्याप्स`, `नोडलिस्ट्स` को लागि कथन प्रयोग गरेर लुप गर्न सकिन्छ।
 
 ```javascript
 let language = "JavaScript";

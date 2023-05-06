@@ -1408,64 +1408,143 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="regular-expression">Regular Expression</h1>
+<h1 id="नियमित-अभिव्यक्ति">नियमित अभिव्यक्ति</h1>
 <p>A regular expression is an object that can either be constructed with the <code>RegEx</code> constructor or written as a literal value by enclosing a pattern in a forward slash <code>(/)</code> characters. The syntaxes for creating a regular expression are shown below.</p>
-<p>नियमित अभिव्यक्ति एक वस्तु हो जुन <code>regex</code> निर्वादकको साथ निर्माण गर्न सकिन्छ वा एक अगाडि स्लैश<code>(/)</code>वर्णहरूको एक ढाँचामा शाब्दिक मानको रूपमा लेख्न सकिन्छ। नियमित अभिव्यक्ति निर्माणको लागि सिन्ट्याक्सन तल देखाइन्छ।</p>
+<p>एक नियमित अभिव्यक्ति एक वस्तु हो जुन या त <code>रेगएक्स (RegEx)</code> कन्स्ट्रक्टरको साथ निर्माण गर्न सकिन्छ वा अगाडिको स्लेश <code>(/)</code> क्यारेक्टरमा ढाँचा संलग्न गरेर शाब्दिक मानको रूपमा लेख्न सकिन्छ। नियमित अभिव्यक्ति सिर्जना गर्नका लागि वाक्यविन्यासहरू तल देखाइएको छ।</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// using regular expression constructor</span>
 <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(pattern[, flags]);
 
 <span class="hljs-comment">// using literals</span>
 <span class="hljs-regexp">/pattern/m</span>odifiers
 </code></pre>
-<p>The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method.</p>
-<p>फ्ल्यागहरू वैकल्पिक हुन्छन् जब शाब्दिक प्रयोग गरेर नियमित अभिव्यक्ति सिर्जना गर्दै। माथि उल्लेखित विधि प्रयोग गरेर समान नियमित सिर्जना गर्ने उदाहरण।</p>
+<p>The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method is as follows.</p>
+<p>शाब्दिक प्रयोग गरेर नियमित अभिव्यक्ति सिर्जना गर्दा फ्ल्यागहरू वैकल्पिक हुन्छन्।  माथि उल्लिखित विधि प्रयोग गरेर समान नियमित सिर्जना गर्ने उदाहरण निम्नानुसार छ।</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> re1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;xyz&quot;</span>); 
 <span class="hljs-keyword">let</span> re2 = <span class="hljs-regexp">/xyz/</span>;
 </code></pre>
 <p>Both ways will create a regex object and have the same methods and properties. There are cases where we might need dynamic values to create a regular expression, in that case, literals won&apos;t work and have to go with the constructor.</p>
-<p>दुबै तरिकाहरूले एक रेजेक्स वस्तु सिर्जना गर्दछ र समान विधिहरू र गुणहरू छन्। त्यहाँ त्यस्ता केसहरू छन् जहाँ हामीलाई नियमित अभिव्यक्ति सिर्जना गर्न गतिशील मान चाहिन सक्छ, त्यस अवस्थामा शाब्दिकहरूले काम गर्दैनन् र कन्स्ट्रॉक्टरसँगै जानु पर्छ।</p>
+<p>दुबै तरिकाहरूले रेगेक्स वस्तु सिर्जना गर्नेछ र समान विधिहरू र गुणहरू छन्। त्यहाँ केसहरू छन् जहाँ हामीलाई नियमित अभिव्यक्ति सिर्जना गर्न गतिशील मानहरू आवश्यक हुन सक्छ, त्यस अवस्थामा, शाब्दिकहरूले काम गर्दैन र कन्स्ट्रक्टरसँग जानुपर्छ।</p>
 <p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>In cases where we want to have a forward slash to be a part of a regular expression, we have to escape the forward slash <code>(/)</code> with backslash <code>(\)</code>.</p>
-<p>जहाँ हामी अगाडि स्ल्याश नियमित अभिव्यक्तिको एक हिस्सा हुन चाहन्छौं, हामी अगाडि स्ल्याश <code>(/) लाई ब्याकस्ल्याश</code> (/) बाट उम्कन चाहानुहुन्छ।</p>
+<p>यदि हामी नियमित अभिव्यक्तिको भाग हुनको लागि अगाडिको स्लेश राख्न चाहन्छौं भने, हामीले ब्याकस्ल्याश <code>()</code> को साथ अगाडिको स्लेश <code>(/)</code> बाट बच्नु पर्दछ।</p>
 </div></div><p></p>
 <p>The different modifiers that are used to perform case-insensitive searches are:</p>
-<p>विभिन्न परिमार्जनहरू जुन केस-असंवेदनशील खोजीहरू प्रदर्शन गर्न प्रयोग गरिन्छ:</p>
+<p>केस-असंवेदनशील खोजीहरू प्रदर्शन गर्न प्रयोग गरिने विभिन्न परिमार्जकहरू हुन्:</p>
 <ul>
-<li><p><code>g</code> - global search (finds all matches instead of stopping after the first match)</p>
-</li>
-<li><p><code>g</code> - ग्लोबल खोज (पहिलो खेल पछि रोकिनुको सट्टा सबै खेलहरू फेला पार्दछ)</p>
-</li>
-<li><p><code>i</code>- case insensitive search</p>
-</li>
-<li><p><code>I</code>- केस असंवेदनशील खोज</p>
-</li>
+<li><code>g</code> - global search (finds all matches instead of stopping after the first match)</li>
+<li><code>g</code> - ग्लोबल खोज (पहिलो खेल पछि रोकिनुको सट्टा सबै खेलहरू फेला पार्दछ)</li>
+<li><code>i</code>- case insensitive search</li>
+<li><code>i</code>- केस असंवेदनशील खोज</li>
 <li><code>m</code> - multiline matching</li>
+<li><code>m</code> - मल्टिलाइन मिलान</li>
 </ul>
 <p><em>Brackets</em> are used in a regular expression to find a range of characters. Some of them are mentioned below.</p>
-<p><em>Backs_s</em> अक्षरको दायरा फेला पार्न नियमित अभिव्यक्तिमा प्रयोग गरिन्छ। ती मध्ये केही तल उल्लेख गरिएको छ।</p>
+<p>क्यारेक्टरहरूको दायरा फेला पार्न नियमित अभिव्यक्तिमा कोष्ठकहरू प्रयोग गरिन्छ । तीमध्ये केही तल उल्लेख गरिएको छ।</p>
 <ul>
 <li><p><code>[abc]</code> - find any character between the brackets</p>
 </li>
-<li><p><code>[ABC]</code> - कोष्ठक बीच कुनै पनि चरित्र फेला पार्नुहोस्</p>
+<li><p><code>[abc]</code> - कोष्ठकको बीचमा कुनै पनि क्यारेक्टर फेला पार्नुहोस्</p>
 </li>
 <li><p><code>[^abc]</code> - find any character, not between the brackets</p>
 </li>
-<li><p><code>[^ Abc]</code> - कुनै पनि चरित्र फेला पार्नुहोस्, कोष्ठक बीच नभई</p>
+<li><p><code>[^abc]</code> - कुनै पनि क्यारेक्टर फेला पार्नुहोस्, कोष्ठकको बीचमा होइन</p>
 </li>
 <li><p><code>[0-9]</code> - find any digit between the bracket</p>
 </li>
-<li><p><code>[0-9]</code> - कोष्ठक बीच कुनै अंक फेला पार्नुहोस्</p>
+<li><p><code>[0-9]</code> - कोष्ठकको बीचमा कुनै पनि अङ्क फेला पार्नुहोस्</p>
 </li>
 <li><p><code>[^0-9]</code> - find any character, not between the brackets (non-digit)</p>
 </li>
-<li><p><code>[^ 0-9]</code> - कुनै पनि चरित्र फेला पार्नुहोस्, कोष्ठकहरू बीच (गैर-अंक)</p>
+<li><p><code>[^0-9]</code> - कुनै पनि क्यारेक्टर फेला पार्नुहोस्, कोष्ठकको बीचमा होइन (गैर-अंक)</p>
 </li>
 <li><p><code>(x|y)</code>- find any of the alternatives separated by |</p>
 </li>
-<li><p><code>(X | y)</code> - | द्वारा विभाजित विकल्पहरू फेला पार्नुहोस्</p>
+<li><p><code>(x|y)</code> - द्वारा अलग गरिएको विकल्पहरू मध्ये कुनै पनि फेला पार्नुहोस् |</p>
 </li>
 </ul>
 <p><em>Metacharacters</em> are special character that has special meaning in the regular expression. These characters are further described below:</p>
-<p><em>-्ग्रेक्कारहरू</em> विशेष चरित्र हुन् जुन नियमित अभिव्यक्तिमा विशेष अर्थ राख्छ। यी पात्रहरू तल तल वर्णन गरिएको छ:</p>
-<p>| Metacharacter | Description                                                      |</p>
+<table>
+<thead>
+<tr>
+<th>Metacharacter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>Match a single character excpet newline or a terminator</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>Match a word character (alphanumeric character <code>[a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>Match a non word character (same as <code>[^a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>Match any digit character( same as <code>[0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>Match any non digiti character</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>Match a whitespace character (spaces, tabs etc)</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>Match a non whitespace character</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Match at the begining / end of a word</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>Match but not at the begining / end of a word</td>
+</tr>
+<tr>
+<td><code>\0</code></td>
+<td>Match a <code>NULL</code> character</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>Match a new line character</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>Match a form feed character</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>Match a carriage return character</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Match a tab character</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>Match a tab vertical character</td>
+</tr>
+<tr>
+<td><code>\xxx</code></td>
+<td>Match a character specified by an octal number <code>xxx</code></td>
+</tr>
+<tr>
+<td><code>\xdd</code></td>
+<td>Match a character specified by a hexadecimal number <code>dd</code></td>
+</tr>
+<tr>
+<td><code>\udddd</code></td>
+<td>Match Unicode character specified by a hexadecimal number <code>dddd</code></td>
+</tr>
+</tbody>
+</table>
+<p>मेटाक्यारेक्टरहरू विशेष क्यारेक्टर हरू हुन् जसको नियमित अभिव्यक्तिमा विशेष अर्थ हुन्छ। यी क्यारेक्टरहरू तल थप वर्णन गरिएको छ:</p>
 <table>
 <thead>
 <tr>
@@ -1476,48 +1555,126 @@
 <tbody>
 <tr>
 <td><code>.</code></td>
-<td>Match a single character excpet newline or a terminator</td>
+<td>एकल क्यारेक्टर एक्स्पेट नयाँलाइन वा टर्मिनेटर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>शब्द क्यारेक्टर मिलाउनुहोस् (अल्फान्यूमेरिक क्यारेक्टर <code>[a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>एउटा गैर-शब्द क्यारेक्टर मिलाउनुहोस् (जस्तै <code>[^a-zA-Z0–9_]</code>)</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>कुनै पनि अङ्कको क्यारेक्टर मिलाउनुहोस् (जस्तै <code>[0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>कुनै पनि गैर-डिजिटी क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>सेतो स्थान क्यारेक्टर मिलाउनुहोस् (खाली स्थान, ट्याब आदि)</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>सेतो खाली स्थान नभएको क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>शब्दको सुरु/अन्त्यमा मिलान गर्नुहोस्</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>मिलान गर्नुहोस् तर शब्दको सुरु / अन्त्यमा होइन</td>
+</tr>
+<tr>
+<td><code>\0</code></td>
+<td><code>शून्य (NULL)</code> क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>नयाँ रेखा क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>फारम फिड क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>क्यारिज रिटर्न क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Match a tab character</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>ट्याब ठाडो क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\xxx</code></td>
+<td>अक्टल नम्बरले निर्दिष्ट गरेको क्यारेक्टर मिलाउनुहोस् <code>xxx</code></td>
+</tr>
+<tr>
+<td><code>\xdd</code></td>
+<td>हेक्साडेसिमल नम्बर <code>dd</code> द्वारा निर्दिष्ट क्यारेक्टर मिलाउनुहोस्</td>
+</tr>
+<tr>
+<td><code>\udddd</code></td>
+<td>हेक्साडेसिमल सङ्ख्या <code>dddd</code> द्वारा निर्दिष्ट गरिएको युनिकोड क्यारेक्टर मिलाउनुहोस्</td>
 </tr>
 </tbody>
 </table>
-<p>| &quot;| न्यूलाइन वा टर्मिनेटर बाहेक एकल वर्णसँग मिलाउनुहोस् |
-| <code>\w</code>          | Match a word character (alphanumeric character <code>[a-zA-Z0–9_]</code>)   |</p>
-<p>| <code>\ w</code> | एक शब्द चरित्र (अल्फान्यूमेरिक चरित्र] सँग मिलाउनुहोस् [A-za-z0-9<em>_] |
-| <code>\W</code>          | Match a non word character (same as `[^a-zA-Z0–9</em>]`)             |</p>
-<p>| <code>\ W</code> | एक गैर शब्द चरित्रसँग मिलाउनुहोस् (<code>A-za-z0-9_]] |
-|</code>\d<code>| Match any digit character( same as</code>[0-9]`)                      |</p>
-<p>| <code>\ d</code> | कुनै पनि अंक क्यारेक्टर मिलाउनुहोस् (0-9] <code>) |
-|</code>\D`          | Match any non digiti character                                   |</p>
-<p>| <code>\ D</code> | कुनै पनि गैर अंक चरित्र मिलाउनुहोस्
-| <code>\s</code>          | Match a whitespace character (spaces, tabs etc)                  |</p>
-<p>| <code>` s</code> | एक whitespace चरित्र (रिक्त स्थान, ट्याबहरू आदि) |
-| <code>\S</code>          | Match a non whitespace character                                 |</p>
-<p>| <code>` S</code> | एक गैर ह्वाइटस्पेस चरित्रसँग मिलाउनुहोस् |
-| <code>\b</code>          | Match at the begining / end of a word                            |</p>
-<p>| <code>\ b</code> | एक शब्दको सुरू / अन्तमा मिलाउनुहोस् |
-| <code>\B</code>          | Match but not at the begining / end of a word                    |</p>
-<p>| <code>\ B</code> | खेल तर एक शब्दको सुरू / अन्तमा होईन |
-| <code>\0</code>          | Match a <code>NULL</code> character                                         |</p>
-<p>| <code>` 0</code> | एक <code>nuln</code> craights मिलान गर्नुहोस्
-|               | Match a new line character                                       |</p>
-<p>| | नयाँ लाइन चरित्रसँग मिलाउनुहोस्
-| <code>\f</code>          | Match a form feed character                                      |</p>
-<p>| <code>\ f</code> | फारम फिचर फिचर मिलाउनुहोस्
-|               | Match a carriage return character                                |</p>
-<p>| | क्यारिज रिटर्न चरित्रसँग मिलाउनुहोस्
-|               | Match a tab character                                            |</p>
-<p>| | ट्याब चरित्र मिलाउनुहोस्
-| <code>\v</code>          | Match a tab vertical character                                   |</p>
-<p>| <code>\ v</code> | ट्याब ठाडो चरित्रसँग मिलाउनुहोस्
-| <code>\xxx</code>        | Match a character specified by an octal number <code>xxx</code>             |</p>
-<p>| <code>x xxx</code> | एक चरित्रलाई असीएल नम्बर <code>XXX</code> |
-| <code>\xdd</code>        | Match a character specified by a hexadecimal number <code>dd</code>         |</p>
-<p>| <code>\ XDN</code> | एक चरित्रसँग मिलेर एक हेक्साडेसिमल नम्बर द्वारा निर्दिष्ट गर्नुहोस् <code>DD</code> |
-| <code>\udddd</code>      | Match Unicode character specified by a hexadecimal number <code>dddd</code> |</p>
-<p>| <code>\ udddrd</code> | एक हेक्साडेसिमल संख्या <code>DDDD</code> |</p>
 <p>Properties and methods supported by RegEx are listed below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>constructor</code></td>
+<td>Returns function that created RegExp object&apos;s protype</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td>Checks if the <code>g</code> modifier is set</td>
+</tr>
+<tr>
+<td><code>ignoreCase</code></td>
+<td>Checksi if the <code>i</code> modifier is set</td>
+</tr>
+<tr>
+<td><code>lastIndex</code></td>
+<td>Specifies the index at which to start the next match</td>
+</tr>
+<tr>
+<td><code>multiline</code></td>
+<td>Checksi if the m modifier is set</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>Returns the text of the sttring</td>
+</tr>
+<tr>
+<td><code>exec()</code></td>
+<td>Test for the match and returns the first match, if no match then it returns <code>null</code></td>
+</tr>
+<tr>
+<td><code>test()</code></td>
+<td>Test for the match and returns the <code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Returns the string value of the regular exression</td>
+</tr>
+</tbody>
+</table>
 <p>सम्पत्ती र विधिहरू रेजेक्स द्वारा समर्थित विधिहरू तल सूचीबद्ध छन्।</p>
-<p>| Name          | Description                                                                        |</p>
 <table>
 <thead>
 <tr>
@@ -1528,32 +1685,47 @@
 <tbody>
 <tr>
 <td><code>constructor</code></td>
-<td>Returns function that created RegExp object&apos;s protype</td>
+<td>रेगएक्सप वस्तुको प्रोटाइप सिर्जना गर्ने प्रकार्य फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td><code>g</code> परिमार्जक सेट गरिएको छ कि छैन जाँच गर्दछ</td>
+</tr>
+<tr>
+<td><code>ignoreCase</code></td>
+<td><code>i</code> परिमार्जक सेट गरिएको छ कि छैन जाँच गर्दछ</td>
+</tr>
+<tr>
+<td><code>lastIndex</code></td>
+<td>अर्को मिलान सुरु गर्ने अनुक्रमणिका निर्दिष्ट गर्दछ</td>
+</tr>
+<tr>
+<td><code>multiline</code></td>
+<td>यदि <code>m</code> परिमार्जक सेट गरिएको छ भने जाँच गर्दछ</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>स्ट्रिङको पाठ फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>exec()</code></td>
+<td>म्याचका लागि टेस्ट गर्नुहोस् र पहिलो म्याच फर्काउँछ, यदि म्याच भएन भने यसले <code>शून्य (null)</code> फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>test()</code></td>
+<td>म्याचको लागि परीक्षण गर्नुहोस् र <code>सत्य</code> वा <code>गलत</code> फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>नियमित एक्स्रेसनको स्ट्रिङ मान फर्काउँछ</td>
 </tr>
 </tbody>
 </table>
-<p>| <code>निर्माता</code> | रिसेन्स प्रकार्य जसले REGEXP वस्तुको प्रोटेप सिर्जना गर्यो
-| <code>global</code>      | Checks if the <code>g</code> modifier is set                                                  |</p>
-<p>| <code>ग्लोबल &apos;| जाँच गर्नुहोस् यदि</code>g<code>परिमार्जनकर्ता सेट गरिएको छ
-|</code>ignoreCase<code>| Checksi if the</code>i` modifier is set                                                 |</p>
-<p>| <code>उपेक्षा गर्नुहोस् चेकसी यदि</code>I<code>i</code> परिमार्जनकर्ता सेट गरिएको छ |
-| <code>lastIndex</code>   | Specifies the index at which to start the next match                               |</p>
-<p>| <code>sllinderex</code> | अर्को खेल सुरू गर्न अनुक्रमणिका निर्दिष्ट गर्दछ
-| <code>multiline</code>   | Checksi if the m modifier is set                                                   |</p>
-<p>| <code>बहुनिइनरिन | चेकसी यदि M विडयरिटर सेट गरिएको छ भने |
-|</code>source`      | Returns the text of the sttring                                                    |</p>
-<p>| <code>स्रोत | स्ट्रि of को पाठ फर्काउँछ |
-|</code>exec()<code>| Test for the match and returns the first match, if no match then it returns</code>null` |</p>
-<p>| <code>कार्यान्वयन () | खेलको लागि परीक्षण गर्नुहोस् र पहिलो खेल फर्काउँछ, यदि कुनै मिलान छैन भने यसले</code>nuln<code>| फिर्ता गर्दछ
-|</code>test()<code>| Test for the match and returns the</code>true<code>or</code>false`                               |</p>
-<p>| <code>परीक्षण () | खेलको लागि परीक्षण गर्नुहोस् र</code>सही &apos;<code>सही वा</code>झूटा फिर्ता
-| <code>toString()</code>  | Returns the string value of the regular exression                                  |</p>
-<p>| `tosting () | नियमित अभिव्यक्ति को स्ट्रिंग मान फर्काउँछ |</p>
 <p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>A <code>complie()</code> method complies the regular expression and is deprecated.</p>
-<p>एक <code>cariey ()</code> अध्याय नियमित अभिव्यक्ति को लागी क्रोधित छ र अवमूल्यन छ।</p>
+<p>एक <code>complie()</code> विधि नियमित अभिव्यक्ति को अनुपालन गर्दछ र अवमूल्यन गरिएको छ।</p>
 </div></div><p></p>
 <p>Some examples of regular expressions are shown here.</p>
-<p>नियमित अभिव्यक्तिहरूको केही उदाहरणहरू यहाँ देखाइन्छ।</p>
+<p>नियमित अभिव्यक्तिका केही उदाहरणहरू यहाँ देखाइएको छ।</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = <span class="hljs-string">&quot;The best things in life are free&quot;</span>;
 <span class="hljs-keyword">let</span> result = <span class="hljs-regexp">/e/</span>.exec(text); <span class="hljs-comment">// looks for a match  of e in a string</span>
 <span class="hljs-comment">// result: e</span>
@@ -1611,7 +1783,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"नियमित अभिव्यक्ति","level":"1.13","depth":1,"next":{"title":"मोड्युलहरू","level":"1.14","depth":1,"path":"modules.md","ref":"modules.md","articles":[]},"previous":{"title":"प्रयास ... क्याच ... अन्तमा","level":"1.12.1","depth":2,"path":"error-handling/try...catch...finally.md","ref":"error-handling/try...catch...finally.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"regular-expression.md","mtime":"2023-05-05T10:46:19.457Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-05T11:21:37.853Z"},"basePath":".","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"नियमित अभिव्यक्ति","level":"1.13","depth":1,"next":{"title":"मोड्युलहरू","level":"1.14","depth":1,"path":"modules.md","ref":"modules.md","articles":[]},"previous":{"title":"प्रयास ... क्याच ... अन्तमा","level":"1.12.1","depth":2,"path":"error-handling/try...catch...finally.md","ref":"error-handling/try...catch...finally.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"regular-expression.md","mtime":"2023-05-06T04:22:46.888Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":".","book":{"language":"np"}});
         });
     </script>
 </div>

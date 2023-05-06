@@ -1408,8 +1408,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="json">JSON</h1>
-<p><strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (JSON) is a text-based format for storing and transporting data.  The Javascript Objects can be easily converted into JSON and vice versa.  For example.</p>
-<p><strong> j </strong> अैनित <strong> स्क्रिप्ट </strong> वस्तु ** संकेत (Jonste) तानियो र डाटा ढुवानीका लागि पाठ-आधारित ढाँचा हो। जाभास्क्रिप्ट वस्तुहरू सजिलैसँग JOSS मा रूपान्तरण गर्न सकिन्छ र यसको विपरित। उदाहरण को लागी।</p>
+<p><strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (JSON) is a text-based format for storing and transporting data.  The Javascript Objects can be easily converted into JSON and vice versa.  For example:</p>
+<p>जाभास्क्रिप्ट वस्तु नोटेशन (जेएसओएन) डेटा भण्डारण र परिवहनको लागि पाठ-आधारित ढाँचा हो। जाभास्क्रिप्ट वस्तुहरू सजिलैसँग जेएसओएनमा रूपान्तरण गर्न सकिन्छ र यसको विपरीत पनि। उदाहरणका लागि:</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//  a JavaScript object</span>
 <span class="hljs-keyword">let</span> myObj = { <span class="hljs-attr">name</span>:<span class="hljs-string">&quot;Ryan&quot;</span>, <span class="hljs-attr">age</span>:<span class="hljs-number">30</span>, <span class="hljs-attr">city</span>:<span class="hljs-string">&quot;Austin&quot;</span> };
 
@@ -1424,14 +1424,13 @@
 
 <span class="hljs-comment">// Result: {name: &apos;Ryan&apos;, age: 30, city: &apos;Austin&apos;}</span>
 </code></pre>
-<p><code>stringify</code> and  <code>parse</code> are the two methods supported by JSON.</p>
-<p><code>` र</code>पार्सनको JOSS द्वारा समर्थित दुई विधिहरू हुन्।</p>
-<p>| Method        | Description                                            |</p>
+<p><code>stringify</code> and  <code>parse</code> are the two methods supported by JSON.
+&apos;स्ट्रिङिफाई&apos; र &apos;पार्स&apos; जेएसओएनद्वारा समर्थित दुई विधिहरू हुन्।</p>
 <table>
 <thead>
 <tr>
-<th>विद्युतन</th>
-<th>वर्णन</th>
+<th>Method</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1439,29 +1438,42 @@
 <td><code>parse()</code></td>
 <td>Returns  JavaScript object from the parsed JSON string</td>
 </tr>
+<tr>
+<td><code>stringify()</code></td>
+<td>Returns JSON string from JavaScript Object</td>
+</tr>
 </tbody>
 </table>
-<p>| <code>पार्स () | पार्सस्क्रिप्ट वस्तुलाई पार्सस्क्रिप्ट वस्तु फर्काउँछ
-|</code>stringify()` | Returns JSON string from JavaScript Object             |</p>
-<p>| `स्ट्रिंग () | जाभास्क्रिप्ट वस्तुबाट JSSS स्ट्रि stresses फर्काउँछ</p>
-<p> The following data types are supported by JSON.</p>
-<p>&amp; # X20; निम्न डाटा प्रकारहरू JSON द्वारा समर्थित छन्।</p>
+<table>
+<thead>
+<tr>
+<th>विधि</th>
+<th>वर्णन</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>parse()</code></td>
+<td>पद वर्णन गरिएको जेसन स्ट्रिङबाट जाभास्क्रिप्ट वस्तु फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>stringify()</code></td>
+<td>जाभास्क्रिप्ट वस्तुबाट जेसन स्ट्रिङ फर्काउँछ</td>
+</tr>
+</tbody>
+</table>
+<p>The following data types are supported by JSON.
+निम्न डाटा प्रकारहरू JSON द्वारा समर्थित छन्।</p>
 <ul>
 <li>string</li>
 <li>number</li>
 <li>array</li>
-<li><p>boolean</p>
-</li>
-<li><p>बुलियन</p>
-</li>
-<li><p>object with valid JSON values</p>
-</li>
-<li><p>वैध JOSSOMS को साथ वस्तु</p>
-</li>
+<li>boolean</li>
+<li>object with valid JSON values</li>
 <li><code>null</code></li>
 </ul>
 <p>It can not be <code>function</code>,  <code>date</code> or <code>undefined</code>.</p>
-<p>यो <code>कार्य गर्न सक्नुहुन्न,</code> मिति वा `अपरिभाषितको।</p>
+<p>यो &apos;प्रकार्य&apos;, &apos;मिति&apos; वा &apos;अपरिभाषित&apos; हुन सक्दैन।</p>
 
                                 
                                 </section>
@@ -1505,7 +1517,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON","level":"1.11","depth":1,"next":{"title":"त्रुटि ह्यान्डलिंग","level":"1.12","depth":1,"path":"error-handling/try...-catch.md","ref":"error-handling/try...-catch.md","articles":[{"title":"प्रयास ... क्याच ... अन्तमा","level":"1.12.1","depth":2,"path":"error-handling/try...catch...finally.md","ref":"error-handling/try...catch...finally.md","articles":[]}]},"previous":{"title":"मिति र समय","level":"1.10","depth":1,"path":"date-and-time.md","ref":"date-and-time.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"json.md","mtime":"2023-05-04T23:22:28.553Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-05T11:21:37.853Z"},"basePath":".","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"JSON","level":"1.11","depth":1,"next":{"title":"त्रुटि ह्यान्डलिंग","level":"1.12","depth":1,"path":"error-handling/try...-catch.md","ref":"error-handling/try...-catch.md","articles":[{"title":"प्रयास ... क्याच ... अन्तमा","level":"1.12.1","depth":2,"path":"error-handling/try...catch...finally.md","ref":"error-handling/try...catch...finally.md","articles":[]}]},"previous":{"title":"मिति र समय","level":"1.10","depth":1,"path":"date-and-time.md","ref":"date-and-time.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"json.md","mtime":"2023-05-05T23:40:33.079Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":".","book":{"language":"np"}});
         });
     </script>
 </div>

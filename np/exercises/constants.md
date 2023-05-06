@@ -1,8 +1,8 @@
 # Constants
 
-Constants were introduced in ES6(2015), and use a `const` keyword. Variables that are declared with `const` cannot be reassigned or redeclared.&#x20;
+Constants were introduced in ES6(2015), and use a `const` keyword. Variables that are declared with `const` cannot be reassigned or redeclared.
 
-निर्यात एएसए6 (201 2015) मा प्रस्तुत गरिएको थियो, र एक `contond's कुञ्जी शब्द प्रयोग गर्नुहोस्। भ्यारीएबलहरू जुन `contery '` contory को साथ घोषित हुन्छन्
+स्थिरहरू ईएस ६  (2015) मा प्रस्तुत गरिएको थियो, र `कन्स्ट` कीवर्ड प्रयोग गर्दछ। `कन्स्ट` सँग घोषणा गरिएका भेरिएबलहरू पुन: असाइन गर्न वा पुन: परिभाषित गर्न सकिँदैन।
 
 ### Example:
 
@@ -14,7 +14,7 @@ const VERSION = '1.2';
 
 * [ ] Run the program mentioned below and fix the error that you see in the console. Make sure that the code result is `0.9` when it is fixed in the console.
 
-[[] तल उल्लेखित प्रोग्राम चलाउनुहोस् र त्रुटि ठीक गर्नुहोस् जुन तपाईं कन्सोलमा देख्नुहुन्छ। निश्चित गर्नुहोस् कि कोड परिणाम "0.9``` हो जब यो कन्सोलमा निश्चित हुन्छ।
+* [ ] तल उल्लिखित कार्यक्रम चलाउनुहोस् र तपाईँले कन्सोलमा देख्नुभएको त्रुटि ठीक पार्नुहोस् । निश्चित गर्नुहोस् कि कोड परिणाम `०.९` हो जब यो कन्सोलमा फिक्स गरिएको छ।
 
 ```javascript
 const VERSION = '0.7';
@@ -26,4 +26,4 @@ console.log(VERSION);
 
 * Visit the  [Variables](../basics/variables.md) chapter for more info about const and also look for "_TypeError assignment to constant variable_" in search engines to learn a fix.&#x20;
 
-* [भेरिएबलहरू] हेर्नुहोस् [..-Backics / भ्यारीएबल.m M. (_ बुद्धिमर्धर रिसेटि in मा "+ # X220;
+* कन्स्टको बारेमा थप जानकारीको लागि [भेरिएबल्स](../basics/variables.md) अध्यायमा जानुहोस् र फिक्स सिक्नका लागि खोजी इन्जिनमा "स्थिर चरमा टाइपइरर असाइनमेन्ट" पनि हेर्नुहोस्।

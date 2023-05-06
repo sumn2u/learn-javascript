@@ -29,7 +29,7 @@ console.log(originalJSON);
 
 
 
-&#x20;The following data types are supported by JSON.
+The following data types are supported by JSON.
 
 * string
 * number

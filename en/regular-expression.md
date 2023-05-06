@@ -10,7 +10,7 @@ new RegExp(pattern[, flags]);
 /pattern/modifiers
 ```
 
-The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method.
+The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method is as follows.
 
 ```javascript
 let re1 = new RegExp("xyz"); 
@@ -51,10 +51,10 @@ _Metacharacters_ are special character that has special meaning in the regular e
 | `\b`          | Match at the begining / end of a word                            |
 | `\B`          | Match but not at the begining / end of a word                    |
 | `\0`          | Match a `NULL` character                                         |
-|               | Match a new line character                                       |
+|  `\n`             | Match a new line character                                       |
 | `\f`          | Match a form feed character                                      |
-|               | Match a carriage return character                                |
-|               | Match a tab character                                            |
+|   `\r`            | Match a carriage return character                                |
+|    `\t`           | Match a tab character                                            |
 | `\v`          | Match a tab vertical character                                   |
 | `\xxx`        | Match a character specified by an octal number `xxx`             |
 | `\xdd`        | Match a character specified by a hexadecimal number `dd`         |
@@ -66,10 +66,10 @@ Properties and methods supported by RegEx are listed below.
 | ------------- | ---------------------------------------------------------------------------------- |
 | `constructor` | Returns function that created RegExp object's protype                              |
 | `global`      | Checks if the `g` modifier is set                                                  |
-| `ignoreCase`  | Checksi if the `i` modifier is set                                                 |
+| `ignoreCase`  | Checks if the `i` modifier is set                                                 |
 | `lastIndex`   | Specifies the index at which to start the next match                               |
-| `multiline`   | Checksi if the m modifier is set                                                   |
-| `source`      | Returns the text of the sttring                                                    |
+| `multiline`   | Checks if the m modifier is set                                                   |
+| `source`      | Returns the text of the string                                                    |
 | `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
 | `test()`      | Test for the match and returns the `true` or `false`                               |
 | `toString()`  | Returns the string value of the regular exression                                  |
