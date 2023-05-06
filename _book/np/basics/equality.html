@@ -1410,9 +1410,9 @@
                                 <h1 id="equality">Equality</h1>
 <h1 id="समानता">समानता</h1>
 <p>Programmers frequently need to determine the equality of variables in relation to other variables. This is done using an equality operator.</p>
-<p>प्रोग्रामरहरू प्राय: अन्य भ्यारीएबलहरूको सम्बन्धमा भ्यारीएबलको समानता निर्धारण गर्नुपर्दछ। यो समानता अपरेटर प्रयोग गरेर गरिन्छ।</p>
+<p>प्रोग्रामरहरूमा भ्यारीएबलहरूको सम्बन्धमा समानता निर्धारण गर्नुपर्दछ। यो समानता निर्धारण गर्न समानता अपरेटर प्रयोग गरेर गरिन्छ।</p>
 <p>The most basic equality operator is the <code>==</code> operator. This operator does everything it can to determine if two variables are equal, even if they are not of the same type.</p>
-<p>सब भन्दा आधारभूत समानता अपरेटर <code>==</code> अपरेटर हो। यस अपरेटरले यो निर्धारण गर्न सक्दछ कि दुई भ्यारीएबल बराबर छ कि छैन, यदि तिनीहरू समान प्रकारको छैनन् भने पनि।</p>
+<p>सब भन्दा आधारभूत अपरेटर समानता अपरेटर (<code>==</code>) हो। यस अपरेटरले यो निर्धारण गर्दछ कि दुई भ्यारीएबल बराबर छ कि छैन।</p>
 <p>For example, assume:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> foo = <span class="hljs-number">42</span>;
 <span class="hljs-keyword">let</span> bar = <span class="hljs-number">42</span>;
@@ -1420,9 +1420,9 @@
 <span class="hljs-keyword">let</span> qux = <span class="hljs-string">&quot;life&quot;</span>;
 </code></pre>
 <p><code>foo == bar</code> will evaluate to <code>true</code> and <code>baz == qux</code> will evaluate to <code>false</code>, as one would expect. However, <code>foo == baz</code> will <em>also</em> evaluate to <code>true</code> despite <code>foo</code> and <code>baz</code> being different types. Behind the scenes the <code>==</code> equality operator attempts to force its operands to the same type before determining their equality. This is in contrast to the <code>===</code> equality operator.</p>
-<p><code>foo == बार</code> को मूल्यांकन गर्न<code>साँचो &quot;=</code> <code>Qux == क्विक्स</code> को लागी<code>झूटा को मूल्यांकन हुनेछ, एकले अपेक्षा गर्दछ। जे होस्,</code>foo == बाज<code>हुनेछ _ पूल_</code> foo<code>को बावजुद</code>foo<code>र</code> Baz &apos;बिभिन्न प्रकारका। दृश्यहरूको पछाडि <code>==</code> E<code>EXITION अपरेटरले आफ्नो समानता निर्धारण गर्नु अघि यसको प्रकारलाई अपरेट गर्दछ। यो</code>===` `` णी संदिग्व अपरेटर को विपरित छ।</p>
+<p><code>foo == bar</code> को मूल्यांकन गर्दा <code>साँचो</code> र <code>baz == qux</code> को लागी <code>झूटा</code> को मूल्यांकन हुनेछ।<code>foo</code> र <code>Baz</code>बिभिन्न प्रकारका बावजुद <code>foo == baz</code>को मूल्यांकन <code>साँचो</code> हुनेछ। दृश्यहरूको पछाडि <code>==</code> समानता अपरेटरले आफ्नो समानता निर्धारण गर्नु अघि यसको प्रकारलाई अपरेट गर्दछ। यो <code>===</code> समानता अपरेटरको विपरित हो।</p>
 <p>The <code>===</code> equality operator determines that two variables are equal if they are of the same type <em>and</em> have the same value. With the same assumptions as before, this means that <code>foo === bar</code> will still evaluate to <code>true</code>, but <code>foo === baz</code> will now evaluate to <code>false</code>. <code>baz === qux</code> will still evaluate to <code>false</code>.</p>
-<p><code>=== k</code> ईन्टालिटी अपरेटरले निर्धारण गर्दछ कि दुई भ्यारीएबल बराबर छन् यदि तिनीहरू समान प्रकारका छन् _ र on ्गको समान मान छ। यसैको रूपमा उही धारणाको साथ यसको मतलब यो हो कि <code>FOO === बार&quot; अझै</code>सही छ, तर<code>Foo = Boz</code>e अब <code>LIN</code> को लागी। <code>Baz === क्विक्स अझै अझै मूल्या act ्कन गर्नुहोस्</code> झूटो।</p>
+<p> इकुअलिटी अपरेटरले (<code>===</code>)  दुई भ्यारीएबल बराबर र समान प्रकारका छन् भन्ने निर्धारण गर्दछ ।</p>
 <p></p><div class="exercise">
 	<div class="header">Exercise</div>
 	<div class="alert alert-success">
@@ -1437,22 +1437,18 @@
 	
 Use the `==` and `===` operator to compare the values of `str1` and `str2`.
 
-`==` `` ==== `` अपरेटरलाई `str`` र` stron``` को तुलना गर्न प्रयोग गर्नुहोस्।
+ समानता अपरेटर (`==` र `===`) प्रयोग गरेर `str` र `str2` को तुलना गर्न प्रयोग गर्नुहोस्।
 
 
 	</div>
-	<div class="editor" style="height: 380px">let str1 = &quot;hello&quot;;
+	<div class="editor" style="height: 220px">let str1 = &quot;hello&quot;;
 let str2 = &quot;HELLO&quot;;
 let bool1 = true;
 let bool2 = 1;
 // compare using ==
-
-// प्रयोग गरेर == प्रयोग गर्नुहोस्
 let stringResult1 =
 let boolResult1 =
 // compare using ===
-
-// प्रयोग गरेर === तुलना गर्नुहोस्
 let stringResult1 =
 let boolResult2 =</div>
 
@@ -1461,23 +1457,13 @@ let str2 = &quot;HELLO&quot;;
 let bool1 = true;
 let bool2 = 1;
 // compare using ==
-
-// प्रयोग गरेर == प्रयोग गर्नुहोस्
 let stringResult1 = str1 == str2 // false
 let boolResult1 =  bool1 == bool2 // true
 
-बोईसस्लोज 1 = BOOL1 == BOOL2 // सहि गरौं
-
 // compare using ===
-
-// प्रयोग गरेर === तुलना गर्नुहोस्
 let stringResult2 = str1 === str2 // false
-let boolResult2 = bool1 === bool2 // false
-
-बोईसौंसन 2 = BOOL1 === BOOL2 // झूटा</pre>
-	<pre class="hidden code-validation">assert(stringResult1 === false &amp;&amp; stringResult2 === false &amp;&amp; boolResult1 ==true &amp;&amp;  boolResult2 === false );
-
-जोड (स्ट्रिरेसंडल 1 === Deilres &amp; &amp; stresse र &amp; Bulressuld1 == BROWRSOULIULIONE1 ===== mirsullult);</pre>
+let boolResult2 = bool1 === bool2 // false</pre>
+	<pre class="hidden code-validation">assert(stringResult1 === false &amp;&amp; stringResult2 === false &amp;&amp; boolResult1 ==true &amp;&amp;  boolResult2 === false );</pre>
 	
 
 	<div class="buttons">
@@ -1528,7 +1514,7 @@ let boolResult2 = bool1 === bool2 // false
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"समानता","level":"1.2.4","depth":2,"next":{"title":"नम्बरहरू","level":"1.3","depth":1,"path":"numbers/README.md","ref":"numbers/README.md","articles":[{"title":"गणित","level":"1.3.1","depth":2,"path":"numbers/math.md","ref":"numbers/math.md","articles":[]},{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]}]},"previous":{"title":"प्रकारहरू","level":"1.2.3","depth":2,"path":"basics/types.md","ref":"basics/types.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/equality.md","mtime":"2023-05-04T23:33:21.889Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-05T11:21:37.853Z"},"basePath":"..","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"समानता","level":"1.2.4","depth":2,"next":{"title":"नम्बरहरू","level":"1.3","depth":1,"path":"numbers/README.md","ref":"numbers/README.md","articles":[{"title":"गणित","level":"1.3.1","depth":2,"path":"numbers/math.md","ref":"numbers/math.md","articles":[]},{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]}]},"previous":{"title":"प्रकारहरू","level":"1.2.3","depth":2,"path":"basics/types.md","ref":"basics/types.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"basics/equality.md","mtime":"2023-05-05T20:26:09.986Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":"..","book":{"language":"np"}});
         });
     </script>
 </div>

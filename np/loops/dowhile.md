@@ -1,10 +1,11 @@
 # Do...While
 
-# गर्नुहोस् ... जबकि
+# डु ... वहाइल
 
 The do...while statement creates a loop that executes a specified statement until the test condition evaluates to be false. The condition is evaluated after executing the statement. The syntax for do... while is
 
-के गर्नु ... जबकि कथन एक लुप पैदा गर्दछ कि एक निर्दिष्ट कथन कार्यान्वयन नभएसम्म एक निर्दिष्ट कथन कार्यान्वयन गर्दछ। यो अवस्था कथन कार्यान्वयन गरेपछि मूल्या .्कन गरिएको छ। Anttax गर्न को लागी ... जबकि छ
+डु ... वहाइल कथनले लूप सिर्जना गर्दछ । यसले तबसम्म निर्दिष्ट कथन कार्यान्वयन गर्दछ जबसम्म परीक्षण अवस्था गलत हुन को लागी मूल्यांकन गर्दैन। बयान कार्यान्वयन पछि अवस्था मूल्यांकन गरिन्छ।
+
 
 ```javascript
 do {
@@ -14,7 +15,7 @@ do {
 
 Lets for example see how to print numbers less than 10 using `do...while` loop:
 
-उदाहरणका लागि हेर्नुहोस् कसरी नम्बर प्रिन्ट गर्ने 10 भन्दा कम 2 भन्दा कम स्पिन गर्नुहोस् `गर्नुहोस् ... जबकि LOPOP:
+उदाहरणका लागि हेरौं कसरी १० भन्दा कम नम्बरहरू मुद्रण गर्ने ।
 
 ```javascript
 var i = 0;

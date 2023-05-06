@@ -1,8 +1,3 @@
----
-layout: editorial
-
-लेआउट: सम्पादकीय---
-
 # Basics
 
 In this first chapter, we'll learn the basics of programming and the Javascript language.

@@ -1410,9 +1410,9 @@
                                 <h1 id="date-and-time">Date and Time</h1>
 <h1 id="मिति-र-समय">मिति र समय</h1>
 <p>The <code>date</code> object stores date and time and provides methods for managing it. Date objects are static and use a browser&apos;s default timezone to display the date as a full-text string.</p>
-<p>&apos;मिति मिति वस्तु स्टोरहरू मिति र समय र यसको प्रबन्धका लागि विधिहरू प्रदान गर्दछ। मिति वस्तुहरू स्थिर छन् र एक पूर्ण-पाठ स्ट्रिंगको रूपमा मिति प्रदर्शन गर्न ब्राउजरको पूर्वनिर्धारित समयजोन प्रयोग गर्दछ।</p>
+<p><code>मिति</code> वस्तुले मिति र समय भण्डारण गर्दछ र यसलाई व्यवस्थापन गर्ने विधिहरू प्रदान गर्दछ। मिति वस्तुहरू स्थिर हुन्छन् र पूर्ण-पाठ स्ट्रिङको रूपमा मिति प्रदर्शन गर्न ब्राउजरको पूर्वनिर्धारित समयक्षेत्र प्रयोग गर्नुहोस् ।</p>
 <p>To create  <code>date</code> we use a <code>new Date()</code> constructor and can be created in the following ways.</p>
-<p>&apos;मिति&apos; सिर्जना गर्न हामी एक <code>नयाँ मिति ()</code> कन्स्ट्रक्टर प्रयोग गर्न र निम्न तरिकाहरूमा सिर्जना गर्न सकिन्छ।</p>
+<p><code>मिति</code> सिर्जना गर्न हामी <code>new Date()</code> कन्स्ट्रक्टर प्रयोग गर्दछौं र निम्न तरिकामा सिर्जना गर्न सकिन्छ।</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()
 <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(date string)
 <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(year,month)
@@ -1424,11 +1424,212 @@
 <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(milliseconds)
 </code></pre>
 <p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Months can be specified from <code>0</code> to <code>11</code>, more than that will result in an overflow to the next year.</p>
-<p>महिना <code>0</code> बाट<code>11</code> बाट निर्दिष्ट गर्न सकिन्छ <code>11</code>, अर्को वर्षमा ओभरफ्लो हुन्छ।</p>
+<p>महिनाहरू <code>०</code> देखि <code>११</code> सम्म निर्दिष्ट गर्न सकिन्छ, त्यो भन्दा बढी अर्को वर्षको लागि ओभरफ्लोमा परिणत हुनेछ।</p>
 </div></div><p></p>
 <p>Methods and properties supported by date  are described below:</p>
 <p>विधिहरू र मितिहरू द्वारा समर्थित विधिहरू तल वर्णन गरिएको छ:</p>
-<p>| Name                   | Description                                                                                     |</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>constructor</code></td>
+<td>Returns function that created the Date object&apos;s prototype</td>
+</tr>
+<tr>
+<td><code>getDate()</code></td>
+<td>Returns the day (1-31) of a month</td>
+</tr>
+<tr>
+<td><code>getDay()</code></td>
+<td>Returns the day (0-6) of a week</td>
+</tr>
+<tr>
+<td><code>getFullYear()</code></td>
+<td>Returns the year (4 digits)</td>
+</tr>
+<tr>
+<td><code>getHours()</code></td>
+<td>Returns the hour (0-23)</td>
+</tr>
+<tr>
+<td><code>getMilliseconds()</code></td>
+<td>Returns the milliseconds(0-999)</td>
+</tr>
+<tr>
+<td><code>getMinutes()</code></td>
+<td>Returns the minutes(0-59)</td>
+</tr>
+<tr>
+<td><code>getMonth()</code></td>
+<td>Returns the month(0-11)</td>
+</tr>
+<tr>
+<td><code>getSeconds()</code></td>
+<td>Returns the seconds(0-59)</td>
+</tr>
+<tr>
+<td><code>getTime()</code></td>
+<td>Returns the numeric value of a specified date in milliseconds since midnight Jan 1 1970</td>
+</tr>
+<tr>
+<td><code>getTimezoneOffset()</code></td>
+<td>Returns timezone offset in minutes</td>
+</tr>
+<tr>
+<td><code>getUTCDate()</code></td>
+<td>Returns the day (1-31) of a month according to universal time</td>
+</tr>
+<tr>
+<td><code>getUTCDay()</code></td>
+<td>Returns the day (0-6) according to universal time</td>
+</tr>
+<tr>
+<td><code>getUTCFullYear()</code></td>
+<td>Returns the year(4-digits) according to universal time</td>
+</tr>
+<tr>
+<td><code>getUTCHours()</code></td>
+<td>Returns the hours(0-23) according to universal time</td>
+</tr>
+<tr>
+<td><code>getUTCMilliseconds()</code></td>
+<td>Returns the milliseconds(0-999) according to  universal time</td>
+</tr>
+<tr>
+<td><code>getUTCMinutes()</code></td>
+<td>Returns the minutes(0-59) according to  universal time</td>
+</tr>
+<tr>
+<td><code>getUTCMonth()</code></td>
+<td>Returns the month (0-11) according to  universal time</td>
+</tr>
+<tr>
+<td><code>getUTCSeconds()</code></td>
+<td>Returns the seconds (0-59) according to universal time</td>
+</tr>
+<tr>
+<td><code>now()</code></td>
+<td>Returns the numeric value in milliseconds since midnight Jan 1, 1970</td>
+</tr>
+<tr>
+<td><code>parse()</code></td>
+<td>Parses the date string and returns the numeric value in milliseconds since midnight Jan 1, 1970</td>
+</tr>
+<tr>
+<td><code>prototype</code></td>
+<td>Allows to add properties</td>
+</tr>
+<tr>
+<td><code>setDate()</code></td>
+<td>Sets the day of a month</td>
+</tr>
+<tr>
+<td><code>setFullYear()</code></td>
+<td>Sets the year</td>
+</tr>
+<tr>
+<td><code>setHours()</code></td>
+<td>Sets the hour</td>
+</tr>
+<tr>
+<td><code>setMilliseconds()</code></td>
+<td>Sets the milliseconds</td>
+</tr>
+<tr>
+<td><code>setMinutes()</code></td>
+<td>Sets the minutes</td>
+</tr>
+<tr>
+<td><code>setMonth()</code></td>
+<td>Sets the month</td>
+</tr>
+<tr>
+<td><code>setSeconds()</code></td>
+<td>Sets the second</td>
+</tr>
+<tr>
+<td><code>setTime()</code></td>
+<td>Sets the time</td>
+</tr>
+<tr>
+<td><code>setUTCDate()</code></td>
+<td>Sets the day of the month according to universal time</td>
+</tr>
+<tr>
+<td><code>setUTCFullYear()</code></td>
+<td>Sets the year according to the universal time</td>
+</tr>
+<tr>
+<td><code>setUTCHours()</code></td>
+<td>Sets the hour according to the universal time</td>
+</tr>
+<tr>
+<td><code>setUTCMilliseconds()</code></td>
+<td>Sets the milliseconds according to the universal time</td>
+</tr>
+<tr>
+<td><code>setUTCMinutes()</code></td>
+<td>Sets the minutes according to the universal time</td>
+</tr>
+<tr>
+<td><code>setUTCMonth()</code></td>
+<td>Sets the month according to the universal time</td>
+</tr>
+<tr>
+<td><code>setUTCSeconds()</code></td>
+<td>Sets the second according to the universal time</td>
+</tr>
+<tr>
+<td><code>toDateString()</code></td>
+<td>Returns the date in human readable format</td>
+</tr>
+<tr>
+<td><code>toISOString()</code></td>
+<td>Returns the date according to the ISO format</td>
+</tr>
+<tr>
+<td><code>toJSON()</code></td>
+<td>Returns the date in a string, formatted as a JSON date</td>
+</tr>
+<tr>
+<td><code>toLocaleDateString()</code></td>
+<td>Returns the date in a string using locale conventions</td>
+</tr>
+<tr>
+<td><code>toLocaleTimeString()</code></td>
+<td>Returns the time in a string using locale conventions</td>
+</tr>
+<tr>
+<td><code>toLocaleString()</code></td>
+<td>Returns date using locale conventions</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Returns string representation of the specified date</td>
+</tr>
+<tr>
+<td><code>toTimeString()</code></td>
+<td>Returns the <em>time</em>  portion into a human-readable  format</td>
+</tr>
+<tr>
+<td><code>toUTCString()</code></td>
+<td>Converts date into a string according to the universal format</td>
+</tr>
+<tr>
+<td><code>toUTC()</code></td>
+<td>Returns the milliseconds since  midnight Jan 1 1970 in UTC format</td>
+</tr>
+<tr>
+<td><code>valueOf()</code></td>
+<td>Returns the primitive value of <code>Date</code></td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -1439,104 +1640,198 @@
 <tbody>
 <tr>
 <td><code>constructor</code></td>
-<td>Returns function that created the Date object&apos;s prototype</td>
+<td>प्रकार्य फिर्ता जुन मिति वस्तुको प्रोटोटाइप सिर्जना गर्दछ</td>
+</tr>
+<tr>
+<td><code>getDate ()</code></td>
+<td>एक महिनाको दिन (१-३१) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getDay()</code></td>
+<td>हप्ताको दिन (०-६) हप्तामा फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getFullYear()</code></td>
+<td>वर्ष फर्काउँछ (अंकमा )</td>
+</tr>
+<tr>
+<td><code>getHours()</code></td>
+<td>घण्टा फर्काउँछ (०-२३)</td>
+</tr>
+<tr>
+<td><code>getMilliseconds()</code></td>
+<td>मिलिसेकेन्ड्स फर्काउँछ (०-९९९)</td>
+</tr>
+<tr>
+<td><code>getMinutes()</code></td>
+<td>मिनेट फर्काउँछ (०-५९)</td>
+</tr>
+<tr>
+<td><code>getMonth()</code></td>
+<td>महिना (०-११) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getSeconds()</code></td>
+<td>सेकेन्ड फर्काउँछ (०-५९)</td>
+</tr>
+<tr>
+<td><code>getTime()</code></td>
+<td>१ जनवरी १९७० को मध्यरातदेखि मिलिसेकेन्डमा निर्दिष्ट गरिएको मितिको सङ्ख्यात्मक मान फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getTimezoneOffset()</code></td>
+<td>मिनेटमा टाइमजोन अफसेट फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCDate()</code></td>
+<td>विश्वव्यापी समयअनुसार महिनाको दिन (१-३१) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCDay()</code></td>
+<td>युनिभर्सल टाइम अनुसार दिन (०-६) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCFullYear()</code></td>
+<td>सार्वभौमिक समय अनुसार वर्ष (४-अङ्क) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCHours()</code></td>
+<td>विश्वव्यापी समय अनुसार घण्टा (०-२३) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCMilliseconds()</code></td>
+<td>युनिभर्सल टाइम अनुसार मिलिसेकेन्ड(०-९९९) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCMinutes()</code></td>
+<td>युनिभर्सल टाइम अनुसार मिनेट(०-५९) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCMonth()</code></td>
+<td>विश्वव्यापी समयअनुसार महिना (०-११) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>getUTCSeconds()</code></td>
+<td>सार्वभौमिक समय अनुसार सेकेन्ड (०-५९) फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>now()</code></td>
+<td>जनवरी १, १९७० को मध्यरातदेखि मिलिसेकेन्डमा सङ्ख्यात्मक मान फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>parse()</code></td>
+<td>मिति स्ट्रिङ पद वर्णन गर्दछ र जनवरी १, १९७० को मध्यरातदेखि मिलिसेकेन्डमा सङ्ख्यात्मक मान फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>prototype</code></td>
+<td>गुण थप्न अनुमति दिन्छ</td>
+</tr>
+<tr>
+<td><code>setDate()</code></td>
+<td>एक महिनाको दिन सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setFullYear()</code></td>
+<td>वर्ष सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setHours()</code></td>
+<td>घण्टा सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setMilliseconds()</code></td>
+<td>मिलिसेकेन्ड सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setMinutes()</code></td>
+<td>मिनेट सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setMonth()</code></td>
+<td>महिना सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setSeconds()</code></td>
+<td>सेकेन्ड सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setTime()</code></td>
+<td>समय सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCDate()</code></td>
+<td>निभर्सल समय अनुसार महिनाको दिन सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCFullYear()</code></td>
+<td>युनिभर्सल समय अनुसार वर्ष सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCHours()</code></td>
+<td>युनिभर्सल समय अनुसार घण्टा सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCMilliseconds()</code></td>
+<td>युनिभर्सल समय अनुसार मिलिसेकेन्ड सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCMinutes()</code></td>
+<td>विश्वव्यापी समय अनुसार मिनेट सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCMonth()</code></td>
+<td>विश्वव्यापी समय अनुसार महिना सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>setUTCSeconds()</code></td>
+<td>विश्वव्यापी अनुसार सेकेन्ड सेट गर्दछ</td>
+</tr>
+<tr>
+<td><code>toDateString()</code></td>
+<td>मानव पठन योग्य ढाँचामा मिति फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toISOString()</code></td>
+<td>ISO ढाँचा अनुसार मिति फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toJSON()</code></td>
+<td>जेएसओएन मितिको रूपमा ढाँचाबद्ध गरिएको स्ट्रिङमा मिति फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toLocaleDateString()</code></td>
+<td>लोकेल कन्भेन्सन प्रयोग गरेर स्ट्रिङमा मिति फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toLocaleTimeString()</code></td>
+<td>लोकेल कन्भेन्सन प्रयोग गरेर स्ट्रिङमा समय फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toLocaleString()</code></td>
+<td>लोकेल कन्भेन्सन प्रयोग गरेर मिति फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>निर्दिष्ट गरिएको मितिको स्ट्रिङ प्रतिनिधित्व फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toTimeString()</code></td>
+<td>मानव-पठनीय ढाँचामा <em>समय</em> भाग फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>toUTCString()</code></td>
+<td>विश्वव्यापी ढाँचा अनुसार मितिलाई स्ट्रिङमा रूपान्तरण गर्दछ</td>
+</tr>
+<tr>
+<td><code>toUTC()</code></td>
+<td>युटिसी ढाँचामा जनवरी १, १९७० को मध्यरातदेखि मिलिसेकेन्ड फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>valueOf()</code></td>
+<td>&apos;मिति&apos; को आदिम मान फर्काउँछ</td>
 </tr>
 </tbody>
 </table>
-<p>| <code>निर्माता</code> | प्रकार्य फिर्ता जुन मिति वस्तुको प्रोटोटाइप सिर्जना गर्दछ
-| <code>getDate()</code>            | Returns the day (1-31) of a month                                                               |</p>
-<p>| <code>gragdate () | एक महिनाको दिन (1-31) फर्काउँछ
-|</code>getDay()`             | Returns the day (0-6) of a week                                                                 |</p>
-<p>| <code>प्राप्त दिन () | हप्ताको दिन (0--6) हप्तामा फर्काउँछ
-|</code>getFullYear()`        | Returns the year (4 digits)                                                                     |</p>
-<p>| <code>getlylyare () | वर्ष फर्काउँछ (digit अंक) |
-|</code>getHours()`           | Returns the hour (0-23)                                                                         |</p>
-<p>| <code>Ghthies () | घण्टा फर्काउँछ (0-23) |
-|</code>getMilliseconds()`    | Returns the milliseconds(0-999)                                                                 |</p>
-<p>| <code>getmyliliseconds () | मिलिसेकेन्ड्स फर्काउँछ (0-9999)) |
-|</code>getMinutes()`         | Returns the minutes(0-59)                                                                       |</p>
-<p>| <code>goetminute () | मिनेट फर्काउँछ (0--59)) |
-|</code>getMonth()`           | Returns the month(0-11)                                                                         |</p>
-<p>| <code>प्राप्त () | | महिना (0-11) फर्काउँछ
-|</code>getSeconds()`         | Returns the seconds(0-59)                                                                       |</p>
-<p>| <code>geasseconds () | सेकेन्ड फर्काउँछ (0--59)) |
-|</code>getTime()`            | Returns the numeric value of a specified date in milliseconds since midnight Jan 1 1970         |</p>
-<p>| <code>प्राप्त गर्नुहोस् () | | 2 1970 0 को मध्यम 1 1 1970 .0 |
-|</code>getTimezoneOffset()<code>| Returns timezone offset in minutes                                                              |
-|</code>getUTCDate()`         | Returns the day (1-31) of a month according to universal time                                   |</p>
-<p>| <code>greuutcdate () | विश्वव्यापी समय अनुसार एक महिनाको दिन (1-31) फर्काउँछ
-|</code>getUTCDay()`          | Returns the day (0-6) according to universal time                                               |</p>
-<p>| <code>getuutcday () | जीवन उल्टो समय (0-6) फर्काउँछ
-|</code>getUTCFullYear()`     | Returns the year(4-digits) according to universal time                                          |</p>
-<p>| <code>groutcly () | विश्वव्यापी समय अनुसार वर्ष (-अंक) फर्काउँछ
-|</code>getUTCHours()`        | Returns the hours(0-23) according to universal time                                             |</p>
-<p>| <code>gooutchches () | युनिभर्सल-समय अनुसार घण्टा (0-23) फर्काउँछ
-|</code>getUTCMilliseconds()` | Returns the milliseconds(0-999) according to  universal time                                    |</p>
-<p>| <code>greuutcliliseacks () | विश्वव्यापी समय अनुसार मिलिसेकेन्ड (09999) फर्काउँछ
-|</code>getUTCMinutes()`      | Returns the minutes(0-59) according to  universal time                                          |</p>
-<p>| <code>goodcmmminmethte () | युनिभर्सल समयको अनुसार मिनेट (0--59) फर्काउँछ
-|</code>getUTCMonth()`        | Returns the month (0-11) according to  universal time                                           |</p>
-<p>| <code>genuutconth () | विश्वव्यापी समय अनुसार (0-11) फर्काउँछ
-|</code>getUTCSeconds()`      | Returns the seconds (0-59) according to universal time                                          |</p>
-<p>| <code>getuutcsconds () | अन्तरराष्ट्रिय समयको अनुसार सेकेन्ड (0--5) फर्काउँछ
-|</code>now()`                | Returns the numeric value in milliseconds since midnight Jan 1, 1970                            |</p>
-<p>| <code>अब () | जनवरी 1, 1 1970 .0 को दशकदेखि मिलिसेकेन्डमा संख्यात्मक मान फर्काउँछ
-|</code>parse()`              | Parses the date string and returns the numeric value in milliseconds since midnight Jan 1, 1970 |</p>
-<p>| <code>पार्स () | मिति स्ट्रिंगको सामना गर्नुहोस् र मध्येत 2, 1 1970 .0 को मध्यरातबाट मिलिसेकेन्डमा संख्यात्मक मान फर्काउँछ
-|</code>prototype`            | Allows to add properties                                                                        |</p>
-<p>| <code>प्रोटोटाइप</code> | गुणहरू थप्न अनुमति दिन्छ |
-| <code>setDate()</code>            | Sets the day of a month                                                                         |</p>
-<p>| <code>सेट () | एक महिनाको दिन सेट गर्दछ |
-|</code>setFullYear()`        | Sets the year                                                                                   |</p>
-<p>| <code>स्थायी () | | वर्ष सेट गर्दछ |
-|</code>setHours()`           | Sets the hour                                                                                   |</p>
-<p>| <code>सेतास () | समय सेट गर्दछ |
-|</code>setMilliseconds()`    | Sets the milliseconds                                                                           |</p>
-<p>| <code>Semmililieackonds () | मिलीसेकेन्ड सेट गर्दछ
-|</code>setMinutes()`         | Sets the minutes                                                                                |</p>
-<p>| <code>tumminute () | मिनेट सेट गर्दछ |
-|</code>setMonth()`           | Sets the month                                                                                  |</p>
-<p>| <code>वाचमथ () | महिना सेट गर्दछ |
-|</code>setSeconds()`         | Sets the second                                                                                 |</p>
-<p>| <code>` सेटसकेन्ड () | दोस्रो सेट गर्दछ
-|</code>setTime()`            | Sets the time                                                                                   |</p>
-<p>| <code>सेट समय () | समय सेट गर्दछ |
-|</code>setUTCDate()`         | Sets the day of the month according to universal time                                           |</p>
-<p>| <code>सेटुटसीडेट () | युनिभर्सल समय अनुसार महिनाको दिन सेट गर्दछ |
-|</code>setUTCFullYear()`     | Sets the year according to the universal time                                                   |</p>
-<p>| <code>Setutcly () | युनिभर्सल समय अनुसार वर्ष सेट गर्दछ |
-|</code>setUTCHours()`        | Sets the hour according to the universal time                                                   |</p>
-<p>| <code>Setutchches () | युवावस्था विश्वव्यापी समय अनुसार सेट गर्दछ |
-|</code>setUTCMilliseconds()` | Sets the milliseconds according to the universal time                                           |</p>
-<p>| <code>Setutclilieishacks () | युनिभर्सल समय अनुसार मिलिसेकेन्ड सेट गर्दछ |
-|</code>setUTCMinutes()`      | Sets the minutes according to the universal time                                                |</p>
-<p>| <code>Setutcmiminds () | मिनेट विश्वव्यापी समय अनुसार सेट गर्दछ |
-|</code>setUTCMonth()`        | Sets the month according to the universal time                                                  |</p>
-<p>| <code>सफ्टकहान () | महिना विश्वव्यापी समय अनुसार सेट गर्दछ |
-|</code>setUTCSeconds()`      | Sets the second according to the universal time                                                 |</p>
-<p>| <code>Setutcsconds () | विश्वव्यापी अनुसार दोस्रो सेट गर्दछ |
-|</code>toDateString()`       | Returns the date in human readable format                                                       |</p>
-<p>| <code>बच्चा () | मानव पठन योग्य ढाँचामा मिति फर्काउँछ
-|</code>toISOString()`        | Returns the date according to the ISO format                                                    |</p>
-<p>| <code>धोखापरिंग () | ISO ढाँचा अनुसार मिति फर्काउँछ
-|</code>toJSON()`             | Returns the date in a string, formatted as a JSON date                                          |</p>
-<p>| <code>टोजसन () | एक स्ट्रि in मा मिति फर्काउँछ, एक JMSS मिति को रूपमा ढाँचा
-|</code>toLocaleDateString()` | Returns the date in a string using locale conventions                                           |</p>
-<p>| <code>tololledatertresstrestress () | स्थानीय अधिवेशनहरूको प्रयोग गरेर मिति मा मिति फर्काउँछ
-|</code>toLocaleTimeString()` | Returns the time in a string using locale conventions                                           |</p>
-<p>| <code>tolocapletiving () | स्थानीय अधिवेशन प्रयोग गरेर स्ट्रि in मा समय फर्काउँछ
-|</code>toLocaleString()`     | Returns date using locale conventions                                                           |</p>
-<p>| <code>tolocklestring () | स्थानीय अधिवेशन प्रयोग गरेर मिति फर्काउनुहोस् |
-|</code>toString()`           | Returns string representation of the specified date                                             |</p>
-<p>| <code>tosting () | निर्दिष्ट मिति को स्ट्रिंग प्रतिनिधित्व फिर्ता |
-|</code>toTimeString()`       | Returns the <em>time</em>  portion into a human-readable  format                                       |</p>
-<p>| <code>tonimestring () | एक मानव-पठनीय ढाँचामा _ एक भागमा फर्किन्छ
-|</code>toUTCString()`        | Converts date into a string according to the universal format                                   |</p>
-<p>| <code>toutctrestring () | मितिलाई समीकरण ढाँचा अनुसार स्ट्रिंगमा रूपान्तरण गर्दछ
-|</code>toUTC()`              | Returns the milliseconds since  midnight Jan 1 1970 in UTC format                               |</p>
-<p>| <code>toutc () | Mance रात सम्म मिलिसेकेन्ड फर्काउँछ जब देखि utc ढाँचामा |
-|</code>valueOf()<code>| Returns the primitive value of</code>Date`                                                           |</p>
-<p>| `कन्ट्रोफ () | &apos;मिति मिति को आदिम मान फिर्ता गर्दछ</p>
 
                                 
                                 </section>
@@ -1580,7 +1875,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"मिति र समय","level":"1.10","depth":1,"next":{"title":"JSON","level":"1.11","depth":1,"path":"json.md","ref":"json.md","articles":[]},"previous":{"title":"गणना","level":"1.9.6","depth":2,"path":"objects/enumeration.md","ref":"objects/enumeration.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"date-and-time.md","mtime":"2023-05-05T10:46:19.458Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-05T11:21:37.853Z"},"basePath":".","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"मिति र समय","level":"1.10","depth":1,"next":{"title":"JSON","level":"1.11","depth":1,"path":"json.md","ref":"json.md","articles":[]},"previous":{"title":"गणना","level":"1.9.6","depth":2,"path":"objects/enumeration.md","ref":"objects/enumeration.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"date-and-time.md","mtime":"2023-05-05T23:34:33.349Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":".","book":{"language":"np"}});
         });
     </script>
 </div>

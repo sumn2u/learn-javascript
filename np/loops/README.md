@@ -2,7 +2,7 @@
 
 Loops are repetitive conditions where one variable in the loop changes. Loops are handy, if you want to run the same code over and over again, each time with a different value.
 
-लूपहरू दोहोर्याउने अवस्था हुन् जहाँ लुप परिवर्तनमा एक चर। लूपहरू ह्यान्ड्या हुन्, यदि तपाईं बारम्बार समान कोड चलाउन चाहनुहुन्छ भने, प्रत्येक पटक फरक मानको साथ।
+लूपहरू दोहोरिने अवस्थाहरू हुन् जहाँ लूपमा एक चर परिवर्तन हुन्छ। लुपहरू सजिलो छन्, यदि तपाईं एउटै कोड पटक-पटक चलाउन चाहनुहुन्छ भने, प्रत्येक पटक फरक मानको साथ।
 
 Instead of writing:
 
