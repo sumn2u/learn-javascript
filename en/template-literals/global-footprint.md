@@ -18,4 +18,4 @@ let myCounter = {
 
 > _**Note:**_ this technique is often used with closures, to make the internal state immutable from the outside.
 
-The module now takes only one variable name — `myCounter`. If any other module on the page makes use of such names like `number` or `isGreaterThanTen` then it's perfectly safe because we will not override each other's values;
+The module now takes only one variable name — `myCounter`. If any other module on the page makes use of such names like `number` or `isGreaterThanTen` then it's perfectly safe because we will not override each other's values.

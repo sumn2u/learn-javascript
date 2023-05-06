@@ -30,7 +30,7 @@ To fix the sorting issue in numbers, compare functions are used. Compare functio
 
 * A negative value if `a` should be sorted before `b`
 * A positive value if `a` should be sorted after `b`
-* 0 if a and b are equal and their order doesn't matter
+* `0` if `a` and `b` are equal and their order doesn't matter
 
 ```javascript
 const points = [40, 100, 1, 5, 25, 10];
