@@ -8,7 +8,7 @@ Here each element in the list is a separate object containing a link or a pointe
 ["one", "two", "three", "four"]
 ```
 
-T**ypes of Linked Lists**
+**Types of Linked Lists**
 
 There are three different types of linked lists:
 

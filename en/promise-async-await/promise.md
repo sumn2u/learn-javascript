@@ -14,7 +14,7 @@ let promise = new Promise(function(resolve, reject) {
 });
 ```
 
-Here, a function is passed to `new Promise` also known as the _executor,_ and runs automatically upon creation. It contains the producing code that gives the result. `resolve` and `rejects` are the arguments provided by the JavaScript itself and are called one of these upon results.
+Here, a function is passed to `new Promise` also known as the _executor_, and runs automatically upon creation. It contains the producing code that gives the result. `resolve` and `rejects` are the arguments provided by the JavaScript itself and are called one of these upon results.
 
 * `resolve(value):` a callback function that returns `value` upon result
 * `reject(error)`: a callback function that returns `error` upon error, it returns an error object
@@ -27,7 +27,7 @@ The internal properties of `promise` object returned by the `new Promise` constr
 <figure><img src="../_book/.gitbook/assets/async_await.png" alt=""><figcaption><p>Promise with resolve and reject callbacks</p></figcaption></figure>
 
 {% hint style="warning" %}
-One cannot access promise properties: `state` and result. Promise methods are needed to handle promises.
+One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.
 {% endhint %}
 
 Example of a promise.

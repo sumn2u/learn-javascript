@@ -2,7 +2,7 @@
 
 JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to [https://tc39.github.io/ecma262/ ](https://tc39.github.io/ecma262/)and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced.&#x20;
 
-To support the modern code in old browsers we used two tools: `transpilers` and `polyfills`
+To support the modern code in old browsers we use two tools: `transpilers` and `polyfills`
 
 **Transpilers**
 

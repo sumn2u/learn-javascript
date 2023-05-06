@@ -1,6 +1,6 @@
 # Concatenate
 
-Furthermore. you can concatenate different conditions with "`or`" or “`and`” statements, to test whether either statement is true, or both are true, respectively.
+Furthermore, you can concatenate different conditions with "`or`" or “`and`” statements, to test whether either statement is true, or both are true, respectively.
 
 In JavaScript “or” is written as `||` and “and” is written as `&&`.
 

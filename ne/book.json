@@ -1,0 +1,76 @@
+{
+  "title": "जाभास्क्रिप्ट सिक्नुहोस्: शुरुआती संस्करण",
+  "description": "जाभास्क्रिप्ट सिक्नका लागि शुरुआती गाइड",
+  "author": "Suman Kunwar",
+  "isbn": "",
+  "published": "12/22/2022",
+  "copyright": "Suman Kunwar",
+  "website": "https://sumankunwar.com.np",
+  "keywords": "जाभास्क्रिप्ट, शुरुआती पाठहरू",
+  "language": "en",
+  "totalpages": 107,
+  "hidepageheaders": [1, 2, 3, 10, 40],
+  "hidepagefooters": [1, 2, 3, 10, 40],
+  "plugins": [
+    "hints",
+    "theme-creative",
+    "sidebar-ad",
+    "intopic-toc",
+    "sharing",
+    "exercises",
+    "sitemap",
+    "i18nsettings",
+    "favicon-custom",
+    "chapter-fold",
+    "hide-published-with",
+    "edit-link"
+  ],
+  "pdf": {
+    "margin": {
+      "right": 32,
+      "left": 32
+    }
+  },
+  "pluginsConfig": {
+    "sidebar-ad": {
+      "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
+      "url": "https://leanpub.com/learnjavascriptbeginnersguide/signup",
+      "description": "इच्छासूचीमा सामेल भएर नि: शुल्क पीडीएफ र इपब संस्करण प्राप्त गर्नुहोस्!",
+      "btnText": "थप जानकारी"
+    },
+    "edit-link": {
+      "base": "https://github.com/sumn2u/learn-javascript/edit/main",
+      "label": ""
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+    },
+    "favicon": "favicon.ico",
+    "appleTouchIconPrecomposed152": "js.png",
+    "intopic-toc": {
+      "label": "यस अध्यायमा"
+    },
+    "sitemap": {
+      "hostname": "https://javascript.sumankunwar.com.np/"
+    },
+    "i18nsettings": {
+      "language": "en",
+      "languages": [
+        {
+          "config": "en",
+          "text": "English"
+        },
+        {
+          "config": "ne",
+          "text": "नेपाली"
+        }
+      ]
+    }
+  }
+}
