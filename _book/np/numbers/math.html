@@ -1409,8 +1409,8 @@
                                 
                                 <h1 id="math">Math</h1>
 <h1 id="गणित">गणित</h1>
-<p>The <code>Math</code> object allows performing mathematical operations in JavaScript. The Math object is static and doesn&apos;t have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use <em>Math.property.</em> Some of the math properties are described below: __</p>
-<p>`मथको वस्तुले जाभास्क्रिप्टमा गणितीय अपरेशनहरू प्रदर्शन गर्दछ। गणित वस्तु स्थिर छ र एक कन्स्ट्रक्टर छैन। एकले पहिले गणित वस्तु सिर्जना बिना विधि र गुणहरू प्रयोग गर्न सक्दछ। यसको सम्पत्ति पहुँचको लागि एकले <em> निर्माता .</em> गणित गुणहरू तल वर्णन गरिएको छ: \ <em> \ </em></p>
+<p>The <code>Math</code> object allows performing mathematical operations in JavaScript. The Math object is static and doesn&apos;t have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use <em>Math.property.</em> Some of the math properties are described below:</p>
+<p><code>गणित (Math)</code> वस्तुले जाभास्क्रिप्टमा गणितीय सञ्चालनहरू प्रदर्शन गर्न अनुमति दिन्छ। गणित वस्तु स्थिर छ र कन्स्ट्रक्टर छैन। पहिले गणित वस्तु सिर्जना नगरी गणित वस्तुको विधि र गुणहरू प्रयोग गर्न सकिन्छ। यसको सम्पत्ति पहुँचका लागि <em>Math.property.</em> प्रयोग गर्न सकिन्छ। गणितका केही गुणहरू तल वर्णन गरिएका छन्:</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.E        <span class="hljs-comment">// returns Euler&apos;s number</span>
 <span class="hljs-built_in">Math</span>.PI       <span class="hljs-comment">// returns PI</span>
 <span class="hljs-built_in">Math</span>.SQRT2    <span class="hljs-comment">// returns the square root of 2</span>
@@ -1420,7 +1420,7 @@
 <span class="hljs-built_in">Math</span>.LOG2E    <span class="hljs-comment">// returns base 2 logarithm of E</span>
 <span class="hljs-built_in">Math</span>.LOG10E   <span class="hljs-comment">// returns base 10 logarithm of E</span>
 </code></pre>
-<p>Examples of some of the math methods </p>
+<p>Examples of some of the math methods:</p>
 <p>केही गणित विधिहरू मध्ये केही र # X20;</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">8</span>, <span class="hljs-number">2</span>); <span class="hljs-comment">// 64</span>
 <span class="hljs-built_in">Math</span>.round(<span class="hljs-number">4.6</span>); <span class="hljs-comment">// 5</span>
@@ -1440,8 +1440,125 @@
 <span class="hljs-built_in">Math</span>.log10(<span class="hljs-number">1000</span>); <span class="hljs-comment">// 3</span>
 </code></pre>
 <p>To access its method, one can call its methods directly with arguments wherever necessary.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>abs(x)</code></td>
+<td>Returns absolute value of <code>x</code></td>
+</tr>
+<tr>
+<td><code>acos(x)</code></td>
+<td>Returns arccosine of <code>x</code>, in radians</td>
+</tr>
+<tr>
+<td><code>acosh(x)</code></td>
+<td>Returns hyperbolic arccosine of <code>x</code></td>
+</tr>
+<tr>
+<td><code>asin(x)</code></td>
+<td>Returns arcsine of <code>x</code>, in radians</td>
+</tr>
+<tr>
+<td><code>asinh(x)</code></td>
+<td>Returns hyperbolic arcsine of <code>x</code></td>
+</tr>
+<tr>
+<td><code>atan(x)</code></td>
+<td>Returns arctangent of <code>x</code> as a numeric value between <code>-PI/2</code> and <code>PI/2</code> radians</td>
+</tr>
+<tr>
+<td><code>atan2(y,x)</code></td>
+<td>Returns arctangent of the quotient of its arguments</td>
+</tr>
+<tr>
+<td><code>atanh(x)</code></td>
+<td>Returns hyperbolic arctangent of <code>x</code></td>
+</tr>
+<tr>
+<td><code>crbt(x)</code></td>
+<td>Returns cubic root of <code>x</code></td>
+</tr>
+<tr>
+<td><code>ceil(x)</code></td>
+<td>Returns rounded upwards to the nearest integer of <code>x</code></td>
+</tr>
+<tr>
+<td><code>cos(x)</code></td>
+<td>Returns consine of <code>x</code>, in radians</td>
+</tr>
+<tr>
+<td><code>cosh(x)</code></td>
+<td>Returns hyperbolic cosine of <code>x</code></td>
+</tr>
+<tr>
+<td><code>exp(x)</code></td>
+<td>Returns exponential value of <code>x</code></td>
+</tr>
+<tr>
+<td><code>floor(x)</code></td>
+<td>Returns round downwards to the neareast integer of <code>x</code></td>
+</tr>
+<tr>
+<td><code>log(x)</code></td>
+<td>Returns natural logarithmetic of <code>x</code></td>
+</tr>
+<tr>
+<td><code>max(x,y,z,... n)</code></td>
+<td>Returns number with the highest value</td>
+</tr>
+<tr>
+<td><code>min(x,y,z,... n)</code></td>
+<td>Returns number with the lowest value</td>
+</tr>
+<tr>
+<td><code>pow(x,y)</code></td>
+<td>Returns value of <code>x</code> to the power of <code>y</code></td>
+</tr>
+<tr>
+<td>random()</td>
+<td>Returns number between 0 and 1</td>
+</tr>
+<tr>
+<td>round(x)</td>
+<td>Rounds number to the neareast x</td>
+</tr>
+<tr>
+<td>sign(x)</td>
+<td>Returns if x is negative, <code>null</code> or positive (-1,0,1)</td>
+</tr>
+<tr>
+<td>sin(x)</td>
+<td>Returns sine of x, in radians</td>
+</tr>
+<tr>
+<td>sinh(x)</td>
+<td>Returns hyperbolic sine of x</td>
+</tr>
+<tr>
+<td>sqrt(x)</td>
+<td>Returns square root of x</td>
+</tr>
+<tr>
+<td>tan(x)</td>
+<td>Returns tangent of an angle</td>
+</tr>
+<tr>
+<td>tanh(x)</td>
+<td>Returns hyperbolic tangent of x</td>
+</tr>
+<tr>
+<td>trunc(x)</td>
+<td>Returns integer part of a number (x)</td>
+</tr>
+</tbody>
+</table>
 <p>यसको विधि पहुँच गर्न, एक आवश्यक तर्कको साथ यसको विधिहरू कल गर्न सक्दछ।</p>
-<p>| Method             | Description                                                                     |</p>
 <table>
 <thead>
 <tr>
@@ -1452,61 +1569,114 @@
 <tbody>
 <tr>
 <td><code>abs(x)</code></td>
-<td>Returns absolute value of <code>x</code></td>
+<td><code>x</code> को निरपेक्ष मान फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>acos(x)</code></td>
+<td>रेडियनमा <code>x</code> को आर्ककोसाइन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>acosh(x)</code></td>
+<td><code>x</code> को हाइपरबोलिक आर्ककोसाइन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>asin(x)</code></td>
+<td>रेडियनमा <code>x</code> को आर्कसिन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>asinh(x)</code></td>
+<td><code>x</code> को हाइपरबोलिक आर्कसिन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>atan(x)</code></td>
+<td><code>-PI/२</code> र <code>-PI/२</code> रेडियनबीच सङ्ख्यात्मक मानको रूपमा <code>x</code> को आर्कट्यान्जेन्ट फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>atan2(y,x)</code></td>
+<td>यसको तर्कको भागफलको आर्कट्यान्जेन्ट फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>atanh(x)</code></td>
+<td><code>x</code> को हाइपरबोलिक आर्कट्यान्जेन्ट फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>crbt(x)</code></td>
+<td><code>x</code> को घन मूल फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>ceil(x)</code></td>
+<td><code>x</code> को निकटतम पूर्णांकमा माथितिर गोलाकार फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>cos(x)</code></td>
+<td>रेडियनमा <code>x</code> को कन्साइन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>cosh(x)</code></td>
+<td><code>x</code> को हाइपरबोलिक कोसाइन फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>exp(x)</code></td>
+<td><code>x</code> को घातीय मान फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>floor(x)</code></td>
+<td><code>x</code> को नजिकको पूर्व पूर्णांकमा राउन्ड तल फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>log(x)</code></td>
+<td><code>x</code> को प्राकृतिक लघुगणक फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>max(x,y,z,... n)</code></td>
+<td>उच्चतम मानसँग नम्बर फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>min(x,y,z,... n)</code></td>
+<td>सबैभन्दा कम मान भएको सङ्ख्या फर्काउँछ</td>
+</tr>
+<tr>
+<td><code>pow(x,y)</code></td>
+<td><code>y</code> को शक्तिमा <code>x</code> को मान फर्काउँछ</td>
+</tr>
+<tr>
+<td>random()</td>
+<td>० र १ बीचको सङ्ख्या फर्काउँछ</td>
+</tr>
+<tr>
+<td>round(x)</td>
+<td>नजिकको पूर्व एक्समा राउन्ड नम्बर</td>
+</tr>
+<tr>
+<td>sign(x)</td>
+<td>यदि x ऋणात्मक, &apos;शून्य&apos; वा धनात्मक छ भने फर्काउँछ (-१,०,१)                       फर्काउँछ</td>
+</tr>
+<tr>
+<td>sin(x)</td>
+<td>रेडियनमा, <code>x</code> को साइन फर्काउँछ</td>
+</tr>
+<tr>
+<td>sinh(x)</td>
+<td><code>x</code> को हाइपरबोलिक साइन फर्काउँछ</td>
+</tr>
+<tr>
+<td>sqrt(x)</td>
+<td><code>x</code> को वर्गमूल फर्काउँछ</td>
+</tr>
+<tr>
+<td>tan(x)</td>
+<td>कोणको स्पर्शरेखा फर्काउँछ</td>
+</tr>
+<tr>
+<td>tanh(x)</td>
+<td><code>x</code> को हाइपरबोलिक स्पर्शरेखा फर्काउँछ</td>
+</tr>
+<tr>
+<td>trunc(x)</td>
+<td>सङ्ख्याको पूर्णांक भाग फर्काउँछ (x)</td>
 </tr>
 </tbody>
 </table>
-<p>| <code>एक्स (x) |</code>X<code>को पूर्ण मान फिर्ता
-|</code>acos(x)<code>| Returns arccosine of</code>x`, in radians                                            |</p>
-<p>| <code>acos (x)</code> | रेडियोमा <code>x</code> को पार्सरिन फर्काउँछ
-| <code>acosh(x)</code>         | Returns hyperbolic arccosine of <code>x</code>                                             |</p>
-<p>| <code>acosh (x) |</code>X<code>| को हाइपरबोलिक पार्सिंगेन फर्काउँछ
-|</code>asin(x)<code>| Returns arcsine of</code>x`, in radians                                              |</p>
-<p>| <code>Asin (x) | रेडियोमा</code>x<code>को आर्टिन फर्काउँछ |
-|</code>asinh(x)<code>| Returns hyperbolic arcsine of</code>x`                                               |</p>
-<p>| <code>Asinh (x) |</code>X<code>| को हाइपरबोलिक आर्कन्ट्स फर्काउँछ
-|</code>atan(x)<code>| Returns arctangent of</code>x<code>as a numeric value between</code>-PI/2<code>and</code>PI/2` radians |</p>
-<p>| <code>onan (x)</code> | <code>-PI / 2</code> र<code>र</code>र<code>को बीचमा संख्यात्मक मूल्यको रूपमा</code>x<code>को आर्क्द्ध
-|</code>atan2(y,x)`       | Returns arctangent of the quotient of its arguments                             |</p>
-<p>| <code>onan2 (y, x)</code> | यसको तर्कहरूको स्वीकृतिको आर्क्टिन फर्काउँछ |
-| <code>atanh(x)</code>         | Returns hyperbolic arctangent of <code>x</code>                                            |</p>
-<p>| <code>atanh (x)</code> | <code>X</code> | को हाइपरबोलिक आर्क्टिन्ट फर्काउँछ
-| <code>crbt(x)</code>          | Returns cubic root of <code>x</code>                                                       |</p>
-<p>| <code>crbt (x)</code> | <code>X</code> | को क्युबिक जड फर्काउँछ
-| <code>ceil(x)</code>          | Returns rounded upwards to the nearest integer of <code>x</code>                           |</p>
-<p>| <code>सिल (x)</code> | <code>X</code> | को नजिकको पूर्णांकमा माथि फर्काउँछ
-| <code>cos(x)</code>           | Returns consine of <code>x</code>, in radians                                              |</p>
-<p>| <code>cos (x)</code> | रेडियोमा <code>x</code> को तुलना
-| <code>cosh(x)</code>          | Returns hyperbolic cosine of <code>x</code>                                                |</p>
-<p>| <code>cosh (x)</code> | <code>X</code> | को हाइपरबोलिक कोसिन फिर्ता
-| <code>exp(x)</code>           | Returns exponential value of <code>x</code>                                                |
-| <code>floor(x)</code>         | Returns round downwards to the neareast integer of <code>x</code>                          |</p>
-<p>| <code>भुइँ (X) |</code>X<code>को नजिकको पूर्णांकमा राउन्ड तल फर्किन्छ
-|</code>log(x)<code>| Returns natural logarithmetic of</code>x`                                            |</p>
-<p>| <code>लग (x)</code> | <code>X</code> को प्राकृतिक लगर्जिनटिक फिर्ता
-| <code>max(x,y,z,... n)</code> | Returns number with the highest value                                           |</p>
-<p>| <code>अधिकतम (x, y, z, ... n) | उच्चतम मान संग नम्बर फिर्ता
-|</code>min(x,y,z,... n)` | Returns number with the lowest value                                            |</p>
-<p>| <code>मिनेट (x, y, z, ... n) | सबैभन्दा कम मानको साथ नम्बर फिर्ता
-|</code>pow(x,y)<code>| Returns value of</code>x<code>to the power of</code>y`                                        |</p>
-<p>| <code>pow (x, y) | |</code>X<code>को मान फिर्ता</code> y` `` |
-| random()           | Returns number between 0 and 1                                                  |</p>
-<p>| अनियमित () | 0 र 1 बीचको नम्बर फर्काउँछ
-| round(x)           | Rounds number to the neareast x                                                 |</p>
-<p>| गोल (x) | नजिकको एक्स | मा गोल नम्बर |
-| sign(x)            | Returns if x is negative, <code>null</code> or positive (-1,0,1)                           |</p>
-<p>| चिन्ह (x) | X मा फर्किन्छ यदि X नकारात्मक छ भने, `nul`` वा सकारात्मक (-1,0,1) |
-| sin(x)             | Returns sine of x, in radians                                                   |</p>
-<p>| पाप (x) | रेडियोमा एक्स अफस् फर्काऊ
-| sinh(x)            | Returns hyperbolic sine of x                                                    |</p>
-<p>| पाप (x) | X को हाइपरबोलिक साइन फर्काउँछ |
-| sqrt(x)            | Returns square root of x                                                        |</p>
-<p>| SQRT (X) | X को वर्गमूल फर्काउँछ || tan(x)             | Returns tangent of an angle                                                     |</p>
-<p>| ट्यान (x) | एक कोण को suntents फिर्ता |
-| tanh(x)            | Returns hyperbolic tangent of x                                                 |</p>
-<p>| तात्र (x) | X को हाइपरबोलिक ट्यान्जेन |
-| trunc(x)           | Returns integer part of a number (x)                                            |</p>
-<p>| ट्रंक (x) | | संख्या (x) | को पूर्णांक भाग फर्काउँछ</p>
 
                                 
                                 </section>
@@ -1550,7 +1720,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"गणित","level":"1.3.1","depth":2,"next":{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"previous":{"title":"नम्बरहरू","level":"1.3","depth":1,"path":"numbers/README.md","ref":"numbers/README.md","articles":[{"title":"गणित","level":"1.3.1","depth":2,"path":"numbers/math.md","ref":"numbers/math.md","articles":[]},{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]}]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/math.md","mtime":"2023-05-05T03:03:16.670Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":"..","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"गणित","level":"1.3.1","depth":2,"next":{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"previous":{"title":"नम्बरहरू","level":"1.3","depth":1,"path":"numbers/README.md","ref":"numbers/README.md","articles":[{"title":"गणित","level":"1.3.1","depth":2,"path":"numbers/math.md","ref":"numbers/math.md","articles":[]},{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"path":"numbers/advanced.md","ref":"numbers/advanced.md","articles":[]}]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/math.md","mtime":"2023-05-06T04:45:54.964Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T04:27:05.288Z"},"basePath":"..","book":{"language":"np"}});
         });
     </script>
 </div>

@@ -1410,7 +1410,7 @@
                                 <h1 id="advanced-operators">Advanced Operators</h1>
 <h1 id="उन्नत-अपरेटरहरू">उन्नत अपरेटरहरू</h1>
 <p>When operators are put together without parenthesis, the order in which they are applied is determined by the <em>precedence</em> of the operators. Multiplication <code>(*)</code> and division <code>(/)</code> has higher precedence than addition <code>(+)</code> and subtraction <code>(-)</code>.</p>
-<p>अपरेटरहरू कोष्ठक बिना सँगै राखिन्छन्, क्रमबद्ध गरिएको क्रमबद्ध गरिएको क्रमबद्ध गर्नुहोस् अपरेटरहरूको <em>precedence</em> द्वारा निर्धारित गरिन्छ। गुणन <code>(*)</code> र डिभिजन <code>(/)</code> थप <code>(-)</code> (-) `को उच्च प्राथमिकता (-) मा उच्च प्राथमिकता (-)</p>
+<p>जब अपरेटरहरू कोष्ठक बिना एकसाथ राखिन्छ, तिनीहरूलाई लागू गर्ने क्रम अपरेटरहरूको <em>प्राथमिकता</em> द्वारा निर्धारित गरिन्छ। गुणन <code>(*)</code> र विभाजन <code>(/)</code> को अतिरिक्त <code>(+)</code> र घटाउ <code>(-)</code> भन्दा बढी प्राथमिकता छ।</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// multiplication is done first, which is then followed by addition</span>
 <span class="hljs-keyword">let</span> x = <span class="hljs-number">100</span> + <span class="hljs-number">50</span> * <span class="hljs-number">3</span>; <span class="hljs-comment">// 250</span>
 <span class="hljs-comment">// with parenthesis operations inside the parenthesis are computed first</span>
@@ -1418,14 +1418,12 @@
 <span class="hljs-comment">// operations with the same precedences are computed from left to right</span>
 <span class="hljs-keyword">let</span> z = <span class="hljs-number">100</span> / <span class="hljs-number">50</span> * <span class="hljs-number">3</span>;
 </code></pre>
-<p>Some advanced operators can be used, such as:</p>
-<p>केही उन्नत अपरेटर्स प्रयोग गर्न सकिन्छ, जस्तै:</p>
-<p>there are several advanced math operators that you can use in your code. Here is a list of some of the main advanced math operators:</p>
-<p>त्यहाँ धेरै उन्नत गणित गणनाहरू छन् जुन तपाईं आफ्नो कोडमा प्रयोग गर्न सक्नुहुनेछ। यहाँ केहि मुख्य उन्नत गणना अपरेटरहरू को एक सूची छ:</p>
+<p>Several advanced math operators can use be used in our code. Here is a list of some of the main advanced math operators:</p>
+<p>धेरै उन्नत गणित अपरेटरहरू हाम्रो कोडमा प्रयोग गर्न सकिन्छ। यहाँ केही मुख्य उन्नत गणित अपरेटरहरूको सूची छ:</p>
 <ul>
 <li><p><strong>Modulo operator (<code>%</code>)</strong>: The modulo operator returns the remainder of a division operation. For example:</p>
 </li>
-<li><p><strong>मोड्युलो अपरेटर (<code>%</code>)</strong>: Modulo अपरेटरले एक डिभिजन अपरेशन को बाँकी भाग फिर्ता गर्दछ। उदाहरण को लागी:</p>
+<li><p><strong>मोड्युलो अपरेटर (<code>%</code>)</strong>: मोडुलो अपरेटरले विभाजन सञ्चालनको बाँकी भाग फर्काउँछ। उदाहरणका लागि:</p>
 </li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> % <span class="hljs-number">3</span>); <span class="hljs-comment">// 1</span>
@@ -1435,7 +1433,7 @@
 <ul>
 <li><p><strong>Exponentiation operator (* *)</strong>: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the <code>Math.pow</code> function instead. For example:</p>
 </li>
-<li><p><strong>एक्सपेक्टेड अपरेटरेटर (* *)</strong>: एक्सपोनेशन अपरेटकले अर्को नम्बरको शक्तिलाई एक नम्बर बढाउँदछ। यो एक नयाँ अपरेटर हो र सबै ब्राउजरहरूमा समर्थित छैन, त्यसैले यसको सट्टामा तपाईंले `माथी.पी ,p&apos;pa-&apos;page-p્ર thep प्रकार्य प्रयोग गर्न आवश्यक पर्दछ। उदाहरण को लागी:</p>
+<li><p><strong>एक्सपेक्टेड अपरेटरेटर (* *)</strong>: एक्सपोनेन्टेसन अपरेटरले अर्को नम्बरको शक्तिमा एक नम्बर उठाउँछ। यो एक नयाँ अपरेटर हो र सबै ब्राउजरहरूमा समर्थित छैन, त्यसैले तपाईले यसको सट्टामा <code>Math.pow</code> प्रकार्य प्रयोग गर्न आवश्यक हुन सक्छ। उदाहरणका लागि:</p>
 </li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span> ** <span class="hljs-number">3</span>); <span class="hljs-comment">// 8</span>
@@ -1445,7 +1443,7 @@
 <ul>
 <li><p><strong>Increment operator (<code>++</code>)</strong>: The increment operator increments a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:</p>
 </li>
-<li><p><strong>वृद्धि अपरेटर (+ + ``)</strong>: वृद्धि अपरेटरले एक नम्बर बढाउँछ। यो उपसर्ग (अपरेन्डको अघि उपसर्ग) वा पोष्टफिक्स (अपरेन्ड पछि) प्रयोग गर्न सकिन्छ। उदाहरण को लागी:</p>
+<li><p><strong>इन्क्रिमेन्ट अपरेटर (+ + ``)</strong>: इन्क्रिमेन्ट अपरेटरले एक-एक गरेर संख्या बढाउँछ। यसलाई उपसर्गको रूपमा प्रयोग गर्न सकिन्छ (ओपरेन्ड भन्दा पहिले) वा पोस्टफिक्स (ओपरेन्ड पछि)। उदाहरणका लागि:</p>
 </li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
@@ -1455,7 +1453,7 @@ x++; <span class="hljs-comment">// x is now 2</span>
 <ul>
 <li><p><strong>Decrement operator (<code>--</code>)</strong>: The decrement operator decrements a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:</p>
 </li>
-<li><p><strong>व्यर्थ अपरेटर (<code>--</code>)</strong>: डिरेक्स अपरेटरले एक नम्बरले संख्यामा कवच गर्दछ। यो उपसर्ग (अपरेन्डको अघि उपसर्ग) वा पोष्टफिक्स (अपरेन्ड पछि) प्रयोग गर्न सकिन्छ। उदाहरण को लागी:</p>
+<li><p><strong>घट्दो अपरेटर (<code>--</code>)</strong>: घट्दो अपरेटरले एक-एक गरेर संख्या घटाउँछ। यसलाई उपसर्गको रूपमा प्रयोग गर्न सकिन्छ (ओपरेन्ड भन्दा पहिले) वा पोस्टफिक्स (ओपरेन्ड पछि)। उदाहरणका लागि::</p>
 </li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> y = <span class="hljs-number">3</span>;
@@ -1465,7 +1463,7 @@ y--; <span class="hljs-comment">// y is now 2</span>
 <ul>
 <li><p><strong>Math object</strong>: The <code>Math</code> object is a built-in object in JavaScript that provides mathematical functions and constants. You can use the methods of the <code>Math</code> object to perform advanced math operations, such as finding the square root of a number, calculating the sine of a number, or generating a random number. For example:</p>
 </li>
-<li><p><strong>गणित वस्तु</strong>: जाभास्क्रिप्टमा माथ (<code>Math</code>) वस्तु एक निर्मित वस्तु हो जुन गणितीय कार्यहरू र निर्माताहरू प्रदान गर्दछ। तपाईं `मंथन मंथन वस्तुको विधिहरू प्रयोग गर्न सक्नुहुनेछ, जस्तै संख्याको वर्गमूल फेला पार्न, संख्याको साइन, वा अनियमित संख्याको गणना गर्दै। उदाहरण को लागी:</p>
+<li><p><strong>गणित वस्तु</strong>: <code>म्याथ</code> वस्तु जाभास्क्रिप्टमा निर्मित वस्तु हो जसले गणितीय प्रकार्यहरू र स्थिरांकहरू प्रदान गर्दछ। तपाईं उन्नत गणित सञ्चालनहरू प्रदर्शन गर्न &apos;गणित&apos; वस्तुको विधिहरू प्रयोग गर्न सक्नुहुन्छ, जस्तै संख्याको वर्गमूल पत्ता लगाउने, संख्याको साइन गणना गर्ने, वा अनियमित संख्या सिर्जना गर्ने। उदाहरणका लागि:</p>
 </li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sqrt(<span class="hljs-number">9</span>)); <span class="hljs-comment">// 3</span>
@@ -1473,7 +1471,7 @@ y--; <span class="hljs-comment">// y is now 2</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.random()); <span class="hljs-comment">// a random number between 0 and 1</span>
 </code></pre>
 <p>These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations in your code.</p>
-<p>यी केवल उन्नत गणना अपरेटरहरू र जाभास्क्रिप्टमा उपलब्ध कार्यहरू छन्। त्यहाँ धेरै धेरै छन् जुन तपाईं आफ्नो कोडमा उन्नत गणित कार्यहरू गर्न प्रयोग गर्न सक्नुहुनेछ।</p>
+<p>यी जाभास्क्रिप्टमा उपलब्ध उन्नत गणित अपरेटरहरू र प्रकार्यहरूको केही उदाहरणहरू मात्र हुन्। त्यहाँ धेरै धेरै छन् जुन तपाईं आफ्नो कोडमा उन्नत गणित सञ्चालनहरू प्रदर्शन गर्न प्रयोग गर्न सक्नुहुनेछ।</p>
 <p></p><div class="exercise">
 	<div class="header">Exercise</div>
 	<div class="alert alert-success">
@@ -1488,26 +1486,20 @@ y--; <span class="hljs-comment">// y is now 2</span>
 	
 Use the following advanced operators to perform operations on `num1` and `num2`.
 
-निम्न उन्नत अपरेटरहरू प्रयोग गर्नुहोस् `num nc` र` num23 मा अपरेशनहरू प्रदर्शन गर्न।
+`num1` र `num2` मा सञ्चालन गर्न निम्न उन्नत अपरेटरहरू प्रयोग गर्नुहोस्।
 
 
 	</div>
-	<div class="editor" style="height: 440px">let num1 = 10;
+	<div class="editor" style="height: 320px">let num1 = 10;
 let num2 = 5;
 
 // ++ operator to increment the value of num1.
-
-// ++ अपरेटर ओन्क्शन को मूल्य वृद्धि गर्न।
 const result1 =
 // -- operator to decrement the value of num2.
-
-// - अपरेटरले एनएमएमएनको मानलाई अस्वीकार गर्न।
 const result2 =
 //  += operator to add num2 to num1.
 const result3 =
 // -= operator to subtract num2 from num1.
-
-// - = = अपरेटर NUM1 बाट Number on2 घटाउन।
 const result4 =</div>
 
 	<pre class="hidden code-solution">let num1 = 10;
@@ -1515,21 +1507,15 @@ let num2 = 5;
 
 // ++ operator to increment the value of num1.
 
-// ++ अपरेटर ओन्क्शन को मूल्य वृद्धि गर्न।
-
 num1++;
 const result1 = num1; // 11
 // -- operator to decrement the value of num2.
-
-// - अपरेटरले एनएमएमएनको मानलाई अस्वीकार गर्न।
 num2--;
 const result2 = num2; // 4
 //  += operator to add num2 to num1.
 num1 += num2;
 const result3 = num1 // 15
 // -= operator to subtract num2 from num1.
-
-// - = = अपरेटर NUM1 बाट Number on2 घटाउन।
 num1 -= num2;
 const result4 = num1 // 11</pre>
 	<pre class="hidden code-validation">assert(result1 === 11 &amp;&amp; result2 === 4 &amp;&amp; result3 === 15 &amp;&amp; result4 === 11 );</pre>
@@ -1541,19 +1527,20 @@ const result4 = num1 // 11</pre>
 	</div>
 </div><p></p>
 <h2 id="nullish-coalescing-operator-">Nullish coalescing operator &apos;??&apos;</h2>
-<h2 id="nululish-coakeing-अपरेटरेटर-">nululish coakeing अपरेटरेटर &apos;??&apos;</h2>
+<h2 id="नलीश-कोलेसिंग-अपरेटर--">## नलीश कोलेसिंग अपरेटर  &apos;??&apos;</h2>
 <p>The <code>nullish</code> coalescing operator returns the first argument if it&apos;s not <code>null/undefined</code>, else the second one. It is written as two question marks <code>??</code>. The result of <code>x ?? y</code> is:</p>
-<p><code>nullish</code> को आयरिंग अपरेटरले पहिलो तर्क फिर्ता गर्दछ यदि यो <code>null/undefined</code> को, अन्य एक। यो दुई प्रश्न मार्कको रूपमा लेखिएको छ । <code>x ?? y</code> को नतीजा:</p>
+<p>नलीश कोलेसिंग अपरेटरले पहिलो तर्क फर्काउँछ यदि यो &apos;शून्य / अपरिभाषित&apos; छैन भने, अन्यथा दोस्रो । यो दुई प्रश्न चिन्हको रूपमा लेखिएको छ <code>??</code>.<code>x ?? y</code> को परिणाम निम्न हुनसकछन् :</p>
 <ul>
-<li><p>if <code>x</code> is defined, then <code>x</code>,</p>
+<li>if <code>x</code> is defined, then <code>x</code>,</li>
+<li><p>यदि <code>x</code> परिभाषित छ भने <code>x</code>,</p>
 </li>
-<li><p>यदि <code>x</code> परिभाषित गरिएको छ, त्यसपछि <code>x</code>,</p>
+<li><p>if <code>y</code> isn’t defined, then <code>y</code>.</p>
 </li>
-<li>if <code>y</code> isn’t defined, then <code>y</code>.</li>
+<li>यदि <code>y</code> परिभाषित छैन भने <code>y</code>।
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>It&apos;s a recent addition to the language and might need polyfills to support old browsers</p>
+<p>यो भाषामा भर्खरको थप हो र पुरानो ब्राउजरहरू समर्थन गर्न पोलिफिलको आवश्यकता हुन सक्छ।  </p>
+</div></div></li>
 </ul>
-<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>It&apos;s a recent addition to the language and might need polyfills to support old browsers</p>
-<p>यो भाषामा भर्खरको थप छ र पुरानो ब्राउजरहरू समर्थन गर्न पोलीफ्लहरू आवश्यक हुन सक्छ</p>
-</div></div><p></p>
 
                                 
                                 </section>
@@ -1597,7 +1584,7 @@ const result4 = num1 // 11</pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"next":{"title":"स्ट्रिंग्स","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"सिर्जना","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"बदल्नुहोस्","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"लम्बाई","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"संयोजन","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"previous":{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/advanced.md","mtime":"2023-05-05T10:43:17.059Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T02:55:01.436Z"},"basePath":"..","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"उन्नत अपरेटरहरू","level":"1.3.3","depth":2,"next":{"title":"स्ट्रिंग्स","level":"1.4","depth":1,"path":"strings/README.md","ref":"strings/README.md","articles":[{"title":"सिर्जना","level":"1.4.1","depth":2,"path":"strings/create.md","ref":"strings/create.md","articles":[]},{"title":"बदल्नुहोस्","level":"1.4.2","depth":2,"path":"strings/replace.md","ref":"strings/replace.md","articles":[]},{"title":"लम्बाई","level":"1.4.3","depth":2,"path":"strings/length.md","ref":"strings/length.md","articles":[]},{"title":"संयोजन","level":"1.4.4","depth":2,"path":"strings/concat.md","ref":"strings/concat.md","articles":[]}]},"previous":{"title":"आधारभूत अपरेटरहरू","level":"1.3.2","depth":2,"path":"numbers/operators.md","ref":"numbers/operators.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"numbers/advanced.md","mtime":"2023-05-06T05:01:13.641Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T04:27:05.288Z"},"basePath":"..","book":{"language":"np"}});
         });
     </script>
 </div>

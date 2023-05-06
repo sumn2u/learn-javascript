@@ -2,9 +2,9 @@
 
 # गणित
 
-The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below: \_\_
+The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below:
 
-`मथको वस्तुले जाभास्क्रिप्टमा गणितीय अपरेशनहरू प्रदर्शन गर्दछ। गणित वस्तु स्थिर छ र एक कन्स्ट्रक्टर छैन। एकले पहिले गणित वस्तु सिर्जना बिना विधि र गुणहरू प्रयोग गर्न सक्दछ। यसको सम्पत्ति पहुँचको लागि एकले _ निर्माता ._ गणित गुणहरू तल वर्णन गरिएको छ: \ _ \ _
+`गणित (Math)` वस्तुले जाभास्क्रिप्टमा गणितीय सञ्चालनहरू प्रदर्शन गर्न अनुमति दिन्छ। गणित वस्तु स्थिर छ र कन्स्ट्रक्टर छैन। पहिले गणित वस्तु सिर्जना नगरी गणित वस्तुको विधि र गुणहरू प्रयोग गर्न सकिन्छ। यसको सम्पत्ति पहुँचका लागि _Math.property._ प्रयोग गर्न सकिन्छ। गणितका केही गुणहरू तल वर्णन गरिएका छन्:
 
 ```javascript
 Math.E        // returns Euler's number
@@ -17,7 +17,7 @@ Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E   // returns base 10 logarithm of E
 ```
 
-Examples of some of the math methods&#x20;
+Examples of some of the math methods:
 
 केही गणित विधिहरू मध्ये केही र # X20;
 
@@ -42,88 +42,65 @@ Math.log10(1000); // 3
 
 To access its method, one can call its methods directly with arguments wherever necessary.
 
-यसको विधि पहुँच गर्न, एक आवश्यक तर्कको साथ यसको विधिहरू कल गर्न सक्दछ।
-
 | Method             | Description                                                                     |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `abs(x)`           | Returns absolute value of `x`                                                   |
+| `acos(x)`          | Returns arccosine of `x`, in radians                                            |
+| `acosh(x)`         | Returns hyperbolic arccosine of `x`                                             |
+| `asin(x)`          | Returns arcsine of `x`, in radians                                              |
+| `asinh(x)`         | Returns hyperbolic arcsine of `x`                                               |
+| `atan(x)`          | Returns arctangent of `x` as a numeric value between `-PI/2` and `PI/2` radians |
+| `atan2(y,x)`       | Returns arctangent of the quotient of its arguments                             |
+| `atanh(x)`         | Returns hyperbolic arctangent of `x`                                            |
+| `crbt(x)`          | Returns cubic root of `x`                                                       |
+| `ceil(x)`          | Returns rounded upwards to the nearest integer of `x`                           |
+| `cos(x)`           | Returns consine of `x`, in radians                                              |
+| `cosh(x)`          | Returns hyperbolic cosine of `x`                                                |
+| `exp(x)`           | Returns exponential value of `x`                                                |
+| `floor(x)`         | Returns round downwards to the neareast integer of `x`                          |
+| `log(x)`           | Returns natural logarithmetic of `x`                                            |
+| `max(x,y,z,... n)` | Returns number with the highest value                                           |
+| `min(x,y,z,... n)` | Returns number with the lowest value                                            |
+| `pow(x,y)`         | Returns value of `x` to the power of `y`                                        |
+| random()           | Returns number between 0 and 1                                                  |
+| round(x)           | Rounds number to the neareast x                                                 |
+| sign(x)            | Returns if x is negative, `null` or positive (-1,0,1)                           |
+| sin(x)             | Returns sine of x, in radians                                                   |
+| sinh(x)            | Returns hyperbolic sine of x                                                    |
+| sqrt(x)            | Returns square root of x                                                        |
+| tan(x)             | Returns tangent of an angle                                                     |
+| tanh(x)            | Returns hyperbolic tangent of x                                                 |
+| trunc(x)           | Returns integer part of a number (x)                                            |
+
+
+यसको विधि पहुँच गर्न, एक आवश्यक तर्कको साथ यसको विधिहरू कल गर्न सक्दछ।
 
 | विद्युतन | वर्णन |
 | ------------------ | ------------------------------------------------------------------------------- |
-| `abs(x)`           | Returns absolute value of `x`                                                   |
-
-| `एक्स (x) | `X` को पूर्ण मान फिर्ता
-| `acos(x)`          | Returns arccosine of `x`, in radians                                            |
-
-| `acos (x)` | रेडियोमा `x` को पार्सरिन फर्काउँछ
-| `acosh(x)`         | Returns hyperbolic arccosine of `x`                                             |
-
-| `acosh (x) | `X` | को हाइपरबोलिक पार्सिंगेन फर्काउँछ
-| `asin(x)`          | Returns arcsine of `x`, in radians                                              |
-
-| `Asin (x) | रेडियोमा `x` को आर्टिन फर्काउँछ |
-| `asinh(x)`         | Returns hyperbolic arcsine of `x`                                               |
-
-| `Asinh (x) | `X` | को हाइपरबोलिक आर्कन्ट्स फर्काउँछ
-| `atan(x)`          | Returns arctangent of `x` as a numeric value between `-PI/2` and `PI/2` radians |
-
-| `onan (x)` | `-PI / 2` र` र `र` को बीचमा संख्यात्मक मूल्यको रूपमा `x` को आर्क्द्ध
-| `atan2(y,x)`       | Returns arctangent of the quotient of its arguments                             |
-
-| `onan2 (y, x)` | यसको तर्कहरूको स्वीकृतिको आर्क्टिन फर्काउँछ |
-| `atanh(x)`         | Returns hyperbolic arctangent of `x`                                            |
-
-| `atanh (x)` | `X` | को हाइपरबोलिक आर्क्टिन्ट फर्काउँछ
-| `crbt(x)`          | Returns cubic root of `x`                                                       |
-
-| `crbt (x)` | `X` | को क्युबिक जड फर्काउँछ
-| `ceil(x)`          | Returns rounded upwards to the nearest integer of `x`                           |
-
-| `सिल (x)` | `X` | को नजिकको पूर्णांकमा माथि फर्काउँछ
-| `cos(x)`           | Returns consine of `x`, in radians                                              |
-
-| `cos (x)` | रेडियोमा `x` को तुलना
-| `cosh(x)`          | Returns hyperbolic cosine of `x`                                                |
-
-| `cosh (x)` | `X` | को हाइपरबोलिक कोसिन फिर्ता
-| `exp(x)`           | Returns exponential value of `x`                                                |
-| `floor(x)`         | Returns round downwards to the neareast integer of `x`                          |
-
-| `भुइँ (X) | `X` को नजिकको पूर्णांकमा राउन्ड तल फर्किन्छ
-| `log(x)`           | Returns natural logarithmetic of `x`                                            |
-
-| `लग (x)` | `X` को प्राकृतिक लगर्जिनटिक फिर्ता
-| `max(x,y,z,... n)` | Returns number with the highest value                                           |
-
-| `अधिकतम (x, y, z, ... n) | उच्चतम मान संग नम्बर फिर्ता
-| `min(x,y,z,... n)` | Returns number with the lowest value                                            |
-
-| `मिनेट (x, y, z, ... n) | सबैभन्दा कम मानको साथ नम्बर फिर्ता
-| `pow(x,y)`         | Returns value of `x` to the power of `y`                                        |
-
-| `pow (x, y) | | `X` को मान फिर्ता` y` `` |
-| random()           | Returns number between 0 and 1                                                  |
-
-| अनियमित () | 0 र 1 बीचको नम्बर फर्काउँछ
-| round(x)           | Rounds number to the neareast x                                                 |
-
-| गोल (x) | नजिकको एक्स | मा गोल नम्बर |
-| sign(x)            | Returns if x is negative, `null` or positive (-1,0,1)                           |
-
-| चिन्ह (x) | X मा फर्किन्छ यदि X नकारात्मक छ भने, `nul`` वा सकारात्मक (-1,0,1) |
-| sin(x)             | Returns sine of x, in radians                                                   |
-
-| पाप (x) | रेडियोमा एक्स अफस् फर्काऊ
-| sinh(x)            | Returns hyperbolic sine of x                                                    |
-
-| पाप (x) | X को हाइपरबोलिक साइन फर्काउँछ |
-| sqrt(x)            | Returns square root of x                                                        |
-
-| SQRT (X) | X को वर्गमूल फर्काउँछ || tan(x)             | Returns tangent of an angle                                                     |
-
-| ट्यान (x) | एक कोण को suntents फिर्ता |
-| tanh(x)            | Returns hyperbolic tangent of x                                                 |
-
-| तात्र (x) | X को हाइपरबोलिक ट्यान्जेन |
-| trunc(x)           | Returns integer part of a number (x)                                            |
-
-| ट्रंक (x) | | संख्या (x) | को पूर्णांक भाग फर्काउँछ
-
+| `abs(x)`           | `x` को निरपेक्ष मान फर्काउँछ                                                   |
+| `acos(x)`          | रेडियनमा `x` को आर्ककोसाइन फर्काउँछ                                            |
+| `acosh(x)`         | `x` को हाइपरबोलिक आर्ककोसाइन फर्काउँछ                                             |
+| `asin(x)`          | रेडियनमा `x` को आर्कसिन फर्काउँछ                                              |
+| `asinh(x)`         | `x` को हाइपरबोलिक आर्कसिन फर्काउँछ                              |
+| `atan(x)`       | `-PI/२` र `-PI/२` रेडियनबीच सङ्ख्यात्मक मानको रूपमा `x` को आर्कट्यान्जेन्ट फर्काउँछ |
+| `atan2(y,x)`       | यसको तर्कको भागफलको आर्कट्यान्जेन्ट फर्काउँछ                             |
+| `atanh(x)`         | `x` को हाइपरबोलिक आर्कट्यान्जेन्ट फर्काउँछ                                            |
+| `crbt(x)`          | `x` को घन मूल फर्काउँछ                                                       |
+| `ceil(x)`          | `x` को निकटतम पूर्णांकमा माथितिर गोलाकार फर्काउँछ                           |
+| `cos(x)`           | रेडियनमा `x` को कन्साइन फर्काउँछ                                              |
+| `cosh(x)`          | `x` को हाइपरबोलिक कोसाइन फर्काउँछ                                                |
+| `exp(x)`           | `x` को घातीय मान फर्काउँछ                                                |
+| `floor(x)`         | `x` को नजिकको पूर्व पूर्णांकमा राउन्ड तल फर्काउँछ                          |
+| `log(x)`           | `x` को प्राकृतिक लघुगणक फर्काउँछ                                            |
+| `max(x,y,z,... n)` | उच्चतम मानसँग नम्बर फर्काउँछ                                           |
+| `min(x,y,z,... n)` | सबैभन्दा कम मान भएको सङ्ख्या फर्काउँछ                                            |
+| `pow(x,y)`         | `y` को शक्तिमा `x` को मान फर्काउँछ                                        |
+| random()           | ० र १ बीचको सङ्ख्या फर्काउँछ                                                  |
+| round(x)           | नजिकको पूर्व एक्समा राउन्ड नम्बर                                                 |
+| sign(x)            | यदि x ऋणात्मक, 'शून्य' वा धनात्मक छ भने फर्काउँछ (-१,०,१)                       फर्काउँछ    |
+| sin(x)             | रेडियनमा, `x` को साइन फर्काउँछ                                                   |
+| sinh(x)            | `x` को हाइपरबोलिक साइन फर्काउँछ                                                    |
+| sqrt(x)            | `x` को वर्गमूल फर्काउँछ                                                        |
+| tan(x)             | कोणको स्पर्शरेखा फर्काउँछ                                                     |
+| tanh(x)            | `x` को हाइपरबोलिक स्पर्शरेखा फर्काउँछ                                                 |
+| trunc(x)           | सङ्ख्याको पूर्णांक भाग फर्काउँछ (x)                                            |
