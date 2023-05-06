@@ -11,9 +11,7 @@ let y = (100 + 50) * 3; // 450
 let z = 100 / 50 * 3;
 ```
 
-Some advanced operators can be used, such as:
-
-there are several advanced math operators that you can use in your code. Here is a list of some of the main advanced math operators:
+Several advanced math operators can use be used in our code. Here is a list of some of the main advanced math operators:
 
 * **Modulo operator (`%`)**: The modulo operator returns the remainder of a division operation. For example:
 

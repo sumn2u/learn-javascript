@@ -1,12 +1,14 @@
 # Basic Operators
 
+# आधारभूत अपरेटरहरू
+
 Mathematic operations to numbers can be performed using some basic operators like:
 
 गणितीय अपरेशनहरू नम्बरहरू केहि आधारभूत अपरेटरहरू प्रयोग गरेर गर्न सकिन्छ:
 
 * **Addition operator (`+`)**: The addition operator adds two numbers together. For example:
 
-* **थप अपरेटर (`+`)**:: यसको थप अपरेटरले सँगै दुई नम्बर थप गर्दछ। उदाहरण को लागी:
+* **अतिरिक्त अपरेटर (`+`)**:: यअतिरिक्त अपरेटरले दुई नम्बरहरू एकसाथ थप्दछ। उदाहरणका लागि:
 
 ```javascript
 console.log(1 + 2); // 3
@@ -15,7 +17,7 @@ console.log(1 + (-2)); // -1
 
 * **Subtraction operator (`-`)**: The subtraction operator subtracts one number from another. For example:
 
-* **क्षय अपरेटर (`-`)**: क्षय अपरेटरले एक नम्बरलाई एक नम्बर घटा पार्छ। उदाहरण को लागी:
+* **घटाउ अपरेटर (`-`)**: घटाउ अपरेटरले एउटा नम्बरलाई अर्कोबाट घटाउँदछ। उदाहरणका लागि:
 
 ```javascript
 console.log(3 - 2); // 1
@@ -33,7 +35,7 @@ console.log(2 * (-3)); // -6
 
 * **Division operator (`/`)**: The division operator divides one number by another. For example:
 
-* **डिभिजन अपरेटर (`/`)**: डिभिजन अपरेटरले अर्को एक नम्बर विभाजन गर्दछ। उदाहरण को लागी:
+* **डिभिजन अपरेटर (`/`)**: डिभिजन अपरेटरले एक नम्बरलाई अर्कोले विभाजन गर्दछ। उदाहरणका लागि:
 
 ```javascript
 console.log(6 / 2); // 3
@@ -105,14 +107,10 @@ let addResult =
 // Subtract num2 from num1.
 let subtractResult =
 // Multiply num1 and num2.
-
-/ गुणा गणना र NUM2।
 let multiplyResult =
 // Divide num1 by num2.
 let divideResult =
 // Find the remainder num1 is divided by num2.
-
-// बाँकी सुन नम्बर नम्बर नम्बर 2 द्वारा विभाजित गरिएको छ।
 let reminderResult =
 
 {% solution %}
@@ -124,14 +122,10 @@ let addResult = (num1 + num2);
 // Subtract num2 from num1.
 let subtractResult = (num1 - num2);
 // Multiply num1 and num2.
-
-/ गुणा गणना र NUM2।
 let multiplyResult = (num1 * num2);
 // Divide num1 by num2.
 let divideResult = (num1 / num2);
 // Find the remainder num1 is divided by num2.
-
-// बाँकी सुन नम्बर नम्बर नम्बर 2 द्वारा विभाजित गरिएको छ।
 let reminderResult = (num1 % num2);
 
 {% validation %}
