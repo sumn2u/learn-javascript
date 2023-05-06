@@ -1,6 +1,4 @@
-# Inheritance
-
-# उत्तराधिकार
+# Inheritance (उत्तराधिकार)
 
 The inheritance is useful for code reusability purposes as it extends existing properties and methods of a class. The `extends` keyword is used to create a class inheritance. &#x20;
 

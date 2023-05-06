@@ -1,6 +1,4 @@
-# Switch
-
-# स्विच
+# Switch (स्विच)
 
 A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition.  The syntax of the `switch` expression is shown below.
 

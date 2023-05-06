@@ -1,4 +1,4 @@
-# Constants
+# Constants (स्थिरहरू)
 
 Constants were introduced in ES6(2015), and use a `const` keyword. Variables that are declared with `const` cannot be reassigned or redeclared.
 

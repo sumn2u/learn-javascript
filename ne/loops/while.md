@@ -1,6 +1,4 @@
-# While
-
-# वहाइल
+# While (वहाइल)
 
 While Loops repetitively execute a block of code as long as a specified condition is true.
 

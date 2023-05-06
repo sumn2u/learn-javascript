@@ -1,6 +1,4 @@
-# Strings
-
-# स्ट्रिंग्स 
+# Strings (स्ट्रिंग्स)
 
 JavaScript strings share many similarities with string implementations from other high-level languages. They represent text-based messages and data.
 

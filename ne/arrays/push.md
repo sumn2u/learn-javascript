@@ -1,6 +1,4 @@
-# Push
-
-# पुश
+# Push (पुश)
 
 One can push certain items to an array making the last index the newly added item. It changes the length of an array and returns a new length.
 

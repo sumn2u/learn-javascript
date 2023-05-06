@@ -1,6 +1,4 @@
-# Window
-
-# सञ्झ्याल
+# Window (सञ्झ्याल)
 
 The `window` object represents the browser window and is supported by the browsers. Global variables, objects, and functions are also part of the window object. 
 

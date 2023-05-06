@@ -1,6 +1,4 @@
-# Conditional Logic
-
-# सशर्त तर्क
+# Conditional Logic (सशर्त तर्क)
 
 A condition is a test for something. Conditions are very important for programming, in several ways:
 

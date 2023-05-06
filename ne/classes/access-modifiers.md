@@ -1,6 +1,4 @@
-# Access Modifiers
-
-# पहुँच परिमार्जनकर्ताहरू
+# Access Modifiers (पहुँच परिमार्जनकर्ताहरू)
 
 `public`, `private`, and `protected` are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
 

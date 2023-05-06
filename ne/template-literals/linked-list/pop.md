@@ -1,6 +1,4 @@
-# Pop
-
-# पप
+# Pop (पप)
 
 Here, a `pop` method is created to remove a value from the linked list.
 

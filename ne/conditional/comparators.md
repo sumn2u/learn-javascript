@@ -1,6 +1,4 @@
-# Comparators
-
-# तुलनात्मक
+# Comparators (तुलनात्मक)
 
 Lets now focus on the conditional part:
 

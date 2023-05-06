@@ -1,6 +1,4 @@
-# Advanced Operators
-
-# उन्नत अपरेटरहरू
+# Advanced Operators (उन्नत अपरेटरहरू)
 
 When operators are put together without parenthesis, the order in which they are applied is determined by the _precedence_ of the operators. Multiplication `(*)` and division `(/)` has higher precedence than addition `(+)` and subtraction `(-)`.
 

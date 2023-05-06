@@ -1,6 +1,4 @@
-# Unshift
-
-# अनशिफ्ट
+# Unshift (अनशिफ्ट)
 
 The `unshift` method adds new elements sequentially to the start, or front of the array. It modifies the original array and returns the new length of the array. For example.
 

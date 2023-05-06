@@ -1,6 +1,4 @@
-# Reference
-
-# सन्दर्भ
+# Reference (सन्दर्भ)
 
 Objects are **never copied**. They are passed around by reference. An object reference is a value that refers to an object. When you create an object using the `new` operator or object literal syntax, JavaScript creates an object and assigns a reference to it.
 

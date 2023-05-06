@@ -1,5 +1,4 @@
-# Events
-# घटनाहरू
+# Events (घटनाहरू)
 
 In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
 

@@ -1,6 +1,4 @@
-# Properties
-
-# गुणहरू
+# Properties (गुणहरू)
 
 Object's property is a `propertyName`: `propertyValue` pair, where **property name can be only a string**. If it's not a string, it gets casted into a string. You can specify properties **when creating** an object **or later**. There may be zero or more properties separated by commas.
 

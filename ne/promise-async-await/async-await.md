@@ -1,6 +1,5 @@
-# Async/Await
+# Async/Await (असिंक/प्रतिक्षा)
 
-# असिंक/प्रतिक्षा 
 With promises, one can use a `async` keyword to declare an asynchronous function that returns a promise whereas the `await`  syntax makes JavaScript wait until that promise settles and returns its value. These keywords make promises easier to write.  An example of async is shown below.
 
 प्रतिज्ञाहरूको साथ, एक `एसिंक` कीवर्ड प्रयोग गर्न सक्दछ एक एसिंक्रोनस प्रकार्य घोषणा गर्न जसले प्रतिज्ञा फर्काउँछ जबकि `प्रतीक्षा` वाक्यरचनाले जाभास्क्रिप्टलाई प्रतीक्षा गर्दछ जबसम्म त्यो प्रतिज्ञा व्यवस्थित हुँदैन र यसको मान फर्काउँछ। यी कुञ्जीशब्दहरूले प्रतिज्ञाहरू लेख्न सजिलो बनाउँदछ।  एसिंकको एक उदाहरण तल देखाइएको छ।

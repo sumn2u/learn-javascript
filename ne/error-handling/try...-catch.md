@@ -1,6 +1,4 @@
-# try... catch
-
-# प्रयास ... क्याच गर्नुहोस्
+# try... catch (प्रयास ... क्याच)
 
 In programming errors happen for various reasons, some happen from code errors,  some due to wrong input, and other unforeseeable things.  When an error happens, the code stops and generates an error message usually seen in the console.&#x20;
 

@@ -1,6 +1,4 @@
-# Classes
-
-# वर्ग
+# Classes (वर्ग)
 
 Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword `class` is used to create a class.  And a specific method called `constructor` is used for creating and initializing an object created with a `class`. An example of car class is shown below.
 

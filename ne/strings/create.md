@@ -1,6 +1,4 @@
-# Creation
-
-# सिर्जना
+# Creation (सिर्जना)
 
 You can define strings in JavaScript by enclosing the text in single quotes or double quotes.
 

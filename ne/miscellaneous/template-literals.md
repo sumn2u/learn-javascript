@@ -1,6 +1,4 @@
-# Template Literals
-
-# टेम्प्लेट शाब्दिक
+# Template Literals (टेम्प्लेट शाब्दिक)
 
 Template literals are literals delaminated with backtick `(``)` and are used in variable and expression interpolation into strings.&#x20;
 

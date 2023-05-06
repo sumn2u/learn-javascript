@@ -1,6 +1,4 @@
-# For Each
-
-# प्रत्येकको लागि
+# For Each (प्रत्येकको लागि)
 
 The `forEach` method executes a provided function once for each array element. Here's the syntax for using `forEach`:
 

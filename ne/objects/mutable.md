@@ -1,6 +1,4 @@
-# Mutable
-
-# परिवर्तनीय 
+# Mutable (परिवर्तनीय)
 
 The difference between objects and primitive values is that **we can change objects**, whereas primitive values are **immutable**.
 

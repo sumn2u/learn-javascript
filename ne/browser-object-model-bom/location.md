@@ -1,6 +1,4 @@
-# Location
-
-# स्थान
+# Location (स्थान)
 
 `Location` object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by
 

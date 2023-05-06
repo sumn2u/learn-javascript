@@ -1,6 +1,4 @@
-# Debugging
-
-# डिबगिंग
+# Debugging (डिबगिंग)
 
 In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.
 

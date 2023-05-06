@@ -1,6 +1,4 @@
-# Promise, async/await
-
-# प्रतिज्ञा, असिंक/प्रतीक्षा
+# Promise, async/await (प्रतिज्ञा, असिंक/प्रतीक्षा)
 
 Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
 

@@ -1,6 +1,4 @@
-# Browser Object Model (BOM)
-
-# ब्राउजर वस्तु मोडेल (बीओएम)
+# Browser Object Model (BOM) (ब्राउजर वस्तु मोडेल)
 
 The browser object model lets us interact with the browser window. `window` object represents the browser's window and is supported by all browsers.
 

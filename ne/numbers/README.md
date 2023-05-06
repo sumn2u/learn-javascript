@@ -1,5 +1,5 @@
-# Numbers
-# संख्याहरू
+# Numbers (संख्याहरू)
+
 JavaScript has **only one type of number** – 64-bit float point. It's the same as Java's `double`. Unlike most other programming languages, there is no separate integer type, so 1 and 1.0 are the same value. Creating a number is easy, it can be done just like for any other variable type using the `var` keyword.
 
 जाभास्क्रिप्टमा **केवल एक प्रकारको नम्बर** - 64-बिट फ्लोट पोइन्ट छ। यो जाभाको `डबल` जस्तै हो। अधिकांश अन्य प्रोग्रामिंग भाषाहरूको विपरीत, त्यहाँ कुनै अलग पूर्णांक प्रकार छैन, त्यसैले १ र १.० समान मान हो। संख्या सिर्जना गर्न सजिलो छ, यो `var (वर)` कुञ्जीशब्द प्रयोग गरेर कुनै पनि अन्य चर प्रकारको लागि जस्तै गर्न सकिन्छ।

@@ -1,6 +1,4 @@
-# Linked List
-
-# लिङ्क गरिएको सूची
+# Linked List (लिङ्क गरिएको सूची)
 
 It is a common data structure found in all programming languages. A Linked List is very similar to a normal array in Javascript, it just acts a little bit differently.
 

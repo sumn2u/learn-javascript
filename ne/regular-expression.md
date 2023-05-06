@@ -1,6 +1,5 @@
-# Regular Expression
+# Regular Expression (नियमित अभिव्यक्ति)
 
-# नियमित अभिव्यक्ति
 A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a regular expression are shown below.
 
 एक नियमित अभिव्यक्ति एक वस्तु हो जुन या त `रेगएक्स (RegEx)` कन्स्ट्रक्टरको साथ निर्माण गर्न सकिन्छ वा अगाडिको स्लेश `(/)` क्यारेक्टरमा ढाँचा संलग्न गरेर शाब्दिक मानको रूपमा लेख्न सकिन्छ। नियमित अभिव्यक्ति सिर्जना गर्नका लागि वाक्यविन्यासहरू तल देखाइएको छ।

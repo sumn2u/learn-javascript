@@ -1,6 +1,4 @@
-# Navigator
-
-# नेभिगेटर 
+# Navigator (नेभिगेटर)
 `window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.
 
 `window.navigator` वा `navigator`  एक **पढ्न-मात्र** गुण हो र यसले ब्राउजरसँग सम्बन्धित विभिन्न विधिहरू र प्रकार्यहरू समावेश गर्दछ।

@@ -1,6 +1,4 @@
-# Equality
-
-# समानता
+# Equality (समानता)
 
 Programmers frequently need to determine the equality of variables in relation to other variables. This is done using an equality operator.
 

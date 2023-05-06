@@ -1,6 +1,4 @@
-# Prototype
-
-# प्रोटोटाइप
+# Prototype (प्रोटोटाइप)
 
 Every object is linked to a prototype object from which it inherits properties.
 

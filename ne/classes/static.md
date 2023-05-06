@@ -1,6 +1,4 @@
-# Static
-
-# स्थिर
+# Static (स्थिर)
 
 The `static` keyword defines the static methods or properties for a class.  These methods and properties are called in the class itself.&#x20;
 

@@ -1,6 +1,4 @@
-# Else
-
-# अन्य
+# Else (अन्य)
 
 There is also an `else` clause that will be applied when the first condition isn’t true. This is very powerful if you want to react to any value, but single out one in particular for special treatment:
 

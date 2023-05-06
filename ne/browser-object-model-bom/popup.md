@@ -1,5 +1,4 @@
-# Popup
-# पपअप
+# Popup (पपअप)
 
 Popups are an additional way to show information, take user confirmation, or take user input from additional documents. A popup can navigate to a new URL and send information to the opener window. **Alert box**, **Confirmation box**,  and **Prompt box** are the global functions where we can show the popup information.
 

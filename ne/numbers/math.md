@@ -1,6 +1,4 @@
-# Math
-
-# गणित
+# Mat (गणित)
 
 The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below:
 

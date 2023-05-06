@@ -1,6 +1,4 @@
-# Enumeration
-
-# गणना[सम्पादन गर्ने]
+# Enumeration (गणना[सम्पादन गर्ने])
 
 _Enumeration_ refers to the process of iterating over the properties of an object and performing a certain action for each property. There are several ways to enumerate the properties of an object in JavaScript.
 

@@ -1,4 +1,4 @@
-# Conditional Statements
+# Conditional Statements (सशर्त तर्क)
 
 Conditional logic is vital in programming as it makes sure that the program works regardless of what data you throw in and also allows branching.  This exercise is about the implementation of various conditional logic in real-life problems.
 

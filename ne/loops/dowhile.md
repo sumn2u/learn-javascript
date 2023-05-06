@@ -1,6 +1,4 @@
-# Do...While
-
-# डु ... वहाइल
+# Do...While (डु ... वहाइल)
 
 The do...while statement creates a loop that executes a specified statement until the test condition evaluates to be false. The condition is evaluated after executing the statement. The syntax for do... while is
 

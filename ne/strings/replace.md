@@ -1,6 +1,4 @@
-# Replace
-
-# प्रतिस्थापन
+# Replace (प्रतिस्थापन)
 
 The `replace` method allows us to replace a character, word, or sentence with a string. For example.
 

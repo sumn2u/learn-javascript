@@ -1,6 +1,4 @@
-# Add
-
-# जोड्नु
+# Add (जोड्नु)
 
 The `add` method is created here to add value to a linked list.
 

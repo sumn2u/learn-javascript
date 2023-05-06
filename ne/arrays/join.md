@@ -1,6 +1,4 @@
-# Join
-
-# सामेल
+# Join (सामेल)
 
 The `join` method, makes an array turn into a string and joins it all together. It does not change the original array. Here's the syntax for using `join`:
 

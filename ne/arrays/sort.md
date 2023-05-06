@@ -1,6 +1,4 @@
-# Sort
-
-# क्रमबद्ध
+# Sort (क्रमबद्ध)
 
 The `sort` method sorts the items of an array in a specific order (ascending or descending).
 

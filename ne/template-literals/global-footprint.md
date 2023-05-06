@@ -1,6 +1,4 @@
-# Global footprint
-
-# ग्लोबल पदचिह्न
+# Global footprint (ग्लोबल पदचिह्न)
 
 If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware  of the variable name overlapping.
 

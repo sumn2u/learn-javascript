@@ -1,6 +1,4 @@
-# Prepend
-
-# प्रिपेन्ड
+# Prepend (प्रिपेन्ड)
 
 Here, a `prepend` method is created to add a value before the first child of the linked list.
 

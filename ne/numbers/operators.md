@@ -1,6 +1,4 @@
-# Basic Operators
-
-# आधारभूत अपरेटरहरू
+# Basic Operators (आधारभूत अपरेटरहरू)
 
 Mathematic operations to numbers can be performed using some basic operators like:
 

@@ -4,9 +4,7 @@ description: History object manages the browser's history stack.
 वर्णन: ईतिहास वस्तुले ब्राउजरको ईतिहास स्ट्याक राख्दछ।
 ---
 
-# History
-
-# इतिहास
+# History (इतिहास)
 
 When we open a web browser and surf a web page it creates a new entry in the history stack. As we keep navigating to different pages new entries get pushed into the stack. 
 

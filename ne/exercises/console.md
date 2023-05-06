@@ -1,4 +1,4 @@
-# Console
+# Console (कन्सोल)
 
 In JavaScript, we use `console.log()` to write a message (the content of a variable, a given string, etc.) in `console`. It is mainly used for debugging purposes, ideally to leave a trace of the content of variables during the execution of a program.
 
