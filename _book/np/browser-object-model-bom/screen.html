@@ -1408,19 +1408,20 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="screen">Screen</h1>
+<h1 id="स्क्रिन">स्क्रिन</h1>
 <p>The <code>screen</code> object contains the information about the screen on which the current window is being rendered. To access <code>screen</code> object we can use the <code>screen</code> property of <code>window</code> object.</p>
-<p><code>स्क्रिन</code> वस्तुमा स्क्रिनको बारेमा जानकारी समावेश गर्दछ जुनमा हालको विन्डोलाई रेन्डर भइरहेको छ। <code>स्क्रिन</code> को वस्तु पहुँच गर्न हामी<code>विन्डो</code> को वस्तुको <code>स्क्रिन</code> को सम्पत्ति प्रयोग गर्न सक्दछौं।</p>
+<p><code>स्क्रिन (screen)</code> वस्तुले हालको सञ्झ्याल रेन्डर गरिएको पर्दाको बारेमा जानकारी समावेश गर्दछ । &apos;स्क्रिन&apos; वस्तु पहुँच गर्न हामी <code>सञ्झ्याल</code> वस्तुको &apos;स्क्रिन&apos; गुण प्रयोग गर्न सक्छौं।</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.screen
 <span class="hljs-comment">//or</span>
 screen
 </code></pre>
-<p>The <code>window.screen</code> object different properties, some of them are listed here:</p>
-<p>`विन्डो.सीसीसीस्क्रीन&quot; वस्तु बिभिन्न गुणहरू, तिनीहरू मध्ये केही यहाँ सूचीबद्ध छन्:</p>
-<p>| Property | Description |</p>
+<p>The <code>window.screen</code> object has different properties, some of them are listed here:</p>
+<p><code>window.screen</code> वस्तुसँग विभिन्न गुणहरू छन्, तीमध्ये केही यहाँ सूचीबद्ध छन्:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">सम्पति वर्णन</th>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1428,37 +1429,134 @@ screen
 <td style="text-align:left"><code>height</code></td>
 <td style="text-align:left">Represents the pixel height of the screen.</td>
 </tr>
+<tr>
+<td style="text-align:left"><code>left</code></td>
+<td style="text-align:left">Represents the pixel distance of the current screen’s left side.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pixelDepth</code></td>
+<td style="text-align:left">A read-only property that returns the bit depth of the screen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>top</code></td>
+<td style="text-align:left">Represents the pixel distance of the current screen’s top.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>width</code></td>
+<td style="text-align:left">Represents the pixel width of the screen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>orientation</code></td>
+<td style="text-align:left">Returns the screen orientation as specified in the Screen Orientation API</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>availTop</code></td>
+<td style="text-align:left">A read-only property that returns the first pixel from the top that is not taken up by system elements.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>availWidth</code></td>
+<td style="text-align:left">A read-only property that returns the pixel width of the screen excluding system elements.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>colorDepth</code></td>
+<td style="text-align:left">A read-only property that returns the number of bits used to represent colors.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>height</code></td>
+<td style="text-align:left">Represents the pixel height of the screen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>left</code></td>
+<td style="text-align:left">Represents the pixel distance of the current screen’s left side.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pixelDepth</code></td>
+<td style="text-align:left">A read-only that returns the bit depth of the screen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>top</code></td>
+<td style="text-align:left">Represents the pixel distance of the current screen’s top.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>width</code></td>
+<td style="text-align:left">Represents the pixel width of the screen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>orientation</code></td>
+<td style="text-align:left">Returns the screen orientation as specified in the Screen Orientation API</td>
+</tr>
 </tbody>
 </table>
-<p>| <code>उचाई | स्क्रिनको पिक्सेल उचाई प्रतिनिधित्व गर्दछ। |
-|</code>left` | Represents the pixel distance of the current screen’s left side. |</p>
-<p>| <code>बायाँ | हालको स्क्रिनको बाँया पक्षको पिक्सेल दूरी प्रतिनिधित्व गर्दछ। |
-|</code>pixelDepth` | A read-only property that returns the bit depth of the screen. |</p>
-<p>| <code>pixelevoldudth | एक पढ्ने एक मात्र सम्पत्ति जुन स्क्रिनको बिट गहिराइ फर्काउँछ। |
-|</code>top` | Represents the pixel distance of the current screen’s top. |</p>
-<p>| <code>शीर्ष | हालको स्क्रिनको शीर्षको पिक्सेल दूरी प्रतिनिधित्व गर्दछ। |
-|</code>width` | Represents the pixel width of the screen. |</p>
-<p>| <code>चौडाई स्क्रिनको पिक्सेल चौड़ाई प्रतिनिधित्व गर्दछ। |
-|</code>orientation` |  Returns the screen orientation as specified in the Screen Orientation API |</p>
-<p>| <code>अभिमुखीकरण</code> | स्क्रिन अभिमुखिकरण एपीआईमा निर्दिष्ट गरिएको रूपमा स्क्रिन अभिमुखिकरण फर्काउँछ
-| <code>availTop</code> | A read-only property that returns the first pixel from the top that is not taken up by system elements. |</p>
-<p>| Quallop<code>| एक पढ्ने एक मात्र सम्पत्ति जुन माथिबाट पहिलो पिक्सेल फिर्ता गर्दछ जुन प्रणाली तत्वहरू द्वारा लिइएको छैन। |
-|</code>availWidth` | A read-only property that returns the pixel width of the screen excluding system elements. |</p>
-<p>| <code>asilwidth | एक पढ्ने एक मात्र सम्पत्ति जुन प्रणाली तत्वहरू बाहेक स्क्रिनको पिक्सेल चौडाइ फिर्ता गर्दछ। |
-|</code>colorDepth` | A read-only property that returns the number of bits used to represent colors. |</p>
-<p>| <code>कोल्डर्डोथनेथ एक पढ्ने केवल सम्पत्ति जुन र colors हरू प्रतिनिधित्व गर्न प्रयोग गरिएको बिट्सको संख्या फर्काउँछ। |
-|</code>height` | Represents the pixel height of the screen. |</p>
-<p>| <code>उचाई | स्क्रिनको पिक्सेल उचाई प्रतिनिधित्व गर्दछ। |
-|</code>left` | Represents the pixel distance of the current screen’s left side. |</p>
-<p>| <code>बायाँ | हालको स्क्रिनको बाँया पक्षको पिक्सेल दूरी प्रतिनिधित्व गर्दछ। |
-|</code>pixelDepth` | A read-only that returns the bit depth of the screen. |</p>
-<p>| <code>pixelevoldudth | एक पढ्ने-मात्र जुन स्क्रिनको बिट गहिराइ फर्काउँछ। |
-|</code>top` | Represents the pixel distance of the current screen’s top. |</p>
-<p>| <code>शीर्ष | हालको स्क्रिनको शीर्षको पिक्सेल दूरी प्रतिनिधित्व गर्दछ। |
-|</code>width` | Represents the pixel width of the screen. |</p>
-<p>| <code>चौडाई स्क्रिनको पिक्सेल चौड़ाई प्रतिनिधित्व गर्दछ। |
-|</code>orientation` |  Returns the screen orientation as specified in the Screen Orientation API |</p>
-<p>| <code>अभिमुखीकरण</code> | स्क्रिन अभिमुखिकरण एपीआईमा निर्दिष्ट गरिएको रूपमा स्क्रिन अभिमुखिकरण फर्काउँछ</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">गुण</th>
+<th style="text-align:left">विवरण</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>height</code></td>
+<td style="text-align:left">स्क्रिनको पिक्सेल उचाइ प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>left</code></td>
+<td style="text-align:left">हालको स्क्रिनको बायाँ पट्टिको पिक्सेल दूरी प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pixelDepth</code></td>
+<td style="text-align:left">पढ्ने मात्र गुण जसले पर्दाको बिट गहिराइ फर्काउँछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>top</code></td>
+<td style="text-align:left">हालको स्क्रिनको माथिल्लो भागको पिक्सेल दूरी प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>width</code></td>
+<td style="text-align:left">स्क्रिनको पिक्सेल चौडाइ प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>orientation</code></td>
+<td style="text-align:left">पर्दा अभिमुखीकरण एपीआईमा निर्दिष्ट गरिए अनुसार पर्दा अभिमुखीकरण फर्काउँछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>availTop</code></td>
+<td style="text-align:left">पढ्ने मात्र गुण जसले माथिबाट पहिलो पिक्सेल फर्काउँछ जुन प्रणाली तत्वहरू द्वारा लिइएको छैन</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>availWidth</code></td>
+<td style="text-align:left">पढ्ने मात्र गुण जसले प्रणाली तत्वहरू बाहेक स्क्रिनको पिक्सेल चौडाइ फर्काउँछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>colorDepth</code></td>
+<td style="text-align:left">पढ्ने मात्र गुण जसले रङहरू प्रतिनिधित्व गर्न प्रयोग गरिने बिटहरूको सङ्ख्या फर्काउँछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>height</code></td>
+<td style="text-align:left">स्क्रिनको पिक्सेल उचाइ प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>left</code></td>
+<td style="text-align:left">हालको स्क्रिनको बायाँ पट्टिको पिक्सेल दूरी प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pixelDepth</code></td>
+<td style="text-align:left">पढ्ने मात्र जसले पर्दाको बिट गहिराइ फर्काउँछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>top</code></td>
+<td style="text-align:left">हालको स्क्रिनको माथिल्लो भागको पिक्सेल दूरी प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>width</code></td>
+<td style="text-align:left">स्क्रिनको पिक्सेल चौडाइ प्रतिनिधित्व गर्दछ</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>orientation</code></td>
+<td style="text-align:left">पर्दा अभिमुखीकरण एपीआईमा निर्दिष्ट गरिए अनुसार पर्दा अभिमुखीकरण फर्काउँछ</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1502,7 +1600,7 @@ screen
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"स्क्रिन","level":"1.16.3","depth":2,"next":{"title":"नेभिगेटर","level":"1.16.4","depth":2,"path":"browser-object-model-bom/navigator.md","ref":"browser-object-model-bom/navigator.md","articles":[]},"previous":{"title":"पपअप","level":"1.16.2","depth":2,"path":"browser-object-model-bom/popup.md","ref":"browser-object-model-bom/popup.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"browser-object-model-bom/screen.md","mtime":"2023-05-04T23:46:06.343Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T04:27:05.288Z"},"basePath":"..","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"title":"स्क्रिन","level":"1.16.3","depth":2,"next":{"title":"नेभिगेटर","level":"1.16.4","depth":2,"path":"browser-object-model-bom/navigator.md","ref":"browser-object-model-bom/navigator.md","articles":[]},"previous":{"title":"पपअप","level":"1.16.2","depth":2,"path":"browser-object-model-bom/popup.md","ref":"browser-object-model-bom/popup.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"browser-object-model-bom/screen.md","mtime":"2023-05-06T12:08:37.557Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T11:28:30.382Z"},"basePath":"..","book":{"language":"np"}});
         });
     </script>
 </div>

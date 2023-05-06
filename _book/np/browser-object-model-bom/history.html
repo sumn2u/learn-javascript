@@ -1410,51 +1410,44 @@
                                 <h1 id="history">History</h1>
 <h1 id="इतिहास">इतिहास</h1>
 <p>When we open a web browser and surf a web page it creates a new entry in the history stack. As we keep navigating to different pages new entries get pushed into the stack. </p>
-<p>जब हामी वेब ब्राउजर खोल्छौं र एक वेब पृष्ठ सर्फ गर्दछ यसले ईतिहास स्ट्याकमा नयाँ प्रविष्टि सिर्जना गर्दछ। जब हामी विभिन्न पृष्ठहरू नयाँ प्रविष्टिहरूमा नेभिगेटिरहन्छौं।</p>
+<p>जब हामी वेब ब्राउजर खोल्छौं र वेब पृष्ठ सर्फ गर्छौं यसले इतिहास स्ट्याकमा नयाँ प्रविष्टि सिर्जना गर्दछ। जब हामी विभिन्न पृष्ठहरूमा नेभिगेट गरिरहन्छौं नयाँ प्रविष्टिहरू स्ट्याकमा धकेलिन्छन्।</p>
 <p>To access the history object we can use</p>
-<p>हामीले प्रयोग गर्न सक्ने ईतिहास वस्तु पहुँच गर्न</p>
+<p>हामीले प्रयोग गर्न सक्ने इतिहास वस्तुमा पहुँच गर्न</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">window</span>.history
 <span class="hljs-comment">// or</span>
 history
 </code></pre>
 <p>To navigate  between the different history stack we can use   <code>go()</code> , <code>foward()</code> and  <code>back()</code>methods of <strong>history</strong> object.  </p>
-<p>बिभिन्न ईतिहास स्ट्यान्ड बीच नेभिगेट गर्न हामी <code>जाऊ ()</code>, <code>,</code> पृष्ठ &quot;)<code>र</code>फिर्ता ()` - ईतिहास ** वस्तुको विधिहरू।</p>
+<p>विभिन्न इतिहास स्ट्याकबीच नेभिगेट गर्न हामी <strong>इतिहास</strong> वस्तुको <code>go()</code>, <code>foward()</code> र <code>back()</code> विधिहरू प्रयोग गर्न सक्छौं।</p>
 <ol>
 <li><p><strong>go()</strong>: It is used to navigate the specific URL of the history stack.</p>
 </li>
-<li><p><strong> जानुहोस् \ () </strong>:: यो ईतिहास स्ट्याकको विशिष्ट URL नेभिगेट गर्न प्रयोग गरिन्छ।</p>
-<p>```javascript
-history.go(-1); // moves page backward</p>
+<li><p><strong>go()</strong>: यो इतिहास स्ट्याकको विशिष्ट यूआरएल नेभिगेट गर्न प्रयोग गरिन्छ।</p>
+<pre><code class="lang-javascript">history.go(-<span class="hljs-number">1</span>); <span class="hljs-comment">// moves page backward</span>
+history.go(<span class="hljs-number">0</span>);  <span class="hljs-comment">// refreshes the current page</span>
+history.go(); <span class="hljs-comment">// refreshes the current page</span>
+history.go(<span class="hljs-number">1</span>) <span class="hljs-comment">// moves page forward</span>
+</code></pre>
+<blockquote>
+<p><em><strong>Note:</strong></em> the current  page position in history stack is  <strong>0</strong>.</p>
+<p><em><strong>Note:</strong></em> इतिहास स्ट्याकमा हालको पृष्ठ स्थिति <strong>0</strong> हो।</p>
+</blockquote>
+</li>
+<li><p><strong>back()</strong> : To navigate page backward we use <code>back()</code> method.</p>
+</li>
+<li><p><strong>back()</strong> : पृष्ठ पछाडि नेभिगेट गर्न हामी <code>back()</code> विधि प्रयोग गर्दछौं।</p>
 </li>
 </ol>
-<p>इतिहासको (-1); // पृष्ठ पछि पृष्ठ सार्दछ
-   history.go(0);  // refreshes the current page</p>
-<p>इतिहासको (0); // हालको पृष्ठ रिफ्रेस गर्दछ
-   history.go(); // refreshes the current page</p>
-<p>ईतिहास.गो (); // हालको पृष्ठ रिफ्रेस गर्दछ
-   history.go(1) // moves page forward</p>
-<p>ईतिहास.गो (1) // पृष्ठ अगाडि बढ्छ</p>
-<pre><code>
-   &gt; _**Note:**_ the current  page position in history stack is  **0**.
-
-&gt; _ ** नोट: ** _ _ _ ईतिहास स्ट्याकमा हालको पृष्ठ स्थिति ** 0 ** हो।
-
-2. **back\(\)** : To navigate page backward we use `back()` method.
-
-2. ** पछाडि \ (\) **: पृष्ठ पछाडि नेभिगेट गर्न हामी `पछाडि ()` विधि प्रयोग गर्दछ।
-
-   ```javascript
-   history.back();
-
-इतिहास.ब्याक ();
-</code></pre><ol>
-<li><strong>forward()</strong>: It loads the next list in the browser history. It is similar to clicking the forward button in the browser.</li>
-</ol>
-<p>A. <strong> फर्वार्ड \ () </strong>: यसले ब्राउजर ईतिहासमा अर्को सूची भार माथि लोड गर्दछ। यो ब्राउजरमा अगाडि बटन क्लिक गर्नका लागि समान समान छ।</p>
-<pre><code class="lang-javascript">   history.forward();
-
-इतिहास.forlarr ();
+<pre><code class="lang-javascript">history.back();
 </code></pre>
+<ol>
+<li><p><strong>forward()</strong>: It loads the next list in the browser history. It is similar to clicking the forward button in the browser.</p>
+</li>
+<li><p><strong>forward()</strong>: यसले ब्राउजर इतिहासमा पछिल्लो सूची लोड गर्दछ । यो ब्राउजरमा फरवार्ड बटन क्लिक गर्नु जस्तै हो ।</p>
+<pre><code class="lang-javascript">history.forward();
+</code></pre>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -1498,7 +1491,7 @@ history.go(-1); // moves page backward</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"History object manages the browser's history stack.","वर्णन":"ईतिहास वस्तुले ब्राउजरको ईतिहास स्ट्याक राख्दछ।","title":"हिस्ट्री","level":"1.16.6","depth":2,"next":{"title":"स्थान","level":"1.16.7","depth":2,"path":"browser-object-model-bom/location.md","ref":"browser-object-model-bom/location.md","articles":[]},"previous":{"title":"कुकीहरू","level":"1.16.5","depth":2,"path":"browser-object-model-bom/cookies.md","ref":"browser-object-model-bom/cookies.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"browser-object-model-bom/history.md","mtime":"2023-05-04T23:44:40.278Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T04:27:05.288Z"},"basePath":"..","book":{"language":"np"}});
+            gitbook.page.hasChanged({"page":{"description":"History object manages the browser's history stack.","वर्णन":"ईतिहास वस्तुले ब्राउजरको ईतिहास स्ट्याक राख्दछ।","title":"हिस्ट्री","level":"1.16.6","depth":2,"next":{"title":"स्थान","level":"1.16.7","depth":2,"path":"browser-object-model-bom/location.md","ref":"browser-object-model-bom/location.md","articles":[]},"previous":{"title":"कुकीहरू","level":"1.16.5","depth":2,"path":"browser-object-model-bom/cookies.md","ref":"browser-object-model-bom/cookies.md","articles":[]},"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"en","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"browser-object-model-bom/history.md","mtime":"2023-05-06T11:36:23.452Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-05-06T11:28:30.382Z"},"basePath":"..","book":{"language":"np"}});
         });
     </script>
 </div>
