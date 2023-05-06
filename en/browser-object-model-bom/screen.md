@@ -8,7 +8,7 @@ window.screen
 screen
 ```
 
-The `window.screen` object different properties, some of them are listed here:
+The `window.screen` object has different properties, some of them are listed here:
 
 | Property | Description |
 | :--- | :--- |

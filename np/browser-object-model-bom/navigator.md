@@ -1,16 +1,17 @@
 # Navigator
 
-`window.navigator`  or `navigator`   is a **read-only** property and **** contains different methods and functions related to the browser.&#x20;
+# नेभिगेटर 
+`window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.
 
-`विन्डो. नभिगरकर्ता" `नेभिगेटर "* RED-केवल ** केवल **** सम्पत्तीहरू र ब्राउजरसँग सम्बन्धित सामानहरू छन्। & # X20;
+`window.navigator` वा `navigator`  एक **पढ्न-मात्र** गुण हो र यसले ब्राउजरसँग सम्बन्धित विभिन्न विधिहरू र प्रकार्यहरू समावेश गर्दछ।
 
 Let's look at a  few examples of navigation.
 
-नेभिगेसनका केही उदाहरणहरू हेरौं।
+आउनुहोस् नेभिगेसनका केही उदाहरणहरू हेरौं।
 
-1.  **navigator.appName**: It gives the name of the browser application
+1. **navigator.appName**: It gives the name of the browser application
 
-1. ** नेभिगेटर.एफएफम्यान **: यसले ब्राउजर अनुप्रयोगको नाम दिन्छ
+    यसले ब्राउजर एप्लिकेसनको नाम दिन्छ।
 
     ```javascript
     navigator.appName; 
@@ -18,21 +19,18 @@ Let's look at a  few examples of navigation.
     ```
 
     > _**Note:**_ "Netscape" is the application name for IE11, Chrome, Firefox, and Safari.
+    > _**नोट:**_ "नेटस्केप" आईई ११, क्रोम, फायरफक्स र सफारीको लागि अनुप्रयोग नाम हो।
 
-> _ ** नोट: ** _ "n_" negccape "or11, क्रोम, फायरफक्स, र सफारी को लागी आवेदन नाम हो।
-2.  **navigator.cookieEnabled**: Returns a boolean value based on the cookie value in the browser.
-
-2. ** नेभिगेटर
+2. **navigator.cookieEnabled**: Returns a boolean value based on the cookie value in the browser.
+ब्राउजरमा कुकी मानमा आधारित बुलियन मान फर्काउँछ ।
 
     ```javascript
     navigator.cookieEnabled;
-
-नेभिगेटरस्चर्टर।
     //true
     ```
-3.  **navigator.platform**: Provides information about the browser operating system.
+3. **navigator.platform**: Provides information about the browser operating system.
 
-The। ** नेभिगेटर .ले :psterform **: ब्राउजर अपरेटिंग प्रणालीको बारेमा जानकारी प्रदान गर्दछ।
+    ब्राउजर अपरेटिङ सिस्टमको बारेमा जानकारी प्रदान गर्दछ ।
 
     ```javascript
     navigator.patform;
