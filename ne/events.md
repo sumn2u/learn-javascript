@@ -4,13 +4,13 @@ In programming, _events_ are actions or occurrences in a system that the system 
 
 प्रोग्रामिंगमा, घटनाहरू प्रणालीमा कार्यहरू वा घटनाहरू हुन् जुन प्रणालीले तपाईंलाई सूचित गर्दछ ताकि तपाईं तिनीहरूलाई प्रतिक्रिया दिन सक्नुहुनेछ। उदाहरणका लागि, जब तपाईं रिसेट बटन क्लिक गर्नुहुन्छ यसले इनपुट खाली गर्दछ।
 
-Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
+Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again. Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
 
-कुञ्जीपाटीबाट (keyboard) अन्तर्क्रियाहरू जस्तै किप्रेसहरू फेरि जारी गर्नु अघि कुञ्जीको अवस्था समात्न निरन्तर पढ्न आवश्यक छ।  अन्य समय-गहन गणनाहरू प्रदर्शन गर्दा तपाईंलाई कुञ्जी प्रेस छुट्न सक्छ। यो केही आदिम मेशिनहरूको इनपुट ह्यान्डलिङ संयन्त्र थियो। अर्को कदम एक लाइन प्रयोग गर्न छ, अर्थात् एक कार्यक्रम जुन समय-समयमा नयाँ घटनाहरूको लागि लाइन जाँच गर्दछ र यसमा प्रतिक्रिया गर्दछ। यो दृष्टिकोणलाई _polling_ भनिन्छ।
+कुञ्जीपाटीबाट (keyboard) अन्तर्क्रियाहरू जस्तै किप्रेसहरू फेरि जारी गर्नु अघि कुञ्जीको अवस्था समात्न निरन्तर पढ्न आवश्यक छ। अन्य समय-गहन गणनाहरू प्रदर्शन गर्दा तपाईंलाई कुञ्जी प्रेस छुट्न सक्छ। यो केही आदिम मेशिनहरूको इनपुट ह्यान्डलिङ संयन्त्र थियो। अर्को कदम एक लाइन प्रयोग गर्न छ, अर्थात् एक प्रोग्राम जुन समय-समयमा नयाँ घटनाहरूको लागि लाइन जाँच गर्दछ र यसमा प्रतिक्रिया गर्दछ। यो दृष्टिकोणलाई _polling_ भनिन्छ।
 
-The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs.  This is what modern browsers do by allowing us to register functions as _handlers_ for specific events.
+The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs. This is what modern browsers do by allowing us to register functions as _handlers_ for specific events.
 
-यस दृष्टिकोणको मुख्य दोष यो हो कि यसले हरेक समय लाइनमा हेर्नुपर्छ, जब एक घटना ट्रिगर हुन्छ तब व्यवधान उत्पन्न हुन्छ। यसको लागि राम्रो संयन्त्र भनेको घटना घट्दा कोडलाई सूचित गर्नु हो।  यो आधुनिक ब्राउजरहरूले हामीलाई विशिष्ट घटनाहरूको लागि _ह्यान्डलरहरूको_ रूपमा प्रकार्यहरू दर्ता गर्न अनुमति दिएर के गर्दछ।
+यस दृष्टिकोणको मुख्य दोष यो हो कि यसले हरेक समय लाइनमा हेर्नुपर्छ, जब एक घटना ट्रिगर हुन्छ तब व्यवधान उत्पन्न हुन्छ। यसको लागि राम्रो संयन्त्र भनेको घटना घट्दा कोडलाई सूचित गर्नु हो। यो आधुनिक ब्राउजरहरूले हामीलाई विशिष्ट घटनाहरूको लागि _ह्यान्डलरहरूको_ रूपमा प्रकार्यहरू दर्ता गर्न अनुमति दिएर के गर्दछ।
 
 ```javascript
 <p>Click me to activate the handler.</p>
@@ -27,7 +27,6 @@ Here, the `addEventListener` is called on the `window` object (built-in object p
 यहाँ, `एडइभेन्ट लिस्टनर (addEventListener)` लाई `सञ्झ्याल (window)` वस्तु (ब्राउजरद्वारा प्रदान गरिएको बिल्ट-इन वस्तु) मा सम्पूर्ण `सञ्झ्याल` का लागि ह्यान्डलर दर्ता गर्न भनिन्छ। यसको `एडइभेन्ट लिस्टनर` विधिलाई कल गर्दा यसको पहिलो तर्कद्वारा वर्णन गरिएको घटना हुँदा दोस्रो तर्क लाई भनिन्छ।
 
 {% hint style="info" %}
-
 
 Event listeners are called only when the event happens in the context of the object they are registered on.
 
@@ -46,17 +45,16 @@ Some of the common HTML events are mentioned here.
 | `onmouseover` | When cursor of the mouse comes over the element           |
 | `onmouseout`  | When cursor of the mouse comes leaves the element         |
 | `onkeydown`   | When the user press and then releases the key             |
-| `onload`      | When the browser has finished the loading
+| `onload`      | When the browser has finished the loading                 |
 
-
-| घटना         | विवरण                                               |
-| ------------- | --------------------------------------------------------- |
+| घटना          | विवरण                                                       |
+| ------------- | ----------------------------------------------------------- |
 | `onchange`    | जब प्रयोगकर्ताले फारम आगतको मान परिवर्तन वा परिमार्जन गर्दछ |
-| `onclick`     | जब प्रयोगकर्ताले तत्वमा क्लिक गर्दछ                       |
-| `onmouseover` | जब माउसको कर्सर तत्वमाथि आउँछ           |
-| `onmouseout`  | जब माउसको कर्सर आउँछ तत्व छोड्छ         |
-| `onkeydown`   | जब प्रयोगकर्ताले प्रेस गर्दछ र त्यसपछि कुञ्जी जारी गर्दछ             |
-| `onload`      | जब ब्राउजरले लोडिङ समाप्त गरेको छ                 |
+| `onclick`     | जब प्रयोगकर्ताले तत्वमा क्लिक गर्दछ                         |
+| `onmouseover` | जब माउसको कर्सर तत्वमाथि आउँछ                               |
+| `onmouseout`  | जब माउसको कर्सर आउँछ तत्व छोड्छ                             |
+| `onkeydown`   | जब प्रयोगकर्ताले प्रेस गर्दछ र त्यसपछि कुञ्जी जारी गर्दछ    |
+| `onload`      | जब ब्राउजरले लोडिङ समाप्त गरेको छ                           |
 
 It is common for handlers registered on nodes with children to also receive events from the children. For example, if a button inside a paragraph is clicked, handlers registered on the paragraph will also receive the click event. In case of the presence of handlers in both, the one at the bottom gets to go first. The event is said to _propagate_ outward, from the initiating node to its parent node and on the root of the document.
 
@@ -78,7 +76,7 @@ The event handler can call the `stopPropagation` method on the event object to p
     console.log("Button handler.");
     event.stopPropagation();
   });
-</script> 
+</script>
 ```
 
 Here, the “_`mousedown`_” handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls `stopPropagation`, which will prevent the handler on the paragraph from running.
@@ -103,4 +101,3 @@ Events can have a default behavior. For example, links navigate to the link’s 
 Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link' target.
 
 यहाँ, क्लिक मा लिङ्क को पूर्वनिर्धारित व्यवहार रोकिन्छ, अर्थात् लिङ्क 'लक्ष्य तिर नेभिगेट।
-

@@ -1,19 +1,19 @@
 # Switch (स्विच)
 
-A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition.  The syntax of the `switch` expression is shown below.
+A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition. The syntax of the `switch` expression is shown below.
 
-'स्विच' एक सशर्त कथन हो जुन विभिन्न अवस्थाहरूमा आधारित कार्यहरू गर्दछ। यसले शर्तहरू मिलान गर्न कडा ('==') तुलना प्रयोग गर्दछ र मिलान गरिएको अवस्थाको कोड ब्लकहरू कार्यान्वयन गर्दछ।  'स्विच' अभिव्यक्तिको वाक्यविन्यास तल देखाइएको छ ।
+'स्विच' एक सशर्त कथन हो जुन विभिन्न अवस्थाहरूमा आधारित कार्यहरू गर्दछ। यसले शर्तहरू मिलान गर्न कडा ('==') तुलना प्रयोग गर्दछ र मिलान गरिएको अवस्थाको कोड ब्लकहरू कार्यान्वयन गर्दछ। 'स्विच' अभिव्यक्तिको वाक्यविन्यास तल देखाइएको छ ।
 
 ```javascript
-switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
+switch (expression) {
+	case x:
+		// code block
+		break;
+	case y:
+		// code block
+		break;
+	default:
+	// code block
 }
 ```
 
@@ -27,32 +27,32 @@ An example of getting a weekday name based on the switch condition is shown belo
 
 ```javascript
 switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-     day = "Tuesday";
-    break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case 6:
-    day = "Saturday";
+	case 0:
+		day = "Sunday";
+		break;
+	case 1:
+		day = "Monday";
+		break;
+	case 2:
+		day = "Tuesday";
+		break;
+	case 3:
+		day = "Wednesday";
+		break;
+	case 4:
+		day = "Thursday";
+		break;
+	case 5:
+		day = "Friday";
+		break;
+	case 6:
+		day = "Saturday";
 }
 ```
 
 In multiple matching cases, the **first** matching value is selected, if not the default value is selected. In the absence of default and no matching case, the program continues to the next statement(s) after switch conditions.&#x20;
 
-बहुविध मिल्दो अवस्थामा, **पहिलो** मिल्दो मान चयन गरिन्छ, यदि पूर्वनिर्धारित मान चयन गरिएको छैन भने। पूर्वनिर्धारित र कुनै मिल्दो केसको अनुपस्थितिमा, कार्यक्रम स्विच सर्तहरू पछि अर्को कथन(हरू) मा जारी रहन्छ।
+बहुविध मिल्दो अवस्थामा, **पहिलो** मिल्दो मान चयन गरिन्छ, यदि पूर्वनिर्धारित मान चयन गरिएको छैन भने। पूर्वनिर्धारित र कुनै मिल्दो केसको अनुपस्थितिमा, प्रोग्राम स्विच सर्तहरू पछि अर्को कथन(हरू) मा जारी रहन्छ।
 
 {% exercise %}
 
@@ -65,34 +65,34 @@ let dayOfWeek = "Monday";
 let result;
 // check if it's a weekday or the weekend
 switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
+case x:
+// code block
+break;
+case y:
+// code block
+break;
+default:
+// code block
 }
 {% solution %}
 let dayOfWeek = "Monday";
 let result;
 // check if it's a weekday or the weekend
 switch (dayOfWeek) {
-  case "Monday":
-  case "Tuesday":
-  case "Wednesday":
-  case "Thursday":
-  case "Friday":
-    result = "It's a weekday";
-    break;
-  case "Saturday":
-  case "Sunday":
-    result = "It's the weekend";
-    break;
-  default:
-    result = "Invalid day of the week";
-    break;
+case "Monday":
+case "Tuesday":
+case "Wednesday":
+case "Thursday":
+case "Friday":
+result = "It's a weekday";
+break;
+case "Saturday":
+case "Sunday":
+result = "It's the weekend";
+break;
+default:
+result = "Invalid day of the week";
+break;
 }
 {% validation %}
 assert(result == "It's a weekday" );

@@ -12,29 +12,26 @@ if (country === "France") {
 
 The conditional part is the variable `country` followed by the three equal signs (`===`). Three equal signs tests if the variable `country` has both the correct value (`France`) and also the correct type (`String`). You can test conditions with double equal signs, too, however a conditional such as `if (x == 5)` would then return true for both `var x = 5;` and `var x = "5";`. Depending on what your program is doing, this could make quite a difference. It is highly recommended as a best practice that you always compare equality with three equal signs (`===` and `!==`) instead of two (`==` and `!=`).
 
-सशर्त भाग चर 'देश' हो जुन तीन बराबर चिन्हहरू (`===`) द्वारा पीछा गरिन्छ। यदि चर `देश` सँग सही मान (`फ्रान्स`) र सही प्रकार (`स्ट्रिङ`) दुवै छ भने तीन बराबर चिन्हहरूले परीक्षण गर्दछ। तपाईं डबल बराबर चिन्हहरूको साथ शर्तहरू पनि परीक्षण गर्न सक्नुहुन्छ, तथापि सशर्त जस्तै 'यदि (एक्स == 5)' त्यसपछि `var x = 5;` र `var x = "5";` दुवैको लागि सत्य फर्काउँछ। तपाईंको कार्यक्रमले के गरिरहेको छ भन्ने आधारमा, यसले धेरै फरक पार्न सक्छ। यो एक उत्तम अभ्यासको रूपमा अत्यधिक सिफारिस गरिएको छ कि तपाईं सँधै समानतालाई दुई ('==' र '!=') को सट्टा तीन बराबर चिन्हहरू ('==' र '!=') सँग तुलना गर्नुहोस्।
-
+सशर्त भाग चर 'देश' हो जुन तीन बराबर चिन्हहरू (`===`) द्वारा पीछा गरिन्छ। यदि चर `देश` सँग सही मान (`फ्रान्स`) र सही प्रकार (`स्ट्रिङ`) दुवै छ भने तीन बराबर चिन्हहरूले परीक्षण गर्दछ। तपाईं डबल बराबर चिन्हहरूको साथ शर्तहरू पनि परीक्षण गर्न सक्नुहुन्छ, तथापि सशर्त जस्तै 'यदि (एक्स == 5)' त्यसपछि `var x = 5;` र `var x = "5";` दुवैको लागि सत्य फर्काउँछ। तपाईंको प्रोग्राम ले के गरिरहेको छ भन्ने आधारमा, यसले धेरै फरक पार्न सक्छ। यो एक उत्तम अभ्यासको रूपमा अत्यधिक सिफारिस गरिएको छ कि तपाईं सँधै समानतालाई दुई ('==' र '!=') को सट्टा तीन बराबर चिन्हहरू ('==' र '!=') सँग तुलना गर्नुहोस्।
 
 Other conditional tests:
 
 अन्य ससर्त परीक्षणहरू:
 
-* `x > a`: is x bigger than a?
-* `x > a`: के x a भन्दा ठूलो छ?
+- `x > a`: is x bigger than a?
+- `x > a`: के x a भन्दा ठूलो छ?
 
-* `x < a`: is x less than a?
-* `x < a`: के x a भन्दा कम छ?
+- `x < a`: is x less than a?
+- `x < a`: के x a भन्दा कम छ?
 
+- `x <= a`: is x less than or equal to a?
+- `x <= a`: के x a भन्दा कम वा बराबर छ?
 
-* `x <= a`: is x less than or equal to a?
-* `x <= a`: के x a भन्दा कम वा बराबर छ?
+- `x >=a`: is x greater than or equal to a?
+- `x >=a`: के x a भन्दा ठूलो वा बराबर छ?
 
-* `x >=a`: is x greater than or equal to a?
-* `x >=a`: के x a भन्दा ठूलो वा बराबर छ?
-
-
-* `x != a`: is x not a?
-* `x != a`: के x a होइन?
+- `x != a`: is x not a?
+- `x != a`: के x a होइन?
 
 ## Logical Comparison
 
