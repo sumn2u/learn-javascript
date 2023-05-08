@@ -9,7 +9,7 @@ Concatenation involves adding two or more strings together, creating a larger st
 
 The string `concat()` method accepts the list of strings as parameters and returns a new string after concatenation i.e. combination of all the strings. Whereas the array `join()` method is used to concatenate all the elements present in an array by converting them into a single string.&#x20;
 
-The template literal  uses backtick `(``)` and provides an easy way to create multiline strings and perform string interpolation. An expression can be used inside the backtick using `$` sign and curly braces `$(expression}`.
+The template literal  uses backtick `(``)` and provides an easy way to create multiline strings and perform string interpolation. An expression can be used inside the backtick using `$` sign and curly braces `${expression}`.
 
 ```javascript
 const icon = '👋';
