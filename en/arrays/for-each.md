@@ -10,7 +10,7 @@ array.forEach(function(element, index, array) {
 });
 ```
 
-\
+
 For example, let's say you have an array of numbers and you want to print the double of each number to the console. You could do this using `forEach` like this:
 
 ```typescript

@@ -37,7 +37,7 @@ In the example above, both `object1` and `object2` are variables that hold refer
 You can use the `Object.assign()` method to create a new object that is a copy of an existing object.&#x20;
 {% endhint %}
 
-Following is an example of an object by reference .
+Following is an example of an object by reference.
 
 ```javascript
 // Imagine I had a pizza

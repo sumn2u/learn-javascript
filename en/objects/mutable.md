@@ -1,6 +1,6 @@
 # Mutable
 
-The difference between objects and primitive values is that **we can change objects**, whereas primitive values are **immutable**.
+The difference between objects and primitive values is that we can **change objects**, whereas primitive values are **immutable**.
 
 For example:
 

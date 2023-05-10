@@ -10,9 +10,9 @@ Programming languages are artificial languages used to give instructions to comp
 
 In the past, the primary way to interact with computers was through language-based interfaces like BASIC and DOS prompts. These have been largely replaced by visual interfaces, which are easier to learn but offer less flexibility. However, computer languages like _JavaScript_ are still in use and can be found in modern web browsers and on most devices.
 
-JavaScript (_JS for short_) is the programming language that is used to create dynamic interaction while developing webpages, games, applications, and even servers.JavaScript started at Netscape, a web browser developed in the 1990s, and is today one of the most famous and used programming languages.
+JavaScript (_JS for short_) is the programming language that is used to create dynamic interaction while developing webpages, games, applications, and even servers. JavaScript started at Netscape, a web browser developed in the 1990s, and is today one of the most famous and used programming languages.
 
-Initially, it was created for making webpages alive and was able to run on a browser only. Now, it runs on any device that supports the JavaScript engine. Standard objects such as `Array`, `Date`, and `Math` are available in JavaScript, as well as operators, control structures, and statements. _Client-side JavaScript_ and _Server-side JavaScript_ are the extended versions of Core JavaScript.
+Initially, it was created for making webpages alive and was able to run on a browser only. Now, it runs on any device that supports the JavaScript engine. Standard objects such as [Array](./arrays/README.md), [Date](./date-and-time.md), and [Math](./numbers/math.md) are available in JavaScript, as well as operators, control structures, and statements. _Client-side JavaScript_ and _Server-side JavaScript_ are the extended versions of Core JavaScript.
 
 * _Client-side JavaScript_ enables the enhancement and manipulation of web pages and client browsers. Responses to user events such as mouse clicks, form input, and page navigation are some of its examples.
 * _Server-side JavaScript_ enables access to servers, databases, and file systems.

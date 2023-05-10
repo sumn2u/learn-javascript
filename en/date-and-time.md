@@ -29,18 +29,18 @@ Methods and properties supported by date  are described below:
 | `getDay()`             | Returns the day (0-6) of a week                                                                 |
 | `getFullYear()`        | Returns the year (4 digits)                                                                     |
 | `getHours()`           | Returns the hour (0-23)                                                                         |
-| `getMilliseconds()`    | Returns the milliseconds(0-999)                                                                 |
-| `getMinutes()`         | Returns the minutes(0-59)                                                                       |
-| `getMonth()`           | Returns the month(0-11)                                                                         |
-| `getSeconds()`         | Returns the seconds(0-59)                                                                       |
+| `getMilliseconds()`    | Returns the milliseconds (0-999)                                                                 |
+| `getMinutes()`         | Returns the minutes (0-59)                                                                       |
+| `getMonth()`           | Returns the month (0-11)                                                                         |
+| `getSeconds()`         | Returns the seconds (0-59)                                                                       |
 | `getTime()`            | Returns the numeric value of a specified date in milliseconds since midnight Jan 1 1970         |
 | `getTimezoneOffset()`  | Returns timezone offset in minutes                                                              |
 | `getUTCDate()`         | Returns the day (1-31) of a month according to universal time                                   |
 | `getUTCDay()`          | Returns the day (0-6) according to universal time                                               |
-| `getUTCFullYear()`     | Returns the year(4-digits) according to universal time                                          |
-| `getUTCHours()`        | Returns the hours(0-23) according to universal time                                             |
-| `getUTCMilliseconds()` | Returns the milliseconds(0-999) according to  universal time                                    |
-| `getUTCMinutes()`      | Returns the minutes(0-59) according to  universal time                                          |
+| `getUTCFullYear()`     | Returns the year (4-digits) according to universal time                                          |
+| `getUTCHours()`        | Returns the hours (0-23) according to universal time                                             |
+| `getUTCMilliseconds()` | Returns the milliseconds (0-999)  according to  universal time                                    |
+| `getUTCMinutes()`      | Returns the minutes (0-59) according to  universal time                                          |
 | `getUTCMonth()`        | Returns the month (0-11) according to  universal time                                           |
 | `getUTCSeconds()`      | Returns the seconds (0-59) according to universal time                                          |
 | `now()`                | Returns the numeric value in milliseconds since midnight Jan 1, 1970                            |

@@ -1,6 +1,6 @@
 # Math
 
-The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below: \_\_
+The `Math` object allows performing mathematical operations in JavaScript. The Math object is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. For accessing its property one can use _Math.property._ Some of the math properties are described below:
 
 ```javascript
 Math.E        // returns Euler's number
@@ -13,7 +13,7 @@ Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E   // returns base 10 logarithm of E
 ```
 
-Examples of some of the math methods&#x20;
+Examples of some of the math methods are:
 
 ```javascript
 Math.pow(8, 2); // 64
@@ -34,7 +34,7 @@ Math.log2(8); // 3
 Math.log10(1000); // 3
 ```
 
-To access its method, one can call its methods directly with arguments wherever necessary.
+To access maths method, one can call its methods directly with arguments wherever necessary.
 
 | Method             | Description                                                                     |
 | ------------------ | ------------------------------------------------------------------------------- |
