@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "honkit serve",
-    "build": "exit 0"
+    "build": "honkit build"
   },
   "keywords": [],
   "author": "Suman Kunwar",
