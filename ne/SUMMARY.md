@@ -1,5 +1,6 @@
 सामग्री तालिका
 
+* [अभिस्वीकृति](acknowledgments.md)
 * [परिचय](README.md)
 * [आधारभूत कुरा](basics/README.md)
   * [टिप्पणीहरू](basics/comments.md)
