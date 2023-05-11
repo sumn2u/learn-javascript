@@ -15,7 +15,7 @@ myObject.key = "another value";
 
 You can add, modify, or delete properties of an object using the dot notation or the square bracket notation.
 
-```python
+```javascript
 let object = {};
 object.foo = 'bar'; // Add property 'foo'
 object['baz'] = 'qux'; // Add property 'baz'

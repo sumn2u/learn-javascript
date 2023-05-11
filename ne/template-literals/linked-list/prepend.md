@@ -1,6 +1,4 @@
-# Prepend (प्रिपेन्ड)
-
-Here, a `prepend` method is created to add a value before the first child of the linked list.
+# प्रिपेन्ड
 
 यहाँ, लिङ्क गरिएको सूचीको पहिलो बच्चा भन्दा पहिले मान थप्न 'प्रिपेन्ड' विधि सिर्जना गरिएको छ।
 

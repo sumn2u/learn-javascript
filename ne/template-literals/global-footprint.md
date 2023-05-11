@@ -1,10 +1,6 @@
-# Global footprint (ग्लोबल पदचिह्न)
-
-If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware  of the variable name overlapping.
+# ग्लोबल पदचिह्न
 
 यदि तपाईं मोड्युल विकास गर्दै हुनुहुन्छ, जुन वेब पृष्ठमा चलिरहेको हुन सक्छ, जसले अन्य मोड्युलहरू पनि चलाउँदछ, त्यसपछि तपाईंले चर नाम ओभरल्यापिङको बारेमा सावधान हुनुपर्दछ।
-
-Suppose we are developing a counter module:
 
 मानौं हामी काउन्टर मोड्युल विकास गर्दैछौं:
 
@@ -20,10 +16,6 @@ let myCounter = {
 };
 ```
 
-> _**Note:**_ this technique is often used with closures, to make the internal state immutable from the outside.
-
 > _**नोट:**_ आन्तरिक अवस्थालाई बाहिरबाट अपरिवर्तनीय बनाउन यो प्रविधि प्रायः बन्द गरेर प्रयोग गरिन्छ।
-
-The module now takes only one variable name — `myCounter`. If any other module on the page makes use of such names like `number` or `isGreaterThanTen` then it's perfectly safe because we will not override each other's values.
 
 मोड्युलले अब केवल एक चर नाम लिन्छ - `myCounter`। यदि पृष्ठमा कुनै अन्य मोड्युलले 'नम्बर' वा `isGreaterThanTen` जस्ता नामहरू प्रयोग गर्दछ भने यो पूर्ण रूपमा सुरक्षित छ किनकि हामी एक अर्काको मानहरू ओभरराइड गर्नेछैनौं।

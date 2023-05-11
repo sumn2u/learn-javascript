@@ -1,6 +1,4 @@
-# For (फर)
-
-The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
+# फर
 
 लुपको सब भन्दा सजिलो रूप फर हो। 
 
@@ -10,9 +8,7 @@ for (condition; end condition; change) {
 }
 ```
 
-Let's see how to execute the same code ten-times using a `for` loop:
-
- हामीले `फर` लूप प्रयोग गरेर दस पटक एउटै कोड कसरी कार्यान्वयन गर्छौ, हेरौं ।
+हामीले `फर` लूप प्रयोग गरेर दस पटक एउटै कोड कसरी कार्यान्वयन गर्छौ, हेरौं ।
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
@@ -20,11 +16,8 @@ for (let i = 0; i < 10; i = i + 1) {
 }
 ```
 
-> _**Note**_: `i = i + 1` can be written `i++`.
-
 > _**नोट**_:  `i = i + 1` लागि यसरि लेख्न सकिन्छ `i++`।
 
-To loop through the properties of an object or an array `for in` loop can also be used.
 
 एक वस्तु वा एरे `फर इन`  लूपको गुणहरू मार्फत लूप गर्न पनि प्रयोग गर्न सकिन्छ।
 
@@ -33,8 +26,6 @@ for (key in object) {
   // code block to be executed
 }
 ```
-
-Examples of `for in` loop for an object and array is shown below:
 
 वस्तु र एरेका लागि फर इन` लूपका उदाहरणहरू तल देखाइएको छ।
 

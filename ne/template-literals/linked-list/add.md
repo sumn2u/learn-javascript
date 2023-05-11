@@ -1,6 +1,4 @@
-# Add (जोड्नु)
-
-The `add` method is created here to add value to a linked list.
+# जोड्नु
 
 लिङ्क गरिएको सूचीमा मान थप्न यहाँ `add` विधि सिर्जना गरिएको छ ।
 

@@ -1,6 +1,4 @@
-# Pop (पप)
-
-Here, a `pop` method is created to remove a value from the linked list.
+# पप
 
 यहाँ, लिङ्क गरिएको सूचीबाट मान हटाउन 'पप' विधि सिर्जना गरिएको छ।
 

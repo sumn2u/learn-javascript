@@ -1,6 +1,4 @@
-# Static (स्थिर)
-
-The `static` keyword defines the static methods or properties for a class.  These methods and properties are called in the class itself.&#x20;
+# स्थिर
 
 'स्थिर' कीवर्डले वर्गको लागि स्थिर विधिहरू वा गुणहरू परिभाषित गर्दछ।  यी विधिहरू र गुणहरू वर्गमा नै भनिन्छ।
 
@@ -21,9 +19,6 @@ console.log(Car.hello(myCar));
 ```
 
 {% hint style="info" %}
-
-
-One can access the static method or property of another static method of the same class using `this` keyword.  &#x20;
 
 `this` कीवर्ड प्रयोग गरेर उही वर्गको अर्को स्थिर विधिको स्थिर विधि वा गुण पहुँच गर्न सक्छ।
 {% endhint %}

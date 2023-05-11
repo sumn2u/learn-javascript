@@ -1,6 +1,4 @@
-# Properties (गुणहरू)
-
-Object's property is a `propertyName`: `propertyValue` pair, where **property name can be only a string**. If it's not a string, it gets casted into a string. You can specify properties **when creating** an object **or later**. There may be zero or more properties separated by commas.
+# गुणहरू
 
 वस्तुको प्रोपर्टी `propertyName` हो: `propertyValue` जोडी, जहाँ **गुण नाम स्ट्रिङ** मात्र हुन सक्छ । यदि यो स्ट्रिङ होइन भने, यो एक स्ट्रिंगमा फ्याँकिन्छ। वस्तु **वा पछि** सिर्जना गर्दा तपाईँले गुण निर्दिष्ट गर्न सक्नुहुन्छ । अल्पविरामद्वारा छुट्याइएको शून्य वा बढी गुणहरू हुन सक्छन्।
 
@@ -20,9 +18,6 @@ let language = {
   // Yes, functions can be values too!
 };
 ```
-
-The following code demonstrates how to **get** a property's value.
-
 निम्न कोडले कसरी सम्पत्तिको मूल्य प्राप्त गर्ने भनेर देखाउँछ।
 
 ```javascript
@@ -33,8 +28,6 @@ variable = language["name"];
 variable = language.newProperty;
 // variable is now undefined, because we have not assigned this property yet.
 ```
-
-The following example shows how to **add** a new property **or change** an existing one.
 
 निम्न उदाहरणले कसरी ***नयाँ गुण*** थप्ने वा अवस्थित गुण परिवर्तन गर्ने भनेर देखाउँछ।
 

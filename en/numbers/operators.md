@@ -62,7 +62,7 @@ parseInt("40 years"); //40
 parseInt("He was 40"); //NaN
 ```
 
-In JavaScript, if we calculate a number outside the largest possible number it returns `Infinity` .
+In JavaScript, if we calculate a number outside the largest possible number it returns `Infinity`.
 
 ```javascript
 let x =  2 / 0; // Infinity

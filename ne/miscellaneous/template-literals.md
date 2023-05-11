@@ -1,6 +1,4 @@
-# Template Literals (टेम्प्लेट शाब्दिक)
-
-Template literals are literals delaminated with backtick `(``)` and are used in variable and expression interpolation into strings.&#x20;
+# टेम्प्लेट शाब्दिक
 
 टेम्प्लेट शाब्दिक हरू ब्याकटिक `(``)` को साथ डिलेमिनेटेड शाब्दिकहरू हुन् र स्ट्रिंगहरूमा चर र अभिव्यक्ति प्रक्षेपमा प्रयोग गरिन्छ।
 
@@ -27,5 +25,3 @@ const VAT = 0.25;
 
 const total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 ```
-
-&#x20;

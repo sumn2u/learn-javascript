@@ -1,14 +1,8 @@
-# Events (घटनाहरू)
-
-In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
+# घटनाहरू
 
 प्रोग्रामिंगमा, घटनाहरू प्रणालीमा कार्यहरू वा घटनाहरू हुन् जुन प्रणालीले तपाईंलाई सूचित गर्दछ ताकि तपाईं तिनीहरूलाई प्रतिक्रिया दिन सक्नुहुनेछ। उदाहरणका लागि, जब तपाईं रिसेट बटन क्लिक गर्नुहुन्छ यसले इनपुट खाली गर्दछ।
 
-Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again. Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
-
 कुञ्जीपाटीबाट (keyboard) अन्तर्क्रियाहरू जस्तै किप्रेसहरू फेरि जारी गर्नु अघि कुञ्जीको अवस्था समात्न निरन्तर पढ्न आवश्यक छ। अन्य समय-गहन गणनाहरू प्रदर्शन गर्दा तपाईंलाई कुञ्जी प्रेस छुट्न सक्छ। यो केही आदिम मेशिनहरूको इनपुट ह्यान्डलिङ संयन्त्र थियो। अर्को कदम एक लाइन प्रयोग गर्न छ, अर्थात् एक प्रोग्राम जुन समय-समयमा नयाँ घटनाहरूको लागि लाइन जाँच गर्दछ र यसमा प्रतिक्रिया गर्दछ। यो दृष्टिकोणलाई _polling_ भनिन्छ।
-
-The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs. This is what modern browsers do by allowing us to register functions as _handlers_ for specific events.
 
 यस दृष्टिकोणको मुख्य दोष यो हो कि यसले हरेक समय लाइनमा हेर्नुपर्छ, जब एक घटना ट्रिगर हुन्छ तब व्यवधान उत्पन्न हुन्छ। यसको लागि राम्रो संयन्त्र भनेको घटना घट्दा कोडलाई सूचित गर्नु हो। यो आधुनिक ब्राउजरहरूले हामीलाई विशिष्ट घटनाहरूको लागि _ह्यान्डलरहरूको_ रूपमा प्रकार्यहरू दर्ता गर्न अनुमति दिएर के गर्दछ।
 
@@ -22,19 +16,13 @@ The main drawback of this approach is that it has to look at the queue every now
 </script>
 ```
 
-Here, the `addEventListener` is called on the `window` object (built-in object provided by the browser) to register a handler for the whole `window`. Calling its `addEventListener` method registers the second argument to be called whenever the event described by its first argument occurs.
-
 यहाँ, `एडइभेन्ट लिस्टनर (addEventListener)` लाई `सञ्झ्याल (window)` वस्तु (ब्राउजरद्वारा प्रदान गरिएको बिल्ट-इन वस्तु) मा सम्पूर्ण `सञ्झ्याल` का लागि ह्यान्डलर दर्ता गर्न भनिन्छ। यसको `एडइभेन्ट लिस्टनर` विधिलाई कल गर्दा यसको पहिलो तर्कद्वारा वर्णन गरिएको घटना हुँदा दोस्रो तर्क लाई भनिन्छ।
 
 {% hint style="info" %}
 
-Event listeners are called only when the event happens in the context of the object they are registered on.
-
 घटना श्रोताहरूलाई तब मात्र बोलाइन्छ जब घटना उनीहरूले दर्ता गरेको वस्तुको सन्दर्भमा हुन्छ।
 
 {% endhint %}
-
-Some of the common HTML events are mentioned here.
 
 केहि सामान्य HTML घटनाहरू उल्लेख गरिएका छन्।
 
@@ -56,11 +44,8 @@ Some of the common HTML events are mentioned here.
 | `onkeydown`   | जब प्रयोगकर्ताले प्रेस गर्दछ र त्यसपछि कुञ्जी जारी गर्दछ    |
 | `onload`      | जब ब्राउजरले लोडिङ समाप्त गरेको छ                           |
 
-It is common for handlers registered on nodes with children to also receive events from the children. For example, if a button inside a paragraph is clicked, handlers registered on the paragraph will also receive the click event. In case of the presence of handlers in both, the one at the bottom gets to go first. The event is said to _propagate_ outward, from the initiating node to its parent node and on the root of the document.
 
 नोड्समा दर्ता गरिएका ह्यान्डलरहरूले पनि बच्चाहरूबाट घटनाहरू प्राप्त गर्न सक्छन। उदाहरणका लागि, यदि अनुच्छेद भित्रको बटन क्लिक गरिएको छ भने, अनुच्छेदमा दर्ता गरिएका ह्यान्डलरहरूले पनि क्लिक घटना प्राप्त गर्नेछन्। दुबैमा ह्यान्डलरहरूको उपस्थितिको मामलामा, तलको एक पहिले जान्छ। यो घटनालाई सुरुआत नोडदेखि यसको मूल नोडसम्म र कागजातको मूलमा बाहिरी रूपमा प्रचार गर्न भनिएको छ।
-
-The event handler can call the `stopPropagation` method on the event object to prevent handlers further up from receiving the event. This is useful in cases like, you have a button inside a clickable element and you don’t want to trigger the outer element's clickable behavior from a button click.
 
 इभेन्ट ह्यान्डलरले ह्यान्डलरहरूलाई घटना प्राप्त गर्नबाट रोक्नका लागि घटना वस्तुमा `stopPropagation` विधिलाई कल गर्न सक्दछ। यो मामलाहरूमा उपयोगी छ जस्तै, तपाइँसँग क्लिक गर्न योग्य तत्व भित्र एक बटन छ र तपाईं बटन क्लिकबाट बाह्य तत्वको क्लिक योग्य व्यवहार ट्रिगर गर्न चाहनुहुन्न।
 
@@ -79,11 +64,7 @@ The event handler can call the `stopPropagation` method on the event object to p
 </script>
 ```
 
-Here, the “_`mousedown`_” handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls `stopPropagation`, which will prevent the handler on the paragraph from running.
-
 यहाँ, "_`माउसडाउन`_" ह्यान्डलरहरू अनुच्छेद र बटन दुवैद्वारा दर्ता गरिन्छ। बटन क्लिक गरेपछि, बटनको लागि ह्यान्डलरले `स्टपप्रोपेगेसन` कल गर्दछ, जसले अनुच्छेदमा ह्यान्डलरलाई चल्नबाट रोक्नेछ।
-
-Events can have a default behavior. For example, links navigate to the link’s target upon click, you get navigated to the bottom of a page upon clicking the down arrow, and so on. These default behaviors can be prevented by calling a `preventDefault` method on the event object.
 
 घटनाहरू पूर्वनिर्धारित व्यवहार हुन सक्छन्। उदाहरणका लागि, लिङ्कहरू क्लिक मा लिङ्कको लक्ष्यमा नेभिगेट गर्नुहोस्, तपाईं तल तीर क्लिक गरेपछि पृष्ठको तल नेभिगेट गर्नुहुन्छ, र यति मा। यी पूर्वनिर्धारित व्यवहारहरू घटना वस्तुमा `preventDefault` विधिकल गरेर रोक्न सकिन्छ।
 
@@ -97,7 +78,5 @@ Events can have a default behavior. For example, links navigate to the link’s 
   });
 </script>
 ```
-
-Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link' target.
 
 यहाँ, क्लिक मा लिङ्क को पूर्वनिर्धारित व्यवहार रोकिन्छ, अर्थात् लिङ्क 'लक्ष्य तिर नेभिगेट।

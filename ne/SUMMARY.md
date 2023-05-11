@@ -1,6 +1,4 @@
-# Table of contents
-
-# सामग्रीको तालिका
+सामग्री तालिका
 
 * [परिचय](README.md)
 * [आधारभूत कुरा](basics/README.md)
