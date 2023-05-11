@@ -14,13 +14,16 @@
     "gitbook-plugin-sharing": "https://github.com/sumn2u/plugin-sharing.git",
     "gitbook-plugin-sidebar-ad": "0.0.4",
     "gitbook-plugin-sitemap": "^1.2.0",
-    "gitbook-plugin-theme-creative": "^1.0.6",
+    "gitbook-plugin-theme-creative": "https://github.com/sumn2u/gitbook-plugin-theme-creative.git",
     "honkit": "^4.0.4",
     "honkit-plugin-i18nsettings": "^1.0.0"
   },
   "scripts": {
     "start": "honkit serve",
-    "build": "honkit build"
+    "build": "honkit build",
+    "pdf": "honkit pdf",
+    "epub": "honkit epub",
+    "mobi": "honkit mobi"
   },
   "keywords": [],
   "author": "Suman Kunwar",
