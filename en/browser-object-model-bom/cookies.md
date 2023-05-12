@@ -10,13 +10,13 @@ Cookies are saved in name-value pair
 book = Learn Javascript
 ```
 
-`document.cookie` property is used to create, read and delete cookies.Creating cookie is pretty easy you need to provide the name and value
+The `document.cookie` property is used to create, read and delete cookies. Creating cookie is pretty easy you need to provide the name and value
 
 ```javascript
 document.cookie = "book=Learn Javacript";
 ```
 
-By default, a cookie gets deleted when the browser is closed. To make it persistent, we need to specify the expiry date(in UTC time).
+By default, a cookie gets deleted when the browser is closed. To make it persistent, we need to specify the expiry date (in UTC time).
 
 ```javascript
 document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC";

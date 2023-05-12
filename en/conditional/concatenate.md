@@ -4,7 +4,7 @@ Furthermore, you can concatenate different conditions with "`or`" or “`and`”
 
 In JavaScript “or” is written as `||` and “and” is written as `&&`.
 
-Say you want to test if the value of x is between 10 and 20—you could do that with a condition stating:
+Say you want to test if the value of x is between 10 and 20. You could do that with a condition stating:
 
 ```javascript
 if (x > 10 && x < 20) {
@@ -20,4 +20,4 @@ if (country === "England" || country === "Germany") {
 }
 ```
 
-**Note**: Just like operations on numbers, Conditions can be grouped using parenthesis, ex: `if ( (name === "John" || name === "Jennifer") && country === "France")`.
+> **Note**: Just like operations on numbers, conditions can be grouped using parenthesis, ex: `if ( (name === "John" || name === "Jennifer") && country === "France")`.

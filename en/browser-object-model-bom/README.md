@@ -1,6 +1,6 @@
 # Browser Object Model (BOM)
 
-The browser object model lets us interact with the browser window. `window` object represents the browser's window and is supported by all browsers.
+The browser object model lets us interact with the browser window. The `window` object represents the browser's window and is supported by all browsers.
 
 Object `window` is the default object for a browser, so we can specify `window` or call directly all the functions.
 

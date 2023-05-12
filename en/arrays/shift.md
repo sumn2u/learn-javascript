@@ -1,6 +1,6 @@
 # Shift
 
-`shift` deletes the first index of that array and moves all indexes to the left. It changes the original array. Here's the syntax for using `shift`:
+The `shift` method deletes the first index of that array and moves all indexes to the left. It changes the original array. Here's the syntax for using `shift`:
 
 ```c
 array.shift();

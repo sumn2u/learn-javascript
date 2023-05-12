@@ -33,4 +33,4 @@ function printArguments() {
 printArguments('a', 'b', 'c'); // Result: ["a", "b", "c", "d", "e", "f"]
 ```
 
-Note that the `push` method modifies the original array. It does not create a new array.
+> **Note**: The `push` method modifies the original array. It does not create a new array.

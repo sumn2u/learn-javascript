@@ -11,7 +11,7 @@ let y = (100 + 50) * 3; // 450
 let z = 100 / 50 * 3;
 ```
 
-Several advanced math operators can use be used in our code. Here is a list of some of the main advanced math operators:
+Several advanced math operators can use be used while writing program. Here is a list of some of the main advanced math operators:
 
 * **Modulo operator (`%`)**: The modulo operator returns the remainder of a division operation. For example:
 
@@ -53,7 +53,7 @@ console.log(Math.sin(0)); // 0
 console.log(Math.random()); // a random number between 0 and 1
 ```
 
-These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations in your code.
+These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations while writing program.
 
 {% exercise %}
 Use the following advanced operators to perform operations on `num1` and `num2`.

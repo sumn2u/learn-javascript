@@ -2,7 +2,7 @@
 
 JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to [https://tc39.github.io/ecma262/ ](https://tc39.github.io/ecma262/)and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced.&#x20;
 
-To support the modern code in old browsers we use two tools: `transpilers` and `polyfills`
+To support the modern code in old browsers we use two tools: `transpilers` and `polyfills`.
 
 **Transpilers**
 
@@ -25,7 +25,7 @@ height = (height !== undefined && height !== null) ? height: 200;
 
 **Polyfills**
 
-There are times when new functionality isn't available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a “`polyfill`”. For example, the `filter()` method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns `true`
+There are times when new functionality isn't available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a `polyfill`. For example, the `filter()` method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns `true`
 
 ```javascript
 const arr = [1, 2, 3, 4, 5, 6];

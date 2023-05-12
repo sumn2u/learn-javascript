@@ -1,8 +1,6 @@
 # Equality
 
-Programmers frequently need to determine the equality of variables in relation to other variables. This is done using an equality operator.
-
-The most basic equality operator is the `==` operator. This operator does everything it can to determine if two variables are equal, even if they are not of the same type.
+While writing a program we frequently need to determine the equality of variables in relation to other variables. This is done using an equality operator. The most basic equality operator is the `==` operator. This operator does everything it can to determine if two variables are equal, even if they are not of the same type.
 
 For example, assume:
 

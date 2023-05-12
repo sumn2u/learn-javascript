@@ -39,9 +39,9 @@ x = 3
 y = 5
 ```
 
-The same is true for programming languages. In programming, variables are containers for values that change. Variables can hold all kinds of values and also the results of computations. Variables have a name and a value separated by an equals sign (=). Variable names can be any letter or word but bear in mind that there are restrictions from language to language of what you can use, as some words are reserved for other functionality.
+The same is true for programming languages. In programming, variables are containers for values that change. Variables can hold all kinds of values and also the results of computations. Variables have a `name` and a `value` separated by an equals sign (=). However, it is important to keep in mind that different programming languages have their own limitations and constraints on what can be used as variable names. This is because certain words may be reserved for specific functions or operations within the language.
 
-Let's check out how it works in Javascript, The following code defines two variables, computes the result of adding the two, and defines this result as a value of a third variable.
+Let's check out how it works in Javascript. The following code defines two variables, computes the result of adding the two, and defines this result as a value of a third variable.
 
 ```javascript
 let x = 5;
@@ -65,7 +65,7 @@ assert(x == 20);
 {% endexercise %}
 **ES6 Version**
 
-ECMAScript 2015 or ES2015 also known as E6  is a significant update to the JavaScript programming language since 2009. In ES6 we have three ways of declaring variables.&#x20;
+[ECMAScript 2015 or ES2015](https://262.ecma-international.org/6.0/) also known as E6  is a significant update to the JavaScript programming language since 2009. In ES6 we have three ways of declaring variables.&#x20;
 
 ```javascript
 var x = 5;
@@ -95,7 +95,7 @@ function letTest(){
 }
 ```
 
-`const` variables are immutable - they are not allowed to be re-assigned.
+`const` variables are immutable meaning that they are not allowed to be re-assigned.
 
 ```javascript
 const x = "hi!";

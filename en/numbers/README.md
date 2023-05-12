@@ -12,7 +12,7 @@ let a = 1.2;
 let b = 10;
 ```
 
-Or from the value of another variable:
+Or, from the value of another variable:
 
 ```javascript
 let a = 2;
@@ -26,7 +26,7 @@ let x = 999999999999999;   // x will be 999999999999999
 let y = 9999999999999999;  // y will be 10000000000000000
 ```
 
-It interprets numeric constants as hexadecimal if they are preceded by `0x`.&#x20;
+The numeric constants are interpreted as hexadecimal if they are preceded by an `0x`.
 
 ```javascript
 let z = 0xFF; // 255

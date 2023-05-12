@@ -26,7 +26,7 @@ In cases where we want to have a forward slash to be a part of a regular express
 The different modifiers that are used to perform case-insensitive searches are:
 
 * `g` - global search (finds all matches instead of stopping after the first match)
-* `i`- case insensitive search
+* `i` - case insensitive search
 * `m` - multiline matching
 
 _Brackets_ are used in a regular expression to find a range of characters. Some of them are mentioned below.

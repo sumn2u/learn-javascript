@@ -44,7 +44,7 @@ The JavaScript interpreter works from left to right. One can use parentheses jus
 JavaScript uses the `+` operator for both addition and concatenation. Numbers are added whereas strings are concatenated.
 {% endhint %}
 
-`NaN` is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in `NaN` (Not a Number).
+The term `NaN` is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in `NaN` (Not a Number).
 
 ```javascript
 let x = 100 / "10";

@@ -34,5 +34,5 @@ To throw a custom error, a `throw` statement can be used. The error object, that
 * **message**: details about the error&#x20;
 
 {% hint style="info" %}
-If we don't need an `error` message catch can omit it.
+If we don't need an `error` message catch can be omitted.
 {% endhint %}

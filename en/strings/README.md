@@ -1,8 +1,6 @@
 # Strings
 
-JavaScript strings share many similarities with string implementations from other high-level languages. They represent text-based messages and data.
-
-In this course, we will cover the basics. How to create new strings and perform common operations on them.
+JavaScript strings share many similarities with string implementations from other high-level languages. They represent text-based messages and data. In this course, we will cover the basics. How to create new strings and perform common operations on them.
 
 Here is an example of a string:
 
@@ -10,9 +8,7 @@ Here is an example of a string:
 "Hello World"
 ```
 
-String indexes are zero-based, meaning that starting position of the first character at `0` followed by others in incremental order. &#x20;
-
-Various methods are supported by string and return a new value. These methods are described below.
+String indexes are zero-based, meaning that starting position of the first character at `0` followed by others in incremental order. Various methods are supported by string and return a new value. These methods are described below.
 
 | Name                 | Description                                                                            |
 | -------------------- | -------------------------------------------------------------------------------------- |

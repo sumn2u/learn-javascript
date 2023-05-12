@@ -19,12 +19,12 @@ Here, a function is passed to `new Promise` also known as the _executor_, and ru
 * `resolve(value):` a callback function that returns `value` upon result
 * `reject(error)`: a callback function that returns `error` upon error, it returns an error object
 
+![Promise with resolve and reject callbacks](../../.gitbook/assets/async_await.png)
+
 The internal properties of `promise` object returned by the `new Promise` constructor are as follows:
 
 * `state` - initially `pending,` then changes to either `fulfill` upon resolve or `rejected` when `reject` is called
 * result - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
-
-<figure><img src="../_book/.gitbook/assets/async_await.png" alt=""><figcaption><p>Promise with resolve and reject callbacks</p></figcaption></figure>
 
 {% hint style="warning" %}
 One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.

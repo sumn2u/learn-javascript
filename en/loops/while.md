@@ -1,6 +1,6 @@
 # While
 
-While Loops repetitively execute a block of code as long as a specified condition is true.
+While loops repetitively execute a block of code as long as a specified condition is true.
 
 ```javascript
 while (condition) {

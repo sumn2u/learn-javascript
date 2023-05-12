@@ -1,6 +1,6 @@
 # Navigator
 
-`window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.&#x20;
+The `window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.&#x20;
 
 Let's look at a  few examples of navigation.
 

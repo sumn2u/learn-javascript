@@ -8,7 +8,7 @@ The most common types are:
 * **String**: Strings are sequences of characters, represented by either single quotes (e.g., `'hello'`) or double quotes (e.g., `"world"`).
 * **Boolean**: Booleans represent a true or false value. They can be written as `true` or `false` (without quotes).
 * **Null**: The null type represents a null value, which means "no value." It can be written as `null` (without quotes).
-* **Undefined**: The undefined type represents a value that has not been set. If a variable has been declared, but has not been assigned a value, it is undefined.
+* **Undefined**: The undefined type represents a value that has not been set. If a variable has been declared, but has not been assigned a value, it is `undefined`.
 * **Object**: An object is a collection of properties, each of which has a name and a value. You can create an object using curly braces (`{}`) and assigning properties to it using name-value pairs.
 * **Array**: An array is a special type of object that can hold a collection of items. You can create an array using square brackets (`[]`) and assigning a list of values to it.
 * **Function**: A function is a block of code that can be defined and then called by name. Functions can accept arguments (inputs) and return a value (output). You can create a function using the `function` keyword.
@@ -67,7 +67,7 @@ Data types that cannot contain values:
 * `null`
 * `undefined`
 
-A primitive data value is a simple data value with no additional properties and methods and is not an object. They are immutable, meaning that they can't be altered. There are 7 primitive data types:
+A primitive data value is a simple data value with no additional properties and methods, and is not an object. They are immutable, meaning that they can't be altered. There are 7 primitive data types:
 
 * string
 * number

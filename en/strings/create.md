@@ -1,6 +1,6 @@
 # Creation
 
-You can define strings in JavaScript by enclosing the text in single quotes or double quotes:
+Strings can be defined by enclosing the text in single quotes or double quotes:
 
 ```javascript
 // Single quotes can be used

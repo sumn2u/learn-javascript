@@ -2,7 +2,7 @@
 
 In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
 
-Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, I.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
+Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, i.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
 
 The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs.  This is what modern browsers do by allowing us to register functions as _handlers_ for specific events.
 
@@ -51,7 +51,7 @@ The event handler can call the `stopPropagation` method on the event object to p
 </script> 
 ```
 
-Here, the “_`mousedown`_” handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls `stopPropagation`, which will prevent the handler on the paragraph from running.
+Here, the _`mousedown`_ handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls `stopPropagation`, which will prevent the handler on the paragraph from running.
 
 Events can have a default behavior. For example, links navigate to the link’s target upon click, you get navigated to the bottom of a page upon clicking the down arrow, and so on. These default behaviors can be prevented by calling a `preventDefault` method on the event object.
 
@@ -66,5 +66,5 @@ Events can have a default behavior. For example, links navigate to the link’s 
 </script>
 ```
 
-Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link' target.
+Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link's target.
 
