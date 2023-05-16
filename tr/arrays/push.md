@@ -1,6 +1,6 @@
 # Push
 
-Bir dizinin sonuna yeni bir eleman eklemek için kullanılır. Bu method kullanıldığında dizinin uzunluğunu değiştirir ve yeni uzunluğu döndürür.
+Bir dizinin sonuna yeni bir eleman eklemek için kullanılır. Bu fonksiyon kullanıldığında dizinin uzunluğunu değiştirir ve yeni uzunluğu döndürür.
 
 `push` kullanımına bir örnek:
 
@@ -21,7 +21,7 @@ console.log(array);
 // Sonuç: array = [1, 2, 3, 4]
 ```
 
-Ayrıca `push` öğesini, dizi benzeri bir nesnenin (arguments nesnesi veya NodeList nesnesi gibi) sonuna öğe eklemek için, önce `Array.prototype.slice()` yöntemini kullanarak bir diziye dönüştürerek de kullanabilirsiniz:
+Ayrıca `push` öğesini, dizi benzeri bir nesnenin (arguments nesnesi veya NodeList nesnesi gibi) sonuna öğe eklemek için, önce `Array.prototype.slice()` fonksiyonunu kullanarak bir diziye dönüştürerek de kullanabilirsiniz:
 
 ```javascript
 function printArguments() {
@@ -33,4 +33,4 @@ function printArguments() {
 printArguments("a", "b", "c"); // Sonuç: ["a", "b", "c", "d", "e", "f"]
 ```
 
-Şunu unutmamak lazım, `push` methodu orijinal diziyi değiştirir. Yeni bir dizi oluşturmaz.
+Şunu unutmamak lazım, `push` fonksiyonu orijinal diziyi değiştirir. Yeni bir dizi oluşturmaz.
