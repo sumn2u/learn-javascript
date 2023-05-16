@@ -1,6 +1,6 @@
 # Sort
 
-`sort` methodu, bir dizinin öğelerini belirli bir sıraya göre (artan veya azalan) sıralar.
+`sort` fonksiyonu, bir dizinin öğelerini belirli bir sıraya göre (artan veya azalan) sıralar.
 
 `sort` kullanımı:
 
