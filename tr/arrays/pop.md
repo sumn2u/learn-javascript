@@ -1,6 +1,6 @@
 # Pop
 
-`pop()` methodu, bir diziden son elemanı çıkarır ve bu elemanı döndürür. Bu yöntem, dizinin uzunluğunu değiştirir.
+`pop()` fonksiyonu, bir diziden son elemanı çıkarır ve bu elemanı döndürür. Bu fonksiyon, dizinin uzunluğunu değiştirir.
 
 `pop()` kullanımı için syntax şu şekildedir:
 
@@ -19,7 +19,7 @@ console.log(arr);
 // Sonuç: ['one', 'two', 'three', 'four']
 ```
 
-Ayrıca `pop` yöntemini bir dizideki tüm öğeleri kaldırmak için bir döngü ile birlikte kullanabilirsiniz. İşte bunu nasıl yapabileceğinize dair bir örnek:
+Ayrıca `pop` fonksiyonunu bir dizideki tüm öğeleri kaldırmak için bir döngü ile birlikte kullanabilirsiniz. Bunu nasıl yapabileceğinize dair bir örnek:
 
 ```c
 while (array.length > 0) {
@@ -30,6 +30,6 @@ console.log(array); // Sonuç: []
 ```
 
 {% hint style="warning" %}
-`pop()` yöntemi yalnızca dizilerde çalışır ve diğer dizilere benzer nesnelerde (örneğin, arguments nesneleri veya NodeList nesneleri) çalışmaz. Bu tür nesnelerden elemanları çıkarmak istiyorsanız, önce `Array.prototype.slice()` yöntemini kullanarak onları bir diziye dönüştürmeniz gerekecektir.\
+`pop()` fonksiyonu yalnızca dizilerde çalışır ve diğer dizilere benzer nesnelerde (örneğin, arguments nesneleri veya NodeList nesneleri) çalışmaz. Bu tür nesnelerden elemanları çıkarmak istiyorsanız, önce `Array.prototype.slice()` fonksiyonunu kullanarak onları bir diziye dönüştürmeniz gerekecektir.\
 
 {% endhint %}
