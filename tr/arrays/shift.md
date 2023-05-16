@@ -1,6 +1,6 @@
 # Shift
 
-`shift` methodu, bir dizideki ilk elemanı siler ve kalan elemanları sola kaydırır. Orijinal diziyi değiştirir. `shift` için syntax şu şekilde:
+`shift` fonksiyonu, bir dizideki ilk elemanı siler ve kalan elemanları sola kaydırır. Orijinal diziyi değiştirir. `shift` fonksiyonunun *syntax*'i:
 
 ```c
 array.shift();
@@ -15,7 +15,7 @@ array.shift();
 // Sonuç: array = [2,3]
 ```
 
-Bir dizideki tüm öğeleri kaldırmak için `shift` yöntemini bir döngü ile birlikte de kullanabilirsiniz. İşte bunu nasıl yapabileceğinize dair bir örnek:
+Bir dizideki tüm öğeleri kaldırmak için `shift` fonksiyonunu bir döngü ile birlikte de kullanabilirsiniz. Bunu nasıl yapabileceğinize dair bir örnek:
 
 ```c
 while (array.length > 0) {
@@ -26,6 +26,6 @@ console.log(array); // Sonuç: []
 ```
 
 {% hint style="warning" %}
-`shift` yöntemi yalnızca diziler üzerinde çalışır, argüman nesneleri veya NodeList nesneleri gibi dizilere benzeyen diğer nesneler üzerinde çalışmaz. Bu tür nesnelerden birinin öğelerini kaydırmanız gerekiyorsa, önce `Array.prototype.slice()` yöntemini kullanarak onu bir diziye dönüştürmeniz gerekir.
+`shift` fonksiyonu yalnızca diziler üzerinde çalışır, argüman nesneleri veya NodeList nesneleri gibi dizilere benzeyen diğer nesneler üzerinde çalışmaz. Bu tür nesnelerden birinin öğelerini kaydırmanız gerekiyorsa, önce `Array.prototype.slice()` fonksiyonunu kullanarak onu bir diziye dönüştürmeniz gerekir.
 
 {% endhint %}
