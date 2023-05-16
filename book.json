@@ -70,6 +70,10 @@
           {
             "config": "ne",
             "text": "नेपाली"
+          },
+          {
+            "config": "tr",
+            "text": "Turkish"
           }
         ]
       }
