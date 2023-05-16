@@ -1,6 +1,6 @@
 # Unshift
 
-`unshift` yöntemi, yeni öğeleri sırayla dizi başına ekler. Bu, orijinal diziyi değiştirir ve dizinin yeni uzunluğunu döndürür. Örneğin:
+`unshift` fonksiyonu, yeni öğeleri sırayla dizi başına ekler. Bu, orijinal diziyi değiştirir ve dizinin yeni uzunluğunu döndürür. Örneğin:
 
 ```javascript
 let array = [0, 5, 10];
@@ -10,10 +10,10 @@ array.unshift(-5); // 4
 ```
 
 {% hint style="warning" %}
-`unshift()` yöntemi, orijinal diziyi değiştirir.
+`unshift()` fonksiyonu, orijinal diziyi değiştirir.
 {% endhint %}
 
-`unshift` yöntemi, dizinin başına eklenecek elemanları temsil eden bir veya daha fazla argüman alır. Elemanları verildikleri sırayla ekler, böylece ilk eleman dizinin ilk elemanı olur.
+`unshift` fonksiyonu, dizinin başına eklenecek elemanları temsil eden bir veya daha fazla argüman alır. Elemanları verildikleri sırayla ekler, böylece ilk eleman dizinin ilk elemanı olur.
 
 Bir diziye birden fazla eleman eklemek için `unshift` kullanımına bir örnek:
 
