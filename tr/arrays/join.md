@@ -1,6 +1,6 @@
 # Join
 
-`join` methodu, dizide bulunan öğeleri tek bir string'e dönüştürür. Orijinal diziyi değiştirmez. `join` methodunun syntax'i ise şu şekildedir:
+`join` fonksiyonu, dizide bulunan öğeleri tek bir *string*'e dönüştürür. Orijinal diziyi değiştirmez. `join` fonksiyonunun *syntax*'i ise şu şekildedir:
 
 ```c
 array.join([separator]);
@@ -22,7 +22,7 @@ console.log(array.join(" "));
 Herhangi bir ayırıcı belirtilebilir, ancak varsayılanı virgüldür (,).
 {% endhint %}
 
-Yukarıdaki örnekte boşluk bir ayraç olarak kullanıldı. Ayrıca, dizi benzeri bir nesneyi (arguments nesnesi veya NodeList nesnesi gibi) önce `Array.prototype.slice()` yöntemini kullanarak bir diziye dönüştürmek için de `join` kullanabilirsiniz:
+Yukarıdaki örnekte boşluk bir ayraç olarak kullanıldı. Ayrıca, dizi benzeri bir nesneyi (arguments nesnesi veya NodeList nesnesi gibi) önce `Array.prototype.slice()` fonksiyonunu kullanarak bir diziye dönüştürmek için de `join` kullanabilirsiniz:
 
 ```javascript
 function printArguments() {
