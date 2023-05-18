@@ -1,5 +1,7 @@
 # Table of contents
 
+* [Dedication](Dedication.md)
+* [Preface](Preface.md)
 * [Introduction](README.md)
 * [Basics](basics/README.md)
   * [Comments](basics/comments.md)

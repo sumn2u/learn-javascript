@@ -23,15 +23,13 @@ JavaScript is an interpreted language. While running Javascript an interpreter i
 "LiveScript" was the initial name given to JavaScript.
 {% endhint %}
 
-This book is divided into three main parts. The first 14 chapters cover the JavaScript language. The following three chapters discuss how JavaScript is used to program web browsers. The final two chapters are miscellaneous, and exercises. Various important topics and cases related to JavaScript programming are described in the Miscellaneous chapter, which is followed by exercises.
-
 ### Code, and what to do with it
 
-_Code_ is the written instructions that make up a program. Many chapters in this book contain a lot of code, and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter, as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.
+_Code_ is the written instructions that make up a program. Here, many chapters contain a lot of code, and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter, as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.
 
 ### Typographic conventions
 
-In this book, text written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:
+Here, text is written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:
 
 ```javascript
 const numbers = [45, 4, 9, 16, 25];
@@ -48,5 +46,3 @@ console.log(txt);
 
 // Result: txt = '45491625'
 ```
-
-Good Luck! 🍀
