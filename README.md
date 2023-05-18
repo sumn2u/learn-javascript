@@ -4,6 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/stargazers)
 [![GitHub license](https://img.shields.io/github/license/sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/bagchal.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Flearn-javascript)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7372/badge)](https://bestpractices.coreinfrastructure.org/projects/7372)
 
 This book provides a basic understanding of programming and JavaScript. The foundations and core concepts are described in simple terms in an organized manner. In-depth information and notes are provided with examples to understand the topic. Exercises are also present at the end.
 
@@ -58,7 +59,7 @@ directory | description
     ├── _book                   # compiled version of contents 
     ├── _layouts                # layout for rendering book/website
     ├── en                      # content of book in english language
-    ├── tr                      # content of book in turkish language
+    ├── ne                      # content of book in nepali language
     ├── LANGS.md                # supported languages   
     ├── book.json               # configuration for book
     └── ...
