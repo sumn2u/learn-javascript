@@ -1,3 +1,7 @@
+---
+chapter: 8
+pageNumber: 53
+---
 # Higher order
 
 Higher order functions are functions that manipulate other functions. For example, a function can take other functions as arguments and/or produce a function as its return value. Such _fancy_ functional techniques are powerful constructs available to you in JavaScript and other high-level languages like python, lisp, etc.

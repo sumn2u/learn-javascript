@@ -1,3 +1,7 @@
+---
+chapter: 16
+pageNumber: 81
+---
 # Screen
 
 The `screen` object contains the information about the screen on which the current window is being rendered. To access `screen` object we can use the `screen` property of `window` object.

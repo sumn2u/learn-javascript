@@ -1,3 +1,7 @@
+---
+chapter: 4
+pageNumber: 27
+---
 # Concatenation
 
 Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings.  The concatenation of a string appends one or more strings to another string.  This is done in JavaScript using the following ways.

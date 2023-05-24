@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 108
+---
 # Functions
 
 A function is a block of code designed to perform a specific task and executed when "something" invokes it. More info about functions can be found in the[ functions](../functions/) chapter.

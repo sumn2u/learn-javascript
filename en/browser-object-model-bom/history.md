@@ -1,4 +1,6 @@
 ---
+chapter: 16
+pageNumber: 84
 description: History object manages the browser's history stack.
 ---
 

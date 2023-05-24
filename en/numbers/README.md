@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 3
+pageNumber: 15
+---
+
+# Chapter 3
 # Numbers
 
 JavaScript has **only one type of number** – 64 bit float point. It's the same as Java's `double`. Unlike most other programming languages, there is no separate integer type, so 1 and 1.0 are the same value. Creating a number is easy, it can be done just like for any other variable type using the `var` keyword.

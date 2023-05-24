@@ -1,3 +1,7 @@
+---
+chapter: 6
+pageNumber: 38  
+---
 # Map
 
 The `Array.prototype.map()` method iterates over an array and modifies its elements using a callback function. The callback function will then be applied to each element of the array.

@@ -1,3 +1,7 @@
+---
+chapter: 19
+pageNumber: 100
+---
 # Global footprint
 
 If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware  of the variable name overlapping.

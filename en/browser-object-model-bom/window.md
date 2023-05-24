@@ -1,3 +1,7 @@
+---
+chapter: 16
+pageNumber: 79
+---
 # Window
 
 The `window` object represents the browser window and is supported by the browsers. Global variables, objects, and functions are also part of the window object. 

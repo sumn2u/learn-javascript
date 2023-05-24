@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 110
+---
 # Objects
 
 Objects are the collection of `key`, `value` pairs and each pair of key-value are known as a property. Here, the property of the `key` can be a `string` whereas its `value` can be of any value.

@@ -1,6 +1,15 @@
-# try... catch
+---
+layout: editorial
+chapter: 12
+pageNumber: 67
+---
+
+# Chapter 12
+# Error Handling
 
 In programming errors happen for various reasons, some happen from code errors,  some due to wrong input, and other unforeseeable things.  When an error happens, the code stops and generates an error message usually seen in the console.&#x20;
+
+# try... catch
 
 Instead of halting the code execution, we can use the `try...catch` construct that allows catching errors without dying the script. The `try...catch` construct has two main blocks; `try` and then `catch`.&#x20;
 

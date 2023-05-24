@@ -1,3 +1,7 @@
+---
+chapter: 3
+pageNumber: 20
+---
 # Advanced Operators
 
 When operators are put together without parenthesis, the order in which they are applied is determined by the _precedence_ of the operators. Multiplication `(*)` and division `(/)` has higher precedence than addition `(+)` and subtraction `(-)`.

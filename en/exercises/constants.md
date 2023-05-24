@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 106
+---
 # Constants
 
 Constants were introduced in ES6(2015), and use a `const` keyword. Variables that are declared with `const` cannot be reassigned or redeclared.&#x20;

@@ -1,3 +1,7 @@
+---
+chapter: 15
+pageNumber: 77
+---
 # Access Modifiers
 
 `public`, `private`, and `protected` are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
@@ -55,7 +59,6 @@ class Model extends Car {
     return this._present() + ', it is a ' + this.model;
   }
 }
-
 let myCar = new Model("Toyota", "Camry");
 console.log(myCar.show()) // I have a Toyota, it is a Camry
 ```

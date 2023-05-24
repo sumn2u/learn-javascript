@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 104
+---
 # Multiplication
 
 In JavaScript, we can perform the multiplication of two numbers by using the asterisk `(*)` arithmetic operators.&#x20;

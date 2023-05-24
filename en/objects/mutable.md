@@ -1,3 +1,7 @@
+---
+chapter: 9
+pageNumber: 57
+---
 # Mutable
 
 The difference between objects and primitive values is that we can **change objects**, whereas primitive values are **immutable**.

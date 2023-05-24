@@ -1,3 +1,7 @@
+---
+chapter: 5
+pageNumber: 29
+---
 # If
 
 The easiest condition is an if statement and its syntax is `if(condition){ do this … }`. The condition has to be true for the code inside the curly braces to be executed. You can for example test a string and set the value of another string dependent on its value as described below.

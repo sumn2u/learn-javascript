@@ -1,3 +1,7 @@
+---
+chapter: 6
+pageNumber: 45  
+---
 # For Each
 
 The `forEach` method executes a provided function once for each array element. Here's the syntax for using `forEach`:

@@ -1,3 +1,7 @@
+---
+chapter: 3
+pageNumber: 18
+---
 # Basic Operators
 
 Mathematic operations to numbers can be performed using some basic operators like:

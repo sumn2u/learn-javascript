@@ -1,7 +1,10 @@
 ---
 layout: editorial
+chapter: 2
+pageNumber: 8
 ---
 
+# Chapter 2
 # Basics
 
 In this first chapter, we'll learn the basics of programming and the Javascript language.

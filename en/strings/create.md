@@ -1,3 +1,7 @@
+---
+chapter: 4
+pageNumber: 24
+---
 # Creation
 
 Strings can be defined by enclosing the text in single quotes or double quotes:

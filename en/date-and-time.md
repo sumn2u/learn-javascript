@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 10
+pageNumber: 63
+---
+
+# Chapter 10
 # Date and Time
 
 The `date` object stores date and time and provides methods for managing it. Date objects are static and use a browser's default timezone to display the date as a full-text string.

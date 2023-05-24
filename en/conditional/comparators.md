@@ -1,3 +1,7 @@
+---
+chapter: 5
+pageNumber: 33
+---
 # Comparators
 
 Lets now focus on the conditional part:

@@ -1,3 +1,7 @@
+---
+chapter: 6
+pageNumber: 47  
+---
 # Indices
 
 So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. An **index** refers to a spot in the array. Indices logically progress one by one, but it should be noted that the first index in an array is 0, as it is in most languages. Brackets `[]` are used to signify you are referring to an index of an array.

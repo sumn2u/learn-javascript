@@ -1,3 +1,7 @@
+---
+chapter: 18
+pageNumber: 90
+---
 # Async/Await
 
 With promises, one can use a `async` keyword to declare an asynchronous function that returns a promise whereas the `await`  syntax makes JavaScript wait until that promise settles and returns its value. These keywords make promises easier to write.  An example of async is shown below.

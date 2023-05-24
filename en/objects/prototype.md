@@ -1,3 +1,7 @@
+---
+chapter: 9
+pageNumber: 60
+---
 # Prototype
 
 Every object is linked to a prototype object from which it inherits properties. The objects created from object literals (`{}`) are automatically linked to `Object.prototype`, which is an object that comes standard with JavaScript.

@@ -1,3 +1,7 @@
+---
+chapter: 16
+pageNumber: 82
+---
 # Navigator
 
 The `window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.&#x20;

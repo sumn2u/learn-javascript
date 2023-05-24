@@ -1,3 +1,8 @@
+---
+chapter: 2
+pageNumber: 10
+---
+
 # Variables
 
 The first step towards really understanding programming is looking back at algebra. If you remember it from school, algebra starts with writing terms such as the following.

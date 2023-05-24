@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 11
+pageNumber: 66
+---
+
+# Chapter 11
 # JSON
 
 **J**ava**S**cript **O**bject **N**otation (JSON) is a text-based format for storing and transporting data.  The Javascript Objects can be easily converted into JSON and vice versa.  For example.

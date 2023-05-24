@@ -1,3 +1,7 @@
+---
+chapter: 15
+pageNumber: 76
+---
 # Inheritance
 
 The inheritance is useful for code reusability purposes as it extends existing properties and methods of a class. The `extends` keyword is used to create a class inheritance. &#x20;

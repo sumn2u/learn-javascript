@@ -1,3 +1,7 @@
+---
+chapter: 6
+pageNumber: 43  
+---
 # Length
 
 Arrays have a property called `length`, and it's pretty much exactly as it sounds, it's the length of the array.

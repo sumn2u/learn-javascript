@@ -11,7 +11,7 @@ This book provides a basic understanding of programming and JavaScript. The foun
 
 # Introduction
 
-Learn JavaScript: Beginners Guide will teach you the basics of programming and JavaScript. Whether you are an experienced programmer or not, this book is intended for everyone who wishes to learn the JavaScript programming language. This book is divided into three main parts. The first 14 chapters cover the JavaScript language. The following three chapters discuss how JavaScript is used to program web browsers. The final two chapters are miscellaneous, and exercises. Various important topics and cases related to JavaScript programming are described in the Miscellaneous chapter, which is followed exercises.
+Learn JavaScript: Beginners Guide will teach you the basics of programming and JavaScript. Whether you are an experienced programmer or not, this book is intended for everyone who wishes to learn the JavaScript programming language. This book is divided into three main parts. The first 14 chapters cover the JavaScript language. The following four chapters discuss how JavaScript is used to program web browsers. The final two chapters are miscellaneous, and exercises. Various important topics and cases related to JavaScript programming are described in the Miscellaneous chapter, which is followed exercises.
 
 ### Code, and what to do with it
 

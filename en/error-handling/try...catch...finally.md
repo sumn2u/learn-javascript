@@ -1,3 +1,7 @@
+---
+chapter: 12
+pageNumber: 68
+---
 # try...catch...finally
 
 We can add one more construct to `try...catch` called `finally`, this code executes in all cases. i.e. after `try` when there is no error and after a `catch` in case of error. The syntax for `try ...catch...finally` is shown below.

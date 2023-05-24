@@ -1,3 +1,8 @@
+---
+chapter: 2
+pageNumber: 12
+---
+
 # Types
 
 Computers are sophisticated and can make use of more complex variables than just numbers. This is where variable types come in. Variables come in several types and different languages support different types.

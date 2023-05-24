@@ -1,3 +1,7 @@
+---
+chapter: 16
+pageNumber: 85
+---
 # Location
 
 The `location` object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by

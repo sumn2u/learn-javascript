@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 107
+---
 # Concatenation
 
 In any programming language, string concatenation simply means appending one or more strings to another string. For example, when strings "_World_" and "_Good Afternoon_" are concatenated with string "_Hello_", they form the string "_Hello World, Good Afternoon_". We can concatenate a string in several ways in JavaScript.

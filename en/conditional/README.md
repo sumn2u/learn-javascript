@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 5
+pageNumber: 28
+---
+
+# Chapter 5
 # Conditional Logic
 
 A condition is a test for something. Conditions are very important for programming, in several ways:

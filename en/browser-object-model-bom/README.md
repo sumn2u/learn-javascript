@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 16
+pageNumber: 78
+---
+
+# Chapter 16
 # Browser Object Model (BOM)
 
 The browser object model lets us interact with the browser window. The `window` object represents the browser's window and is supported by all browsers.

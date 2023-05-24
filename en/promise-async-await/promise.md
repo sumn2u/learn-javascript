@@ -1,3 +1,9 @@
+---
+chapter: 18
+pageNumber: 88
+---
+
+# Chapter 18
 # Promise, async/await
 
 Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
@@ -5,6 +11,8 @@ Imagine you are a popular book writer, and you are planning to release a new boo
 1. A "_producing code_" is something that takes time and accomplishes something. Here it's a book writer.
 2. A "_consuming code_" is someone who consumes the "producing code" once it's ready. In this case, it's a "reader".
 3. The linkage between the "_producing code_" and the "_consuming code_" can be called a _promise_ as it assures getting the results from the "_producing code_" to the "_consuming code_".
+
+# Promise
 
 The analogy that we made is also true for the JavaScript `promise` object. The constructor syntax for the `promise` object is:
 

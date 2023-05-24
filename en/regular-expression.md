@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 14
+pageNumber: 72
+---
+
+# Chapter 14
 # Regular Expression
 
 A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a regular expression are shown below.

@@ -1,3 +1,7 @@
+---
+chapter: 4
+pageNumber: 25
+---
 # Replace
 
 The `replace` method allows us to replace a character, word, or sentence with a string. For example.

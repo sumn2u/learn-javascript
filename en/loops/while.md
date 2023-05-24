@@ -1,3 +1,7 @@
+---
+chapter: 7
+pageNumber: 50
+---
 # While
 
 While loops repetitively execute a block of code as long as a specified condition is true.

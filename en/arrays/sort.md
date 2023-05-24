@@ -1,3 +1,7 @@
+---
+chapter: 6
+pageNumber: 46  
+---
 # Sort
 
 The `sort` method sorts the items of an array in a specific order (ascending or descending).

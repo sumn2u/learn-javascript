@@ -1,3 +1,7 @@
+---
+chapter: 20
+pageNumber: 105
+---
 # User Input Variables
 
 In JavaScript, we can take input from users and use it as a variable. One doesn't need to know their value to work with them.

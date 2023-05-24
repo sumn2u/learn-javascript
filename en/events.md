@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 17
+pageNumber: 86
+---
+
+# Chapter 17
 # Events
 
 In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.

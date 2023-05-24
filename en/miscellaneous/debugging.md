@@ -1,3 +1,7 @@
+---
+chapter: 19
+pageNumber: 101
+---
 # Debugging
 
 In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.

@@ -1,3 +1,8 @@
+---
+chapter: 2
+pageNumber: 9
+---
+
 # Comments
 
 Comments are statements that will not be executed by the interpreter, comments are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does.

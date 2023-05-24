@@ -1,3 +1,10 @@
+---
+layout: editorial
+chapter: 15
+pageNumber: 74
+---
+
+# Chapter 15
 # Classes
 
 Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword `class` is used to create a class.  And a specific method called `constructor` is used for creating and initializing an object created with a `class`. An example of car class is shown below.
