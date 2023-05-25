@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 33
+pageNumber: 34
 ---
 # Comparators
 

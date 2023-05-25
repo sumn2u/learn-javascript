@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 17
-pageNumber: 86
+pageNumber: 87
 ---
 
 # Chapter 17

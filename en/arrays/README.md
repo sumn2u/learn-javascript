@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 6
-pageNumber: 35
+pageNumber: 36
 ---
 
 # Chapter 6

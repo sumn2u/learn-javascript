@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 76
+pageNumber: 77
 ---
 # Inheritance
 

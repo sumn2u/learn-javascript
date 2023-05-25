@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 11
-pageNumber: 66
+pageNumber: 67
 ---
 
 # Chapter 11

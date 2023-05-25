@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Dedication](Dedication.md)
+* [Copyright](Copyright.md)
 * [Preface](Preface.md)
 * [Introduction](README.md)
 * [Basics](basics/README.md)
@@ -90,3 +91,4 @@
   * [Objects](exercises/objects.md)
   * [FizzBuzz Problem](exercises/fizzbuzz-problem.md)
   * [Get the Titles!](exercises/get-the-titles.md)
+* [References](References.md)

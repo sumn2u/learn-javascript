@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 3
-pageNumber: 15
+pageNumber: 16
 ---
 
 # Chapter 3

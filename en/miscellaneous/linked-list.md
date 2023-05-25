@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 97
+pageNumber: 98
 ---
 # Linked List
 

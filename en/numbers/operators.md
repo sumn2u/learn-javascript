@@ -1,6 +1,6 @@
 ---
 chapter: 3
-pageNumber: 18
+pageNumber: 19
 ---
 # Basic Operators
 

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 13
-pageNumber: 69
+pageNumber: 70
 ---
 
 # Chapter 13

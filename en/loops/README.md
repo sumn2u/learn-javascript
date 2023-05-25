@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 7
-pageNumber: 48
+pageNumber: 49
 ---
 
 # Chapter 7

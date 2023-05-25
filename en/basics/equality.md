@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 14
+pageNumber: 15
 ---
 
 # Equality

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 8
-pageNumber: 52
+pageNumber: 53
 ---
 
 # Chapter 8

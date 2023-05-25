@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 94
+pageNumber: 95
 ---
 # Currying
 

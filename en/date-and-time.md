@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 10
-pageNumber: 63
+pageNumber: 64
 ---
 
 # Chapter 10
