@@ -1,3 +1,9 @@
+---
+chapter: अध्याय १९
+pageNumber: ९६
+titleIndex: १९.३
+---
+
 # पोलिफिल र ट्रान्सपाइलरहरू
 
 जाभास्क्रिप्टमा नियमित रूपमा, नयाँ भाषा प्रस्तावहरू प्रस्तुत गरिन्छ, विश्लेषण गरिन्छ, र [https://tc39.github.io/ecma262/](https://tc39.github.io/ecma262/) मा थपिन्छ र त्यसपछि स्पेसिफिकेसनमा समावेश गरिन्छ। ब्राउजरको आधारमा जाभास्क्रिप्ट इन्जिनमा यसलाई कसरी लागू गरिन्छ भन्ने मा भिन्नता हुन सक्छ। कोही-कोहीले ड्राफ्ट प्रस्तावहरू लागू गर्न सक्छन्, जबकि अरूले सम्पूर्ण स्पेसिफिकेसन जारी नभएसम्म पर्खन्छन्। पश्चगामी अनुकूलता मुद्दाहरू नयाँ चीजहरू प्रस्तुत हुँदा उत्पन्न हुन्छन्।
@@ -13,7 +19,6 @@
 ```javascript
 // before running the transpiler
 height = height ?? 200;
-
 // after running the transpiler
 height = height !== undefined && height !== null ? height : 200;
 ```
@@ -31,7 +36,6 @@ height = height !== undefined && height !== null ? height : 200;
 const arr = [1, 2, 3, 4, 5, 6];
 const filtered = arr.filter((e) => e % 2 === 0); // filter outs the even number
 console.log(filtered);
-
 // [2, 4, 6]
 ```
 फिल्टरको लागि पोलिफिल:
