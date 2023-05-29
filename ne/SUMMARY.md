@@ -73,6 +73,7 @@
 
 * [घटनाहरू](events.md)
 * [प्रतिज्ञा, असिंक/प्रतीक्षा](promise-async-await/promise.md)
+  * [प्रतिज्ञा](promise-async-await/promise.md)
   * [असिंक/प्रतीक्षा](promise-async-await/async-await.md)
 * [विविध](miscellaneous/README.md)
   * [होइस्टिंग](miscellaneous/hoisting.md)
