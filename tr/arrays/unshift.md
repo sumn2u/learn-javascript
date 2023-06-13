@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 38  
+---
+
 # Unshift
 
 `unshift` fonksiyonu, yeni öğeleri sırayla dizi başına ekler. Bu, orijinal diziyi değiştirir ve dizinin yeni uzunluğunu döndürür. Örneğin:
