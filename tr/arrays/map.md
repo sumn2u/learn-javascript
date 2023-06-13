@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 39  
+---
+
 # Map
 
 `Array.prototype.map()` fonksiyonu, bir dizi üzerinde yineleme yapar ve _callback function_ kullanarak dizi elemanlarını değiştirir. _callback function_ daha sonra dizinin her elemanına uygulanır.
