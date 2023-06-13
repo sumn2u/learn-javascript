@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 44  
+---
+
 # Length
 
 Dizilerin `length` adında bir özelliği vardır ve adından da anlaşıldığı gibi, dizinin uzunluğunu belirtir.
