@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 47  
+---
+
 # Sort
 
 `sort` fonksiyonu, bir dizinin öğelerini belirli bir sıraya göre (artan veya azalan) sıralar.
