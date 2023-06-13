@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 48  
+---
+
 # İndeksler
 
 Diyelim ki veri öğelerinden oluşan bir diziniz var, peki bu dizide bulunan belirli bir öğeye erişmek için ne yaparsınız? İşte burada indeksler devreye giriyor. **İndeks** dizideki bir noktayı ifade eder. İndeksler, mantıksal olarak birer birer ilerler ve çoğu programlama dilinde bir dizinin ilk indeksi 0'dır. Bir dizinin belirli bir öğesine erişmek için `[]` kullanılır.
