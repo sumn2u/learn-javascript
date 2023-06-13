@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 42 
+---
+
 # Pop
 
 `pop()` fonksiyonu, bir diziden son elemanı çıkarır ve bu elemanı döndürür. Bu fonksiyon, dizinin uzunluğunu değiştirir.
