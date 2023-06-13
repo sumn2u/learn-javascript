@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 45  
+---
+
 # Push
 
 Bir dizinin sonuna yeni bir eleman eklemek için kullanılır. Bu fonksiyon kullanıldığında dizinin uzunluğunu değiştirir ve yeni uzunluğu döndürür.
