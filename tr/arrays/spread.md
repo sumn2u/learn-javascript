@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 40  
+---
+
 # Spread
 
 Bir dizi veya nesne, Spread(_Yayma_) Operatörü (...) kullanılarak hızlı bir şekilde başka bir dizi veya nesneye kopyalanabilir.
