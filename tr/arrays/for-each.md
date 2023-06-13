@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 46  
+---
+
 # For Each
 
 `forEach` fonksiyonu dizideki her eleman için aynı fonksiyonu çalıştırır. Örnek olarak:
