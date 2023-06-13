@@ -1,3 +1,11 @@
+---
+layout: editorial
+chapter: 6
+pageNumber: 36
+---
+
+# Bölüm 6
+
 # Diziler
 
 Diziler, programlamanın temel bir parçasıdır. Bir dizi, verilerden oluşan bir listedir. Bir değişkende bir çok veriyi depolayabiliriz; bu da kodumuzu daha okunabilir ve anlaşılır kılar. Aynı zamanda ilgili veriler üzerinde işlem yapmayı da kolaylaştırır.
