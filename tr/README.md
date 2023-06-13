@@ -1,3 +1,8 @@
+---
+chapter: 1
+pageNumber: 7
+---
+# Bölüm 1
 # Giriş
 
 Bilgisayarlar günümüzde çok çeşitli görevleri hızlı ve doğru bir şekilde yerine getirebildikleri için yaygın bir şekilde kullanılmaktadır. İş, sağlık, eğitim, eğlence gibi birçok farklı sektörde kullanılmakta ve birçok insan için günlük yaşamın önemli bir parçası haline gelmiştir. Ayrıca, karmaşık bilimsel ve matematiksel hesaplamalar yapmak, büyük miktarda veriyi depolamak ve işlemek ve dünyanın dört bir yanındaki insanlarla iletişim kurmak için de kullanılırlar.
