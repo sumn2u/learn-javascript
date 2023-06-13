@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 43  
+---
+
 # Join
 
 `join` fonksiyonu, dizide bulunan öğeleri tek bir *string*'e dönüştürür. Orijinal diziyi değiştirmez. `join` fonksiyonunun *syntax*'i ise şu şekildedir:
