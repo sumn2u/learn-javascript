@@ -1,3 +1,8 @@
+---
+chapter: 6
+pageNumber: 41  
+---
+
 # Shift
 
 `shift` fonksiyonu, bir dizideki ilk elemanı siler ve kalan elemanları sola kaydırır. Orijinal diziyi değiştirir. `shift` fonksiyonunun *syntax*'i:
