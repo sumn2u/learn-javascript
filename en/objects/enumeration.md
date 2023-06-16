@@ -16,8 +16,8 @@ let fruit = {
     orange: 5,
     pear: 1,
   },
-  sentence = "I have ",
-  quantity;
+sentence = "I have ",
+quantity;
 for (kind in fruit) {
   quantity = fruit[kind];
   sentence += quantity + " " + kind + (quantity === 1 ? "" : "s") + ", ";
