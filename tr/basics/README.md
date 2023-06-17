@@ -7,20 +7,20 @@ pageNumber: 8
 # Bölüm 2
 # Temeller
 
-In this first chapter, we'll learn the basics of programming and the Javascript language.
+Bu ilk bölümde, programlamanın ve Javascript dilinin temellerini öğreneceğiz.
 
-Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words, and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components. For now, the most important is a statement. A statement is analogous to a sentence in a book. On its own, it has structure and purpose, but without the context of the other statements around it, it isn't that meaningful.
+Programlama kod yazmak demektir. Bir kitap bölümlerden, paragraflardan, cümlelerden, deyimlerden, kelimelerden ve son olarak noktalama işaretleri ve harflerden oluşur, aynı şekilde bir program da daha küçük ve daha küçük bileşenlere ayrılabilir. Şimdilik en önemlisi bir ifadedir. Bir ifade, kitaptaki bir cümleye benzer. Kendi başına bir yapısı ve amacı vardır, ancak etrafındaki diğer ifadelerin bağlamı olmadan o kadar da anlamlı değildir.
 
-A statement is more casually (and commonly) known as a _line of code_. That's because statements tend to be written on individual lines. As such, programs are read from top to bottom, left to right. You might be wondering what code (also called source code) is. That happens to be a broad term which can refer to the whole of the program or the smallest part. Therefore, a line of code is simply a line of your program.
+Bir ifade yaygın olarak bir *kod satırı* olarak bilinir. Bunun nedeni, ifadelerin tek tek satırlara yazılma eğiliminde olmasıdır. Bu nedenle, programlar yukarıdan aşağıya, soldan sağa doğru okunur. Kodun (kaynak kodu da denir) ne olduğunu merak ediyor olabilirsiniz. Bu, programın tamamını veya en küçük parçasını ifade edebilen geniş bir terimdir. Bu nedenle, bir kod satırı basitçe programınızın bir satırıdır.
 
-Here is a simple example:
+
+İşte basit bir örnek:
 
 ```javascript
 let hello = "Hello";
 let world = "World";
 
-// Message equals "Hello World"
+// Message "Hello World"'e eşittir.
 let message = hello + " " + world;
 ```
-
-This code can be executed by another program called an _interpreter_ that will read the code, and execute all the statements in the right order.
+Bu kod, _interpreter_(*yorumlayıcı*) adı verilen ve kodu okuyup tüm ifadeleri doğru sırada çalıştıran başka bir program tarafından çalıştırılabilir.
