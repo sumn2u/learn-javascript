@@ -25,7 +25,7 @@ Let's look at a  few examples of navigation.
 3.  **navigator.platform**: Provides information about the browser operating system.
 
     ```javascript
-    navigator.patform;
+    navigator.platform;
     "MacIntel"
     ```
 

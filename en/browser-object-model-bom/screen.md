@@ -25,12 +25,6 @@ The `window.screen` object has different properties, some of them are listed her
 | `availTop` | A read-only property that returns the first pixel from the top that is not taken up by system elements. |
 | `availWidth` | A read-only property that returns the pixel width of the screen excluding system elements. |
 | `colorDepth` | A read-only property that returns the number of bits used to represent colors. |
-| `height` | Represents the pixel height of the screen. |
-| `left` | Represents the pixel distance of the current screen’s left side. |
-| `pixelDepth` | A read-only that returns the bit depth of the screen. |
-| `top` | Represents the pixel distance of the current screen’s top. |
-| `width` | Represents the pixel width of the screen. |
-| `orientation` |  Returns the screen orientation as specified in the Screen Orientation API |
 
 
 
