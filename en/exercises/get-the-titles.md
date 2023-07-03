@@ -4,7 +4,7 @@ pageNumber: 113
 ---
 # Get the Titles!
 
-The _Get the Tiles!_ problem is an interesting problem where we have to get the title from a list of books. This is a good exercise for the implementation of arrays and objects.
+The _Get the Titles!_ problem is an interesting problem where we have to get the title from a list of books. This is a good exercise for the implementation of arrays and objects.
 
 ### 📝 Tasks:
 
