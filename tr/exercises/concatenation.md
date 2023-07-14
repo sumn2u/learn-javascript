@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 108
+pageNumber: 107
 ---
 
 # Concatenation (Birleştirme)

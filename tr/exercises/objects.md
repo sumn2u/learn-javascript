@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 111
+pageNumber: 110
 ---
 
 # Objects (Objeler)

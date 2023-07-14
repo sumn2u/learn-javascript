@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 62
+pageNumber: 61
 ---
 
 # Delete (Silmek)

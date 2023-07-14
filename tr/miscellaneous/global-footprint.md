@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 101
+pageNumber: 100
 ---
 
 # Global footprint

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 20
-pageNumber: 103
+pageNumber: 102
 ---
 
 # Bölüm 20

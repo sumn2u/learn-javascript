@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 77
+pageNumber: 76
 ---
 
 # Inheritance (Kalıtım - Miras)

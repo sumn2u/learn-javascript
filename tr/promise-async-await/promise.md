@@ -1,6 +1,6 @@
 ---
 chapter: 18
-pageNumber: 89
+pageNumber: 88
 ---
 
 # Bölüm 18

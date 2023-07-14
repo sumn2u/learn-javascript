@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 17
-pageNumber: 87
+pageNumber: 88
 ---
 
 # Bölüm 18

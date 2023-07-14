@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 63
+pageNumber: 62
 ---
 
 # Enumeration (Numaralandırma)

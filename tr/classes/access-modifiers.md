@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 78
+pageNumber: 77
 ---
 
 # Access Modifiers (Erişim Düzenleyicileri)

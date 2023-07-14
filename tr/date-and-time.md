@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 10
-pageNumber: 64
+pageNumber: 63
 ---
 
 # Bölüm 10

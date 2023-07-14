@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 102
+pageNumber: 101
 ---
 
 # Debugging (Hata Ayıklama)

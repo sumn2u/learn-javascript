@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 14
-pageNumber: 73
+pageNumber: 71
 ---
 
 # Bölüm 14

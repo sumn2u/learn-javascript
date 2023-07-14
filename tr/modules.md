@@ -1,3 +1,9 @@
+---
+layout: editorial
+chapter: 13
+pageNumber: 69
+---
+# Bölüm 13
 # Modüller
 
 Gerçek dünyada, bir program yeni işlevlerin ihtiyaçlarını karşılamak için doğal olarak büyür. Büyüyen kod tabanının yapılandırılması ve koruması ek çalışma gerektirir. Gelecekte ödeyecek olsa da, bunu ihmal etmek daha cazip gelebilir. Gerçekte, uygulamanın karmaşıklığını artırır, çünkü sistem hakkında bütüncül bir anlayış oluşturmak zorunda kalırsınız ve herhangi bir parçayı izole bir şekilde incelemekte zorluk yaşarsınız. İkinci olarak, işlevselliğini kullanabilmek için düğümleri çözmek için daha fazla zaman harcamanız gerekmektedir. 
