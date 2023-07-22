@@ -26,6 +26,11 @@
     asciidoctor "^2.2.0"
     lodash "^4.13.1"
 
+"@honkit/honkit-plugin-ga@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@honkit/honkit-plugin-ga/-/honkit-plugin-ga-1.0.1.tgz#ee5d8d2f44c128df547aeb6218295ff08fbe5684"
+  integrity sha512-bzPllIQaNlIs+nC+gOPJSKVoR5rGi/fPslgPLacXzMiHXj7tegsqDz/6LTmOFPF83QpEFIj0TcVa/C5LopKI8w==
+
 "@honkit/honkit-plugin-highlight@^4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@honkit/honkit-plugin-highlight/-/honkit-plugin-highlight-4.0.7.tgz#d54911155167bd2bcd79442b9548737e5d4c636c"

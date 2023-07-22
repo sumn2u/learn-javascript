@@ -4,6 +4,7 @@
   "description": "Learn JavaScript",
   "main": "index.js",
   "devDependencies": {
+    "@honkit/honkit-plugin-ga": "^1.0.1",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-exercises": "^3.0.0",

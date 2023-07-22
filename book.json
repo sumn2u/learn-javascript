@@ -18,6 +18,7 @@
       "intopic-toc",
       "sharing",
       "exercises",
+      "@honkit/honkit-plugin-ga",
       "sitemap",
       "i18nsettings",
       "favicon-custom",
@@ -51,6 +52,10 @@
         "instapaper": false,
         "vk": false,
         "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+      },
+      "ga": {
+            "trackingID": "G-57X6JSDN82",
+            "anonymizeIP": true
       },
       "favicon": "favicon.ico",
       "appleTouchIconPrecomposed152": "js.png",
