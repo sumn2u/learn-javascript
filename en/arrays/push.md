@@ -1,6 +1,7 @@
 ---
 chapter: 6
-pageNumber: 45  
+pageNumber: 45 
+description: The push method adds element in an array making the last index the newly added item. This method changes the array length and returns a new length. 
 ---
 # Push
 

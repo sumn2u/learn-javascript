@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 7
 pageNumber: 49
+description: Loops are control structures that allow you to execute a block of code repeatedly until a specified condition is met. They are essential for automating repetitive tasks and iterating over data structures like arrays and strings.
 ---
 
 # Chapter 7

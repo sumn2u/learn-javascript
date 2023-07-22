@@ -1,6 +1,7 @@
 ---
 chapter: 16
 pageNumber: 82
+description: The screen object contains the information about the screen on which the current window is being rendered. It allows developers to access properties related to the user's screen size, resolution, color depth, and other display-related information.
 ---
 # Screen
 

@@ -1,6 +1,7 @@
 ---
 chapter: 18
 pageNumber: 89
+description: Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a more structured and organized way to handle asynchronous operations, such as making network requests, reading files, or interacting with databases.
 ---
 
 # Chapter 18

@@ -1,6 +1,7 @@
 ---
 chapter: 2
 pageNumber: 15
+description: The equality operator is used for comparision. It can to determine if two variables are equal, even if they are not of the same type.
 ---
 
 # Equality

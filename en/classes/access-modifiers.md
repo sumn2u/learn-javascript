@@ -1,6 +1,7 @@
 ---
 chapter: 15
 pageNumber: 78
+description: Access modifiers control the visibility and accessibility of class members (properties and methods). public, private, and protected are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
 ---
 # Access Modifiers
 

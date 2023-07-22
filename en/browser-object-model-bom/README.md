@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 16
 pageNumber: 79
+description: The browser object model lets us interact with the browser window. Through it one can control or manipulate various aspects of the browser, such as the window, frames, history, location, and more.
 ---
 
 # Chapter 16

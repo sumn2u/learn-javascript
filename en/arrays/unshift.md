@@ -1,6 +1,7 @@
 ---
 chapter: 6
-pageNumber: 38  
+pageNumber: 38 
+description:  To add an element at the begining of an array we can use the unshift method. It modifies the original array and return the new array length.
 ---
 # Unshift
 

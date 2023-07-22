@@ -1,6 +1,7 @@
 ---
 chapter: 9
 pageNumber: 62
+description: A `delete` property can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
 ---
 # Delete
 

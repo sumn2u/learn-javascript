@@ -1,6 +1,7 @@
 ---
 chapter: 6
-pageNumber: 46  
+pageNumber: 46
+description: The forEach method executes a provided function once for each array element.  
 ---
 # For Each
 

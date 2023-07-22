@@ -1,6 +1,7 @@
 ---
 chapter: 6
 pageNumber: 40  
+description: Spread operator allows array or object to quickly manipulate arrays and objects. It provides a concise syntax for copying, merging, or extracting elements from arrays, and for copying properties from objects. 
 ---
 # Spread
 

@@ -1,6 +1,7 @@
 ---
 chapter: 2
 pageNumber: 10
+description: Comments are used to mark annotations for other programmers or small descriptions about the code that helps others to understand it. These statement are not executed by the interpreter.
 ---
 
 # Comments

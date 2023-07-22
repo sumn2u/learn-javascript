@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 15
 pageNumber: 75
+description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
 ---
 
 # Chapter 15

@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 12
 pageNumber: 68
+description: In programming errors happen for various reasons, some happen from code errors,  some due to wrong input, and other unforeseeable things. The try catch helps prevent the entire script from halting or crashing when an error occurs, allowing us to gracefully handle exceptional cases and provide a fallback behavior.
 ---
 
 # Chapter 12
