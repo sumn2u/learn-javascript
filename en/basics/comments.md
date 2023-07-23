@@ -6,7 +6,7 @@ description: Comments are used to mark annotations for other programmers or smal
 
 # Comments
 
-Comments are statements that will not be executed by the interpreter, comments are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does.
+Comments are statements that will not be executed by the interpreter, comments are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does. They are also used to temporarily disable code without affecting the program control flow.
 
 In JavaScript, comments can be written in 2 different ways:
 
@@ -26,3 +26,5 @@ it will be ignored by the interpreter
 */
 let a = "this is a variable defined in a statement";
 ```
+
+Including comments in code is essential for maintaining code quality, enabling collaboration, and simplifying the debugging process. By providing context and explanations for various parts of the program, comments make it easier to understand the code in the future. Therefore, it is considered a beneficial practice to include comments in code.
