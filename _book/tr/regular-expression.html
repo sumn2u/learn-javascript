@@ -1,0 +1,1740 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <title>Regular Expression · Learn JavaScript: Beginners Edition</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 4.0.7">
+        <meta name="author" content="Suman Kunwar, Süleyman Ekmekci">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classes/" />
+    
+    
+    <link rel="prev" href="modules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="Dedication.html">
+            
+                <a href="Dedication.html">
+            
+                    
+                    Adanmışlık
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Copyright.html">
+            
+                <a href="Copyright.html">
+            
+                    
+                    Copyright
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Preface.html">
+            
+                <a href="Preface.html">
+            
+                    
+                    Önsöz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="basics/">
+            
+                <a href="basics/">
+            
+                    
+                    Temel Bilgiler
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="basics/comments.html">
+            
+                <a href="basics/comments.html">
+            
+                    
+                    Yorum Satırları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="basics/variables.html">
+            
+                <a href="basics/variables.html">
+            
+                    
+                    Değişkenler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="basics/types.html">
+            
+                <a href="basics/types.html">
+            
+                    
+                    Veri tipleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="basics/equality.html">
+            
+                <a href="basics/equality.html">
+            
+                    
+                    Eşit Operatörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="numbers/">
+            
+                <a href="numbers/">
+            
+                    
+                    Sayılar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="numbers/math.html">
+            
+                <a href="numbers/math.html">
+            
+                    
+                    Matematik
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="numbers/operators.html">
+            
+                <a href="numbers/operators.html">
+            
+                    
+                    Temel Operatörler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="numbers/advanced.html">
+            
+                <a href="numbers/advanced.html">
+            
+                    
+                    Gelişmiş Operatörler
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="strings/">
+            
+                <a href="strings/">
+            
+                    
+                    Strings
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="strings/create.html">
+            
+                <a href="strings/create.html">
+            
+                    
+                    Oluşturma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="strings/replace.html">
+            
+                <a href="strings/replace.html">
+            
+                    
+                    Değiştirme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="strings/length.html">
+            
+                <a href="strings/length.html">
+            
+                    
+                    Uzunluk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="strings/concat.html">
+            
+                <a href="strings/concat.html">
+            
+                    
+                    Birleştirme
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="conditional/">
+            
+                <a href="conditional/">
+            
+                    
+                    Koşullar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="conditional/if.html">
+            
+                <a href="conditional/if.html">
+            
+                    
+                    If
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="conditional/else.html">
+            
+                <a href="conditional/else.html">
+            
+                    
+                    Else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="conditional/switch.html">
+            
+                <a href="conditional/switch.html">
+            
+                    
+                    Switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="conditional/comparators.html">
+            
+                <a href="conditional/comparators.html">
+            
+                    
+                    Karşılaştırma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="conditional/concatenate.html">
+            
+                <a href="conditional/concatenate.html">
+            
+                    
+                    Birden fazla koşulla karşılaştırma
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="arrays/">
+            
+                <a href="arrays/">
+            
+                    
+                    Diziler
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="arrays/unshift.html">
+            
+                <a href="arrays/unshift.html">
+            
+                    
+                    Unshift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="arrays/map.html">
+            
+                <a href="arrays/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="arrays/spread.html">
+            
+                <a href="arrays/spread.html">
+            
+                    
+                    Spread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="arrays/shift.html">
+            
+                <a href="arrays/shift.html">
+            
+                    
+                    Shift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="arrays/pop.html">
+            
+                <a href="arrays/pop.html">
+            
+                    
+                    Pop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="arrays/join.html">
+            
+                <a href="arrays/join.html">
+            
+                    
+                    Join
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="arrays/length.html">
+            
+                <a href="arrays/length.html">
+            
+                    
+                    Length
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="arrays/push.html">
+            
+                <a href="arrays/push.html">
+            
+                    
+                    Push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="arrays/for-each.html">
+            
+                <a href="arrays/for-each.html">
+            
+                    
+                    For Each
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="arrays/sort.html">
+            
+                <a href="arrays/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.11" data-path="arrays/indices.html">
+            
+                <a href="arrays/indices.html">
+            
+                    
+                    Indices
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="loops/">
+            
+                <a href="loops/">
+            
+                    
+                    Döngüler
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="loops/for.html">
+            
+                <a href="loops/for.html">
+            
+                    
+                    For döngüsü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="loops/while.html">
+            
+                <a href="loops/while.html">
+            
+                    
+                    While döngüsü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="loops/dowhile.html">
+            
+                <a href="loops/dowhile.html">
+            
+                    
+                    Do...While döngüsü
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="functions/">
+            
+                <a href="functions/">
+            
+                    
+                    Fonksiyonlar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="functions/higher-order.html">
+            
+                <a href="functions/higher-order.html">
+            
+                    
+                    Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="objects/">
+            
+                <a href="objects/">
+            
+                    
+                    Nesneler
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="objects/properties.html">
+            
+                <a href="objects/properties.html">
+            
+                    
+                    Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="objects/mutable.html">
+            
+                <a href="objects/mutable.html">
+            
+                    
+                    Mutable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="objects/reference.html">
+            
+                <a href="objects/reference.html">
+            
+                    
+                    Referans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="objects/prototype.html">
+            
+                <a href="objects/prototype.html">
+            
+                    
+                    Prototype
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="objects/delete.html">
+            
+                <a href="objects/delete.html">
+            
+                    
+                    Delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="objects/enumeration.html">
+            
+                <a href="objects/enumeration.html">
+            
+                    
+                    Enumeration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    Tarih ve Saat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="error-handling/try...-catch.html">
+            
+                <a href="error-handling/try...-catch.html">
+            
+                    
+                    Hata Yönetimi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="error-handling/try...catch...finally.html">
+            
+                <a href="error-handling/try...catch...finally.html">
+            
+                    
+                    try...catch...finally
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    Modüller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="regular-expression.html">
+            
+                <a href="regular-expression.html">
+            
+                    
+                    Regular Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="classes/">
+            
+                <a href="classes/">
+            
+                    
+                    Sınıflar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="classes/static.html">
+            
+                <a href="classes/static.html">
+            
+                    
+                    Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="classes/inheritance.html">
+            
+                <a href="classes/inheritance.html">
+            
+                    
+                    Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="classes/access-modifiers.html">
+            
+                <a href="classes/access-modifiers.html">
+            
+                    
+                    Access Modifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="browser-object-model-bom/">
+            
+                <a href="browser-object-model-bom/">
+            
+                    
+                    Tarayıcı Nesne Modeli
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="browser-object-model-bom/window.html">
+            
+                <a href="browser-object-model-bom/window.html">
+            
+                    
+                    Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="browser-object-model-bom/popup.html">
+            
+                <a href="browser-object-model-bom/popup.html">
+            
+                    
+                    Popup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="browser-object-model-bom/screen.html">
+            
+                <a href="browser-object-model-bom/screen.html">
+            
+                    
+                    Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="browser-object-model-bom/navigator.html">
+            
+                <a href="browser-object-model-bom/navigator.html">
+            
+                    
+                    Navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="browser-object-model-bom/cookies.html">
+            
+                <a href="browser-object-model-bom/cookies.html">
+            
+                    
+                    Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="browser-object-model-bom/history.html">
+            
+                <a href="browser-object-model-bom/history.html">
+            
+                    
+                    History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="browser-object-model-bom/location.html">
+            
+                <a href="browser-object-model-bom/location.html">
+            
+                    
+                    Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="promise-async-await/promise.html">
+            
+                <a href="promise-async-await/promise.html">
+            
+                    
+                    Promise, async/await
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="promise-async-await/async-await.html">
+            
+                <a href="promise-async-await/async-await.html">
+            
+                    
+                    Async/Await
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="miscellaneous/">
+            
+                <a href="miscellaneous/">
+            
+                    
+                    Miscellaneous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="miscellaneous/template-literals.html">
+            
+                <a href="miscellaneous/template-literals.html">
+            
+                    
+                    Template Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="miscellaneous/hoisting.html">
+            
+                <a href="miscellaneous/hoisting.html">
+            
+                    
+                    Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="miscellaneous/currying.html">
+            
+                <a href="miscellaneous/currying.html">
+            
+                    
+                    Currying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="miscellaneous/polyfills-and-transpilers.html">
+            
+                <a href="miscellaneous/polyfills-and-transpilers.html">
+            
+                    
+                    Polyfills and Transpilers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.5" data-path="miscellaneous/linked-list.html">
+            
+                <a href="miscellaneous/linked-list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.6" data-path="miscellaneous/global-footprint.html">
+            
+                <a href="miscellaneous/global-footprint.html">
+            
+                    
+                    Global footprint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.7" data-path="miscellaneous/debugging.html">
+            
+                <a href="miscellaneous/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="exercises/">
+            
+                <a href="exercises/">
+            
+                    
+                    Alıştırmalar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="exercises/console.html">
+            
+                <a href="exercises/console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="exercises/multiplication.html">
+            
+                <a href="exercises/multiplication.html">
+            
+                    
+                    Multiplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="exercises/user-input-variables.html">
+            
+                <a href="exercises/user-input-variables.html">
+            
+                    
+                    User Input Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="exercises/constants.html">
+            
+                <a href="exercises/constants.html">
+            
+                    
+                    Constants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="exercises/concatenation.html">
+            
+                <a href="exercises/concatenation.html">
+            
+                    
+                    Concatenation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="exercises/functions.html">
+            
+                <a href="exercises/functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="exercises/conditional-statements.html">
+            
+                <a href="exercises/conditional-statements.html">
+            
+                    
+                    Conditional Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.8" data-path="exercises/objects.html">
+            
+                <a href="exercises/objects.html">
+            
+                    
+                    Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.9" data-path="exercises/fizzbuzz-problem.html">
+            
+                <a href="exercises/fizzbuzz-problem.html">
+            
+                    
+                    FizzBuzz Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.10" data-path="exercises/get-the-titles.html">
+            
+                <a href="exercises/get-the-titles.html">
+            
+                    
+                    Get the Titles!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="References.html">
+            
+                <a href="References.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" target="_blank">
+      
+        <img src="https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x" />
+      
+        </a>
+      
+      
+        <p>Get free pdf and epub version by joining on wishlist! ✨</p>
+      
+      
+      <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" class="btn" target="_blank">
+        Read now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Regular Expression</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bölüm-14">Bölüm 14</h1>
+<h1 id="regular-expression-düzenli-i̇fadeler">Regular Expression (Düzenli İfadeler)</h1>
+<p>Bir düzenli ifade, bir <code>RegEx</code> (Regular Expression) nesnesi olarak oluşturulabilir veya bir öntanımlı değer olarak bir <code>(/)</code>(forward slash) karakterleri ile bir desen içine yazılabilir. Düzenli ifade oluşturmak için kullanılan sözdizimleri aşağıda gösterilmiştir.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// using regular expression constructor</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(pattern[, flags]);
+
+<span class="hljs-comment">// using literals</span>
+<span class="hljs-regexp">/pattern/m</span>odifiers
+</code></pre>
+<p>Literaller kullanarak düzenli ifade oluşturmak için bayraklar isteğe bağlıdır. Yukarıda bahsedilen yöntemi kullanarak aynı düzenli ifadeyi oluşturmak için bir örnek aşağıda gösterilmiştir.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> re1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;xyz&quot;</span>);
+<span class="hljs-keyword">let</span> re2 = <span class="hljs-regexp">/xyz/</span>;
+</code></pre>
+<p>Her iki yol da bir regex nesnesi oluşturacak ve aynı yöntemlere ve özelliklere sahip olacaktır. Düzenli ifade oluşturmak için dinamik değerlere ihtiyaç duyabileceğimiz durumlar vardır, bu durumda literaller çalışmaz ve constructor&apos;a gitmemiz gerekir.</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Düzenli ifadenin bir parçası olmak için bir forward slash (/) kullanmak istediğimiz durumlarda, forward slash <code>(/)</code> karakterini backslash <code>(\)</code> ile kaçırmamız gerekir.</p>
+</div></div><p></p>
+<p>Durumlara duyarlı aramalar yapmak için kullanılan farklı değiştiriciler aşağıda listelenmiştir:</p>
+<ul>
+<li><code>g</code> - global arama (ilk eşleşmeden sonra durmaz, tüm eşleşmeleri bulur)</li>
+<li><code>i</code> - duruma duyarlı arama</li>
+<li><code>m</code> - çok satırlı eşleme</li>
+</ul>
+<p>Bir düzenli ifadede, bir dizi karakteri bulmak için <em>Brackets</em> (<em>Köşeli Parantezler</em>) kullanılır. Bazıları aşağıda listelenmiştir.</p>
+<ul>
+<li><code>[abc]</code> - brackets arasında herhangi bir karakter bul</li>
+<li><code>[^abc]</code> - brackets arasında olmayan bir karakter bul</li>
+<li><code>[0-9]</code> - brackets arasında herhangi bir rakam bul</li>
+<li><code>[^0-9]</code> - brackets arasında olmayan herhangi bir karakter bul (sayılar dışında)</li>
+<li><code>(x|y)</code>- | ile ayrılmış alternatiflerden herhangi birini bul</li>
+</ul>
+<p>Düzenli ifadede özel bir anlama sahip olan <em>Metacharacters</em> (<em>özel karakterlerdir</em>). Bu karakterler aşağıda daha ayrıntılı olarak açıklanmıştır:</p>
+<table>
+<thead>
+<tr>
+<th>Metacharacter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>Bir karakter hariç yeni satır veya bir sonlandırıcı eşleştirir</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>Alfanumerik karakter (<code>[a-zA-Z0–9_]</code>) eşleştirir</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td><code>[^a-zA-Z0–9_]</code> ile aynı olan bir non word karakteri eşleştirir</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td><code>[0-9]</code> ile aynı olan herhangi bir rakam karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>Sayısal olmayan herhangi bir karakterle eşleşir</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>Bir boşluk karakteriyle eşleştirme (boşluklar, sekmeler vb.)</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>Boşluk olmayan bir karakterle eşleştirme</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Bir kelimenin başında / sonunda eşleştirir</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>Match but not at the begining / end of a word</td>
+</tr>
+<tr>
+<td><code>\0</code></td>
+<td><code>NULL</code> karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>Yeni bir satır karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>Form feed karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>Carriage return karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Tab karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>Tab vertical karakterini eşleştirir</td>
+</tr>
+<tr>
+<td><code>\xxx</code></td>
+<td>Bir octal sayı ile belirtilen karakteri eşleştirir (ex:<code>xxx</code>)</td>
+</tr>
+<tr>
+<td><code>\xdd</code></td>
+<td>Bir hexadecimal sayı ile belirtilen karakteri eşleştirir dd</td>
+</tr>
+<tr>
+<td><code>\udddd</code></td>
+<td>Bir hexadecimal sayı ile belirtilen Unicode karakterini eşleştirir dddd</td>
+</tr>
+</tbody>
+</table>
+<p>RegEx tarafından desteklenen özellikler ve yöntemler aşağıda listelenmiştir.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>constructor</code></td>
+<td>RegExp nesnesinin protipini oluşturan fonksiyonu döndürür</td>
+</tr>
+<tr>
+<td><code>global</code></td>
+<td><code>g</code> düzenleyicisinin ayarlı olup olmadığını kontrol eder</td>
+</tr>
+<tr>
+<td><code>ignoreCase</code></td>
+<td><code>i</code> düzenleyicisinin ayarlanıp ayarlanmadığını kontrol eder</td>
+</tr>
+<tr>
+<td><code>lastIndex</code></td>
+<td>Bir sonraki eşleşmenin başlatılacağı dizini belirtir</td>
+</tr>
+<tr>
+<td><code>multiline</code></td>
+<td>m düzenleyicisinin ayarlı olup olmadığını kontrol eder</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>Dizenin metnini döndürür</td>
+</tr>
+<tr>
+<td><code>exec()</code></td>
+<td>Eşleşmeyi test eder ve ilk eşleşmeyi döndürür, eşleşme yoksa <code>null</code> döndürür</td>
+</tr>
+<tr>
+<td><code>test()</code></td>
+<td>Eşleşmeyi test eder ve <code>true</code> veya <code>false</code> döndürür</td>
+</tr>
+<tr>
+<td><code>toString()</code></td>
+<td>Düzenli ifadenin dize değerini döndürür</td>
+</tr>
+</tbody>
+</table>
+<p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Bir <code>complie()</code> yöntemi düzenli ifadeyi uyumlu hale getirir ve kullanımdan kaldırılmıştır.</p>
+</div></div><p></p>
+<p>Düzenli ifadelerin (<em>regular expressions </em>) bazı örnekleri burada gösterilmektedir.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> text = <span class="hljs-string">&quot;The best things in life are free&quot;</span>;
+<span class="hljs-keyword">let</span> result = <span class="hljs-regexp">/e/</span>.exec(text); <span class="hljs-comment">// looks for a match  of e in a string</span>
+<span class="hljs-comment">// result: e</span>
+
+<span class="hljs-keyword">let</span> helloWorldText = <span class="hljs-string">&quot;Hello world!&quot;</span>;
+<span class="hljs-comment">// Look for &quot;Hello&quot;</span>
+<span class="hljs-keyword">let</span> pattern1 = <span class="hljs-regexp">/Hello/g</span>;
+<span class="hljs-keyword">let</span> result1 = pattern1.test(helloWorldText);
+<span class="hljs-comment">// result1: true</span>
+
+<span class="hljs-keyword">let</span> pattern1String = pattern1.toString();
+<span class="hljs-comment">// pattern1String : &apos;/Hello/g&apos;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modules.html" class="navigation navigation-prev " aria-label="Previous page: Modüller">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classes/" class="navigation navigation-next " aria-label="Next page: Sınıflar">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"editorial","chapter":14,"pageNumber":71,"title":"Regular Expression","level":"1.17","depth":1,"next":{"title":"Sınıflar","level":"1.18","depth":1,"path":"classes/README.md","ref":"classes/README.md","articles":[{"title":"Static","level":"1.18.1","depth":2,"path":"classes/static.md","ref":"classes/static.md","articles":[]},{"title":"Inheritance","level":"1.18.2","depth":2,"path":"classes/inheritance.md","ref":"classes/inheritance.md","articles":[]},{"title":"Access Modifiers","level":"1.18.3","depth":2,"path":"classes/access-modifiers.md","ref":"classes/access-modifiers.md","articles":[]}]},"previous":{"title":"Modüller","level":"1.16","depth":1,"path":"modules.md","ref":"modules.md","articles":[]},"dir":"ltr"},"config":{"totalpages":113,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"ne","text":"नेपाली"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"appleTouchIconPrecomposed152":"js.png","ga":{"trackingID":"G-57X6JSDN82","anonymizeIP":true},"exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar, Süleyman Ekmekci","theme":"default","keywords":"learn JavaScript, Beginners lessons","author":"Suman Kunwar, Süleyman Ekmekci","published":"13/07/2023","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn JavaScript: Beginners Edition","language":"tr","website":"https://sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning JavaScript"},"file":{"path":"regular-expression.md","mtime":"2023-07-14T03:42:24.233Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-07-23T03:20:45.240Z"},"basePath":".","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/honkit-plugin-i18nsettings/i18nsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

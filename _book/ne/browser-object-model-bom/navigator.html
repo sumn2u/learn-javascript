@@ -1,0 +1,1626 @@
+
+<!DOCTYPE HTML>
+<html lang="ne" >
+    <head>
+        <title>नेभिगेटर · जाभास्क्रिप्ट सिक्नुहोस्: शुरुआती संस्करण</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 4.0.7">
+        <meta name="author" content="Suman Kunwar">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cookies.html" />
+    
+    
+    <link rel="prev" href="screen.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="खोजी गर्न टाइप गर्नुहोस्" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../Dedication.html">
+            
+                <a href="../Dedication.html">
+            
+                    
+                    समर्पण
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Copyright.html">
+            
+                <a href="../Copyright.html">
+            
+                    
+                    प्रतिलिपि अधिकार
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../acknowledgments.html">
+            
+                <a href="../acknowledgments.html">
+            
+                    
+                    अभिस्वीकृति
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Preface.html">
+            
+                <a href="../Preface.html">
+            
+                    
+                    प्रस्तावना
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    परिचय
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/">
+            
+                <a href="../basics/">
+            
+                    
+                    आधारभूत कुरा
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../basics/comments.html">
+            
+                <a href="../basics/comments.html">
+            
+                    
+                    टिप्पणीहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../basics/variables.html">
+            
+                <a href="../basics/variables.html">
+            
+                    
+                    चरहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../basics/types.html">
+            
+                <a href="../basics/types.html">
+            
+                    
+                    प्रकारहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../basics/equality.html">
+            
+                <a href="../basics/equality.html">
+            
+                    
+                    समानता
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../numbers/">
+            
+                <a href="../numbers/">
+            
+                    
+                    नम्बरहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../numbers/math.html">
+            
+                <a href="../numbers/math.html">
+            
+                    
+                    गणित
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../numbers/operators.html">
+            
+                <a href="../numbers/operators.html">
+            
+                    
+                    आधारभूत अपरेटरहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../numbers/advanced.html">
+            
+                <a href="../numbers/advanced.html">
+            
+                    
+                    उन्नत अपरेटरहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../strings/">
+            
+                <a href="../strings/">
+            
+                    
+                    स्ट्रिंग्स
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../strings/create.html">
+            
+                <a href="../strings/create.html">
+            
+                    
+                    सिर्जना
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../strings/replace.html">
+            
+                <a href="../strings/replace.html">
+            
+                    
+                    बदल्नुहोस्
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../strings/length.html">
+            
+                <a href="../strings/length.html">
+            
+                    
+                    लम्बाई
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../strings/concat.html">
+            
+                <a href="../strings/concat.html">
+            
+                    
+                    संयोजन
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../conditional/">
+            
+                <a href="../conditional/">
+            
+                    
+                    सशर्त तर्क
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../conditional/if.html">
+            
+                <a href="../conditional/if.html">
+            
+                    
+                    यदि
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../conditional/else.html">
+            
+                <a href="../conditional/else.html">
+            
+                    
+                    अरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../conditional/switch.html">
+            
+                <a href="../conditional/switch.html">
+            
+                    
+                    स्विच
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../conditional/comparators.html">
+            
+                <a href="../conditional/comparators.html">
+            
+                    
+                    तुलनाकर्ताहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../conditional/concatenate.html">
+            
+                <a href="../conditional/concatenate.html">
+            
+                    
+                    संयोजन
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../arrays/">
+            
+                <a href="../arrays/">
+            
+                    
+                    एरेहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../arrays/unshift.html">
+            
+                <a href="../arrays/unshift.html">
+            
+                    
+                    अनसिफ्ट
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../arrays/map.html">
+            
+                <a href="../arrays/map.html">
+            
+                    
+                    म्याप
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../arrays/spread.html">
+            
+                <a href="../arrays/spread.html">
+            
+                    
+                    स्प्रेअड
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../arrays/shift.html">
+            
+                <a href="../arrays/shift.html">
+            
+                    
+                    सिफ्ट
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../arrays/pop.html">
+            
+                <a href="../arrays/pop.html">
+            
+                    
+                    पप
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../arrays/join.html">
+            
+                <a href="../arrays/join.html">
+            
+                    
+                    जोइन
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../arrays/length.html">
+            
+                <a href="../arrays/length.html">
+            
+                    
+                    लम्बाइ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../arrays/push.html">
+            
+                <a href="../arrays/push.html">
+            
+                    
+                    पुश
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../arrays/for-each.html">
+            
+                <a href="../arrays/for-each.html">
+            
+                    
+                    फर इच
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../arrays/sort.html">
+            
+                <a href="../arrays/sort.html">
+            
+                    
+                    सोर्ट
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../arrays/indices.html">
+            
+                <a href="../arrays/indices.html">
+            
+                    
+                    इन्दिसेस
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../loops/">
+            
+                <a href="../loops/">
+            
+                    
+                    लूप
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../loops/for.html">
+            
+                <a href="../loops/for.html">
+            
+                    
+                    फर
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../loops/while.html">
+            
+                <a href="../loops/while.html">
+            
+                    
+                    वहाइल
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../loops/dowhile.html">
+            
+                <a href="../loops/dowhile.html">
+            
+                    
+                    डु ...वहाइल
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../functions/">
+            
+                <a href="../functions/">
+            
+                    
+                    प्रकार्यहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../functions/higher-order.html">
+            
+                <a href="../functions/higher-order.html">
+            
+                    
+                    उच्च अर्डर प्रकार्यहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../objects/">
+            
+                <a href="../objects/">
+            
+                    
+                    वस्तुहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../objects/properties.html">
+            
+                <a href="../objects/properties.html">
+            
+                    
+                    गुण
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../objects/mutable.html">
+            
+                <a href="../objects/mutable.html">
+            
+                    
+                    परिवर्तनीय
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../objects/reference.html">
+            
+                <a href="../objects/reference.html">
+            
+                    
+                    सन्दर्भ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../objects/prototype.html">
+            
+                <a href="../objects/prototype.html">
+            
+                    
+                    प्रोटोटाइप
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../objects/delete.html">
+            
+                <a href="../objects/delete.html">
+            
+                    
+                    मेटाउन
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../objects/enumeration.html">
+            
+                <a href="../objects/enumeration.html">
+            
+                    
+                    गणना
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../date-and-time.html">
+            
+                <a href="../date-and-time.html">
+            
+                    
+                    मिति र समय
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../json.html">
+            
+                <a href="../json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../error-handling/try...-catch.html">
+            
+                <a href="../error-handling/try...-catch.html">
+            
+                    
+                    त्रुटि ह्यान्डलिंग
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../error-handling/try...-catch.html">
+            
+                <a href="../error-handling/try...-catch.html">
+            
+                    
+                    प्रयास ... क्याच
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../error-handling/try...catch...finally.html">
+            
+                <a href="../error-handling/try...catch...finally.html">
+            
+                    
+                    प्रयास ... क्याच ... अन्तमा
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    मोड्युलहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../regular-expression.html">
+            
+                <a href="../regular-expression.html">
+            
+                    
+                    नियमित अभिव्यक्ति
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../classes/">
+            
+                <a href="../classes/">
+            
+                    
+                    वर्गहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../classes/static.html">
+            
+                <a href="../classes/static.html">
+            
+                    
+                    स्थिर
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../classes/inheritance.html">
+            
+                <a href="../classes/inheritance.html">
+            
+                    
+                    उत्तराधिकार
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../classes/access-modifiers.html">
+            
+                <a href="../classes/access-modifiers.html">
+            
+                    
+                    परिमार्जनकर्ता
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ब्राउजर वस्तु मोडल (BOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="window.html">
+            
+                <a href="window.html">
+            
+                    
+                    विन्डो
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="popup.html">
+            
+                <a href="popup.html">
+            
+                    
+                    पपअप
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="screen.html">
+            
+                <a href="screen.html">
+            
+                    
+                    स्क्रिन
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.20.4" data-path="navigator.html">
+            
+                <a href="navigator.html">
+            
+                    
+                    नेभिगेटर
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="cookies.html">
+            
+                <a href="cookies.html">
+            
+                    
+                    कुकीहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.6" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    हिस्ट्री
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.7" data-path="location.html">
+            
+                <a href="location.html">
+            
+                    
+                    स्थान
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../events.html">
+            
+                <a href="../events.html">
+            
+                    
+                    घटनाहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../promise-async-await/promise.html">
+            
+                <a href="../promise-async-await/promise.html">
+            
+                    
+                    प्रतिज्ञा, असिंक/प्रतीक्षा
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../promise-async-await/promise.html">
+            
+                <a href="../promise-async-await/promise.html">
+            
+                    
+                    प्रतिज्ञा
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../promise-async-await/async-await.html">
+            
+                <a href="../promise-async-await/async-await.html">
+            
+                    
+                    असिंक/प्रतीक्षा
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../miscellaneous/">
+            
+                <a href="../miscellaneous/">
+            
+                    
+                    विविध
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../miscellaneous/hoisting.html">
+            
+                <a href="../miscellaneous/hoisting.html">
+            
+                    
+                    होइस्टिंग
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../miscellaneous/currying.html">
+            
+                <a href="../miscellaneous/currying.html">
+            
+                    
+                    करिंग
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../miscellaneous/polyfills-and-transpilers.html">
+            
+                <a href="../miscellaneous/polyfills-and-transpilers.html">
+            
+                    
+                    पोली फिल्स र ट्रान्सपाइलरहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../miscellaneous/global-footprint.html">
+            
+                <a href="../miscellaneous/global-footprint.html">
+            
+                    
+                    ग्लोबल फुटप्रिन्ट
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../miscellaneous/debugging.html">
+            
+                <a href="../miscellaneous/debugging.html">
+            
+                    
+                    डिबगिंग
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../miscellaneous/template-literals.html">
+            
+                <a href="../miscellaneous/template-literals.html">
+            
+                    
+                    टेम्प्लेट शाब्दिक
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.7" data-path="../miscellaneous/linked-list.html">
+            
+                <a href="../miscellaneous/linked-list.html">
+            
+                    
+                    लिङ्क सूची
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../exercises/">
+            
+                <a href="../exercises/">
+            
+                    
+                    अभ्यासहरू
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../exercises/console.html">
+            
+                <a href="../exercises/console.html">
+            
+                    
+                    कन्सोल
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../exercises/multiplication.html">
+            
+                <a href="../exercises/multiplication.html">
+            
+                    
+                    गुणन
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../exercises/user-input-variables.html">
+            
+                <a href="../exercises/user-input-variables.html">
+            
+                    
+                    प्रयोगकर्ता इनपुट चर
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../exercises/constants.html">
+            
+                <a href="../exercises/constants.html">
+            
+                    
+                    स्थिर
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../exercises/concatenation.html">
+            
+                <a href="../exercises/concatenation.html">
+            
+                    
+                    संयोजन
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.6" data-path="../exercises/functions.html">
+            
+                <a href="../exercises/functions.html">
+            
+                    
+                    कार्यहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.7" data-path="../exercises/conditional-statements.html">
+            
+                <a href="../exercises/conditional-statements.html">
+            
+                    
+                    सशर्त बयान
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.8" data-path="../exercises/objects.html">
+            
+                <a href="../exercises/objects.html">
+            
+                    
+                    वस्तुहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.9" data-path="../exercises/fizzbuzz-problem.html">
+            
+                <a href="../exercises/fizzbuzz-problem.html">
+            
+                    
+                    FizzBuzz समस्या
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.10" data-path="../exercises/get-the-titles.html">
+            
+                <a href="../exercises/get-the-titles.html">
+            
+                    
+                    Get the Titles!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../References.html">
+            
+                <a href="../References.html">
+            
+                    
+                    सन्दर्भहरू
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            गिटबुकसँग प्रकाशित
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" target="_blank">
+      
+        <img src="https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x" />
+      
+        </a>
+      
+      
+        <p>इच्छासूचीमा सामेल भएर नि: शुल्क पीडीएफ र इपब संस्करण प्राप्त गर्नुहोस्!</p>
+      
+      
+      <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" class="btn" target="_blank">
+        थप जानकारी
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >नेभिगेटर</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="नेभिगेटर">नेभिगेटर</h1>
+<p><code>window.navigator</code> वा <code>navigator</code>  एक <strong>पढ्न-मात्र</strong> गुण हो र यसले ब्राउजरसँग सम्बन्धित विभिन्न विधिहरू र प्रकार्यहरू समावेश गर्दछ।</p>
+<p>आउनुहोस् नेभिगेसनका केही उदाहरणहरू हेरौं।</p>
+<ol>
+<li><p><strong>navigator.appName</strong>: यसले ब्राउजर एप्लिकेसनको नाम दिन्छ।</p>
+<pre><code class="lang-javascript"> navigator.appName; 
+ <span class="hljs-comment">// &quot;Netscape&quot;</span>
+</code></pre>
+<blockquote>
+<p><em><strong>नोट:</strong></em> &quot;नेटस्केप&quot; आईई ११, क्रोम, फायरफक्स र सफारीको लागि अनुप्रयोग नाम हो।</p>
+</blockquote>
+</li>
+<li><p><strong>navigator.cookieEnabled</strong>: ब्राउजरमा कुकी मानमा आधारित बुलियन मान फर्काउँछ ।</p>
+<pre><code class="lang-javascript"> navigator.cookieEnabled;
+ <span class="hljs-comment">//true</span>
+</code></pre>
+</li>
+<li><p><strong>navigator.platform</strong>: ब्राउजर अपरेटिङ सिस्टमको बारेमा जानकारी प्रदान गर्दछ ।</p>
+<pre><code class="lang-javascript"> navigator.patform;
+ <span class="hljs-string">&quot;MacIntel&quot;</span>
+</code></pre>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> परिणाम मिल्दो जुल्दो "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">कुनै परिणाम मिल्दो जुल्दो छैन "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="screen.html" class="navigation navigation-prev " aria-label="Previous page: स्क्रिन">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cookies.html" class="navigation navigation-next " aria-label="Next page: कुकीहरू">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"chapter":"अध्याय १६","pageNumber":"८४","titleIndex":"१६.४","title":"नेभिगेटर","level":"1.20.4","depth":2,"next":{"title":"कुकीहरू","level":"1.20.5","depth":2,"path":"browser-object-model-bom/cookies.md","ref":"browser-object-model-bom/cookies.md","articles":[]},"previous":{"title":"स्क्रिन","level":"1.20.3","depth":2,"path":"browser-object-model-bom/screen.md","ref":"browser-object-model-bom/screen.md","articles":[]},"dir":"ltr"},"config":{"totalpages":"११०","plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"ne","text":"नेपाली"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"यस अध्यायमा"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"इच्छासूचीमा सामेल भएर नि: शुल्क पीडीएफ र इपब संस्करण प्राप्त गर्नुहोस्!","btnText":"थप जानकारी"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://javascript.sumankunwar.com.np/"},"@honkit/honkit-plugin-ga":{},"appleTouchIconPrecomposed152":"js.png","ga":{"trackingID":"G-57X6JSDN82","anonymizeIP":true},"exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-javascript/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"जाभास्क्रिप्ट, शुरुआती पाठहरू","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"जाभास्क्रिप्ट सिक्नुहोस्: शुरुआती संस्करण","language":"ne","website":"https://sumankunwar.com.np","gitbook":"*","description":"जाभास्क्रिप्ट सिक्नका लागि शुरुआती गाइड"},"file":{"path":"browser-object-model-bom/navigator.md","mtime":"2023-07-01T14:31:15.986Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-07-23T03:20:45.240Z"},"basePath":"..","book":{"language":"ne"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-i18nsettings/i18nsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+
