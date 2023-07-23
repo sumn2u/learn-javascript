@@ -60,15 +60,19 @@
       "hostname": "https://javascript.sumankunwar.com.np/"
     },
     "i18nsettings": {
-      "language": "en",
+      "language": "ne",
       "languages": [
+        {
+          "config": "ne",
+          "text": "नेपाली"
+        },
         {
           "config": "en",
           "text": "English"
         },
         {
-          "config": "ne",
-          "text": "नेपाली"
+          "config": "tr",
+          "text": "Turkish"
         }
       ]
     }

@@ -69,12 +69,12 @@
         "language": "en",
         "languages": [
           {
-            "config": "en",
-            "text": "English"
-          },
-          {
             "config": "ne",
             "text": "नेपाली"
+          },
+          {
+            "config": "en",
+            "text": "English"
           },
           {
             "config": "tr",
