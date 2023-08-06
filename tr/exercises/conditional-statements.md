@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 110
+pageNumber: 109
 ---
 
 # Conditional Statements (Koşul İfadeleri)

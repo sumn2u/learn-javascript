@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 11
 pageNumber: 67
+description: JSON (JavaScript Object Notation) is a lightweight data interchange format used to represent and exchange data between different systems and platforms. It is widely used for data transmission and storage, especially in web development.
 ---
 
 # Chapter 11

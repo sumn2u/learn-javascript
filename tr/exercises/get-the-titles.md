@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 113
+pageNumber: 112
 ---
 
 # Get the Titles! (Başlıkları al!)

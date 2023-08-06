@@ -1,6 +1,7 @@
 ---
 chapter: 15
 pageNumber: 77
+description:  Inheritance refers to the ability of an object (subclass) to inherit properties and methods from another object (superclass). JavaScript supports prototypal inheritance, which means that objects can inherit properties and methods directly from other objects, known as prototypes.
 ---
 # Inheritance
 

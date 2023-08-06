@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 106
+pageNumber: 105
 ---
 
 # User Input Variables (Kullanıcı Girdisi Değişkenleri)

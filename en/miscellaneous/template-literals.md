@@ -1,6 +1,7 @@
 ---
 chapter: 19
 pageNumber: 93
+description: Template literals are literals delaminated with backtick ` ` and are used in variable and expression interpolation into strings.
 ---
 # Template Literals
 

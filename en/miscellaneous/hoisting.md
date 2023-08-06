@@ -1,6 +1,7 @@
 ---
 chapter: 19
 pageNumber: 94
+description: Hosting is a default behavior in JavaScript of moving declarations at the top.  While executing a code, it creates a global execution context  creation and execution.  In the creation phase, JavaScript moves the variable and function declaration to the top of the page, which is known as hoisting.
 ---
 # Hoisting
 

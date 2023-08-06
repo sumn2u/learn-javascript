@@ -1,6 +1,7 @@
 ---
 chapter: 2
 pageNumber: 11
+description: Variables are used to store and hold data. It can hold various types of values, such as numbers, strings, booleans, objects, arrays, functions and more.
 ---
 
 # Variables
@@ -53,6 +54,13 @@ let x = 5;
 let y = 6;
 let result = x + y;
 ```
+
+There are certain guidelines that needs to be followed while  naming variables. They are
+
+- Variable names have to start with a letter, an underscore (_), or a dollar sign ($).
+- After the first character, we can use letters, numbers, underscores, or dollar signs.
+- JavaScript distinguishes between uppercase and lowercase letters (case-sensitive), so myVariable, MyVariable, and MYVARIABLE are all separate variables.
+- To make your code easy to read and maintain, it's recommended to use descriptive variable names that accurately reflect their purpose.
 
 {% exercise %}
 Define a variable `x` equal to 20.

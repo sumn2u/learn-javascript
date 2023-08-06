@@ -1,6 +1,7 @@
 ---
 chapter: 3
 pageNumber: 17
+description: The Math object allows performing mathematical operations in JavaScript. It is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first. 
 ---
 # Math
 

@@ -1,6 +1,7 @@
 ---
 chapter: 6
-pageNumber: 43  
+pageNumber: 43
+description: The join method turns the array in a string an joins it all together without modifiying the original array.  
 ---
 # Join
 

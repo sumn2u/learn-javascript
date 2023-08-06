@@ -1,10 +1,11 @@
 ---
 chapter: 6
-pageNumber: 47  
+pageNumber: 47
+description: The sort method sorts the items of an array in specific order.  By default, it sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.  
 ---
 # Sort
 
-The `sort` method sorts the items of an array in a specific order (ascending or descending).
+The `sort` method sorts the items of an array in a specific order (ascending or descending). By default, the `sort` method sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.
 
 Here's the syntax for using `sort`:
 

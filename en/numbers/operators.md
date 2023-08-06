@@ -1,6 +1,7 @@
 ---
 chapter: 3
 pageNumber: 19
+description: Operators are symbols or keywords used to perform operations on data, such as variables, values, or expressions. They are an essential part of the language and allow developers to perform arithmetic, comparison, logical, assignment, and other operations. 
 ---
 # Basic Operators
 

@@ -1,6 +1,7 @@
 ---
 chapter: 16
 pageNumber: 83
+description:  The navigator is a built-in object that provides information about the user's web browser and the user's system. It contains various properties and methods that give access to information about the user's environment, such as the browser's name, version, user agent, language preferences, and more.
 ---
 # Navigator
 

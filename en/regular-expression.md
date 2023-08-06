@@ -2,6 +2,7 @@
 layout: editorial
 chapter: 14
 pageNumber: 73
+description: A regular expression, often abbreviated as "regex," is a powerful tool for pattern matching and searching within strings. It provides a concise and flexible way to search, match, and manipulate text based on specific patterns.
 ---
 
 # Chapter 14

@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 84
+pageNumber: 83
 ---
 # Çerezler 🍪
 

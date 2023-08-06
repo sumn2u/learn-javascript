@@ -1,6 +1,7 @@
 ---
 chapter: 5
 pageNumber: 32
+description: Switch is a conditional statement that performs actions based on different conditions. It uses strict comparison to match the conditions and executes the code blocks of matched condition.
 ---
 # Switch
 

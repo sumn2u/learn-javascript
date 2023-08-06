@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 107
+pageNumber: 106
 ---
 
 # Constants (Sabitler)

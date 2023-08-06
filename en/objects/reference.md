@@ -1,6 +1,7 @@
 ---
 chapter: 9
 pageNumber: 59
+description: A reference to an object is a value that points to the memory location where the object is stored. When an object is created, a memory space is allocated to store its properties and values. When we assign this object to a variable, that variable holds a reference to the memory location where the object is stored.
 ---
 # Reference
 

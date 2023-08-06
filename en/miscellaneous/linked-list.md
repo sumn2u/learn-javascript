@@ -1,6 +1,7 @@
 ---
 chapter: 19
 pageNumber: 98
+description: Linked List is a linear data structure used to store a collection of elements, called nodes. Each node in a linked list contains two parts the data or value of the element it represents and a reference (pointer) to the next node in the sequence. The last node in the list points to null, indicating the end of the list.
 ---
 # Linked List
 

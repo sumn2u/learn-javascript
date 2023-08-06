@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 15
-pageNumber: 75
+pageNumber: 74
 ---
 
 # Bölüm 15

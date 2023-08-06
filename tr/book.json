@@ -1,0 +1,81 @@
+{  
+    "title": "Learn JavaScript: Beginners Edition",
+    "description": "Beginners guide for learning JavaScript",
+    "author": "Suman Kunwar, Süleyman Ekmekci",
+    "isbn": "",
+    "published": "13/07/2023",
+    "copyright": "Suman Kunwar, Süleyman Ekmekci",
+    "website": "https://sumankunwar.com.np",
+    "keywords": "learn JavaScript, Beginners lessons",
+    "language": "tr",
+    "totalpages": 113,
+    "hidepageheaders": [1,2, 3, 10, 40],
+    "hidepagefooters": [1,2, 3, 10, 40],
+    "plugins": [
+      "hints",
+      "theme-creative",
+      "sidebar-ad",
+      "intopic-toc",
+      "sharing",
+      "exercises",
+      "sitemap",
+      "i18nsettings",
+      "favicon-custom",
+      "chapter-fold",
+      "hide-published-with",
+      "edit-link"
+    ],
+    "pdf": {
+      "pageNumbers": true,
+      "margin": {
+        "right": 32,
+        "left": 32
+      }
+    },
+    "pluginsConfig": {
+      "sidebar-ad": {
+        "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
+        "url": "https://leanpub.com/learnjavascriptbeginnersguide/signup",
+        "description": "Get free pdf and epub version by joining on wishlist! ✨",
+        "btnText": "Read now!"
+      },
+      "edit-link": {
+                "base": "https://github.com/sumn2u/learn-javascript/edit/main",
+                "label": ""
+            },
+      "sharing": {
+        "facebook": true,
+        "twitter": true,
+        "google": false,
+        "weibo": false,
+        "instapaper": false,
+        "vk": false,
+        "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+      },
+      "favicon": "favicon.ico",
+      "appleTouchIconPrecomposed152": "js.png",
+      "intopic-toc": {
+        "label": "In this Chapter"
+      },
+      "sitemap": {
+        "hostname": "https://javascript.sumankunwar.com.np/"
+      },
+      "i18nsettings": {
+        "language": "en",
+        "languages": [
+          {
+            "config": "en",
+            "text": "English"
+          },
+          {
+            "config": "ne",
+            "text": "नेपाली"
+          },
+          {
+            "config": "tr",
+            "text": "Turkish"
+          }
+        ]
+      }
+    }
+}

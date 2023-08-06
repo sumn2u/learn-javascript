@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 105
+pageNumber: 104
 ---
 
 # Multiplication (Çarpma İşlemi)

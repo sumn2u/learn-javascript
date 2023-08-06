@@ -1,10 +1,11 @@
 ---
 chapter: 7
 pageNumber: 51
+description: While loops repetitively execute a block of code as long as a specified condition is true.
 ---
 # While
 
-While loops repetitively execute a block of code as long as a specified condition is true.
+While loops repetitively execute a block of code as long as a specified condition is true. It provides a way to automate repetitive tasks and perform iterations based on the condition's evaluation.
 
 ```javascript
 while (condition) {

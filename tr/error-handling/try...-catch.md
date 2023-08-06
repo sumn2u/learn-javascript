@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 12
-pageNumber: 68
+pageNumber: 67
 ---
 
 # Bölüm 12
