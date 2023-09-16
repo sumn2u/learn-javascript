@@ -16,4 +16,5 @@ In this chapter we will be discussing various topics that will come accross thro
 * [Linked List](./linked-list.md)
 * [Global Footprint](./global-footprint.md)
 * [Debugging](./debugging.md)
+* [Building and Deploying JS application](./building-and-deploying.md)
 

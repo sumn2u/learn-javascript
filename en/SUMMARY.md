@@ -80,6 +80,7 @@
   * [Linked List](miscellaneous/linked-list.md)
   * [Global footprint](miscellaneous/global-footprint.md)
   * [Debugging](miscellaneous/debugging.md)
+  * [Building and Deploying JS application](miscellaneous/building-and-deploying.md)
 * [Exercises](exercises/README.md)
   * [Console](exercises/console.md)
   * [Multiplication](exercises/multiplication.md)
