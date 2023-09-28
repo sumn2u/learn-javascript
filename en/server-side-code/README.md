@@ -26,7 +26,7 @@ Server-side code is essential in web development for several reasons:
 
 The differences are summarized in the table below:
 
-| Server-sid Code | Client-side Code |
+| Server-side Code | Client-side Code |
 | ----------- | ----------- |
 | Runs on a web server | Runs in a web browser |
 | Has access to server resources (file system, databases, etc.). | Has access to client resources (cookies, local storage, etc.). |
