@@ -16,7 +16,7 @@
 - [Chaînes de caractères](strings/README.md)
   - [Création](strings/create.md)
   - [Remplacement](strings/replace.md)
-  - [Longueur](strings/length.md)
+  - [Longueur des chaînes](strings/length.md)
   - [Concaténation](strings/concat.md)
 - [Logique conditionnelle](conditional/README.md)
   - [If](conditional/if.md)
