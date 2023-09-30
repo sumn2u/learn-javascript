@@ -38,7 +38,6 @@ simulateAsyncOperation(function () {
 
 console.log("End of the program");
 ```
-# JavaScript Single-Threaded Asynchronous Example
 
 In this example, we demonstrate the single-threaded nature of JavaScript and how it handles asynchronous operations using callbacks.
 
