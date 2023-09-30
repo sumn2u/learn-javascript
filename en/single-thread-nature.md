@@ -37,6 +37,7 @@ simulateAsyncOperation(function () {
 });
 
 console.log("End of the program");
+```
 ###Code Explanation
 1. **We define a function simulateAsyncOperation that simulates an asynchronous operation using setTimeout. This function takes a callback as an argument, which will be executed when the asynchronous operation is completed.
 2. **We start the program by logging "Start of the program."
