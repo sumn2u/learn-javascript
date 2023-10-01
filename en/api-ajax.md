@@ -6,8 +6,9 @@ description: This chapter introduces the concept of APIs (Application Programmin
 ---
 # Chapter 22
 # Web API and AJAX
+In this chapter, we will discuss API and AJAX, the two important technologies that enable applications to interact with servers and send or retrieve data without the need for a full page reload. 
 
-# API (Application Programming Interface)
+## API (Application Programming Interface)
 
 An **API** (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information.
 

@@ -95,6 +95,6 @@
   * [Objects](exercises/objects.md)
   * [FizzBuzz Problem](exercises/fizzbuzz-problem.md)
   * [Get the Titles!](exercises/get-the-titles.md)
-* [References](References.md)
 * [Web API and AJAX](api-ajax.md)
 * [Single Thread Nature](single-thread-nature.md)
+* [References](References.md)

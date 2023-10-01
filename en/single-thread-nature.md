@@ -6,7 +6,7 @@ description: JavaScript is a popular programming language primarily known for it
 ---
 
 # Chapter 23
-# The Single-Threaded Nature of JavaScript
+# Single-Threaded Nature of JavaScript
 
 JavaScript is a single-threaded programming language, executing code sequentially in one main thread. It relies on non-blocking asynchronous patterns to handle tasks efficiently without blocking the main thread, ensuring responsiveness in web applications. While simplifying concurrency, it requires effective use of callbacks and event-driven programming.
 
@@ -26,7 +26,7 @@ Here are some key points to understand about JavaScript's single-threaded execut
 
 6. **Browser and Environment Interaction:** In web development, JavaScript interacts with the browser's Document Object Model (DOM) and other browser APIs. To maintain a responsive user interface, JavaScript code must execute quickly and efficiently and delegate time-consuming operations to separate threads when necessary.
 
-# JavaScript Single-Threaded Asynchronous Example
+## Single-Threaded Asynchronous Example
 
 ```javascript
 // Simulating an asynchronous operation with a callback
