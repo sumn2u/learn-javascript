@@ -35,7 +35,7 @@ console.log(3 ** 2); // 9
 console.log(4 ** 3); // 64
 ```
 
-- **Opérateur d'incrémentation (`++`)**: L'opérateur d'incrémentation augmente un nombre d'une quantité de 1. Il peut être utilisé indifféremment en préfixe (avant l'opérande) ou en suffixe (après l'opérande). Par exemple:
+- **Opérateur d'incrémentation (`++`)**: L'opérateur d'incrémentation augmente un nombre d'une quantité de 1. On peut l'utiliser avant la variable (comme un préfixe, dans ce-cas là l'incrémentation sera faite en premier lieu) ou comme un suffixe.
 
 ```javascript
 let x = 1;
@@ -43,7 +43,7 @@ x++; // x vaut à présent 2
 ++x; // x vaut à présent 3
 ```
 
-- **Opérateur de décrémentation (`--`)**: L'opérateur de décrémentation diminue un nombre d'une quantité de 1. Il peut être utilisé indifféremment en préfixe (avant l'opérande) ou en suffixe (après l'opérande). Par exemple:
+- **Opérateur de décrémentation (`--`)**: L'opérateur de décrémentation diminue un nombre d'une quantité de 1. On peut l'utiliser avant la variable (comme un préfixe, dans ce cas-là la décrémentation sera faite en premier lieu) ou comme un suffixe. Par exemple:
 
 ```javascript
 let y = 3;
