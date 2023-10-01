@@ -62,12 +62,12 @@ Pour accéder aux méthodes de Math, on appelle celles-ci directement en précis
 | `max(x,y,z,... n)` | Retourne nombre avec la valeur la plus haute                                                       |
 | `min(x,y,z,... n)` | Retourne nombre avec la valeur la plus basse                                                       |
 | `pow(x,y)`         | Retourne la valeur de `x` élevé à la puissance `y`                                                 |
-| random()           | Retourne un nombre pseudo-aléatoire compris entre 0 et 1                                           |
-| round(x)           | Retourne la valeur de x arrondi à l'entier le plus proche                                          |
-| sign(x)            | Retourne si x est négatif, `null` ou positif (-1,0,1)                                              |
-| sin(x)             | Retourne le sinus de x, en radians                                                                 |
-| sinh(x)            | Retourne le sinus hyperbolique de x                                                                |
-| sqrt(x)            | Retourne la racine carrée de x                                                                     |
-| tan(x)             | Retourne la tangente de x, en radians                                                              |
-| tanh(x)            | Retourne la tangente hyperbolique de x                                                             |
-| trunc(x)           | Retourne la partie entière d'un nombre (x)                                                         |
+| `random()`         | Retourne un nombre pseudo-aléatoire compris entre 0 et 1                                           |
+| `round(x)`         | Retourne la valeur de x arrondi à l'entier le plus proche                                          |
+| `sign(x)`          | Retourne si x est négatif, `null` ou positif (-1,0,1)                                              |
+| `sin(x)`           | Retourne le sinus de x, en radians                                                                 |
+| `sinh(x)`          | Retourne le sinus hyperbolique de x                                                                |
+| `sqrt(x)`          | Retourne la racine carrée de x                                                                     |
+| `tan(x)`           | Retourne la tangente de x, en radians                                                              |
+| `tanh(x)`          | Retourne la tangente hyperbolique de x                                                             |
+| `trunc(x)`         | Retourne la partie entière d'un nombre (x)                                                         |
