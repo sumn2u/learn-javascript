@@ -103,4 +103,8 @@
   - [Basic Level](interview-questions/basic-level.md)
   - [Intermediate Level](interview-questions/intermediate-level.md)
   - [Advance Level](interview-questions/advance-level.md)
+- [Design Patterns](design-patterns/README.md)
+  - [Creational Patterns](design-patterns/creational-patterns.md)
+  - [Intermediate Level](design-patterns/structural-patterns.md)
+  - [Advance Level](design-patterns/behavioural-patterns.md)
 - [References](References.md)
