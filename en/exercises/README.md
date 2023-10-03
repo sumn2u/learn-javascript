@@ -1,13 +1,13 @@
 ---
 layout: editorial
-chapter: 20
-pageNumber: 103
+chapter: 21
+pageNumber: 106
 ---
 
-# Chapter 20
+# Chapter 21
 # Exercises
 
-In this chapter we will be perfroming exercises to test our knowledge in JavaScript. The exercises that we will be performing are listed below:
+In this chapter we will be performing exercises to test our knowledge in JavaScript. The exercises that we will be performing are listed below:
 
 * [Console](./console.md)
 * [Multiplication](./multiplication.md)

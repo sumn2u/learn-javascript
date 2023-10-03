@@ -5,6 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "@honkit/honkit-plugin-ga": "^1.0.1",
+    "cz-conventional-changelog": "^3.3.0",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-exercises": "^3.0.0",
@@ -24,9 +25,15 @@
     "build": "honkit build",
     "pdf": "honkit pdf",
     "epub": "honkit epub",
-    "mobi": "honkit mobi"
+    "mobi": "honkit mobi",
+    "commit": "cz"
   },
   "keywords": [],
   "author": "Suman Kunwar",
-  "license": "CC-BY-SA-4.0"
+  "license": "CC-BY-SA-4.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
