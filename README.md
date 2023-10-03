@@ -9,7 +9,6 @@
 
 This book provides a basic understanding of programming and JavaScript. The foundations and core concepts are described in simple terms in an organized manner. In-depth information and notes are provided with examples to understand the topic. Exercises are also present at the end.
 
-
 # Introduction
 
 Learn JavaScript: Beginners Guide will teach you the basics of programming and JavaScript. Whether you are an experienced programmer or not, this book is intended for everyone who wishes to learn the JavaScript programming language. This book is divided into three main parts. The first 14 chapters cover the JavaScript language. The following four chapters discuss how JavaScript is used to program web browsers. The final two chapters are miscellaneous, and exercises. Various important topics and cases related to JavaScript programming are described in the Miscellaneous chapter, which is followed exercises.
@@ -45,27 +44,29 @@ If you feel awesome and want to support us in a small way, please consider starr
 <img alt="star_us" width="250" src="./star_us.gif">
 
 ## Getting started
+
 1. Clone this repository.
 2. Move to `learn-javascript` directory.
-3. Install dependencies using `yarn` or  `npm i`
+3. Install dependencies using `yarn` or `npm i`
 4. Run `yarn start` command.
 5. Visit http://localhost:4000 for preview
 
 ## Structure
+
 The main contents are under the charset of each language directory . For English, use `en` directory.
 
 directory | description
 
     learn-javascript
-    ├── _book                   # compiled version of contents 
+    ├── _book                   # compiled version of contents
     ├── _layouts                # layout for rendering book/website
     ├── en                      # content of book in english language
+    ├── fr                      # content of book in french language
     ├── ne                      # content of book in nepali language
     ├── tr                      # content of book in turkish language
-    ├── LANGS.md                # supported languages   
+    ├── LANGS.md                # supported languages
     ├── book.json               # configuration for book
     └── ...
-
 
 ## Edit Documents
 
@@ -79,10 +80,8 @@ directory | description
 
 Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
-
 ## Contributing
 
 Contributions are always welcome. Feel free to report Issue or send Pull Request.
 
 If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜
-

@@ -1,5 +1,5 @@
-* [English](en/)
-* [नेपाली](ne/)
-* [Turkish](tr/)
-* [Spanish](es/)
-
+- [English](en/)
+- [नेपाली](ne/)
+- [Turkish](tr/)
+- [Français](fr/)
+- [Spanish](es/)
