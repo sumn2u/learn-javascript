@@ -43,4 +43,4 @@ La méthode `forEach` ne modifie pas le tableau original. Elle itère simplement
 
 {% hint style="warning" %}
 La méthode `forEach()` n'est pas exécutée dans le cas d'une instruction vide.
-{% endenta %}
+{% endhint %}
