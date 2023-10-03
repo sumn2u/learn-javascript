@@ -1,0 +1,15 @@
+---
+layout: editorial
+chapter: 25
+
+pageNumber: 82
+description: 
+---
+# Chapter 25
+# Interview questions
+
+This chapter discusses various questions to better prepare candidate on their understanding about JavaScript. It is divided into three parts: basic, intermediate and advance level.
+
+* [Basic Level](./basic-level.md)
+* [Intermediate Level](./intermediate-level.md)
+* [Advance Level](./advance-level.md)

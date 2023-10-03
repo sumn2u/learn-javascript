@@ -79,6 +79,10 @@
           {
             "config": "tr",
             "text": "Turkish"
+          },
+          {
+            "config": "es",
+            "text": "Spanish"
           }
         ]
       }
