@@ -1,10 +1,9 @@
 ---
-layout: editorial
-chapter: 25
-pageNumber: 83
+chapter: 19
+pageNumber: 85
 description: A callback is a function passed as an argument to another function, executed at a later time, often used for asynchronous operations.Callback hell, also known as the "pyramid of doom," occurs when nested callbacks result in unreadable and unmaintainable code.
 ---
-# Chapter 23
+
 # Callback Functions in JavaScript
 
 Callback functions are a fundamental concept in JavaScript, enabling asynchronous and event-driven programming. This Markdown document provides an in-depth explanation of callback functions, their purpose, and how to use them effectively.

@@ -1,12 +1,11 @@
 ---
-layout: editorial
-chapter: 22
+chapter: 19
 pageNumber: 80
 description: This chapter introduces the concept of APIs (Application Programming Interfaces) and demonstrates their use through AJAX (Asynchronous JavaScript and XML). Learn how to fetch data from external sources and integrate it into web applications for enhanced functionality.
 ---
-# Chapter 22
+
 # Web API and AJAX
-In this chapter, we will discuss API and AJAX, the two important technologies that enable applications to interact with servers and send or retrieve data without the need for a full page reload. 
+In this section, we will discuss API and AJAX, the two important technologies that enable applications to interact with servers and send or retrieve data without the need for a full page reload. 
 
 ## API (Application Programming Interface)
 

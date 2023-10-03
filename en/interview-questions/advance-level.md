@@ -113,7 +113,8 @@ Arrow functions introduce a concise way to write functions in JavaScript, but th
 **Answer:** The `this` word can vary on depending upon the context it's used. Some of them are explored below:
 
 - In Method: It refers to the object that the method is called on.
-````javascript
+
+```js
 const person = {
   name: "Alice",
   sayHello: function () {
@@ -122,19 +123,20 @@ const person = {
 };
 
 person.sayHello(); // Output: Hello, my name is Alice
-````
+```
 - In Standalone Function:  Here, the `this` behavior depends on how function is called. If the function is called in the global scope, `this` refer to the global object.
 
-````javascript
+```js
 function greet() {
   console.log(`Hello, my name is ${this.name}`);
 }
 
 const name = "Alice";
 greet(); // Output: Hello, my name is Alice
-````
+```
 - In Arrow Function: Arrow functions capture the this value from their surrounding lexical scope, unlike regular functions. This means they lack their own this context.
-````javascript
+
+```js
 const person = {
   name: "Bob",
   sayHello: () => {
@@ -143,7 +145,7 @@ const person = {
 };
 
 person.sayHello(); // Output: Hello, my name is undefined
-````
+```
 
 ### 5.2. How can you ensure a function uses a specific object as its `this` value?
 **Answer:**
@@ -219,18 +221,18 @@ Here's a simple example demonstrating these properties:
 ````javascript
 // Assigning a function to a variable
 const greet = function(name) {
-return "Hello, " + name;
+  return "Hello, " + name;
 }
 // Passing a function as an argument to another function
 function runFunction(fn, value) {
-return fn(value);
+  return fn(value);
 }
 runFunction(greet, 'John'); // Returns: "Hello, John"
 // Returning a function from another function
 function multiplier(factor) {
-return function(number) {
-return number \* factor;
-}
+  return function(number) {
+    return number \* factor;
+  }
 }
 const double = multiplier(2);
 double(5); // Returns: 10
