@@ -15,7 +15,7 @@ description: Delve into intricate advanced-level interview questions on JavaScri
 A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.
 
 **Example:**
-One common use of closures is to create factory functions or private variables. For instance, if you wanted to generate unique ID values for elements:
+One common use of closures is to create factory functions or private variables. For instance, if we wanted to generate unique ID values for elements:
 
 ### 1.2. How do closures relate to variables' scope and lifetime?
 
@@ -37,7 +37,7 @@ The primary difference is that classical inheritance is class-based, whereas pro
 
 **Answer:**
 
-To extend built-in JavaScript objects, you can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
+To extend built-in JavaScript objects, we can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
 
 ## 3. Asynchronous JavaScript
 
@@ -45,7 +45,7 @@ To extend built-in JavaScript objects, you can add methods or properties to thei
 
 **Answer:**
 
-The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of your program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
+The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
 
 The call stack, on the other hand, is a data structure that tracks the execution of functions in a program. When a function is called, it is added to the call stack, and when it finishes executing, it is removed from the stack.
 
@@ -77,7 +77,7 @@ The key differences include:
 
 The `async` keyword is used to declare an asynchronous function, which ensures that the function returns a promise. The `await` keyword is used inside an `async` function to pause the execution until the promise is resolved or rejected.
 
-Using `async/await` simplifies error handling, as you can use traditional try/catch blocks instead of `.catch` with promises.
+Using `async/await` simplifies error handling, as we can use traditional try/catch blocks instead of `.catch` with promises.
 
 ## 4. Advanced Array Methods
 
@@ -99,7 +99,7 @@ Arrow functions introduce a concise way to write functions in JavaScript, but th
 
 1. **No `this` Binding**: Arrow functions do not bind their own `this`. They inherit the `this` binding of the surrounding scope. This can be problematic, especially when using them as methods in objects or as event handlers.
 
-2. **No `arguments` Object**: Arrow functions do not have the `arguments` object of their own. If you need to access the arguments object, you'd have to use traditional function expressions.
+2. **No `arguments` Object**: Arrow functions do not have the `arguments` object of their own. If we need to access the arguments object, we'd have to use traditional function expressions.
 
 3. **Cannot be Used as Constructors**: Arrow functions cannot be used as constructors with the `new` keyword because they don't have the `[[Construct]]` internal method.
 
@@ -110,22 +110,71 @@ Arrow functions introduce a concise way to write functions in JavaScript, but th
 ## 5. "this" Keyword
 
 ### 5.1. Explain the behavior of the `this` keyword in different contexts, such as in a method, a standalone function, an arrow function, and an event handler.
+**Answer:** The `this` word can vary on depending upon the context it's used. Some of them are explored below:
+
+- In Method: It refers to the object that the method is called on.
+````javascript
+const person = {
+  name: "Alice",
+  sayHello: function () {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+
+person.sayHello(); // Output: Hello, my name is Alice
+````
+- In Standalone Function:  Here, the `this` behavior depends on how function is called. If the function is called in the global scope, `this` refer to the global object.
+
+````javascript
+function greet() {
+  console.log(`Hello, my name is ${this.name}`);
+}
+
+const name = "Alice";
+greet(); // Output: Hello, my name is Alice
+````
+- In Arrow Function: Arrow functions capture the this value from their surrounding lexical scope, unlike regular functions. This means they lack their own this context.
+````javascript
+const person = {
+  name: "Bob",
+  sayHello: () => {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+
+person.sayHello(); // Output: Hello, my name is undefined
+````
 
 ### 5.2. How can you ensure a function uses a specific object as its `this` value?
+**Answer:**
+We can ensure a function uses a specific object as its this value in JavaScript using methods like bind, arrow functions, call, apply, or by defining methods within ES6 classes. These techniques allow us to control the context in which the function operates and ensure it accesses the desired object's properties and methods.
 
 ## 6. Memory Management
 
 ### 6.1. What are memory leaks in JavaScript? Discuss potential causes and how to prevent them.
+**Answer:**
+Memory leaks in JavaScript occur when the program unintentionally retains references to objects that are no longer needed, leading to increased memory usage and potential application issues. Common causes include unused variables, closures, event listeners, and circular references. To prevent memory leaks, developers should explicitly remove references, manage event listeners, avoid circular dependencies, use weak references, employ memory profiling tools, conduct testing and code reviews, and utilize linters and static analysis tools to detect potential issues early in the development process.
 
 ### 6.2. Describe the difference between shallow copy and deep copy. How can you achieve each in JavaScript?
+**Answer:**
+Shallow copy and deep copy are methods for duplicating objects or arrays in JavaScript.
+
+Shallow copy duplicates the top-level structure and values of an object or array but retains references to nested objects or arrays. Changes to nested structures affect both the original and the copy.
+Deep copy creates a new object or array and recursively duplicates all levels of nested structures, ensuring changes in the copy do not affect the original.
+To achieve a shallow copy, we can use methods like the spread operator or slice(). For a deep copy, custom logic or libraries like lodash's cloneDeep are necessary due to the lack of built-in deep copy methods in JavaScript.
 
 ## 7. ES6 and Beyond
 
 ### 7.1. Explain the purpose and usage of JavaScript's destructuring assignment.
+**Answer:**
+JavaScript's destructuring assignment is a feature that simplifies the extraction of values from objects and arrays, making code more concise and readable. It allows us to assign values to variables based on property names (object destructuring) or position (array destructuring). Destructuring can also be used in function parameters and supports the rest syntax to capture remaining elements. It's a powerful tool for working with complex data structures.
 
 ### 7.2. Describe the significance of JavaScript modules and the ES6 `import/export` syntax.
-
+**Answer:**
+JavaScript modules, along with the ES6 import/export syntax, are crucial for modern JavaScript development. They enable developers to organize, reuse, and maintain code effectively. Modules encapsulate related code, promote code reusability, manage dependencies, and improve code scalability. The ES6 import/export syntax provides a standardized way to declare and use modules, making it easier to structure and share code in a clean and maintainable manner. These features have become essential for building modular and maintainable JavaScript applications, both on the client and server sides.
 ### 7.3. How do template literals enhance string manipulation in ES6? Provide examples.
+**Answer:**
+Template literals in ES6 enhance string manipulation by allowing developers to create strings with embedded expressions and multiline content in a more readable and flexible way. They support variable interpolation, multiline strings, expression evaluation, function calls, and even advanced use cases like tagged templates. This feature improves code readability and maintainability when working with complex strings that involve dynamic content or expressions.
 
 ## 8. Functional Programming
 
