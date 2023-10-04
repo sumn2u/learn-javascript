@@ -128,7 +128,7 @@ The advantages of using arrow functions in JavaScript include shorter syntax, im
 
 **Answer:**
 
-Arrow functions are commonly used for Object methods, event listeners, callbacks, and other functions that require shorter, more concise syntax.
+Arrow functions are commonly used for object methods, event listeners, callbacks, and other functions that require shorter, more concise syntax.
 
 
 
