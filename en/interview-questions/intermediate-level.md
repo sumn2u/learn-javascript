@@ -34,20 +34,25 @@ The break statement terminates the current loop or switch statement and transfer
 
  The continue directive is a "lighter version" of the break statement. It does not stop the whole loop; instead, it stops the current iteration and forces the loop to start a new one (if the condition allows).
 
-## 2. Pop-up boxes in JavaScript
- 
-### 2.1. What are the types of Pop up boxes available in JavaScript?
+## 2. Switch statement
+
+### 2.1. What is a switch statement in JavaScript?
 
 **Answer:**
 
-There are three types of pop boxes available in JavaScript:
-Alert, Confirm, Prompt.
+A switch statement in JavaScript is a control flow statement that evaluates an expression and executes a specific block of code based on the matched case.
 
-### 2.2. What is the difference between an alert box and a confirmation box?
+### 2.2. What are the advantages of employing a Switch statement?
 
 **Answer:**
 
-An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
+A switch statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.
+
+### 2.3. Is the order of case statements important in a switch statement?
+
+**Answer:**
+
+The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.
 
 ## 3. JavaScript cookies
 
@@ -78,25 +83,20 @@ The value of the document.cookie is used to create a cookie. Whenever you want t
 
 Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.
 
-## 4. Switch statement
-
-### 4.1. What is a switch statement in JavaScript?
-
-**Answer:**
-
-A switch statement in JavaScript is a control flow statement that evaluates an expression and executes a specific block of code based on the matched case.
-
-### 4.2. What are the advantages of employing a Switch statement?
+## 4. Pop-up boxes in JavaScript
+ 
+### 4.1. What are the types of Pop up boxes available in JavaScript?
 
 **Answer:**
 
-A switch statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.
+There are three types of pop boxes available in JavaScript:
+Alert, Confirm, Prompt.
 
-### 4.3. Is the order of case statements important in a switch statement?
+### 4.2. What is the difference between an alert box and a confirmation box?
 
 **Answer:**
 
-The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.
+An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
 
 ## 5. Arrow Functions
 
