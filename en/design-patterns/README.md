@@ -15,6 +15,6 @@ There are a total of 23 design patterns, these are not unique to any one langaug
 
 * [Creational Patterns](./creational-patterns.md)
 * [Structural Patterns](./structural-patterns.md)
-* [Behavioural Patterns](./advance-level.md)
+* [Behavioural Patterns](./behavioral-patterns.md)
 
 
