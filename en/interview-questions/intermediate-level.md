@@ -43,7 +43,38 @@ The break statement terminates the current loop or switch statement and transfer
 There are three types of pop boxes available in JavaScript:
 Alert, Confirm, Prompt.
 
-### 2.2. 
+### 2.2. What is the difference between an alert box and a confirmation box?
 
+**Answer:**
 
+An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
+
+## 3. JavaScript cookies
+
+### 3.1. What are JavaScript Cookies ?
+
+**Answer:**
+
+Cookies are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.
+
+### 3.2.  How to create a cookie using JavaScript?
+
+**Answer:**
+
+To create a cookie by using JavaScript you just need to assign a string value to the document.cookie object.
+````javascript
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+````
+
+### 3.3. How to read a cookie using JavaScript?
+
+**Answer:**
+
+The value of the document.cookie is used to create a cookie. Whenever you want to access the cookie you can use the string. The document.cookie string keep a list of name = value pairs separated by semicolons, where name is the name of a cookie and the value is its string value.
+
+### 3.4. How to delete a cookie using JavaScript?
+
+**Answer:**
+
+Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.
 
