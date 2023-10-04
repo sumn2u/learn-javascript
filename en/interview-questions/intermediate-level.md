@@ -78,3 +78,57 @@ The value of the document.cookie is used to create a cookie. Whenever you want t
 
 Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.
 
+## 4. Switch statement
+
+### 4.1. What is a switch statement in JavaScript?
+
+**Answer:**
+
+A switch statement in JavaScript is a control flow statement that evaluates an expression and executes a specific block of code based on the matched case.
+
+### 4.2. What are the advantages of employing a Switch statement?
+
+**Answer:**
+
+A switch statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.
+
+### 4.3. Is the order of case statements important in a switch statement?
+
+**Answer:**
+
+The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.
+
+## 5. Arrow Functions
+
+### 5.1. What is the definition of an arrow function?
+
+**Answer:**
+
+An arrow function is a concise syntax for defining anonymous functions in JavaScript, using the arrow notation. It offers shorter syntax, lexical scoping of "this", and can't be used as a constructor.
+
+### 5.2. How do arrow functions differ from function expressions?
+
+**Answer:**
+
+Arrow functions provide a shorter syntax, don't have their own this, arguments, super, or new.target, and can't be used as constructors, unlike function expressions.
+
+### 5.3. What does lexical 'this' binding mean in arrow functions?
+
+**Answer:**
+
+"Lexical this" binding in arrow functions means they don't create their own 'this' context; instead, they inherit 'this' from their surrounding, enclosing scope, reducing common 'this'-related issues.
+
+### 5.4. What are the advantages of using arrow functions?
+
+**Answer:**
+
+The advantages of using arrow functions in JavaScript include shorter syntax, implicit return, and lexical ‘this’ binding.
+
+### 5.5. What are the common use cases for arrow functions?
+
+**Answer:**
+
+Arrow functions are commonly used for Object methods, event listeners, callbacks, and other functions that require shorter, more concise syntax.
+
+
+
