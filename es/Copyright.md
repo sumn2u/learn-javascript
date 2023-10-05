@@ -4,32 +4,27 @@ chapter:
 ---
 
 # Derechos de autor
+<!-- markdownlint-disable -->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- markdownlint-restore -->
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+Aprenda JavaScript: Edición para principiantes
+Primera Edición
 
+Copyright © 2023 por Suman Kunwar
 
-Learn JavaScript: Beginners Edition  
-First Edition
-
-Copyright © 2023 by Suman Kunwar
-
-
-
-
-This work is licensed under a Apache 2.0 License  ([<abbr title="Apache">Apache</abbr> 2.0](http://www.apache.org/licenses/LICENSE-2.0)).
-Based on a work at [javascript.sumankunwar.com.np](https://javascript.sumankunwar.com.np/).
+Este trabajo está bajo una licencia Apache 2.0.  ([Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)).
+Basado en un trabajo en [javascript.sumankunwar.com.np](https://javascript.sumankunwar.com.np/).
 
 ASIN: B0C53J11V7
-
-

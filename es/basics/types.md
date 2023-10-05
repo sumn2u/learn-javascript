@@ -1,62 +1,63 @@
 ---
 chapter: 2
 pageNumber: 13
-description: Types are the kinds of data that can be represented and manipulated in the language. 
+description: Los tipos son los tipos de datos que se pueden representar y manipular en el lenguaje.
 ---
 
-# Types
+# Tipos
 
-Computers are sophisticated and can make use of more complex variables than just numbers. This is where variable types come in. Variables come in several types and different languages support different types.
+Las computadoras son sofisticadas y pueden utilizar variables más complejas que solo números. Aquí es donde entran los tipos de variables. Las variables vienen en varios tipos y diferentes idiomas admiten diferentes tipos.
 
-The most common types are:
+Los tipos más comunes son:
 
-* **Number**: Numbers can be integers (e.g., `1`, `-5`, `100`) or floating-point values (e.g., `3.14`, `-2.5`, `0.01`). JavaScript does not have a separate type for integers and floating-point values; it treats them both as numbers.
-* **String**: Strings are sequences of characters, represented by either single quotes (e.g., `'hello'`) or double quotes (e.g., `"world"`).
-* **Boolean**: Booleans represent a true or false value. They can be written as `true` or `false` (without quotes).
-* **Null**: The null type represents a null value, which means "no value." It can be written as `null` (without quotes).
-* **Undefined**: The undefined type represents a value that has not been set. If a variable has been declared, but has not been assigned a value, it is `undefined`.
-* **Object**: An object is a collection of properties, each of which has a name and a value. You can create an object using curly braces (`{}`) and assigning properties to it using name-value pairs.
-* **Array**: An array is a special type of object that can hold a collection of items. You can create an array using square brackets (`[]`) and assigning a list of values to it.
-* **Function**: A function is a block of code that can be defined and then called by name. Functions can accept arguments (inputs) and return a value (output). You can create a function using the `function` keyword.
+* **Number**: Los números pueden ser números enteros (por ejemplo, `1`, `-5`, `100`) o valores de punto flotante (por ejemplo, `3.14`, `-2.5`, `0.01`). JavaScript no tiene un tipo separado para números enteros y valores de punto flotante; los trata a ambos como números.
+* **String**: Las cadenas son secuencias de caracteres, representadas por comillas simples (por ejemplo, `'hola'`) o comillas dobles (por ejemplo, `"mundo"`).
+* **Boolean**: Los booleanos representan un valor verdadero o falso. Se pueden escribir como `true` o `false` (sin comillas).
+* **Null**: El tipo nulo representa un valor nulo, lo que significa "sin valor". Se puede escribir como `null` (sin comillas).
+* **Undefined**: El tipo indefinido representa un valor que no se ha establecido. Si una variable ha sido declarada, pero no se le ha asignado un valor, es `undefined`.
+* **Object**: Un objeto es una colección de propiedades, cada una de las cuales tiene un nombre y un valor. Puede crear un objeto usando llaves (`{}`) y asignándole propiedades usando pares nombre-valor.
+* **Array**: Una matriz (array en inglés) es un tipo especial de objeto que puede contener una colección de elementos. Puede crear una matriz usando corchetes (`[]`) y asignándole una lista de valores.
+* **Function**: Una función es un bloque de código que se puede definir y luego llamar por su nombre. Las funciones pueden aceptar argumentos (entradas) y devolver un valor (salida). Puede crear una función utilizando la palabra clave `function`.
 
-JavaScript is a "_loosely typed_"  language, which means that you don't have to explicitly declare what type of data the variables are. You just need to use the `var` keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.
+JavaScript es un lenguaje de "_tipado débil_", lo que significa que no es necesario declarar explícitamente de qué tipo de datos son las variables. Sólo necesita usar la palabra clave `var` para indicar que está declarando una variable, y el intérprete determinará qué tipo de datos está usando a partir del contexto y el uso de comillas.
 
 {% exercise %}
-Declare three variables and initialize them with the following values: `age` as a number, `name` as a string and `isMarried` as a boolean.
+Declare tres variables e inicialícelas con los siguientes valores: `edad` como número, `nombre` como cadena y `estaCasada` como booleano.
 
 {% initial %}
-let age =
-let name = 
-let isMarried =
+let edad =
+let nombre =
+let estaCasada =
 {% solution %}
-let age = 30
-let name = "Cecilia"
-let isMarried = true
+let edad = 30
+let nombre = "Cecilia"
+let estaCasada = true
 
 {% validation %}
-assert(typeof age === "number" && typeof name === "string" && typeof isMarried === "boolean");
+assert(typeof edad === "number" && typeof nombre === "string" && typeof estaCasada === "boolean");
 
 {% context %}
 {% endexercise %}
 
-The `typeof` operator is used to checking the datatypes of a variable.
+El operador `typeof` se usa para comprobar los tipos de datos de una variable.
+
 
 ```javascript
-typeof "John"                 // Returns "string"
-typeof 3.14                   // Returns "number"
-typeof NaN                    // Returns "number"
-typeof false                  // Returns "boolean"
-typeof [1,2,3,4]              // Returns "object"
-typeof {name:'John', age:34}  // Returns "object"
-typeof new Date()             // Returns "object"
-typeof function () {}         // Returns "function"
-typeof myCar                  // Returns "undefined" *
-typeof null                   // Returns "object
+typeof "Juan"                    // Devuelve "string"
+typeof 3.14                      // Devuelve "number"
+typeof NaN                       // Devuelve "number"
+typeof false                     // Devuelve "boolean"
+typeof [1,2,3,4]                 // Devuelve "object"
+typeof {nombre:'Juan', edad:34}  // Devuelve "object"
+typeof new Date()                // Devuelve "object"
+typeof function () {}            // Devuelve "function"
+typeof miCoche                   // Devuelve "undefined" *
+typeof null                      // Devuelve "object
 ```
 
-Data types used in JavaScript can be differentiated into two categories based on containing values.
+Los tipos de datos utilizados en JavaScript se pueden diferenciar en dos categorías según los valores que contienen.
 
-Data types that can contain values:
+Tipos de datos que pueden contener valores:
 
 * `string`
 * `number`
@@ -65,15 +66,15 @@ Data types that can contain values:
 * `function`
 
 {% hint style="info" %}
-`Object`, `Date`, `Array`, `String`, `Number`, and `Boolean` are the types of objects available in JavaScript.
+`Object`, `Date`, `Array`, `String`, `Number`, y `Boolean` son los tipos de objetos disponibles en JavaScript.
 {% endhint %}
 
-Data types that cannot contain values:
+Tipos de datos que no pueden contener valores:
 
 * `null`
 * `undefined`
 
-A primitive data value is a simple data value with no additional properties and methods, and is not an object. They are immutable, meaning that they can't be altered. There are 7 primitive data types:
+Un valor de datos primitivo es un valor de datos simple sin propiedades ni métodos adicionales y no es un objeto. Son inmutables, lo que significa que no pueden modificarse. Hay 7 tipos de datos primitivos:
 
 * string
 * number
@@ -84,20 +85,20 @@ A primitive data value is a simple data value with no additional properties and 
 * null
 
 {% exercise %}
-Declare a variable called `person` and initialize it with an object that contains the following properties: `age` as a number, `name` as a string and `isMarried` as a boolean.
+Declare una variable llamada `persona` e inicialícela con un objeto que contenga las siguientes propiedades: `edad` como un número, `nombre` como una cadena y `estaCasada` como un booleano.
 
 {% initial %}
-let person =
+let persona =
 
 {% solution %}
-let person = {
-  name: "Mary",
-  age: 25,
-  isMarried: false
+let persona = {
+  nombre: "Maria",
+  edad: 25,
+  estaCasada: false
 };
 
 {% validation %}
-assert(typeof person.age === "number" && typeof person.name === "string" && typeof person.isMarried === "boolean");
+assert(typeof persona.edad === "number" && typeof persona.nombre === "string" && typeof persona.estaCasada === "boolean");
 
 {% context %}
 {% endexercise %}

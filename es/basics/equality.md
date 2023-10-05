@@ -1,14 +1,14 @@
 ---
 chapter: 2
 pageNumber: 15
-description: The equality operator is used for comparision. It can to determine if two variables are equal, even if they are not of the same type.
+description: El operador de igualdad se utiliza para comparar. Puede determinar si dos variables son iguales, incluso si no son del mismo tipo.
 ---
 
-# Equality
+# Igualdad
 
-While writing a program we frequently need to determine the equality of variables in relation to other variables. This is done using an equality operator. The most basic equality operator is the `==` operator. This operator does everything it can to determine if two variables are equal, even if they are not of the same type.
+Al escribir un programa, con frecuencia necesitamos determinar la igualdad de variables en relación con otras variables. Esto se hace usando un operador de igualdad. El operador de igualdad más básico es el operador `==`. Este operador hace todo lo posible para determinar si dos variables son iguales, incluso si no son del mismo tipo.
 
-For example, assume:
+Por ejemplo, supongamos:
 
 ```javascript
 let foo = 42;
@@ -17,37 +17,36 @@ let baz = "42";
 let qux = "life";
 ```
 
-`foo == bar` will evaluate to `true` and `baz == qux` will evaluate to `false`, as one would expect. However, `foo == baz` will also evaluate to `true` despite `foo` and `baz` being different types. Behind the scenes the `==` equality operator attempts to force its operands to the same type before determining their equality. This is in contrast to the `===` equality operator.
+`foo == bar` se evaluará como `true` y `baz == qux` se evaluará como `false`, como era de esperar. Sin embargo, `foo == baz` también se evaluará como `true` a pesar de que `foo` y `baz` sean tipos diferentes. Detrás de escena, el operador de igualdad `==` intenta forzar que sus operandos sean del mismo tipo antes de determinar su igualdad. Esto contrasta con el operador de igualdad `===`.
 
-The `===` equality operator determines that two variables are equal if they are of the same type _and_ have the same value. With the same assumptions as before, this means that `foo === bar` will still evaluate to `true`, but `foo === baz` will now evaluate to `false`. `baz === qux` will still evaluate to `false`.
+El operador de igualdad `===` determina que dos variables son iguales si son del mismo tipo _y_ tienen el mismo valor. Con las mismas suposiciones que antes, esto significa que `foo === bar` aún se evaluará como `true`, pero `foo === baz` ahora se evaluará como `false`. `baz === qux` aún se evaluará como `false`.
 
 {% exercise %}
-Use the `==` and `===` operator to compare the values of `str1` and `str2`.
+Use el operador `==` y `===`para comparar los valores de `str1` y `str2`.
 
 {% initial %}
-let str1 = "hello";
-let str2 = "HELLO";
+let str1 = "hola";
+let str2 = "HOLA";
 let bool1 = true;
 let bool2 = 1;
-// compare using ==
+// comparar usando ==
 let stringResult1 =
 let boolResult1 =
-// compare using ===
+// comparar usando ===
 let stringResult1 =
-let boolResult2 = 
+let boolResult2 =
 {% solution %}
-let str1 = "hello";
-let str2 = "HELLO";
+let str1 = "hola";
+let str2 = "HOLA";
 let bool1 = true;
 let bool2 = 1;
-// compare using ==
-let stringResult1 = str1 == str2 // false
-let boolResult1 =  bool1 == bool2 // true
+// comparar usando ==
+let stringResult1 = str1 == str2 // falso (false)
+let boolResult1 =  bool1 == bool2 // verdadero (true)
 
-// compare using ===
-let stringResult2 = str1 === str2 // false
-let boolResult2 = bool1 === bool2 // false
-
+// comparar usando ===
+let stringResult2 = str1 === str2 // falso (false)
+let boolResult2 = bool1 === bool2 // falso (false)
 
 {% validation %}
 assert(stringResult1 === false && stringResult2 === false && boolResult1 ==true &&  boolResult2 === false );

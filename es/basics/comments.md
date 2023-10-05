@@ -1,30 +1,32 @@
 ---
 chapter: 2
 pageNumber: 10
-description: Comments are used to mark annotations for other programmers or small descriptions about the code that helps others to understand it. These statement are not executed by the interpreter.
+description: Los comentarios se utilizan para marcar anotaciones para otros programadores o pequeñas descripciones sobre el código que ayudan a otros a comprenderlo. Estas declaraciones no son ejecutadas por el intérprete.
 ---
 
-# Comments
+# Comentarios
 
-Comments are statements that will not be executed by the interpreter, comments are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does. They are also used to temporarily disable code without affecting the program control flow.
+Los comentarios son declaraciones que no serán ejecutandos por el intérprete, los comentarios son utilizados para marcar anotaciones para otros programadores o pequeñas descripciones de lo que el código hace, facilitando así que otros comprendan lo que hace su código. También se utilizan para desactivar temporalmente el código sin afectar al control de flujo del programa.
 
-In JavaScript, comments can be written in 2 different ways:
+En JavaScript, los comentarios se pueden escribir de dos formas diferentes:
 
-* _Single-line comments_: It starts with two forward slashes (`//`) and continue until the end of the line. Anything following the slashes is ignored by the JavaScript interpreter. For example:
+* _Comentarios de línea única_: Empiezan con dos barras diagonales (`//`) y continúa hasta el final de la línea. El intérprete de JavaScript ignora todo lo que sigue a las barras diagonales. Por ejemplo:
 
 ```javascript
-// This is a comment, it will be ignored by the interpreter
-let a = "this is a variable defined in a statement";
+// Esto es un comentario, será ignorado por el intérprete
+let a = "esto es una variable definida en una declaración";
 ```
 
-* _Multi-line comments_: It starts with a forward slash and an asterisk (`/*`) and end with an asterisk and a forward slash (`*/`). Anything between the opening and closing markers is ignored by the JavaScript interpreter. For example:
+* _Comentarios multilínea_: Comienzan con una barra diagonal y un asterisco (`/*`) y terminan con un asterisco y una barra diagonal (`*/`). El intérprete de JavaScript ignora todo lo que se encuentre entre los marcadores de apertura y cierre. Por ejemplo:
+
+
 
 ```javascript
 /*
-This is a multi-line comment,
-it will be ignored by the interpreter
+Esto es un comentario multilínea,
+será ignorado por el intérprete
 */
-let a = "this is a variable defined in a statement";
+let a = "esto es una variable definida en una declaración";
 ```
 
-Including comments in code is essential for maintaining code quality, enabling collaboration, and simplifying the debugging process. By providing context and explanations for various parts of the program, comments make it easier to understand the code in the future. Therefore, it is considered a beneficial practice to include comments in code.
+Incluir comentarios en el código es esencial para mantener la calidad del código, habilitando la colaboración, y simplificando el proceso de depuración. Al proporcionar contexto y explicaciones para varias partes del programa, los comentarios facilitan la comprensión del código en el futuro. Por lo tanto, se considera una práctica beneficiosa incluir comentarios en el código.
