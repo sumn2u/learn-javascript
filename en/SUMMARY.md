@@ -47,7 +47,7 @@
   - [Mutable](objects/mutable.md)
   - [Reference](objects/reference.md)
   - [Prototype](objects/prototype.md)
-  - [Delete](objects/delete.md)
+  - [Delete Operator](objects/delete.md)
   - [Enumeration](objects/enumeration.md)
 - [Date and Time](date-and-time.md)
 - [JSON](json.md)
