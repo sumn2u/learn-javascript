@@ -6,16 +6,27 @@ description: Creational design patterns focus on object creation mechanisms
 
 # Creational Design Patterns
 
+Creational design patterns focus on object creation mechanisms
+
 ## 1. Factory Method
 
-A factory function is just a function that creates an object and returns it. It is a creational design pattern that allows you to create objects without specifying the exact class or constructor to be used. It centralizes object creation logic, allowing for flexibility in creating different types of objects. 
+A factory function is just a function that creates an object and returns it. It is a creational design pattern that allows you to create objects without specifying the exact class or constructor to be used. It centralizes object creation logic, allowing for flexibility in creating different types of objects. Lets say you have a website and you want to create a method that will allow you to easily create html objects and add it to the DOM. A factory is the perfect solution for this and here is how we can implement it 
 
-Lets say you have a website and you want to create a method that will allow you to easily create html objects and add it to the DOM. A factory is the perfect solution for this and here is how we can implement it 
+### 1.1. Components of the Factory Method
 
+*Creator*
 
-Factories work very simililarly to Classes however when creating objects with factories we don't have to specify a specific class or constructor, It simply creates an interface for creating objects. There are four main benefits to factories 
+This is the method implemented in the Factory that creates new products. 
 
-### 1.1. Benefits of Factories
+*Abstract Product*
+
+An interface for the product being created.
+
+*Concrete Product*
+
+This is the actual object being created. 
+
+### 1.2. Benefits of the Factory Method
 
 **Abstraction of Object Creation**
 
@@ -31,13 +42,7 @@ The creation logic is encapsulated within the factory, making it easier to modif
 
 **Complex Object Creation**
 
-Factories are useful when the creation of objects is complex, involves multiple steps,  or requires certain conditions to be met. 
-
-### 1.2. When should you use a factory
-
-* The object creation process is complex or requires different steps.
-* There are variations or configurations in object creation based on specific conditions.
-* You want to abstract the object creation logic from the client, allowing for future changes or improvements in the creation process.
+Factories are useful when the creation of objects is complex, involves multiple steps,  or requires certain conditions to be met.
 
 ### 1.3. Example
 
@@ -72,9 +77,6 @@ h1Tag.setText('Hello world');
 h1Tag.setColor('Red');
 ```
 
-The `elementFactory` function is a factory in Javascript that creates and configures a DOM element based on the parameters the client passes. It will return an object that contains the created DOM element and methods that can be used to change the text or the color of the element in the future. 
-
-
 ## 2. Abstract Factory Method
 
 Abstract factories are another creational design pattern. Its main goal is to provide an interface for creating families of related or dependent objects without specifying their concrete classes. This pattern ensures that the created objects are compatible and work together. 
@@ -83,23 +85,19 @@ Abstract factories are another creational design pattern. Its main goal is to pr
 
 *Abstract Factories*
 
-* This defines the interface for creating the abstract products, which are related families of objects (e.g. UI components)
-* The abstract factory declares creation methods for each type of product in the family 
+This defines the interface for creating the abstract products, which are related families of objects (e.g. UI components).The abstract factory declares creation methods for each type of product in the family. 
 
 *Concreate Factories*
 
-* These are classes that implement the abstract factory interface, providing specific implementations for creating the concrete products
-* Each concrete factory creates a family of related products (e.g. UI factory might create a button or checkbox).
+These are classes that implement the abstract factory interface, providing specific implementations for creating the concrete products. Each concrete factory creates a family of related products (e.g. UI factory might create a button or checkbox).
 
 *Abstract Products*
 
-* These are the interfaces or base classes for the products that the abstract factory creates.
-* Each product type in the family has its own abstract product definition (e.g., Button, Checkbox).
+These are the interfaces or base classes for the products that the abstract factory creates. Each product type in the family has its own abstract product definition (e.g., Button, Checkbox).
 
 *Concrete Products*
 
-* These are the actual implementations of the abstract products. Each concrete factory creates its own set of concrete products.
-* Concrete products implement the abstract product interfaces defined for their family (e.g., HTMLButton, WindowsButton).
+These are the actual implementations of the abstract products. Each concrete factory creates its own set of concrete products.Concrete products implement the abstract product interfaces defined for their family (e.g., HTMLButton, WindowsButton).
 
 ### 2.2. Benefits of Abstract Factories
 
@@ -204,9 +202,6 @@ const macCheckbox = macFactory.createCheckbox();
 macCheckbox.render();  // Output: Rendering a Mac checkbox
 ```
 
-Here you can see that UIFactory is defined as the abstract factory with methods to create bottons and checkboxes
-
-
 ## 3. Builder 
 
 The goal of a builder is to sepreate the construction of an object from its representation. What the builder pattern does is basically allow the client to construct a complex object by just passing in the type and content of the object only. The client does not have to worry about the construction details.
@@ -215,21 +210,19 @@ The goal of a builder is to sepreate the construction of an object from its repr
 
 *Builder*
 
-* An interface or class that defines the construction steps needed to create the object
-* The builder usually contains a series of methods to build various parts of the object
+The builder usually contains a series of methods to build various parts of the object.
 
 *Concrete Builder*
 
-* Implements methods from the builder interface to construct parts of the object 
+Implements methods from the builder interface to construct parts of the object 
 
 *Director (Optional)* 
 
-* This is not always necessary but can help with constructing the final object using a specfic construction process 
+This is not always necessary but can help with constructing the final object using a specfic construction process 
 
 *Object* 
 
-* Representation of the final product 
-* Contains parts that were constructed by the builder
+Representation of the final product. Contains parts that were constructed by the builder
 
 ## 3.2. Benefits of the Builder Pattern 
 
@@ -256,7 +249,6 @@ Builders can be reused to create multiple instances of the complex object with d
 ## 3.3. Example 
 
 ```Javascript 
-
 //Builder
 class ComputerBuilder {
     buildCPU() {}
@@ -298,7 +290,6 @@ class ComputerAssembler {
         return this.builder.getResult();
     }
 }
-
 ```
 
 ## 4. Singleton
@@ -340,7 +331,6 @@ Singletons are especially useful when it comes to tasks like managing shared res
 ## 4.3. Example 
 
 ```javascript
-
 class Singleton {
   constructor() {
     const privateVariable = 'This is a private variable';
@@ -369,12 +359,11 @@ const singletonInstance1 = Singleton.getInstance();
 const singletonInstance2 = Singleton.getInstance();
 
 console.log(singletonInstance1 === singletonInstance2); // Outputs: true
-
 ```
 
 ## 5. Prototype 
 
-The prototype pattern is an alternative way to implement inheritance but the main differnce is instead of inheriting properties from a class, objects inherit properties from a prototype object. The prototype pattern is also reffered to as the properties pattern and Javascript has native support for protoypes. In Javascript, each object has a prototype (reference to another object). When you attempt to access a property that does not exist in the object itself Javascript will look for it in the object's prototype and continue up the prototype chain until it finds it or reaaches the end of the chain. 
+The prototype pattern is an alternative way to implement inheritance but the main differnce is instead of inheriting properties from a class, objects inherit properties from a prototype object. The prototype pattern is also reffered to as the properties pattern and Javascript has native support for protoypes. In Javascript, each object has a prototype (reference to another object). When you attempt to access a property that does not exist in the object itself Javascript will look for it in the object's prototype and continue up the prototype chain until it finds it or reaches the end of the chain. 
 
 ## 5.1. Components of the Prototype Pattern
 
@@ -409,11 +398,9 @@ Objects created using the Prototype pattern can be easily customized by modifyin
 
 Changes made to the prototype object at runtime are reflected in all instances based on the prototype. This behavior allows for updates and modifications to the prototype, impcating all instances sharing the same prototype. 
 
-
 ## 5.3. Example 
 
 ```javascript 
-
 const cameraPrototype = {
     model = 'default',
     make = 'default',
@@ -429,8 +416,6 @@ camera1.make = 'Fujifilm';
 const camera1 = Object.create(cameraPrototype);
 camera1.model = 'R5';
 camera1.make = 'Canon';
-
-
 ```
 
 ---
