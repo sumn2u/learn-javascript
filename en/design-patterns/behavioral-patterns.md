@@ -707,6 +707,410 @@ function run() {
     click.fire('event #3');
 }
 ```
+
+## 8. State
+
+The State pattern is a behavioral design pattern that allows you to have a base object and provide it with additional functionality based on its state. This pattern is particularly useful when an object needs to change its behavior based on its internal state.
+
+## 8.1. Components of the State
+
+*State*
+
+This is the object that encapsulates the state values and the associated behavior of the state. 
+
+*Context*
+
+This is the object that maintains a reference to a state object that defines the current state. It also includes an interface that allows other state objects to change its current state to a differnt state.
+
+## 8.2. Benefits of the State
+
+**Modular and Organized Code**
+
+Each state is encapuslated within its own class, making the code modular and easy to manage. 
+
+**No Need for Switch Statements**
+
+Switch statements can also be used to change the behavior of an object but the problem with this method is that switch statements can become very lengthy as your project scales. The State pattern fixes this issue. 
+
+**Promotes Reusability**
+
+States can be reused across different contexts, this reduces code duplication. 
+
+**Simplifies Testing**
+
+Testing individual state classes in isolation is easier and more effective than testing a monolithic object with complex conditional logic. 
+
+## 8.3. Example 
+
+```javascript 
+class Car {
+  constructor() {
+    this.state = new ParkState();
+  }
+
+  setState(state) {
+    this.state = state;
+    console.log(`Changed state to: ${state.constructor.name}`);
+  }
+
+  park() {
+    this.state.park(this);
+  }
+
+  drive() {
+    this.state.drive(this);
+  }
+
+  reverse() {
+    this.state.reverse(this);
+  }
+}
+
+class ParkState {
+  park(car) {
+    console.log("Car is already in Park");
+  }
+
+  drive(car) {
+    console.log("Shifting to Drive");
+    car.setState(new DriveState());
+  }
+
+  reverse(car) {
+    console.log("Shifting to Reverse");
+    car.setState(new ReverseState());
+  }
+}
+
+class DriveState {
+  park(car) {
+    console.log("Shifting to Park");
+    car.setState(new ParkState());
+  }
+
+  drive(car) {
+    console.log("Car is already in Drive");
+  }
+
+  reverse(car) {
+    console.log("Shifting to Reverse");
+    car.setState(new ReverseState());
+  }
+}
+
+class ReverseState {
+  park(car) {
+    console.log("Shifting to Park");
+    car.setState(new ParkState());
+  }
+
+  drive(car) {
+    console.log("Shifting to Drive");
+    car.setState(new DriveState());
+  }
+
+  reverse(car) {
+    console.log("Car is already in Reverse");
+  }
+}
+
+// Example usage
+const car = new Car();
+
+car.drive();
+car.reverse();
+car.drive();
+car.park();
+car.drive();  // Trying to drive while parked
+
+```
+
+## 9. Strategy 
+
+The Strategy pattern is essentially a design pattern that allows you to have a group of algorithms (strategies) that are interchangeable. 
+
+## 9.1. Components of Strategy 
+
+*Strategy*
+
+This is an algorithm that implements the Strategy interface. 
+
+*Context*
+
+This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy refrenced. 
+
+
+## 9.2. Benefits of Strategy 
+
+**Dynamically Swappable Algorithms**
+
+Strategies can be swapped at runtime, allowing for dynamic selection of algorithms based on different conditions or requirements. This is particularly useful when the appropriate algorithm may vary based on user input, configuration settings, or other factors.
+
+**Flexibility and Maintainability**
+
+Strategies can be changed or extended without modifying the context using them. This makes the system more flexible and easier to maintain since changes in one strategy do not affect others.
+
+**Simplifies Testing**
+
+Testing strategies in isolation is easier since each strategy is a separate class. This allows for targeted testing and ensures that changes to one strategy don't inadvertently affect others
+
+**Reusability**
+
+Strategies can be reused in multiple contexts or applications, promoting code reuse and minimizing redundancy.
+
+## 9.3. Example
+
+```javascript 
+class RegularCustomerStrategy {
+  calculatePrice(bookPrice) {
+    // Regular customers get a fixed discount of 10%
+    return bookPrice * 0.9;
+  }
+}
+
+class VIPCustomerStrategy {
+  calculatePrice(bookPrice) {
+    // VIP customers get a fixed discount of 20%
+    return bookPrice * 0.8;
+  }
+}
+
+class BookStore {
+  constructor(pricingStrategy) {
+    this.pricingStrategy = pricingStrategy;
+  }
+
+  setPricingStrategy(pricingStrategy) {
+    this.pricingStrategy = pricingStrategy;
+  }
+
+  calculatePrice(bookPrice) {
+    return this.pricingStrategy.calculatePrice(bookPrice);
+  }
+}
+
+// Usage
+const regularCustomerStrategy = new RegularCustomerStrategy();
+const vipCustomerStrategy = new VIPCustomerStrategy();
+
+const bookstore = new BookStore(regularCustomerStrategy);
+
+console.log('Regular customer price:', bookstore.calculatePrice(50)); // Outputs: 45 (10% discount)
+bookstore.setPricingStrategy(vipCustomerStrategy);
+console.log('VIP customer price:', bookstore.calculatePrice(50)); // Outputs: 40 (20% discount)
+```
+
+## 10. Template Method 
+
+The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its sturcture. 
+
+
+## 10.1. Components of the Template Method 
+
+*Abstract Class*
+
+The abstract class is the template for the algorithm. It defines an interface for the client to invoke its method. It also contains all the functions that can be overriden by subclasses.
+
+*Concrete Class*
+
+Implements the steps as defined in the Abstract Class and can make changes to the steps 
+
+
+## 10.2. Benefits of the Template Method 
+
+**Code Reusability**
+
+The pattern promotes code reusability by defining the algorithm's skeleton in a base class. Subclasses can reuse this structure and only need to provide implementations for specific steps.
+
+**Easy Maintenance**
+
+Making changes to the algorithm is simplified because modifications only need to be made in one place—the template method in the abstract class—rather than in multiple subclasses. This reduces the chances of errors and makes maintenance more straightforward.
+
+**Extension and Variation**
+
+The pattern allows for easy extension and variation of the algorithm. Subclasses can override certain steps to provide custom implementations, effectively extending or modifying the behavior of the algorithm without altering its core structure.
+
+**Control Flow**
+
+The template method defines the control flow of the algorithm, making it easier to manage and understand the sequence of operations in the algorithm.
+
+
+## 10.3. Example 
+
+```javascript 
+class Camera {
+  // Template method defining the common steps for capturing a photo
+  capturePhoto() {
+    this.turnOn();
+    this.initialize();
+    this.setExposure();
+    this.capture();
+    this.turnOff();
+  }
+
+  // Common steps for turning on the camera
+  turnOn() {
+    console.log('Turning on the camera');
+  }
+
+  // Abstract method for initializing the camera (to be overridden by subclasses)
+  initialize() {
+    throw new Error('Abstract method: initialize() must be implemented by subclasses');
+  }
+
+  // Abstract method for setting exposure (to be overridden by subclasses)
+  setExposure() {
+    throw new Error('Abstract method: setExposure() must be implemented by subclasses');
+  }
+
+  // Common steps for capturing a photo
+  capture() {
+    console.log('Capturing a photo');
+  }
+
+  // Common steps for turning off the camera
+  turnOff() {
+    console.log('Turning off the camera');
+  }
+}
+
+class DSLRCamera extends Camera {
+  initialize() {
+    console.log('Initializing DSLR camera');
+  }
+
+  setExposure() {
+    console.log('Setting exposure for DSLR camera');
+  }
+}
+
+class MirrorlessCamera extends Camera {
+  initialize() {
+    console.log('Initializing mirrorless camera');
+  }
+
+  setExposure() {
+    console.log('Setting exposure for mirrorless camera');
+  }
+}
+
+// Usage
+const dslrCamera = new DSLRCamera();
+console.log('Capturing photo with DSLR camera:');
+dslrCamera.capturePhoto();
+console.log('');
+
+const mirrorlessCamera = new MirrorlessCamera();
+console.log('Capturing photo with mirrorless camera:');
+mirrorlessCamera.capturePhoto();
+```
+
+## 11. Visitor 
+
+The visitor design pattern is a behavioral design pattern that allows you to seperate algorithms or operations from the object on which they operate. 
+
+
+## 11.1 Components of the Visitor 
+
+*ObjectStructure*
+
+Maintains a collection of Elements which can be iterated over 
+
+*Elements*
+
+The element contains an accept method that accepts the visitor objects.
+
+*Visitor*
+
+Implements a visit method where the argument of the method is the element being visited. This is how changes to the element get made. 
+
+## 11.2. Benefits of the Visitor 
+
+**Open/Closed Principle**
+
+The pattern aligns with the Open/Closed Principle, which states that software entities (classes, modules, functions) should be open for extension but closed for modification. You can introduce new operations (new visitors) without modifying the existing object structure or elements.
+
+**Extensibility**
+
+You can introduce new behaviors or operations by adding new visitor implementations without modifying the existing elements or the object structure. This makes the system more extensible, allowing for new features or behaviors to be added easily.
+
+**Centralized Behavior**
+
+The Visitor pattern centralizes behavior-related code within the visitor classes. Each visitor encapsulates a specific behavior, which can be reused across different elements, promoting code reuse and modularity.
+
+**Consistency in Operations**
+
+With the Visitor pattern, you can ensure that a specific operation (visitor method) is applied consistently across various elements, as each element's accept method calls the appropriate visitor method for that element type
+
+
+## 11.3 Example 
+
+'''javascript 
+class GymMember {
+    constructor(name, subscriptionType, fitnessScore) {
+        this.name = name;
+        this.subscriptionType = subscriptionType;
+        this.fitnessScore = fitnessScore;
+    }
+
+    accept(visitor) {
+        visitor.visit(this);
+    }
+
+    getName() {
+        return this.name;
+    }
+
+    getSubscriptionType() {
+        return this.subscriptionType;
+    }
+
+    getFitnessScore() {
+        return this.fitnessScore;
+    }
+
+    setFitnessScore(score) {
+        this.fitnessScore = score;
+    }
+}
+
+class FitnessEvaluation {
+    visit(member) {
+        member.setFitnessScore(member.getFitnessScore() + 10);
+    }
+}
+
+class MembershipDiscount {
+    visit(member) {
+        if (member.getSubscriptionType() === 'Premium') {
+            console.log(`${member.getName()}: Fitness score - ${member.getFitnessScore()}, Membership type - ${member.getSubscriptionType()}, Eligible for a 10% discount!`);
+        } else {
+            console.log(`${member.getName()}: Fitness score - ${member.getFitnessScore()}, Membership type - ${member.getSubscriptionType()}, Not eligible for a discount.`);
+        }
+    }
+}
+
+function run() {
+    const gymMembers = [
+        new GymMember("Alice", "Basic", 80),
+        new GymMember("Bob", "Premium", 90),
+        new GymMember("Eve", "Basic", 85)
+    ];
+
+    const fitnessEvaluation = new FitnessEvaluation();
+    const membershipDiscount = new MembershipDiscount();
+
+    for (let i = 0; i < gymMembers.length; i++) {
+        const member = gymMembers[i];
+
+        member.accept(fitnessEvaluation);
+        member.accept(membershipDiscount);
+    }
+}
+
+run();
+```
  
+ ---
 
 
