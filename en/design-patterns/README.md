@@ -1,11 +1,11 @@
 ---
 layout: editorial
-chapter: 30
+chapter: 23
 
 pageNumber: 92
 description: Design Patterns
 ---
-# Chapter 30
+# Chapter 23
 # Design Patterns 
 
 Design patterns are object oriented solutions that you can  implement to solve common programming problems that may occur during the development process. Design patterns are not the same as algorithms, they are a coding concept that you can use to resolve specific kinds of issues. 
