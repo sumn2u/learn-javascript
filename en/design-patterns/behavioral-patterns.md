@@ -1,10 +1,12 @@
 ---
 layout: editorial
 title: Behavioral Design Patterns in Javascript
-description: Focus on how objects communicate with eachother and assigning responsibilites to them.
+description: Focus on how objects communicate with each other and assigning responsibilites to them.
 ---
 
 # Behavioral Design Patterns
+
+Focus on how objects communicate with each other and assigning responsibilites to them.
 
 ## 1. Chain of Responsibility 
 
@@ -45,7 +47,6 @@ The pattern ensures that each request is processed sequentially through the chai
 ## 1.3. Example 
 
 ```javascript 
-
 // Handler interface
 class CoffeeHandler {
   constructor() {
@@ -120,7 +121,7 @@ This is the interface or abstract class that declares the `execute` method. It d
 
 *Reciever* 
 
-This is an object that performs the actual work when the `execute` method of a command is called. The reciver knows how to carry out the action associate with a specific command 
+This is an object that performs the actual work when the `execute` method of a command is called. The reciver knows how to carry out the action associate with a specific command. 
 
 ## 2.2. Benefits of the Command 
 
@@ -208,7 +209,7 @@ The interperator design pattern is used to define a grammar for a language and p
 
 *Context*
 
-A global state or context that the interpreter uses to interpret expressions. It often contains information that is relevant during the interpretation of expressions. 
+A global state or context that the Interpreter uses to interpret expressions. It often contains information that is relevant during the interpretation of expressions. 
 
 *Abstract Expressions* 
 
@@ -216,19 +217,19 @@ Defines an interface for all types of expressions in the language's grammar. The
 
 *Terminal Expressions*
 
-Represents the terminal symbols in the grammar. These are the leaves of the expression tree. Terminal expression implement the interface defined by the abstract expression 
+Represents the terminal symbols in the grammar. These are the leaves of the expression tree. Terminal expression implement the interface defined by the abstract expression.
 
 *Non-terminal Expression* 
 
-Represents the non-terminal symbols in the grammar. Non-terminal expressions use terminal and/or other non-terminal expressions to define complex expressions by combining or composing them 
+Represents the non-terminal symbols in the grammar. Non-terminal expressions use terminal and/or other non-terminal expressions to define complex expressions by combining or composing them.
 
 *Expression Tree* 
 
-Represents the hierarchical structure of the language's expressions. The expression tree is built by combining terminal and non-terminal expressions based on the rules of the language's grammar 
+Represents the hierarchical structure of the language's expressions. The expression tree is built by combining terminal and non-terminal expressions based on the rules of the language's grammar. 
 
 *Interpreter*
 
-Defines an interface or class that interprets the abstract syntax tree created by the expression tree. It typically includes an `interpret` method that takes a context and interprets the expression based on the given context 
+Defines an interface or class that interprets the abstract syntax tree created by the expression tree. It typically includes an `interpret` method that takes a context and interprets the expression based on the given context.
 
 *client*
 
@@ -255,7 +256,6 @@ The Interpreter pattern can be combined with other design patterns, such as Comp
 ## 3.3. Example 
 
 ```javascript 
-
 // Abstract Expression
 class Expression {
   interpret(context) {
@@ -330,23 +330,23 @@ console.log('Result:', result); // Output: Result: 13
 
 ## 4. Iterator 
 
-The iterator pattern allows clients to effectively loop over a collection of objects
+The Iterator pattern allows clients to effectively loop over a collection of objects
 
 ## 4.1. Components of the Iterator 
 
 *Iterator*
 
-Implements iterator interface or class with methods like `first()`,`next()`. The iterator keeps track of the current position when traversing collections. 
+Implements Iterator interface or class with methods like `first()`,`next()`. The Iterator keeps track of the current position when traversing collections. 
 
 *Items*
 
-These are the indiviual objects of the collection that the iterator will traverse 
+These are the indiviual objects of the collection that the Iterator will traverse 
 
 ## 4.2. Benefits of iterators
 
 **Compatibility with Differnt Data Structures** 
 
-The iterator pattern allows the same iteration logic to be applied to different data structures. 
+The Iterator pattern allows the same iteration logic to be applied to different data structures. 
 
 **Support for concurrent Iteration**
 
@@ -363,7 +363,6 @@ The Iterator pattern provides a clean and consistent interface for accessing ele
 ## 4.3. Example 
 
 ```javascript
-
 // Car class representing a car
 class Car {
   constructor(make, model) {
@@ -429,33 +428,31 @@ The Mediator pattern acts as a middle man between a group of objects by encapsul
 
 *Mediator*
 
-The mediator manages central control over operations. It contains an interface for communicating with the Colleague objects and has a reference to each Colleague object 
+The mediator manages central control over operations. It contains an interface for communicating with the Colleague objects and has a reference to each Colleague object.
 
 *Colleague*
 
-The colleages are the objects that are being mediated, each colleague has a reference to the mediator
+The colleages are the objects that are being mediated, each colleague has a reference to the mediator.
 
 ## 5.2. Benefits of the Mediator 
 
 **Centralized Control**
 
-Centralizing communication within the mediator allows for better control and coordination of interactions between components. The mediator can manage message distribution, prioritize messages, and apply specific logic based on the system's requirements.
+Centralizing communication within the Mediator allows for better control and coordination of interactions between components. The ,Mediator can manage message distribution, prioritize messages, and apply specific logic based on the system's requirements.
 
 **Simplified Communication**
 
-Mediators simplify communication logic, as components send messages to the mediator instead of dealing with the complexity of direct communication. This simplifies the interaction between components and allows for easier maintenance and updates.
+Mediators simplify communication logic, as components send messages to the Mediator instead of dealing with the complexity of direct communication. This simplifies the interaction between components and allows for easier maintenance and updates.
 
 **Reusability of Mediator**
 
-The mediator can be reused across various components and scenarios, allowing for a single point of control for different parts of the application. This reusability promotes consistency and helps in managing the communication flow efficiently.
+The Mediator can be reused across various components and scenarios, allowing for a single point of control for different parts of the application. This reusability promotes consistency and helps in managing the communication flow efficiently.
 
 **Promotes Maintainability**
 
-The Mediator pattern promotes maintainability by reducing the complexity of direct inter-component communication. As the system grows, changes and updates can be made within the mediator without affecting the individual components, making maintenance easier and less error-prone.
-
+The Mediator pattern promotes maintainability by reducing the complexity of direct inter-component communication. As the system grows, changes and updates can be made within the Mediator without affecting the individual components, making maintenance easier and less error-prone.
 
 ```javascript
-
 var Participant = function (name) {
     this.name = name;
     this.chatroom = null;
@@ -517,14 +514,13 @@ function run() {
 
 ## 6. Memento
 
-The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a seperate object that stores the staet of the original object. 
+The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a seperate object that stores the state of the original object. 
 
 ## 6.1. Components of the Memento 
 
-
 *Originator*
 
-This is the object that gets saved. It creates a memento object to store its internal state. 
+This is the object that gets saved. It creates a Memento object to store its internal state. 
 
 *Memento*
 
@@ -546,8 +542,7 @@ Memento facilitates implementing undo and redo functionality easily. Since Memen
 
 **Improved Performance**
 
-Storing the object's state in a memento allows for more efficient storage and retrival operations compared to other approaches. 
-
+Storing the object's state in a Memento allows for more efficient storage and retrival operations compared to other approaches. 
 
 **Flexible Design** 
 
@@ -625,9 +620,7 @@ run();
 
 The observer pattern allows many objects to subscribe to events that are broadcast by another object. 
 
-
 ## 7.1. Components of the Observer 
-
 
 *Subject*
 
@@ -637,9 +630,7 @@ The subject is an object that implements an interface that lets observer objects
 
 The Observer subscribes to the subject and and typically has a function that get invoked when notified by the Subject
 
-
 ## 7.2. Benefits of Observers 
-
 
 **Simplified Event Handling**
 
@@ -657,12 +648,9 @@ The Observer pattern facilitates a "one-to-many" communication model, where a si
 
 Observers can be reused across different subjects, promoting modularity and code reusability. This allows for more flexible and maintainable code.
 
-
-
 ## 7.3. Example 
 
 ```javascript
-
 function Click() {
     this.handlers = [];  // observers
 }
@@ -716,17 +704,17 @@ The State pattern is a behavioral design pattern that allows you to have a base 
 
 *State*
 
-This is the object that encapsulates the state values and the associated behavior of the state. 
+This is the object that encapsulates the State values and the associated behavior of the State. 
 
 *Context*
 
-This is the object that maintains a reference to a state object that defines the current state. It also includes an interface that allows other state objects to change its current state to a differnt state.
+This is the object that maintains a reference to a State object that defines the current State. It also includes an interface that allows other State objects to change its current State to a differnt State.
 
 ## 8.2. Benefits of the State
 
 **Modular and Organized Code**
 
-Each state is encapuslated within its own class, making the code modular and easy to manage. 
+Each State is encapuslated within its own class, making the code modular and easy to manage. 
 
 **No Need for Switch Statements**
 
@@ -822,7 +810,6 @@ car.reverse();
 car.drive();
 car.park();
 car.drive();  // Trying to drive while parked
-
 ```
 
 ## 9. Strategy 
@@ -839,7 +826,6 @@ This is an algorithm that implements the Strategy interface.
 
 This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy refrenced. 
 
-
 ## 9.2. Benefits of Strategy 
 
 **Dynamically Swappable Algorithms**
@@ -852,7 +838,7 @@ Strategies can be changed or extended without modifying the context using them. 
 
 **Simplifies Testing**
 
-Testing strategies in isolation is easier since each strategy is a separate class. This allows for targeted testing and ensures that changes to one strategy don't inadvertently affect others
+Testing strategies in isolation is easier since each strategy is a separate class. This allows for targeted testing and ensures that changes to one strategy don't inadvertently affect others.
 
 **Reusability**
 
@@ -904,7 +890,6 @@ console.log('VIP customer price:', bookstore.calculatePrice(50)); // Outputs: 40
 
 The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its sturcture. 
 
-
 ## 10.1. Components of the Template Method 
 
 *Abstract Class*
@@ -913,8 +898,7 @@ The abstract class is the template for the algorithm. It defines an interface fo
 
 *Concrete Class*
 
-Implements the steps as defined in the Abstract Class and can make changes to the steps 
-
+Implements the steps as defined in the Abstract Class and can make changes to the steps. 
 
 ## 10.2. Benefits of the Template Method 
 
@@ -933,7 +917,6 @@ The pattern allows for easy extension and variation of the algorithm. Subclasses
 **Control Flow**
 
 The template method defines the control flow of the algorithm, making it easier to manage and understand the sequence of operations in the algorithm.
-
 
 ## 10.3. Example 
 
@@ -1009,12 +992,11 @@ mirrorlessCamera.capturePhoto();
 
 The visitor design pattern is a behavioral design pattern that allows you to seperate algorithms or operations from the object on which they operate. 
 
-
 ## 11.1 Components of the Visitor 
 
 *ObjectStructure*
 
-Maintains a collection of Elements which can be iterated over 
+Maintains a collection of Elements which can be iterated over. 
 
 *Elements*
 
@@ -1040,12 +1022,11 @@ The Visitor pattern centralizes behavior-related code within the visitor classes
 
 **Consistency in Operations**
 
-With the Visitor pattern, you can ensure that a specific operation (visitor method) is applied consistently across various elements, as each element's accept method calls the appropriate visitor method for that element type
-
+With the Visitor pattern, you can ensure that a specific operation (visitor method) is applied consistently across various elements, as each element's accept method calls the appropriate visitor method for that element type.
 
 ## 11.3 Example 
 
-'''javascript 
+```javascript 
 class GymMember {
     constructor(name, subscriptionType, fitnessScore) {
         this.name = name;

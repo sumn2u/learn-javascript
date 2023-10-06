@@ -6,6 +6,8 @@ description: Focus on how classes and objects are composed to form larger struct
 
 # Structural Design Patterns 
 
+Focus on how classes and objects are composed to form larger structures
+
 ## 1. Adapter 
 
 The Adapter is a structural design pattern that enables you to make make different interfaces with different methods work together without changing their code. The purpose of an Adapter is to make two incompatible interfaces work together seamlessly. 
@@ -47,7 +49,6 @@ Adapters facilitate easier testing by allowing mocking or stubbing of the adapte
 ## 1.3. Example 
 
 ```javascript 
-
 // Adaptee: EU charging brick
 class EUChargingBrick {
   chargeWithEUPlug() {
@@ -110,13 +111,11 @@ chargeDevice(euAdapter);
 
 console.log('Charging with US charging brick:');
 chargeDevice(usAdapter);
-
 ```
 
 ## 2. Bridge 
 
 The Bridge is a structural design pattern that is designed to split a very large class into two sepereate heirarchies which can be developed independendently. The two hierarchies are referred to as the Abstraction level and the Implementation level. Basically if you have a class that has multiple variants of some functionality, you can use a Bridge pattern to divide and organize the class into two easier to understand hierarchies. 
-
 
 ## 2.1. Components of the Bridge 
 
@@ -203,8 +202,7 @@ blueShape.draw(); // Output: Drawing a shape with color blue, Applying blue colo
 ```
 ## 3. Composite 
 
-The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite desgin pattern allows you to create this type of structure and be able to perform operations on each level in a consisten manner. 
-
+The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite desgin pattern allows you to create this type of structure and be able to perform operations on each level in a consistent manner. 
 
 ## 3.1 Components of the Composite 
 
@@ -225,7 +223,7 @@ This represents the composites or containers that can hold a collection of leaf 
 
 **Uniformly and Consistency** 
 
-The Composite design pattern provides a uniform way to treat both individual objects and compositions of objects. Having one common interface clients can use to operate on these objects simplifes the code base and object interactions. 
+The Composite design pattern provides a uniform way to treat both individual objects and compositions of objects. Clients have one common interface to use to operate on these objects which simplifes the code base and object interactions. 
 
 **Flexibility** 
 
@@ -240,7 +238,6 @@ The client code doesn't need to distinguish between individual and composite com
 ## 3.3. Example 
 
 ```javascript 
-
 class SingleBlock {
   constructor(name) {
     this.name = name;
@@ -291,12 +288,11 @@ megaStructure.add(blockGroup1);
 megaStructure.add(blockGroup2);
 
 megaStructure.display();
-
 ```
 
 ## 4. Decorator 
 
-The Decorator design pattern can be used to modify an objects behaviour either statically or dynamically without affecting the behavior of other objects from the same class. Decorators are particularly useful when you want to add features to an object in a flexible and reusable way. 
+The Decorator design pattern can be used to modify an objects behavior either statically or dynamically without affecting the behavior of other objects from the same class. Decorators are particularly useful when you want to add features to an object in a flexible and reusable way. 
 
 ## 4.1. Components of a Decorator 
 
@@ -310,7 +306,7 @@ This is the initial object to which additional functionalities can be added.
 
 *Decorator* 
 
-This is an interface that extends the functionality of the concrete components. It has a reference to a componenet instance and implements the component interface. 
+This is an interface that extends the functionality of the concrete components. It has a reference to a component instance and implements the component interface. 
 
 *Concrete Decorators*
 
@@ -338,7 +334,6 @@ Without Decorators, extending functionalities often involves creating numerous s
 ## 4.3. Example 
 
 ```javascript 
-
 class Coffee {
   cost() {
     return 5;
@@ -409,7 +404,6 @@ Changes to the subsystem can be isolated within the facade, reducing the impact 
 
 ## 5.3. Example 
 
-
 ```javascript 
 // Plumbing subsystem
 class PlumbingSubsystem {
@@ -470,9 +464,7 @@ const client = () => {
 
 // Run the client
 client();
-
 ```
-
 
 ## 6. Flyweight 
 
@@ -578,7 +570,6 @@ run();
 
 The Proxy design pattern is a structural design pattern that allows you to provide a substitute or placeholder for another object. This proxy object can control access to the original object. In Javascript, the `proxy` object is built into the language and facilitates the implementation of the Proxy design pattern. 
 
-
 ## 7.1. Components of the Proxy 
 
 *Proxy*
@@ -608,11 +599,9 @@ Proxies can implement caching mechanisims to store results of expensive operatio
 
 Proxies enable lazy initialization, where you can delay the creation of the actual object until its needed. This can improve performance by reducing upfront resource usage. 
 
-
 ## 7.3. Example 
 
 ```javascript
-
 // Original object representing a bank account
 const bankAccount = {
   balance: 1000,
@@ -655,8 +644,5 @@ const bankAccountProxy = new Proxy(bankAccount, {
 console.log(bankAccountProxy.balance); // This will trigger the custom behavior
 
 bankAccountProxy.deposit(500); // This will trigger the custom behavior for method invocation
-
 ```
-
-
 ---
