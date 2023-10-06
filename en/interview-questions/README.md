@@ -1,11 +1,11 @@
 ---
 layout: editorial
-chapter: 25
+chapter: 22
 
 pageNumber: 82
 description: 
 ---
-# Chapter 25
+# Chapter 22
 # Interview questions
 
 This chapter discusses various questions to better prepare candidate on their understanding about JavaScript. It is divided into three parts: basic, intermediate and advance level.

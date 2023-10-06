@@ -1,10 +1,9 @@
 ---
-layout: editorial
-chapter: 24
+chapter: 19
 pageNumber: 82
 description: This Markdown document provides an overview of ECMAScript, its history, features, and its role in web development.
 ---
-# Chapter 24
+
 # ECMAScript (ES)
 
 ECMAScript, commonly abbreviated as ES, is a standardized scripting language specification. It serves as the foundation for several programming languages, with JavaScript being the most well-known and widely used implementation. This Markdown document provides an overview of ECMAScript, its history, features, and its role in web development.

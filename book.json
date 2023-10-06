@@ -73,6 +73,10 @@
             "text": "English"
           },
           {
+            "config": "fr",
+            "text": "Français"
+          },
+          {
             "config": "ne",
             "text": "नेपाली"
           },
