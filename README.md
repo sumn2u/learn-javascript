@@ -80,6 +80,11 @@ directory | description
 
 Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
+### Contributors
+
+[![](https://contributors-img.web.app/image?repo=sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/graphs/contributors)
+
+
 ## Contributing
 
 Contributions are always welcome. Feel free to report Issue or send Pull Request.
