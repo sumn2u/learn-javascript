@@ -4,7 +4,7 @@ pageNumber: 89
 description: Une Promesse (Promise en anglais) est un objet qui représente l'achèvement (ou l'échec) d'une tâche asychrone et sa valeur de retour. Les Promesses nous donnent une meilleur struture de gestion des opérations asynchrones telles que les appels réseaux, la lecture des fichiers ou l'interation avec les bases de données.
 ---
 
-# Chapter 18
+# Chapitre 18
 # Les Promesses, async/await
 
 Alors, mettez-vous dans la peau d'un écrivain et vous êtes actuellement en train de planifier la sortie de votre prochaine oeuvre. Les lecteurs qui s'intéressent à ce livre l'ajoutent à leur liste de souhait et sont notifiés lorsque le livre paraît ou même quand la date de sortie est repoussée. Le jour de la sortie, tout le monde peut l'acheter et tout le monde est content. Ceci est une analogie avec le fonctionnement des promesses (autrement appelées **Promises**) en JavaScript.

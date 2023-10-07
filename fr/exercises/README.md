@@ -4,7 +4,7 @@ chapter: 21
 pageNumber: 106
 ---
 
-# Chapter 21
+# Chapitre 21
 # Exercises
 
 Dans ce chapitre, nous allons faire quelques exercices pour tester notre connaissance en JavaScript. Les exercices que nous aurons à faire sont listés ci-dessous :

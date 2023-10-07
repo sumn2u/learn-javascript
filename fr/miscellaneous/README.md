@@ -4,7 +4,7 @@ chapter: 19
 pageNumber: 92
 ---
 
-# Chapter 19
+# Chapitre 19
 # Divers
 
 Dans ce chapitre, nous parlerons davantage de sujets divers qu'on rencontre lorsqu'on commence à écrire du code. Les sujets sont les suivants:
