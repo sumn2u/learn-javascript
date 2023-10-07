@@ -8,7 +8,7 @@ Objects are the collection of `key`, `value` pairs and each pair of key-value ar
 
 ### 📝 Tasks:
 
-Given a Doe family that includes two-member, where each member's information is provided in form of an object.&#x20;
+Given a Doe family that includes two members, where each member's information is provided in form of an object.&#x20;
 
 ```javascript
 let person = {
@@ -37,7 +37,7 @@ let family = {
 
 * [ ] Find a way to print the name of the first member of the Doe family in a `console`.
 * [ ] Change the fourth  `luckyNumbers` of  the second member of the Doe family to `33`.
-* [ ] Add a new member to the family by creating a new  person  (`Jimmy,` `Doe`, `13`, `male`, `[1, 2, 3, 4]`, `null`) and update the member list.
+* [ ] Add a new member to the family by creating a new  person  (`Jimmy` `Doe`, `13`, `male`, `[1, 2, 3, 4]`, `null`) and update the member list.
 * [ ] Print the `SUM` of the lucky numbers of Doe family in the `console`.&#x20;
 
 ### 💡 Hints:
