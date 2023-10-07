@@ -1,3 +1,4 @@
-* [English](en/)
-* [नेपाली](ne/)
-* [Turkish](tr/)
+- [English](en/)
+- [नेपाली](ne/)
+- [Turkish](tr/)
+- [Français](fr/)
