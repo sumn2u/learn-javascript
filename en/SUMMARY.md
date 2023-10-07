@@ -51,7 +51,7 @@
   - [Enumeration](objects/enumeration.md)
 - [Date and Time](date-and-time.md)
 - [JSON](json.md)
-- [Error Handling](error-handling/try...-catch.md)
+- [Error Handling](error-handling/README.md)
   - [try...catch](error-handling/try...-catch.md)
   - [try...catch...finally](error-handling/try...catch...finally.md)
 - [Modules](modules.md)
