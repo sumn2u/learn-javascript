@@ -1,9 +1,9 @@
 ---
 chapter: 5
 pageNumber: 35
-description: Concatenating condition refers to combining multiple conditions using logical operators to create more complex and sophisticated conditionals.
+description: La condición de concatenación se refiere a la combinación de múltiples condiciones utilizando operadores lógicos para crear condicionales más complejos y sofisticados.
 ---
-# Concatenate
+# Concatenar
 
 Furthermore, you can concatenate different conditions with "`or`" or “`and`” statements, to test whether either statement is true, or both are true, respectively.
 

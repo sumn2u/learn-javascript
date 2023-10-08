@@ -1,9 +1,9 @@
 ---
 chapter: 5
 pageNumber: 34
-description: Comparators are functions that are used to compare two values and determine their relationship. Here. the returned value indicates whether the values are equal, greater than, less than, or some other relationship based on a specific comparison criterion.  
+description: Los comparadores son funciones que se utilizan para comparar dos valores y determinar su relación. Aquí, el valor devuelto indica si los valores son iguales, mayores que, menores que o alguna otra relación basada en un criterio de comparación específico.  
 ---
-# Comparators
+# Comparadores
 
 Lets now focus on the conditional part:
 
@@ -24,7 +24,7 @@ Other conditional tests:
 * `x != a`: is x not a?
 * `x`: does x exist?
 
-## Logical Comparison
+## Comparación lógica
 
 In order to avoid the if-else hassle, simple logical comparisons can be utilised.
 

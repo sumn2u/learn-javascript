@@ -1,7 +1,7 @@
 ---
 chapter: 5
 pageNumber: 32
-description: Switch is a conditional statement that performs actions based on different conditions. It uses strict comparison to match the conditions and executes the code blocks of matched condition.
+description: Switch es una declaración condicional que realiza acciones basadas en diferentes condiciones. Utiliza una comparación estricta para hacer coincidir las condiciones y ejecuta los bloques de código de la condición coincidente.
 ---
 # Switch
 

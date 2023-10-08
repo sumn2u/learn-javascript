@@ -33,7 +33,7 @@ let bool2 = 1;
 let stringResult1 =
 let boolResult1 =
 // comparar usando ===
-let stringResult1 =
+let stringResult2 =
 let boolResult2 =
 {% solution %}
 let str1 = "hola";

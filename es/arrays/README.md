@@ -2,11 +2,12 @@
 layout: editorial
 chapter: 6
 pageNumber: 36
-description: Array is a  list of data and are fundamental part of programming. Here, we can store a lot of data of different types.
+description: Un array (matriz, en español) es una lista de datos y es parte fundamental de la programación. Aquí podemos almacenar una gran cantidad de datos de diferentes tipos.
 ---
 
-# Chapter 6
-# Arrays
+# Capítulo 6
+
+## Matrices
 
 Arrays are a fundamental part of programming. An array is a list of data. We can store a lot of data in one variable, which makes our code more readable and easier to understand. It also makes it much easier to perform functions on related data.
 
@@ -44,7 +45,7 @@ Arrays are a special type of object.  One can have [objects](../objects/) in an 
 
 &#x20;The `length` property of an array returns the count of numbers elements.  Methods supported by Arrays are shown below:
 
-| Name              | Description                                                                                                                                       |
+| Nombre            | Descripción                                                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `concat()`        | Returns two or more combined arrays                                                                                                               |
 | `join()`          | Joins all elements in an array into a string                                                                                                      |
@@ -72,4 +73,3 @@ Arrays are a special type of object.  One can have [objects](../objects/) in an 
 | `some()`          | Returns `true` if `callback` returns `true` for at least one item in the array                                                                    |
 | `reduce()`        | Uses `callback(accumulator, currentValue, currentIndex, array)` for reducing purpose and returns the final value returned by `callback` function  |
 | `reduceRight()`   | Works similarly lie `reduce()` but starts with the last element                                                                                   |
-

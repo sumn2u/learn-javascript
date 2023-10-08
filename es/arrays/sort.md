@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 47
-description: The sort method sorts the items of an array in specific order.  By default, it sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.  
+description: El método sort ordena los elementos de una matriz en un orden específico. De forma predeterminada, clasifica los elementos como cadenas y los organiza en orden ascendente según sus valores de unidad de código UTF-16.  
 ---
-# Sort
+# Sort (Ordenar)
 
 The `sort` method sorts the items of an array in a specific order (ascending or descending). By default, the `sort` method sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.
 

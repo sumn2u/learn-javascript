@@ -1,41 +1,41 @@
 ---
 chapter: 3
 pageNumber: 19
-description: Operators are symbols or keywords used to perform operations on data, such as variables, values, or expressions. They are an essential part of the language and allow developers to perform arithmetic, comparison, logical, assignment, and other operations. 
+description: Los operadores son símbolos o palabras clave que se utilizan para realizar operaciones con datos, como variables, valores o expresiones. Son una parte esencial del lenguaje y permiten a los desarrolladores realizar operaciones aritméticas, de comparación, lógicas, de asignación y de otro tipo.
 ---
-# Basic Operators
+# Operadores básicos
 
-Mathematic operations to numbers can be performed using some basic operators like:
+Las operaciones matemáticas con números se pueden realizar utilizando algunos operadores básicos como:
 
-* **Addition operator (`+`)**: The addition operator adds two numbers together. For example:
+* **Operador de suma (`+`)**: El operador de suma suma dos números. Por ejemplo:
 
 ```javascript
 console.log(1 + 2); // 3
 console.log(1 + (-2)); // -1
 ```
 
-* **Subtraction operator (`-`)**: The subtraction operator subtracts one number from another. For example:
+* **Operador de resta (`-`)**: El operador de resta resta un número de otro. Por ejemplo:
 
 ```javascript
 console.log(3 - 2); // 1
 console.log(3 - (-2)); // 5
 ```
 
-* **Multiplication operator (`*`)**: The multiplication operator multiplies two numbers. For example:
+* **Operador de multiplicación (`*`)**: El operador de multiplicación multiplica dos números. Por ejemplo:
 
 ```javascript
 console.log(2 * 3); // 6
 console.log(2 * (-3)); // -6
 ```
 
-* **Division operator (`/`)**: The division operator divides one number by another. For example:
+* **Operador de división (`/`)**: El operador de división divide un número por otro. Por ejemplo:
 
 ```javascript
 console.log(6 / 2); // 3
 console.log(6 / (-2)); // -3
 ```
 
-* **Remainder operator (`%`)**: The remainder operator returns the remainder of a division operation. For example:
+* **Operador módulo (`%`)**: El operador módulo devuelve el resto de una operación de división. Por ejemplo:
 
 ```javascript
 console.log(10 % 3); // 1
@@ -43,19 +43,21 @@ console.log(11 % 3); // 2
 console.log(12 % 3); // 0
 ```
 
-The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: `c = (a / b) + d`
+El intérprete de JavaScript funciona de izquierda a derecha. Se pueden usar paréntesis como en matemáticas para separar y agrupar expresiones:
+
+`c = (a / b) + d`
 
 {% hint style="warning" %}
-JavaScript uses the `+` operator for both addition and concatenation. Numbers are added whereas strings are concatenated.
+JavaScript utiliza el operador `+` tanto para la suma como para la concatenación. Los números se suman mientras que las cadenas se concatenan.
 {% endhint %}
 
-The term `NaN` is a reserved word indicating that a number is not a legal number, this arises when we perform arithmetic with a non-numeric string will result in `NaN` (Not a Number).
+El término `NaN` es una palabra reservada que indica que un número no es un número legal, esto surge cuando realizamos aritmética con una cadena no numérica la cual dará como resultado `NaN` (Not a Number, no es un número, en español).
 
 ```javascript
 let x = 100 / "10";
 ```
 
-The `parseInt` method parses a value as a string and returns the first integer.
+El método `parseInt` analiza un valor como una cadena y devuelve el primer número entero.
 
 ```javascript
 parseInt("10"); // 10
@@ -67,43 +69,44 @@ parseInt("40 years"); //40
 parseInt("He was 40"); //NaN
 ```
 
-In JavaScript, if we calculate a number outside the largest possible number it returns `Infinity`.
+En JavaScript, si calculamos un número fuera del mayor número posible, devuelve `Infinity` (infinito en español).
 
 ```javascript
 let x =  2 / 0; // Infinity
 let y = -2 / 0; // -Infinity
 ```
+
 {% exercise %}
-Use the math operators +, -, *, /, and % to perform the following operations on `num1` and `num2`.
+Utilice los operadores matemáticos +, -, *, / y % para realizar las siguientes operaciones en `num1` y `num2`.
 
 {% initial %}
 let num1 = 10;
 let num2 = 5;
 
-// Add num1 and num2.
+// Sume num1 y num2.
 let addResult =
-// Subtract num2 from num1.
+// Reste num2 de num1.
 let subtractResult =
-// Multiply num1 and num2.
+// Multiplique num1 por num2.
 let multiplyResult =
-// Divide num1 by num2.
+// Divida num1 por num2.
 let divideResult =
-// Find the remainder num1 is divided by num2.
+// Encuentre el resto al dividir num1 por num2.
 let reminderResult =
 
 {% solution %}
 let num1 = 10;
 let num2 = 5;
 
-// Add num1 and num2.
+// Sume num1 y num2.
 let addResult = (num1 + num2);
-// Subtract num2 from num1.
+// Reste num2 de num1.
 let subtractResult = (num1 - num2);
-// Multiply num1 and num2.
+// Multiplique num1 por num2.
 let multiplyResult = (num1 * num2);
-// Divide num1 by num2.
+// Divida num1 por num2.
 let divideResult = (num1 / num2);
-// Find the remainder num1 is divided by num2.
+// Encuentre el resto al dividir num1 por num2.
 let reminderResult = (num1 % num2);
 
 {% validation %}

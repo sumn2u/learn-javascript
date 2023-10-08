@@ -2,30 +2,29 @@
 chapter: 4
 pageNumber: 26
 ---
-# Replace
+# Reemplazar (método replace)
 
-The `replace` method allows us to replace a character, word, or sentence with a string. For example.
+El método `replace` nos permite reemplazar un caracter, una palabra, o una declaración dentro de una cadena. Por ejemplo.
 
 ```javascript
-let str = "Hello World!";
-let new_str = str.replace("Hello", "Hi");
+let str = "¡Hola, mundo!";
+let new_str = str.replace("Hola", "Hey");
 
 console.log(new_str);
 
-// Result: Hi World!
+// Resultado: ¡Hey, mundo!
 ```
 
 {% hint style="warning" %}
-To replace a value on all instances of a [regular expression](../regular-expression.md) with a `g` modifier is set.
+Para reemplazar un valor en todas las instancias de una [expresión regular](../regular-expression.md) se establece con un modificador `g`.
 {% endhint %}
 
-It searches for a string for a value or a regular expression and returns a new string with the value(s) replaced. It doesn't change the original string. Let's see the global case-insensitive replacement example.
+Busca una cadena para un valor o una expresión regular y devuelve una nueva cadena con los valores reemplazados. No cambia la cadena original. Veamos el ejemplo de reemplazo global que no distingue entre mayúsculas y minúsculas.
 
 ```javascript
-let text = "Mr Blue has a blue house and a blue car";
-let result = text.replace(/blue/gi, "red"); 
+let texto = "El Señor Azul tiene un hogar azul y un auto azul.";
+let resultado = texto.replace(/azul/gi, "rojo"); 
 
-console.log(result); 
-//Result: Mr red has a red house and a red car 
+console.log(resultado); 
+//Resultado: El Señor rojo tiene un hogar rojo y un auto rojo.
 ```
-

@@ -2,31 +2,31 @@
 chapter: 4
 pageNumber: 28
 ---
-# Concatenation
+# Concatenación
 
-Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings.  The concatenation of a string appends one or more strings to another string.  This is done in JavaScript using the following ways.
+La concatenación implica sumar dos o más cadenas, creando una cadena más grande que contiene los datos combinados de esas cadenas originales. La concatenación de una cadena agrega una o más cadenas a otra cadena. Esto se hace en JavaScript de las siguientes maneras.
 
-* using the  **`+`** operator
-* using the `concat()` method
-* using the array `join()` method
-* using the template literal (introduced in ES6)
+* usando el operador  **`+`**  
+* usando el método `concat()`  
+* usando el método del objeto Array `join()`  
+* usando el literal de plantilla (introducido en ES6)
 
-The string `concat()` method accepts the list of strings as parameters and returns a new string after concatenation i.e. combination of all the strings. Whereas the array `join()` method is used to concatenate all the elements present in an array by converting them into a single string.&#x20;
+El método de String `concat()` acepta la lista de cadenas como parámetros y devuelve una nueva cadena después de la concatenación, es decir, una combinación de todas las cadenas. Mientras que el método de Array `join()` se utiliza para concatenar todos los elementos presentes en una matriz convirtiéndolos en una sola cadena.
 
-The template literal  uses backtick `(``)` and provides an easy way to create multiline strings and perform string interpolation. An expression can be used inside the backtick using `$` sign and curly braces `${expression}`.
+El literal de plantilla utiliza una comilla invertida `(``)` y proporciona una manera fácil de crear cadenas multilínea y realizar interpolación de cadenas. Se puede usar una expresión dentro de la comilla invertida usando el signo `$` y llaves `${expresión}`.
 
 ```javascript
 const icon = '👋';
-// using template Strings
+// usando literal de plantilla
 `hi ${icon}`;
 
-// using join() Method
+// usando el método join()
 ['hi', icon].join(' ');
 
-// using concat() Method
+// usando el método concat()
 ''.concat('hi ', icon);
 
-//  using + operator
+//  usando el operador + 
 'hi ' + icon;
 // hi 👋
 ```

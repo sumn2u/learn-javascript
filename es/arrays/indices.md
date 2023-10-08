@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 48
-description: Arrays are collection of elements and each element is assigned numerical position called index. Indices are zero based, meaning first element of array has index of 0, second has an index of 1 and so on.  
+description: Las matrices son una colección de elementos y a cada elemento se le asigna una posición numérica llamada índice. Los índices están basados en cero, lo que significa que el primer elemento de la matriz tiene un índice de 0, el segundo tiene un índice de 1 y así sucesivamente.  
 ---
-# Indices
+# Índices
 
 So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. An **index** refers to a spot in the array. Indices logically progress one by one, but it should be noted that the first index in an array is 0, as it is in most languages. Brackets `[]` are used to signify you are referring to an index of an array.
 

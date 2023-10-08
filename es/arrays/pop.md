@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 42 
-description: The pop methods remove the last element of an array and returns the result. This method changes the array length.
+description: El método pop eliminan el último elemento de una matriz y devuelven el resultado. Este método cambia la longitud de la matriz.
 ---
-# Pop
+# Pop (Quitar)
 
 The `pop` method removes the last element from an array and returns that element. This method changes the length of the array.
 

@@ -2,63 +2,63 @@
 chapter: 4
 pageNumber: 25
 ---
-# Creation
+# Creación
 
-Strings can be defined by enclosing the text in single quotes or double quotes:
+Las cadenas se pueden definir encerrando el texto entre comillas simples o dobles:
 
 ```javascript
-// Single quotes can be used
-let str = "Our lovely string";
+// Se pueden utilizar comillas simples
+let str = "Nuestra hermosa cadena";
 
-// Double quotes as well
-let otherStr = "Another nice string";
+// Comillas dobles también
+let otherStr = "Otra bonita cadena";
 ```
 
-In Javascript, Strings can contain UTF-8 characters:
+En Javascript, las cadenas pueden contener caracteres UTF-8:
 
-```
+```text
 "中文 español English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어";
 ```
 
-You can also use the `String` constructor to create a string object:
+También puedes usar el constructor `String` para crear un objeto de cadena:
 
 ```javascript
-const stringObject = new String('This is a string');
+const stringObject = new String('Esto es una cadena');
 ```
 
-However, it is generally not recommended to use the `String` constructor to create strings, as it can cause confusion between string primitives and string objects. It is usually better to use string literals to create strings.
+Sin embargo, generalmente no se recomienda utilizar el constructor `String` para crear cadenas, ya que puede causar confusión entre las primitivas de cadena y los objetos de cadena. Normalmente es mejor utilizar cadenas literales para crear cadenas.
 
-You can also use template literals to create strings. Template literals are strings that are enclosed in backticks `(``)` and can contain placeholders for values. Placeholders are denoted with the `` `${}` `` syntax.
+También puede utilizar literales de plantilla para crear cadenas. Los literales de plantilla son cadenas que están encerradas entre comillas invertidas `(``)` y pueden contener marcadores de posición para valores. Los marcadores de posición se indican con la sintaxis `` `${}` ``.
 
 ```javascript
-const name = 'John';
-const message = `Hello, ${name}!`;
+const nombre = 'Juan';
+const mensaje = `¡Hola, ${nombre}!`;
 ```
 
-Template literals can also contain multiple lines and can include any expression inside the placeholders.
+Los literales de plantilla también pueden contener varias líneas y pueden incluir cualquier expresión dentro de los marcadores de posición.
 
 {% hint style="warning" %}
-Strings can not be subtracted, multiplied, or divided.
+Las cadenas no se pueden restar, multiplicar ni dividir.
 {% endhint %}
 
 {% exercise %}
-Use a template literal to create a string that includes the values of `name` and `age`. The string should have the following format: "My name is John and I am 25 years old.".
+Utilice un literal de plantilla para crear una cadena que incluya los valores de `nombre` y `edad`. La cadena debe tener el siguiente formato: "Mi nombre es Juan y tengo 25 años".
 
 {% initial %}
-let name = "John";
-let age = 25;
+let nombre = "Juan";
+let edad = 25;
 
-// My name is John and I am 25 years old.
-let result =  
+// Mi nombre es Juan y tengo 25 años.
+let resultado =  
 {% solution %}
-let name = "John";
-let age = 25;
+let nombre = "Juan";
+let edad = 25;
 
-// My name is John and I am 25 years old.
-let result = `My name is ${name} and I am ${age} years old.`
+// Mi nombre es Juan y tengo 25 años.
+let resultado = `Mi nombre es ${nombre} y tengo ${edad} años.`
 
 {% validation %}
-assert(result == "My name is John and I am 25 years old.");
+assert(resultado == "Mi nombre es Juan y tengo 25 años.");
 
 {% context %}
 {% endexercise %}

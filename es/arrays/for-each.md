@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 46
-description: The forEach method executes a provided function once for each array element.  
+description: El método forEach ejecuta una función proporcionada una vez para cada elemento de la matriz.  
 ---
-# For Each
+# For Each (Por cada)
 
 The `forEach` method executes a provided function once for each array element. Here's the syntax for using `forEach`:
 
@@ -14,7 +14,6 @@ array.forEach(function(element, index, array) {
   // array: the array forEach was called upon
 });
 ```
-
 
 For example, let's say you have an array of numbers and you want to print the double of each number to the console. You could do this using `forEach` like this:
 

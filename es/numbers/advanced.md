@@ -1,24 +1,24 @@
 ---
 chapter: 3
 pageNumber: 21
-description: There are several advanced operators that provide powerful functionality and allow us to perform various operations beyond basic arithmetic and logical operations. These advanced operators can be very helpful for manipulating data, performing bitwise operations, working with objects, and more.
+description: Existen varios operadores avanzados que brindan una potente funcionalidad y nos permiten realizar diversas operaciones más allá de las operaciones aritméticas y lógicas básicas. Estos operadores avanzados pueden resultar muy útiles para manipular datos, realizar operaciones bit a bit, trabajar con objetos y más.
 ---
-# Advanced Operators
+# Operadores avanzados
 
-When operators are put together without parenthesis, the order in which they are applied is determined by the _precedence_ of the operators. Multiplication `(*)` and division `(/)` has higher precedence than addition `(+)` and subtraction `(-)`.
+Cuando los operadores se juntan sin paréntesis, el orden en el que se aplican está determinado por la _precedencia_ de los operadores. La multiplicación `(*)` y la división `(/)` tienen mayor prioridad que la suma `(+)` y la resta `(-)`.
 
 ```javascript
-// multiplication is done first, which is then followed by addition
+// Primero se hace la multiplicación y luego sigue la suma.
 let x = 100 + 50 * 3; // 250
-// with parenthesis operations inside the parenthesis are computed first
+// con paréntesis las operaciones dentro del paréntesis se calculan primero
 let y = (100 + 50) * 3; // 450
-// operations with the same precedences are computed from left to right
-let z = 100 / 50 * 3;
+// las operaciones con las mismas precedencias se calculan de izquierda a derecha
+let z = 100 / 50 * 3; // 6
 ```
 
-Several advanced math operators can use be used while writing program. Here is a list of some of the main advanced math operators:
+Se pueden utilizar varios operadores matemáticos avanzados mientras se escribe el programa. Aquí hay una lista de algunos de los principales operadores matemáticos avanzados:
 
-* **Modulo operator (`%`)**: The modulo operator returns the remainder of a division operation. For example:
+* **Operador Módulo (`%`)**: El operador de módulo devuelve el resto de una operación de división. Por ejemplo:
 
 ```javascript
 console.log(10 % 3); // 1
@@ -26,7 +26,7 @@ console.log(11 % 3); // 2
 console.log(12 % 3); // 0
 ```
 
-* **Exponentiation operator (\* *)**: The exponentiation operator raises a number to the power of another number. It is a newer operator and is not supported in all browsers, so you may need to use the `Math.pow` function instead. For example:
+* **Operador de exponenciación ( \*\* )**: El operador de exponenciación eleva un número a la potencia de otro número. Es un operador más nuevo y no es compatible con todos los navegadores, por lo que es posible que deba utilizar la función `Math.pow` en su lugar. Por ejemplo:
 
 ```javascript
 console.log(2 ** 3); // 8
@@ -34,63 +34,63 @@ console.log(3 ** 2); // 9
 console.log(4 ** 3); // 64
 ```
 
-* **Increment operator (`++`)**: The increment operator increments a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:
+* **Operador de incremento (`++`)**: El operador de incremento incrementa un número en uno. Se puede utilizar como prefijo (antes del operando) o como sufijo (después del operando). Por ejemplo:
 
 ```javascript
 let x = 1;
-x++; // x is now 2
-++x; // x is now 3
+x++; // x es ahora 2
+++x; // x es ahora 3
 ```
 
-* **Decrement operator (`--`)**: The decrement operator decrements a number by one. It can be used as a prefix (before the operand) or a postfix (after the operand). For example:
+* **Operador de decremento (`--`)**: El operador de decremento disminuye un número en uno. Se puede utilizar como prefijo (antes del operando) o como sufijo (después del operando). Por ejemplo:
 
 ```javascript
 let y = 3;
-y--; // y is now 2
---y; // y is now 1
+y--; // y es ahora 2
+--y; // y es ahora 1
 ```
 
-* **Math object**: The `Math` object is a built-in object in JavaScript that provides mathematical functions and constants. You can use the methods of the `Math` object to perform advanced math operations, such as finding the square root of a number, calculating the sine of a number, or generating a random number. For example:
+* **Objeto Math**: El objeto `Math` es un objeto integrado en JavaScript que proporciona funciones y constantes matemáticas. Puede utilizar los métodos del objeto "Math" para realizar operaciones matemáticas avanzadas, como encontrar la raíz cuadrada de un número, calcular el seno de un número o generar un número aleatorio. Por ejemplo:
 
 ```javascript
 console.log(Math.sqrt(9)); // 3
 console.log(Math.sin(0)); // 0
-console.log(Math.random()); // a random number between 0 and 1
+console.log(Math.random()); // un número aleatorio entre 0 y 1
 ```
 
-These are just a few examples of the advanced math operators and functions available in JavaScript. There are many more that you can use to perform advanced math operations while writing program.
+Estos son sólo algunos ejemplos de las funciones y operadores matemáticos avanzados disponibles en JavaScript. Hay muchos más que puede usar para realizar operaciones matemáticas avanzadas mientras escribe un programa.
 
 {% exercise %}
-Use the following advanced operators to perform operations on `num1` and `num2`.
+Utilice los siguientes operadores avanzados para realizar operaciones en `num1` y `num2`.
 
 {% initial %}
 let num1 = 10;
 let num2 = 5;
 
-// ++ operator to increment the value of num1.
+// Use el operador ++ para incrementar el valor de num1.
 const result1 =
-// -- operator to decrement the value of num2.
+// Use el operador -- para decrementar el valor de num2.
 const result2 =
-//  += operator to add num2 to num1.
+// Use el operador += para agregar num2 a num1.
 const result3 =
-// -= operator to subtract num2 from num1.
+// Use el operador -= para substraer num2 de num1.
 const result4 =
 
 {% solution %}
 let num1 = 10;
 let num2 = 5;
 
-// ++ operator to increment the value of num1.
+// Use el operador ++ para incrementar el valor de num1.
 
 num1++;
 const result1 = num1; // 11
-// -- operator to decrement the value of num2.
+// Use el operador -- para decrementar el valor de num2.
 num2--;
 const result2 = num2; // 4
-//  += operator to add num2 to num1.
+// Use el operador += para agregar num2 a num1.
 num1 += num2;
 const result3 = num1 // 15
-// -= operator to subtract num2 from num1.
+// Use el operador -= para substraer num2 de num1.
 num1 -= num2;
 const result4 = num1 // 11
 
@@ -100,13 +100,13 @@ assert(result1 === 11 && result2 === 4 && result3 === 15 && result4 === 11 );
 {% context %}
 {% endexercise %}
 
-## Nullish coalescing operator '??'
+## Operador coalescente nulo '??'
 
-The `nullish` coalescing operator returns the first argument if it's not `null/undefined`, else the second one. It is written as two question marks `??`. The result of `x ?? y` is:
+El operador coalescente "nulo" devuelve el primer argumento si no es `null/undefined`, en caso contrario, el segundo. Está escrito como dos signos de interrogación `??`. El resultado de `x ?? y` es:
 
-* if `x` is defined, then `x`,
-* if `y` isn’t defined, then `y`.
+* Si `x` está definido, es `x`,
+* Si `x` no está definida, es `y`.
 
 {% hint style="info" %}
-It's a recent addition to the language and might need polyfills to support old browsers
+Es una adición reciente al lenguaje y es posible que necesite polyfills para admitir navegadores antiguos.
 {% endhint %}

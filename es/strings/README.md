@@ -4,49 +4,49 @@ chapter: 4
 pageNumber: 23
 ---
 
-# Chapter 4
-# Strings
+# Capítulo 4
 
-JavaScript strings share many similarities with string implementations from other high-level languages. They represent text-based messages and data. In this course, we will cover the basics. How to create new strings and perform common operations on them.
+## Strings (Cadenas, en español)
 
-Here is an example of a string:
+Las cadenas (strings, en inglés) de JavaScript comparten muchas similitudes con implementaciones de cadenas de otros lenguajes de alto nivel. Representan mensajes y datos basados en texto. En este curso, cubriremos los conceptos básicos. Cómo crear nuevas cadenas y realizar operaciones comunes sobre ellas.
 
-```
+A continuación se muestra un ejemplo de una cadena:
+
+```Javascript
 "Hello World"
 ```
 
-String indexes are zero-based, meaning that starting position of the first character at `0` followed by others in incremental order. Various methods are supported by string and return a new value. These methods are described below.
+Los índices de cadenas tienen base cero, lo que significa que la posición inicial del primer carácter es "0" seguida de otros en orden incremental. Varios métodos son compatibles con cadenas y devuelven un nuevo valor. Estos métodos se describen a continuación.
 
-| Name                 | Description                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------- |
-| `charAt()`           | Returns character at specified index                                                   |
-| `charCodeAt()`       | Returns Unicode character at specified index                                           |
-| `concat()`           | Returns two or more combined strings                                                   |
-| `constructor`        | Returns string's constructor function                                                  |
-| `endsWith()`         | Checks if a string ends with a specified value                                         |
-| `fromCharCode()`     | Returns Unicode values as characters                                                   |
-| `includes()`         | Checks if a string contains with a specified value                                     |
-| `indexOf()`          | Returns the index of its first occurance                                               |
-| `lastIndexOf()`      | Returns the index of its last occurance                                                |
-| `length`             | Returns the length of the string                                                       |
-| `localeCompare()`    | Compares two strings with locale                                                       |
-| `match()`            | Matches a string against a value or regular expression                                 |
-| `prototype`          | Used to add properties and method of an object                                         |
-| `repeat()`           | Returns new string with number of copies specified                                     |
-| `replace()`          | Returns a string with values replaced by a regular expression or a string with a value |
-| `search()`           | Returns an index based on a string's match against a value or regular expression       |
-| `slice()`            | Returns a string containing part of a string                                           |
-| `split()`            | Splits string into array of substrings                                                 |
-| `startsWith()`       | Checks strings begining against specifed character                                     |
-| `substr()`           | Extracts part of string, from start index                                              |
-| `substring()`        | Extracts part of string, between two indices                                           |
-| `toLocalLowerCase()` | Returns string with lowercase characters using host's locale                           |
-| `toLocalUpperCase()` | Returns string with uppercase characters using host's locale                           |
-| `toLowerCase()`      | Returns string with lowercase characters                                               |
-| `toString()`         | Returns string or string object as string                                              |
-| `toUpperCase()`      | Returns string with uppercase characters                                               |
-| `trim()`             | Returns string with removed whitespaces                                                |
-| `trimEnd()`          | Returns string with removed whitespaces from end                                       |
-| `trimStart()`        | Returns string with removed whitespaces from start                                     |
-| `valueOf()`          | Returns primitive value of string or string object                                     |
-
+| Nombre               | Descripción                                                                                      |
+| -------------------- | -------------------------------------------------------------------------------------------------|
+| `charAt()`           | Devuelve el carácter en el índice especificado                                                   |
+| `charCodeAt()`       | Devuelve un carácter Unicode en el índice especificado                                           |
+| `concat()`           | Devuelve dos o más cadenas combinadas                                                            |
+| `constructor`        | Devuelve la función constructora de la cadena.                                                   |
+| `endsWith()`         | Comprueba si una cadena termina con un valor específico                                          |
+| `fromCharCode()`     | Devuelve valores Unicode como caracteres                                                         |
+| `includes()`         | Comprueba si una cadena contiene un valor especificado                                           |
+| `indexOf()`          | Devuelve el índice de su primera aparición.                                                      |
+| `lastIndexOf()`      | Devuelve el índice de su última aparición.                                                       |
+| `length`             | Devuelve la longitud de la cadena.                                                               |
+| `localeCompare()`    | Compara dos cadenas con la configuración regional                                                |
+| `match()`            | Compara una cadena con un valor o expresión regular                                              |
+| `prototype`          | Se utiliza para agregar propiedades y métodos de un objeto.                                      |
+| `repeat()`           | Devuelve una nueva cadena con el número de copias especificado                                   |
+| `replace()`          | Devuelve una cadena con valores reemplazados por una expresión regular o una cadena con un valor |
+| `search()`           | Devuelve un índice basado en la coincidencia de una cadena con un valor o expresión regular      |
+| `slice()`            | Devuelve una cadena que contiene parte de una cadena.                                            |
+| `split()`            | Divide la cadena en una serie de subcadenas                                                      |
+| `startsWith()`       | Comprueba cadenas que comienzan con el carácter especificado                                     |
+| `substr()`           | Extrae parte de la cadena, desde el índice inicial.                                              |
+| `substring()`        | Extrae parte de la cadena, entre dos índices.                                                    |
+| `toLocalLowerCase()` | Devuelve una cadena con caracteres en minúscula usando la configuración regional del host        |
+| `toLocalUpperCase()` | Devuelve una cadena con caracteres en mayúscula utilizando la configuración regional del host    |
+| `toLowerCase()`      | Devuelve una cadena con caracteres en minúscula                                                  |
+| `toString()`         | Devuelve una cadena o un objeto de cadena como cadena                                            |
+| `toUpperCase()`      | Devuelve una cadena con caracteres en mayúsculas                                                 |
+| `trim()`             | Devuelve una cadena con espacios en blanco eliminados                                            |
+| `trimEnd()`          | Devuelve una cadena con espacios en blanco eliminados del final                                  |
+| `trimStart()`        | Devuelve una cadena con espacios en blanco eliminados desde el inicio.                           |
+| `valueOf()`          | Devuelve el valor primitivo de una cadena o un objeto string.                                    |

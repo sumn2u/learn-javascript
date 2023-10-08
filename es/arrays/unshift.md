@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 38 
-description:  To add an element at the begining of an array we can use the unshift method. It modifies the original array and return the new array length.
+description: Para agregar un elemento al comienzo de una matriz podemos usar el método unshift. Modifica la matriz original y devuelve la nueva longitud de la matriz.
 ---
-# Unshift
+# Unshift (Desplazar)
 
 The `unshift` method adds new elements sequentially to the start, or front of the array. It modifies the original array and returns the new length of the array. For example.
 

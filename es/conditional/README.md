@@ -2,16 +2,17 @@
 layout: editorial
 chapter: 5
 pageNumber: 29
-description: Conditions are essential for writing dynamic and responsive code that can adapt to different scenarios and make decisions based on input, user interactions, or data. 
+description: Las condiciones son esenciales para escribir código dinámico y responsivo que pueda adaptarse a diferentes escenarios y tomar decisiones basadas en entradas, interacciones del usuario o datos. 
 ---
 
-# Chapter 5
-# Conditional Logic
+# Capítulo 5
 
-A condition is a test for something. Conditions are very important for programming, in several ways:
+## Lógica condicional
 
-First of all, conditions can be used to ensure that your program works, regardless of what data you throw at it for processing. If you blindly trust data, you’ll get into trouble and your programs will fail. If you test that the thing you want to do is possible and has all the required information in the right format, that won’t happen, and your program will be a lot more stable. Taking such precautions is also known as programming defensively.
+Una condición es una prueba para algo. Las condiciones son muy importantes para la programación, de varias maneras:
 
-The other thing conditions can do for you is allow for branching. You might have encountered branching diagrams before, for example when filling out a form. Basically, this refers to executing different “branches” (parts) of code, depending on if the condition is met or not.
+En primer lugar, se pueden utilizar condiciones para garantizar que su programa funcione, independientemente de los datos que le arroje para su procesamiento. Si confía ciegamente en los datos, se meterá en problemas y sus programas fallarán. Si pruebas que lo que quieres hacer es posible y tiene toda la información requerida en el formato correcto, eso no sucederá y tu programa será mucho más estable. Tomar tales precauciones también se conoce como programación defensiva.
 
-In this chapter, we'll learn the basis of conditional logic in JavaScript.
+La otra cosa que las condiciones pueden hacer por usted es permitir la ramificación. Es posible que haya encontrado diagramas de ramificación antes, por ejemplo, al completar un formulario. Básicamente, esto se refiere a ejecutar diferentes “ramas” (partes) de código, dependiendo de si se cumple o no la condición.
+
+En este capítulo, aprenderemos las bases de la lógica condicional en JavaScript.

@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 43
-description: The join method turns the array in a string an joins it all together without modifiying the original array.  
+description: El método join convierte la matriz en una cadena y la une sin modificar la matriz original.  
 ---
-# Join
+# Join (Unir)
 
 The `join` method, makes an array turn into a string and joins it all together. It does not change the original array. Here's the syntax for using `join`:
 

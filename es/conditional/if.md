@@ -1,51 +1,51 @@
 ---
 chapter: 5
 pageNumber: 30
-description: The if condition evaluates the condition, and if the condition is true, the code block following the if statement is executed; otherwise, it is skipped.
+description: La condición if evalúa la condición y, si la condición es verdadera, se ejecuta el bloque de código que sigue a la declaración if; de lo contrario, se omite.
 ---
 # If
 
-The easiest condition is an if statement and its syntax is `if(condition){ do this … }`. The condition has to be true for the code inside the curly braces to be executed. You can for example test a string and set the value of another string dependent on its value as described below.
+La condición más sencilla es una declaración if y su sintaxis es `if (condición) {haz esto...}`. La condición debe ser verdadera para que se ejecute el código dentro de las llaves. Por ejemplo, puede probar una cadena y establecer el valor de otra cadena dependiendo de su valor como se describe a continuación.
 
 ```javascript
-let country = "France";
-let weather;
-let food;
-let currency;
+let pais = "Francia";
+let clima;
+let comida
+let divisa;
 
-if (country === "England") {
-  weather = "horrible";
-  food = "filling";
-  currency = "pound sterling";
+if (pais === "Gran Bretaña") {
+  clima = "horrible";
+  comida = "relleno";
+  divisa = "libra esterlina";
 }
 
-if (country === "France") {
-  weather = "nice";
-  food = "stunning, but hardly ever vegetarian";
-  currency = "funny, small and colourful";
+if (pais === "Francia") {
+  clima = "lindo";
+  comida = "impresionante, pero casi nunca vegetariana";
+  divisa = "divertida, pequeña y colorida";
 }
 
-if (country === "Germany") {
-  weather = "average";
-  food = "wurst thing ever";
-  currency = "funny, small and colourful";
+if (pais === "Alemania") {
+  clima = "promedio";
+  comida = "lo peor que he visto nunca";
+  divisa = "divertida, pequeña y colorida";
 }
 
-let message =
-  "this is " +
-  country +
-  ", the weather is " +
-  weather +
-  ", the food is " +
-  food +
-  " and the " +
-  "currency is " +
-  currency;
+let mensaje =
+  "esto es " +
+  pais +
+  ", el clima es " +
+  clima +
+  ", la comida es " +
+  comida +
+  " y la " +
+  "divisa es " +
+  divisa;
   
-console.log(message);
-// 'this is France, the weather is nice, the food is stunning, but hardly ever vegetarian and the currency is funny, small and colourful'
+console.log(mensaje);
+// 'Esto es Francia, el clima es agradable, la comida es espectacular, pero casi nunca es vegetariana y la moneda es divertida, pequeña y colorida.'
 ```
 
 {% hint style="info" %}
-Conditions can also be nested.
+Las condiciones también se pueden anidar.
 {% endhint %}

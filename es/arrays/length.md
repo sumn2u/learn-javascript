@@ -1,9 +1,9 @@
 ---
 chapter: 6
 pageNumber: 44
-description: Arrays hava a property called length that measures the length of an array. 
+description: Las matrices tienen una propiedad llamada length que mide la longitud de una matriz. 
 ---
-# Length
+# Length (Longitud)
 
 Arrays have a property called `length`, and it's pretty much exactly as it sounds, it's the length of the array.
 
