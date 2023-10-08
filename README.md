@@ -15,11 +15,11 @@ _Learn JavaScript: Beginners Guide_ will teach you the basics of programming and
 
 ### Code, and what to do with it
 
-_Code_ is the written instructions that make up a program. Many chapters in this book contain a lot of code, and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter, as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.
+_Code_ is the written instructions that make up a program. Many chapters in this book contain a lot of code and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.
 
 ### Typographic conventions
 
-In this book, text written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:
+In this book text written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:
 
 ```javascript
 const numbers = [45, 4, 9, 16, 25];
@@ -29,7 +29,7 @@ for (let x in numbers) {
 }
 ```
 
-Sometimes, the expected output of a program is written after it, preceded by two slashes with a _Result_, like this:
+Sometimes, the expected output of a program is written after it preceded by two slashes with a _Result_, like this:
 
 ```javascript
 console.log(txt);
@@ -53,7 +53,7 @@ If you feel awesome and want to support us in a small way, please consider starr
 
 ## Structure
 
-The main contents are under the charset of each language directory . For English, use `en` directory.
+The main contents are under the charset of each language directory . For English use `en` directory.
 
 directory | description
 
@@ -89,4 +89,4 @@ Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
 Contributions are always welcome. Feel free to report Issue or send Pull Request.
 
-If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜
+If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com or reach out to Suman directly. We hope you find this resource helpful 💜
