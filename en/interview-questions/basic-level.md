@@ -230,6 +230,23 @@ var x = higherOrder2();
 x(); // Returns "Do something"
 ```
 
+### 2.5. What do you mean by Self Invoking Functions in javascript?
+
+**Answer:**
+
+Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
+
+Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
+
+
+### 2.6. What is the difference between exec () and test () methods in javascript?
+
+**Answer:**
+
+->test () and exec () are RegExp expression methods used in javascript. 
+->We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
+->We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+
 # 3. Data Types and Operator
 
 ### 3.1. What are the different data types present in javascript?
@@ -384,3 +401,107 @@ isNaN(undefined); // Returns true
 
 **Answer:**
 The `charAt()` function of the JavaScript string finds a char element at the supplied index. The index number begins at `0` and continues up to `n-1`, Here `n` is the string length. The index value must be positive, higher than, or the same as the string length.
+
+# 4. Some important concepts
+
+### 4.1. What is Hoisting in JavaScript?
+
+**Answer:**
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Inevitably, this means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+
+**Example 1:** Hoisting of variable
+  
+  ```js 
+hoistedVariable = 3;
+console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	
+var hoistedVariable;
+
+**Example 2:** Hoisting of function
+
+hoistedFunction();  // Outputs " Hello world! " even when the function is declared after calling
+
+function hoistedFunction(){ 
+  console.log(" Hello world! ");
+} 
+
+**Example 3:** Hoisting of function expression
+
+// Hoisting takes place in the local scope as well
+function doSomething(){
+  x = 33;
+  console.log(x);
+  var x;
+} 
+doSomething(); // Outputs 33 since the local variable “x” is hoisted inside the local scope
+
+>Note - Variable initializations are not hoisted, only variable declarations are hoisted:
+var x;
+console.log(x); // Outputs "undefined" since the initialization of "x" is not hoisted
+x = 23;
+
+>Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+"use strict";
+x = 23; // Gives an error since 'x' is not declared
+var x;
+
+### 4.2. Why do we use the word “debugger” in javascript?
+
+**Answer:**
+
+The `debugger` keyword is used to create breakpoints in the code. When the browser finds the debugger keyword in the code, it stops executing the code and opens the debugging tool of the browser.
+
+### 4.3. What is currying in JavaScript?
+
+**Answer:**
+
+Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+
+*Example of a curried function:*
+``` js
+function add (a) {
+  return function(b){
+    return a + b;
+  }
+}
+
+add(3)(4) 
+For Example, if we have a function f(a,b), then the function after currying, will be transformed to f(a)(b).
+
+By using the currying technique, we do not change the functionality of a function, we just change the way it is invoked.
+
+Let’s see currying in action:
+
+``` js
+function multiply(a,b){
+  return a*b;
+}
+
+function currying(fn){
+  return function(a){
+    return function(b){
+      return fn(a,b);
+    }
+  }
+}
+
+var curriedMultiply = currying(multiply);
+
+multiply(4, 3); // Returns 12
+
+curriedMultiply(4)(3); // Also returns 12
+```
+
+
+As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply , which takes in one parameter at a time.
+
+### 4.4. What are some advantages of using External JavaScript?
+
+**Answer:**
+
+External JavaScript is the JavaScript Code (script) written in a separate file with the extension.js, and then we link that file inside the <head> or <body> element of the HTML file where the code is to be placed. 
+
+Some advantages of external javascript are
+
+->It allows web designers and developers to collaborate on HTML and javascript files.
+->We can reuse the code.
+->Code readability is simple in external javascript.
