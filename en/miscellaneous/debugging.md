@@ -17,3 +17,36 @@ const c = a + b;
 console.log(c);
 // Result : c = 11;
 ```
+## Browser Developer Tools
+Modern browsers come equipped with powerful developer tools that aid in debugging JavaScript, inspecting HTML and CSS, and monitoring network requests. Here's a brief overview of some essential tools:
+
+**Chrome DevTools:** Google Chrome's developer tools offer a wide range of features for debugging web applications.
+
+**Firefox DevTools:** Mozilla Firefox's developer tools are another excellent option, offering similar capabilities.
+
+**Microsoft Edge DevTools:** For Microsoft Edge users, the built-in developer tools provide essential debugging features.
+
+**Safari Web Inspector:** Safari's Web Inspector is a robust toolset for debugging and profiling web applications.
+
+## Using Breakpoints
+
+Modern browsers offer developer tools with debugging capabilities.
+Set breakpoints to pause code execution and inspect variables and call stacks.
+Step through code to understand its flow.
+Browser Developer Tools
+
+Browsers provide a set of developer tools that allow you to inspect HTML, CSS, and JavaScript.
+You can access them by right-clicking on a web page and selecting "Inspect" or by pressing `F12` or `Ctrl+Shift+I`.
+Key features include:
+
+**Console:** View and interact with console output.
+
+**Elements:** Inspect and modify the DOM.
+
+**Sources:** Debug JavaScript with breakpoints and watch expressions.
+
+**Network:** Monitor network requests and responses.
+Using debugger Statement
+
+Insert the debugger statement in your code to create breakpoints programmatically.
+When the code encounters debugger, it will pause execution and open the browser's developer tools.
