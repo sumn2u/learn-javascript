@@ -504,4 +504,43 @@ Some advantages of external javascript are
 
 ->It allows web designers and developers to collaborate on HTML and javascript files.
 ->We can reuse the code.
-->Code readability is simple in external javascript.
+
+### 4.5. What is a closure in JavaScript?
+
+**Answer:**
+
+A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
+In Short- A closure is a function that has access to variables from its outer (enclosing) function scope, even after the outer function has finished executing.
+
+### 4.6. What is the DOM in JavaScript?
+
+**Answer:**
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+### 4.7. What is event delegation?
+
+**Answer:**
+
+Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it. The events are handled by the callback function of the parent element.
+
+### 4.8. How can you make an AJAX request in JavaScript?
+
+**Answer:**
+
+AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
+
+You can make AJAX requests using the XMLHttpRequest object or by using the fetch API. Here's an example using fetch:
+  
+```js
+  fetch('https://example.com/api/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+```
+### 4.9. What is a promise in JavaScript?
+
+**Answer:**
+
+A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
