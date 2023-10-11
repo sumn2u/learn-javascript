@@ -17,7 +17,7 @@ For example, the loop in this example will repetitively execute its block of cod
 
 ```javascript
 var i = 0,
-  x = "";
+x = "";
 while (i < 5) {
   x = x + "The number is " + i;
   i++;

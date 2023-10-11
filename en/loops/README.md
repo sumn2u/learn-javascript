@@ -8,7 +8,7 @@ description: Loops are control structures that allow you to execute a block of c
 # Chapter 7
 # Loops
 
-Loops are repetitive conditions where one variable in the loop changes. Loops are handy, if you want to run the same code over and over again, each time with a different value.
+Loops are repetitive instructions where one variable in the loop changes. Loops are handy, if you want to run the same code over and over again, each time with a different value.
 
 Instead of writing:
 

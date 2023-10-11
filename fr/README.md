@@ -4,7 +4,7 @@ pageNumber: 7
 description: JavaScript est un langage de haut niveau, interprété et typé dynamiquement qui a été initialement utilisé pour le développement web. Le langage permet de créer des sites web et des applications interactives et dynamiques.
 ---
 
-# Chapter 1
+# Chapitre 1
 
 # Introduction
 

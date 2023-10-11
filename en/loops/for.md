@@ -8,11 +8,16 @@ description:  A for loop is a powerful control structure used to execute a block
 The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
 
 ```javascript
-for (condition; end condition; change) {
+for (initialization; end condition; change) {
     // do it, do it now
 }
 ```
 
+## Explanation:
+
+* In the `initialization` part, executed before the first iteration, initialize your loop variable
+* In the `end codition` part, put a condition that may be checked before each iteration. The moment the condition becomes `false`, the loop ends.
+* In the `change` part, tell the program how to update the loop variable.
 Let's see how to execute the same code ten-times using a `for` loop:
 
 ```javascript
@@ -57,6 +62,8 @@ The value of iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` c
 let language = "JavaScript";
 let text = "";
 for (let x of language) {
-text += x;
+  text += x;
 }
+
+// Result: language = 'JavaScript'
 ```

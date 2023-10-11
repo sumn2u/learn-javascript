@@ -504,7 +504,7 @@ Some advantages of external javascript are
 
 ->It allows web designers and developers to collaborate on HTML and javascript files.
 ->We can reuse the code.
-->Code readability is simple in external javascript.
+
 
 ### 4.5. What is a closure in JavaScript?
 
@@ -544,3 +544,4 @@ You can make AJAX requests using the XMLHttpRequest object or by using the fetch
 **Answer:**
 
 A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
