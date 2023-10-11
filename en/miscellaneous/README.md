@@ -21,4 +21,4 @@ In this chapter we will be discussing various topics that will come accross thro
 * [Single Thread Nature](./single-thread-nature.md)
 * [ECMA Script](./ECMA-script.md)
 * [Building and Deploying JS application](./building-and-deploying.md)
-
+* [Testing](./testing.md)

@@ -67,8 +67,16 @@
           "text": "English"
         },
         {
-          "config": "ne",
+          "config": "fr",
+          "text": "Français"
+        },
+        {
+          "config": "np",
           "text": "नेपाली"
+        },
+        {
+          "config": "tr",
+          "text": "Türkiye"
         }
       ]
     }

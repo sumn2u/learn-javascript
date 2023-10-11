@@ -9,7 +9,7 @@ Developing and deploying a JavaScript application involves a series of steps tha
 
 ## Setting up the Development Environment
 
-Before commencing the development process, it is essential for the developer to ensure that Node.js and npm (Node Package Manager) are installed on their system. These vital tools can be acquired from the official website of Node.js [Node.js](https://nodejs.org/). Additionally, the developer should select an appropriate code editor or Integrated Development Environment (IDE) for JavaScript development. Some of the popular choices include [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://code.visualstudio.com/), and [WebStorm](https://www.jetbrains.com/webstorm/).
+Before commencing the development process, it is essential for the developer to ensure that Node.js and npm (Node Package Manager) are installed on their system. These vital tools can be acquired from the official website of Node.js [Node.js](https://nodejs.org/). Additionally, the developer should select an appropriate code editor or Integrated Development Environment (IDE) for JavaScript development. Some of the popular choices include [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), and [WebStorm](https://www.jetbrains.com/webstorm/).
 
 The installation of Node.js and npm provides access to the essential tools and libraries required for JavaScript development. The careful selection of the appropriate code editor or IDE can substantially enhance productivity and code quality.
 

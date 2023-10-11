@@ -48,7 +48,7 @@ Array.prototype.filter = function (callback) {
   const result = [];
   for (let i = 0; i < this.length; i++) {
     // call the callback with the current element, index, and context.
-    //if it passes the text then add the element in the new array.
+    //if it passes the test then add the element in the new array.
     if (callback(this[i], i, this)) {
       result.push(this[i]);
     }
