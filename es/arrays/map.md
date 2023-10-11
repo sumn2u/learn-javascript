@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 39  
 description: El método map itera sobre una matriz y modifica su elemento mediante una retrollamada. Esta retrollamada se aplica a cada elemento de la matriz. 
 ---
-# Map (Mapa)
+# Map
 
 The `Array.prototype.map()` method iterates over an array and modifies its elements using a callback function. The callback function will then be applied to each element of the array.
 

@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 40  
 description: El operador Spread permite que una matriz u objeto manipule rápidamente matrices y objetos. Proporciona una sintaxis concisa para copiar, fusionar o extraer elementos de matrices y para copiar propiedades de objetos.
 ---
-# Spread (Propagar)
+# Spread
 
 An array or object can be quickly copied into another array or object by using the Spread Operator `(...)`. It allows an iterable such as an array to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 

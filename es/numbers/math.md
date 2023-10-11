@@ -61,12 +61,12 @@ Para acceder a los metodos de Math, se pueden llamar a sus métodos directamente
 | `max(x,y,z,... n)` | Devuelve el número con el valor más alto.                                              |
 | `min(x,y,z,... n)` | Devuelve el número con el valor más bajo.                                              |
 | `pow(x,y)`         | Devuelve el valor de `x` elevado a `y`                                                 |
-| random()           | Devuelve un número aleatorio entre 0 y 1                                               |
-| round(x)           | Redondea el número a la x más cercana                                                  |
-| sign(x)            | Devuelve -1 si x es negativo, 0 si es "null" o 1 si es positivo                        |
-| sin(x)             | Devuelve el seno de x, en radianes                                                     |
-| sinh(x)            | Devuelve el seno hiperbólico de x                                                      |
-| sqrt(x)            | Devuelve la raíz cuadrada de x                                                         |
-| tan(x)             | Devuelve la tangente del ángulo x                                                      |
-| tanh(x)            | Devuelve la tangente hiperbólica de x                                                  |
-| trunc(x)           | Devuelve la parte entera de un número (x)                                              |
+| `random()`         | Devuelve un número aleatorio entre 0 y 1                                               |
+| `round(x)`         | Redondea el número a la `x` más cercana                                                |
+| `sign(x)`          | Devuelve -1 si `x` es negativo, 0 si es "null" o 1 si es positivo                      |
+| `sin(x)`           | Devuelve el seno de `x`, en radianes                                                   |
+| `sinh(x)`          | Devuelve el seno hiperbólico de `x`                                                    |
+| `sqrt(x)`          | Devuelve la raíz cuadrada de `x`                                                       |
+| `tan(x)`           | Devuelve la tangente del ángulo `x`                                                    |
+| `tanh(x)`          | Devuelve la tangente hiperbólica de `x`                                                |
+| `trunc(x)`         | Devuelve la parte entera de un número (`x`)                                            |

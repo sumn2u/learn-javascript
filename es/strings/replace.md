@@ -2,7 +2,7 @@
 chapter: 4
 pageNumber: 26
 ---
-# Reemplazar (método replace)
+# Replace
 
 El método `replace` nos permite reemplazar un caracter, una palabra, o una declaración dentro de una cadena. Por ejemplo.
 

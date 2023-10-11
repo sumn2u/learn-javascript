@@ -3,13 +3,13 @@ chapter: 5
 pageNumber: 35
 description: La condición de concatenación se refiere a la combinación de múltiples condiciones utilizando operadores lógicos para crear condicionales más complejos y sofisticados.
 ---
-# Concatenar
+# Concatenación
 
-Furthermore, you can concatenate different conditions with "`or`" or “`and`” statements, to test whether either statement is true, or both are true, respectively.
+Además, puede concatenar diferentes condiciones con los operadores "`o`" o "`y`", para probar si alguna de ellas es verdadera o si ambas son verdaderas, respectivamente.
 
-In JavaScript “or” is written as `||` and “and” is written as `&&`.
+En JavaScript, "o" se escribe como `||` y "y" se escribe como `&&`.
 
-Say you want to test if the value of x is between 10 and 20. You could do that with a condition stating:
+Supongamos que desea probar si el valor de x está entre 10 y 20. Podría hacerlo con una condición que indique:
 
 ```javascript
 if (x > 10 && x < 20) {
@@ -17,12 +17,12 @@ if (x > 10 && x < 20) {
 }
 ```
 
-If you want to make sure that country is either “England” or “Germany” you use:
+Si desea asegurarse de que el país sea "Inglaterra" o "Alemania", utilice:
 
 ```javascript
-if (country === "England" || country === "Germany") {
+if (pais === "Inglaterra" || pais === "Alemania") {
     ...
 }
 ```
 
-> **Note**: Just like operations on numbers, conditions can be grouped using parenthesis, ex: `if ( (name === "John" || name === "Jennifer") && country === "France")`.
+> **Nota**: Al igual que las operaciones con números, las condiciones se pueden agrupar usando paréntesis, por ejemplo: `if ( (nombre === "Juan" || nombre === "Genoveva") && país === "Francia")`.

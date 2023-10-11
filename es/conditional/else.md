@@ -5,39 +5,40 @@ description: La palabra clave else se utiliza junto con la declaración if para 
 ---
 # Else
 
-There is also an `else` clause that will be applied when the first condition isn’t true. This is very powerful if you want to react to any value, but single out one in particular for special treatment.
+También hay una cláusula `else` que se aplicará cuando la primera condición no sea verdadera. Esto es muy poderoso si desea reaccionar ante cualquier valor, pero seleccione uno en particular para recibir un tratamiento especial.
 
 ```javascript
-let umbrellaMandatory;
+let paraguasObligatorio;
 
-if (country === "England") {
-  umbrellaMandatory = true;
+if (pais === "Inglaterra") {
+  paraguasObligatorio = true;
 } else {
-  umbrellaMandatory = false;
+  paraguasObligatorio = false;
 }
 ```
 
-The `else` clause can be joined with another `if`. Let's remake the example from the previous article.
+La cláusula `else` se puede unir con otra `if`. Rehagamos el ejemplo del artículo anterior.
 
 ```javascript
-if (country === "England") {
+if (pais === "Inglaterra") {
   ...
-} else if (country === "France") {
+} else if (pais === "Francia") {
   ...
-} else if (country === "Germany") {
+} else if (pais === "Alemania") {
   ...
 }
 ```
 
 {% exercise %}
-From the following values write a conditional statement that checks if `num1` is greater than `num2`. If it is, assign "num1 is greater than num2" to the `result` variable. If it is not, assign "num1 is less than or equal to num2".
+
+A partir de los siguientes valores, escriba una declaración condicional que verifique si `num1` es mayor que `num2`. Si es así, asigne "num1 es mayor que num2" a la variable `resultado`. Si no es así, asigne "num1 es menor o igual que num2".
 
 {% initial %}
 let num1 = 10;
 let num2 = 5;
-let result;
+let resultado;
 
-// check if num1 is greater than num2
+// comprobar si num1 es mayor que num2
 if( condition ) {
 
 }else {
@@ -46,17 +47,17 @@ if( condition ) {
 {% solution %}
 let num1 = 10;
 let num2 = 5;
-let result;
+let resultado;
 
-// check if num1 is greater than num2
+// comprobar si num1 es mayor que num2
 if (num1 > num2) {
-  result = "num1 is greater than num2";
+  resultado = "num1 es mayor que num2";
 } else {
-  result = "num1 is less than or equal to num2";
+  resultado = "num1 es menor o igual que num2";
 }
 
 {% validation %}
-assert(result == "num1 is greater than num2" );
+assert(resultado == "num1 es mayor que num2" );
 
 {% context %}
 {% endexercise %}

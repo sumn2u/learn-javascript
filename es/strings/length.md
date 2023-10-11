@@ -2,9 +2,9 @@
 chapter: 4
 pageNumber: 27
 ---
-# Longitud (propiedad length)
+# Length
 
-Es fácil en Javascript saber cuántos caracteres hay en una cadena usando la propiedad `length`. La propiedad `length` devuelve el número de caracteres de la cadena, incluidos espacios y caracteres especiales.
+Es fácil en Javascript saber cuántos caracteres hay en una cadena usando la propiedad `length`. La propiedad `length` (en español, su significado es 'longitud') devuelve el número de caracteres de la cadena, incluidos espacios y caracteres especiales.
 
 ```javascript
 

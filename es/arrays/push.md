@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 45 
 description: El método push agrega elementos en una matriz haciendo que el último índice sea el elemento recién agregado. Este método cambia la longitud de la matriz y devuelve una nueva longitud. 
 ---
-# Push (Agregar)
+# Push
 
 One can push certain items to an array making the last index the newly added item. It changes the length of an array and returns a new length.
 

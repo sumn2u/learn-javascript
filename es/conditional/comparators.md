@@ -5,31 +5,31 @@ description: Los comparadores son funciones que se utilizan para comparar dos va
 ---
 # Comparadores
 
-Lets now focus on the conditional part:
+Centrémonos ahora en la parte condicional:
 
 ```javascript
-if (country === "France") {
+if (pais === "Francia") {
     ...
 }
 ```
 
-The conditional part is the variable `country` followed by the three equal signs (`===`). Three equal signs tests if the variable `country` has both the correct value (`France`) and also the correct type (`String`). You can test conditions with double equal signs, too, however a conditional such as `if (x == 5)` would then return true for both `var x = 5;` and `var x = "5";`. Depending on what your program is doing, this could make quite a difference. It is highly recommended as a best practice that you always compare equality with three equal signs (`===` and `!==`) instead of two (`==` and `!=`).
+La parte condicional es la variable `país` seguida de los tres signos iguales (`===`). Tres signos iguales prueban si la variable `país` tiene tanto el valor correcto (`Francia`) como el tipo correcto (`String`). También puede probar condiciones con signos dobles de igual; sin embargo, un condicional como `if (x == 5)` devolvería verdadero tanto para `var x = 5;` como para `var x = "5";`. Dependiendo de lo que esté haciendo su programa, esto podría marcar una gran diferencia. Se recomienda encarecidamente como práctica recomendada que siempre compare la igualdad con tres signos iguales (`===` y `!==`) en lugar de dos (`==` y `!=`).
 
-Other conditional tests:
+Otras pruebas condicionales:
 
-* `x > a`: is x bigger than a?
-* `x < a`: is x less than a?
-* `x <= a`: is x less than or equal to a?
-* `x >=a`: is x greater than or equal to a?
-* `x != a`: is x not a?
-* `x`: does x exist?
+* `x > a`: ¿es x mayor que a?
+* `x < a`: ¿es x menor que a?
+* `x <= a`: ¿es x menor o igual que a?
+* `x >=a`: ¿es x mayor o igual que a?
+* `x != a`: ¿es x distinto de a?
+* `x`: ¿existe x?
 
 ## Comparación lógica
 
-In order to avoid the if-else hassle, simple logical comparisons can be utilised.
+Para evitar la molestia de si o si no, se pueden utilizar comparaciones lógicas simples.
 
 ```javascript
-let topper = marks > 85 ? "YES" : "NO";
+let topper = marcas > 85 ? "SI" : "NO";
 ```
 
-In the above example, `?` is a logical operator. The code says that if the value of marks is greater than 85 i.e. `marks > 85` , then `topper = YES` ; otherwise `topper = NO` . Basically, if the comparison condition proves true, the first argument is accessed and if the comparison condition is false, the second argument is accessed.
+En el ejemplo anterior, `?` es un operador lógico. El código dice que si el valor de las marcas es mayor que 85, es decir, `marcas > 85`, entonces `topper = SI`; de lo contrario `topper = NO`. Básicamente, si la condición de comparación resulta verdadera, se accede al primer argumento y si la condición de comparación es falsa, se accede al segundo argumento.

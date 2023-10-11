@@ -5,91 +5,91 @@ description: Switch es una declaración condicional que realiza acciones basadas
 ---
 # Switch
 
-A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition.  The syntax of the `switch` expression is shown below.
+Un `switch` es una declaración condicional que realiza acciones basadas en diferentes condiciones. Utiliza una comparación estricta (`===`) para hacer coincidir las condiciones y ejecuta los bloques de código de la condición coincidente. La sintaxis de la expresión `switch` se muestra a continuación.
 
 ```javascript
 switch(expression) {
   case x:
-    // code block
+    // bloque de código
     break;
   case y:
-    // code block
+    // bloque de código
     break;
   default:
-    // code block
+    // bloque de código
 }
 ```
 
-The expression is evaluated once and is compared with each case. If a match is found, then the associated code block is executed if not `default` code block is executed. The `break` keyword stops the execution and can be placed anywhere. In its absence, the next condition is evaluated even if the conditions are not matched.&#x20;
+La expresión se evalúa una vez y se compara con cada caso. Si se encuentra una coincidencia, entonces se ejecuta el bloque de código asociado y si no se encuentran coincidencias, se ejecuta el bloque de código `default`. La palabra clave `break` detiene la ejecución y se puede colocar en cualquier lugar. En su ausencia, la siguiente condición se evalúa incluso si las condiciones no coinciden.
 
-An example of getting a weekday name based on the switch condition is shown below.&#x20;
+A continuación se muestra un ejemplo de cómo obtener un nombre de día de la semana según la condición del switch.
 
 ```javascript
 switch (new Date().getDay()) {
   case 0:
-    day = "Sunday";
+    day = "Domingo";
     break;
   case 1:
-    day = "Monday";
+    day = "Lunes";
     break;
   case 2:
-     day = "Tuesday";
+     day = "Martes";
     break;
   case 3:
-    day = "Wednesday";
+    day = "Miércoles";
     break;
   case 4:
-    day = "Thursday";
+    day = "Jueves";
     break;
   case 5:
-    day = "Friday";
+    day = "Viernes";
     break;
   case 6:
-    day = "Saturday";
+    day = "Sábado";
 }
 ```
 
-In multiple matching cases, the **first** matching value is selected, if not the default value is selected. In the absence of default and no matching case, the program continues to the next statement(s) after switch conditions.&#x20;
+En casos de coincidencia múltiple, se selecciona el **primer** valor coincidente; de lo contrario, se selecciona el valor predeterminado. En ausencia de un caso predeterminado y sin coincidencia, el programa continúa con las siguientes declaraciones después de las condiciones de cambio.
 
 {% exercise %}
-From the following values write a `switch` statement that checks the value of dayOfWeek. If dayOfWeek is "Monday", "Tuesday", "Wednesday", "Thursday", or "Friday", assign "It's a weekday" to the result variable. If `dayOfWeek` is "Saturday" or "Sunday", assign "It's the weekend" to the result.
+A partir de los siguientes valores, escriba una sentencia `switch` que verifique el valor de diaDeLaSemana. Si `diaDeLaSemana` es "Lunes", "Martes", "Miércoles", "Jueves" o "Viernes", asigne "Es un día laborable" a la variable de resultado. Si `diaDeLaSemana` es "Sábado" o "Domingo", asigne "Es fin de semana" al resultado.
 
 {% initial %}
-let dayOfWeek = "Monday";
-let result;
-// check if it's a weekday or the weekend
+let diaDeLaSemana = "Lunes";
+let resultado;
+// comprobar si es un día laborable o el fin de semana
 switch(expression) {
   case x:
-    // code block
+    // bloque de código
     break;
   case y:
-    // code block
+    // bloque de código
     break;
   default:
-    // code block
+    // bloque de código
 }
 {% solution %}
-let dayOfWeek = "Monday";
-let result;
-// check if it's a weekday or the weekend
-switch (dayOfWeek) {
-  case "Monday":
-  case "Tuesday":
-  case "Wednesday":
-  case "Thursday":
-  case "Friday":
-    result = "It's a weekday";
+let diaDeLaSemana = "Lunes";
+let resultado;
+// comprobar si es un día laborable o el fin de semana
+switch (diaDeLaSemana) {
+  case "Lunes":
+  case "Martes":
+  case "Miércoles":
+  case "Jueves":
+  case "Viernes":
+    resultado = "Es un día laborable";
     break;
-  case "Saturday":
-  case "Sunday":
-    result = "It's the weekend";
+  case "Sábado":
+  case "Domingo":
+    resultado = "Es fin de semana";
     break;
   default:
-    result = "Invalid day of the week";
+    resultado = "Día de la semana no válido";
     break;
 }
 {% validation %}
-assert(result == "It's a weekday" );
+assert(resultado == "Es un día laborable" );
 
 {% context %}
 {% endexercise %}

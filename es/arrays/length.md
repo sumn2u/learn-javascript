@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 44
 description: Las matrices tienen una propiedad llamada length que mide la longitud de una matriz. 
 ---
-# Length (Longitud)
+# Length
 
 Arrays have a property called `length`, and it's pretty much exactly as it sounds, it's the length of the array.
 

@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 41  
 description: El método shift elimina el primer elemento de índice de la matriz y mueve todos los índices hacia la izquierda. Modifica la matriz original.
 ---
-# Shift (Quitar de encima)
+# Shift
 
 The `shift` method deletes the first index of that array and moves all indexes to the left. It changes the original array. Here's the syntax for using `shift`:
 

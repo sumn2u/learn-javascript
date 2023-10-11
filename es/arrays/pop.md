@@ -3,7 +3,7 @@ chapter: 6
 pageNumber: 42 
 description: El método pop eliminan el último elemento de una matriz y devuelven el resultado. Este método cambia la longitud de la matriz.
 ---
-# Pop (Quitar)
+# Pop
 
 The `pop` method removes the last element from an array and returns that element. This method changes the length of the array.
 

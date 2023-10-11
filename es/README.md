@@ -15,8 +15,7 @@ La programación implica crear un conjunto de instrucciones, llamado programa, p
 
 Los lenguajes de programación son lenguajes artificiales que se utilizan para dar instrucciones a las computadoras. Se utilizan en la mayoría de las tareas de programación y se basan en la forma en que los humanos se comunican entre sí. Al igual que los lenguajes humanos, los lenguajes de programación permiten combinar palabras y frases para expresar nuevos conceptos. Es interesante observar que la forma más eficaz de comunicarse con las computadoras implica utilizar un lenguaje similar al lenguaje humano.
 
-En el pasado, la primera forma de interactuar con las computadoras era a través de interfaces basados en lenguajes tales como 
-BASIC y prompts de DOS. Estas han sido reemplazadas en gran medida por interfaces visuales, que son más fáciles de aprender pero ofrecen menos flexibilidad. Sin embargo, los lenguajes informáticos como _JavaScript_ todavía están en uso y se pueden encontrar en los navegadores web modernos y en la mayoría de los dispositivos.
+En el pasado, la primera forma de interactuar con las computadoras era a través de interfaces basados en lenguajes tales como BASIC y prompts de DOS. Estas han sido reemplazadas en gran medida por interfaces visuales, que son más fáciles de aprender pero ofrecen menos flexibilidad. Sin embargo, los lenguajes informáticos como _JavaScript_ todavía están en uso y se pueden encontrar en los navegadores web modernos y en la mayoría de los dispositivos.
 
 JavaScript (_JS para abreviar_) es el lenguaje de programación que se usa para crear interacción dinámica mientras desarrollamos  páginas web, juegos, aplicaciones, e incluso servidores. JavaScript empezó en Netscape, un navegador web desarrollado en la decada de 1990, y hoy es uno de los lenguajes de programación más famosos y usados.
 
@@ -31,7 +30,7 @@ JavaScript es un lenguaje interpretado. Mientras ejecuta Javascript, un intérpr
 "LiveScript" fue el nombre inicial dado a JavaScript.
 {% endhint %}
 
-### Código y qué hacer con él.
+### Código y qué hacer con él
 
 _Código_ son las instrucciones escritas que componen un programa. Aquí, muchos capítulos contienen mucho código y es importante leer y escribir código como parte del aprendizaje de programación. No se limite a leer rápidamente los ejemplos: léalos atentamente y trate de comprenderlos. Esto puede resultar difícil al principio, pero con la práctica mejorará. Lo mismo ocurre con los ejercicios: asegúrese de intentar escribir una solución antes de asumir que los comprende. También es útil intentar ejecutar las soluciones de los ejercicios en un intérprete de JavaScript, ya que esto le permitirá ver si su código funciona correctamente y puede animarlo a experimentar e ir más allá de los ejercicios.
 
