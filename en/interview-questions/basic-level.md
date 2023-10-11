@@ -544,3 +544,93 @@ You can make AJAX requests using the XMLHttpRequest object or by using the fetch
 
 A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
+
+## 5. Object
+
+### 5.1. What are the possible ways to create objects in JavaScript?
+
+ 
+**Answer:**
+
+There are many ways to create objects in javascript as below
+
+Object constructor:
+
+i.The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+``` js
+var object = new Object();
+```
+The Object() is a built-in constructor function so "new" keyword is not required. the above can be written as:
+``` js
+var object = Object();
+```
+ii.Object's create method:
+
+The create method of Object creates a new object by passing the prototype object as a parameter
+
+```js
+var object = Object.create(null);
+```
+iii.Object literal syntax:
+
+
+The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
+
+```js
+var object = {
+     name: "Sudheer",
+     age: 34
+};
+
+Object literal property values can be of any data type, including array, function, and nested object.
+```
+Note: This is an easiest way to create an object
+
+iv.Function constructor:
+
+Create any function and apply the new operator to create object instances,
+
+```js
+function Person(name) {
+  this.name = name;
+  this.age = 21;
+}
+var object = new Person("Sudheer");
+```
+v.Function constructor with prototype:
+
+This is similar to function constructor but it uses prototype for their properties and methods,
+```js
+function Person() {}
+Person.prototype.name = "Sudheer";
+var object = new Person();
+```
+This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
+```js
+function func() {}
+
+new func(x, y, z);
+```
+(OR)
+```js
+// Create a new instance using function prototype.
+var newInstance = Object.create(func.prototype)
+
+// Call the function
+var result = func.call(newInstance, x, y, z),
+
+// If the result is a non-null object then use it otherwise just use the new instance.
+console.log(result && typeof result === 'object' ? result : newInstance);
+```
+vi.ES6 Class syntax:
+
+ES6 introduces class feature to create the objects
+```js
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+var object = new Person("Sudheer");
+```
