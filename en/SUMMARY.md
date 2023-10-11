@@ -85,6 +85,7 @@
   - [Web API and AJAX](miscellaneous/api-ajax.md)
   - [Single Thread Nature](miscellaneous/single-thread-nature.md)
   - [ECMA Script](miscellaneous/ECMA-script.md)
+  - [Testing](miscellaneous/testing.md)
 - [Server Side](server-side/README.md)
   - [Node.js](server-side/nodejs.md)
   - [Server Side Rendering](server-side/server-side-rendering.md)
