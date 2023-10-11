@@ -41,6 +41,6 @@ numbers.forEach(number => console.log(number * 2));
 
 The `forEach` method does not modify the original array. It simply iterates over the elements of the array and executes the provided function for each element.
 
-{% hint style="warning" %}
-The `forEach()` method is not executed for the empty statment.
-{% endhint %}
+
+ **⚠️**
+ The `forEach()` method is not executed for the empty statment.
