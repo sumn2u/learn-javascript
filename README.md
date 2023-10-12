@@ -89,4 +89,8 @@ Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
 Contributions are always welcome. Feel free to report Issue or send Pull Request.
 
-If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜
+If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜.
+
+### License
+
+This project is [Apache License 2.0](./LICENSE) licensed.
