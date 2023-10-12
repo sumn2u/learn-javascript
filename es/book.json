@@ -1,14 +1,14 @@
 {  
     "title": "Learn JavaScript: Beginners Edition",
     "description": "Beginners guide for learning JavaScript",
-    "author": "Suman Kunwar",
+    "author": "Suman Kunwar, Juan F. Ruiz",
     "isbn": "",
-    "published": "12/22/2022",
+    "published": "13/07/2023",
     "copyright": "Suman Kunwar",
     "website": "https://sumankunwar.com.np",
     "keywords": "learn JavaScript, Beginners lessons",
-    "language": "en",
-    "totalpages": 114,
+    "language": "es",
+    "totalpages": 113,
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
@@ -18,7 +18,6 @@
       "intopic-toc",
       "sharing",
       "exercises",
-      "@honkit/honkit-plugin-ga",
       "sitemap",
       "i18nsettings",
       "favicon-custom",
@@ -37,8 +36,8 @@
       "sidebar-ad": {
         "imageUrl": "https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x",
         "url": "https://leanpub.com/learnjavascriptbeginnersguide/signup",
-        "description": "Get free pdf and epub version by joining on wishlist! ✨",
-        "btnText": "Read now!"
+        "description": "¡Obtén la versión pdf y epub gratuita uniéndote a la lista de deseos! ✨",
+        "btnText": "¡Lee ahora!"
       },
       "edit-link": {
                 "base": "https://github.com/sumn2u/learn-javascript/edit/main",
@@ -53,14 +52,10 @@
         "vk": false,
         "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
       },
-      "ga": {
-            "trackingID": "G-57X6JSDN82",
-            "anonymizeIP": true
-      },
       "favicon": "favicon.ico",
       "appleTouchIconPrecomposed152": "js.png",
       "intopic-toc": {
-        "label": "In this Chapter"
+        "label": "En este capítulo"
       },
       "sitemap": {
         "hostname": "https://javascript.sumankunwar.com.np/"
@@ -77,16 +72,16 @@
             "text": "Français"
           },
           {
-            "config": "np",
+            "config": "ne",
             "text": "नेपाली"
           },
           {
             "config": "tr",
-            "text": "Türkiye"
+            "text": "Turkish"
           },
           {
             "config": "es",
-            "text": "Español"
+            "text": "Spanish"
           }
         ]
       }

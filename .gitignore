@@ -3,3 +3,4 @@ node_modules
 .vscode
 _book
 .DS_Store
+package-lock.json
