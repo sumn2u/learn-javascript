@@ -23,7 +23,7 @@ let promise = new Promise(function(resolve, reject) {
 });
 ```
 
-Here, a function is passed to `new Promise` also known as the _executor_, and runs automatically upon creation. It contains the producing code that gives the result. `resolve` and `rejects` are the arguments provided by the JavaScript itself and are called one of these upon results.
+Here, a function is passed to `new Promise` also known as the _executor_, and runs automatically upon creation. It contains the producing code that gives the result. `resolve` and `reject` are the arguments provided by the JavaScript itself and are called one of these upon results.
 
 * `resolve(value):` a callback function that returns `value` upon result
 * `reject(error)`: a callback function that returns `error` upon error, it returns an error object
@@ -32,8 +32,8 @@ Here, a function is passed to `new Promise` also known as the _executor_, and ru
 
 The internal properties of `promise` object returned by the `new Promise` constructor are as follows:
 
-* `state` - initially `pending,` then changes to either `fulfill` upon resolve or `rejected` when `reject` is called
-* result - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
+* `state` - initially `pending,` then changes to either `fulfill` upon `resolve` or `rejected` when `reject` is called
+* `result` - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
 
 {% hint style="warning" %}
 One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.
@@ -57,7 +57,7 @@ let promiseTwo = new Promise(function(resolve, reject) {
 })
 ```
 
-Here, the `promiseOne` is an example of a "_fulfilled promise_" as it successfully resolves the values, whereas the `promiseTwo` is a "_rejected promise_" as it gets rejected. A promise that is either rejected or resolved is called a _settled_ promise, as opposed to an initially _pending_ promise. Consuming function from the promise can be registered using the `.then` and `.catch` methods. We can also add `.finally` method for performing cleanup or finalizing after previous methods have been completed.
+Here, the `promiseOne` is an example of a "_fulfilled promise_" as it successfully resolves the values, whereas the `promiseTwo` is a "_rejected promise_" as it gets rejected. A promise that is neither rejected or resolved is called a _settled_ promise, as opposed to an initially _pending_ promise. Consuming function from the promise can be registered using the `.then` and `.catch` methods. We can also add `.finally` method for performing cleanup or finalizing after previous methods have been completed.
 
 ```javascript
 let promiseOne = new Promise(function(resolve, reject) {

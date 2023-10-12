@@ -3,3 +3,5 @@ node_modules
 .vscode
 _book
 .DS_Store
+yarn.lock
+package-lock.json

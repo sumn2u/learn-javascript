@@ -62,7 +62,7 @@ directory | description
     ├── _layouts                # layout for rendering book/website
     ├── en                      # content of book in english language
     ├── fr                      # content of book in french language
-    ├── ne                      # content of book in nepali language
+    ├── np                      # content of book in nepali language
     ├── tr                      # content of book in turkish language
     ├── LANGS.md                # supported languages
     ├── book.json               # configuration for book
@@ -79,6 +79,11 @@ directory | description
 ### Add new documents
 
 Create `*.md` file under `<lang>/chapter-<n>/` directory.
+
+### Contributors
+
+[![](https://contributors-img.web.app/image?repo=sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/graphs/contributors)
+
 
 ## Contributing
 

@@ -23,6 +23,15 @@ One common use of closures is to create factory functions or private variables. 
 
 Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.
 
+### 1.3. Give some examples of uses of closures in javascript?
+
+**Answer:**
+
+Here are some example of closures.
+- Module Design Pattern.
+- Currying.
+- Memoize
+
 ## 2. Prototypal Inheritance
 
 ### 2.1. Explain the difference between classical inheritance and prototypal inheritance.
