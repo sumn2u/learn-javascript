@@ -109,3 +109,4 @@
   - [Structual Level](design-patterns/structural-patterns.md)
   - [Behavioral Level](design-patterns/behavioral-patterns.md)
 - [References](References.md)
+- [Resources](resources.md)

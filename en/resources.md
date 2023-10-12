@@ -1,5 +1,5 @@
 # List of Learning Resources
-## Articles for learning JavaScript –
+## Articles for learning JavaScript 
 
 Here are some beginner-friendly articles to learn JavaScript - 
 
@@ -13,7 +13,7 @@ Here are some beginner-friendly articles to learn JavaScript -
 
 5. JavaScript Tutorial by Stackify [Link]( https://stackify.com/learn-javascript-tutorials/)
 
-## Books for learning Javascript - 
+## Books for learning JavaScript  
 
 1. You Don’t Know JS – Kyle Simpson [Link](https://www.amazon.in/You-Dont-Know-Set-Volumes/dp/9352136268)
 
@@ -31,7 +31,7 @@ Here are some beginner-friendly articles to learn JavaScript -
 
 8.  The Principles of Object-Oriented JavaScript [Link](https://www.amazon.com/Principles-Object-Oriented-JavaScript-Nicholas-Zakas/dp/1593275404?tag=javamysqlanta-20)
 
-## YouTube Resources to follow for learning JavaScript - 
+## YouTube Resources to follow for learning JavaScript  
 
 1. Traversy Media - [Link](https://www.youtube.com/user/TechGuyWeb)
 2. The Net Ninja - [Link](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
