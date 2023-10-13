@@ -26,8 +26,8 @@ String indexes are zero-based, meaning that starting position of the first chara
 | `endsWith()`         | Checks if a string ends with a specified value                                         |
 | `fromCharCode()`     | Returns Unicode values as characters                                                   |
 | `includes()`         | Checks if a string contains with a specified value                                     |
-| `indexOf()`          | Returns the index of its first occurance                                               |
-| `lastIndexOf()`      | Returns the index of its last occurance                                                |
+| `indexOf()`          | Returns the index of its first occurrence                                               |
+| `lastIndexOf()`      | Returns the index of its last occurrence                                                |
 | `length`             | Returns the length of the string                                                       |
 | `localeCompare()`    | Compares two strings with locale                                                       |
 | `match()`            | Matches a string against a value or regular expression                                 |
@@ -37,7 +37,7 @@ String indexes are zero-based, meaning that starting position of the first chara
 | `search()`           | Returns an index based on a string's match against a value or regular expression       |
 | `slice()`            | Returns a string containing part of a string                                           |
 | `split()`            | Splits string into array of substrings                                                 |
-| `startsWith()`       | Checks strings begining against specifed character                                     |
+| `startsWith()`       | Checks strings beginning against specified character                                     |
 | `substr()`           | Extracts part of string, from start index                                              |
 | `substring()`        | Extracts part of string, between two indices                                           |
 | `toLocalLowerCase()` | Returns string with lowercase characters using host's locale                           |

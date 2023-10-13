@@ -106,7 +106,7 @@
   - [Advance Level](interview-questions/advance-level.md)
 - [Design Patterns](design-patterns/README.md)
   - [Creational Patterns](design-patterns/creational-patterns.md)
-  - [Structual Level](design-patterns/structural-patterns.md)
+  - [Structural Level](design-patterns/structural-patterns.md)
   - [Behavioral Level](design-patterns/behavioral-patterns.md)
 - [References](References.md)
 - [Resources](resources.md)
