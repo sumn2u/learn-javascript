@@ -41,5 +41,5 @@ The following example shows how to **add** a new property **or change** an exist
 language.newProperty = "new value";
 // Now the object has a new property. If the property already exists, its value will be replaced.
 language["newProperty"] = "changed value";
-// Once again, you can access properties both ways. The first one (dot notation) is recomended.
+// Once again, you can access properties both ways. The first one (dot notation) is recommended.
 ```

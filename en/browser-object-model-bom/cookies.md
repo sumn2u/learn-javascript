@@ -18,19 +18,19 @@ book = Learn Javascript
 The `document.cookie` property is used to create, read and delete cookies. Creating cookie is pretty easy you need to provide the name and value
 
 ```javascript
-document.cookie = "book=Learn Javacript";
+document.cookie = "book=Learn Javascript";
 ```
 
 By default, a cookie gets deleted when the browser is closed. To make it persistent, we need to specify the expiry date (in UTC time).
 
 ```javascript
-document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC";
+document.cookie = "book=Learn Javascript; expires=Fri, 08 Jan 2022 12:00:00 UTC";
 ```
 
 We can add a parameter to tell which path the cookie belongs to. By default, the cookie belongs to the current page.
 
 ```javascript
-document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
+document.cookie = "book=Learn Javascript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
 ```
 
 Here is a simple example of a cookie.
@@ -39,6 +39,6 @@ Here is a simple example of a cookie.
 let cookies = document.cookie;
 // a simple way to reterive all cookie.
 
-document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
+document.cookie = "book=Learn Javascript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
 // setting up a cookie
 ```

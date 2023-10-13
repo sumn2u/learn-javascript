@@ -56,7 +56,7 @@ _Metacharacters_ are special character that has special meaning in the regular e
 | `\D`          | Match any non digiti character                                   |
 | `\s`          | Match a whitespace character (spaces, tabs etc)                  |
 | `\S`          | Match a non whitespace character                                 |
-| `\b`          | Match at the begining / end of a word                            |
+| `\b`          | Match at the beginning / end of a word                            |
 | `\B`          | Match but not at the begining / end of a word                    |
 | `\0`          | Match a `NULL` character                                         |
 |  `\n`             | Match a new line character                                       |

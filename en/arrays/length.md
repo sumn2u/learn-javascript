@@ -1,7 +1,8 @@
+
 ---
 chapter: 6
 pageNumber: 44
-description: Arrays hava a property called length that measures the length of an array. 
+description: Arrays have a property called length that measures the length of an array. 
 ---
 # Length
 
