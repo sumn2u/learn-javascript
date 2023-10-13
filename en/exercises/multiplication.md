@@ -19,7 +19,7 @@ Here, we stored the product of `3 * 2` into a `resultingValue` variable.
 
 - [ ] Write a program to store the product of `23` times `41` and print its value.
 
-- [ ] Write a program that generates a multiplication talbe for a specific number. The program should take a number as input and then display the multiplication table for that number, from 1 to 10.
+- [ ] Write a program that generates a multiplication table for a specific number. The program should take a number as input and then display the multiplication table for that number, from 1 to 10.
 
 ### 💡 Hints:
 
