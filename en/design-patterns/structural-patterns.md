@@ -35,11 +35,11 @@ Adapters create an easy way for new code or systems to interact with existing on
 
 **Compatibility and Reusability**
 
-Adapters promote code resuse and extends the usability of existing code by making older code compatible with newer code. 
+Adapters promote code reuse and extends the usability of existing code by making older code compatible with newer code. 
 
 **Gradual System Integration**
 
-In situations where a new system needs to be implemented gradually, Adapters can serve as intermediaries, allowing new features to come in slowly while maintaing compatibility with the existing system. 
+In situations where a new system needs to be implemented gradually, Adapters can serve as intermediaries, allowing new features to come in slowly while maintaining compatibility with the existing system. 
 
 **Improved Testability**
 
@@ -115,7 +115,7 @@ chargeDevice(usAdapter);
 
 ## 2. Bridge 
 
-The Bridge is a structural design pattern that is designed to split a very large class into two sepereate heirarchies which can be developed independendently. The two hierarchies are referred to as the Abstraction level and the Implementation level. Basically if you have a class that has multiple variants of some functionality, you can use a Bridge pattern to divide and organize the class into two easier to understand hierarchies. 
+The Bridge is a structural design pattern that is designed to split a very large class into two separate hierarchies which can be developed independendently. The two hierarchies are referred to as the Abstraction level and the Implementation level. Basically if you have a class that has multiple variants of some functionality, you can use a Bridge pattern to divide and organize the class into two easier to understand hierarchies. 
 
 ## 2.1. Components of the Bridge 
 
@@ -147,11 +147,11 @@ Since the code base is split into two sections, making changes to one part of th
 
 **Improves Testing**
 
-Testing is a lot easier when you have a bridge pattern in your code base because you can focus on testing the abstraction layer seperately from tesing the implementation layer. This allows for easier and more targeted testing. 
+Testing is a lot easier when you have a bridge pattern in your code base because you can focus on testing the abstraction layer separately from testing the implementation layer. This allows for easier and more targeted testing. 
 
 **Improves Readability**
 
-The Bridge pattern creates a clear hiearchy in the code base. Organzing the code base in this way helps in understanding the relationships between different parts of the system. 
+The Bridge pattern creates a clear hierarchy in the code base. Organzing the code base in this way helps in understanding the relationships between different parts of the system. 
 
 ## 2.3. Example 
 
@@ -202,7 +202,7 @@ blueShape.draw(); // Output: Drawing a shape with color blue, Applying blue colo
 ```
 ## 3. Composite 
 
-The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite desgin pattern allows you to create this type of structure and be able to perform operations on each level in a consistent manner. 
+The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite design pattern allows you to create this type of structure and be able to perform operations on each level in a consistent manner. 
 
 ## 3.1 Components of the Composite 
 
@@ -321,7 +321,7 @@ Decorators allow you to add new functionalities or behaviors to objects dynamica
 
 **Modularity**
 
-Decorators enable a more modular approach to code by breaking down functionality into smaller, more managable units. These units can be combined and reused in various ways. 
+Decorators enable a more modular approach to code by breaking down functionality into smaller, more manageable units. These units can be combined and reused in various ways. 
 
 **Runtime Configuration**
 
@@ -373,7 +373,7 @@ console.log('Cost of sugar milk coffee:', sugarMilkCoffee.cost());
 
 ## 5. Facade 
 
-The Facade design pattern is basicaly a simplified interface that the client can interact with to use other low level operations hidden elsewhere in the code base. This design pattern is often used in systems that are built around a multi-layer architecture. Facades allow the client to perform certain tasks without needing to understand the complexity of the underlying system. 
+The Facade design pattern is basically a simplified interface that the client can interact with to use other low level operations hidden elsewhere in the code base. This design pattern is often used in systems that are built around a multi-layer architecture. Facades allow the client to perform certain tasks without needing to understand the complexity of the underlying system. 
 
 
 ## 5.1. Components of the Facade 
@@ -395,7 +395,7 @@ The Facade provides a simple and easy to understand interface
 
 **Code Organization**
 
-The Facade helps organize the code by encapsulating the subsystem's functionality and providing a clear seperation of concerns 
+The Facade helps organize the code by encapsulating the subsystem's functionality and providing a clear separation of concerns 
 
 **Easier Maintenance**
 
@@ -478,22 +478,22 @@ The flyweight factory creates the flyweight objects. It contains a function that
 
 *Flyweight*
 
-The flyweight contains the intrinsic data that will be shared accross the application 
+The flyweight contains the intrinsic data that will be shared across the application 
 
 
 ## 6.2. Benefits of Flyweights 
 
 **Memory Efficiency**
 
-By sharing intrinsic data among multiple objects, the Flyweight pattern significantly reduces memeory usage especially when dealing with a large number of instances. 
+By sharing intrinsic data among multiple objects, the Flyweight pattern significantly reduces memory usage especially when dealing with a large number of instances. 
 
 **Performance Improvements** 
 
-Due to reduced memeory usage, the application's overall performance improves. Lower memory usage typically leads to faster execution times and smoother application performance. 
+Due to reduced memory usage, the application's overall performance improves. Lower memory usage typically leads to faster execution times and smoother application performance. 
 
 **Simplifies State Management**
 
-By seperating intrinsic data (shared values) and extrinisc data (unique values), Flyweights simplify the management of these states. It allows for a cleaner seperation of concerns and more organized approach to state handling. 
+By separating intrinsic data (shared values) and extrinisc data (unique values), Flyweights simplify the management of these states. It allows for a cleaner separation of concerns and more organized approach to state handling. 
 
 ## 6.3. Example 
 
@@ -592,7 +592,7 @@ Proxies can add additional behavior or functionality before or after the invocat
 
 **Caching**
 
-Proxies can implement caching mechanisims to store results of expensive operations, improving performance and efficiency 
+Proxies can implement caching mechanism to store results of expensive operations, improving performance and efficiency 
 
 
 **Lazy Initialization** 
