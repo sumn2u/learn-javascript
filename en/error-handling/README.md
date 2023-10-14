@@ -44,6 +44,12 @@ To make the most of error handling, consider these best practices:
 -Provide clear and user-friendly error messages.
 -Handle errors as close to their source as possible.
 
+## try...catch Error Handling:
+One of the common error handling techniques is the try...catch block, which is described in the following sections.
+
+* [try...catch](./try...-catch.md)
+* [try...catch...finally](./try...catch...finally.md)
+
 ## Conclusion
 Error handling is a critical aspect of JavaScript development.
 By understanding the types of errors, and following best practices, 

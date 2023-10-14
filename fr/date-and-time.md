@@ -5,7 +5,7 @@ pageNumber: 64
 description: L'objet date permet d'indiquer les dates et le temps et fournit des méthodes pour les manipuler. Les objets date sont statiques et utilisent le fuseau horaire du navigateur pour afficher la date sous forme de texte.
 ---
 
-# Chapter 10
+# Chapitre 10
 
 # Date et temps
 

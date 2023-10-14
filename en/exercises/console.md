@@ -23,4 +23,4 @@ console.log(age);
 
 ### 💡 Hints:
 
-* Visit the [variabl](../basics/variables.md)[e](../basics/variables.md) chapter to understand more about variables.
+* Visit the [variable](../basics/variables.md) chapter to understand more about variables.

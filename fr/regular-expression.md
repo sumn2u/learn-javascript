@@ -5,7 +5,7 @@ pageNumber: 73
 description: Une expression rationnelle, aussi appelée expression régulière et abrégé "regex", est un outil puissant pour la correspondance de modèles et la recherche à l'intérieur des chaînes. Les regex apportent une manière rapide et flexible de chercher, faire correspondre et manipuler le texte en se basant sur des modèles spécifiques.
 ---
 
-# Chapter 14
+# Chapitre 14
 
 # Expression régulières
 

@@ -1,11 +1,12 @@
 ---
 chapter: 19
 pageNumber: 95
-description: Currying is an advanced technique in functional programming of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable  f(a,b,c) into callable as f(a)(b)(c). It doesn’t call a function instead it transforms it.
+description: Currying is an advanced technique in functional programming that consists of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable f(a,b,c) into callable as f(a)(b)(c). It doesn’t call a function instead it transforms it.
 ---
 # Currying
 
-`Currying` is an advanced technique in functional programming of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable  `f(a,b,c)` into callable as `f(a)(b)(c)`. It doesn’t call a function instead it transforms it.
+`Currying` is an advanced technique in functional programming that consists of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable `f(a,b,c)` into callable as `f(a)(b)(c)`. It doesn’t call a function instead it transforms it.
+
 
 To get a better understanding of currying let’s create a simple `add` function add that takes three arguments and returns the sum of them. Then, we create a `addCurry` function that takes a single input and returns a series of functions with its sum.
 
