@@ -1,12 +1,13 @@
 ---
 layout: editorial
-chapter: [Chapter Number]
-pageNumber: [Page Number]
-description:A comprehensive explanation of the ES6 concept.
+chapter: [chapter number]
+pageNumber: [page number]
+description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
 ---
 
+
 # Chapter [Chapter Number]
-# [ES6 Concept Title]
+# [ES6 Concept ]
 
 
 ## Overview of ES6 (ECMAScript 2015)
