@@ -415,17 +415,18 @@ Hoisting is a JavaScript mechanism where variables and function declarations are
 hoistedVariable = 3;
 console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	
 var hoistedVariable;
+```
 
 **Example 2:** Hoisting of function
-
+```js 
 hoistedFunction();  // Outputs " Hello world! " even when the function is declared after calling
 
 function hoistedFunction(){ 
   console.log(" Hello world! ");
 } 
-
+```
 **Example 3:** Hoisting of function expression
-
+```js 
 // Hoisting takes place in the local scope as well
 function doSomething(){
   x = 33;
@@ -434,16 +435,16 @@ function doSomething(){
 } 
 doSomething(); // Outputs 33 since the local variable “x” is hoisted inside the local scope
 
->Note - Variable initializations are not hoisted, only variable declarations are hoisted:
+/* Note - Variable initializations are not hoisted, only variable declarations are hoisted: */
 var x;
 console.log(x); // Outputs "undefined" since the initialization of "x" is not hoisted
 x = 23;
 
->Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+/* Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code: */
 "use strict";
 x = 23; // Gives an error since 'x' is not declared
 var x;
-
+```
 ### 4.2. Why do we use the word “debugger” in javascript?
 
 **Answer:**
@@ -465,7 +466,8 @@ function add (a) {
 }
 
 add(3)(4) 
-For Example, if we have a function f(a,b), then the function after currying, will be transformed to f(a)(b).
+```
+For Example, if we have a function `f(a,b)`, then the function after currying, will be transformed to `f(a)(b)`.
 
 By using the currying technique, we do not change the functionality of a function, we just change the way it is invoked.
 
@@ -502,8 +504,8 @@ External JavaScript is the JavaScript Code (script) written in a separate file w
 
 Some advantages of external javascript are
 
-->It allows web designers and developers to collaborate on HTML and javascript files.
-->We can reuse the code.
+- It allows web designers and developers to collaborate on HTML and javascript files.
+- We can reuse the code.
 
 ### 4.5. What is a closure in JavaScript?
 
