@@ -5,31 +5,30 @@ description: El método shift elimina el primer elemento de índice de la matriz
 ---
 # Shift
 
-The `shift` method deletes the first index of that array and moves all indexes to the left. It changes the original array. Here's the syntax for using `shift`:
+El método `shift` elimina el primer índice de esa matriz y mueve todos los índices hacia la izquierda. Cambia la matriz original. Aquí está la sintaxis para usar "shift":
 
-```c
+```javascript
 array.shift();
 ```
 
-For example:&#x20;
+Por ejemplo:
 
 ```javascript
 let array = [1, 2, 3]; 
 array.shift(); 
 
-// Result: array = [2,3]
+// Resultado: array = [2,3]
 ```
 
-You can also use the `shift` method in conjunction with a loop to remove all elements from an array. Here's an example of how you might do this:
+También puede utilizar el método `shift` junto con un bucle para eliminar todos los elementos de una matriz. A continuación se muestra un ejemplo de cómo podría hacer esto:
 
-```c
+```javascript
 while (array.length > 0) {
   array.shift();
 }
 
-console.log(array); // Result: []
+console.log(array); // Resultado: []
 ```
 
 {% hint style="warning" %}
-The `shift` method only works on arrays, and not on other objects that are similar to arrays such as arguments objects or NodeList objects. If you need to shift elements from one of these types of objects, you will need to convert it to an array first using the `Array.prototype.slice()` method.
-{% endhint %}
+El método `shift` solo funciona en matrices, y no en otros objetos que sean similares a matrices, como objetos de argumentos u objetos NodeList. Si necesita cambiar elementos de uno de estos tipos de objetos, primero deberá convertirlo en una matriz utilizando el método `Array.prototype.slice()`.{% endhint %}

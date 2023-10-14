@@ -9,67 +9,68 @@ description: Un array (matriz, en español) es una lista de datos y es parte fun
 
 ## Matrices
 
-Arrays are a fundamental part of programming. An array is a list of data. We can store a lot of data in one variable, which makes our code more readable and easier to understand. It also makes it much easier to perform functions on related data.
+Las matrices son una parte fundamental de la programación. Una matriz es una lista de datos. Podemos almacenar una gran cantidad de datos en una variable, lo que hace que nuestro código sea más legible y más fácil de entender. También hace que sea mucho más fácil realizar funciones sobre datos relacionados.
 
-The data in arrays are called **elements**.
+Los datos de las matrices se denominan **elementos**.
 
-Here is a simple array:
+Aquí hay una matriz simple:
 
 ```javascript
-// 1, 1, 2, 3, 5, and 8 are the elements in this array
-let numbers = [1, 1, 2, 3, 5, 8];
+// 1, 1, 2, 3, 5, y 8 son los elementos en esta matriz
+let numeros = [1, 1, 2, 3, 5, 8];
 ```
 
-Arrays can be created easily using array literals or with a `new` keyword.&#x20;
+Las matrices se pueden crear fácilmente usando literales de matriz o con una palabra clave `new`.
 
 ```javascript
-const cars = ["Saab", "Volvo", "BMW"]; // using array literals
-const cars = new Array("Saab", "Volvo", "BMW"); // using the new keyword
+const coches = ["Saab", "Volvo", "BMW"]; // usando literales de matriz
+const coches = new Array("Saab", "Volvo", "BMW"); // usando la palabra clave new
 ```
 
-An index number is used to access the values of an array.  The index of the first element in an array is always `0` as array indexes start with `0`. The index number can also be used to change the elements of an array.
+Se utiliza un número de índice para acceder a los valores de una matriz. El índice del primer elemento de una matriz es siempre `0`, ya que los índices de las matrices comienzan con `0`. El número de índice también se puede utilizar para cambiar los elementos de una matriz.
+
 
 ```javascript
-const cars = ["Saab", "Volvo", "BMW"];
-console.log(cars[0]); 
-// Result: Saab
+const coches = ["Saab", "Volvo", "BMW"];
+console.log(coches[0]); 
+// Resultado: Saab
 
-cars[0] = "Opel"; // changing the first element of an array
-console.log(cars);
-// Result: ['Opel', 'Volvo', 'BMW']
+coches[0] = "Opel"; // cambiando el primer elemento de la matriz
+console.log(coches);
+// Resultado: ['Opel', 'Volvo', 'BMW']
 ```
 
 {% hint style="warning" %}
-Arrays are a special type of object.  One can have [objects](../objects/) in an array.
+Las matrices son un tipo especial de objeto. Uno puede tener [objetos](../objects/) en una matriz.
 {% endhint %}
 
-&#x20;The `length` property of an array returns the count of numbers elements.  Methods supported by Arrays are shown below:
+La propiedad `length` de una matriz devuelve el recuento de elementos numéricos. Los métodos soportados por Array se muestran a continuación:
 
-| Nombre            | Descripción                                                                                                                                       |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `concat()`        | Returns two or more combined arrays                                                                                                               |
-| `join()`          | Joins all elements in an array into a string                                                                                                      |
-| `push()`          | Adds one or more elements at the end of the array and returns the length                                                                          |
-| `pop()`           | Removes the last element of an array and returns that element                                                                                     |
-| `shift()`         | Removes the first element of an array and returns that element                                                                                    |
-| `unshift()`       | Adds one or more elements at the front of an array and returns the length                                                                         |
-| `slice()`         | Extracts the section of an array and returns the new array                                                                                        |
-| `at()`            | Returns element at the specified index or `undefined`                                                                                             |
-| `splice()`        | Removes elements from an array and (optionally) replaces them, and returns the array                                                              |
-| `reverse()`       | Transposes the elements of an array and returns a reference to an array                                                                           |
-| `flat()`          | Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth                                        |
-| `sort()`          | Sorts the elements of an array in place, and returns a reference to the array                                                                     |
-| `indexOf()`       | Returns the index of the first match of the search element                                                                                        |
-| `lastIndexOf()`   | Returns the index of the last match of the search element                                                                                         |
-| `forEach()`       | Executes a callback in each element of an array and returns undefined                                                                             |
-| `map()`           | Returns a new array with a return value from executing `callback` on every array item.                                                            |
-| `flatMap()`       | Runs `map()` followed by `flat()` of depth 1                                                                                                      |
-| `filter()`        | Returns a new array containing the items for which `callback` returned `true`                                                                     |
-| `find()`          | Returns the first item for which `callback` returned `true`                                                                                       |
-| `findLast()`      | Returns the last item for which `callback` returned `true`                                                                                        |
-| `findIndex()`     | Returns the index of the first item for which `callback` returned `true`                                                                          |
-| `findLastIndex()` | Returns the index of the last item for which `callback` returned `true`                                                                           |
-| `every()`         | Returns `true` if `callback` returns `true` for every item in the array                                                                           |
-| `some()`          | Returns `true` if `callback` returns `true` for at least one item in the array                                                                    |
-| `reduce()`        | Uses `callback(accumulator, currentValue, currentIndex, array)` for reducing purpose and returns the final value returned by `callback` function  |
-| `reduceRight()`   | Works similarly lie `reduce()` but starts with the last element                                                                                   |
+| Nombre            | Descripción                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `concat()`        | Devuelve dos o más matrices combinadas                                                                                                                  |
+| `join()`          | Une todos los elementos de una matriz en una cadena                                                                                                     |
+| `push()`          | Agrega uno o más elementos al final de la matriz y devuelve la longitud                                                                                 |
+| `pop()`           | Elimina el último elemento de una matriz y devuelve ese elemento                                                                                        |
+| `shift()`         | Elimina el primer elemento de una matriz y devuelve ese elemento                                                                                        |
+| `unshift()`       | Agrega uno o más elementos al frente de una matriz y devuelve la longitud                                                                               |
+| `slice()`         | Extrae la sección de una matriz y devuelve la nueva matriz.                                                                                             |
+| `at()`            | Devuelve el elemento en el índice especificado o `undefined`                                                                                            |
+| `splice()`        | Elimina elementos de una matriz y (opcionalmente) los reemplaza y devuelve la matriz                                                                    |
+| `reverse()`       | Transpone los elementos de una matriz y devuelve una referencia a una matriz                                                                            |
+| `flat()`          | Devuelve una nueva matriz con todos los elementos de la submatriz concatenados en ella de forma recursiva hasta la profundidad especificada             |
+| `sort()`          | Ordena los elementos de una matriz en su lugar y devuelve una referencia a la matriz                                                                    |
+| `indexOf()`       | Devuelve el índice de la primera coincidencia del elemento de búsqueda.                                                                                 |
+| `lastIndexOf()`   | Devuelve el índice de la última coincidencia del elemento de búsqueda.                                                                                  |
+| `forEach()`       | Ejecuta una devolución de llamada en cada elemento de una matriz y devuelve undefined                                                                   |
+| `map()`           | Devuelve una nueva matriz con un valor de retorno al ejecutar `callback` en cada elemento de la matriz.                                                 |
+| `flatMap()`       | Ejecuta `map()` seguido de `flat()` de profundidad 1                                                                                                    |
+| `filter()`        | Devuelve una nueva matriz que contiene los elementos para los cuales `callback` devolvió `true`                                                         |
+| `find()`          | Devuelve el primer elemento para el cual `callback` devolvió `true`                                                                                     |
+| `findLast()`      | Devuelve el último elemento para el cual `callback` devolvió `true`                                                                                     |
+| `findIndex()`     | Devuelve el índice del primer elemento para el cual `callback` devolvió `true`                                                                          |
+| `findLastIndex()` | Devuelve el índice del último elemento para el cual `callback` devolvió `true`                                                                          |
+| `every()`         | Devuelve `true` si `callback` devuelve `true` para cada elemento en la matriz                                                                           |
+| `some()`          | Devuelve `true` si `callback` devuelve `true` para al menos un elemento en la matriz                                                                    |
+| `reduce()`        | Usa `callback(acumulador, valorActual, indiceActual, matriz)` con el propósito de reducir y devuelve el valor final devuelto por la función `callback`  |
+| `reduceRight()`   | Funciona de forma similar a `reduce()` pero comienza con el último elemento                                                                             |

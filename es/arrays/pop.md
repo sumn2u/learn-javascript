@@ -5,36 +5,37 @@ description: El método pop eliminan el último elemento de una matriz y devuelv
 ---
 # Pop
 
-The `pop` method removes the last element from an array and returns that element. This method changes the length of the array.
+El método `pop` elimina el último elemento de una matriz y devuelve ese elemento. Este método cambia la longitud de la matriz.
 
-Here's the syntax for using `pop`:
+Aquí está la sintaxis para usar `pop`:
 
-```c
+```javascript
 array.pop();
 ```
 
-For example:
+Por ejemplo:
 
 ```javascript
-let arr = ["one", "two", "three", "four", "five"]; 
-arr.pop(); 
+let matriz = ["uno", "dos", "tres", "cuatro", "cinco"]; 
+matriz.pop(); 
 
-console.log(arr); 
+console.log(matriz); 
 
-// Result: ['one', 'two', 'three', 'four']
+// Resultado: ['uno', 'dos', 'tres', 'cuatro']
 ```
 
-You can also use the `pop` method in conjunction with a loop to remove all elements from an array. Here's an example of how you might do this:
+Puede también usar el método `pop` en conjunción con un bucle para eliminar todos los elementos de una matriz. Aquí tiene un ejemplo de cómo 
+podría hacer esto:
 
-```c
-while (array.length > 0) {
-  array.pop();
+```javascript
+while (matriz.length > 0) {
+  matriz.pop();
 }
 
-console.log(array); // Result: []
+console.log(matriz); // Resultado: []
 ```
 
 {% hint style="warning" %}
-The `pop` method only works on arrays, and not on other objects that are similar to arrays such as arguments objects or NodeList objects. If you need to pop elements from one of these types of objects, you will need to convert it to an array first using the `Array.prototype.slice()` method.
+El método `pop` solo funciona en matrices, y no en otros objetos que sean similares a matrices, como objetos de argumentos u objetos NodeList. Si necesita extraer elementos de uno de estos tipos de objetos, primero deberá convertirlo en una matriz utilizando el método `Array.prototype.slice()`.
 
 {% endhint %}

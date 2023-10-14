@@ -5,41 +5,41 @@ description: El método forEach ejecuta una función proporcionada una vez para 
 ---
 # For Each
 
-The `forEach` method executes a provided function once for each array element. Here's the syntax for using `forEach`:
+El método `forEach` ejecuta una función proporcionada una vez para cada elemento de la matriz. Aquí está la sintaxis para usar `forEach`:
 
 ```javascript
-array.forEach(function(element, index, array) {
-  // element: current element being processed in the array
-  // index: index of the current element being processed in the array
-  // array: the array forEach was called upon
+array.forEach(function(elemento, indice, matriz) {
+  // elemento: elemento actual que se está procesando en la matriz
+  // indice: índice del elemento actual que se está procesando en la matriz
+  // matriz: la matriz donde se invoca foreach 
 });
 ```
 
-For example, let's say you have an array of numbers and you want to print the double of each number to the console. You could do this using `forEach` like this:
+Por ejemplo, digamos que tiene una serie de números y desea imprimir el doble de cada número en la consola. Podrías hacer esto usando `forEach` así:
 
 ```typescript
-let numbers = [1, 2, 3, 4, 5];
-numbers.forEach(function(number) {
-  console.log(number * 2);
+let numeros = [1, 2, 3, 4, 5];
+numeros.forEach(function(numero) {
+  console.log(numero * 2);
 });
 ```
 
-You can also use the arrow function syntax to define the function passed to `forEach`:
+También puedes usar la sintaxis de la función de flecha para definir la función pasada a `forEach`:
 
 ```typescript
-numbers.forEach((number) => {
-  console.log(number * 2);
+numeros.forEach((numero) => {
+  console.log(numero * 2);
 });
 ```
 
-or
+o
 
 ```typescript
-numbers.forEach(number => console.log(number * 2));
+numeros.forEach(numero => console.log(numero * 2));
 ```
 
-The `forEach` method does not modify the original array. It simply iterates over the elements of the array and executes the provided function for each element.
+El método `forEach` no modifica la matriz original. Simplemente itera sobre los elementos de la matriz y ejecuta la función proporcionada para cada elemento.
 
 {% hint style="warning" %}
-The `forEach()` method is not executed for the empty statment.
+El método `forEach()` no se ejecuta para la declaración vacía.
 {% endhint %}

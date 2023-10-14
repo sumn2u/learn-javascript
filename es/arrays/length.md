@@ -5,41 +5,41 @@ description: Las matrices tienen una propiedad llamada length que mide la longit
 ---
 # Length
 
-Arrays have a property called `length`, and it's pretty much exactly as it sounds, it's the length of the array.
+Las matrices tienen una propiedad llamada `length`, y es más o menos exactamente como suena, es la longitud de la matriz.
 
 ```javascript
-let array = [1, 2, 3];
+let matriz = [1, 2, 3];
 
-let l = array.length;
+let l = matriz.length;
 
-// Result: l = 3
+// Resultado: l = 3
 ```
 
-The length property also sets the number of elements in an array. For example.
+La propiedad length también establece el número de elementos en la matriz. Por ejemplo.
 
 ```javascript
-let fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.length = 2;
+let frutas = ["Plátano", "Naranja", "Manzana", "Mango"];
+frutas.length = 2;
 
-console.log(fruits);
-// Result: ['Banana', 'Orange']
+console.log(frutas);
+// Resultado: ['Plátano', 'Naranja']
 ```
 
-You can also use the `length` property to get the last element of an array by using it as an index. For example:
+También puede usar la propiedad `length` para obtener el último elemento de una matriz usándola como un índice. Por ejemplo:
 
-```c
-console.log(fruits[fruits.length - 1]); // Result: Orange
+```javascript
+console.log(frutas[frutas.length - 1]); // Resultado: Naranja
 ```
 
-You can also use the `length` property to add elements to the end of an array. For example:
+Puede también usar la propiedad `length`para agregar elementos al final de una matriz. Por ejemplo:
 
 ```c
-fruits[fruits.length] = "Pineapple";
-console.log(fruits); // Result: ['Banana', 'Orange', 'Pineapple']
+frutas[frutas.length] = "Piña";
+console.log(frutas); // Resultado: ['Plátano', 'Naranja', 'Piña']
 ```
 
 {% hint style="info" %}
-The `length` property is automatically updated when elements are added or removed from the array.
+La propiedad `length`se actualiza automáticamente cuando se agregan o eliminan elementos de la matriz.
 {% endhint %}
 
-It's also worth noting that the `length` property is not a method, so you don't need to use parentheses when accessing it. It's simply a property of the array object that you can access like any other object property.
+También vale la pena señalar que la propiedad `length` no es un método, por lo que no es necesario utilizar paréntesis al acceder a ella. Es simplemente una propiedad del objeto Array a la que puede acceder como cualquier otra propiedad de objeto.

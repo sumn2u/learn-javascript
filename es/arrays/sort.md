@@ -5,45 +5,46 @@ description: El método sort ordena los elementos de una matriz en un orden espe
 ---
 # Sort
 
-The `sort` method sorts the items of an array in a specific order (ascending or descending). By default, the `sort` method sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.
+El método `sort` ordena los elementos de una matriz en un orden específico (ascendente o descendente). De forma predeterminada, el método `sort` ordena los elementos como cadenas y los organiza en orden ascendente según sus valores de unidad de código UTF-16.
 
-Here's the syntax for using `sort`:
 
-```c
-array.sort([compareFunction]);
-```
-
-The `compareFunction` argument is optional and specifies a function that defines the sort order. If omitted, the elements are sorted in ascending order according to their string representation.
-
-For example:
+Aquí está la sintaxis para usar `sort`:
 
 ```javascript
-let city = ["California", "Barcelona", "Paris", "Kathmandu"];
-let sortedCity = city.sort(); 
+matriz.sort([funcionDeComparacion]);
+```
 
-console.log(sortedCity);
+El argumento `funcionDeComparacion` es opcional y especifica una función que define el orden de clasificación. Si se omite, los elementos se ordenan en orden ascendente según su representación en cadena.
 
-// Result: ['Barcelona', 'California', 'Kathmandu', 'Paris']
+Por ejemplo:
+
+```javascript
+let ciudades = ["California", "Barcelona", "Paris", "Kathmandu"];
+let ciudadesOrdenadas = ciudades.sort(); 
+
+console.log(ciudadesOrdenadas);
+
+// Resultado: ['Barcelona', 'California', 'Kathmandu', 'Paris']
 
 ```
 
 {% hint style="info" %}
-Numbers can be sorted incorrectly when they are sorted. For example, "35" is bigger than "100", because "3" is bigger than "1".
+Los números se pueden ordenar incorrectamente cuando se ordenan. Por ejemplo, "35" es mayor que "100", porque "3" es mayor que "1".
 {% endhint %}
 
-To fix the sorting issue in numbers, compare functions are used. Compare functions defines sort orders and return a **negative**, **zero**, or **positive** value based on arguments, like this:
+Para solucionar el problema de clasificación en números, se utilizan funciones de comparación. Las funciones de comparación definen el orden de clasificación y devuelven un valor **negativo**, **cero** o **positivo** según argumentos, como este:
 
-* A negative value if `a` should be sorted before `b`
-* A positive value if `a` should be sorted after `b`
-* `0` if `a` and `b` are equal and their order doesn't matter
+* Un valor negativo si `a` debe ordenarse antes que `b`
+* Un valor positivo si `a` debe ordenarse después de `b`
+* `0` si `a` y `b` son iguales y su orden no importa
 
 ```javascript
-const points = [40, 100, 1, 5, 25, 10];
-points.sort((a, b) => {return a-b});
+const puntos = [40, 100, 1, 5, 25, 10];
+puntos.sort((a, b) => {return a-b});
 
-// Result: [1, 5, 10, 25, 40, 100]
+// Resultado: [1, 5, 10, 25, 40, 100]
 ```
 
 {% hint style="warning" %}
-The `sort()` method overrides the original array.
+El método `sort()` anula la matriz original.
 {% endhint %}

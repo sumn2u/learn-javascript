@@ -5,28 +5,28 @@ description: El operador Spread permite que una matriz u objeto manipule rápida
 ---
 # Spread
 
-An array or object can be quickly copied into another array or object by using the Spread Operator `(...)`. It allows an iterable such as an array to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+Una matriz u objeto se puede copiar rápidamente en otra matriz u objeto utilizando el operador de extensión `(...)`. Permite expandir un iterable, como una matriz, en lugares donde se esperan cero o más argumentos (para llamadas a funciones) o elementos (para literales de matriz), o expandir una expresión de objeto en lugares donde cero o más pares clave-valor. (para literales de objetos) se esperan.
 
-Here are some  examples of it:
+A continuación se muestran algunos ejemplos de ello:
 
 ```javascript
 let arr = [1, 2, 3, 4, 5]; 
 
 console.log(...arr); 
-// Result: 1 2 3 4 5
+// Resultado: 1 2 3 4 5
 
 let arr1;
-arr1 = [...arr]; //copies the arr into arr1 
+arr1 = [...arr]; //copia arr a arr1 
 
-console.log(arr1);    //Result: [1, 2, 3, 4, 5]
+console.log(arr1);    //Resultado: [1, 2, 3, 4, 5]
 
 arr1 = [6,7];
 arr = [...arr,...arr1];
 
-console.log(arr);   //Result: [1, 2, 3, 4, 5, 6, 7]
+console.log(arr);   //Resultado: [1, 2, 3, 4, 5, 6, 7]
 
 ```
 
 {% hint style="warning" %}
-The spread operator only works in modern browsers that support the feature. If you need to support older browsers, you will need to use a transpiler like Babel to convert the spread operator syntax to equivalent ES5 code.
+El operador de propagación solo funciona en navegadores modernos que admiten esta función. Si necesita admitir navegadores más antiguos, deberá utilizar un transpilador como Babel para convertir la sintaxis del operador de extensión a código ES5 equivalente.
 {% endhint %}

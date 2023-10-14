@@ -5,34 +5,35 @@ description: El método join convierte la matriz en una cadena y la une sin modi
 ---
 # Join
 
-The `join` method, makes an array turn into a string and joins it all together. It does not change the original array. Here's the syntax for using `join`:
-
-```c
-array.join([separator]);
-```
-
-The `separator` argument is optional and specifies the character to be used to separate the elements in the resulting string. If omitted, the array elements are separated with a comma (`,`).
-
-For example:
+El método `join` hace que una matriz se convierta en una cadena y lo une todo. No cambia la matriz original. Aquí está la sintaxis para usar `join`:
 
 ```javascript
-let array = ["one", "two", "three", "four"]; 
+matriz.join([separador]);
+```
 
-console.log(array.join(" ")); 
+El argumento `separador` es opcional y especifica el carácter que se usa para separar los elementos en la cadena resultante. Si se omite, los 
+elementos de la matriz son separados con una coma (`,`).
 
-// Result: one two three four
+Por ejemplo:
+
+```javascript
+let matriz = ["uno", "dos", "tres", "cuatro"]; 
+
+console.log(matriz.join(" ")); 
+
+// Resultado: uno dos tres cuatro
 ```
 
 {% hint style="warning" %}
-Any separator can be specified but the default one is a comma `(,)`.
+Se puede especificar cualquier separador pero el predeterminado es una coma `(,)`.
 {% endhint %}
 
-In the above example, a space is used as a separator. You can also use `join` to convert an array-like object (such as an arguments object or a NodeList object) to a string by first converting it to an array using the `Array.prototype.slice()` method:
+En el ejemplo anterior, se utiliza un espacio como separador. También puedes usar `join` para convertir un objeto similar a una matriz (como un objeto de argumentos o un objeto NodeList) en una cadena convirtiéndolo primero en una matriz usando el método `Array.prototype.slice()`:
 
 ```javascript
-function printArguments() {
-  console.log(Array.prototype.slice.call(arguments).join(', '));
+function imprimirArgumentos() {
+  console.log(Array.prototype.slice.call(argumentos).join(', '));
 }
 
-printArguments('a', 'b', 'c'); // Result: "a, b, c"
+imprimirArgumentos('a', 'b', 'c'); // Resultado: "a, b, c"
 ```

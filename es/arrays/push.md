@@ -5,37 +5,37 @@ description: El método push agrega elementos en una matriz haciendo que el últ
 ---
 # Push
 
-One can push certain items to an array making the last index the newly added item. It changes the length of an array and returns a new length.
+Se pueden insertar ciertos elementos en una matriz haciendo que el último índice sea el elemento recién agregado. Cambia la longitud de una matriz y devuelve una nueva longitud.
 
-Here's the syntax for using `push`:
-
-```c
-array.push(element1[, ...[, elementN]]);
-```
-
-The `element1, ..., elementN` arguments represent the elements to be added to the end of the array.
-
-For example:
+Aquí está la sintaxis para usar `push`:
 
 ```javascript
-let array = [1, 2, 3]; 
-array.push(4); 
-
-console.log(array); 
-
-// Result: array = [1, 2, 3, 4]
+matriz.push(elemento1[, ...[, elementoN]]);
 ```
 
-You can also use `push` to add elements to the end of an array-like object (such as an arguments object or a NodeList object) by first converting it to an array using the `Array.prototype.slice()` method:
+Los argumentos  `elemento1, ..., elementoN` representan los elementos que serán agregados al final de la matriz.
+
+Por ejemplo:
 
 ```javascript
-function printArguments() {
-  let args = Array.prototype.slice.call(arguments);
+let matriz = [1, 2, 3]; 
+matriz.push(4); 
+
+console.log(matriz); 
+
+// Resultado: matriz = [1, 2, 3, 4]
+```
+
+También puede usar `push` para agregar elementos al final de un objeto similar a una matriz (como un objeto de argumentos o un objeto NodeList) convirtiéndolo primero en una matriz usando el método `Array.prototype.slice()`:
+
+```javascript
+function imprimirArgumentos() {
+  let args = Array.prototype.slice.call(argumentos);
   args.push('d', 'e', 'f');
   console.log(args);
 }
 
-printArguments('a', 'b', 'c'); // Result: ["a", "b", "c", "d", "e", "f"]
+imprimirArgumentos('a', 'b', 'c'); // Resultado: ["a", "b", "c", "d", "e", "f"]
 ```
 
-> **Note**: The `push` method modifies the original array. It does not create a new array.
+> **Nota**: El método `push`modifica la matriz original. No crea una nueva matriz.

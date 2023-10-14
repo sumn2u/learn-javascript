@@ -5,44 +5,44 @@ description: El método map itera sobre una matriz y modifica su elemento median
 ---
 # Map
 
-The `Array.prototype.map()` method iterates over an array and modifies its elements using a callback function. The callback function will then be applied to each element of the array.
+El método `Array.prototype.map()` itera sobre una matriz y modifica sus elementos usando una función callback. Luego, la función callback se aplicará a cada elemento de la matriz.
 
-Here's the syntax for using `map`.
+Aquí está la sintaxis para usar `map`.
 
 ```javascript
-let newArray = oldArray.map(function(element, index, array) {
-  // element: current element being processed in the array
-  // index: index of the current element being processed in the array
-  // array: the array map was called upon
-  // Return element to be added to newArray
+let nuevaMatriz = viejaMatriz.map(function(elemento, indice, matriz) {
+  // elemento: elemento actual que está siendo procesado en la matriz
+  // indice: índice del elemento actual que está siendo procesado en la matriz
+  // matriz: se invocó el mapa de matriz
+  // Elemento de retorno que se agregará a nuevaMatriz
 });
 ```
 
-For example, let's say you have an array of numbers and you want to create a new array that doubles the values of the numbers in the original array. You could do this using `map` like this.
+Por ejemplo, digamos que tiene una matriz de números y desea crear una nueva matriz que duplique los valores de los números en la matriz original. Podrías hacer esto usando un `map` como este.
 
 ```javascript
-const numbers = [2, 4, 6, 8];
+const numeros = [2, 4, 6, 8];
 
-const doubledNumbers = numbers.map(number => number * 2);
+const numerosDoblados = numeros.map(numero => numero * 2);
 
-console.log(doubledNumbers);
+console.log(numerosDoblados);
 
-// Result: [4, 8, 12, 16]
+// Resultado: [4, 8, 12, 16]
 ```
 
-You can also use the arrow function syntax to define the function passed to `map`.
+También puede usar la sintaxis de función flecha para definir la función que se pasa a `map`.
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>let doubledNumbers = numbers.map((number) => {
-</strong>  return number * 2;
+```javascript
+let doubledNumbers = numbers.map((number) => {
+   return number * 2;
 });
-</code></pre>
-
-or
+```
+o
 
 ```typescript
 let doubledNumbers = numbers.map(number => number * 2);
 ```
 
 {% hint style="info" %}
-The `map()` method doesn't execute function for empty elements and doesn't change the original array.
+El método `map()` no ejecuta la función para elementos vacíos y no cambia la matriz original.
 {% endhint %}

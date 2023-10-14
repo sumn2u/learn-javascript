@@ -5,26 +5,26 @@ description: Para agregar un elemento al comienzo de una matriz podemos usar el 
 ---
 # Unshift
 
-The `unshift` method adds new elements sequentially to the start, or front of the array. It modifies the original array and returns the new length of the array. For example.
+El método `unshift` agrega nuevos elementos secuencialmente al inicio o al frente de la matriz. Modifica la matriz original y devuelve la nueva longitud de la matriz. Por ejemplo.
 
 ```javascript
-let array = [0, 5, 10];
-array.unshift(-5);  // 4
+let matriz = [0, 5, 10];
+matriz.unshift(-5);  // 4
 
-// RESULT: array = [-5 , 0, 5, 10];
+// RESULTADO: matriz = [-5 , 0, 5, 10];
 ```
 
 {% hint style="warning" %}
-The `unshift()` method overwrites the original array.
+El método `unshift()` sobrescribe la matriz original.
 {% endhint %}
 
-The `unshift` method takes one or more arguments, which represent the elements to be added to the beginning of the array. It adds the elements in the order they are provided, so the first element will be the first element of the array.
+El método `unshift` toma uno o más argumentos, los cuales representan los elementos que van a ser agregados al principio de la matriz. Agrega los elementos en el orden en que se proporcionan, por lo que el primer elemento será el primer elemento de la matriz.
 
-Here is an example of using `unshift` to add multiple elements to an array:
+A continuación se muestra un ejemplo del uso de `unshift` para agregar varios elementos a una matriz:
 
 ```javascript
-const numbers = [1, 2, 3];
-const newLength = numbers.unshift(-1, 0);
-console.log(numbers); // [-1, 0, 1, 2, 3]
-console.log(newLength); // 5
+const numeros = [1, 2, 3];
+const nuevaLongitud = numeros.unshift(-1, 0);
+console.log(numeros); // [-1, 0, 1, 2, 3]
+console.log(nuevaLongitud); // 5
 ```

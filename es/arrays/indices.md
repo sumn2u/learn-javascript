@@ -5,31 +5,31 @@ description: Las matrices son una colección de elementos y a cada elemento se l
 ---
 # Índices
 
-So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. An **index** refers to a spot in the array. Indices logically progress one by one, but it should be noted that the first index in an array is 0, as it is in most languages. Brackets `[]` are used to signify you are referring to an index of an array.
+Entonces tienes tu conjunto de elementos de datos, pero ¿qué pasa si quieres acceder a un elemento específico? Ahí es donde entran los índices. Un **índice** se refiere a un lugar en la matriz. Los índices progresan lógicamente uno por uno, pero cabe señalar que el primer índice de una matriz es 0, como ocurre en la mayoría de los lenguajes. Los corchetes `[]` se utilizan para indicar que se está haciendo referencia a un índice de una matriz.
 
 ```javascript
-// This is an array of strings
-let fruits = ["apple", "banana", "pineapple", "strawberry"];
+// Esto es una matriz de cadenas
+let frutas = ["manzana", "plátano", "piña", "fresa"];
 
-// We set the variable banana to the value of the second element of
-// the fruits array. Remember that indices start at 0, so 1 is the
-// second element. Result: banana = "banana"
-let banana = fruits[1];
+// Establecemos la variable platano al valor del segundo elemento de
+// la matriz de frutas. Recuerde que los índices comienzan en 0, por lo que 1 es el
+// segundo elemento. Resultado: plátano = "plátano"
+let platano = frutas[1];
 ```
 
-You can also use an array index to set the value of an element in an array:
+También puede utilizar un índice de matriz para establecer el valor de un elemento en una matriz:
 
 ```javascript
-let array = ['a', 'b', 'c', 'd', 'e'];
-//  indices:  0    1    2    3    4
-array[4] = 'f';
-console.log(array); // Result: ['a', 'b', 'c', 'd', 'f']
+let matriz = ['a', 'b', 'c', 'd', 'e'];
+//  indices:   0    1    2    3    4
+matriz[4] = 'f';
+console.log(matriz); // Resultado: ['a', 'b', 'c', 'd', 'f']
 ```
 
-Note that if you try to access or set an element using an index that is outside the bounds of the array (i.e., an index that is less than 0 or greater than or equal to the length of the array), you will get an `undefined` value.
+Tenga en cuenta que si intenta acceder o configurar un elemento utilizando un índice que está fuera de los límites de la matriz (es decir, un índice menor que 0 o mayor o igual a la longitud de la matriz), obtendrá un valor `undefined`.
 
 ```javascript
-console.log(array[5]); // Output: undefined
-array[5] = 'g';
-console.log(array); // Result: ['a', 'b', 'c', 'd', 'f', undefined, 'g']
+console.log(matriz[5]); // Salida: undefined
+matriz[5] = 'g';
+console.log(matriz); // Resultado: ['a', 'b', 'c', 'd', 'f', undefined, 'g']
 ```
