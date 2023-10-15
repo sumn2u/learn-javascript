@@ -1,27 +1,26 @@
 ---
 chapter: 7
 pageNumber: 52
-description: The do...while statement creates a loop that executes a specified statement until the test condition evaluates to be false. The condition is evaluated after executing the statement.
+description: La instrucción do... while crea un bucle que ejecuta una instrucción específica hasta que la condición de prueba se evalúa como falsa. La condición se evalúa después de ejecutar la declaración.
 ---
 # Do...While
 
-The do...while statement creates a loop that executes a specified statement until the test condition evaluates to be false. The condition is evaluated after executing the statement. The syntax for do... while is
+La instrucción do... while crea un bucle que ejecuta una instrucción específica hasta que la condición de prueba se evalúa como falsa. La condición se evalúa después de ejecutar la declaración. La sintaxis para do... while es
 
 ```javascript
 do {
-  // statement
-} while (expression);
+  // sentencias
+} while (expresión);
 ```
 
-Lets for example see how to print numbers less than 10 using `do...while` loop:
+Veamos, por ejemplo, cómo imprimir números menores de 10 usando el bucle `do... while`:
 
 ```javascript
 var i = 0;
 do {
   document.write(i + " ");
-  i++; // incrementing i by 1
+  i++; // incrementando i en uno
 } while (i < 10);
 ```
 
-> _**Note**_: `i = i + 1` can be written `i++`.
-
+> _**Nota**_: `i = i + 1` se puede escribir `i++`.

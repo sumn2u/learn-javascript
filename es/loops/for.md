@@ -1,62 +1,62 @@
 ---
 chapter: 7
 pageNumber: 50
-description:  A for loop is a powerful control structure used to execute a block of code multiple times, either for a specific number of iterations or over a defined range. It is highly versatile and commonly used for iterating through arrays, strings, and other iterable objects 
+description:  Un bucle for es una potente estructura de control que se utiliza para ejecutar un bloque de código varias veces, ya sea para un número específico de iteraciones o en un rango definido. Es muy versátil y se usa comúnmente para iterar a través de matrices, cadenas y otros objetos iterables.
 ---
 # For
 
-The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
+La forma más sencilla de bucle es la declaración for. Éste tiene una sintaxis similar a una declaración if, pero con más opciones:
 
 ```javascript
-for (condition; end condition; change) {
-    // do it, do it now
+for (condicion; condicion_finalizacion; cambio) {
+    // hazlo, hazlo ahora
 }
 ```
 
-Let's see how to execute the same code ten-times using a `for` loop:
+Veamos cómo ejecutar el mismo código diez veces usando un bucle `for`:
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
-  // do this code ten-times
+  // haz este código diez veces
 }
 ```
 
-> _**Note**_: `i = i + 1` can be written `i++`.
+> _**Nota**_: `i = i + 1` se puede escribir `i++`.
 
-To loop through the properties of an object or an array `for in` loop can also be used.
+Para recorrer las propiedades de un objeto o una matriz también se puede utilizar un bucle `for in`.
 
 ```javascript
-for (key in object) {
-  // code block to be executed
+for (clave in objeto) {
+  // bloque de código a ejecutar
 }
 ```
 
-Examples of `for in` loop for an object and array is shown below:
+A continuación se muestran ejemplos de bucle `for in` para un objeto y una matriz:
 
 ```javascript
-const person = {fname:"John", lname:"Doe", age:25};
+const persona = {nombre:"John", apellido:"Doe", edad:25};
 let info = "";
-for (let x in person) {
-  info += person[x];
+for (let x in persona) {
+  info += persona[x];
 }
 
-// Result: info = "JohnDoe25"
+// Resultado: info = "JohnDoe25"
 
-const numbers = [45, 4, 9, 16, 25];
+const numeros = [45, 4, 9, 16, 25];
 let txt = "";
-for (let x in numbers) {
-  txt += numbers[x];
+for (let x in numeros) {
+  txt += numeros[x];
 }
 
-// Result: txt = '45491625'
+// Resultado: txt = '45491625'
 ```
 
-The value of iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for of` statement.&#x20;
+El valor de objetos iterables como `Arrays`, `Strings`, `Maps`, `NodeLists` se puede iterar usando la declaración `for of`.
 
 ```javascript
-let language = "JavaScript";
+let lenguaje = "JavaScript";
 let text = "";
-for (let x of language) {
+for (let x of lenguaje) {
 text += x;
 }
 ```

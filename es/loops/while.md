@@ -1,29 +1,29 @@
 ---
 chapter: 7
 pageNumber: 51
-description: While loops repetitively execute a block of code as long as a specified condition is true.
+description: Los bucles while ejecutan repetidamente un bloque de código siempre que una condición especificada sea verdadera.
 ---
 # While
 
-While loops repetitively execute a block of code as long as a specified condition is true. It provides a way to automate repetitive tasks and perform iterations based on the condition's evaluation.
+Los bucles while ejecutan repetidamente un bloque de código siempre que una condición especificada sea verdadera. Proporciona una forma de automatizar tareas repetitivas y realizar iteraciones basadas en la evaluación de la condición.
 
 ```javascript
-while (condition) {
-  // do it as long as condition is true
+while (condicion) {
+  // hazlo siempre que la condición sea verdadera
 }
 ```
 
-For example, the loop in this example will repetitively execute its block of code as long as the variable i is less than 5:
+Por ejemplo, el bucle en este ejemplo ejecutará repetidamente su bloque de código siempre que la variable i sea menor que 5:
 
 ```javascript
 var i = 0,
   x = "";
 while (i < 5) {
-  x = x + "The number is " + i;
+  x = x + "El número es " + i;
   i++;
 }
 ```
 
 {% hint style="warning" %}
-&#x20;Be careful to avoid infinite looping if the condition is always true!
+¡Tenga cuidado de evitar bucles infinitos si la condición siempre es verdadera!
 {% endhint %}
