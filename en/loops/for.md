@@ -1,11 +1,16 @@
 ---
 chapter: 7
 pageNumber: 50
-description:  A for loop is a powerful control structure used to execute a block of code multiple times, either for a specific number of iterations or over a defined range. It is highly versatile and commonly used for iterating through arrays, strings, and other iterable objects 
+description: A for loop is a powerful control structure used to execute a block of code multiple times, either for a specific number of iterations or over a defined range. It is highly versatile and commonly used for iterating through arrays, strings, and other iterable objects
 ---
-# For
+
+## For
 
 The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
+
+### Syntax
+
+The syntax of `for` loop in javascript is given below
 
 ```javascript
 for (initialization; end condition; change) {
@@ -13,12 +18,12 @@ for (initialization; end condition; change) {
 }
 ```
 
-## Explanation:
+### Explanation:
 
-* In the `initialization` part, executed before the first iteration, initialize your loop variable
-* In the `end codition` part, put a condition that may be checked before each iteration. The moment the condition becomes `false`, the loop ends.
-* In the `change` part, tell the program how to update the loop variable.
-Let's see how to execute the same code ten-times using a `for` loop:
+- In the `initialization` part, executed before the first iteration, initialize your loop variable
+- In the `end codition` part, put a condition that may be checked before each iteration. The moment the condition becomes `false`, the loop ends.
+- In the `change` part, tell the program how to update the loop variable.
+  Let's see how to execute the same code ten-times using a `for` loop:
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
@@ -28,42 +33,74 @@ for (let i = 0; i < 10; i = i + 1) {
 
 > _**Note**_: `i = i + 1` can be written `i++`.
 
-To loop through the properties of an object or an array `for in` loop can also be used.
+## ```for...in``` loop
+
+To loop through the enumerable properties of an object `for in` loop can be used. For each distinct property, JavaScript executes the specified statements.
+
+### Syntax
 
 ```javascript
-for (key in object) {
-  // code block to be executed
+for (variable in object) {
+  // iterate each property in the object
 }
 ```
 
-Examples of `for in` loop for an object and array is shown below:
+### Example
+
+Let use suppose we have following object:
 
 ```javascript
-const person = {fname:"John", lname:"Doe", age:25};
+const person = {
+  fname: "John",
+  lname: "Doe",
+  age: 25,
+};
+```
+
+Then, with the help of `for in` loop we can iterate over the `person` object to access it property like `fname`, `lname` and `age` as shown below.
+
+```javascript
 let info = "";
 for (let x in person) {
-  info += person[x];
+  console.log(person[x]);
 }
-
-// Result: info = "JohnDoe25"
-
-const numbers = [45, 4, 9, 16, 25];
-let txt = "";
-for (let x in numbers) {
-  txt += numbers[x];
-}
-
-// Result: txt = '45491625'
 ```
 
-The value of iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for of` statement.&#x20;
+The output of above code snippet will be:
+
+```pseudo
+John
+Doe
+25
+```
+
+> **Note: The iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for in` statement.&#x20;**
 
 ```javascript
-let language = "JavaScript";
-let text = "";
-for (let x of language) {
-  text += x;
+// Example with Arrays
+const myArray = [1, 2, 3, 4, 5];
+for (const item of myArray) {
+  console.log(item);
 }
 
-// Result: language = 'JavaScript'
+// Example with Strings
+const myString = "Hello, World!";
+for (const char of myString) {
+  console.log(char);
+}
+
+// Example with Maps
+const myMap = new Map();
+myMap.set("name", "John");
+myMap.set("age", 30);
+
+for (const [key, value] of myMap) {
+  console.log(key, value);
+}
+
+// Example with NodeLists (HTML elements)
+const paragraphs = document.querySelectorAll("p");
+for (const paragraph of paragraphs) {
+  console.log(paragraph.textContent);
+}
 ```
