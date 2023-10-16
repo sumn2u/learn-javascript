@@ -1,6 +1,5 @@
 ---
 chapter: 24
-pageNumber: 
 ---
 # Filesystem
 Filesystem operations in JavaScript are used to interact with the file system of the host environment, which can be a web browser (client-side JavaScript) or a server (Node.js). JavaScript provides various APIs and methods for reading from and writing to the file system. These operations are essential for tasks like saving data, reading configuration files, and processing user-uploaded files. Below is an overview of filesystem operations in JavaScript:
@@ -11,7 +10,7 @@ In Node.js, I/O operations can be performed asynchronously, meaning that they do
 ##### Read:
 In this example, you are using the fs.readFile function to read data from the 'test.txt' file asynchronously. It takes a callback function that gets executed when the read operation is finished. The console.log("This gets printed at First") line is executed immediately after initiating the read operation, and it doesn't wait for the reading to complete.
 
-```c
+```javascript
 const fs= require('fs');
 //async
 //non  blokcing i/0 thats why runs at last as ti takes moer time
@@ -24,7 +23,7 @@ console.log("This gets printed at First")
 #### Write:
 Here, you use fs.writeFile to write data to the 'test.txt' file asynchronously. The callback function is executed when the write operation is finished. It prints "This runs after writing in a file: written to file" after the write operation is complete.
 
-```c
+```javascript
 fs.writeFile("test.txt","mahima is good girl",()=>{
 
     console.log("This runs after writting in a file: written to file")
@@ -38,7 +37,7 @@ Synchronous I/O operations block the execution of the program until the operatio
 #### Read:
 The fs.readFileSync function is used for synchronous file reading. It blocks the execution until the entire file is read, and then it continues with the rest of the code. This is generally not recommended because it can cause the program to become unresponsive during the file read.
 
-```c
+```javascript
 const a=fs.readFileSync("test.txt") //nodejs intetntionally blocks
 console.log(a.toString())
 console.log("At last")
@@ -49,7 +48,7 @@ fs.writeFileSync is used for synchronous file writing. It blocks the program's e
 
 
 
-```c
+```javascript
 fs.writeFileSync("test.txt","mahima is good girl",()=>{    
     console.log("This is sync: intentionally process is blocked ")
 }) 
