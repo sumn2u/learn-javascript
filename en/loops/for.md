@@ -33,7 +33,7 @@ for (let i = 0; i < 10; i = i + 1) {
 
 > _**Note**_: `i = i + 1` can be written `i++`.
 
-## ```for...in``` loop
+## `for...in` loop
 
 To loop through the enumerable properties of an object `for in` loop can be used. For each distinct property, JavaScript executes the specified statements.
 
@@ -95,6 +95,76 @@ myMap.set("name", "John");
 myMap.set("age", 30);
 
 for (const [key, value] of myMap) {
+  console.log(key, value);
+}
+
+// Example with NodeLists (HTML elements)
+const paragraphs = document.querySelectorAll("p");
+for (const paragraph of paragraphs) {
+  console.log(paragraph.textContent);
+}
+```
+
+## `for...of` loop
+
+The `for...of` loop was introduced in the later versions of \*\*JavaScript ES6. The `for...of` statement executes a loop that operates on a sequence of values sourced from an iterable objects such as Array, String, TypedArray, Map, Set, NodeList(and other DOM collections).
+
+### Syntax
+
+The syntax of the `for...of` loop is:
+
+```javascript
+for (element of iterable) {
+  //body of for...of
+}
+```
+
+Here,
+
+- **iterable** - an iterable object
+- **element** - items in the iterable
+
+In plain English, you can read the above code as: \*for every element in the iterable, run the body of the loop.
+
+### Examples
+
+Let use suppose we have following object:
+
+```javascript
+const person = ["John Doe", "Albert", "Neo"];
+```
+
+Then, with the help of `for of` loop we can iterate over the `person` object to access it individual element as shown below.
+
+```javascript
+let info = "";
+for (let x of person) {
+  console.log(x);
+}
+```
+
+The output of above code snippet will be:
+
+```pseudo
+John Doe
+Albert
+Neo
+```
+
+The use of `for...of` loop with string, maps and nodelist are given below:
+
+```js
+// Example with Strings
+const text = "Hello, World!";
+for (const char of text) {
+  console.log(char);
+}
+
+// Example with Maps
+const person = new Map();
+person.set("name", "John");
+person.set("age", 30);
+for (const [key, value] of person) {
   console.log(key, value);
 }
 
