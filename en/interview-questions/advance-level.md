@@ -1,3 +1,4 @@
+
 ---
 layout: editorial
 title: Advanced JavaScript Interview Questions
@@ -251,3 +252,76 @@ const functions = [greet, double];
 
 ---
 
+
+## 9. Storing data in browser
+
+### A. Local storage and Session storage
+
+### 9.1 what are the key differences between Local Storage and Session Storage?
+
+**Answer:**
+
+Web Storage is a web API that provides two mechanisms for storing data in a web browser: Local Storage and Session Storage. The key differences are:
+
+* Lifetime: Local Storage data persists even after the browser is closed, while Session Storage data is only available for the duration of the page session.
+* Scope: Local Storage data is accessible across multiple windows and tabs from the same origin, whereas Session Storage data is limited to the current page or tab.
+* Storage Limit: Local Storage typically has a larger storage limit (around 5-10 MB) compared to Session Storage (about 5-10 MB as well).
+
+### 9.2 How do you store data in Local Storage and Session Storage using JavaScript?
+
+**Answer:** 
+
+You can use the localStorage and sessionStorage objects to store data. Here's an example of storing data in Local Storage:
+
+`localStorage.setItem('username', 'JohnDoe');`
+
+To store data in Session Storage, replace localStorage with `sessionStorage.`
+
+
+### 9.3 How can you clear or remove data from Local Storage and Session Storage?
+
+**Answer:**
+
+You can remove an item from storage using the removeItem method. To clear all items, you can use the clear method. For example:
+
+Remove an item : 
+`localStorage.removeItem('username');`
+
+Clear all items : 
+`localStorage.clear();`
+
+### 9.4 Explain the security concerns associated with Web Storage.
+
+**Answer:**
+
+Web Storage is domain-specific, meaning that data is accessible only from the same domain that stored it. However, there are security concerns related to storing sensitive information in Web Storage. Data is not encrypted, and it's vulnerable to cross-site scripting (XSS) attacks, where malicious scripts can access and modify the stored data.
+
+### B. IndexDB
+
+IndexedDB can be thought of as a “localStorage on steroids”. It’s a simple key-value database, powerful enough for offline apps, yet simple to use.
+
+### 9.5 What is IndexDB, and how does it differ from Web Storage (Local Storage and Session Storage)?
+
+**Answer:**
+
+IndexDB is a low-level JavaScript-based database for storing large amounts of structured data. It differs from Web Storage in several ways:
+* Data Structure: IndexedDB stores structured data, while Web Storage stores key-value pairs.
+* Storage Limit: IndexedDB typically offers a larger storage limit (often in megabytes) compared to the limited storage of Web Storage.
+* API Complexity: IndexedDB has a more complex API, requiring developers to define a database schema and work with transactions.
+
+### 9.6 How do you open a database and create an object store in IndexedDB using JavaScript?
+
+**Answer:**
+
+You can open a database and create an object store like this:
+
+Open a database (or create if it doesn't exist) :  
+
+`const request = indexedDB.open('myDatabase', 1);`
+
+Create an object store : 
+```sh
+request.onupgradeneeded = (event) => {
+  const db = event.target.result;
+  db.createObjectStore('myStore', { keyPath: 'id' });
+};```
