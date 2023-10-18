@@ -110,3 +110,4 @@
   - [Behavioral Level](design-patterns/behavioral-patterns.md)
 - [References](References.md)
 - [Resources](resources.md)
+- [Contributors](Contributions.md)
