@@ -3,7 +3,7 @@ pageNumber: V
 chapter: 
 ---
 
-### Project Admin 
+### Maintainer
 ---
 
 <table>
@@ -19,7 +19,7 @@ chapter:
 </table>
 
 
-### OUR VALUABLE CONTRIBUTORS
+### Contributors
 ---
 
 [![](https://contributors-img.web.app/image?repo=sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/graphs/contributors)
