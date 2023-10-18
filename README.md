@@ -96,7 +96,7 @@ Contributions to this project are welcome. If you want to contribute, follow the
 
 **Tips**
 
-*To Add new documents* : Create `*.md` file under `<lang>/chapter-<n>/` directory.
+*For Adding new documents* : Create `*.md` file under `<lang>/chapter-<n>/` directory.
 
 ## Contributors
 We would like to thank the open-source community for their valuable contributions to this project
