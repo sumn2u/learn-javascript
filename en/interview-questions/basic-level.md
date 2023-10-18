@@ -71,6 +71,12 @@ There are many advantages of javascript. Some of them are
 - Web pages now have more functionality because of Javascript.
 - To the end-user, Javascript is quite quick.
 
+### 1.8. What is the ‘this’ keyword in JavaScript? 
+
+**Answer:**
+
+The Keyword ‘this’ in JavaScript is used to call the current object as a constructor to assign values to object properties.
+
 ## 2. Functions
 
 ### 2.1. How do you create a function in JavaScript?
@@ -246,6 +252,65 @@ Normally, we declare a function and call it, however, anonymous functions may be
 ->test () and exec () are RegExp expression methods used in javascript. 
 ->We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
 ->We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+
+### 2.7.  What is the difference between Function declaration and Function expression?
+
+**Answer**
+
+->**Function declaration**: 
+a).Declared as a separate statement within the main JavaScript code .
+b).Can be called before the function is defined.
+c).Offers better code readability and better code organization.
+d).Example:
+function abc() {
+    return 5;
+}
+->**Function expression**:
+a).Created inside an expression or some other construct.
+b).Created when the execution point reaches it; can be used only after that.
+c).Used when there is a need for a conditional declaration of a function.
+d).Example:
+var a = function abc() {
+    return 5;
+}
+
+### 2.8. What are the arrow functions in JavaScript?
+
+**Answer**
+
+->Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:
+const helloWorld = () => {
+  console.log("hello world!");
+};
+
+### 2.9. Passed by value and passed by reference :
+
+**Answer**
+
+->Passed By Values Are Primitive Data Types.  
+Consider the following example:
+
+Here, the a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b=a code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
+
+Example:
+
+var a = 432;
+
+var b = a;
+
+Passed_by_values_new
+
+#Passed by References Are Non-primitive Data Types.
+Consider the following example:
+
+The reference of the 1st variable object i.e. ‘var obj’ is passed through the location of another variable i.e. ‘var obj2’ with the help of an assigned operator.
+
+Example: 
+
+var obj = { name: "Raj", surname: "Sharma" };
+
+var obj2 = obj;
+
 
 # 3. Data Types and Operator
 
@@ -685,4 +750,18 @@ JavaScript is an interpreted language, not a compiled language. An interpreter i
 **Answer:**
 
 Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+
+### 6.6. difference between exec () and test () methods
+
+**Answer**
+
+-> exec():
+1) It is an expression method in JavaScript that is used to search a string with a specific pattern. 
+2) Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.
+
+-> test ()
+1) It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
+2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
+
+
 
