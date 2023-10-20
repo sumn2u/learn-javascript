@@ -807,4 +807,65 @@ Yes, JavaScript is a case sensitive language. The language keywords, variables, 
 2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
 
 
+## 7.JSON
 
+### 7.1. What is JSON ?
+
+**Answer**
+
+JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+
+### 7.2. What are the syntax rules of JSON ?
+
+**Answer** 
+
+Below are the list of syntax rules of JSON
+
+* i. The data is in name/value pairs
+* ii. The data is separated by commas
+* iii. Curly braces hold objects
+* iv. Square brackets hold arrays
+
+### 7.3. What is the purpose JSON stringify ?
+
+**Answer** 
+
+When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+
+```js
+var userJSON = { name: "John", age: 31 };
+var userString = JSON.stringify(userJSON);
+console.log(userString); //"{"name":"John","age":31}"
+```
+
+### 7.4. How do you parse JSON string ?
+
+**Answer** 
+
+When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+
+```js
+var userString = '{"name":"John","age":31}';
+var userJSON = JSON.parse(userString);
+console.log(userJSON); // {name: "John", age: 31}
+```
+
+### 7.5. Why do you need JSON ?
+
+**Answer** 
+
+When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+
+### 7.6. How do you define JSON arrays ?
+
+**Answer** 
+
+JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+```js
+"users":[
+  {"firstName":"John", "lastName":"Abrahm"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Shane", "lastName":"Warn"}
+]
+```
