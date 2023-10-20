@@ -1,12 +1,12 @@
 ---
 layout: editorial
 title: Behavioral Design Patterns in Javascript
-description: Focus on how objects communicate with each other and assigning responsibilites to them.
+description: Focus on how objects communicate with each other and assigning responsibilities to them.
 ---
 
 # Behavioral Design Patterns
 
-Focus on how objects communicate with each other and assigning responsibilites to them.
+Focus on how objects communicate with each other and assigning responsibilities to them.
 
 ## 1. Chain of Responsibility 
 
@@ -107,7 +107,7 @@ console.log(orderHandler.processRequest('Tea'));  // Output: Sorry, we do not se
 
 ## 2. Command 
 
-The command design pattern is a behavioral design pattern that allows you to encapsulate a request as an object, that object will contain all the necessary information for the request's execution. This pattern allows for the parameterization and queing of requests and provides the ability to undo operations. 
+The command design pattern is a behavioral design pattern that allows you to encapsulate a request as an object, that object will contain all the necessary information for the request's execution. This pattern allows for the parameterization and queuing of requests and provides the ability to undo operations. 
 
 ## 2.1. Components of the Command 
 
@@ -119,16 +119,16 @@ This is the object that requests the execution of a command. It has a reference 
 
 This is the interface or abstract class that declares the `execute` method. It defines the common method that concrete command classes should implement.
 
-*Reciever* 
+*Receiver* 
 
-This is an object that performs the actual work when the `execute` method of a command is called. The reciver knows how to carry out the action associate with a specific command. 
+This is an object that performs the actual work when the `execute` method of a command is called. The receiver knows how to carry out the action associate with a specific command. 
 
 ## 2.2. Benefits of the Command 
 
 
 **Flexibility and Extensibility**
 
-This pattern allows for easy addition of new commands without needing to modify the invoker or reciever. 
+This pattern allows for easy addition of new commands without needing to modify the invoker or receiver. 
 
 **Undo and Redo Operations**
 
@@ -233,7 +233,7 @@ Defines an interface or class that interprets the abstract syntax tree created b
 
 *client*
 
-Builds the abstract syntax tree using terminal and non-terminal expressions based on the language's grammar. The client then uses the interperter to interpret the expression. 
+Builds the abstract syntax tree using terminal and non-terminal expressions based on the language's grammar. The client then uses the interpreter to interpret the expression. 
 
 ## 3.2. Benefits of Interpreters
 
@@ -340,11 +340,11 @@ Implements Iterator interface or class with methods like `first()`,`next()`. The
 
 *Items*
 
-These are the indiviual objects of the collection that the Iterator will traverse 
+These are the individual objects of the collection that the Iterator will traverse 
 
 ## 4.2. Benefits of iterators
 
-**Compatibility with Differnt Data Structures** 
+**Compatibility with Different Data Structures** 
 
 The Iterator pattern allows the same iteration logic to be applied to different data structures. 
 
@@ -432,7 +432,7 @@ The mediator manages central control over operations. It contains an interface f
 
 *Colleague*
 
-The colleages are the objects that are being mediated, each colleague has a reference to the mediator.
+The colleagues are the objects that are being mediated, each colleague has a reference to the mediator.
 
 ## 5.2. Benefits of the Mediator 
 
@@ -514,7 +514,7 @@ function run() {
 
 ## 6. Memento
 
-The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a seperate object that stores the state of the original object. 
+The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a separate object that stores the state of the original object. 
 
 ## 6.1. Components of the Memento 
 
@@ -542,7 +542,7 @@ Memento facilitates implementing undo and redo functionality easily. Since Memen
 
 **Improved Performance**
 
-Storing the object's state in a Memento allows for more efficient storage and retrival operations compared to other approaches. 
+Storing the object's state in a Memento allows for more efficient storage and retrieval operations compared to other approaches. 
 
 **Flexible Design** 
 
@@ -708,7 +708,7 @@ This is the object that encapsulates the State values and the associated behavio
 
 *Context*
 
-This is the object that maintains a reference to a State object that defines the current State. It also includes an interface that allows other State objects to change its current State to a differnt State.
+This is the object that maintains a reference to a State object that defines the current State. It also includes an interface that allows other State objects to change its current State to a different State.
 
 ## 8.2. Benefits of the State
 
@@ -824,7 +824,7 @@ This is an algorithm that implements the Strategy interface.
 
 *Context*
 
-This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy refrenced. 
+This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy referenced. 
 
 ## 9.2. Benefits of Strategy 
 
@@ -888,13 +888,13 @@ console.log('VIP customer price:', bookstore.calculatePrice(50)); // Outputs: 40
 
 ## 10. Template Method 
 
-The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its sturcture. 
+The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its structure. 
 
 ## 10.1. Components of the Template Method 
 
 *Abstract Class*
 
-The abstract class is the template for the algorithm. It defines an interface for the client to invoke its method. It also contains all the functions that can be overriden by subclasses.
+The abstract class is the template for the algorithm. It defines an interface for the client to invoke its method. It also contains all the functions that can be overridden by subclasses.
 
 *Concrete Class*
 
@@ -990,7 +990,7 @@ mirrorlessCamera.capturePhoto();
 
 ## 11. Visitor 
 
-The visitor design pattern is a behavioral design pattern that allows you to seperate algorithms or operations from the object on which they operate. 
+The visitor design pattern is a behavioral design pattern that allows you to separate algorithms or operations from the object on which they operate. 
 
 ## 11.1 Components of the Visitor 
 

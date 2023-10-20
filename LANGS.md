@@ -2,3 +2,4 @@
 - [नेपाली](np/)
 - [Türkiye](tr/)
 - [Français](fr/)
+- [German](de/)

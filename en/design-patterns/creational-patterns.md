@@ -204,7 +204,7 @@ macCheckbox.render();  // Output: Rendering a Mac checkbox
 
 ## 3. Builder 
 
-The goal of a builder is to sepreate the construction of an object from its representation. What the builder pattern does is basically allow the client to construct a complex object by just passing in the type and content of the object only. The client does not have to worry about the construction details.
+The goal of a builder is to separate the construction of an object from its representation. What the builder pattern does is basically allow the client to construct a complex object by just passing in the type and content of the object only. The client does not have to worry about the construction details.
 
 ## 3.1. The 4 Components of a Builder
 
@@ -218,7 +218,7 @@ Implements methods from the builder interface to construct parts of the object
 
 *Director (Optional)* 
 
-This is not always necessary but can help with constructing the final object using a specfic construction process 
+This is not always necessary but can help with constructing the final object using a specific construction process 
 
 *Object* 
 
@@ -316,7 +316,7 @@ In javascript, a constructor is not necessary for implementing the singleton pat
 
 Singletons can help reduce the number of global variables required in your program, promoting better code organization and maintainability. 
 
-**Memory Efficent**
+**Memory Efficient**
 
 Because a Singleton ensures there is only ever one instance that exists at a time, memory is saved because you avoid having multiple instances of the same class.
 
@@ -326,7 +326,7 @@ Singletons provide a global point of access to the instance. This allows other p
 
 **Resource Sharing**
 
-Singletons are especially useful when it comes to tasks like managing shared resources. Singletons can be used to manage database connections, file handlers, and even thread pools, ensuring that these resources are shared efficiently acrosss the application. 
+Singletons are especially useful when it comes to tasks like managing shared resources. Singletons can be used to manage database connections, file handlers, and even thread pools, ensuring that these resources are shared efficiently across the application. 
 
 ## 4.3. Example 
 
@@ -363,7 +363,7 @@ console.log(singletonInstance1 === singletonInstance2); // Outputs: true
 
 ## 5. Prototype 
 
-The prototype pattern is an alternative way to implement inheritance but the main differnce is instead of inheriting properties from a class, objects inherit properties from a prototype object. The prototype pattern is also reffered to as the properties pattern and Javascript has native support for protoypes. In Javascript, each object has a prototype (reference to another object). When you attempt to access a property that does not exist in the object itself Javascript will look for it in the object's prototype and continue up the prototype chain until it finds it or reaches the end of the chain. 
+The prototype pattern is an alternative way to implement inheritance but the main difference is instead of inheriting properties from a class, objects inherit properties from a prototype object. The prototype pattern is also referred to as the properties pattern and Javascript has native support for prototypes. In Javascript, each object has a prototype (reference to another object). When you attempt to access a property that does not exist in the object itself Javascript will look for it in the object's prototype and continue up the prototype chain until it finds it or reaches the end of the chain. 
 
 ## 5.1. Components of the Prototype Pattern
 
@@ -392,11 +392,11 @@ The Prototype pattern allows you to define a set of default properties and metho
 
 **Flexible Object Creation**
 
-Objects created using the Prototype pattern can be easily customized by modifying their properies or adding new properties specific to the instance.
+Objects created using the Prototype pattern can be easily customized by modifying their properties or adding new properties specific to the instance.
 
 **Dynamic Runtime Changes** 
 
-Changes made to the prototype object at runtime are reflected in all instances based on the prototype. This behavior allows for updates and modifications to the prototype, impcating all instances sharing the same prototype. 
+Changes made to the prototype object at runtime are reflected in all instances based on the prototype. This behavior allows for updates and modifications to the prototype, impacting all instances sharing the same prototype. 
 
 ## 5.3. Example 
 
