@@ -751,6 +751,49 @@ JavaScript is an interpreted language, not a compiled language. An interpreter i
 
 Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
+
+
+## 6.Miscellaneous
+
+### 6.1. What is a strict mode in JavaScript ?
+
+**Answer:**
+
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+
+### 6.2. What is null value in JavaScript ?
+
+**Answer:**
+
+The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
+
+```js
+var user = null;
+console.log(typeof user); //object
+```
+
+### 6.3. What is eval in JavaScript ?
+
+**Answer:**
+
+The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+
+```js
+console.log(eval("1 + 2")); //  3
+```
+
+### 6.4. Is JavaScript a compiled or interpreted language ?
+
+**Answer:**
+
+JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+
+### 6.5. Is JavaScript a case-sensitive language ?
+
+**Answer:**
+
+Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+
 ### 6.6. difference between exec () and test () methods
 
 **Answer**
@@ -764,4 +807,65 @@ Yes, JavaScript is a case sensitive language. The language keywords, variables, 
 2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
 
 
+## 7.JSON
 
+### 7.1. What is JSON ?
+
+**Answer**
+
+JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+
+### 7.2. What are the syntax rules of JSON ?
+
+**Answer** 
+
+Below are the list of syntax rules of JSON
+
+* i. The data is in name/value pairs
+* ii. The data is separated by commas
+* iii. Curly braces hold objects
+* iv. Square brackets hold arrays
+
+### 7.3. What is the purpose JSON stringify ?
+
+**Answer** 
+
+When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+
+```js
+var userJSON = { name: "John", age: 31 };
+var userString = JSON.stringify(userJSON);
+console.log(userString); //"{"name":"John","age":31}"
+```
+
+### 7.4. How do you parse JSON string ?
+
+**Answer** 
+
+When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+
+```js
+var userString = '{"name":"John","age":31}';
+var userJSON = JSON.parse(userString);
+console.log(userJSON); // {name: "John", age: 31}
+```
+
+### 7.5. Why do you need JSON ?
+
+**Answer** 
+
+When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+
+### 7.6. How do you define JSON arrays ?
+
+**Answer** 
+
+JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+```js
+"users":[
+  {"firstName":"John", "lastName":"Abrahm"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Shane", "lastName":"Warn"}
+]
+```
