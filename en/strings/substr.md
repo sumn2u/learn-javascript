@@ -52,6 +52,7 @@ function func() {
 	console.log(sub_str);
 }
 
+// Function calling
 func();
 
 
