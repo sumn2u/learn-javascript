@@ -55,11 +55,72 @@ var a = "Hello World!";
 ### 1.6. What are the types of errors in javascript?
 
 **Answer:**
-There are two types of errors in javascript.
+There are seven types of errors in javascript.
 
-1. **Syntax error**: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+1. **Syntax error** - The error occurs when you use a predefined syntax incorrectly.
+```js
+const func = () =>
+console.log(hello)
+}
+```
+2. **Reference Error** - In a case where a variable reference can't be found or hasn't been declared, then a Reference error occurs.
+```js
+console.log(x);
+```
+3. **Type Error** - An error occurs when a value is used outside the scope of its data type.
+```js
+let num = 15;
+console.log(num.split(""));
+```
+4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block
+```js
+try{
+  throw new EvalError("'Throws an error'")
+}catch(error){
+  console.log(error.name, error.message)
+}
+```
+5. **RangeError** - There is an error when a range of expected values is required
+```js
+const checkRange = (num)=>{
+  if (num < 30) throw new RangeError("Wrong number");
+  return true
+}
 
-2. **Logical error**: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
+checkRange(20);
+```
+6. **URI Error** - When the wrong character(s) are used in a URI function, the error is called uri error
+```js
+console.log(decodeURI("https://www.educative.io/shoteditor"))
+console.log(decodeURI("%sdfk"));
+```
+7. **Internal Error** - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.
+```js
+switch(condition) {
+ case 1:
+ ...
+ break
+ case 2:
+ ...
+ break
+ case 3:
+ ...
+ break
+ case 4:
+ ...
+ break
+ case 5:
+ ...
+ break
+ case 6:
+ ...
+ break
+ case 7:
+ ...
+ break
+ ... up to 500 cases
+ }
+```
 
 ### 1.7. Mention some advantages of javascript.
 
