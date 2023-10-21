@@ -61,7 +61,9 @@ const match = regex.test(str);
 console.log(match); // true
 ```
 
-* `m` - multiline matching 👇
+* `m` - multiline matching 
+
+Example:
 
 ```javascript
 const str = "This is a\nmultiline string.";
