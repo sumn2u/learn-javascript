@@ -3,3 +3,4 @@
 - [Türkiye](tr/)
 - [Français](fr/)
 - [Deutsch](de/)
+- [Indonesian](id/)
