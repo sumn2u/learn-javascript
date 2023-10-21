@@ -68,7 +68,7 @@ for (let x in person) {
 
 Hasil dari potongan kode di atas akan:
 
-```pseudo
+```javascript
 John
 Doe
 25
@@ -145,7 +145,7 @@ for (let x of person) {
 
 Hasil dari potongan kode di atas akan:
 
-```pseudo
+```javascript
 John Doe
 Albert
 Neo

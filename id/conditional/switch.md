@@ -1,7 +1,7 @@
 ---
 bab: 5
 nomor halaman: 32
-keterangan: `Switch` adalah pernyataan kondisional yang melakukan tindakan berdasarkan berbagai kondisi yang berbeda. Ini menggunakan perbandingan ketat (strict comparison) untuk mencocokkan kondisi dan mengeksekusi blok kode dari kondisi yang sesuai.
+keterangan: switch adalah pernyataan kondisional yang melakukan tindakan berdasarkan berbagai kondisi yang berbeda. Ini menggunakan perbandingan ketat (strict comparison) untuk mencocokkan kondisi dan mengeksekusi blok kode dari kondisi yang sesuai.
 ---
 
 # Switch

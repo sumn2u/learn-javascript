@@ -1,7 +1,7 @@
 ---
 bab: 19
 nomor halaman: 94
-keterangan: Hoisting adalah perilaku default dalam JavaScript yang memindahkan deklarasi ke bagian atas. Saat menjalankan kode, itu menciptakan konteks eksekusi global: pembuatan dan eksekusi. Pada tahap penciptaan, JavaScript memindahkan deklarasi variabel dan fungsi ke bagian atas halaman, yang dikenal sebagai hoisting.
+keterangan: Hoisting adalah perilaku default dalam JavaScript yang memindahkan deklarasi ke bagian atas. Saat menjalankan kode, itu menciptakan konteks eksekusi global  pembuatan dan eksekusi. Pada tahap penciptaan, JavaScript memindahkan deklarasi variabel dan fungsi ke bagian atas halaman, yang dikenal sebagai hoisting.
 ---
 
 # Hoisting

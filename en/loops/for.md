@@ -68,7 +68,7 @@ for (let x in person) {
 
 The output of above code snippet will be:
 
-```pseudo
+```javascript
 John
 Doe
 25
@@ -145,7 +145,7 @@ for (let x of person) {
 
 The output of above code snippet will be:
 
-```pseudo
+```javascript
 John Doe
 Albert
 Neo
