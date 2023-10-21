@@ -131,4 +131,21 @@ The advantages of using arrow functions in JavaScript include shorter syntax, im
 Arrow functions are commonly used for object methods, event listeners, callbacks, and other functions that require shorter, more concise syntax.
 
 
+## Temporal Dead Zone
+
+### What is the Temporal Dead Zone in ES6?
+ 
+ **Answer:** 
+
+In ES6 let and const are hoisted (like var , class and function ), but there is a period between entering scope 
+and being declared where they cannot be accessed. This period is the temporal dead zone (TDZ)
+
+```javascript
+//console.log(aLet)  // would throw ReferenceError 
+let aLet; 
+console.log(aLet); // undefined 
+aLet = 10; 
+console.log(aLet); // 10
+```
+
 
