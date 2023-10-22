@@ -47,6 +47,7 @@ const matches = str.match(regex);
 
 console.log(matches); // ["Hello", "hello"]
 ```
+
 * `i` - case insensitive search
 
 Example :
@@ -63,7 +64,7 @@ console.log(match); // true
 
 * `m` - multiline matching 
 
-Example:
+Example :
 
 ```javascript
 const str = "This is a\nmultiline string.";
