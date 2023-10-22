@@ -1,11 +1,11 @@
 ---
 chapter: 9
 pageNumber: 57
-description: An object is a composite data type that allows you to store and organize data in key-value pairs. Each key-value pair in an object is referred to as a property. Properties are used to represent characteristics, attributes, or features of the object.
+description: Un objeto es un tipo de datos compuesto que le permite almacenar y organizar datos en pares clave-valor. Cada par clave-valor de un objeto se denomina propiedad. Las propiedades se utilizan para representar características, atributos o rasgos del objeto.
 ---
-# Properties
+# Propiedades
 
-Object's property is a `propertyName`: `propertyValue` pair, where **property name can be only a string**. If it's not a string, it gets casted into a string. You can specify properties **when creating** an object **or later**. There may be zero or more properties separated by commas.
+La propiedad del objeto es un par `propertyName`:`propertyValue`, donde **el nombre de propiedad puede ser solo una cadena**. Si no es una cadena, se convierte en una cadena. Puede especificar propiedades **al crear** un objeto **o después**. Puede haber cero o más propiedades separadas por comas.
 
 ```javascript
 let language = {
@@ -16,30 +16,30 @@ let language = {
     firstName: "Brendan",
     lastName: "Eich",
   },
-  // Yes, objects can be nested!
+  // ¡Sí, los objetos se pueden anidar!
   getAuthorFullName: function () {
     return this.author.firstName + " " + this.author.lastName;
   },
-  // Yes, functions can be values too!
+  // Sí, ¡las funciones también pueden ser valores!
 };
 ```
 
-The following code demonstrates how to **get** a property's value.
+El siguiente código demuestra cómo **obtener** el valor de una propiedad.
 
 ```javascript
 let variable = language.name;
-// variable now contains "JavaScript" string.
+// variable ahora contiene una cadena "JavaScript".
 variable = language["name"];
-// The lines above do the same thing. The difference is that the second one lets you use litteraly any string as a property name, but it's less readable.
+// Las líneas de arriba hacen lo mismo. La diferencia es que el segundo te permite usar literalmente cualquier cadena como nombre de propiedad, pero es menos legible.
 variable = language.newProperty;
-// variable is now undefined, because we have not assigned this property yet.
+// variable ahora no está definida porque aún no hemos asignado esta propiedad.
 ```
 
-The following example shows how to **add** a new property **or change** an existing one.
+El siguiente ejemplo muestra cómo **agregar** una nueva propiedad **o cambiar** una existente.
 
 ```javascript
-language.newProperty = "new value";
-// Now the object has a new property. If the property already exists, its value will be replaced.
-language["newProperty"] = "changed value";
-// Once again, you can access properties both ways. The first one (dot notation) is recomended.
+language.newProperty = "nuevo valor";
+// Ahora el objeto tiene una nueva propiedad. Si la propiedad ya existe, se repondrá su valor.
+language["newProperty"] = "valor cambiado";
+// Una vez más, puede acceder a las propiedades en ambos sentidos. Se recomienda la primera (notación de puntos).
 ```

@@ -1,33 +1,33 @@
 ---
 chapter: 9
 pageNumber: 58
-description: Mutable means an object or data type can be changed after creation, while "immutable" means it cannot be changed. Mutable objects allow modifying their internal state, while immutable objects return new instances with changes, leaving the original unchanged.
+description: Mutable significa que un objeto o tipo de datos se puede cambiar después de su creación, mientras que "inmutable" significa que no se puede cambiar. Los objetos mutables permiten modificar su estado interno, mientras que los objetos inmutables devuelven nuevas instancias con cambios, dejando el original sin cambios.
 ---
 # Mutable
 
-The difference between objects and primitive values is that we can **change objects**, whereas primitive values are **immutable**.
+La diferencia entre objetos y valores primitivos es que podemos **cambiar objetos**, mientras que los valores primitivos son **inmutables**.
 
-For example:
+Por ejemplo:
 
 ```javascript
-let myPrimitive = "first value";
-myPrimitive = "another value";
-// myPrimitive now points to another string.
-let myObject = { key: "first value" };
-myObject.key = "another value";
-// myObject points to the same object.
+let myPrimitive = "primer valor";
+myPrimitive = "otro valor";
+// myPrimitive ahora apunta a otra cadena.
+let myObject = { key: "primer valor" };
+myObject.key = "otro valor";
+// myObject apunta al mismo objeto.
 ```
 
-You can add, modify, or delete properties of an object using the dot notation or the square bracket notation.
+Puede agregar, modificar o eliminar propiedades de un objeto utilizando la notación de puntos o la notación de corchetes.
 
 ```javascript
 let object = {};
-object.foo = 'bar'; // Add property 'foo'
-object['baz'] = 'qux'; // Add property 'baz'
-object.foo = 'quux'; // Modify property 'foo'
-delete object.baz; // Delete property 'baz'
+object.foo = 'bar'; // Agrega la propiedad 'foo'
+object['baz'] = 'qux'; // Agrega la propiedad 'baz'
+object.foo = 'quux'; // Modifica la propiedad 'foo'
+delete object.baz; // Borra la propiedad 'baz'
 ```
 
 {% hint style="warning" %}
-Primitive values (such as numbers and strings) are immutable, while objects (such as arrays and objects) are mutable.
+Los valores primitivos (como números y cadenas) son inmutables, mientras que los objetos (como matrices y objetos) son mutables.
 {% endhint %}

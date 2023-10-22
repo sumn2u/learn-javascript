@@ -1,16 +1,16 @@
 ---
 chapter: 8
 pageNumber: 54
-description: Higher order functions are functions that manipulate other functions. It possess considerable power as it enable functional composition, abstraction, and the capability to generate code that is both versatile and easily reusable.
+description: Las funciones de orden superior son funciones que manipulan otras funciones. Posee un poder considerable ya que permite la composición funcional, la abstracción y la capacidad de generar código que es versátil y fácilmente reutilizable.
 ---
-# Higher order
+# Funciones de orden superior
 
-Higher order functions are functions that manipulate other functions. For example, a function can take other functions as arguments and/or produce a function as its return value. Such _fancy_ functional techniques are powerful constructs available to you in JavaScript and other high-level languages like python, lisp, etc.
+Las funciones de orden superior son funciones que manipulan otras funciones. Por ejemplo, una función puede tomar otras funciones como argumentos y/o producir una función como valor de retorno. Estas técnicas funcionales _elegantes_ son construcciones poderosas disponibles en JavaScript y otros lenguajes de alto nivel como python, lisp, etc.
 
-We will now create two simple functions, `add_2` and `double`, and a higher order function called `map`. `map` will accept two arguments, `func` and `list` (its declaration will therefore begin `map(func,list)`), and return an array. `func` (the first argument) will be a function that will be applied to each of the elements in the array `list` (the second argument).
+Ahora crearemos dos funciones simples, `add_2` y `double`, y una función de orden superior llamada `map`. `map` aceptará dos argumentos, `func` y `list` (por lo tanto, su declaración comenzará con `map(func,list)`) y devolverá una matriz. `func` (el primer argumento) será una función que se aplicará a cada uno de los elementos de la matriz `list` (el segundo argumento).
 
 ```javascript
-// Define two simple functions
+// Define dos funciones simples
 let add_2 = function (x) {
   return x + 2;
 };
@@ -18,26 +18,26 @@ let double = function (x) {
   return 2 * x;
 };
 
-// map is cool function that accepts 2 arguments:
-//  func    the function to call
-//  list    a array of values to call func on
+// map es una función interesante que acepta 2 argumentos:
+//  func    la función a llamar
+//  list    una matriz de valores para llamar a la función
 let map = function (func, list) {
-  let output = []; // output list
+  let output = []; // lista de salida
   for (idx in list) {
     output.push(func(list[idx]));
   }
   return output;
 };
 
-// We use map to apply a function to an entire list
-// of inputs to "map" them to a list of corresponding outputs
+// Usamos map para aplicar una función a una lista completa
+// de entradas para "asignarlas" a una lista de salidas correspondientes
 map(add_2, [5, 6, 7]); // => [7, 8, 9]
 map(double, [5, 6, 7]); // => [10, 12, 14]
 ```
 
-The functions in the above example are simple. However, when passed as arguments to other functions, they can be composed in unforeseen ways to build more complex functions.
+Las funciones del ejemplo anterior son simples. Sin embargo, cuando se pasan como argumentos a otras funciones, se pueden componer de formas imprevistas para construir funciones más complejas.
 
-For example, if we notice that we use the invocations `map(add_2, ...)` and `map(double, ...)` very often in our code, we could decide we want to create two special-purpose list processing functions that have the desired operation baked into them. Using function composition, we could do this as follows:
+Por ejemplo, si notamos que utilizamos las invocaciones `map(add_2,...)` y `map(double,...)` muy a menudo en nuestro código, podríamos decidir que queremos crear dos listas de propósito especial. funciones de procesamiento que tienen incorporada la operación deseada. Usando la composición de funciones, podríamos hacer esto de la siguiente manera:
 
 ```javascript
 process_add_2 = function (list) {
@@ -50,19 +50,19 @@ process_add_2([5, 6, 7]); // => [7, 8, 9]
 process_double([5, 6, 7]); // => [10, 12, 14]
 ```
 
-Now let's create a function called `buildProcessor` that takes a function `func` as input and returns a `func`-processor, that is, a function that applies `func` to each input in list.
+Ahora creemos una función llamada `buildProcessor` que toma una función `func` como entrada y devuelve un procesador `func`, es decir, una función que aplica `func` a cada entrada en la lista.
 
 ```javascript
-// a function that generates a list processor that performs
+// una función que genera un procesador de listas que realiza
 let buildProcessor = function (func) {
   let process_func = function (list) {
     return map(func, list);
   };
   return process_func;
 };
-// calling buildProcessor returns a function which is called with a list input
+// llamar a buildProcessor devuelve una función que se llama con una entrada de lista
 
-// using buildProcessor we could generate the add_2 and double list processors as follows:
+// usando buildProcessor podríamos generar los procesadores add_2 y de lista doble de la siguiente manera:
 process_add_2 = buildProcessor(add_2);
 process_double = buildProcessor(double);
 
@@ -70,7 +70,7 @@ process_add_2([5, 6, 7]); // => [7, 8, 9]
 process_double([5, 6, 7]); // => [10, 12, 14]
 ```
 
-Let's look at another example. We'll create a function called `buildMultiplier` that takes a number `x` as input and returns a function that multiplies its argument by `x` :
+Veamos otro ejemplo. Crearemos una función llamada `buildMultiplier` que toma un número `x` como entrada y devuelve una función que multiplica su argumento por `x`:
 
 ```javascript
 let buildMultiplier = function (x) {

@@ -1,30 +1,29 @@
 ---
 chapter: 9
 pageNumber: 59
-description: A reference to an object is a value that points to the memory location where the object is stored. When an object is created, a memory space is allocated to store its properties and values. When we assign this object to a variable, that variable holds a reference to the memory location where the object is stored.
+description: Una referencia a un objeto es un valor que apunta a la ubicación de la memoria donde está almacenado el objeto. Cuando se crea un objeto, se asigna un espacio de memoria para almacenar sus propiedades y valores. Cuando asignamos este objeto a una variable, esa variable contiene una referencia a la ubicación de la memoria donde está almacenado el objeto.
 ---
-# Reference
+# Referencia
 
-Objects are **never copied**. They are passed around by reference. An object reference is a value that refers to an object. When you create an object using the `new` operator or object literal syntax, JavaScript creates an object and assigns a reference to it.
+Los objetos **nunca se copian**. Se transmiten por referencia. Una referencia de objeto es un valor que hace referencia a un objeto. Cuando crea un objeto utilizando el operador `new` o la sintaxis literal del objeto, JavaScript crea un objeto y le asigna una referencia.
+A continuación se muestra un ejemplo de creación de un objeto utilizando la sintaxis literal del objeto:
 
-Here's an example of creating an object using the object literal syntax:
-
-```css
+```javascript
 var object = {
   foo: 'bar'
 };
 ```
 
-Here's an example of creating an object using the `new` operator:
+Aquí hay un ejemplo de cómo crear un objeto usando el operador `new`:
 
-```typescript
+```javascript
 var object = new Object();
 object.foo = 'bar';
 ```
 
-When you assign an object reference to a variable, the variable simply holds a reference to the object, not the object itself. This means that if you assign the object reference to another variable, both variables will point to the same object.
+Cuando asigna una referencia de objeto a una variable, la variable simplemente contiene una referencia al objeto, no al objeto en sí. Esto significa que si asigna la referencia del objeto a otra variable, ambas variables apuntarán al mismo objeto.
 
-For example:
+Por ejemplo:
 
 ```javascript
 var object1 = {
@@ -33,33 +32,33 @@ var object1 = {
 
 var object2 = object1;
 
-console.log(object1 === object2); // Output: true
+console.log(object1 === object2); // Salida: true
 ```
 
-In the example above, both `object1` and `object2` are variables that hold references to the same object. The `===` operator is used to compare the references, not the objects themselves, and it returns `true` because both variables hold references to the same object.
+En el ejemplo anterior, tanto `object1` como `object2` son variables que contienen referencias al mismo objeto. El operador `===` se usa para comparar las referencias, no los objetos en sí, y devuelve `true` porque ambas variables contienen referencias al mismo objeto.
 
 {% hint style="info" %}
-You can use the `Object.assign()` method to create a new object that is a copy of an existing object.&#x20;
+Puede utilizar el método `Object.assign()` para crear un nuevo objeto que sea una copia de un objeto existente.
 {% endhint %}
 
-Following is an example of an object by reference.
+A continuación se muestra un ejemplo de un objeto por referencia.
 
 ```javascript
-// Imagine I had a pizza
+// Imagínate que comí una pizza
 let myPizza = { slices: 5 };
-// And I shared it with You
+// Y lo compartí contigo
 let yourPizza = myPizza;
-// I eat another slice
+// me como otra rebanada
 myPizza.slices = myPizza.slices - 1;
 let numberOfSlicesLeft = yourPizza.slices;
-// Now We have 4 slices because myPizza and yourPizza
-// reference to the same pizza object.
+// Ahora tenemos 4 porciones porque myPizza y yourPizza
+// referencia al mismo objeto pizza.
 let a = {},
   b = {},
   c = {};
-// a, b, and c each refer to a
-// different empty object
+// a, byc se refieren cada uno a a
+// objeto vacío diferente
 a = b = c = {};
-// a, b, and c all refer to
-// the same empty object
+// a, byc se refieren todos a
+// el mismo objeto vacío
 ```

@@ -2,46 +2,47 @@
 layout: editorial
 chapter: 8
 pageNumber: 53
-description: Functions are blocks of code that perform a specific task or a set of tasks. They are reusable units of code that can be called and executed at any point in a program. 
+description: Las funciones son bloques de código que realizan una tarea específica o un conjunto de tareas. Son unidades de código reutilizables que se pueden llamar y ejecutar en cualquier punto de un programa.
 ---
 
-# Chapter 8
-# Functions
+# Capítulo 8
 
-Functions are one of the most powerful and essential notions in programming. Functions like mathematical functions perform transformations, they take input values called **arguments** and **return** an output value. &#x20;
+## Funciones
 
-Functions can be created in two ways: using `function declaration` or `function expression` . The _function name_ can be omitted in `function expression` making it an `anonymous function`.  Functions, like variables, must be declared. Let's declare a function `double` that accepts an _argument_ called `x` and **returns** the double of x :
+Las funciones son una de las nociones más poderosas y esenciales en programación. Las funciones como las funciones matemáticas realizan transformaciones, toman valores de entrada llamados **argumentos** y **devuelven** un valor de salida.
+
+Las funciones se pueden crear de dos maneras: usando `declaración de función` o `expresión de función`. El _nombre de la función_ se puede omitir en la `expresión de función`, convirtiéndola en una `función anónima`. Las funciones, al igual que las variables, deben declararse. Declaremos una función `doble` que acepta un _argumento_ llamado `x` y **devuelve** el doble de x:
 
 ```javascript
-// an example of a function declaration
-function double(x) {
+// un ejemplo de una declaración de función
+function doble(x) {
   return 2 * x;
 }
 ```
 
-> _Note:_ the function above **may** be referenced before it has been defined.
+> _Nota:_ **se puede** hacer referencia a la función anterior antes de que se haya definido.
 
-Functions are also values in JavaScript; they can be stored in variables (just like numbers, strings, etc ...) and given to other functions as arguments :
+Las funciones también son valores en JavaScript; se pueden almacenar en variables (como números, cadenas, etc.) y darse a otras funciones como argumentos:
 
 ```javascript
-// an example of a function expression
+// un ejemplo de una expresión de función
 let double = function (x) {
   return 2 * x;
 };
 ```
 
-> _Note:_ the function above **may not** be referenced before it is defined, just like any other variable.
+> _Nota:_ **no se puede** hacer referencia a la función anterior antes de definirla, como cualquier otra variable.
 
 {% hint style="info" %}
-&#x20;A callback is a function passed as an argument to another function.
+Una retrollamada es una función que se pasa como argumento a otra función.
 {% endhint %}
 
-An arrow function is a compact alternative to traditional functions which has some semantic differences with some limitations. These function doesn't have their own bindings to `this`, `arguments` and `super`, and cannot be used as constructors. An example of an arrow function.
+Una función de flecha es una alternativa compacta a las funciones tradicionales que tiene algunas diferencias semánticas con algunas limitaciones. Estas funciones no tienen sus propios enlaces a `this`, `arguments` y `super`, y no pueden usarse como constructores. Un ejemplo de una función de flecha:
 
 ```javascript
 const double =  (x) =>  2 * x;
 ```
 
 {% hint style="warning" %}
-The `this` keyword in the arrow function represents the object that defined the arrow function.&#x20;
+La palabra clave `this` en la función de flecha representa el objeto que definió la función de flecha.
 {% endhint %}
