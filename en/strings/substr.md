@@ -39,7 +39,9 @@ func();
 
 //Output
 a great day.
+```
 
+```javascript
 //Example 2: 
 // JavaScript to illustrate substr() method
 
@@ -59,3 +61,5 @@ func();
 
 //Output
 a gre
+
+```
