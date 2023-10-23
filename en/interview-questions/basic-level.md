@@ -618,6 +618,15 @@ A promise is an object that may produce a single value sometime in the future: e
 
 Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
+### 4.11. Explain equality in JavaScript ?
+
+**Answer:**
+
+JavaScript provides two types of equality operators: strict equality (===) and loose equality (==)
+
+- Strict Equality (===): This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
+
+- Loose Equality (==): This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
 
 
 ## 5. Object
