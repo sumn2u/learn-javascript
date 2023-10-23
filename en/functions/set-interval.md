@@ -27,6 +27,20 @@ setInterval(repeatSaying, 2000, "...");
 
 As you can see from this example, after you put the function and interval for the function, you can set the values of the function parameters inside set interval. 
 
-## Clear Interval
 
+## Clear Interval
+You can use the `clearInterval()` method to remove a set interval with a specefic variable name or ID. As an example based on the previous one let's store set interval into a variable named `intervalTime`, however, right after our variable we'll call it inside clear interval by writing `clearInterval(intervalTime).`
+
+```js
+function repeatSaying(el) {
+console.log("And again!" + el);
+}
+
+var interval = setInterval(repeatSaying, 2000, "...");
+
+clearInterval(interval);
+//The clear Interval method stops setInterval
+```
+
+When this code is run, you'll see that there is no output. This is because `setInterval` was the only thing calling the `repeatSaying` function, but since it was removed by `clearInterval` it no longer is called. Even if it was called seperately using `repeatSaying()` it would only run once because clear Interval stops it from repeating.
 
