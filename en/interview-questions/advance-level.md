@@ -1,4 +1,3 @@
-
 ---
 layout: editorial
 title: Advanced JavaScript Interview Questions
