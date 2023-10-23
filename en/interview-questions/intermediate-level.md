@@ -148,4 +148,75 @@ aLet = 10;
 console.log(aLet); // 10
 ```
 
+## Truthy and Falsy
 
+### What are Truthy and Falsy Values in JavaScript?
+ 
+ **Answer:** 
+
+In JavaScript, "truthy" and "falsy" are terms used to describe how values are evaluated in Boolean contexts, such as conditions in if statements and loops. Understanding truthy and falsy values is crucial when working with conditional logic.
+
+# Falsy Values:
+
+- false: The Boolean value false.
+- 0: The numeric value zero.
+- "": An empty string.
+- null: A special value indicating the absence of an object.
+- undefined: A variable that has not been assigned a value.
+- NaN: Stands for "Not-a-Number" and represents an invalid number.
+- When any of these values are used in a Boolean context, they are treated as "falsy," meaning they are considered equivalent to false.
+
+Example:
+```javascript
+if (false) {
+    // This code block won't execute because false is falsy.
+}
+
+if (0) {
+    // This code block won't execute because 0 is falsy.
+}
+
+if ("" === false) {
+    // This comparison is true because an empty string is falsy.
+}
+
+if (null) {
+    // This code block won't execute because null is falsy.
+}
+
+if (undefined) {
+    // This code block won't execute because undefined is falsy.
+}
+
+if (NaN) {
+    // This code block won't execute because NaN is falsy.
+}
+```
+# Truthy Values:
+
+Any value that is not explicitly "falsy" is considered "truthy" in JavaScript. These values are treated as equivalent to true in Boolean contexts.
+
+Example:
+```javascript
+if (true) {
+    // This code block will execute because true is truthy.
+}
+
+if (42) {
+    // This code block will execute because 42 is truthy.
+}
+
+if ("Hello") {
+    // This code block will execute because a non-empty string is truthy.
+}
+
+if ({} === true) {
+    // This comparison is false because an empty object is truthy but not equal to true.
+}
+
+if ([] === true) {
+    // This comparison is false because an empty array is truthy but not equal to true.
+}
+```
+
+Understanding truthy and falsy values allows us to write more concise and expressive code, especially when dealing with conditional logic. We can use this behavior to write shorter and more readable code when evaluating conditions and choosing between two values or actions.
