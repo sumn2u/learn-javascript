@@ -2,105 +2,105 @@
 layout: editorial
 chapter: 14
 pageNumber: 73
-description: A regular expression, often abbreviated as "regex," is a powerful tool for pattern matching and searching within strings. It provides a concise and flexible way to search, match, and manipulate text based on specific patterns.
+description: Una expresión regular, a menudo abreviada como "regex", es una poderosa herramienta para la coincidencia de patrones y la búsqueda dentro de cadenas. Proporciona una forma concisa y flexible de buscar, unir y manipular texto según patrones específicos.
 ---
 
-# Chapter 14
+# Capítulo 14
 
 ## Expresión regular
 
-A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a regular expression are shown below.
+Una expresión regular es un objeto que puede construirse con el constructor `RegEx` o escribirse como un valor literal encerrando un patrón entre una barra diagonal `(/)`. Las sintaxis para crear una expresión regular se muestran a continuación.
 
 ```javascript
-// using regular expression constructor
-new RegExp(pattern[, flags]);
+// usando el cosntructor de expresión regular
+new RegExp(patron[, banderas]);
 
-// using literals
-/pattern/modifiers
+// usando literales
+/patron/modificadores
 ```
 
-The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method is as follows.
+Las banderas son opcionales al crear una expresión regular usando literales. Un ejemplo de creación de un regular idéntico utilizando el método mencionado anteriormente es el siguiente.
 
 ```javascript
 let re1 = new RegExp("xyz"); 
 let re2 = /xyz/;
 ```
 
-Both ways will create a regex object and have the same methods and properties. There are cases where we might need dynamic values to create a regular expression, in that case, literals won't work and have to go with the constructor.
+Ambas formas crearán un objeto regex y tendrán los mismos métodos y propiedades. Hay casos en los que podríamos necesitar valores dinámicos para crear una expresión regular; en ese caso, los literales no funcionarán y tendrán que ir con el constructor.
 
 {% hint style="info" %}
-In cases where we want to have a forward slash to be a part of a regular expression, we have to escape the forward slash `(/)` with backslash `(\)`.
+En los casos en los que queremos que una barra diagonal sea parte de una expresión regular, tenemos que escapar de la barra diagonal `(/)` con una barra invertida `(\)`.
 {% endhint %}
 
-The different modifiers that are used to perform case-insensitive searches are:
+Los diferentes modificadores que se utilizan para realizar búsquedas que no distinguen entre mayúsculas y minúsculas son:
 
-* `g` - global search (finds all matches instead of stopping after the first match)
-* `i` - case insensitive search
-* `m` - multiline matching
+* `g` - búsqueda global (encuentra todas las coincidencias en lugar de detenerse después de la primera)
+* `i` - búsqueda que no distingue entre mayúsculas y minúsculas
+* `m` - coincidencia multilínea
 
-_Brackets_ are used in a regular expression to find a range of characters. Some of them are mentioned below.
+Los _corchetes_ se utilizan en una expresión regular para encontrar un rango de caracteres. Algunos de ellos se mencionan a continuación.
 
-* `[abc]` - find any character between the brackets
-* `[^abc]` - find any character, not between the brackets
-* `[0-9]` - find any digit between the bracket
-* `[^0-9]` - find any character, not between the brackets (non-digit)
-* `(x|y)`- find any of the alternatives separated by |
+* `[abc]` - Encuentra cualquier carácter entre corchetes.
+* `[^abc]` - encontrar cualquier carácter, menos los que están entre corchetes
+* `[0-9]` - encuentra cualquier dígito de los que están entre corchetes
+* `[^0-9]` - encuantra cualquier dígito, menos los que estaán entre corchetes
+* `(x|y)`- encuentre cualquiera de las alternativas separadas por |
 
-_Metacharacters_ are special character that has special meaning in the regular expression. These characters are further described below:
+Los _metacaracteres_ son caracteres especiales que tienen un significado especial en la expresión regular. Estos caracteres se describen con más detalle a continuación:
 
-| Metacharacter | Description                                                      |
-| ------------- | ---------------------------------------------------------------- |
-| `.`           | Match a single character excpet newline or a terminator          |
-| `\w`          | Match a word character (alphanumeric character `[a-zA-Z0–9_]`)   |
-| `\W`          | Match a non word character (same as `[^a-zA-Z0–9_]`)             |
-| `\d`          | Match any digit character( same as `[0-9]`)                      |
-| `\D`          | Match any non digiti character                                   |
-| `\s`          | Match a whitespace character (spaces, tabs etc)                  |
-| `\S`          | Match a non whitespace character                                 |
-| `\b`          | Match at the begining / end of a word                            |
-| `\B`          | Match but not at the begining / end of a word                    |
-| `\0`          | Match a `NULL` character                                         |
-|  `\n`             | Match a new line character                                       |
-| `\f`          | Match a form feed character                                      |
-|   `\r`            | Match a carriage return character                                |
-|    `\t`           | Match a tab character                                            |
-| `\v`          | Match a tab vertical character                                   |
-| `\xxx`        | Match a character specified by an octal number `xxx`             |
-| `\xdd`        | Match a character specified by a hexadecimal number `dd`         |
-| `\udddd`      | Match Unicode character specified by a hexadecimal number `dddd` |
+| Metacaracter | Descripción                                                                     |
+| ------------- | ------------------------------------------------------------------------------ |
+| `.`           | Coincide con un solo carácter excepto nueva línea o un terminador              |
+| `\w`          | Coincide con un carácter de palabra (carácter alfanumérico `[a-zA-Z0–9_]`)     |
+| `\W`          | Coincide con un carácter que no es una palabra (igual que `[^a-zA-Z0–9_]`)     |
+| `\d`          | Coincide con cualquier carácter de dígito (igual que `[0-9]`)                  |
+| `\D`          | Coincide con cualquier carácter que no sea un dígito                           |
+| `\s`          | Coincide con un carácter de espacio en blanco (espacios, tabulaciones, etc.)   |
+| `\S`          | Coincide con un carácter que no sea un espacio en blanco                       |
+| `\b`          | Coincidencia al principio/final de una palabra                                 |
+| `\B`          | Coincide pero no al principio/final de una palabra                             |
+| `\0`          | Coincide con un carácter `NULL`                                                |
+| `\n`          | Coincide con un carácter de nueva línea                                        |
+| `\f`          | Coincide con un carácter de avance de formulario                               |
+| `\r`          | Coincide con un carácter de retorno de carro                                   |
+| `\t`          | Coincide con un carácter de tabulación                                         |
+| `\v`          | Coincide un carácter de tabulación vertical                                    |
+| `\xxx`        | Coincide con un carácter especificado por un número octal `xxx`                |
+| `\xdd`        | Coincide con un carácter especificado por un número hexadecimal `dd`           |
+| `\udddd`      | Coincide con un carácter especificado por un número hexadecimal `dddd`         |
 
-Properties and methods supported by RegEx are listed below.
+Las propiedades y métodos admitidos por RegEx se enumeran a continuación.
 
-| Name          | Description                                                                        |
-| ------------- | ---------------------------------------------------------------------------------- |
-| `constructor` | Returns function that created RegExp object's protype                              |
-| `global`      | Checks if the `g` modifier is set                                                  |
-| `ignoreCase`  | Checks if the `i` modifier is set                                                 |
-| `lastIndex`   | Specifies the index at which to start the next match                               |
-| `multiline`   | Checks if the m modifier is set                                                   |
-| `source`      | Returns the text of the string                                                    |
-| `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
-| `test()`      | Test for the match and returns the `true` or `false`                               |
-| `toString()`  | Returns the string value of the regular exression                                  |
+| Nombre        | Descripción                                                                                        |
+| ------------- | -------------------------------------------------------------------------------------------------- |
+| `constructor` | Devuelve la función que creó el prototipo del objeto RegEx                                         |
+| `global`      | Comprueba si el modificador `g` está configurado                                                   |
+| `ignoreCase`  | Comprueba si el modificador `i` está configurado                                                   |
+| `lastIndex`   | Especifica el índice en el que comenzar la próxima coincidencia.                                   |
+| `multiline`   | Comprueba si el modificador m está configurado                                                     |
+| `source`      | Devuelve el texto de la cadena.                                                                    |
+| `exec()`      | Prueba la coincidencia y devuelve la primera coincidencia; si no hay coincidencia, devuelve `null` |
+| `test()`      | Prueba la coincidencia y devuelve `true` o `false`                                                 |
+| `toString()`  | Devuelve el valor de cadena de la expresión regular.                                               |
 
 {% hint style="warning" %}
-A `complie()` method complies the regular expression and is deprecated.
+Un método `compile()` compila la expresión regular y está en desuso.
 {% endhint %}
 
-Some examples of regular expressions are shown here.
+Aquí se muestran algunos ejemplos de expresiones regulares.
 
 ```javascript
-let text = "The best things in life are free";
-let result = /e/.exec(text); // looks for a match  of e in a string
-// result: e
+let texto = "Las mejores cosas de la vida son gratis";
+let resultado = /e/.exec(texto); // busca una coincidencia de e en una cadena
+// resultado: e
 
 
-let helloWorldText = "Hello world!";
-// Look for "Hello"
-let pattern1 = /Hello/g;
-let result1 = pattern1.test(helloWorldText);
+let textoHolaMundo = "¡Hola mundo!";
+// Busca "Hola"
+let pattern1 = /Hola/g;
+let result1 = pattern1.test(textoHolaMundo);
 // result1: true
 
 let pattern1String = pattern1.toString();
-// pattern1String : '/Hello/g'
+// pattern1String : '/Hola/g'
 ```
