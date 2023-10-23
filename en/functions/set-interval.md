@@ -14,10 +14,19 @@ setInterval(repeatSaying, 2000);
 
 
 ```
-Now let's add an ellipsis to the console statement, to show that it repeats. 
+You can also add parameters of a function when you use set interval. Continuing on with the previous example let's add an ellipsis to the console statement, to show that it repeats. First we'll add a parameter called `el` which is short for ellipse. Next we'll add a `+` followed by calling are parameter `el` to show that the value of the parameter comes after. Finally in set interval let's add a comma `,` followed by a string for the value of the ellipse parameter, we'll put `"..."`.
 
+```js
+function repeatSaying(el) {
+console.log("And again!" + el);
+}
 
+setInterval(repeatSaying, 2000, "...");
+//When it runs, it'll repeat the saying "And again!..."
+```
 
+As you can see from this example, after you put the function and interval for the function, you can set the values of the function parameters inside set interval. 
 
+## Clear Interval
 
 
