@@ -19,7 +19,7 @@ En javascript los objetos son **mutables** porque cambiamos los valores apuntado
     ```
 
     > _**Nota:**_ esta es la forma **recomendada**.
-2. object-oriented
+2. orientada a objetos
 
     ```javascript
     let object = new Object();

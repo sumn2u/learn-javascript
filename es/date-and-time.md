@@ -2,83 +2,82 @@
 layout: editorial
 chapter: 10
 pageNumber: 64
-description: The date object stores date and time and provides methods for managing it. Date objects are static and use a browser's default timezone to display the date as a full-text string.
+description: El objeto date almacena la fecha y la hora y proporciona métodos para administrarla. Los objetos Date son estáticos y utilizan la zona horaria predeterminada del navegador para mostrar la fecha como una cadena de texto completo.
 ---
 
-# Chapter 10
+# Capítulo 10
 
 ## Fecha y hora
 
-The `date` object stores date and time and provides methods for managing it. Date objects are static and use a browser's default timezone to display the date as a full-text string.
+El objeto `date` almacena la fecha y la hora y proporciona métodos para gestionarla. Los objetos de fecha son estáticos y utilizan la zona horaria predeterminada del navegador para mostrar la fecha como una cadena de texto completo.
 
-To create  `date` we use a `new Date()` constructor and can be created in the following ways.
+Para crear `date` utilizamos un constructor `new Date()` y se puede crear de las siguientes maneras.
 
 ```javascript
 new Date()
-new Date(date string)
-new Date(year,month)
-new Date(year,month,day)
-new Date(year,month,day,hours)
-new Date(year,month,day,hours,minutes)
-new Date(year,month,day,hours,minutes,seconds)
-new Date(year,month,day,hours,minutes,seconds,ms)
+new Date(cadena_con_una_fecha)
+new Date(año,mes)
+new Date(año,mes,dia)
+new Date(año,mes,dia,hora)
+new Date(año,mes,dia,hora,minutos)
+new Date(año,mes,dia,hora,minutos,segundos)
+new Date(año,mes,dia,hora,minutos,segundos,ms)
 new Date(milliseconds)
 ```
 
 {% hint style="warning" %}
-Months can be specified from `0` to `11`, more than that will result in an overflow to the next year.
+Los meses se pueden especificar de `0` a `11`, más de eso resultará en un desbordamiento al año siguiente.
 {% endhint %}
 
-Methods and properties supported by date  are described below:
+Los métodos y propiedades admitidos por date se describen a continuación:
 
-| Name                   | Description                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------------------- |
-| `constructor`          | Returns function that created the Date object's prototype                                       |
-| `getDate()`            | Returns the day (1-31) of a month                                                               |
-| `getDay()`             | Returns the day (0-6) of a week                                                                 |
-| `getFullYear()`        | Returns the year (4 digits)                                                                     |
-| `getHours()`           | Returns the hour (0-23)                                                                         |
-| `getMilliseconds()`    | Returns the milliseconds (0-999)                                                                 |
-| `getMinutes()`         | Returns the minutes (0-59)                                                                       |
-| `getMonth()`           | Returns the month (0-11)                                                                         |
-| `getSeconds()`         | Returns the seconds (0-59)                                                                       |
-| `getTime()`            | Returns the numeric value of a specified date in milliseconds since midnight Jan 1 1970         |
-| `getTimezoneOffset()`  | Returns timezone offset in minutes                                                              |
-| `getUTCDate()`         | Returns the day (1-31) of a month according to universal time                                   |
-| `getUTCDay()`          | Returns the day (0-6) according to universal time                                               |
-| `getUTCFullYear()`     | Returns the year (4-digits) according to universal time                                          |
-| `getUTCHours()`        | Returns the hours (0-23) according to universal time                                             |
-| `getUTCMilliseconds()` | Returns the milliseconds (0-999)  according to  universal time                                    |
-| `getUTCMinutes()`      | Returns the minutes (0-59) according to  universal time                                          |
-| `getUTCMonth()`        | Returns the month (0-11) according to  universal time                                           |
-| `getUTCSeconds()`      | Returns the seconds (0-59) according to universal time                                          |
-| `now()`                | Returns the numeric value in milliseconds since midnight Jan 1, 1970                            |
-| `parse()`              | Parses the date string and returns the numeric value in milliseconds since midnight Jan 1, 1970 |
-| `prototype`            | Allows to add properties                                                                        |
-| `setDate()`            | Sets the day of a month                                                                         |
-| `setFullYear()`        | Sets the year                                                                                   |
-| `setHours()`           | Sets the hour                                                                                   |
-| `setMilliseconds()`    | Sets the milliseconds                                                                           |
-| `setMinutes()`         | Sets the minutes                                                                                |
-| `setMonth()`           | Sets the month                                                                                  |
-| `setSeconds()`         | Sets the second                                                                                 |
-| `setTime()`            | Sets the time                                                                                   |
-| `setUTCDate()`         | Sets the day of the month according to universal time                                           |
-| `setUTCFullYear()`     | Sets the year according to the universal time                                                   |
-| `setUTCHours()`        | Sets the hour according to the universal time                                                   |
-| `setUTCMilliseconds()` | Sets the milliseconds according to the universal time                                           |
-| `setUTCMinutes()`      | Sets the minutes according to the universal time                                                |
-| `setUTCMonth()`        | Sets the month according to the universal time                                                  |
-| `setUTCSeconds()`      | Sets the second according to the universal time                                                 |
-| `toDateString()`       | Returns the date in human readable format                                                       |
-| `toISOString()`        | Returns the date according to the ISO format                                                    |
-| `toJSON()`             | Returns the date in a string, formatted as a JSON date                                          |
-| `toLocaleDateString()` | Returns the date in a string using locale conventions                                           |
-| `toLocaleTimeString()` | Returns the time in a string using locale conventions                                           |
-| `toLocaleString()`     | Returns date using locale conventions                                                           |
-| `toString()`           | Returns string representation of the specified date                                             |
-| `toTimeString()`       | Returns the _time_  portion into a human-readable  format                                       |
-| `toUTCString()`        | Converts date into a string according to the universal format                                   |
-| `toUTC()`              | Returns the milliseconds since  midnight Jan 1 1970 in UTC format                               |
-| `valueOf()`            | Returns the primitive value of `Date`                                                           |
-
+| Nombre                   | Descripción                                                  |
+| ---------------------- | -------------------------------------------------------------- |
+| `constructor`          | Devuelve la función que creó el prototipo del objeto date.     |
+| `getDate()`            | Devuelve el dia (1-31) de un mes                               |
+| `getDay()`             | Devuelve el dia (0-6) de una semana                            |
+| `getFullYear()`        | Devuelve el año (4 digits)                                     |
+| `getHours()`           | Devuelve la hour (0-23)                                        |
+| `getMilliseconds()`    | Devuelve los milliseconds (0-999)                              |
+| `getMinutes()`         | Devuelve los minutos (0-59)                                    |
+| `getMonth()`           | Devuelve el mes (0-11)                                         |
+| `getSeconds()`         | Devuelve los segundos (0-59)                                   |
+| `getTime()`            | Devuelve el numeric value of a specified date in milliseconds since midnight Jan 1 1970 |
+| `getTimezoneOffset()`  | Devuelve el desplazamiento de la zona horaria en minutos       |
+| `getUTCDate()`         | Devuelve el dia (1-31) de un mes según la hora universal       |
+| `getUTCDay()`          | Devuelve el dia de la semana (0-6) según la hora universal.    |
+| `getUTCFullYear()`     | Devuelve el año (4 dígitos) según la hora universal.           |
+| `getUTCHours()`        | Devuelve la hora (0-23) según la hora universal.               |
+| `getUTCMilliseconds()` | Devuelve los milisegundos (0-999) según la hora universal      |
+| `getUTCMinutes()`      | Devuelve los minutos (0-59) según hora universal               |
+| `getUTCMonth()`        | Devuelve el mes (0-11) según la hora universal.                |
+| `getUTCSeconds()`      | Devuelve los segundos (0-59) según la hora universal           |
+| `now()`                | Devuelve el valor numérico en milisegundos desde la medianoche del 1 de enero de 1970 |
+| `parse()`              | Analiza la cadena de fecha y devuelve el valor numérico en milisegundos desde la medianoche del 1 de enero de 1970 |
+| `prototype`            | Permite agregar propiedades                                    |
+| `setDate()`            | Establece el día de un mes                                     |
+| `setFullYear()`        | Establece el año                                               |
+| `setHours()`           | Establece la hora                                              |
+| `setMilliseconds()`    | Establece los milisegundos                                     |
+| `setMinutes()`         | Establece los minutos                                          |
+| `setMonth()`           | Establece el mes                                               |
+| `setSeconds()`         | Estsablece el segundo                                          |
+| `setTime()`            | Establece la hora                                              |
+| `setUTCDate()`         | Establece el dia del mes según la hora universal.              |
+| `setUTCFullYear()`     | Establece el año según la hora universal.                      |
+| `setUTCHours()`        | Establece la hora según la hora universal.                     |
+| `setUTCMilliseconds()` | Establece los milisegundos según la hora universal.            |
+| `setUTCMinutes()`      | Configura los minutos según la hora universal.                 |
+| `setUTCMonth()`        | Establece el mes según la hora universal.                      |
+| `setUTCSeconds()`      | Ajusta el segundo según la hora universal.                     |
+| `toDateString()`       | Devuelve la fecha en formato legible por humanos.              |
+| `toISOString()`        | Devuelve la fecha según el formato ISO.                        |
+| `toJSON()`             | Devuelve la fecha en una cadena, formateada como fecha JSON    |
+| `toLocaleDateString()` | Devuelve la fecha en una cadena usando convenciones locales    |
+| `toLocaleTimeString()` | Devuelve la hora en una cadena usando convenciones locales     |
+| `toLocaleString()`     | Fecha de devolución utilizando convenciones locales            |
+| `toString()`           | Devuelve una representación de cadena de la fecha especificada. |
+| `toTimeString()`       | Devuelve la parte _time_ en un formato legible por humanos     |
+| `toUTCString()`        | Convierte la fecha en una cadena según el formato universal.   |
+| `toUTC()`              | Devuelve los milisegundos desde la medianoche del 1 de enero de 1970 en formato UTC |
+| `valueOf()`            | Devuelve el valor primitivo de `Date                           |

@@ -1,23 +1,23 @@
 ---
 chapter: 12
 pageNumber: 69
-description: try catch finally allows developers to gracefully handle exceptions (errors) that may occur during the execution of a code block and ensure that certain cleanup actions are always executed, regardless of whether an exception was thrown or not.
+description: try catch finally permite a los desarrolladores manejar con elegancia las excepciones (errores) que pueden ocurrir durante la ejecución de un bloque de código y garantizar que ciertas acciones de limpieza siempre se ejecuten, independientemente de si se lanzó una excepción o no.
 ---
 # try...catch...finally
 
-We can add one more construct to `try...catch` called `finally`, this code executes in all cases. i.e. after `try` when there is no error and after a `catch` in case of error. The syntax for `try ...catch...finally` is shown below.
+Podemos agregar una construcción más a `try...catch` llamada `finally`, este código se ejecuta en todos los casos. es decir, después de `try` cuando no hay ningún error y después de `catch` en caso de error. La sintaxis de `try...catch...finally` se muestra a continuación.
 
 ```javascript
 try {
-   // try to execute the code
+   // intenta ejecutar el código
 } catch (err) {
-    // handle errors 
+    // maneja los errores
 } finally {
-   // execute always
+   // se ejecuta siempre
 }
 ```
 
-Running real-world example code.
+Ejecutando código de ejemplo del mundo real.
 
 ```javascript
 try {
@@ -29,19 +29,19 @@ try {
 }
 ```
 
-In the above example, the `try` block is executed first which is then followed by `finally` as there are no errors.
+En el ejemplo anterior, el bloque `try` se ejecuta primero, seguido de `finally`, ya que no hay errores.
 
 {% exercise %}
-Write a function `divideNumbers()` that takes two arguments numerator and denominator and returns the result of dividing numerator by denominator using following settings.
+Escriba una función `divideNumbers()` que tome dos argumentos, numerador y denominador, y devuelva el resultado de dividir el numerador por el denominador usando las siguientes configuraciones.
 
 {% initial %}
 function divideNumbers(numerator, denominator) {
     try {
-      // try statement to divide numerator by denominator.
+      // Pruebe la declaración para dividir el numerador por el denominador.
     } catch (error) {
-      // print error message
+      // imprimir mensaje de error
     } finally {
-      // print execution has finished
+      // imprimir que la ejecución ha finalizado
     }
    // return result
   }
@@ -55,7 +55,7 @@ function divideNumbers(numerator, denominator) {
     } catch (error) {
       console.error(`Error: ${error}`);
     } finally {
-      console.log('Function finished executing');
+      console.log('Función terminada de ejecutarse');
     }
     return result;
   }

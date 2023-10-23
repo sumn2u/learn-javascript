@@ -1,51 +1,51 @@
 ---
 chapter: 9
 pageNumber: 61
-description: Every object has a special property called prototype, which is a reference to another object. The prototype property is an essential part of the prototype-based inheritance system in JavaScript, and it allows objects to inherit properties and methods from other objects. 
+description: Cada objeto tiene una propiedad especial llamada prototipo, que es una referencia a otro objeto. La propiedad prototype es una parte esencial del sistema de herencia basado en prototipos en JavaScript y permite que los objetos hereden propiedades y métodos de otros objetos.
 ---
 # Prototype
 
-Every object is linked to a prototype object from which it inherits properties. The objects created from object literals (`{}`) are automatically linked to `Object.prototype`, which is an object that comes standard with JavaScript.
+Cada objeto está vinculado a un objeto prototype (en español, prototipo) del cual hereda propiedades. Los objetos creados a partir de literales de objetos (`{}`) se vinculan automáticamente a `Object.prototype`, que es un objeto que viene estándar con JavaScript.
 
-When a JavaScript interpreter (a module in your browser) tries to find a property, that you want to retrieve, like in the following code:
+Cuando un intérprete de JavaScript (un módulo en su navegador) intenta encontrar una propiedad que desea recuperar, como en el siguiente código:
 
 ```javascript
-let adult = { age: 26 },
-  retrievedProperty = adult.age;
-// The line above
+let adulto = { edad: 26 },
+  propiedadRecuperada = adulto.edad;
+// La línea de arriba
 ```
 
-First, the interpreter looks through every property the object itself has. For example, `adult` has only one own property — `age`. But besides that one, it actually has a few more properties, which were inherited from `Object.prototype.`
+Primero, el intérprete examina todas las propiedades que tiene el objeto. Por ejemplo, `adulto`solo tiene una propiedad propia: `edad`. Pero además de esa, en realidad tiene algunas propiedades más, que fueron heredadas de `Object.prototype`.
 
 ```javascript
-let stringRepresentation = adult.toString();
-// the variable has value of '[object Object]'
+let cadenaPresentacion = adulto.toString();
+// la variable tiene valor de '[object Object]'
 ```
 
-The `toString` is an Object.prototype's property, which was inherited. It has a value of a function, which returns a string representation of the object. If you want it to return a more meaningful representation, then you can override it. Simply add a new property to the adult object.
+`toString` es una propiedad de Object.prototype, que fue heredada. Tiene un valor de una función, que devuelve una representación de cadena del objeto. Si desea que devuelva una representación más significativa, puede sobreescribirla. Simplemente agregue una nueva propiedad al objeto adulto.
 
 ```javascript
-adult.toString = function () {
-  return "I'm " + this.age;
+adulto.toString = function () {
+  return "Tengo " + this.edad;
 };
 ```
 
-If you call the `toString` function now, the interpreter will find the new property in the object itself and stop.
+Si llama a la función `toString` ahora, el intérprete encontrará la nueva propiedad en el objeto y se detendrá.
 
-Thus the interpreter retrieves the first property it will find on the way from the object itself and further through its prototype.
+De este modo, el intérprete recupera la primera propiedad que encontrará en el camino desde el objeto mismo y a través de su prototipo.
 
-To set your own object as a prototype instead of the default Object.prototype, you can invoke `Object.create` as follows:
+Para configurar su propio objeto como prototipo en lugar del Object.prototype predeterminado, puede invocar `Object.create` de la siguiente manera:
 
 ```javascript
-let child = Object.create(adult);
-/* This way of creating objects lets us easily replace the default Object.prototype with the one we want. In this case, the child's prototype is the adult object. */
-child.age = 8;
-/* Previously, child didn't have its own age property, and the interpreter had to look further to the child's prototype to find it.
- Now, when we set the child's own age, the interpreter will not go further.
- Note: adult's age is still 26. */
-let stringRepresentation = child.toString();
-// The value is "I'm 8".
-/* Note: we have not overridden the child's toString property, thus the adult's method will be invoked. If adult did not have toString property, then Object.prototype's toString method would be invoked, and we would get "[object Object]" instead of "I'm 8" */
+let niño = Object.create(adulto);
+/* Esta forma de crear objetos nos permite reemplazar fácilmente el Object.prototype predeterminado por el que queramos. En este caso, el prototipo de niño es el objeto adulto. */
+niño.edad = 8;
+/* Anteriormente, niño no tenía su propia propiedad edad y el intérprete tenía que buscar más allá del prototipo del objeto niño  para encontrarla.
+  Ahora, cuando establezcamos la edad del niño, el intérprete no irá más lejos.
+  Nota: la edad del adulto sigue siendo 26 años. */
+let cadenaPresentacion = niño.toString();
+// El valor es "Tengo 8".
+/* Nota: no hemos anulado la propiedad toString del niño, por lo que se invocará el método del adulto. Si el adulto no tuviera la propiedad toString, entonces se invocaría el método toString de Object.prototype y obtendríamos "[object Object]" en lugar de "Tengo 8 años" */
 ```
 
-The `child`'s prototype is `adult`, whose prototype is `Object.prototype`. This sequence of prototypes is called a  **prototype chain**.
+El prototipo del objeto `niño` es `adulto`, cuyo prototipo es `Object.prototype`. Esta secuencia de prototipos se denomina **cadena de prototipos**.

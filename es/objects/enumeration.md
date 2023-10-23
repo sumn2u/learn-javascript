@@ -1,46 +1,46 @@
 ---
 chapter: 9
 pageNumber: 63
-description: Enumeration refers to the process of iterating over the properties of an object and performing a certain action for each property. One way to enumerate the properties of an object is to use the `for-in` loop. The `for-in` loop iterates over the enumerable properties of an object in an arbitrary order, and for each property it executes a given block of code.
+description: La enumeración se refiere al proceso de iterar sobre las propiedades de un objeto y realizar una determinada acción para cada propiedad. Una forma de enumerar las propiedades de un objeto es utilizar el bucle `for-in`. El bucle `for-in` itera sobre las propiedades enumerables de un objeto en un orden arbitrario, y para cada propiedad ejecuta un bloque de código determinado.
 ---
-# Enumeration
+# Enumeración
 
-_Enumeration_ refers to the process of iterating over the properties of an object and performing a certain action for each property. There are several ways to enumerate the properties of an object in JavaScript.
+La _enumeración_ se refiere al proceso de iterar sobre las propiedades de un objeto y realizar una determinada acción para cada propiedad. Hay varias formas de enumerar las propiedades de un objeto en JavaScript.
 
-One way to enumerate the properties of an object is to use the `for-in` loop. The `for-in` loop iterates over the enumerable properties of an object in an arbitrary order, and for each property it executes a given block of code.
+Una forma de enumerar las propiedades de un objeto es utilizar el bucle `for-in`. El bucle `for-in` itera sobre las propiedades enumerables de un objeto en un orden arbitrario, y para cada propiedad ejecuta un bloque de código determinado.
 
-The `for in` statement can loop over all of the property names in an object. The enumeration will include functions and prototype properties.
+La declaración `for in` puede recorrer todos los nombres de propiedades de un objeto. La enumeración incluirá funciones y propiedades del prototipo.
 
 ```javascript
-let fruit = {
-    apple: 2,
-    orange: 5,
-    pear: 1,
+let fruta = {
+    manzana: 2,
+    naranja: 5,
+    pera: 1,
   },
-  sentence = "I have ",
-  quantity;
-for (kind in fruit) {
-  quantity = fruit[kind];
-  sentence += quantity + " " + kind + (quantity === 1 ? "" : "s") + ", ";
+  oracion = "Tengo ",
+  cantidad;
+for (clase in fruta) {
+  cantidad = fruta[clase];
+  oracion += cantidad + " " + clase + (cantidad === 1 ? "" : "s") + ", ";
 }
-// The following line removes the trailing comma.
-sentence = sentence.substr(0, sentence.length - 2) + ".";
-// I have 2 apples, 5 oranges, 1 pear.
+// La siguiente línea elimina la coma final.
+oracion = oracion.substr(0, oracion.length - 2) + ".";
+// Tengo 2 manzanas, 5 naranajas, 1 pera.
 ```
 
-Another way to enumerate the properties of an object is to use the `Object.keys()` method, which returns an array of the object's own enumerable property names.
+Otra forma de enumerar las propiedades de un objeto es utilizar el método `Object.keys()`, que devuelve una matriz de los nombres de propiedades enumerables del propio objeto.
 
 For example:
 
 ```typescript
-let object = {
+let objeto = {
   foo: 'bar',
   baz: 'qux'
 };
 
-let properties = Object.keys(object);
-properties.forEach(function(property) {
-  console.log(property + ': ' + object[property]);
+let propiedades = Object.keys(objeto);
+propiedades.forEach(function(propiedad) {
+  console.log(propiedad + ': ' + objeto[propiedad]);
 });
 
 // foo: bar

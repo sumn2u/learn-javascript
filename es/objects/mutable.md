@@ -10,22 +10,22 @@ La diferencia entre objetos y valores primitivos es que podemos **cambiar objeto
 Por ejemplo:
 
 ```javascript
-let myPrimitive = "primer valor";
-myPrimitive = "otro valor";
-// myPrimitive ahora apunta a otra cadena.
-let myObject = { key: "primer valor" };
-myObject.key = "otro valor";
-// myObject apunta al mismo objeto.
+let miPrimitivo = "primer valor";
+miPrimitivo = "otro valor";
+// miPrimitivo ahora apunta a otra cadena.
+let miObjeto = { clave: "primer valor" };
+miObjeto.clave = "otro valor";
+// miObjeto apunta al mismo objeto.
 ```
 
 Puede agregar, modificar o eliminar propiedades de un objeto utilizando la notación de puntos o la notación de corchetes.
 
 ```javascript
-let object = {};
-object.foo = 'bar'; // Agrega la propiedad 'foo'
-object['baz'] = 'qux'; // Agrega la propiedad 'baz'
-object.foo = 'quux'; // Modifica la propiedad 'foo'
-delete object.baz; // Borra la propiedad 'baz'
+let objeto = {};
+objeto.foo = 'bar'; // Agrega la propiedad 'foo'
+objeto['baz'] = 'qux'; // Agrega la propiedad 'baz'
+objeto.foo = 'quux'; // Modifica la propiedad 'foo'
+delete objeto.baz; // Borra la propiedad 'baz'
 ```
 
 {% hint style="warning" %}

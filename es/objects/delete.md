@@ -1,36 +1,37 @@
 ---
 chapter: 9
 pageNumber: 62
-description: A `delete` property can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
+description: Se puede utilizar una propiedad `delete` para **eliminar una propiedad** de un objeto. Cuando se elimina una propiedad, se elimina del objeto y no se puede acceder a ella ni enumerarla (es decir, no aparece en un bucle for-in).
 ---
 # Delete
 
-A `delete` property can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
+Un operador `delete` se puede usar para **eliminar una propiedad** de un objeto. Cuando se elimina una propiedad, es eliminada del objeto y no puede ser accedida o enumerada (por ejemplo, no se muestra en un bucle for-in).
 
-Here's the syntax for using `delete`:
+Aquí está la sintaxis para usar `delete`:
 
 ```javascript
 delete object.property;
 ```
 
-For example:
+Por ejemplo:
 
 ```javascript
-let adult = { age: 26 },
-  child = Object.create(adult);
+let adulto = { edad: 26 },
+  niño = Object.create(adulto);
   
-child.age = 8;
+niño.edad = 8;
 
-delete child.age;
+delete niño.edad;
 
-/* Remove age property from child, revealing the age of the prototype, because then it is not overriden. */
+/* Elimine la propiedad de edad del niño, revelando la edad del prototipo, porque entonces no se anula.. */
 
-let prototypeAge = child.age;
-// 26, because child does not have its own age property.
+let prototipoEdad = niño.edad;
+// 26, porque el niño no tiene su propia propiedad de edad.
 ```
 
 {% hint style="warning" %}
-The `delete` operator only works on own properties of an object, and not on inherited properties. It also does not work on properties that have the `configurable` attribute set to `false`.
+
+El operador `delete` solo funciona con las propiedades propias de un objeto y no con las propiedades heredadas. Tampoco funciona en propiedades que tienen el atributo `configurable` establecido en `false`.
 {% endhint %}
 
-The `delete` operator does not modify the object's prototype chain. It simply removes the specified property from the object and also it does not actually destroy the object or its properties. It simply makes the properties inaccessible. If you need to destroy an object and release its memory, you can set the object to `null` or use a garbage collector to reclaim the memory.
+El operador `delete` no modifica la cadena de prototipos del objeto. Simplemente elimina la propiedad especificada del objeto y tampoco destruye el objeto ni sus propiedades. Simplemente hace que las propiedades sean inaccesibles. Si necesita destruir un objeto y liberar su memoria, puede establecer el objeto a `null` o usar un recolector de basura para recuperar la memoria.

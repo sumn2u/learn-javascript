@@ -2,50 +2,45 @@
 layout: editorial
 chapter: 11
 pageNumber: 67
-description: JSON (JavaScript Object Notation) is a lightweight data interchange format used to represent and exchange data between different systems and platforms. It is widely used for data transmission and storage, especially in web development.
+description: JSON (JavaScript Object Notation, Notación de objetos JavaScript en español ) es un formato de intercambio de datos ligero que se utiliza para representar e intercambiar datos entre diferentes sistemas y plataformas. Es ampliamente utilizado para la transmisión y almacenamiento de datos, especialmente en el desarrollo web.
 ---
 
-# Chapter 11
+# Capítulo 11
 
 ## JSON
 
-**J**ava**S**cript **O**bject **N**otation (JSON) is a text-based format for storing and transporting data.  The Javascript Objects can be easily converted into JSON and vice versa.  For example.
+**J**ava**S**cript **O**bject **N**otation (JSON) es un formato basado en texto para almacenar y transportar datos. Los objetos Javascript se pueden convertir fácilmente a JSON y viceversa. Por ejemplo.
 
 ```javascript
-//  a JavaScript object
-let myObj = { name:"Ryan", age:30, city:"Austin" };
+//  un objeto JavaScript
+let miObj = { nombre:"Ryan", edad:30, ciudad:"Austin" };
 
-// converted into JSON:
-let myJSON = JSON.stringify(myObj);
-console.log(myJSON);
-// Result: '{"name":"Ryan","age":30,"city":"Austin"}'
+// convertido en un JSON:
+let miJSON = JSON.stringify(miObj);
+console.log(miJSON);
+// Resultado: '{"nombre":"Ryan","edad":30,"ciudad":"Austin"}'
 
-//converted back to JavaScript object
-let originalJSON = JSON.parse(myJSON);
-console.log(originalJSON);
+//convertido de nuevo a objeto JavaScript
+let JSONoriginal = JSON.parse(miJSON);
+console.log(JSONoriginal);
 
-// Result: {name: 'Ryan', age: 30, city: 'Austin'}
+// Resultado: {nombre: 'Ryan', edad: 30, ciudad: 'Austin'}
 ```
 
+`stringify` y `parse` son los dos métodos admitidos por JSON.
 
-
-`stringify` and  `parse` are the two methods supported by JSON.
-
-| Method        | Description                                            |
+| Método        | Descripción                                            |
 | ------------- | ------------------------------------------------------ |
-| `parse()`     | Returns  JavaScript object from the parsed JSON string |
-| `stringify()` | Returns JSON string from JavaScript Object             |
+| `parse()`     | Devuelve un objeto JavaScript de la cadena JSON analizada |
+| `stringify()` | Devuelve una cadena JSON del objeto JavaScript |
 
-
-
-The following data types are supported by JSON.
+Los siguientes tipos de datos son compatibles con JSON.
 
 * string
 * number
 * array
 * boolean
-* object with valid JSON values
+* objeto con valores JSON válidos
 * `null`
 
-It can not be `function`,  `date` or `undefined`.
-
+No puede ser `function`, `date` o `undefined`.
