@@ -220,3 +220,100 @@ if ([] === true) {
 ```
 
 Understanding truthy and falsy values allows us to write more concise and expressive code, especially when dealing with conditional logic. We can use this behavior to write shorter and more readable code when evaluating conditions and choosing between two values or actions.
+
+## 6. Regular Expression
+
+### 6.1. What is a Regular Expression ?
+
+**Answer:** 
+
+A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and textreplace operations. Let's see the syntax format now,
+   
+```js
+ /pattern/modifiers;
+```
+
+For example, the regular expression or search pattern with case-insensitive username would be,
+
+```js
+/John/i;
+```
+
+### 6.2. What are the string methods available in Regular expression ?
+
+**Answer:** 
+
+Regular Expressions has two string methods: search() and replace(). The search() method uses an expression to search for a match, and returns the position of the match.
+
+```js
+var msg = "Hello John";
+var n = msg.search(/John/i); // 6
+```
+
+The replace() method is used to return a modified string where the pattern is replaced.
+
+```js
+var msg = "Hello John";
+var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
+```
+
+### 6.3. What are modifiers in regular expression ?
+
+**Answer:** 
+
+Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
+
+| Modifier | Description |
+| i | Perform case-insensitive matching |
+| g | Perform a global match rather than stops at first match |
+| m | Perform multiline matching |
+
+Let's take an example of global modifier,
+
+```js
+var text = "Learn JS one by one";
+var pattern = /one/g;
+var result = text.match(pattern); // one,one
+```
+
+### 6.4. What are regular expression patterns ?
+
+**Answer:** 
+
+Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
+  
+  + i.Brackets: These are used to find a range of characters. For example, below are some use cases,
+    - a. [abc]: Used to find any of the characters between the brackets(a,b,c).
+    - b. [0-9]: Used to find any of the digits between the brackets.
+    - c. (a|b): Used to find any of the alternatives separated with |
+  + ii.Metacharacters: These are characters with a special meaning For example, below are some use cases 
+    - a. \d: Used to find a digit 
+    - b. \s: Used to find a whitespace character
+    - c. \b: Used to find a match at the beginning or ending of a word
+  + iii.Quantifiers: These are useful to define quantities For example, below are some use cases
+    - a. n+: Used to find matches for any string that contains at least one n 
+    - b. n*: Used to find matches for any string that contains zero or more occurrences of n 
+    - c. n?: Used to find matches for any string that contains zero or one occurrences of n
+
+### 6.5. What is a RegExp object ?
+
+**Answer:** 
+
+RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
+
+```js
+var regexp = new RegExp("\\w+");
+console.log(regexp);
+// expected output: /\w+/
+```
+
+### 6.6. How do you search a string for a pattern ?
+
+**Answer:** 
+
+You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
+
+```js
+var pattern = /you/;
+console.log(pattern.test("How are you?")); //true
+```
