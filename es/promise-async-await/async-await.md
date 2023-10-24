@@ -1,22 +1,23 @@
 ---
 chapter: 18
 pageNumber: 91
-description: Async/Await is a feature introduced in ECMAScript 2017 (ES8) that provides a more concise and readable syntax for working with asynchronous JavaScript code. It is built on top of JavaScript Promises and is used to handle asynchronous operations in a synchronous-like manner.
+description: Async/Await es una característica introducida en ECMAScript 2017 (ES8) que proporciona una sintaxis más concisa y legible para trabajar con código JavaScript asincrónico. Está construido sobre JavaScript Promises y se utiliza para manejar operaciones asincrónicas de manera síncrona.
 ---
 # Async/Await
 
-With promises, one can use a `async` keyword to declare an asynchronous function that returns a promise whereas the `await`  syntax makes JavaScript wait until that promise settles and returns its value. These keywords make promises easier to write.  An example of async is shown below.
+Con las promesas, se puede usar una palabra clave `async` para declarar una función asincrónica que devuelve una promesa, mientras que la sintaxis `await` hace que JavaScript espere hasta que esa promesa se establezca y devuelva su valor. Estas palabras clave facilitan la redacción de promesas. A continuación se muestra un ejemplo de `async`.
+
 
 ```javascript
-//async function f
+//función asíncrona f
 async function f() {
   return 1;
 }
-// promise being resolved
+// promesa que está siendo resuelta
 f().then(alert); // 1
 ```
 
-The above example can be written as follows:
+El ejemplo anterior se puede escribir de la siguiente manera:
 
 ```javascript
 function f() {
@@ -26,21 +27,21 @@ function f() {
 f().then(alert); // 1
 ```
 
-`async` ensures that the function returns a promise, and wraps non-promises in it. With `await`, we can make JavaScript wait until the promise is settled with its value returned.&#x20;
+`async` garantiza que la función devuelva una promesa y envuelve las no promesas en ella. Con `await`, podemos hacer que JavaScript espere hasta que la promesa se resuelva con su valor devuelto.
 
 ```javascript
 async function f() {
   let promise = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("Welcome to Learn JavaScript!"), 1000)
+    setTimeout(() => resolve("¡Bienvenido a Aprender JavaScript!"), 1000)
   });
   
-  let result = await promise; // wait until the promise resolves (*)
-  alert(result); // "Welcome to Learn JavaScript!"
+  let result = await promise; // espere hasta que la promesa se resuelva (*)
+  alert(result); // "¡Bienvenido a Aprender JavaScript!"
 }
 
 f();
 ```
 
 {% hint style="warning" %}
-The `await` keyword can only be used inside an `async` function.
+La palabra clave `await` solo se puede usar dentro de una función `async`.
 {% endhint %}
