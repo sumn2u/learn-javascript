@@ -367,3 +367,21 @@ Tree shaking is a form of dead code elimination. It means that unused modules wi
 **Answer:**
 
 Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
+
+### 10.3. Explain the role of the static structure of ES2015 module syntax in tree shaking. How does tree shaking leverage this structure to eliminate dead code?
+
+**Answer:** 
+
+Tree shaking relies on the static structure of ES2015 module syntax, which means that the import and export statements have a clear and static structure at compile time. During the build process, the bundler (e.g., Rollup or Webpack) analyzes the import statements to determine which modules are being used and which are not. It then eliminates the unused modules from the final bundle, resulting in smaller and more efficient code.
+
+### 10.4. What steps can you take to optimize tree shaking in a complex JavaScript project with multiple dependencies and deep module hierarchies?
+
+**Answer:** 
+
+To optimize tree shaking in a complex project:
+
+- Ensure all dependencies use ES2015 module syntax.
+- Configure your bundler to perform tree shaking.
+- Use the "sideEffects" property in your package.json to mark files or directories as side-effect free.
+- Minimize the use of dynamic imports.
+- Regularly audit and update your code to remove unused exports and functions.
