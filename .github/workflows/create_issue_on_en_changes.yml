@@ -1,0 +1,71 @@
+name: Trigger Issue on English Changes with Visual Diff
+
+on:
+  pull_request:
+    types:
+      - closed
+
+permissions:
+  issues: write
+
+jobs:
+  create_issue_on_english_changes:
+    name: Create an issue after changes on the english version
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Generate Visual Diff
+        id: diff_generator
+        run: |
+          set -e
+          set -o pipefail
+          # Check if changes were made to the "en/" folder
+          if git diff --quiet HEAD~1 main -- 'en/'; then
+            echo "No changes in the 'en/' folder." >> $GITHUB_STEP_SUMMARY
+            echo "SHOULD_ISSUE=0" >> "$GITHUB_OUTPUT"
+          else
+            # Getting the user who initiated the changes
+            username="${{ github.event.sender.login }}"
+
+            # Getting the event type
+            if [ "${{ github.event_name }}" == "push" ]; then
+              event_type="<Push"
+            else
+              event_type="PR"
+            fi
+
+            # Get the PR number if available
+            pr_number="${{ github.event.pull_request.number }}"
+
+            context="@$username has made changes on the original english version of the book ($event_type #${pr_number:-N/A})"
+            
+            # Generate a visual diff of the changes in the "en/" folder.
+            message="$context\n\nVisual Diff of Changes:\n\n\`\`\`diff\n$(git diff HEAD~1 main -- 'en/')\n\`\`\`"
+            
+            echo "ISSUE_BODY<<EOF" >> "$GITHUB_OUTPUT"
+            echo -e "$message" >> "$GITHUB_OUTPUT"
+            echo "EOF" >> "$GITHUB_OUTPUT"
+            echo "SHOULD_ISSUE=1" >> "$GITHUB_OUTPUT"
+            
+            echo "Issue is being generated"
+          fi
+
+      - name: Creating an issue on en/ folder changes
+        uses: imjohnbo/issue-bot@3d96848fb5e9a4a473bb81ae62b4b4866a56e93a
+        if: ${{ steps.diff_generator.outputs.SHOULD_ISSUE == '1' }}
+        with:
+          labels: "translate help-wanted"
+          assignees: "moustaphaotf"
+          title: "Translation needed for existing languages"
+          body: |
+            ${{ steps.diff_generator.outputs.ISSUE_BODY }}
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
