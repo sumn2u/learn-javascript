@@ -2,32 +2,35 @@
 layout: editorial
 chapter: 15
 pageNumber: 75
-description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
+description: Las clases son plantillas para crear un objeto. Encapsula datos con código para trabajar con datos. La palabra clave class se utiliza para crear una clase. 
 ---
 
-# Chapter 15
-# Classes
+# Capítulo 15
 
-Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword `class` is used to create a class.  And a specific method called `constructor` is used for creating and initializing an object created with a `class`. An example of car class is shown below.
+## Clases
+
+Las clases son plantillas para crear un objeto. Encapsula datos con código para trabajar con datos. La palabra clave `class` se utiliza para crear una clase. Y se utiliza un método específico llamado `constructor` para crear e inicializar un objeto creado con una `class`. A continuación se muestra un ejemplo de clase de automóvil.
+
+
 
 ```javascript
-class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
+class Automovil {
+  constructor(nombre, año) {
+    this.nombre = nombre;
+    this.año = año;
   }
-  age() {
-    let date = new Date();
-    return date.getFullYear() - this.year;
+  edad() {
+    let fecha = new Date();
+    return fecha.getFullYear() - this.año;
   }
 }
 
-let myCar = new Car("Toyota", 2021);
-console.log(myCar.age()) // 1
+let miCoche = new Automovil("Toyota", 2021);
+console.log(miCoche.edad()) // 1 (si el año actual es 2022)
 ```
 
 {% hint style="info" %}
-Class must be defined before its usage.
+La clase debe definirse antes de su uso.
 {% endhint %}
 
-In the class body, methods or constructors are defined and executed in `strict mode`. Syntax not adhering to the strict mode results in error.&#x20;
+En el cuerpo de la clase, los métodos o constructores se definen y ejecutan en `strict mode` (modo estricto, en español). La sintaxis que no se adhiere al modo estricto genera error.

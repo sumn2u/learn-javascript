@@ -2,23 +2,21 @@
 layout: editorial
 chapter: 16
 pageNumber: 79
-description: The browser object model lets us interact with the browser window. Through it one can control or manipulate various aspects of the browser, such as the window, frames, history, location, and more.
+description: El modelo de objetos del navegador nos permite interactuar con la ventana del navegador. A través de él se pueden controlar o manipular varios aspectos del navegador, como la ventana, marcos, historial, ubicación y más.
 ---
 
-# Chapter 16
-# Browser Object Model (BOM)
+# Capítulo 16
 
-The browser object model lets us interact with the browser window. The `window` object represents the browser's window and is supported by all browsers.
+## Modelo de Objetos del Navegador (BOM en inglés)
 
-Object `window` is the default object for a browser, so we can specify `window` or call directly all the functions.
+El modelo de objetos del navegador nos permite interactuar con la ventana del navegador. El objeto `window` representa la ventana del navegador y es compatible con todos los navegadores.
+
+El objeto `window` es el objeto predeterminado para un navegador, por lo que podemos especificar `window` o llamar directamente a todas las funciones.
 
 ```javascript
-window.alert("Welcome to Learn JavaScript");  
+window.alert("Bienvenido a Aprender JavaScript");  
 
-alert("Welcome to Learn JavaScript")
+alert("Bienvenido a Aprender JavaScript")
 ```
 
-In a similar fashion, we can call other properties underneath the window object such as history, screen, navigator, location, and so on.
-
-
-
+De manera similar, podemos llamar a otras propiedades debajo del objeto `window`(ventana), como `history` (historial), `screen` (pantalla), `navigator`(navegador), `location`(ubicación), etc.

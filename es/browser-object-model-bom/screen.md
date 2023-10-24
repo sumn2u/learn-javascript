@@ -1,31 +1,28 @@
 ---
 chapter: 16
 pageNumber: 82
-description: The screen object contains the information about the screen on which the current window is being rendered. It allows developers to access properties related to the user's screen size, resolution, color depth, and other display-related information.
+description: El objeto screen contiene la información sobre la pantalla en la que se está representando la ventana actual. Permite a los desarrolladores acceder a propiedades relacionadas con el tamaño de la pantalla del usuario, la resolución, la profundidad del color y otra información relacionada con la visualización.
 ---
 # Screen
 
-The `screen` object contains the information about the screen on which the current window is being rendered. To access `screen` object we can use the `screen` property of `window` object.
+El objeto `screen` contiene la información sobre la pantalla en la que se está representando la ventana actual. Para acceder al objeto `screen` podemos usar la propiedad `screen` del objeto `window`.
 
 ```javascript
 window.screen
-//or
+//o
 screen
 ```
 
-The `window.screen` object has different properties, some of them are listed here:
+El objeto `window.screen` tiene diferentes propiedades, algunas de ellas se enumeran aquí:
 
-| Property | Description |
+| Propiedad | Descripción |
 | :--- | :--- |
-| `height` | Represents the pixel height of the screen. |
-| `left` | Represents the pixel distance of the current screen’s left side. |
-| `pixelDepth` | A read-only property that returns the bit depth of the screen. |
-| `top` | Represents the pixel distance of the current screen’s top. |
-| `width` | Represents the pixel width of the screen. |
-| `orientation` |  Returns the screen orientation as specified in the Screen Orientation API |
-| `availTop` | A read-only property that returns the first pixel from the top that is not taken up by system elements. |
-| `availWidth` | A read-only property that returns the pixel width of the screen excluding system elements. |
-| `colorDepth` | A read-only property that returns the number of bits used to represent colors. |
-
-
-
+| `height` | Representa la altura de píxeles de la pantalla. |
+| `left` | Representa la distancia en píxeles del lado izquierdo de la pantalla actual. |
+| `pixelDepth` | Una propiedad de solo lectura que devuelve la profundidad de bits de la pantalla. |
+| `top` | Representa la distancia en píxeles de la parte superior de la pantalla actual. |
+| `width` | Representa el ancho de píxeles de la pantalla. |
+| `orientation` |  Devuelve la orientación de la pantalla como se especifica en la IPA de Orientación de Pantalla. |
+| `availTop` | Una propiedad de solo lectura que devuelve el primer píxel desde la parte superior que no está ocupado por los elementos del sistema. |
+| `availWidth` | Una propiedad de solo lectura que devuelve el ancho de píxeles de la pantalla excluyendo los elementos del sistema. |
+| `colorDepth` | Una propiedad de solo lectura que devuelve el número de bits utilizados para representar los colores. |

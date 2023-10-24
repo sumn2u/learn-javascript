@@ -1,39 +1,38 @@
 ---
 chapter: 15
 pageNumber: 77
-description:  Inheritance refers to the ability of an object (subclass) to inherit properties and methods from another object (superclass). JavaScript supports prototypal inheritance, which means that objects can inherit properties and methods directly from other objects, known as prototypes.
+description: La herencia se refiere a la capacidad de un objeto (subclase) de heredar propiedades y métodos de otro objeto (superclase). JavaScript admite la herencia de prototipos, lo que significa que los objetos pueden heredar propiedades y métodos directamente de otros objetos, lo que se conoce como prototipos.
 ---
-# Inheritance
+# Herencia
 
-The inheritance is useful for code reusability purposes as it extends existing properties and methods of a class. The `extends` keyword is used to create a class inheritance. &#x20;
+La herencia es útil para fines de reutilización del código, ya que amplía las propiedades y métodos existentes de una clase. La palabra clave `extends` se utiliza para crear una herencia de clase.
 
 ```javascript
-class Car {
-  constructor(brand) {
-    this.carname = brand;
+class Vehiculo {
+  constructor(marca) {
+    this.nombrecoche = marca;
   }
-  present() {
-    return 'I have a ' + this.carname;
-  }
-}
-
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
-  }
-  show() {
-    return this.present() + ', it is a ' + this.model;
+  presentar() {
+    return 'Tengo un ' + this.nombrecoche;
   }
 }
 
-let myCar = new Model("Toyota", "Camry");
-console.log(myCar.show()); // I have a Camry, it is a Toyota.
+class Modelo extends Vehiculo {
+  constructor(marca, mod) {
+    super(marca);
+    this.modelo = mod;
+  }
+  mostrar() {
+    return this.presentar() + ', es un ' + this.modelo;
+  }
+}
+
+let miCoche = new Modelo("Toyota", "Camry");
+console.log(miCoche.mostrar()); // Tengo un Toyota, es un Camry
 ```
 
 {% hint style="info" %}
-The prototype of the parent class must be an `Object` or `null`.&#x20;
+El prototipo de la clase padre debe ser un `Object` o `null`.
 {% endhint %}
 
-The `super` method is used inside a constructor and refers to the parent class. With this, one can access the parent class properties and methods.
-
+El método `super` se usa dentro de un constructor y se refiere a la clase principal. Con esto, se puede acceder a las propiedades y métodos de la clase principal.

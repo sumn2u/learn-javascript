@@ -1,34 +1,33 @@
 ---
 chapter: 16
 pageNumber: 83
-description:  The navigator is a built-in object that provides information about the user's web browser and the user's system. It contains various properties and methods that give access to information about the user's environment, such as the browser's name, version, user agent, language preferences, and more.
+description: La propiedad navigator es un objeto integrado que proporciona información sobre el navegador web del usuario y el sistema del usuario. Contiene varias propiedades y métodos que dan acceso a información sobre el entorno del usuario, como el nombre del navegador, la versión, el agente de usuario, las preferencias de idioma y más. 
+
 ---
 # Navigator
 
-The `window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.&#x20;
+`window.navigator` o `navigator` es una propiedad **de solo lectura** y contiene diferentes métodos y funciones relacionadas con el navegador.
 
-Let's look at a  few examples of navigation.
+Veamos algunos ejemplos de de uso.
 
-1.  **navigator.appName**: It gives the name of the browser application
+1. **navigator.appName**: Da el nombre de la aplicación del navegador.
 
     ```javascript
     navigator.appName; 
     // "Netscape"
     ```
 
-    > _**Note:**_ "Netscape" is the application name for IE11, Chrome, Firefox, and Safari.
-2.  **navigator.cookieEnabled**: Returns a boolean value based on the cookie value in the browser.
+    > _**Nota:**_ "Netscape" es el nombre de la aplicación para IE11, Chrome, Firefox y Safari.
+2. **navigator.cookieEnabled**: Devuelve un valor booleano basado en el valor de la cookie en el navegador.
 
     ```javascript
     navigator.cookieEnabled;
     //true
     ```
-3.  **navigator.platform**: Provides information about the browser operating system.
+
+3. **navigator.platform**: Proporciona información sobre el sistema operativo del navegador.
 
     ```javascript
     navigator.platform;
     "MacIntel"
     ```
-
-
-

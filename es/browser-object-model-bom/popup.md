@@ -1,47 +1,40 @@
 ---
 chapter: 16
 pageNumber: 81
-description: Popups are small window that appears on top of main browser to provide information. It is used to show notifications, alerts, dialogs, login forms, or any other content that should appear temporarily or in a separate context from the main page.
+description: Las ventanas emergentes son pequeñas ventanas que aparecen en la parte superior del navegador principal para proporcionar información. Se utiliza para mostrar notificaciones, alertas, cuadros de diálogo, formularios de inicio de sesión o cualquier otro contenido que deba aparecer temporalmente o en un contexto separado de la página principal.
 ---
-# Popup
+# Ventanas emergentes
 
-Popups are an additional way to show information, take user confirmation, or take user input from additional documents. A popup can navigate to a new URL and send information to the opener window. **Alert box**, **Confirmation box**,  and **Prompt box** are the global functions where we can show the popup information.
+Las ventanas emergentes son una forma adicional de mostrar información, recibir confirmación del usuario o recibir información del usuario de documentos adicionales. Una ventana emergente puede navegar a una nueva URL y enviar información a la ventana de apertura. **Cuadro de alerta** (función `alert()`), **Cuadro de confirmación** (función `confirm()`) y **Cuadro de mensaje** (función `prompt()`) son las funciones globales donde podemos mostrar la información emergente.
 
-1.  **alert()**: It displays information to the user and has an  "**OK**" button to proceed.
+1. **alert()**: Muestra información al usuario y tiene un botón "**OK**" para continuar.
 
     ```javascript
-    alert("Alert message example");
+    alert("Ejemplo de mensaje de alerta");
     ```
-2.  **confirm()**: Use as a dialog box to confirm or accept something. It has "**Ok**" and "**Cancel**" to proceed. If the user clicks "**Ok**" then it returns `true`, if click "**Cancel**" it returns  `false`.&#x20;
+
+2. **confirm()**: Utilícelo como cuadro de diálogo para confirmar o aceptar algo. Tiene los botones "**Aceptar**" y "**Cancelar**" para continuar. Si el usuario hace clic en "**Aceptar**", devuelve `true`, si hace clic en "**Cancelar**", devuelve `false`.
 
     ```javascript
     let txt;
-    if (confirm("Press a button!")) {
-      txt = "You pressed OK!";
+    if (confirm("¡Presiona un botón!")) {
+      txt = "¡Presionó Aceptar!";
     } else {
-      txt = "You pressed Cancel!";
+      txt = "¡Presionó Cancelar!";
     }
     ```
-3.  **prompt()**: Takes user input value with "**Ok"** and "**Cancel"** buttons. It returns `null` if the user does not provide any input value.
+
+3. **prompt()**: Toma el valor ingresado por el usuario con los botones "**Aceptar"** y "**Cancelar"**. Devuelve "nulo" si el usuario no proporciona ningún valor de entrada.
 
     ```javascript
-    //syntax 
-    //window.prompt("sometext","defaultText");
+    //sintaxis
+    //window.prompt("alguntexto","textopredeterminado");
 
-    let person = prompt("Please enter your name", "Harry Potter");
+    let persona = prompt("Por favor, introduzca su nombre", "Harry Potter");
 
     if (person == null || person == "") {
-      txt = "User cancelled the prompt.";
+      txt = "El usuario canceló el mensaje.";
     } else {
-      txt = "Hello " + person + "! How are you today?";
+      txt = "¡Hola, " + person + "! ¿Cómo estás hoy?";
     }
     ```
-
-
-
-
-
-
-
-
-

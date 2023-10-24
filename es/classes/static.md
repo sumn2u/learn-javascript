@@ -1,28 +1,29 @@
 ---
 chapter: 15
 pageNumber: 76
-description: The static keyword defines the static methods or properties for a class. When a method or property is defined as static within a class, then it belongs to the class itself rather than to instances (objects) of the class 
+description: La palabra clave static define los métodos o propiedades estáticas de una clase. Cuando un método o propiedad se define como estático dentro de una clase, entonces pertenece a la clase misma y no a instancias (objetos) de la clase.
+ 
 ---
 # Static
 
-The `static` keyword defines the static methods or properties for a class.  These methods and properties are called in the class itself.&#x20;
+La palabra clave `static` define los métodos o propiedades estáticas de una clase. Estos métodos y propiedades se llaman en la propia clase.
 
 ```javascript
-class Car {
-  constructor(name) {
-    this.name = name;
+class Vehiculo {
+  constructor(nombre) {
+    this.nombre = nombre;
   }
-  static hello(x) {
-    return "Hello " + x.name;
+  static hola(x) {
+    return "Hola " + x.nombre;
   }
 }
-let myCar = new Car("Toyota");
+let miVehiculo = new Vehiculo("Toyota");
 
-console.log(myCar.hello()); // This will throw an error
-console.log(Car.hello(myCar));
-// Result: Hello Toyota
+console.log(miVehiculo.hola()); // Esto arrojará un error
+console.log(Vehiculo.hola(miVehiculo));
+// Resultado: Hola Toyota
 ```
 
 {% hint style="info" %}
-One can access the static method or property of another static method of the same class using `this` keyword.  &#x20;
+Se puede acceder al método estático o propiedad de otro método estático de la misma clase usando la palabra clave `this`.
 {% endhint %}

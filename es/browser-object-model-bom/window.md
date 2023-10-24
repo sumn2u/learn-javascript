@@ -1,29 +1,29 @@
 ---
 chapter: 16
 pageNumber: 80
-description: window is a global object that represents the browser window or tab in which the current web page is loaded. The window object acts as the global object for client-side JavaScript, meaning that variables and functions declared without the var, let, or const keywords become properties and methods of the window object.
+description: window es un objeto global que representa la ventana o pestaña del navegador en la que está cargada la página web actual. El objeto window actúa como objeto global para JavaScript del lado del cliente, lo que significa que las variables y funciones declaradas sin las palabras clave var, let o const se convierten en propiedades y métodos del objeto window.
+
 ---
 # Window
 
-The `window` object represents the browser window and is supported by the browsers. Global variables, objects, and functions are also part of the window object. 
+El objeto `window` representa la ventana del navegador y es compatible con los navegadores. Las variables, objetos y funciones globales también forman parte del objeto de ventana.  
 
 Global **variables** are **properties** and **functions** are **methods** of the window object.
 
-Let's take an example of the screen properties. It is used to determine the size of the browser window and is measured in pixels.    
+Las **variables** globales son **propiedades** y las **funciones** son **métodos** del objeto window.
 
-* `window.innerHeight` - the inner height of the browser window
-* `window.innerWidth` - the inner width of the browser window
+Let's take an example of the screen properties. It is used to determine the size of the browser window and is measured in pixels.
 
-> _**Note**_:  `window.document` is same as   `document.location` as  the document object model\(DOM\) is part of window object.
+Tomemos un ejemplo de las propiedades de la pantalla. Se utiliza para determinar el tamaño de la ventana del navegador y se mide en píxeles.
 
-Few examples of the window methods
+* `window.innerHeight` - la altura interior de la ventana del navegador
+* `window.innerWidth` - el ancho interior de la ventana del navegador
 
-* `window.open()` - open a new window
-* `window.close()` - close the current window
-* `window.moveTo()` - move the current window
-* `window.resizeTo()` - resize the current window
+> _**Nota**_: `window.document` es lo mismo que `document.location` ya que el modelo de objeto de documento\(DOM\) es parte del objeto de ventana.
 
- 
+Algunos ejemplos de los métodos de ventana.
 
-
-
+* `window.open()` - abre una nueva ventana
+* `window.close()` - cierra la ventana actual
+* `window.moveTo()` - mueve la ventana actual
+* `window.resizeTo()` - cambia el tamaño de la ventana actual

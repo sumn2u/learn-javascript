@@ -1,19 +1,20 @@
 ---
 chapter: 18
 pageNumber: 89
-description: Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a more structured and organized way to handle asynchronous operations, such as making network requests, reading files, or interacting with databases.
+description: Promise es un objeto que representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante. Las promesas proporcionan una forma más estructurada y organizada de manejar operaciones asincrónicas, como realizar solicitudes de red, leer archivos o interactuar con bases de datos.
 ---
 
-# Chapter 18
-# Promise, async/await
+# Capítulo 18
 
-Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
+## Promise, async/await
+
+Imagine que es un escritor de libros popular y planea publicar un nuevo libro en un día determinado. Los lectores que estén interesados en este libro lo agregarán a su lista de deseos y recibirán una notificación cuando se publique o incluso si el día de lanzamiento también se pospuso. El día del lanzamiento, todos reciben una notificación y pueden comprar el libro, haciendo felices a todas las partes. Esta es una analogía de la vida real que ocurre en la programación.
 
 1. A "_producing code_" is something that takes time and accomplishes something. Here it's a book writer.
 2. A "_consuming code_" is someone who consumes the "producing code" once it's ready. In this case, it's a "reader".
 3. The linkage between the "_producing code_" and the "_consuming code_" can be called a _promise_ as it assures getting the results from the "_producing code_" to the "_consuming code_".
 
-# Promise
+### Promise
 
 The analogy that we made is also true for the JavaScript `promise` object. The constructor syntax for the `promise` object is:
 

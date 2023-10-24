@@ -1,44 +1,44 @@
 ---
 chapter: 16
 pageNumber: 84
-description: Cookies are pieces of information that are store on a computer and can be accessed by the browser
+description: Las cookies son piezas de información que se almacenan en una computadora y a las que puede acceder el navegador.
 ---
 # Cookies 🍪
 
-Cookies are pieces of information that are store on a computer and can be accessed by the browser.
+Las cookies son piezas de información que se almacenan en una computadora y a las que puede acceder el navegador.
 
-Communication between a web browser and the server is stateless meaning that it treats each request independently. There are cases where we need to store user information and make that information available to the browser. With cookies, information can be fetched from the computer whenever it is required.
+La comunicación entre un navegador web y el servidor no tiene estado, lo que significa que trata cada solicitud de forma independiente. Hay casos en los que necesitamos almacenar información del usuario y ponerla a disposición del navegador. Con las cookies, se puede recuperar información del ordenador cuando sea necesario.
 
-Cookies are saved in name-value pair
+Las cookies se guardan en un par nombre-valor.
 
 ```javascript
 book = Learn Javascript
 ```
 
-The `document.cookie` property is used to create, read and delete cookies. Creating cookie is pretty easy you need to provide the name and value
+La propiedad `document.cookie` se utiliza para crear, leer y eliminar cookies. Crear una cookie es bastante fácil; debe proporcionar el nombre y el valor.
 
 ```javascript
 document.cookie = "book=Learn Javacript";
 ```
 
-By default, a cookie gets deleted when the browser is closed. To make it persistent, we need to specify the expiry date (in UTC time).
+De forma predeterminada, una cookie se elimina cuando se cierra el navegador. Para que sea persistente, debemos especificar la fecha de vencimiento (en hora UTC).
 
 ```javascript
 document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC";
 ```
 
-We can add a parameter to tell which path the cookie belongs to. By default, the cookie belongs to the current page.
+Podemos agregar un parámetro para saber a qué ruta pertenece la cookie. Por defecto, la cookie pertenece a la página actual.
 
 ```javascript
 document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
 ```
 
-Here is a simple example of a cookie.
+A continuación se muestra un ejemplo sencillo de una cookie.
 
 ```javascript
 let cookies = document.cookie;
-// a simple way to reterive all cookie.
+// una forma sencilla de recuperar todas las cookies.
 
 document.cookie = "book=Learn Javacript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
-// setting up a cookie
+// configura una cookie
 ```

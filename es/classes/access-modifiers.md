@@ -1,65 +1,64 @@
 ---
 chapter: 15
 pageNumber: 78
-description: Access modifiers control the visibility and accessibility of class members (properties and methods). public, private, and protected are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
+description: Los modificadores de acceso controlan la visibilidad y accesibilidad de los miembros de la clase (propiedades y métodos). public, private y protected son los tres modificadores de acceso utilizados en clase para controlar su acceso desde el exterior. De forma predeterminada, todos los miembros (propiedades, campos, métodos o funciones) son accesibles públicamente desde fuera de la clase.
 ---
-# Access Modifiers
+# Modificadores de acceso
 
-`public`, `private`, and `protected` are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
+`public`, `private`, y `protected` son los tres modificadores de acceso utilizados en clase para controlar su acceso desde el exterior. De forma predeterminada, todos los miembros (propiedades, campos, métodos o funciones) son accesibles públicamente desde fuera de la clase.
 
 ```javascript
-class Car {
-  constructor(name) {
-    this.name = name;
+class Coche {
+  constructor(nombre) {
+    this.nombre = nombre;
   }
-  static hello(x) {
-    return "Hello " + x.name;
+  static hola(x) {
+    return "Hola " + x.nombre;
   }
 }
-let myCar = new Car("Toyota");
-console.log(Car.hello(myCar)); // Hello Toyota
+let miCoche = new Coche("Toyota");
+console.log(Coche.hola(miCoche)); // Hola Toyota
 ```
 
-`private`  members can access only internally within the class and cannot be accessible from outside.  Private should start with `#`.
+Los miembros `privados` sólo pueden acceder internamente dentro de la clase y no pueden ser accesibles desde fuera. Los elementos de la clase privados deben comenzar con el carácter de la almohadilla: `#`.
 
 ```javascript
-class Car {
-  constructor(name) {
-    this.name = name;
+class Coche {
+  constructor(nombre) {
+    this.nombre = nombre;
   }
-  static hello(x) {
-    return "Hello " + x.name;
+  static hola(x) {
+    return "Hola " + x.nombre;
   }
-  #present(carname) {
-    return 'I have a ' + this.carname;
+  #presenta(nombrecoche) {
+    return 'Tengo un ' + this.nombrecoche;
   }
 }
-let myCar = new Car("Toyota");
-console.log(myCar.#present("Camry")); // Error
-console.log(Car.hello(myCar)); // Hello Toyota
+let miCoche = new Coche("Toyota");
+console.log(miCoche.#presenta("Camry")); // Error
+console.log(Coche.hola(miCoche)); // Hola Toyota
 ```
 
-`protected` fields are accessible only from inside the class and those extending it. These are useful for the internal interface as the inheriting class also gains access to the parent class.  Protected fields with `_` .
+Solo se puede acceder a los campos `protected` (protegidos, en español) desde dentro de la clase y desde aquellos que la extienden. Estos son útiles para la interfaz interna ya que la clase heredera también obtiene acceso a la clase principal. Los elementos de la clase protegidos deben comenzar con el carácter del subrayado: `_`.
 
 ```javascript
-class Car {
-  constructor(brand) {
-    this.carname = brand;
+class Coche {
+  constructor(marca) {
+    this.nombrecoche = marca;
   }
-  _present() {
-    return 'I have a ' + this.carname;
+  _presenta() {
+    return 'Tengo un ' + this.nombrecoche;
   }
 }
 
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
+class Modelo extends Coche {
+  constructor(marca, modelo) {
+    super(marca);
+    this.modelo = modelo;
   }
-  show() {
-    return this._present() + ', it is a ' + this.model;
+  muestra() {
+    return this._presenta() + ', es un ' + this.modelo;
   }
 }
-let myCar = new Model("Toyota", "Camry");
-console.log(myCar.show()) // I have a Toyota, it is a Camry
+let miCoche = new Modelo("Toyota", "Camry");
 ```

@@ -1,33 +1,33 @@
 ---
 chapter: 16
 pageNumber: 86
-description: The location is a built-in object that represents the current URL of the web page being displayed in the browser. It provides current web page's location and allows to perform various operations related to URLs.
+description: La propiedad location es un objeto integrado que representa la URL actual de la página web que se muestra en el navegador. Proporciona la ubicación de la página web actual y permite realizar diversas operaciones relacionadas con las URL.
 ---
 # Location
 
-The `location` object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by
+El objeto `location` se utiliza para recuperar la ubicación actual (URL) del documento y proporciona diferentes métodos para manipular la ubicación del documento. Se puede acceder a la ubicación actual mediante
 
 ```javascript
 window.location
-//or
+//o
 document.location
-//or
+//o
 location
 ```
 
-> _**Note**_: `window.location` and `document.location` references the same location object.
+> _**Nota**_: `window.location` y `document.location` hacen referencia al mismo objeto `location`.
 
-Let's take an example of the following URL and explore the different properties of `location`
+Tomemos un ejemplo de la siguiente URL y exploremos las diferentes propiedades de `location`
 
 [`http://localhost:3000/js/index.html?type=listing&page=2#title`](http://localhost:8080/js/index.html?type=listing\&page=2#title)
 
 ```javascript
-location.href //prints current document URL
-location.protocol //prints protocol like http: or https:
-location.host //prints hostname with port like localhost or localhost:3000
-location.hostname //prints hostname like localhost or www.example.com
-location.port //prints port number like 3000
-location.pathname //prints pathname like /js/index.html
-location.search //prints query string like ?type=listing&page=2
-location.hash //prints fragment identifier like #title
+location.href //imprime la URL del documento actual
+location.protocol //imprime protocolo como http: o https:
+location.host //imprime el nombre de host con un puerto como localhost o localhost:3000
+location.hostname //imprime el nombre de host como localhost o www.example.com
+location.port //imprime el número de puerto como 3000
+location.pathname //imprime el nombre de la ruta como /js/index.html
+location.search //imprime una cadena de consulta como ?type=listing&page=2
+location.hash //imprime el identificador del fragmento como #title
 ```

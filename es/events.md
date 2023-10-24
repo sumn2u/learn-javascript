@@ -2,78 +2,79 @@
 layout: editorial
 chapter: 17
 pageNumber: 87
-description: In programming, events are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
+description: En programación, los eventos son acciones o sucesos en un sistema sobre los que el sistema le informa para que pueda responder a ellos. Por ejemplo, cuando hace clic en el botón Restablecer, se borra la entrada.
 ---
 
 # Chapter 17
 
 ## Eventos
 
-In programming, _events_ are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
+En programación, los _eventos_ son acciones o sucesos en un sistema sobre los que el sistema le informa para que pueda responder a ellos. Por ejemplo, cuando hace clic en el botón Restablecer, se borra la entrada.
 
-Interactions from the keyboard such as keypresses need to be constantly read to catch the key’s state before it’s released again.  Performing other time-intensive computations might cause you to miss a key press. This used to be the input handling mechanism of some primitive machines. A further step up is to use a queue, i.e. a program that periodically checks the queue for new events and reacts to it. This approach is called _polling_.
+Las interacciones del teclado, como las pulsaciones de teclas, deben leerse constantemente para captar el estado de la tecla antes de volver a soltarla. Realizar otros cálculos que requieren mucho tiempo puede hacer que no presione una tecla. Este solía ser el mecanismo de manejo de entradas de algunas máquinas primitivas. Un paso más adelante es utilizar una cola, es decir, un programa que comprueba periódicamente la cola en busca de nuevos eventos y reacciona ante ellos. Este enfoque se llama _pooling_.
 
-The main drawback of this approach is that it has to look at the queue every now and then, causing disruption when an event is triggered. The better mechanism for this is to notify the code when an event occurs.  This is what modern browsers do by allowing us to register functions as _handlers_ for specific events.
+El principal inconveniente de este enfoque es que tiene que mirar la cola de vez en cuando, lo que provoca interrupciones cuando se activa un evento. El mejor mecanismo para esto es notificar al código cuando ocurre un evento. Esto es lo que hacen los navegadores modernos al permitirnos registrar funciones como _controladores_ para eventos específicos.
+
 
 ```javascript
-<p>Click me to activate the handler.</p>
+<p>Haz clic en mí para activar el controlador.</p>
 <script>
   window.addEventListener("click", () => {
-    console.log("clicked");
+    console.log("hizo clic");
   });
 </script>
 ```
 
-Here, the `addEventListener` is called on the `window` object (built-in object provided by the browser) to register a handler for the whole `window`. Calling its `addEventListener` method registers the second argument to be called whenever the event described by its first argument occurs.
+Aquí, se llama a `addEventListener` en el objeto `window` (objeto integrado proporcionado por el navegador) para registrar un controlador para toda la `window`. Llamar a su método `addEventListener` registra el segundo argumento que se llamará cada vez que ocurra el evento descrito por su primer argumento.
+
 
 {% hint style="info" %}
-Event listeners are called only when the event happens in the context of the object they are registered on.
+Los detectores de eventos se llaman solo cuando el evento ocurre en el contexto del objeto en el que están registrados.
 {% endhint %}
 
-Some of the common HTML events are mentioned here.
+Algunos de los eventos HTML comunes se mencionan aquí.
 
-| Event         | Description                                               |
-| ------------- | --------------------------------------------------------- |
-| `onchange`    | When the user changes or modifies the value of form input |
-| `onclick`     | When the user clicks on the element                       |
-| `onmouseover` | When cursor of the mouse comes over the element           |
-| `onmouseout`  | When cursor of the mouse comes leaves the element         |
-| `onkeydown`   | When the user press and then releases the key             |
-| `onload`      | When the browser has finished the loading                 |
+| Evento        | Descripción |
+| ------------- | ------------|
+| `onchange`    | Cuando el usuario cambia o modifica el valor de la entrada del formulario |
+| `onclick`     | Cuando el usuario hace clic en el elemento. |
+| `onmouseover` | Cuando el cursor del mouse pasa sobre el elemento |
+| `onmouseout`  | Cuando el cursor del mouse sale del elemento. |
+| `onkeydown`   | Cuando el usuario presiona y luego suelta la tecla |
+| `onload`      | Cuando el navegador haya terminado de cargar|
 
-It is common for handlers registered on nodes with children to also receive events from the children. For example, if a button inside a paragraph is clicked, handlers registered on the paragraph will also receive the click event. In case of the presence of handlers in both, the one at the bottom gets to go first. The event is said to _propagate_ outward, from the initiating node to its parent node and on the root of the document.
+Es común que los controladores registrados en nodos con hijos también reciban eventos de los hijos. Por ejemplo, si se hace clic en un botón dentro de un párrafo, los controladores registrados en el párrafo también recibirán el evento de clic. En caso de presencia de manejadores en ambos, el de abajo irá primero. Se dice que el evento se propaga hacia afuera, desde el nodo iniciador hasta su nodo padre y en la raíz del documento.
 
-The event handler can call the `stopPropagation` method on the event object to prevent handlers further up from receiving the event. This is useful in cases like, you have a button inside a clickable element and you don’t want to trigger the outer element's clickable behavior from a button click.
+El controlador de eventos puede llamar al método `stopPropagation` en el objeto del evento para evitar que los controladores más arriba reciban el evento. Esto es útil en casos como, tienes un botón dentro de un elemento en el que se puede hacer clic y no deseas activar el comportamiento de clic del elemento externo al hacer clic en un botón.
 
 ```javascript
-<p>A paragraph with a <button>button</button>.</p>
+<p>Un párrafo con un <button>botón</button>.</p>
 <script>
-  let para = document.querySelector("p"),
-      button = document.querySelector("button");
-  para.addEventListener("mousedown", () => {
-    console.log("Paragraph handler.");
+  let parrafo = document.querySelector("p"),
+  boton = document.querySelector("button");
+  parrafo.addEventListener("mousedown", () => {
+    console.log("Manejador de párrafos.");
   });
-  button.addEventListener("mousedown", event => {
-    console.log("Button handler.");
+  boton.addEventListener("mousedown", event => {
+    console.log("Manejador de boton.");
     event.stopPropagation();
   });
 </script> 
 ```
 
-Here, the _`mousedown`_ handlers are registered by both paragraph and button. Upon clicking the button, the handler for the button calls `stopPropagation`, which will prevent the handler on the paragraph from running.
+Aquí, los controladores _`mousedown`_ se registran tanto por párrafo como por botón. Al hacer clic en el botón, el controlador del botón llama a "stopPropagation", lo que evitará que se ejecute el controlador del párrafo.
 
-Events can have a default behavior. For example, links navigate to the link’s target upon click, you get navigated to the bottom of a page upon clicking the down arrow, and so on. These default behaviors can be prevented by calling a `preventDefault` method on the event object.
+Los eventos pueden tener un comportamiento predeterminado. Por ejemplo, los enlaces navegan hasta el destino del enlace al hacer clic, se navega al final de una página al hacer clic en la flecha hacia abajo, y así sucesivamente. Estos comportamientos predeterminados se pueden evitar llamando a un método `preventDefault` en el objeto del evento.
 
 ```javascript
 <a href="https://developer.mozilla.org/">MDN</a>
 <script>
   let link = document.querySelector("a");
   link.addEventListener("click", event => {
-    console.log("Nope.");
+    console.log("No.");
     event.preventDefault();
   });
 </script>
 ```
 
-Here, the default behavior of the link upon click is prevented, i.e. navigating towards the link's target.
-
+Aquí, se evita el comportamiento predeterminado del enlace al hacer clic, es decir, navegar hacia el destino del enlace.target.
