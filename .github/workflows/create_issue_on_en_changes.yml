@@ -61,7 +61,6 @@ jobs:
         if: ${{ steps.diff_generator.outputs.SHOULD_ISSUE == '1' }}
         with:
           labels: "translate help-wanted"
-          assignees: "moustaphaotf"
           title: "Translation needed for existing languages"
           body: |
             ${{ steps.diff_generator.outputs.ISSUE_BODY }}
