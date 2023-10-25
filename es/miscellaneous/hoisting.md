@@ -1,31 +1,29 @@
 ---
 chapter: 19
 pageNumber: 94
-description: Hosting is a default behavior in JavaScript of moving declarations at the top.  While executing a code, it creates a global execution context  creation and execution.  In the creation phase, JavaScript moves the variable and function declaration to the top of the page, which is known as hoisting.
+description: El hoisting es un comportamiento predeterminado en JavaScript para mover declaraciones en la parte superior. Mientras se ejecuta un código, se crea un contexto de ejecución global y se ejecuta. En la fase de creación, JavaScript mueve la declaración de variable y función a la parte superior de la página, lo que se conoce como elevación..
 ---
-# Hoisting
+# Hoisting (Alzado)
 
-Hosting is a default behavior in JavaScript of moving declarations at the top.  While executing a code, it creates a global execution context:  creation and execution.  In the creation phase, JavaScript moves the variable and function declaration to the top of the page, which is known as hoisting.&#x20;
+El alojamiento es un comportamiento predeterminado en JavaScript para mover declaraciones en la parte superior. Mientras se ejecuta un código, se crea un contexto de ejecución global: creación y ejecución. En la fase de creación, JavaScript mueve la declaración de variables y funciones a la parte superior de la página, lo que se conoce como elevación.
 
 ```javascript
-// variable hoisting
-console.log(counter);
-let counter = 1; // throws ReferenceError: Cannot access 'counter' before initialization
+// elevación variable
+console.log(contador);
+let contador = 1; // lanza la excepción ReferenceError: contador is not defined
 ```
 
-Although the `counter` is present in the heap memory but hasn't been initialized so, it throws an error. This happens because of hoisting, the `counter` variable is hoisted here.&#x20;
+Aunque el `contador` está presente en la memoria del montón pero no se ha inicializado, genera un error. Esto sucede debido al izado, la variable `contador` se iza aquí.
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>// function hoisting
-</strong><strong>const x = 20,
-</strong>    y = 10;
+```javascript
+    // función de elevación
+    const x = 20,
+    y = 10;
 
-let result = add(x,y); // ❌ Uncaught ReferenceError: add is not defined
-console.log(result);
+    let resultado = agregar(x,y); // ❌ Uncaught ReferenceError: add is not defined
+    console.log(resultado);
 
-let add = (x, y) => x + y; 
-</code></pre>
+    let agregar = (x, y) => x + y; 
+```
 
-Here, the `add` function is hoisted and initialized with `undefined` in heap memory in the creation phase of the global execution context. Thus, throwing an error.&#x20;
-
-
-
+Aquí, la función `agregar` se activa e inicializa con `undefined` en la memoria del montón en la fase de creación del contexto de ejecución global. Por lo tanto, arroja un error.

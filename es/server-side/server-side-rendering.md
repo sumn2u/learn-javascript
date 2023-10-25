@@ -3,36 +3,36 @@ chapter: 20
 pageNumber: 105
 ---
 
-# Server Side Rendering (SSR)
+# Renderizado del lado del servidor (SSR)
 
-Normally, when a user visits a website, the browser sends a request to the server, which responds with HTML, CSS, and JavaScript. But with libraries like *React* and *Vue*, the server only sends a blank HTML page along with a JavaScript file. The JavaScript file then renders the page in the browser. This is called **Client Side Rendering (CSR)**.
+Normalmente, cuando un usuario visita un sitio web, el navegador envía una solicitud al servidor, que responde con HTML, CSS y JavaScript. Pero con bibliotecas como *React* y *Vue*, el servidor solo envía una página HTML en blanco junto con un archivo JavaScript. Luego, el archivo JavaScript muestra la página en el navegador. Esto se llama **Representación del lado del cliente (CSR)**.
 
-**Server Side Rendering (SSR)** is a technique where the server processes the request and generates the HTML on the server from the React or Vue components. The server then sends the generated HTML to the browser, which can then render the page without having to wait for the JavaScript to load.
+**Server Side Rendering (SSR)** es una técnica en la que el servidor procesa la solicitud y genera el HTML en el servidor a partir de los componentes React o Vue. Luego, el servidor envía el HTML generado al navegador, que luego puede representar la página sin tener que esperar a que se cargue JavaScript.
 
-## Why use SSR?
+## ¿Porqué usar SSR?
 
-There are several advantages to using SSR over CSR:
+Existen varias ventajas al utilizar SSR sobre CSR:
 
-- **Better for SEO**: Search engines can crawl and index the content of your website more easily if it is rendered on the server. This can lead to better search engine rankings and more traffic from search engines.
+- **Mejor para SEO**: los motores de búsqueda pueden rastrear e indexar el contenido de su sitio web más fácilmente si se representa en el servidor. Esto puede conducir a una mejor clasificación en los motores de búsqueda y a más tráfico de los motores de búsqueda.
 
-- **Faster initial page load**: Since the HTML is generated on the server, the browser does not have to wait for JavaScript to load before rendering the page. This can lead to a faster initial page load time.
+- **Carga de página inicial más rápida**: dado que el HTML se genera en el servidor, el navegador no tiene que esperar a que se cargue JavaScript antes de representar la página. Esto puede conducir a un tiempo de carga inicial de la página más rápido.
 
-- **Better performance on low-end devices**: Since the HTML is generated on the server, the browser does not have to do as much work to render the page. This can lead to better performance on low-end devices, such as mobile phones and tablets.
+- **Mejor rendimiento en dispositivos de gama baja**: dado que el HTML se genera en el servidor, el navegador no tiene que trabajar tanto para representar la página. Esto puede conducir a un mejor rendimiento en dispositivos de gama baja, como teléfonos móviles y tabletas.
 
-## Disadvantages of SSR
+## Desventajas de SSR
 
-There are also some disadvantages to using SSR:
+También existen algunas desventajas al usar SSR:
 
-- **More complex development process**: SSR requires more work on the server side, which can make the development process more complex.
+- **Proceso de desarrollo más complejo**: SSR requiere más trabajo en el lado del servidor, lo que puede hacer que el proceso de desarrollo sea más complejo.
 
-- **More server resources**: SSR requires more server resources, which can lead to higher hosting costs.
+- **Más recursos del servidor**: SSR requiere más recursos del servidor, lo que puede generar mayores costos de alojamiento.
 
-- **Limited client-side functionality**: SSR does not allow you to use client-side libraries, such as jQuery or Bootstrap, since they are not available on the server.
+- **Funcionalidad limitada del lado del cliente**: SSR no permite utilizar bibliotecas del lado del cliente, como jQuery o Bootstrap, ya que no están disponibles en el servidor.
 
-## How to implement SSR?
+## ¿Cómo implementar SSR?
 
-Each library has its own way of implementing SSR. For example, for React, you can use [Next.js](https://nextjs.org/) or [Gatsby](https://www.gatsbyjs.com/). For Vue, you can use [Nuxt.js](https://nuxtjs.org/). For Svelte you can use [SvelteKit](https://kit.svelte.dev/).
+Cada biblioteca tiene su propia forma de implementar SSR. Por ejemplo, para React, puede usar [Next.js](https://nextjs.org/) o [Gatsby](https://www.gatsbyjs.com/). Para Vue, puede utilizar [Nuxt.js](https://nuxtjs.org/). Para Svelte puedes usar [SvelteKit](https://kit.svelte.dev/).
 
-## Conclusion
+## Conclusión
 
-In this chapter, we learned about Server Side Rendering (SSR) and how it can improve the performance of your website. We also learned about the advantages of using SSR over CSR and how to implement SSR with React, Vue, and Svelte.
+En este capítulo, aprendimos sobre la representación del lado del servidor (SSR) y cómo puede mejorar el rendimiento de su sitio web. También aprendimos sobre las ventajas de usar SSR sobre CSR y cómo implementar SSR con React, Vue y Svelte.

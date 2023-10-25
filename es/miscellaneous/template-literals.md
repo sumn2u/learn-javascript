@@ -1,34 +1,32 @@
 ---
 chapter: 19
 pageNumber: 93
-description: Template literals are literals delaminated with backtick ` ` and are used in variable and expression interpolation into strings.
+description: Los literales de plantilla son literales delaminados con comillas invertidas (` `) y se usan en la interpolación de variables y expresiones en cadenas.
 ---
-# Template Literals
+# Literales de plantilla
 
-Template literals are literals delaminated with backtick `(``)` and are used in variable and expression interpolation into strings.&#x20;
+Los literales de plantilla son literales delimitados con comillas invertidas `(``)` y se usan en la interpolación de variables y expresiones en cadenas.
 
 ```javascript
-let text = `Hello World!`;
-// template literals with both single and double code inside a single string
-let text = `He's often called "Johnny"`;
-// template literals with multiline strings
-let text =
-`The quick
-brown fox
-jumps over
-the lazy dog`;
+let texto1 = `¡Hola mundo!`;
+// literales de plantilla con código simple y doble dentro de una sola cadena
+let texto2 = `A menudo lo llaman "Johnny"`;
+// literales de plantilla con cadenas multilínea
+let texto3 =
+`El rápido
+zorro marrón
+salta
+sobre el perro perezoso`;
 
-// template literals with variable interpolation
-const firstName = "John";
-const lastName = "Doe";
+// literales de plantilla con interpolación variable
+const nombre = "John";
+const apellido = "Doe";
 
-const welcomeText = `Welcome ${firstName}, ${lastName}!`;
+const textoBienvenida = `¡Bienvenido ${nombre}, ${apellido}!`;
 
-// template literals with expression interpolation
-const price = 10;
-const VAT = 0.25;
+// plantilla de literales con interpolación de expresiones
+const precio = 10;
+const IVA = 0.25;
 
-const total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+const total = `Total: ${(precio * (1 + IVA)).toFixed(2)}`;
 ```
-
-&#x20;

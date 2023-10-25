@@ -1,19 +1,19 @@
 ---
 chapter: 19
 pageNumber: 102
-description: In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.
+description: En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
 ---
-# Debugging
+# Depuración
 
-In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.
+En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
 
-Fortunately, most modern browsers come with built-in debuggers. These debuggers can be switched on and off, forcing errors to be reported. It is also possible to set up breakpoints during the execution of code to stop execution and examine variables. For this one has to open a debugging window and place the `debugger` keyword in the JavaScript code. The code execution is stopped in each breakpoint, allowing developers to examine the JavaScript values and, resume the execution of code.
+Afortunadamente, la mayoría de los navegadores modernos vienen con depuradores integrados. Estos depuradores se pueden activar y desactivar, lo que obliga a informar los errores. También es posible configurar puntos de interrupción durante la ejecución del código para detener la ejecución y examinar las variables. Para esto, hay que abrir una ventana de depuración y colocar la palabra clave `debugger` en el código JavaScript. La ejecución del código se detiene en cada punto de interrupción, lo que permite a los desarrolladores examinar los valores de JavaScript y reanudar la ejecución del código.
 
-One can also use the `console.log()` method to print the JavaScript values in the debugger window.
+También se puede utilizar el método `console.log()` para imprimir los valores de JavaScript en la ventana del depurador.
 
 ```javascript
 const a = 5, b = 6;
 const c = a + b;
 console.log(c);
-// Result : c = 11;
+// Resultado : c = 11;
 ```

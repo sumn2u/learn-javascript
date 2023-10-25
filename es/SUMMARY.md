@@ -81,7 +81,7 @@
   - [Huella global](miscellaneous/global-footprint.md)
   - [Depuración](miscellaneous/debugging.md)
   - [Creación e implementación de aplicaciones JS](miscellaneous/building-and-deploying.md)
-- [Lado del servidor](server-side/README.md)
+- [Código del lado del servidor](server-side/README.md)
   - [Node.js](server-side/nodejs.md)
   - [Renderizado del lado del servidor](server-side/server-side-rendering.md)
 - [Ejercicios](exercises/README.md)

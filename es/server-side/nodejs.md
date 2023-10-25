@@ -5,86 +5,85 @@ pageNumber: 104
 
 # Node.js
 
-**Node.js** is a JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. It is built on top of the V8 JavaScript engine, which is the same engine used by Google Chrome. Node.js is open-source and cross-platform, which means it can run on Windows, macOS, and Linux.
+**Node.js** es un entorno de ejecución de JavaScript que permite a los desarrolladores ejecutar código JavaScript fuera de un navegador web. Está construido sobre el motor JavaScript V8, que es el mismo motor utilizado por Google Chrome. Node.js es de código abierto y multiplataforma, lo que significa que puede ejecutarse en Windows, macOS y Linux.
 
-## Node.js is not a programming language
+## Node.js no es un lenguaje de programación
 
-Many people mistakenly believe that Node.js is a programming language. This is not true. Node.js is a JavaScript runtime environment, which means it provides an environment for JavaScript code to run. It is not a programming language itself.
+Mucha gente cree erróneamente que Node.js es un lenguaje de programación. Esto no es verdad. Node.js es un entorno de ejecución de JavaScript, lo que significa que proporciona un entorno para que se ejecute el código JavaScript. No es un lenguaje de programación en sí.
 
-Node.js is **not** the only JavaScript runtime environment. There are many others, including Deno, Nashorn, and most recently, Bun. But Node.js is by far the most popular and widely used JavaScript runtime environment.
+Node.js **no** es el único entorno de ejecución de JavaScript. Hay muchos otros, incluidos Deno, Nashorn y, más recientemente, Bun. Pero Node.js es, con diferencia, el entorno de ejecución de JavaScript más popular y utilizado.
 
-## Getting started with Node.js
+## Empezando con Node.js
 
-To get started with Node.js, you will need to install it on your computer. You can download the latest version of Node.js from the official website at [nodejs.org](https://nodejs.org/en/). Once you have downloaded and installed Node.js, you can verify the installation by running the following command in your terminal:
+Para comenzar con Node.js, deberá instalarlo en su computadora. Puede descargar la última versión de Node.js desde el sitio web oficial en [nodejs.org](https://nodejs.org/en/). Una vez que haya descargado e instalado Node.js, puede verificar la instalación ejecutando el siguiente comando en su terminal:
 
 ```bash
 node --version
 ```
 
-This should print the version number of Node.js like this:
+Esto debería imprimir el número de versión de Node.js de esta manera:
 
 ```bash
 v20.7.0
 ```
 
-## Writing your first Node.js program
+## Escribiendo su primer programa Node.js
 
-Now that you have installed Node.js, let's write our first Node.js program. Create a new file called `hello.js` and add the following code:
+Ahora que ha instalado Node.js, escribamos nuestro primer programa Node.js. Cree un nuevo archivo llamado `hola.js` y agregue el siguiente código:
 
 ```js
-console.log('Hello World!');
+console.log('¡Hola mundo!');
 ```
 
-To run this program, open your terminal and navigate to the directory where you saved the `hello.js` file. Then run the following command:
+Para ejecutar este programa, abra su terminal y navegue hasta el directorio donde guardó el archivo `hola.js`. Luego ejecute el siguiente comando:
 
 ```bash
-node hello.js
+node hola.js
 ```
 
-This should print the following output:
+Esto debería imprimir el siguiente resultado:
 
 ```bash
-Hello World!
+'¡Hola mundo!'
 ```
 
-## Writing a simple web server using Express and Node.js
+## Escribir un servidor web simple usando Express y Node.js
 
-Express is a popular web framework for Node.js. It provides a simple and elegant API for building web applications. Let's use Express to create a simple web server that will respond to HTTP requests with a "Hello World!" message.
+Express es un marco web popular para Node.js. Proporciona una API simple y elegante para crear aplicaciones web. Usemos Express para crear un servidor web simple que responda a las solicitudes HTTP con un "¡Hola mundo!" mensaje.
 
-First, we need to install Express. To do this, run the following command in your terminal:
+Primero, necesitamos instalar Express. Para hacer esto, ejecute el siguiente comando en su terminal:
 
 ```bash
 npm install express
 ```
 
-This will install Express and all its dependencies. Once the installation is complete, create a new file called `server.js` and add the following code:
+Esto instalará Express y todas sus dependencias. Una vez que se complete la instalación, cree un nuevo archivo llamado `servidor.js` y agregue el siguiente código:
 
 ```js
 const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('¡Hola mundo!');
 });
 
 app.listen(3000, () => {
-  console.log('Server is listening on port 3000');
+  console.log('El servidor está escuchando el puerto 3000');
 });
 ```
 
-This code creates a new Express application and defines a route for the root path (`/`). When a request is made to this route, the server will respond with a "Hello World!" message.
+Este código crea una nueva aplicación Express y define una ruta para la ruta raíz (`/`). Cuando se realiza una solicitud a esta ruta, el servidor responderá con un mensaje "¡Hola mundo!".
 
-To run this program, open your terminal and navigate to the directory where you saved the `server.js` file. Then run the following command:
-
-```bash
-node server.js
-```
-
-This should print the following output:
+Para ejecutar este programa, abra su terminal y navegue hasta el directorio donde guardó el archivo `servidor.js`. Luego ejecute el siguiente comando:
 
 ```bash
-Server is listening on port 3000
+node servidor.js
 ```
 
-Now open your web browser and go to [http://localhost:3000](http://localhost:3000). You should see a "Hello World!" message.
+Esto debería imprimir el siguiente resultado:
 
+```bash
+El servidor está escuchando el puerto 3000
+```
+
+Ahora abra su navegador web y vaya a [http://localhost:3000](http://localhost:3000). Deberías ver un "¡Hola mundo!" mensaje.

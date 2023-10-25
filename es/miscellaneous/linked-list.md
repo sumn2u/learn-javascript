@@ -1,130 +1,130 @@
 ---
 chapter: 19
 pageNumber: 98
-description: Linked List is a linear data structure used to store a collection of elements, called nodes. Each node in a linked list contains two parts the data or value of the element it represents and a reference (pointer) to the next node in the sequence. The last node in the list points to null, indicating the end of the list.
+description: La lista enlazada es una estructura de datos lineal que se utiliza para almacenar una colección de elementos, llamados nodos. Cada nodo en una lista enlazada contiene dos partes - los datos o el valor del elemento que representa y una referencia (puntero) al siguiente nodo de la secuencia. El último nodo de la lista apunta a nulo, lo que indica el final de la lista.
 ---
-# Linked List
+# Lista Enlazada
 
-It is a common data structure found in all programming languages. A Linked List is very similar to a normal array in Javascript, it just acts a little bit differently.
+Es una estructura de datos común que se encuentra en todos los lenguajes de programación. Una lista enlazada es muy similar a una matriz normal en Javascript, solo que actúa un poco diferente.
 
-Here each element in the list is a separate object containing a link or a pointer to the next. There is no built-in method or function for Linked Lists in Javascript so one has to implement it. An example of a linked list is shown below.&#x20;
+Aquí cada elemento de la lista es un objeto independiente que contiene un enlace o un puntero al siguiente. No existe un método o función integrado para listas vinculadas en Javascript, por lo que hay que implementarlo. A continuación se muestra un ejemplo de una lista enlazada.
 
-```
+```javascript
 ["one", "two", "three", "four"]
 ```
 
-**Types of Linked Lists**
+## **Tipos de listas enlazadas**
 
-There are three different types of linked lists:
+Hay tres tipos diferentes de listas enlazadas:
 
-1. **Singly Linked Lists:**  Each node contains only one pointer to the next node.
-2. **Doubly Linked Lists:**  There are two pointers at each node, one to the next node and one to the previous node.
-3. **Circular Linked Lists:**  A circular linked list forms a loop by having the last node pointing to the first node or any other node before it.
+1. **Listas enlazadas individualmente:** Cada nodo contiene solo un puntero al siguiente nodo.
+2. **Listas doblemente enlazadas:** Hay dos punteros en cada nodo, uno al siguiente nodo y otro al nodo anterior.
+3. **Listas enlazadas circulares:** Una lista enlazada circular forma un bucle al hacer que el último nodo apunte al primer nodo o a cualquier otro nodo anterior.
 
-# Add
+### agregar (add)
 
-The `add` method is created here to add value to a linked list.
+El método `agregar` se crea aquí para agregar valor a una lista vinculada.
 
 ```javascript
-class Node {
-    constructor(data) {
-        this.data = data
-        this.next = null 
+class Nodo {
+    constructor(datos) {
+        this.datos = datos
+        this.siguiente = null 
     }
 }
 
-class LinkedList {
-    constructor(head) {
-        this.head = head 
+class ListaEnlazada {
+    constructor(cabeza) {
+        this.cabeza = cabeza 
     }
-    append = (value) => {
-        const newNode = new Node(value) 
-        let current = this.head 
-        if (!this.head) {
-            this.head = newNode 
+    agregar = (valor) => {
+        const nuevoNodo = new Nodo(valor) 
+        let actual = this.cabeza 
+        if (!this.cabeza) {
+            this.cabeza = nuevoNodo 
             return 
         }
-        while (current.next) {
-            current = current.next
+        while (actual.siguiente) {
+            actual = actual.siguiente
         }
-        current.next = newNode
+        actual.siguiente = nuevoNodo
     }
 }
 ```
 
-# Pop
+### extraer (pop)
 
-Here, a `pop` method is created to remove a value from the linked list.
+Aquí, se crea un método `extraer` para eliminar un valor de la lista vinculada.
 
 ```javascript
-class Node {
-    constructor(data) {
-        this.data = data
-        this.next = null 
+class Nodo {
+    constructor(datos) {
+        this.datos = datos
+        this.siguiente = null 
     }
 }
 
-class LinkedList {
-    constructor(head) {
-        this.head = head 
+class ListaEnlazada {
+    constructor(cabeza) {
+        this.cabeza = cabeza 
     }
-    pop = () => {
-        let current = this.head 
-        while (current.next.next) {
-            current = current.next 
+    extraer = () => {
+        let actual = this.cabeza 
+        while (actual.siguiente.siguiente) {
+            actual = actual.siguiente 
         }
-        current.next = current.next.next 
+        actual.siguiente = actual.siguiente.siguiente 
     }
 }
 ```
 
-# Prepend
+### anteponer (prepend)
 
-Here, a `prepend` method is created to add a value before the first child of the linked list.
+Aquí, se crea un método `anteponer` para agregar un valor antes del primer hijo de la lista vinculada.
 
 ```javascript
-class Node {
-    constructor(data) {
-        this.data = data
-        this.next = null 
+class Nodo {
+    constructor(datos) {
+        this.datos = datos
+        this.siguiente = null 
     }
 }
 
-class LinkedList {
-    constructor(head) {
-        this.head = head 
+class ListaEnlazada {
+    constructor(cabeza) {
+        this.cabeza = cabeza 
     }
-    prepend = (value) => {
-        const newNode = new Node(value)
-        if (!this.head) {
-            this.head = newNode 
+    anteponer = (valor) => {
+        const nuevoNodo = new Nodo(valor)
+        if (!this.cabeza) {
+            this.cabeza = nuevoNodo 
         }
         else {
-            newNode.next = this.head 
-            this.head = newNode 
+            nuevoNodo.siguiente = this.cabeza 
+            this.cabeza = nuevoNodo 
         }
     }
 }
 ```
 
-# Shift
+### eliminarPrimero (shift)
 
-Here, the `shift` method is created to remove the first element of the Linked List.
+Aquí, se crea el método `eliminarPrimero` para eliminar el primer elemento de la Lista Enlazada.
 
 ```javascript
-class Node {
-    constructor(data) {
-        this.data = data
-        this.next = null 
+class Nodo {
+    constructor(datos) {
+        this.datos = datos
+        this.siguiente = null 
     }
 }
 
-class LinkedList {
-    constructor(head) {
-        this.head = head 
+class ListaEnlazada {
+    constructor(cabeza) {
+        this.cabeza = cabeza 
     }
-    shift = () => {
-        this.head = this.head.next 
+    eliminarPrimero = () => {
+        this.cabeza = this.cabeza.siguiente 
     }
 }
 ```

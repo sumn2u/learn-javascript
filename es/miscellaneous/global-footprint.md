@@ -1,13 +1,13 @@
 ---
 chapter: 19
 pageNumber: 101
-description: Global footprint refers to the impact or influence that a script or application has on the global scope of the runtime environment. When a script or application creates variables or functions in the global scope, it affects the global footprint. 
+description: La huella global se refiere al impacto o influencia que tiene un script o una aplicación en el alcance global del entorno de ejecución. Cuando un script o una aplicación crea variables o funciones en el ámbito global, afecta la huella global. 
 ---
-# Global footprint
+# Huella global
 
-If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware  of the variable name overlapping.
+Si está desarrollando un módulo, que podría estar ejecutándose en una página web, que también ejecuta otros módulos, debe tener cuidado con la superposición de nombres de variables.
 
-Suppose we are developing a counter module:
+Supongamos que estamos desarrollando un módulo contador:
 
 ```javascript
 let myCounter = {
@@ -21,6 +21,6 @@ let myCounter = {
 };
 ```
 
-> _**Note:**_ This technique is often used with closures, to make the internal state immutable from the outside.
+> _**Nota:**_ Esta técnica se usa a menudo con los cierres (closures, en inglés), para hacer que el estado interno sea inmutable desde el exterior.
 
-The module now takes only one variable name — `myCounter`. If any other module on the page makes use of such names like `number` or `isGreaterThanTen` then it's perfectly safe because we will not override each other's values.
+El módulo ahora toma solo un nombre de variable: `myCounter`. Si cualquier otro módulo de la página utiliza nombres como `number` o `isGreaterThanTen`, entonces es perfectamente seguro porque no sobreescribiremos los valores de los demás.

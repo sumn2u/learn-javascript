@@ -1,34 +1,34 @@
 ---
 chapter: 19
 pageNumber: 95
-description: Currying is an advanced technique in functional programming of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable  f(a,b,c) into callable as f(a)(b)(c). It doesn’t call a function instead it transforms it.
+description: Currying es una técnica avanzada en programación funcional para transformar una función con múltiples argumentos en una secuencia de funciones anidadas. Transforma una función invocable como f(a,b,c) a invocable como f(a)(b)(c). No llama a una función, sino que la transforma.
 ---
 # Currying
 
-`Currying` is an advanced technique in functional programming of transforming a function with multiple arguments into a sequence of nesting functions. It transforms a function from callable  `f(a,b,c)` into callable as `f(a)(b)(c)`. It doesn’t call a function instead it transforms it.
+`Currying` es una técnica avanzada en programación funcional para transformar una función con múltiples argumentos en una secuencia de funciones anidadas. Transforma una función invocable como `f(a,b,c)` a invocable como `f(a)(b)(c)`. No llama a una función, sino que la transforma.
 
-To get a better understanding of currying let’s create a simple `add` function add that takes three arguments and returns the sum of them. Then, we create a `addCurry` function that takes a single input and returns a series of functions with its sum.
+Para comprender mejor la técnica del currying, creemos una función simple `agregar` que toma tres argumentos y devuelve la suma de ellos. Luego, creamos una función `agregarCurry` que toma una única entrada y devuelve una serie de funciones con su suma.
 
 ```javascript
-// Noncurried version
-const add = (a, b, c)=>{
+// Versión normal
+const agregar = (a, b, c)=>{
     return a+ b + c
 }
-console.log(add(2, 3, 5)) // 10
+console.log(agregar(2, 3, 5)) // 10
 
-// Curried version
-const addCurry = (a) => {
+// Versión cambiada con la técnica de currying
+const agregarCurry = (a) => {
     return (b)=>{
         return (c)=>{
-            return a+b+c
+            return a + b + c
         }
     }
 }
-console.log(addCurry(2)(3)(5)) // 10
+console.log(agregarCurry(2)(3)(5)) // 10
 ```
 
-Here, we can see that both the curried and noncurried versions returned the same result. Currying can be beneficial for many reasons, some of which are mentioned here.
+Aquí podemos ver que tanto la versión con curry como la sin curry arrojaron el mismo resultado. El curry puede ser beneficioso por muchas razones, algunas de las cuales se mencionan aquí.
 
-* It helps to avoid passing the same variable again and again.
-* It divides the function into smaller chunks with a single responsibility, making the function less error-prone.
-* It is used in functional programming to create a high-order function.
+* Ayuda a evitar pasar la misma variable una y otra vez.
+* Divide la función en partes más pequeñas con una única responsabilidad, lo que hace que la función sea menos propensa a errores.
+* Se utiliza en programación funcional para crear una función de alto orden.

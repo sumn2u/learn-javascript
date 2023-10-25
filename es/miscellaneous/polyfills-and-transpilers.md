@@ -1,66 +1,63 @@
 ---
 chapter: 19
 pageNumber: 96
-description: Polyfills and transpilers are two important tools used in web development to help ensure that modern JavaScript code can run on older browsers and to take advantage of the latest JavaScript features while maintaining compatibility with older environments.
+description: Polyfills y transpilers son dos herramientas importantes que se utilizan en el desarrollo web para ayudar a garantizar que el código JavaScript moderno pueda ejecutarse en navegadores más antiguos y aprovechar las últimas funciones de JavaScript manteniendo la compatibilidad con entornos más antiguos.
 ---
-# Polyfills and Transpilers
+# Polyfills y transpiladores
 
-JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to [https://tc39.github.io/ecma262/ ](https://tc39.github.io/ecma262/)and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced.&#x20;
+JavaScript evoluciona de vez en cuando. Regularmente, se envían, analizan y agregan nuevas propuestas de lenguaje a [https://tc39.github.io/ecma262/](https://tc39.github.io/ecma262/) y luego se incorporan a la especificación. Puede haber diferencias en cómo se implementa en los motores JavaScript según el navegador. Algunos pueden implementar las propuestas preliminares, mientras que otros esperan hasta que se publique la especificación completa. Surgen problemas de compatibilidad con versiones anteriores a medida que se introducen cosas nuevas.
 
-To support the modern code in old browsers we use two tools: `transpilers` and `polyfills`.
+Para admitir el código moderno en navegadores antiguos utilizamos dos herramientas: `transpiladores` y `polyfills`.
 
-**Transpilers**
+## **Transpiladores**
 
-It is a program that translates modern code and rewrites it using older syntax constructs so, that the older engine can understand it. For example, "`nullish` coalescing operator" `??`  was introduced in 2020, and outdated browsers can’t understand it.&#x20;
+Es un programa que traduce código moderno y lo reescribe utilizando estructuras de sintaxis más antiguas para que el motor más antiguo pueda entenderlo. Por ejemplo, el operador coalescente  "nulo" `??` se introdujo en 2020 y los navegadores obsoletos no pueden entenderlo.
 
-Now, it’s the transpiler's job to make the `nullish` coalescing operator” `??` understandable to the old browsers.&#x20;
+Ahora, el trabajo del transpilador es hacer que el operador coalescente "nulo" `??` sea comprensible para los navegadores antiguos.
 
 ```javascript
-// before running the transpiler
+// antes de ejecutar el transpilador
 height = height ?? 200;
 
-// after running the transpiler
+// después de ejecutar el transpilador
 height = (height !== undefined && height !== null) ? height: 200;
 
 ```
 
 {% hint style="info" %}
-&#x20;[Babel](https://babeljs.io/) is one of the most prominent transpilers. In the development process, we can use build tools like [webpack](https://webpack.js.org/) or [parcel](https://parceljs.org/) to transpile code.
+[Babel](https://babeljs.io/) es uno de los transpiladores más destacados. En el proceso de desarrollo, podemos utilizar herramientas de compilación como [webpack](https://webpack.js.org/) o [parcel](https://parceljs.org/) para transpilar código.
 {% endhint %}
 
-**Polyfills**
+## **Polyfills**
 
-There are times when new functionality isn't available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a `polyfill`. For example, the `filter()` method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns `true`
+Hay ocasiones en las que las nuevas funciones no están disponibles en motores de navegador obsoletos. En este caso, el código que utiliza la nueva funcionalidad no funcionará. Para llenar los vacíos, agregamos la funcionalidad que falta que se llama `polyfill`. Por ejemplo, el método `filter()` se introdujo en ES5 y no es compatible con algunos de los navegadores antiguos. Este método acepta una función y devuelve una matriz que contiene solo los valores de la matriz original para los cuales la función devuelve `true`.
 
 ```javascript
 const arr = [1, 2, 3, 4, 5, 6];
-const filtered = arr.filter((e) => e % 2 === 0); // filter outs the even number
+const filtered = arr.filter((e) => e % 2 === 0); // filtra el número par
 console.log(filtered);
 
 // [2, 4, 6]
 ```
 
-The polyfill for the filter is.
+El polyfill para el filtro es.
 
 ```javascript
-Array.prototype.filter = function (callback) {
-  // Store the new array
-  const result = [];
+Array.prototype.filter = function (retrollamada) {
+  // Almacena la nueva matriz
+  const resultado = [];
   for (let i = 0; i < this.length; i++) {
-    // call the callback with the current element, index, and context.
-    //if it passes the text then add the element in the new array.
-    if (callback(this[i], i, this)) {
-      result.push(this[i]);
+    // llama a la retrollamada con el elemento, índice y contexto actuales.
+     //si pasa el texto, agregue el elemento en la nueva matriz.
+    if (retrollamada(this[i], i, this)) {
+      resultado.push(this[i]);
     }
   }
   //return the array
-  return result
+  return resultado
 }
 ```
 
 {% hint style="info" %}
-[caniuse](https://caniuse.com/) shows the updated functionality and syntax supported by different browser engines.
+[caniuse](https://caniuse.com/) muestra la funcionalidad y la sintaxis actualizadas admitidas por diferentes motores de navegador.
 {% endhint %}
-
-
-
