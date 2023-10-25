@@ -939,3 +939,9 @@ JSON arrays are written inside square brackets and arrays contain javascript obj
   {"firstName":"Shane", "lastName":"Warn"}
 ]
 ```
+
+### 7.6. In JSON, what is the purpose of square brackets, and how are they used?
+
+**Answer** 
+
+In JSON, square brackets [ ] are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.
