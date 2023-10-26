@@ -2,30 +2,29 @@
 chapter: 20
 pageNumber: 116
 ---
-# Get the Titles!
+# ¡Consigue los títulos&excl;
 
-The _Get the Titles!_ problem is an interesting problem where we have to get the title from a list of books. This is a good exercise for the implementation of arrays and objects.
+El problema _¡Obtener los títulos!_ es un problema interesante en el que tenemos que obtener el título de una lista de libros. Este es un buen ejercicio para la implementación de matrices y objetos.
 
-### 📝 Tasks:
+## 📝 Tareas
 
-Given an array of objects that represent books with an author.
+Dada una matriz de objetos que representan libros con un autor.
 
 ```javascript
-const books = [
+const libros = [
   {
-    title: "Eloquent JavaScript, Third Edition",
-    author: "Marijn Haverbeke"
+    titulo: "Eloquent JavaScript, Third Edition",
+    autor: "Marijn Haverbeke"
   },
   {
-    title: "Practical Modern JavaScript",
-    author: "Nicolás Bevacqua"
+    titulo: "Practical Modern JavaScript",
+    autor: "Nicolás Bevacqua"
   }
 ]
 ```
 
-* [ ] Write a program to create a function `getTheTitles` that takes the array and returns the array of title and print its value in the `console`.
+- [ ] Escriba un programa que cree una función `obtenerLosTitulos` que tome la matriz y devuelva la matriz del título e imprima su valor en la `console`.
 
-### 💡 Hints:
+## 💡 Consejos
 
-* Visit the [arrays](../arrays/) and [objects](../objects/) chapter to understand how the array and object work.
-
+- Viste los capítulos de [matrices](../arrays/) y [objetos](../objects/) para entender como trabajan los objetos y las matrices.

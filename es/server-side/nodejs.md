@@ -86,4 +86,4 @@ Esto debería imprimir el siguiente resultado:
 El servidor está escuchando el puerto 3000
 ```
 
-Ahora abra su navegador web y vaya a [http://localhost:3000](http://localhost:3000). Deberías ver un "¡Hola mundo!" mensaje.
+Ahora abra su navegador web y vaya a [http://localhost:3000](http://localhost:3000). Deberías ver un mensaje "¡Hola mundo!" .

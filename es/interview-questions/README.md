@@ -5,11 +5,12 @@ chapter: 25
 pageNumber: 82
 description: 
 ---
-# Chapter 25
-# Interview questions
+# Capítulo 25
 
-This chapter discusses various questions to better prepare candidate on their understanding about JavaScript. It is divided into three parts: basic, intermediate and advance level.
+## Preguntas de entrevista
 
-* [Basic Level](./basic-level.md)
-* [Intermediate Level](./intermediate-level.md)
-* [Advance Level](./advance-level.md)
+Este capítulo analiza varias preguntas para preparar mejor al candidato en su comprensión de JavaScript. Se divide en tres partes: nivel básico, intermedio y avanzado.
+
+* [Nivel básico](./basic-level.md)
+* [Nivel intermedio](./intermediate-level.md)
+* [Nivel avanzado](./advance-level.md)

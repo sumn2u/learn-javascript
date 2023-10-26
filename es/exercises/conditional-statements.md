@@ -2,17 +2,17 @@
 chapter: 20
 pageNumber: 113
 ---
-# Conditional Statements
+# Sentencias condicionales
 
-Conditional logic is vital in programming as it makes sure that the program works regardless of what data you throw in and also allows branching.  This exercise is about the implementation of various conditional logic in real-life problems.
+La lógica condicional es vital en programación para asegurar que el programa funciona independientemente de qué datos le arrojas y también permite la ramificación. Este ejercicio es sobre la implementación de diversas lógicas condicionales en problemas de la vida real.
 
-### 📝 Task:
+## 📝 Tarea
 
-* [ ] Write a program to create a  prompt "_How many km is left to go?_" and based on the user and the following conditions, print the results in the `console`.
-  * If there are more than 100 km left to go, print: `"You still have a bit of driving left to go"`.
-  * If there are more than 50 km, but less or equal to 100 km, print: `"I'll be there in 5 minutes"`.
-  * If there are less than or equal to 50 km, print: `"I'm parking. I'll see you right now"`.
+- [ ] Escriba un programa para crear un mensaje "¿Cuántos km quedan por recorrer? _" y, según la respuesta del usuario y las siguientes condiciones, imprima los resultados en la `console`.
+  - Si hay más de 100 km por recorrer, imprima `"Todavía te queda un poco de camino por recorrer"`.
+  - Si son más de 50 km, pero menores o iguales a 100 km, imprima: `"Estaré ahí en 5 minutos"`.
+  - Si son menores o iguales a 50 km, imprimir: `"Estoy estacionando. Te veo ahora mismo"`.
 
-### 💡 Hints:
+## 💡 Consejos
 
-* Visit the [conditional logic](../conditional/) chapter to understand how to use conditional logic and conditional statements.
+- Visite el capítulo [lógica condicional](../conditional/) para entender como usar la lógica condicional y las declaraciones condicionales.

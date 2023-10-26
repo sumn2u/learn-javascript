@@ -2,17 +2,15 @@
 chapter: 20
 pageNumber: 112
 ---
-# Functions
+# Funciones
 
-A function is a block of code designed to perform a specific task and executed when "something" invokes it. More info about functions can be found in the[ functions](../functions/) chapter.
+Una función es un bloque de código diseñado para realizar una tarea específicada y ejecutada cuando "algo" la invoque. Se puede encontrar más información sobre funciones en el capítulo [funciones](../functions/).
 
+## 📝 Tarea
 
+- [ ] Escriba un programa para crear una función llamada `esImpar` a la que se pasa un número `45345` como argumento y determina si el número es impar o no.
+- [ ] Llame a esta función para obtener el resultaado. El resultado debería estar en un formato booleano y y debería devolver `true` en `console`.
 
-### 📝 Task:
+## 💡 Consejos
 
-* [ ] Write a program to create a function named `isOdd`that passes a number `45345` as an argument and determines whether the number is odd or not.
-* [ ] Call this function to get the result. The result should be in a boolean format and should return `true` in `console`.&#x20;
-
-### 💡 Hints:
-
-* Visit the [functions](../functions/) chapter to understand functions and how to create them.
+- Visite el capítulo [funciones](../functions/) para entender las funciones y cómo crearlas.

@@ -1,7 +1,7 @@
 ---
 layout: editorial
-title: Basic JavaScript Interview Questions
+title: Preguntas de entrevista sobre JavaScript de nivel básico
 description: 
 ---
-
-# JavaScript Interview Questions
+<!-- markdownlint-disable-file MD025 -->
+# Preguntas de entrevista sobre JavaScript de nivel básico

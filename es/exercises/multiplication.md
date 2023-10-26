@@ -2,22 +2,22 @@
 chapter: 20
 pageNumber: 108
 ---
-# Multiplication
+# Multiplicación
 
-In JavaScript, we can perform the multiplication of two numbers by using the asterisk `(*)` arithmetic operators.&#x20;
+En JavaScript, podemos realizar la multiplicación de dos números usando el operador aritmético asterisco `(*)`.
 
-### Example:
+## Ejemplo
 
 ```javascript
-let resultingValue = 3 * 2;
+let valorResultante = 3 * 2;
 ```
 
-Here, we stored the product of `3 * 2` into a `resultingValue` variable.
+Aquí, hemos almacenado el producto de `3 * 2` en la variable `valorResultante`.
 
-### 📝 Tasks:
+## 📝 Tareas
 
-* [ ] Write a program to store the product of  `23` times `41`  and print its value.
+- [ ] Escriba un programa que almacene el producto de `23` veces `41`  e imprima su valor.
 
-### 💡 Hints:
+## 💡 Consejos
 
-* Visit the [Basic Operators](../numbers/operators.md) chapter to understand the mathematical operations.
+- Visite el capítulo [Operadores básicos](../numbers/operators.md) para entender las operaciones matemáticas.

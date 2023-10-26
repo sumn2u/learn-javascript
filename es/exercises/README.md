@@ -4,20 +4,20 @@ chapter: 21
 pageNumber: 106
 ---
 
-# Chapter 21
-# Exercises
+# Capítulo 21
 
+## Ejercicios
+
+En este capítulo realizaremos ejercicios para comprobar nuestro conocimiento en JavaScript. Los ejercicios que realizaremos se listan abajo:
 In this chapter we will be performing exercises to test our knowledge in JavaScript. The exercises that we will be performing are listed below:
 
 * [Console](./console.md)
-* [Multiplication](./multiplication.md)
-* [User Input Variables](./user-input-variables.md)
-* [Constants](./constants.md)
-* [Concatenation](./concatenation.md)
-* [Functions](./functions.md)
-* [Conditional Statements](./conditional-statements.md)
-* [Objects](./objects.md)
-* [FizzBuzz Problem](./fizzbuzz-problem.md)
-* [Get the Titles!](./get-the-titles.md)
-
-
+* [Multiplicación](./multiplication.md)
+* [Variables de entrada del usuario](./user-input-variables.md)
+* [Constantes](./constants.md)
+* [Concatenación](./concatenation.md)
+* [Funciones](./functions.md)
+* [Sentencias condicionales](./conditional-statements.md)
+* [Objetos](./objects.md)
+* [Problema de FizzBuzz](./fizzbuzz-problem.md)
+* [¡Consigue los títulos!](./get-the-titles.md)

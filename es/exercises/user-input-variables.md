@@ -2,16 +2,16 @@
 chapter: 20
 pageNumber: 109
 ---
-# User Input Variables
+# Variables de entrada del usuario
 
-In JavaScript, we can take input from users and use it as a variable. One doesn't need to know their value to work with them.
+En JavaScript, podemos tomar información de los usuarios y usarla como una variable. No necesitamos conocer su valor para trabajar con ésta.
 
-### 📝 Tasks:
+## 📝 Tareas
 
-* [ ] Write a program to take input from a user and add `10` to it, and print its result.
+- [ ] Escriba un programa que tome información de un usuario y agrege `10` a esta, e imprima su resultado.
 
-### 💡 Hints:
+## 💡 Consejos
 
-* The content of a variable is determined by the user's inputs. The `prompt()` method saves the input value as a string.
-* You will need to make sure that the string value is converted into an integer for calculations.&#x20;
-* Visit the [Basic Operators](../numbers/operators.md) chapter for the type conversion of `string` to `int`.&#x20;
+- El contenido de una variable se determina por las entradas del usuario. El método `prompt()` salva el valor de entrada como una cadena.
+- Necesitará asegurarse de que el valor de cadena se convierte en un entero para los cálculos.
+- Visite el capítulo [Operadores básicos](../numbers/operators.md) para la conversión de tipos de `string` a `int`.

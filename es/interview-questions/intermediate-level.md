@@ -1,7 +1,7 @@
 ---
 layout: editorial
-title: Intermediate level JavaScript Interview Questions
+title: Preguntas de entrevista de JavaScript de nivel intermedio
 description: 
 ---
-
-# Intermediate Level JavaScript Interview Questions
+<!-- markdownlint-disable-file MD025 -->
+# Preguntas de entrevista de JavaScript de nivel intermedio

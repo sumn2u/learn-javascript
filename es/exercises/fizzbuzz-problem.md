@@ -2,16 +2,16 @@
 chapter: 20
 pageNumber: 115
 ---
-# FizzBuzz Problem
+# Problema de FizzBuzz
 
-The _FizzBuzz_ problem is one of the commonly asked questions, here one has to print _Fizz_ and _Buzz_ upon some conditions.
+El problema _FizzBuzz_ es una de las preguntas más frecuentes, aquí se tiene que imprimir _Fizz_ y _Buzz_ bajo determinadas condiciones.
 
-### 📝 Tasks:
+## 📝 Tarea
 
-* [ ] Write a program to print all the numbers between 1 to 100 in such a way that the following conditions are met.
-  * For multiples of 3, instead of the number, print `Fizz`.
-  * For multiples of 5, print `Buzz`.
-  * For numbers that are multiples of both 3 and 5, print `FizzBuzz`.
+- [ ] Escriba un programa para imprimir todos los números entre 1 y 100 de tal manera que se cumplan las siguientes condiciones.
+  - Para múltiplos de 3, en vez de imprimri el número, imprima `Fizz`.
+  - Para múltipls de 5, imprima `Buzz`.
+  - Para números que son múltiplos tanto de 3 como de 5, imprima `FizzBuzz`.
 
 ```javascript
 /
@@ -39,6 +39,6 @@ Buzz
 /
 ```
 
-### 💡 Hints:
+## 💡 Consejos
 
-* Visit the [loops](../loops/) chapter to understand how the loop works.
+- Visite el capítulo [loops](../loops/) para entender cómo trabajan los bucles.

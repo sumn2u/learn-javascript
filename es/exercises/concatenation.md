@@ -2,35 +2,35 @@
 chapter: 20
 pageNumber: 111
 ---
-# Concatenation
+# Concatenación
 
-In any programming language, string concatenation simply means appending one or more strings to another string. For example, when strings "_World_" and "_Good Afternoon_" are concatenated with string "_Hello_", they form the string "_Hello World, Good Afternoon_". We can concatenate a string in several ways in JavaScript.
+En cualquier lenguaje de programación, la concatenación de cadenas simplemente significa agregar una o más cadenas a otra cadena. Por ejemplo, cuando las cadenas "_Mundo_" y "_Buenas tardes_" se concatenan con la cadena "_Hola_", se forma la cadena "_HolaMundoBuenastardes_". Podemos concatenar una cadena de varias formas en JavaScript.
 
-### Example:
+## Ejemplo
 
 ```javascript
-const icon = '👋';
+const icono = '👋';
 
-// using template Strings
-`hi ${icon}`;
+// usando cadenas de plantilla
+`hola ${icono}`;
 
-// using join() Method
-['hi', icon].join(' ');
+// usando el método join()
+['hola', icono].join(' ');
 
-// using concat() Method
-''.concat('hi ', icon);
+// usando el método concat()
+''.concat('hola ', icono);
 
-//  using + operator
-'hi ' + icon;
+//  usando el operador +
+'hola ' + icono;
 
 // RESULT
-// hi 👋
+// hola 👋
 ```
 
-### 📝 Task:
+## 📝 Tarea
 
-* [ ] Write a program to set the values for `str1`and `str2` so the code prints '_Hello World_' to the console.
+- [ ] Escriba un programa que establezca los valores para `str1`y `str2` para que el código imprima '_Hola mundo_' a la consola.
 
-### 💡 Hints:
+## 💡 Consejos
 
-* Visit the [concatenation](../strings/concat.md) chapter of strings for more info about string concatenation.
+- Visite el capítulo de cadenas [concatenación](../strings/concat.md) para tener más información sobre la concatenación de cadenas.
