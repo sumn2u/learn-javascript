@@ -1,25 +1,25 @@
 ---
 layout: editorial
-title: Advanced JavaScript Interview Questions
-description: Delve into intricate advanced-level interview questions on JavaScript to assess the depth of knowledge and expertise of potential candidates.
+title: Preguntas avanzadas de entrevista sobre JavaScript
+description: Profundiza en complejas preguntas de entrevistas de nivel avanzado sobre JavaScript para evaluar la profundidad del conocimiento y la experiencia de los candidatos potenciales.
 ---
-
-# Advanced JavaScript Interview Questions
+<!-- markdownlint-disable-file MD025 -->
+# Preguntas avanzadas de entrevista sobre JavaScript
 
 ## 1. Closures and Scoping
 
 ### 1.1. What is a closure in JavaScript? Provide an example where using closures can be beneficial.
 
-**Answer:**
+**Respuesta:**
 
 A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.
 
-**Example:**
+**Ejemplo:**
 One common use of closures is to create factory functions or private variables. For instance, if you wanted to generate unique ID values for elements:
 
 ### 1.2. How do closures relate to variables' scope and lifetime?
 
-**Answer:**
+**Respuesta:**
 
 Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.
 
@@ -27,7 +27,7 @@ Closures allow a function to access all the variables, as well as functions, tha
 
 ### 2.1. Explain the difference between classical inheritance and prototypal inheritance.
 
-**Answer:**
+**Respuesta:**
 
 Classical inheritance is a concept most often found in traditional Object-Oriented Programming languages like Java or C++, where a class can inherit properties and methods from a parent class. Prototypal inheritance, on the other hand, is unique to JavaScript. In JavaScript, each object can have another object as its prototype, and it can inherit properties from its prototype.
 
@@ -35,7 +35,7 @@ The primary difference is that classical inheritance is class-based, whereas pro
 
 ### 2.2. How can you extend built-in JavaScript objects?
 
-**Answer:**
+**Respuesta:**
 
 To extend built-in JavaScript objects, you can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
 
@@ -43,7 +43,7 @@ To extend built-in JavaScript objects, you can add methods or properties to thei
 
 ### 3.1. Explain the event loop in JavaScript. How does it relate to the call stack?
 
-**Answer:**
+**Respuesta:**
 
 The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of your program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
 
@@ -53,7 +53,7 @@ In the context of JavaScript, the event loop continuously checks the call stack 
 
 ### 3.2. What are promises, and how do they differ from callbacks in managing asynchronous operations?
 
-**Answer:**
+**Respuesta:**
 
 Promises are objects representing the eventual completion (or failure) of an asynchronous operation and its resulting value. A `Promise` is in one of these states:
 
@@ -71,7 +71,7 @@ The key differences include:
 
 ### 3.3. Describe async/await. How does it simplify working with asynchronous code?
 
-**Answer:**
+**Respuesta:**
 
 `async/await` is a syntactic feature introduced in ES8 (or ES2017) to work with asynchronous code in a more synchronous-like fashion. It allows for writing asynchronous operations in a linear manner without callbacks, leading to cleaner, more readable code.
 
@@ -83,18 +83,19 @@ Using `async/await` simplifies error handling, as you can use traditional try/ca
 
 ### 4.1. Describe the functions of `map`, `reduce`, and `filter`. Provide an example of a practical use case for each.
 
-**Answer:**
+**Respuesta:**
 
 - `map`: It transforms each element of an array based on a function, returning a new array of the same length.
-  **Example:** Doubling each number in an array.
-  ````javascript
+  **Ejemplo:** Doubling each number in an array.
+
+```javascript
   const numbers = [1, 2, 3, 4];
   const doubled = numbers.map((num) => num * 2); // [2, 4, 6, 8] ```
-  ````
+```
 
 ### 4.2. What are some limitations or pitfalls when using arrow functions?
 
-**Answer:**
+**Respuesta:**
 Arrow functions introduce a concise way to write functions in JavaScript, but they come with certain limitations:
 
 1. **No `this` Binding**: Arrow functions do not bind their own `this`. They inherit the `this` binding of the surrounding scope. This can be problematic, especially when using them as methods in objects or as event handlers.
@@ -131,7 +132,7 @@ Arrow functions introduce a concise way to write functions in JavaScript, but th
 
 ### 8.1. How does functional programming differ from imperative programming in JavaScript?
 
-**Answer:**
+**Respuesta:**
 
 Functional programming and imperative programming are two predominant programming paradigms.
 
@@ -156,7 +157,7 @@ FP is more about instructing the computer "what" to achieve, rather than detaili
 
 ### 8.2. Explain first-class functions and their importance in functional programming.
 
-**Answer:**
+**Respuesta:**
 
 In JavaScript and many other programming languages, functions are considered as "first-class citizens." This means that functions can be:
 
@@ -190,4 +191,3 @@ const functions = [greet, double];
 ````
 
 ---
-

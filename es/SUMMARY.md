@@ -97,7 +97,7 @@
   - [¡Consigue los títulos!](exercises/get-the-titles.md)
 - [IPA de Web y AJAX](api-ajax.md)
 - [Naturaleza de un solo hilo](single-thread-nature.md)
-- [ECMA Script](ECMA-script.md)
+- [ECMAScript](ECMA-script.md)
 - [Preguntas de entrevista](interview-questions/README.md)
   - [Nivel básico](interview-questions/basic-level.md)
   - [Nivel intermedio](interview-questions/intermediate-level.md)
