@@ -317,3 +317,23 @@ You can use the test() method of regular expression in order to search a string 
 var pattern = /you/;
 console.log(pattern.test("How are you?")); //true
 ```
+### 6.7. What is Currying in Javascript?
+ 
+**Answer:** 
+
+Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument. Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function.
+That is, when we turn a function call sum(1,2,3) into sum(1)(2)(3). 
+
+The number of arguments a function takes is also called arity.
+
+```
+function sum(a, b) {
+    // do something
+}
+function _sum(a, b, c) {
+    // do something
+}
+```
+The function sum takes two arguments (two-arity function) and _sum takes three arguments (three-arity function).
+
+Curried functions are constructed by chaining closures and by defining and immediately returning their inner functions simultaneously.
