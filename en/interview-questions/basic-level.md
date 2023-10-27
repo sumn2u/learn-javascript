@@ -821,49 +821,6 @@ JavaScript is an interpreted language, not a compiled language. An interpreter i
 
 Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
-
-
-## 6.Miscellaneous
-
-### 6.1. What is a strict mode in JavaScript ?
-
-**Answer:**
-
-Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
-
-### 6.2. What is null value in JavaScript ?
-
-**Answer:**
-
-The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
-
-```js
-var user = null;
-console.log(typeof user); //object
-```
-
-### 6.3. What is eval in JavaScript ?
-
-**Answer:**
-
-The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
-
-```js
-console.log(eval("1 + 2")); //  3
-```
-
-### 6.4. Is JavaScript a compiled or interpreted language ?
-
-**Answer:**
-
-JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
-
-### 6.5. Is JavaScript a case-sensitive language ?
-
-**Answer:**
-
-Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
-
 ### 6.6. difference between exec () and test () methods
 
 **Answer**
