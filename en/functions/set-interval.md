@@ -1,5 +1,7 @@
 # Set Interval
-The set Interval method is a method used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function generates another color. This is useful in making functions repeat. The first parameter in the method is the name of the function your setting an interval to, the second parameter is for how long the interval will be.  You can add extra parameters in case you want to add the parameters for the function.
+The set Interval method is a method used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function runs again and generates another color. This is useful in making functions repeat. 
+
+The first parameter in the method is the name of the function you're setting an interval to, the second parameter is for how long the interval will be.  You can add extra parameters in case you want to add the parameters of a function.
 
 As another simple example, let's create a function called `repeatSaying` where it says "And again!" every 2 seconds in the [console](https://javascript.sumankunwar.com.np/en/exercises/console.html). 
 
@@ -28,8 +30,10 @@ setInterval(repeatSaying, 2000, "...");
 As you can see from this example, after you put the function and interval for the function, you can set the values of the function parameters inside set interval. 
 
 
+
+
 ## Clear Interval
-You can use the `clearInterval()` method to remove a set interval with a specefic variable name or ID. As an example based on the previous one let's store set interval into a variable named `intervalTime`, however, right after our variable we'll call it inside clear interval by writing `clearInterval(intervalTime).`
+You can use the `clearInterval()` method to remove a set interval with a specefic variable name. As an example based on the previous one let's store set interval into a variable named `intervalTime`, however, right after our variable we'll call it inside clear interval by writing `clearInterval(intervalTime).`
 
 ```js
 function repeatSaying(el) {
@@ -42,5 +46,5 @@ clearInterval(interval);
 //The clear Interval method stops setInterval
 ```
 
-When this code is run, you'll see that there is no output. This is because `setInterval` was the only thing calling the `repeatSaying` function, but since it was removed by `clearInterval` it no longer is called. Even if it was called seperately using `repeatSaying()` it would only run once because clear Interval stops it from repeating.
+When this code is run, you'll see that there is no output. This is because `setInterval` was the only thing calling the `repeatSaying` function, but since it was removed by `clearInterval` it's no longer is called. Even if it was called seperately using `repeatSaying()` it would only run once because clear Interval stops it from repeating.
 
