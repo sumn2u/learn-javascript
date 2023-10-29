@@ -10,630 +10,597 @@ Se centra en cómo se componen las clases y los objetos para formar estructuras 
 
 ## 1. Adaptador
 
-The Adapter is a structural design pattern that enables you to make make different interfaces with different methods work together without changing their code. The purpose of an Adapter is to make two incompatible interfaces work together seamlessly.
+El Adaptador es un patrón de diseño estructural que le permite hacer que diferentes interfaces con diferentes métodos funcionen juntas sin cambiar su código. El propósito de un Adaptador es hacer que dos interfaces incompatibles funcionen juntas sin problemas.
 
 ### 1.1 Componentes del patrón adaptador
 
-- *Target Interface/Class*
-
-This is the interface or class that the client will work with. It contains all the methods and properties that the client code will use.
+- *Clase/interfaz Objetivo*
+Esta es la interfaz o clase con la que trabajará el cliente. Contiene todos los métodos y propiedades que utilizará el código del cliente.
 
 - *Adaptee*
+Adaptee es la antigua interfaz/clase que contiene propiedades y métodos que son incompatibles con la nueva interfaz/clase.
 
-The Adaptee is the old interface/class that contains properties and methods that are incompatible with the new interface/class.
-
-- *Adapter*
-
-The Adapter is what bridges the gap between the Adaptee and the Target interface/class
+- *Adaptador*
+El Adaptador es lo que cierra la brecha entre el Adaptee y la interfaz/clase objetivo.
 
 ### 1.2. Beneficios del patrón adaptador
 
-- **Easy Integration**
+- **Fácil integración**
+Los adaptadores crean una manera fácil para que nuevos códigos o sistemas interactúen con los existentes. Al utilizar adaptadores, la integración de código nuevo se vuelve más fluida y menos propensa a errores.
 
-Adapters create an easy way for new code or systems to interact with existing ones. By using Adapters, integrating new code becomes smoother and less error-prone.
+- **Compatibilidad y reutilización**
+Los adaptadores promueven la reutilización del código y amplían la usabilidad del código existente al hacer que el código antiguo sea compatible con el código más nuevo.
 
-- **Compatibility and Reusability**
+- **Integración gradual del sistema**
+En situaciones en las que es necesario implementar un nuevo sistema de forma gradual, los adaptadores pueden actuar como intermediarios, permitiendo que nuevas funciones lleguen lentamente mientras se mantiene la compatibilidad con el sistema existente.
 
-Adapters promote code resuse and extends the usability of existing code by making older code compatible with newer code.
-
-- **Gradual System Integration**
-
-In situations where a new system needs to be implemented gradually, Adapters can serve as intermediaries, allowing new features to come in slowly while maintaing compatibility with the existing system.
-
-- **Improved Testability**
-
-Adapters facilitate easier testing by allowing mocking or stubbing of the adaptee during testing of the client code. This improves the testability of the client code and helps in wrtiting more comprehensible unit tests.
+- **Capacidad de prueba mejorada**
+Los adaptadores facilitan las pruebas al permitir burlarse o eliminar al adaptee durante la prueba del código del cliente. Esto mejora la capacidad de prueba del código del cliente y ayuda a escribir pruebas unitarias más comprensibles.
 
 ### 1.3. Ejemplo
 
 ```javascript
-// Adaptee: EU charging brick
-class EUChargingBrick {
-  chargeWithEUPlug() {
-    console.log('Charging with EU plug');
+// Adaptee: conector de carga EU
+class EUCConectorCarga {
+  cargaConConectorEU() {
+    console.log('Carga con enchufe de la UE');
   }
 }
 
-// Adaptee: US charging brick
-class USChargingBrick {
-  chargeWithUSPlug() {
-    console.log('Charging with US plug');
+// Adaptee: conector de carga de EEUU
+class USConectorCarga {
+  cargaConConectorUS() {
+    console.log('Carga con enchufe de EEUU');
   }
 }
 
-// Target: Common charging interface expected by the client
-class ChargingInterface {
-  charge() {
-    console.log('Charging...');
+// Objetivo: Interfaz de carga común esperada por el cliente
+class InterfazCarga {
+  carga() {
+    console.log('Cargando...');
   }
 }
 
-// Adapter for EU charging brick
-class EUChargingAdapter extends ChargingInterface {
-  constructor(euChargingBrick) {
+// Adaptador para el conector de carga de la UE
+class EUCargaAdaptador extends InterfazCarga {
+  constructor(euConectorCarga) {
     super();
-    this.euChargingBrick = euChargingBrick;
+    this.euConectorCarga = euConectorCarga;
   }
 
-  charge() {
-    this.euChargingBrick.chargeWithEUPlug();
+  carga() {
+    this.euConectorCarga.cargaConConectorEU();
   }
 }
 
-// Adapter for US charging brick
-class USChargingAdapter extends ChargingInterface {
-  constructor(usChargingBrick) {
+// Adaptador para el conector de carga de EEUU
+class USCargaAdaptador extends InterfazCarga {
+  constructor(usConectorCarga) {
     super();
-    this.usChargingBrick = usChargingBrick;
+    this.usConectorCarga = usConectorCarga;
   }
 
-  charge() {
-    this.usChargingBrick.chargeWithUSPlug();
+  carga() {
+    this.usConectorCarga.cargaConConectorUS();
   }
 }
 
-// Client
-function chargeDevice(chargingInterface) {
-  chargingInterface.charge();
+// Cliente
+function cargarDispositivo(interfazCarga) {
+  interfazCarga.carga();
 }
 
-// Usage
-const euChargingBrick = new EUChargingBrick();
-const euAdapter = new EUChargingAdapter(euChargingBrick);
+// Uso
+const euCConectorCarga = new EUCConectorCarga();
+const euAdaptador = new EUCargaAdaptador(euCConectorCarga);
 
-const usChargingBrick = new USChargingBrick();
-const usAdapter = new USChargingAdapter(usChargingBrick);
+const usConectorCarga = new USConectorCarga();
+const usAdaptador = new USCargaAdaptador(usConectorCarga);
 
-console.log('Charging with EU charging brick:');
-chargeDevice(euAdapter);
+console.log('Carga con bloque de carga de la UE:');
+cargarDispositivo(euAdaptador);
 
-console.log('Charging with US charging brick:');
-chargeDevice(usAdapter);
+console.log('Carga con bloque de carga estadounidense:');
+cargarDispositivo(usAdaptador);
 ```
 
 ## 2. Puente
 
-The Bridge is a structural design pattern that is designed to split a very large class into two sepereate heirarchies which can be developed independendently. The two hierarchies are referred to as the Abstraction level and the Implementation level. Basically if you have a class that has multiple variants of some functionality, you can use a Bridge pattern to divide and organize the class into two easier to understand hierarchies.
+El Puente es un patrón de diseño estructural diseñado para dividir una clase muy grande en dos jerarquías separadas que pueden desarrollarse de forma independiente. Las dos jerarquías se denominan nivel de abstracción y nivel de implementación. Básicamente, si tiene una clase que tiene múltiples variantes de alguna funcionalidad, puede usar un patrón Bridge para dividir y organizar la clase en dos jerarquías más fáciles de entender.
 
 ### 2.1. Componentes del patrón Puente
 
-- *Abstraction*
+- *Abstracción*
+Esta es la interfaz o abstracción de alto nivel. Define la funcionalidad abstracta que utilizarán los clientes.
 
-This is the high-level interface or abstraction. It defines the abstract functionality that the clients will use.
+- *Abstracción refinada*
+Son subclases o extensiones de la capa de abstracción. Estos proporcionan características o mejoras adicionales. Amplía la funcionalidad definida por la abstracción.
 
-- *Refined Abstraction*
+- *Implementador*
+Esta es la interfaz que define los métodos de implementación. Por lo general, no refleja la interfaz de abstracción, pero es una interfaz de nivel inferior en la que se basa la abstracción.
 
-These are subclasses or extensions of the abstraction layer. These provide additional features or refinements. It extends the functionality defined by the abstraction.
-
-- *Implementor*
-
-This is the interface that defines the implementation methods, It usually doesn't mirror the abstraction interface, but its a lower-level interface that the abstraction relies upon.
-
-- *Concrete Implementor*
-
-Concrete classes that implement the implementor interface. Theses classes provide specific implementations of the methods defined by the implementor interface.
+- *Implementador concreto*
+Clases concretas que implementan la interfaz del implementador. Estas clases proporcionan implementaciones específicas de los métodos definidos por la interfaz del implementador.
 
 ### 2.2. Beneficios del patrón Puente
 
-- **Decouples Abstraction from Implementation**
+- **Desacopla la abstracción de la implementación**
+El principal beneficio del patrón Puente es que divide la capa de abstracción de la capa de implementación. Esto permite que ambas secciones evolucionen de forma independiente, lo que facilita la modificación del código base.
 
-The primary benefit of the Bridge pattern is it splits the abstraction layer from the implementation layer. This allows both sections to evolve independently, making the code base easier to modify.
+- **Mejora la mantenibilidad**
+Dado que la base del código está dividida en dos secciones, lo más probable es que realizar cambios en una parte del sistema no afecte a la otra parte. Lo que hace que mantener la base del código sea más fácil y eficiente.
 
-- **Improves Maintainability**
+- **Mejora las pruebas**
+Las pruebas son mucho más fáciles cuando tienes un patrón puente en tu código base porque puedes concentrarte en probar la capa de abstracción por separado de probar la capa de implementación. Esto permite realizar pruebas más fáciles y específicas.
 
-Since the code base is split into two sections, making changes to one part of the system is most likely not going to impact the other part. Which makes maintaining the code base easier and more efficient
-
-- **Improves Testing**
-
-Testing is a lot easier when you have a bridge pattern in your code base because you can focus on testing the abstraction layer seperately from tesing the implementation layer. This allows for easier and more targeted testing.
-
-- **Improves Readability**
-
-The Bridge pattern creates a clear hiearchy in the code base. Organzing the code base in this way helps in understanding the relationships between different parts of the system.
+- **Mejora la legibilidad**
+El patrón Puente crea una jerarquía clara en la base del código. Organizar la base del código de esta manera ayuda a comprender las relaciones entre las diferentes partes del sistema.
 
 ### 2.3. Ejemplo
 
 ```javascript
-// Abstraction
-class Shape {
+// Abstracción
+class Figura {
   constructor(color) {
     this.color = color;
   }
 
-  draw() {
-    console.log(`Drawing a shape with color ${this.color}`);
+  dibuja() {
+    console.log(`Dibujando una Figura con color ${this.color}`);
   }
 }
 
-// Implementations
-class RedColor {
-  applyColor() {
-    console.log('Applying red color');
+// Implementaciones
+class ColorRojo {
+  aplicaColor() {
+    console.log('Aplicando el color rojo');
   }
 }
 
-class BlueColor {
-  applyColor() {
-    console.log('Applying blue color');
+class ColorAzul {
+  aplicaColor() {
+    console.log('Aplicando el color azul');
   }
 }
 
-// Bridge
-class ShapeWithColor extends Shape {
-  constructor(color, colorImplementation) {
+// Puente
+class FiguraConColor extends Figura {
+  constructor(color, implementacionColor) {
     super(color);
-    this.colorImplementation = colorImplementation;
+    this.implementacionColor = implementacionColor;
   }
 
-  draw() {
-    super.draw();
-    this.colorImplementation.applyColor();
+  dibuja() {
+    super.dibuja();
+    this.implementacionColor.aplicaColor();
   }
 }
 
-// Usage
-const redShape = new ShapeWithColor('red', new RedColor());
-const blueShape = new ShapeWithColor('blue', new BlueColor());
+// Uso
+const figuraRoja = new FiguraConColor('rojo', new ColorRojo());
+const figuraAzul = new FiguraConColor('azul', new ColorAzul());
 
-redShape.draw();  // Output: Drawing a shape with color red, Applying red color
-blueShape.draw(); // Output: Drawing a shape with color blue, Applying blue color
+figuraRoja.dibuja();  // Salida: Dibujando una figura con color rojo, aplicando color rojo
+figuraAzul.dibuja(); // Salida: Dibujando una figura con color azul, aplicando color azul
 ```
 
 ## 3. Composición
 
-The composite design pattern allows for the creation of objects with properties that are primitive items or a collection of objects. Imagine a tree like structure, where you have single objects (leaf nodes) or groups of objects (branches). The composite desgin pattern allows you to create this type of structure and be able to perform operations on each level in a consistent manner.
+El patrón de diseño compuesto permite la creación de objetos con propiedades que son elementos primitivos o una colección de objetos. Imagine una estructura similar a un árbol, donde tiene objetos individuales (nodos de hoja) o grupos de objetos (ramas). El patrón de diseño compuesto le permite crear este tipo de estructura y poder realizar operaciones en cada nivel de manera consistente.
 
 ### 3.1 Componentes del patrón composición
 
-- *Component*
+- *Componente*
+Esta es la interfaz/clase que representa tanto los nodos hoja (elementos individuales) como los nodos compuestos (colección de elementos). El componente define operaciones que se pueden aplicar a ambos tipos de nodos.
 
-This is the interface/class that represents both leaf nodes (individual elements) and composite nodes (collection of elements). The component defines operations that can be applied to both types of nodes.
+- *Hoja*
+Esto representa objetos individuales en el árbol que no tienen hijos. Implementan las operaciones que se definen en la interfaz del componente.
 
-- *Leaf*
-
-This represents individual objects in the tree that do not have any children. They implement the operations that are defined in the component interface.
-
-- *Composite*
-
-This represents the composites or containers that can hold a collection of leaf nodes or other composite nodes.
+- *Compuesto*
+Esto representa los compuestos o contenedores que pueden contener una colección de nodos hoja u otros nodos compuestos.
 
 ### 3.2. Beneficios del patrón composición
 
-- **Uniformly and Consistency**
+- **Uniformidad y consistencia**
+El patrón de diseño compuesto proporciona una manera uniforme de tratar tanto objetos individuales como composiciones de objetos. Los clientes tienen una interfaz común para operar con estos objetos, lo que simplifica la base del código y las interacciones entre objetos.
 
-The Composite design pattern provides a uniform way to treat both individual objects and compositions of objects. Clients have one common interface to use to operate on these objects which simplifes the code base and object interactions.
+- **Flexibilidad**
+Este patrón de diseño permite flexibilidad para agregar nuevos tipos de componentes o modificar los existentes sin afectar el código del cliente. Puede introducir nuevos tipos de hojas u objetos compuestos fácilmente.
 
-- **Flexibility**
-
-This design pattern allows for flexibility in adding new types of components or modifying existing ones without affecting the client code. You can introduce new types of leaf or composite objects easily.
-
-- **Simplified Client Code**
-
-The client code doesn't need to distinguish between individual and composite components, making it simpler and more intuitive to work with the structure.
+- **Código de cliente simplificado**
+El código del cliente no necesita distinguir entre componentes individuales y compuestos, lo que hace que trabajar con la estructura sea más sencillo e intuitivo.
 
 ### 3.3. Ejemplo
 
 ```javascript
-class SingleBlock {
-  constructor(name) {
-    this.name = name;
+class BloqueUnico {
+  constructor(nombre) {
+    this.nombre = nombre;
   }
 
-  display() {
-    console.log('Block:', this.name);
+  mostrar() {
+    console.log('Bloque:', this.nombre);
   }
 }
 
-class BlockCollection {
-  constructor(name) {
-    this.name = name;
-    this.blocks = [];
+class ColeccionDeBloques {
+  constructor(nombre) {
+    this.nombre = nombre;
+    this.bloques = [];
   }
 
-  add(block) {
-    this.blocks.push(block);
+  agregar(bloque) {
+    this.bloques.push(bloque);
   }
 
-  remove(block) {
-    this.blocks = this.blocks.filter(b => b !== block);
+  eliminar(bloque) {
+    this.bloques = this.bloques.filter(b => b !== bloque);
   }
 
-  display() {
-    console.log('Block Collection:', this.name);
+  mostrar() {
+    console.log('Colección de bloques:', this.nombre);
 
-    for (const block of this.blocks) {
-      block.display();
+    for (const bloque of this.bloques) {
+      bloque.mostrar();
     }
   }
 }
 
 // Usage
-const block1 = new SingleBlock('Block 1');
-const block2 = new SingleBlock('Block 2');
-const block3 = new SingleBlock('Block 3');
+const bloque1 = new BloqueUnico('Bloque 1');
+const bloque2 = new BloqueUnico('Bloque 2');
+const bloque3 = new BloqueUnico('Bloque 3');
 
-const blockGroup1 = new BlockCollection('Block Group 1');
-blockGroup1.add(block1);
-blockGroup1.add(block2);
+const bloqueGrupo1 = new ColeccionDeBloques('Grupo de bloques 1');
+bloqueGrupo1.agregar(bloque1);
+bloqueGrupo1.agregar(bloque2);
 
-const blockGroup2 = new BlockCollection('Block Group 2');
-blockGroup2.add(block3);
+const bloqueGrupo2 = new ColeccionDeBloques('Grupo de bloques 2');
+bloqueGrupo2.agregar(bloque3);
 
-const megaStructure = new BlockCollection('Mega Structure');
-megaStructure.add(blockGroup1);
-megaStructure.add(blockGroup2);
+const megaEstructura = new ColeccionDeBloques('Megaestructura');
+megaEstructura.agregar(bloqueGrupo1);
+megaEstructura.agregar(bloqueGrupo2);
 
-megaStructure.display();
+megaEstructura.mostrar();
 ```
 
 ## 4. Decorador
 
-The Decorator design pattern can be used to modify an objects behavior either statically or dynamically without affecting the behavior of other objects from the same class. Decorators are particularly useful when you want to add features to an object in a flexible and reusable way.
+El patrón de diseño Decorador se puede utilizar para modificar el comportamiento de un objeto de forma estática o dinámica sin afectar el comportamiento de otros objetos de la misma clase. Los decoradores son particularmente útiles cuando desea agregar características a un objeto de una manera flexible y reutilizable.
 
 ### 4.1. Componentes del patrón decorador
 
-- *Component Interface*
+- *Interfaz de componente*
+Esto define la lógica de los objetos a los que se les pueden agregar responsabilidades dinámicamente.
 
-This defines the logic for the objects that can have resposibilities added to them dynamically.
+- *Componentes concretos*
+Este es el objeto inicial al que se le pueden agregar funcionalidades adicionales.
 
-- *Concrete Components*
+- *Decorador*
+Esta es una interfaz que amplía la funcionalidad de los componentes concretos. Tiene una referencia a una instancia de componente e implementa la interfaz del componente.
 
-This is the initial object to which additional functionalities can be added.
-
-- *Decorator*
-
-This is an interface that extends the functionality of the concrete components. It has a reference to a component instance and implements the component interface.
-
-- *Concrete Decorators*
-
-These are the concrete implementations of the decorator class, they add specific behavior to the desired component by extending the decorator class.
+- *Decoradores concretos*
+Estas son las implementaciones concretas de la clase decoradora, agregan un comportamiento específico al componente deseado al extender la clase decoradora.
 
 ### 4.2. Beneficios del patrón decorador
 
-- **Extensibility and Flexibility**
+- **Extensibilidad y flexibilidad**
+Los decoradores le permiten agregar nuevas funcionalidades o comportamientos a los objetos de forma dinámica en tiempo de ejecución. Esto promueve la extensibilidad sin modificar el código base existente y proporciona flexibilidad en cómo se pueden componer y utilizar estas funcionalidades adicionales.
 
-Decorators allow you to add new functionalities or behaviors to objects dynamically at runtime. This promotes extensibility without modifying the existing codebase and provides flexibility in how you can compose and use these additional functionalities.
+- **Modularidad**
+Los decoradores permiten un enfoque más modular del código al dividir la funcionalidad en unidades más pequeñas y manejables. Estas unidades se pueden combinar y reutilizar de varias maneras.
 
-- **Modularity**
+- **Configuración de tiempo de ejecución**
+Los decoradores le permiten configurar dinámicamente un objeto en tiempo de ejecución. Esto le permite agregar o eliminar funcionalidades sin afectar los componentes principales ni tener que volver a compilar el código.
 
-Decorators enable a more modular approach to code by breaking down functionality into smaller, more managable units. These units can be combined and reused in various ways.
-
-- **Runtime Configuration**
-
-Decorators allow you to dynamically configure an object at runtime. This allows you to add or remove functionalities without impacting the core components or needing to recompile the code.
-
-- **Reduce Subclassing**
-
-Without Decorators, extending functionalities often involves creating numerous subclasses for each combination of behaviors. Decorators eliminate the need for subclasses which results in an cleaner and easier to understand code base.
+- **Reducir subclases**
+Sin decoradores, ampliar las funcionalidades suele implicar la creación de numerosas subclases para cada combinación de comportamientos. Los decoradores eliminan la necesidad de subclases, lo que da como resultado un código base más limpio y más fácil de entender.
 
 ### 4.3. Ejemplo
 
 ```javascript
-class Coffee {
-  cost() {
+class Cafe {
+  costo() {
     return 5;
   }
 }
 
-class MilkDecorator {
-  constructor(coffee) {
-    this.coffee = coffee;
+class LecheDecorador {
+  constructor(cafe) {
+    this.cafe = cafe;
   }
 
-  cost() {
-    return this.coffee.cost() + 2;
-  }
-}
-
-class SugarDecorator {
-  constructor(coffee) {
-    this.coffee = coffee;
-  }
-
-  cost() {
-    return this.coffee.cost() + 1;
+  costo() {
+    return this.cafe.costo() + 2;
   }
 }
 
-// Usage
-let coffee = new Coffee();
-console.log('Cost of plain coffee:', coffee.cost());
+class AzucarDecorador {
+  constructor(cafe) {
+    this.cafe = cafe;
+  }
 
-let milkCoffee = new MilkDecorator(coffee);
-console.log('Cost of milk coffee:', milkCoffee.cost());
+  costo() {
+    return this.cafe.costo() + 1;
+  }
+}
 
-let sugarMilkCoffee = new SugarDecorator(milkCoffee);
-console.log('Cost of sugar milk coffee:', sugarMilkCoffee.cost());
+// Uso
+let cafe = new Cafe();
+console.log('Costo del café simple:', cafe.costo());
+
+let cafeConLeche = new LecheDecorador(cafe);
+console.log('Costo del café con leche:', cafeConLeche.costo());
+
+let cafeConLecheAzucarado = new AzucarDecorador(cafeConLeche);
+console.log('Costo del café con leche azucarado:', cafeConLecheAzucarado.costo());
 ```
 
 ## 5. Fachada
 
-The Facade design pattern is basicaly a simplified interface that the client can interact with to use other low level operations hidden elsewhere in the code base. This design pattern is often used in systems that are built around a multi-layer architecture. Facades allow the client to perform certain tasks without needing to understand the complexity of the underlying system.
+El patrón de diseño Facade es básicamente una interfaz simplificada con la que el cliente puede interactuar para utilizar otras operaciones de bajo nivel ocultas en otras partes del código base. Este patrón de diseño se utiliza a menudo en sistemas construidos en torno a una arquitectura multicapa. Las fachadas permiten al cliente realizar determinadas tareas sin necesidad de comprender la complejidad del sistema subyacente.
 
 ### 5.1. Componentes del patrón fachada
 
-- *Facade*
+- *Fachada*
 
-The facade is the interface that the client will interact with. It provides a simple and unified interface that delegates the clients requests to the appropriate objects within the subsystem
+La fachada es la interfaz con la que interactuará el cliente. Proporciona una interfaz simple y unificada que delega las solicitudes de los clientes a los objetos apropiados dentro del subsistema.
 
-- *Subsystem*
+- *Subsistema*
 
-The subsystem consists of all the various components and functionalities that the Facade wraps around. The subsystem and the Facade interact with eachother but operate independently.
+El subsistema consta de todos los diversos componentes y funcionalidades que envuelve la Fachada. El subsistema y la Fachada interactúan entre sí pero operan de forma independiente.
 
 ### 5.2. Beneficios del patrón fachada
 
-- **Simplified Interface**
+- **Interfaz simplificada**
 
-The Facade provides a simple and easy to understand interface
+La fachada proporciona una interfaz simple y fácil de entender.
 
-- **Code Organization**
+- **Organización del código**
 
-The Facade helps organize the code by encapsulating the subsystem's functionality and providing a clear seperation of concerns
+El patrón de diseño Fachada ayuda a organizar el código al encapsular la funcionalidad del subsistema y proporcionar una separación clara de las preocupaciones.
 
-- **Easier Maintenance**
+- **Mantenimiento más fácil**
 
-Changes to the subsystem can be isolated within the facade, reducing the impact on the client code.
+Los cambios en el subsistema se pueden aislar dentro de la fachada, lo que reduce el impacto en el código del cliente.
 
 ### 5.3. Ejemplo
 
 ```javascript
-// Plumbing subsystem
-class PlumbingSubsystem {
+// Subsistema de fontanería
+class SubsistemaFontaneria {
   constructor() {}
 
-  turnOnWater() {
-    console.log('Plumbing: Water turned on');
+  abrirAgua() {
+    console.log('Fontanería: agua abierta');
   }
 
-  turnOffWater() {
-    console.log('Plumbing: Water turned off');
+  cerrarAgua() {
+    console.log('Fontanería: Agua cerrada');
   }
 }
 
-// Electrical subsystem
-class ElectricalSubsystem {
+// Subsistema Eléctrica
+class SubsistemaElectrico {
   constructor() {}
 
-  turnOnElectricity() {
-    console.log('Electrical: Electricity turned on');
+  encenderElectricidad() {
+    console.log('Eléctrico: Electricidad encendida');
   }
 
-  turnOffElectricity() {
-    console.log('Electrical: Electricity turned off');
+  apagarElectricidad() {
+    console.log('Eléctrico: electricidad apagada');
   }
 }
 
-// House facade
-class HouseFacade {
+// Fachada de la casa
+class CasaFachada {
   constructor() {
-    this.plumbingSubsystem = new PlumbingSubsystem();
-    this.electricalSubsystem = new ElectricalSubsystem();
+    this.subsistemaFontaneria = new SubsistemaFontaneria();
+    this.subsistemaElectrico = new SubsistemaElectrico();
   }
 
-  enterHouse() {
-    this.plumbingSubsystem.turnOnWater();
-    this.electricalSubsystem.turnOnElectricity();
-    console.log('You have entered the house.');
+  entrarEnCasa() {
+    this.plumbingSubsystem.abrirAgua();
+    this.subsistemaElectrico.encenderElectricidad();
+    console.log('Has entrado en la casa.');
   }
 
-  leaveHouse() {
-    this.plumbingSubsystem.turnOffWater();
-    this.electricalSubsystem.turnOffElectricity();
-    console.log('You have left the house.');
+  salirDeCasa() {
+    this.plumbingSubsystem.cerrarAgua();
+    this.subsistemaElectrico.apagarElectricidad();
+    console.log('Has salido de casa.');
   }
 }
 
-// Client
-const client = () => {
-  const house = new HouseFacade();
+// Cliente
+const cliente = () => {
+  const casa = new CasaFachada();
 
-  // Enter the house
-  house.enterHouse();
+  // entrar a la casa
+  casa.entrarEnCasa();
 
-  // Leave the house
-  house.leaveHouse();
+  // salir de la casa
+  casa.salirDeCasa();
 };
 
-// Run the client
+// Ejecutamos el cliente
 client();
 ```
 
 ## 6. Objeto ligero
 
-The Flyweight design pattern aims to minimize memory usage or computaional expenses by storing intrinsic values (similar properties) of similar object in an application, reducing the amount of duplicate code. This is particularly useful when dealing with a large number of similar objects in an application.
+El patrón de diseño Objeto ligero tiene como objetivo minimizar el uso de memoria o los gastos computacionales al almacenar valores intrínsecos (propiedades similares) de objetos similares en una aplicación, reduciendo la cantidad de código duplicado. Esto es particularmente útil cuando se trata de una gran cantidad de objetos similares en una aplicación.
 
 ### 6.1. Componentes de un patrón objeto ligero
 
-- *FlyweightFactory*
+- *Factoria de Objetos Ligeros*
 
-The flyweight factory creates the flyweight objects. It contains a function that will create a flyweight if one does not already exist and it stores newly created flyweights for future request.
+La factoría de objetos ligeros crea los objetos ligeros. Contiene una función que creará un objeto ligero si aún no existe uno y almacena objetos ligeros recién creados para futuras solicitudes.
 
-- *Flyweight*
+- *Objeto ligero*
 
-The flyweight contains the intrinsic data that will be shared accross the application
+El objeto ligero contiene los datos intrínsecos que se compartirán en toda la aplicación.
 
 ### 6.2. Beneficios del patrón objeto ligero
 
-- **Memory Efficiency**
+- **Ahorro de memoria**
 
-By sharing intrinsic data among multiple objects, the Flyweight pattern significantly reduces memeory usage especially when dealing with a large number of instances.
+Al compartir datos intrínsecos entre múltiples objetos, el patrón de Objetos Ligeros reduce significativamente el uso de memoria, especialmente cuando se trata de una gran cantidad de instancias.
 
-- **Performance Improvements**
+- **Mejoras de rendimiento**
 
-Due to reduced memeory usage, the application's overall performance improves. Lower memory usage typically leads to faster execution times and smoother application performance.
+Debido al uso reducido de memoria, mejora el rendimiento general del solicitante. Un menor uso de memoria generalmente conduce a tiempos de ejecución más rápidos y un rendimiento más fluido de las aplicaciones.
 
-- **Simplifies State Management**
+- **Simplifica la gestión del estado**
 
-By seperating intrinsic data (shared values) and extrinisc data (unique values), Flyweights simplify the management of these states. It allows for a cleaner seperation of concerns and more organized approach to state handling.
+Al separar los datos intrínsecos (valores compartidos) y los datos extrínsecos (valores únicos), el patrón de diseño de objeto ligero simplifica la gestión de estos estados. Permite una separación más clara de los cometidos y un enfoque más organizado para el manejo del estado.
 
 ### 6.3. Ejemplo
 
 ```javascript
-// Flyweight object for Camera
-function Camera(make, model, resolution) {
-    this.make = make;
-    this.model = model;
-    this.resolution = resolution;
+// Objeto ligero para una Camara
+function Camara(marca, modelo, resolucion) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.resolucion = resolucion;
 }
 
-// Flyweight factory for Camera
-var FlyWeightCameraFactory = (function () {
-    var flyweights = {};
+// Factoria de objetos ligeros para Camara
+var FactoriaObjetoLigeroCamara = (function () {
+    var objetosLigeros = {};
 
     return {
-        get: function (make, model, resolution) {
-            if (!flyweights[make + model]) {
-                flyweights[make + model] = new Camera(make, model, resolution);
+        obtener: function (marca, modelo, resolucion) {
+            if (!objetosLigeros[marca + modelo]) {
+                objetosLigeros[marca + modelo] = new Camara(marca, modelo, resolucion);
             }
-            return flyweights[make + model];
+            return objetosLigeros[marca + modelo];
         },
 
-        getCount: function () {
-            var count = 0;
-            for (var f in flyweights) count++;
-            return count;
+        obtenerContador: function () {
+            var contador = 0;
+            for (var f in objetosLigeros) contador++;
+            return contador;
         }
     };
 })();
 
-// Camera collection
-function CameraCollection() {
-    var cameras = {};
-    var count = 0;
+// Colección de cámaras
+function ColeccionCamara() {
+    var camaras = {};
+    var contador = 0;
 
     return {
-        add: function (make, model, resolution, serial) {
-            cameras[serial] = {
-                flyweight: FlyWeightCameraFactory.get(make, model, resolution),
-                serial: serial
+        agregar: function (marca, modelo, resolucion, numeroSerie) {
+            camaras[numeroSerie] = {
+                flyweight: FactoriaObjetoLigeroCamara.obtener(marca, modelo, resolucion),
+                numeroSerie: numeroSerie
             };
-            count++;
+            contador++;
         },
 
-        get: function (serial) {
-            return cameras[serial];
+        obtener: function (numeroSerie) {
+            return camaras[numeroSerie];
         },
 
-        getCount: function () {
-            return count;
+        obtenerContador: function () {
+            return contador;
         }
     };
 }
 
-// Run the Ejemplo
-function run() {
-    var cameras = new CameraCollection();
+// Función que ejecutará el ejemplo
+function ejecuta() {
+    var camaras = new ColeccionCamara();
 
-    cameras.add("Canon", "EOS R5", "45MP", "A1234");
-    cameras.add("Nikon", "D850", "45.7MP", "B5678");
-    cameras.add("Sony", "A7R III", "42.4MP", "C9101");
-    cameras.add("Canon", "EOS R5", "45MP", "D1212"); // Reusing existing flyweight
+    camaras.agregar("Canon", "EOS R5", "45MP", "A1234");
+    camaras.agregar("Nikon", "D850", "45.7MP", "B5678");
+    camaras.agregar("Sony", "A7R III", "42.4MP", "C9101");
+    camaras.agregar("Canon", "EOS R5", "45MP", "D1212"); // Reusando el objeto ligero existente
 
-    console.log("Cameras: " + cameras.getCount());
-    console.log("Flyweights: " + FlyWeightCameraFactory.getCount());
+    console.log("Cámaras: " + camaras.obtenerContador());
+    console.log("Objetos ligeros: " + FactoriaObjetoLigeroCamara.obtenerContador());
 }
 
-// Run the Ejemplo
-run();
+// Ejecutamos el ejemplo
+ejecuta();
 ```
 
 ## 7. Apoderado
 
-The Proxy design pattern is a structural design pattern that allows you to provide a substitute or placeholder for another object. This proxy object can control access to the original object. In Javascript, the `proxy` object is built into the language and facilitates the implementation of the Proxy design pattern.
+El patrón de diseño Apoderado es un patrón de diseño estructural que le permite proporcionar un sustituto o marcador de posición para otro objeto. Este objeto apoderado puede controlar el acceso al objeto original. En Javascript, el objeto `Proxy` está integrado en el lenguaje y facilita la implementación del patrón de diseño Apoderado.
 
 ### 7.1. Componentes del patrón Apoderado
 
-- *Proxy*
+- *Apoderado*
+El Apoderado contiene una interfaz que es similar al objeto real, mantiene una referencia que le permite al apoderado acceder al objeto real y maneja solicitudes y las reenvía al objeto real.
 
-The Proxy contains an interface that is similar to the real object, it maintains a reference that lets the proxy access the real object and it handles requests and forwards them to the real object.
-
-- *RealSubject*
-
-This is the actual object that the Proxy is substituting for.
+- *Asunto real*
+Este es el objeto real al que sustituye el apoderado.
 
 ### 7.2. Beneficios del patrón Apoderado
 
-- **Controlled Access**
+- **Acceso controlado**
+Los apoderados le permiten controlar el acceso al objeto original, lo que le permite implementar lógica de control de acceso, como permisos, restricciones o validaciones, antes de permitir el acceso al objeto subyacente.
 
-Proxies allow you to control access to the original object, enabling you to implement access control logic such as permissions, restrictions, or validations before allowing access to the underlying object.
+- **Aumento de funcionalidad**
+Los apoderados pueden agregar comportamiento o funcionalidad adicional antes o después de la invocación de métodos o el acceso a propiedades del objeto original. Esto es útil para implementar cuestiones transversales como el registro, el almacenamiento en caché o el manejo de errores.
 
-- **Behavior Augmentation**
+- **Almacenamiento en caché**
 
-Proxies can add additional behavior or functionality before or after the invocation of methods or access to properties of the original object. This is useful for implementing cross-cutting concerns like logging, caching, or error handling.
+Los apoderados pueden implementar mecanismos de almacenamiento en caché para almacenar resultados de operaciones costosas, mejorando el rendimiento y la eficiencia.
 
-- **Caching**
+- **Inicialización diferida**
 
-Proxies can implement caching mechanisims to store results of expensive operations, improving performance and efficiency
-
-- **Lazy Initialization**
-
-Proxies enable lazy initialization, where you can delay the creation of the actual object until its needed. This can improve performance by reducing upfront resource usage.
+Los apoderados permiten una inicialización diferida, donde puede retrasar la creación del objeto real hasta que sea necesario. Esto puede mejorar el rendimiento al reducir el uso inicial de recursos.
 
 ### 7.3. Ejemplo
 
 ```javascript
-// Original object representing a bank account
-const bankAccount = {
-  balance: 1000,
+// El objeto original representa una cuenta de banco
+const cuentaBancaria = {
+  saldo: 1000,
 
-  deposit(amount) {
-    this.balance += amount;
-    console.log(`Deposited ${amount}. New balance: ${this.balance}`);
+  depositar(cantidad) {
+    this.saldo += cantidad;
+    console.log(`Depositó ${cantidad}. Nuevo saldo: ${this.saldo}`);
   },
 
-  withdraw(amount) {
-    if (amount <= this.balance) {
-      this.balance -= amount;
-      console.log(`Withdrew ${amount}. New balance: ${this.balance}`);
+  retirar(cantidad) {
+    if (cantidad <= this.saldo) {
+      this.saldo -= cantidad;
+      console.log(`Retiró ${cantidad}. Nuevo saldo: ${this.saldo}`);
     } else {
-      console.log('Insufficient funds.');
+      console.log('Fondos insuficientes.');
     }
   }
 };
 
-// Create a proxy for the bank account
-const bankAccountProxy = new Proxy(bankAccount, {
-  // Intercept property access
-  get(target, property) {
-    if (property === 'balance') {
-      // Add some custom behavior before accessing 'balance'
-      console.log('Balance accessed.');
+// Creamos un proxy para la cuenta bancaria
+const bankAccountProxy = new Proxy(cuentaBancaria, {
+  // Intercepta el acceso a la propiedad
+  obtener(objetivo, propiedad) {
+    if (propiedad === 'saldo') {
+      // Agrega algún comportamiento personalizado antes de acceder a 'saldo'
+      console.log('Saldo accedido.');
     }
-    return target[property];
+    return objetivo[propiedad];
   },
 
-  // Intercept method invocation
-  apply(target, thisArg, args) {
-    // Add some custom behavior before invoking a method
-    console.log(`Method "${args[0]}" called.`);
-    return target.apply(thisArg, args);
+  // Intercepta la invocación al método
+  apply(objetivo, thisArg, args) {
+    // Agregue algún comportamiento personalizado antes de invocar un método
+    console.log(`Se ha llamado al método "${args[0]}".`);
+    return objetivo.apply(thisArg, args);
   }
 });
 
-// Accessing the proxy
-console.log(bankAccountProxy.balance); // This will trigger the custom behavior
+// Accedemos al proxy (apoderado)
+console.log(bankAccountProxy.saldo); // Esto activará el comportamiento personalizado.
 
-bankAccountProxy.deposit(500); // This will trigger the custom behavior for method invocation
+bankAccountProxy.depositar(500); // Esto activará el comportamiento personalizado para la invocación de métodos.
 ```
 
 ---
