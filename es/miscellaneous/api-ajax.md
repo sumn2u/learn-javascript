@@ -1,12 +1,9 @@
 ---
-layout: editorial
-chapter: 22
+chapter: 19
 pageNumber: 80
 description: Este capítulo presenta el concepto de IPA (Interfaz de Programación de Aplicaciones) y demuestra su uso a través de AJAX (JavaScript asíncrono y XML). Aprenda a obtener datos de fuentes externas e integrarlos en aplicaciones web para mejorar su funcionalidad..
 ---
-# Capítulo 22
-
-## IPA de Web y AJAX
+# IPA de Web y AJAX
 
 En este capítulo, analizaremos IPA y AJAX, las dos tecnologías importantes que permiten que las aplicaciones interactúen con servidores y envíen o recuperen datos sin la necesidad de recargar la página completa.
 
@@ -92,7 +89,7 @@ En este ejemplo, demostraremos cómo usar AJAX (JavaScript asíncrono y XML) par
 
 La IPA OpenWeatherMap es una poderosa herramienta para recuperar información meteorológica de lugares de todo el mundo. Este ejemplo demuestra cómo utilizar la IPA para obtener datos meteorológicos actuales de una ciudad específica y mostrarlos en su aplicación o documentación.
 
-## Clave IPA
+### Clave IPA
 
 Antes de comenzar, debe registrarse para obtener una clave IPA de [OpenWeatherMap](https://openweathermap.org/api) para acceder a su IPA de datos meteorológicos. Reemplace `'SU_CLAVE_IPA'` en el código siguiente con su clave IPA real.
 
@@ -104,7 +101,7 @@ const apiKey = 'SU_CLAVE_IPA';
 
 En este ejemplo, proporcionaremos la estructura HTML para una aplicación meteorológica sencilla que recupera y muestra datos meteorológicos de la IPA OpenWeatherMap.
 
-## Estructura HTML
+### Estructura HTML
 
 ```html
 <!DOCTYPE html>
@@ -125,7 +122,7 @@ En este ejemplo, proporcionaremos la estructura HTML para una aplicación meteor
 </html>
 ```
 
-## JavaScript (script.js)
+### JavaScript (script.js)
 
 Cree un archivo JavaScript llamado `script.js` para manejar la solicitud AJAX y actualizar los datos meteorológicos en la página:
 
@@ -160,7 +157,7 @@ xhr.onload = function () {
 xhr.send();
 ```
 
-## Resultado
+### Resultado
 
 Cuando abre el archivo HTML en un navegador web, mostrará la información meteorológica para la ubicación especificada (Nueva York en este caso). Asegúrese de reemplazar `'SU_CLAVE_IPA'` con su clave IPA real de OpenWeatherMap.
 

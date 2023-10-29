@@ -5,4 +5,7 @@ _book
 .DS_Store
 package-lock.json
 es/book copy.json
-book copy.json
+book.desarrollo.json
+LANGS.desarrollo.md
+
+.markdownlint.json
