@@ -29,11 +29,10 @@ JavaScript is an interpreted language. While running Javascript an interpreter i
 "LiveScript" was the initial name given to JavaScript.
 {% endhint %}
 
-### Code, and what to do with it
+### Code, and what to do with it and Typographic conventions
 
 _Code_ is the written instructions that make up a program. Here, many chapters contain a lot of code, and it is important to read and write code as part of learning how to program. You should not just quickly scan the examples - read them carefully and try to understand them. This may be difficult at first, but with practice, you will improve. The same goes for the exercises - make sure you actually try to write a solution before assuming you understand them. It is also helpful to try running your solutions to the exercises in a JavaScript interpreter, as this will allow you to see if your code is working correctly and may encourage you to experiment and go beyond the exercises.
 
-### Typographic conventions
 
 Here, text is written in a monospaced font represents elements of a program. This can be a self-contained fragment or a reference to part of a nearby program. Programs, like the one shown below, are written in this way:
 

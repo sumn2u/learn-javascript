@@ -3,6 +3,7 @@ chapter: 5
 pageNumber: 30
 description: The if condition evaluates the condition, and if the condition is true, the code block following the if statement is executed; otherwise, it is skipped.
 ---
+
 # If
 
 The easiest condition is an if statement and its syntax is `if(condition){ do this … }`. The condition has to be true for the code inside the curly braces to be executed. You can for example test a string and set the value of another string dependent on its value as described below.
@@ -27,7 +28,7 @@ if (country === "France") {
 
 if (country === "Germany") {
   weather = "average";
-  food = "wurst thing ever";
+  food = "worst thing ever";
   currency = "funny, small and colourful";
 }
 
@@ -41,13 +42,10 @@ let message =
   " and the " +
   "currency is " +
   currency;
-  
+
 console.log(message);
 // 'this is France, the weather is nice, the food is stunning, but hardly ever vegetarian and the currency is funny, small and colourful'
 ```
-
-
-
 
 ## Nested If-Else
 
@@ -66,7 +64,9 @@ if (condition1) {
   }
 }
 ```
+
 The following program determines a person's student status based on their age and prints a corresponding message.
+
 ```JavaScript
 let age = 20;
 let isStudent = true;

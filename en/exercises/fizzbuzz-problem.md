@@ -13,31 +13,31 @@ The _FizzBuzz_ problem is one of the commonly asked questions, here one has to p
   * For multiples of 5, print `Buzz`.
   * For numbers that are multiples of both 3 and 5, print `FizzBuzz`.
 
-```javascript
-/
-1  
-2  
-Fizz  
-4  
-Buzz  
-Fizz  
-7  
-8  
-Fizz  
-Buzz  
-11  
-Fizz  
-13  
-14  
-FizzBuzz  
-16  
-....
-....
-98  
-Fizz  
-Buzz  
-/
-```
+    ```javascript
+    /
+    1  
+    2  
+    Fizz  
+    4  
+    Buzz  
+    Fizz  
+    7  
+    8  
+    Fizz  
+    Buzz  
+    11  
+    Fizz  
+    13  
+    14  
+    FizzBuzz  
+    16  
+    ....
+    ....
+    98  
+    Fizz  
+    Buzz  
+    /
+    ```
 
 ### 💡 Hints:
 
