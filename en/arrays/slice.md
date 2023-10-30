@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 48 
+pageNumber: 60 
 description:  The Javascript arr.slice() method returns a new array containing a portion of the array on which it is implemented. The original remains unchanged.
 ---
 # Slice

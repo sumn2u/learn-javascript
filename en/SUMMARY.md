@@ -19,6 +19,8 @@
   - [Length](strings/length.md)
   - [Concatenation](strings/concat.md)
   - [Split](strings/split.md)
+  - [CharAt](strings/charAt.md)
+  - [Substring](strings/substring.md)
 - [Conditional Logic](conditional/README.md)
   - [If](conditional/if.md)
   - [Else](conditional/else.md)

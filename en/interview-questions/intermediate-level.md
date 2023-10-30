@@ -2,6 +2,8 @@
 layout: editorial
 title: Intermediate level JavaScript Interview Questions
 description: 
+chapter: 22
+pageNumber: 174
 ---
 
 # Intermediate Level JavaScript Interview Questions
@@ -158,12 +160,12 @@ In JavaScript, "truthy" and "falsy" are terms used to describe how values are ev
 
 # Falsy Values:
 
-- false: The Boolean value false.
-- 0: The numeric value zero.
-- "": An empty string.
-- null: A special value indicating the absence of an object.
-- undefined: A variable that has not been assigned a value.
-- NaN: Stands for "Not-a-Number" and represents an invalid number.
+- `false`: The Boolean value false.
+- `0`: The numeric value zero.
+- `""`: An empty string.
+- `null`: A special value indicating the absence of an object.
+- `undefined`: A variable that has not been assigned a value.
+- `NaN`: Stands for "Not-a-Number" and represents an invalid number.
 - When any of these values are used in a Boolean context, they are treated as "falsy," meaning they are considered equivalent to false.
 
 Example:

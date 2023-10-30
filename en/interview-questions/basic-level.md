@@ -1,6 +1,8 @@
 ---
 layout: editorial
 title: Basic JavaScript Interview Questions
+chapter: 22
+pageNumber: 157
 description:
 ---
 
@@ -73,6 +75,7 @@ let num = 15;
 console.log(num.split(""));
 ```
 4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block
+
 ```js
 try{
   throw new EvalError("'Throws an error'")
@@ -80,7 +83,8 @@ try{
   console.log(error.name, error.message)
 }
 ```
-5. **RangeError** - There is an error when a range of expected values is required
+5. **RangeError** - There is an error when a range of expected values is required.
+
 ```js
 const checkRange = (num)=>{
   if (num < 30) throw new RangeError("Wrong number");
@@ -299,9 +303,7 @@ x(); // Returns "Do something"
 
 ### 2.5. What do you mean by Self Invoking Functions in javascript?
 
-**Answer:**
-
-Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
+**Answer:** Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
 
 Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
 
@@ -310,68 +312,84 @@ Normally, we declare a function and call it, however, anonymous functions may be
 
 **Answer:**
 
-->test () and exec () are RegExp expression methods used in javascript. 
-->We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
-->We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+- test () and exec () are RegExp expression methods used in javascript.
+
+- We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
+- We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
 
 ### 2.7.  What is the difference between Function declaration and Function expression?
 
-**Answer**
+**Answer:**
 
-->**Function declaration**: 
-a).Declared as a separate statement within the main JavaScript code .
-b).Can be called before the function is defined.
-c).Offers better code readability and better code organization.
-d).Example:
+**Function declaration**:
+<ol style="list-style-type: upper-alpha">
+<li> Declared as a separate statement within the main JavaScript code.</li>
+<li> Can be called before the function is defined.</li>
+<li> Offers better code readability and better code organization.</li>
+
+</ol>
+
+Example:
+
+```js
 function abc() {
     return 5;
 }
-->**Function expression**:
-a).Created inside an expression or some other construct.
-b).Created when the execution point reaches it; can be used only after that.
-c).Used when there is a need for a conditional declaration of a function.
-d).Example:
+```
+
+
+**Function expression**:
+<ol style="list-style-type: upper-alpha">
+<li>Created inside an expression or some other construct.</li>
+<li>Created when the execution point reaches it; can be used only after that.</li>
+<li>Used when there is a need for a conditional declaration of a function.</li>
+
+</ol>
+
+Example:
+
+```js
 var a = function abc() {
     return 5;
 }
+```
+
 
 ### 2.8. What are the arrow functions in JavaScript?
 
-**Answer**
-
-->Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:
+**Answer**: Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:
 const helloWorld = () => {
   console.log("hello world!");
 };
 
 ### 2.9. Passed by value and passed by reference :
 
-**Answer**
-
-->Passed By Values Are Primitive Data Types.  
+**Answer:** 
+- Passed By Values Are Primitive Data Types.  
 Consider the following example:
 
 Here, the a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b=a code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
 
 Example:
-
+```js
 var a = 432;
-
 var b = a;
+```
+
 
 Passed_by_values_new
 
-#Passed by References Are Non-primitive Data Types.
+- Passed by References Are Non-primitive Data Types.
+
 Consider the following example:
 
 The reference of the 1st variable object i.e. ‘var obj’ is passed through the location of another variable i.e. ‘var obj2’ with the help of an assigned operator.
 
 Example: 
-
+```js
 var obj = { name: "Raj", surname: "Sharma" };
-
 var obj2 = obj;
-
+```
 
 # 3. Data Types and Operator
 
@@ -701,7 +719,7 @@ There are many ways to create objects in javascript as below
 
 Object constructor:
 
-i.The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+i. The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
 ``` js
 var object = new Object();
 ```
@@ -709,14 +727,14 @@ The Object() is a built-in constructor function so "new" keyword is not required
 ``` js
 var object = Object();
 ```
-ii.Object's create method:
+ii. Object's create method:
 
 The create method of Object creates a new object by passing the prototype object as a parameter
 
 ```js
 var object = Object.create(null);
 ```
-iii.Object literal syntax:
+iii. Object literal syntax:
 
 
 The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
@@ -731,7 +749,7 @@ Object literal property values can be of any data type, including array, functio
 ```
 Note: This is an easiest way to create an object
 
-iv.Function constructor:
+iv. Function constructor:
 
 Create any function and apply the new operator to create object instances,
 
@@ -742,7 +760,7 @@ function Person(name) {
 }
 var object = new Person("Sudheer");
 ```
-v.Function constructor with prototype:
+v. Function constructor with prototype:
 
 This is similar to function constructor but it uses prototype for their properties and methods,
 ```js
@@ -767,7 +785,7 @@ var result = func.call(newInstance, x, y, z),
 // If the result is a non-null object then use it otherwise just use the new instance.
 console.log(result && typeof result === 'object' ? result : newInstance);
 ```
-vi.ES6 Class syntax:
+vi. ES6 Class syntax:
 
 ES6 introduces class feature to create the objects
 ```js
@@ -821,41 +839,29 @@ JavaScript is an interpreted language, not a compiled language. An interpreter i
 
 Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
-### 6.6. difference between exec () and test () methods
-
-**Answer**
-
--> exec():
-1) It is an expression method in JavaScript that is used to search a string with a specific pattern. 
-2) Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.
-
--> test ()
-1) It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
-2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
-
 
 ## 7.JSON
 
 ### 7.1. What is JSON ?
 
-**Answer**
+**Answer:**
 
 JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
 ### 7.2. What are the syntax rules of JSON ?
 
-**Answer** 
+**Answer:** 
 
 Below are the list of syntax rules of JSON
 
-* i. The data is in name/value pairs
-* ii. The data is separated by commas
-* iii. Curly braces hold objects
-* iv. Square brackets hold arrays
+*  The data is in name/value pairs
+*  The data is separated by commas
+*  Curly braces hold objects
+*  Square brackets hold arrays
 
 ### 7.3. What is the purpose JSON stringify ?
 
-**Answer** 
+**Answer:** 
 
 When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -867,7 +873,7 @@ console.log(userString); //"{"name":"John","age":31}"
 
 ### 7.4. How do you parse JSON string ?
 
-**Answer** 
+**Answer:** 
 
 When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -879,13 +885,13 @@ console.log(userJSON); // {name: "John", age: 31}
 
 ### 7.5. Why do you need JSON ?
 
-**Answer** 
+**Answer:** 
 
 When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
 ### 7.6. How do you define JSON arrays ?
 
-**Answer** 
+**Answer:** 
 
 JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
 
@@ -899,6 +905,6 @@ JSON arrays are written inside square brackets and arrays contain javascript obj
 
 ### 7.6. In JSON, what is the purpose of square brackets, and how are they used?
 
-**Answer** 
+**Answer:** 
 
-In JSON, square brackets [ ] are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.
+In JSON, square brackets `[ ]` are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.

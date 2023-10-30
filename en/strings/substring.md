@@ -2,7 +2,7 @@
 chapter: 4
 pageNumber: 31
 ---
-# substring()
+# Substring
 
 The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero (0). 
 

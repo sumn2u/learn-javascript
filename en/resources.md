@@ -1,3 +1,7 @@
+---
+pageNumber: V
+chapter: 
+---
 # List of Learning Resources
 ## Articles for learning JavaScript 
 

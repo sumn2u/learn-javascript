@@ -2,6 +2,8 @@
 layout: editorial
 title: Advanced JavaScript Interview Questions
 description: Delve into intricate advanced-level interview questions on JavaScript to assess the depth of knowledge and expertise of potential candidates.
+chapter: 22
+pageNumber: 181
 ---
 
 # Advanced JavaScript Interview Questions

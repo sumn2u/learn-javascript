@@ -1,6 +1,6 @@
 ---
 chapter: 1
-pageNumber: 7
+pageNumber: 8
 description: JavaScript is a high-level, interpreted, and dynamically-typed programming language primarily used for web development. It is one of the core technologies used to create interactive and dynamic websites and web applications. 
 ---
 # Chapter 1

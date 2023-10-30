@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 52
+pageNumber: 66
 description: The do...while statement creates a loop that executes specified bloc statement until the test condition evaluates to be false. The condition is evaluated after executing the block.
 ---
 # Do...While

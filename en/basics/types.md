@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 13
+pageNumber: 14
 description: Types are the kinds of data that can be represented and manipulated in the language. 
 ---
 

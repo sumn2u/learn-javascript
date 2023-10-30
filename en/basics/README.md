@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 2
-pageNumber: 8
+pageNumber: 10
 description: Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words, and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components.
 ---
 

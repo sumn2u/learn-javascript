@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 47 
+pageNumber: 59 
 description:  To add an element at the beginning of an array we can use the reverse method. It modifies the original array and return the new array length.
 ---
 # Reverse

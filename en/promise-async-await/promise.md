@@ -1,10 +1,9 @@
 ---
 chapter: 18
-pageNumber: 89
+pageNumber: 110
 description: Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a more structured and organized way to handle asynchronous operations, such as making network requests, reading files, or interacting with databases.
 ---
 
-# Chapter 18
 # Promise, async/await
 
 Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
