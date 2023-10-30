@@ -6,137 +6,198 @@ description: Profundiza en complejas preguntas de entrevistas de nivel avanzado 
 <!-- markdownlint-disable-file MD025 -->
 # Preguntas avanzadas de entrevista sobre JavaScript
 
-## 1. Closures and Scoping
+## 1. Cierres y alcance
 
-### 1.1. What is a closure in JavaScript? Provide an example where using closures can be beneficial.
+### 1.1. ¿Qué es un cierre en JavaScript? Proporcione un ejemplo en el que el uso de cierres pueda resultar beneficioso
 
 **Respuesta:**
 
-A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.
+Un cierre en JavaScript es una función que tiene acceso a las variables de su alcance circundante, incluso después de que la función externa haya terminado de ejecutarse. Este mecanismo permite que las funciones mantengan el estado entre ejecuciones.
 
 **Ejemplo:**
-One common use of closures is to create factory functions or private variables. For instance, if you wanted to generate unique ID values for elements:
+Un uso común de los cierres es crear funciones de factoría o variables privadas. Por ejemplo, si desea generar valores de ID únicos para elementos:
 
-### 1.2. How do closures relate to variables' scope and lifetime?
-
-**Respuesta:**
-
-Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.
-
-## 2. Prototypal Inheritance
-
-### 2.1. Explain the difference between classical inheritance and prototypal inheritance.
+### 1.2. ¿Cómo se relacionan los cierres con el alcance y la vida útil de las variables?
 
 **Respuesta:**
 
-Classical inheritance is a concept most often found in traditional Object-Oriented Programming languages like Java or C++, where a class can inherit properties and methods from a parent class. Prototypal inheritance, on the other hand, is unique to JavaScript. In JavaScript, each object can have another object as its prototype, and it can inherit properties from its prototype.
+Los cierres permiten que una función acceda a todas las variables, así como a las funciones, que están en su alcance léxico, incluso después de que se haya completado la función externa. Esto da como resultado que las variables se conserven en la memoria, lo que permite efectivamente que las variables tengan una vida útil prolongada en comparación con las variables locales estándar que normalmente se recolectarían como basura después de que se haya ejecutado su función principal.
 
-The primary difference is that classical inheritance is class-based, whereas prototypal inheritance is object-based. Although ES6 introduced the `class` keyword to JavaScript, it's syntactical sugar over the existing prototypal inheritance.
+## 2. Herencia prototípica
 
-### 2.2. How can you extend built-in JavaScript objects?
-
-**Respuesta:**
-
-To extend built-in JavaScript objects, you can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
-
-## 3. Asynchronous JavaScript
-
-### 3.1. Explain the event loop in JavaScript. How does it relate to the call stack?
+### 2.1. Explicar la diferencia entre herencia clásica y herencia prototípica
 
 **Respuesta:**
 
-The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of your program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
+La herencia clásica es un concepto que se encuentra con mayor frecuencia en los lenguajes de programación orientados a objetos tradicionales como Java o C++, donde una clase puede heredar propiedades y métodos de una clase principal. La herencia prototípica, por otro lado, es exclusiva de JavaScript. En JavaScript, cada objeto puede tener otro objeto como prototipo y puede heredar propiedades de su prototipo.
 
-The call stack, on the other hand, is a data structure that tracks the execution of functions in a program. When a function is called, it is added to the call stack, and when it finishes executing, it is removed from the stack.
+La principal diferencia es que la herencia clásica se basa en clases, mientras que la herencia prototípica se basa en objetos. Aunque ES6 introdujo la palabra clave "clase" en JavaScript, es azúcar sintáctica sobre la herencia prototípica existente.
 
-In the context of JavaScript, the event loop continuously checks the call stack to determine if it is empty. If it is empty and there are callback functions waiting in the message queue, those callbacks are executed.
-
-### 3.2. What are promises, and how do they differ from callbacks in managing asynchronous operations?
+### 2.2. ¿Cómo se pueden ampliar los objetos JavaScript integrados?
 
 **Respuesta:**
 
-Promises are objects representing the eventual completion (or failure) of an asynchronous operation and its resulting value. A `Promise` is in one of these states:
+Para ampliar los objetos JavaScript integrados, puede agregar métodos o propiedades a su prototipo. Sin embargo, generalmente no se recomienda modificar los prototipos nativos porque puede provocar problemas de compatibilidad y comportamientos inesperados, especialmente si hay cambios futuros en la especificación de JavaScript.
 
-- `pending`: initial state, neither fulfilled nor rejected.
-- `fulfilled`: meaning the promised operation has completed and the promise has a resulting value.
-- `rejected`: meaning the operation failed, and the promise will never be fulfilled.
+## 3. JavaScript asíncrono
 
-Callbacks are functions that are passed into another function as arguments and are executed after the outer function has completed. While both promises and callbacks can handle asynchronous operations, promises provide a more robust way of handling them.
-
-The key differences include:
-
-- Promises allow for better chaining of asynchronous operations.
-- Callbacks can lead to callback hell or pyramid of doom, where the code becomes hard to read and manage due to nested callbacks.
-- Promises have a standardized error handling mechanism using `.then` and `.catch`.
-
-### 3.3. Describe async/await. How does it simplify working with asynchronous code?
+### 3.1. Explique el bucle de eventos en JavaScript. ¿Cómo se relaciona con la pila de llamadas?
 
 **Respuesta:**
 
-`async/await` is a syntactic feature introduced in ES8 (or ES2017) to work with asynchronous code in a more synchronous-like fashion. It allows for writing asynchronous operations in a linear manner without callbacks, leading to cleaner, more readable code.
+El bucle de eventos es un concepto fundamental en JavaScript y es responsable de manejar la ejecución de múltiples fragmentos de su programa a lo largo del tiempo, cada uno de los cuales se ejecuta hasta su finalización. Funciona como un bucle continuo que comprueba si hay tareas esperando en la cola de mensajes. Si hay tareas y el hilo principal (pila de llamadas) está vacío, retira la tarea de la cola y la ejecuta.
 
-The `async` keyword is used to declare an asynchronous function, which ensures that the function returns a promise. The `await` keyword is used inside an `async` function to pause the execution until the promise is resolved or rejected.
+La pila de llamadas, por otro lado, es una estructura de datos que rastrea la ejecución de funciones en un programa. Cuando se llama a una función, se agrega a la pila de llamadas y cuando termina de ejecutarse, se elimina de la pila.
 
-Using `async/await` simplifies error handling, as you can use traditional try/catch blocks instead of `.catch` with promises.
+En el contexto de JavaScript, el bucle de eventos verifica continuamente la pila de llamadas para determinar si está vacía. Si está vacío y hay funciones de devolución de llamada esperando en la cola de mensajes, esas devoluciones de llamada se ejecutan.
 
-## 4. Advanced Array Methods
-
-### 4.1. Describe the functions of `map`, `reduce`, and `filter`. Provide an example of a practical use case for each.
+### 3.2. ¿Qué son las promesas y en qué se diferencian de las retrollamadas en la gestión de operaciones asincrónicas?
 
 **Respuesta:**
 
-- `map`: It transforms each element of an array based on a function, returning a new array of the same length.
-  **Ejemplo:** Doubling each number in an array.
+Las promesas son objetos que representan la eventual finalización (o falla) de una operación asincrónica y su valor resultante. Una `Promise` se encuentra en uno de estos estados:
+
+- `pending`: estado inicial, ni cumplido ni rechazado.
+- `fulfilled`: significa que la operación prometida se ha completado y la promesa tiene un valor resultante.
+- `rejected`: significa que la operación fracasó y la promesa nunca se cumplirá.
+
+Las retrollamadas son funciones que se pasan a otra función como argumentos y se ejecutan una vez completada la función externa. Si bien tanto las promesas como las retrollamadas pueden manejar operaciones asincrónicas, las promesas proporcionan una forma más sólida de manejarlas.
+
+Las diferencias clave incluyen:
+
+- Las promesas permiten un mejor encadenamiento de operaciones asincrónicas.
+- Las retrollamadas pueden llevar a un infierno de retrollamadas o a una pirámide fatal, donde el código se vuelve difícil de leer y administrar debido a las retrollamadas anidadas.
+- Las promesas tienen un mecanismo de manejo de errores estandarizado usando `.then` y `.catch`.
+
+### 3.3. Describa async/await. ¿Cómo simplifica el trabajo con código asíncrono?
+
+**Respuesta:**
+
+`async/await` es una característica sintáctica introducida en ES8 (o ES2017) para trabajar con código asíncrono de una manera más sincrónica. Permite escribir operaciones asíncronas de forma lineal sin devoluciones de llamadas, lo que genera un código más limpio y legible.
+
+La palabra clave `async` se utiliza para declarar una función asincróna, lo que garantiza que la función devuelva una promesa. La palabra clave `await` se usa dentro de una función `async` para pausar la ejecución hasta que la promesa se resuelva o rechace.
+
+El uso de `async/await` simplifica el manejo de errores, ya que puede usar bloques try/catch tradicionales en lugar de `.catch` con promesas.
+
+## 4. Métodos de matriz avanzados
+
+### 4.1. Describa las funciones de `map`, `reduce` y `filter`. Proporcione un ejemplo de un caso de uso práctico para cada
+
+**Respuesta:**
+
+- `map`: Transforma cada elemento de una matriz en función de una función, devolviendo una nueva matriz de la misma longitud.
+  **Ejemplo:** Duplicar cada número en una matriz.
 
 ```javascript
-  const numbers = [1, 2, 3, 4];
-  const doubled = numbers.map((num) => num * 2); // [2, 4, 6, 8] ```
+  const numeros = [1, 2, 3, 4];
+  const doblados = numeros.map((num) => num * 2); // [2, 4, 6, 8] 
 ```
 
-### 4.2. What are some limitations or pitfalls when using arrow functions?
+### 4.2. ¿Cuáles son algunas limitaciones o peligros al utilizar funciones de flecha?
 
 **Respuesta:**
-Arrow functions introduce a concise way to write functions in JavaScript, but they come with certain limitations:
+Las funciones de flecha presentan una forma concisa de escribir funciones en JavaScript, pero vienen con ciertas limitaciones:
 
-1. **No `this` Binding**: Arrow functions do not bind their own `this`. They inherit the `this` binding of the surrounding scope. This can be problematic, especially when using them as methods in objects or as event handlers.
+1. **Sin enlace `this`**: las funciones de flecha no vinculan su propio `this`. Heredan el enlace `this` del ámbito circundante. Esto puede resultar problemático, especialmente cuando se usan como métodos en objetos o como controladores de eventos.
 
-2. **No `arguments` Object**: Arrow functions do not have the `arguments` object of their own. If you need to access the arguments object, you'd have to use traditional function expressions.
+2. **Sin objeto `arguments`**: Las funciones de flecha no tienen su propio objeto `arguments`. Si necesita acceder al objeto arguments, deberá utilizar expresiones de funciones tradicionales.
 
-3. **Cannot be Used as Constructors**: Arrow functions cannot be used as constructors with the `new` keyword because they don't have the `[[Construct]]` internal method.
+3. **No se pueden usar como constructores**: Las funciones de flecha no se pueden usar como constructores con la palabra clave `new` porque no tienen el método interno `[[Construct]]`.
 
-4. **No `prototype` Property**: Unlike regular functions, arrow functions do not have a `prototype` property.
+4. **Sin propiedad `prototype`**: a diferencia de las funciones normales, las funciones de flecha no tienen una propiedad `prototype`.
 
-5. **Less Readable for Complex Logic**: For simple operations, the concise syntax is beneficial. However, for functions containing complex logic, the concise syntax might make the code less readable.
+5. **Menos legible para lógica compleja**: para operaciones simples, la sintaxis concisa es beneficiosa. Sin embargo, para funciones que contienen lógica compleja, la sintaxis concisa puede hacer que el código sea menos legible.
 
-## 5. "this" Keyword
+## 5. Palabra clave "this"
 
-### 5.1. Explain the behavior of the `this` keyword in different contexts, such as in a method, a standalone function, an arrow function, and an event handler.
+### 5.1. Explique el comportamiento de la palabra clave `this` en diferentes contextos, como en un método, una función independiente, una función de flecha y un controlador de eventos
 
-### 5.2. How can you ensure a function uses a specific object as its `this` value?
+**Respuesta:** La palabra `this` puede variar según el contexto en el que se utilice. Algunos de ellos se exploran a continuación:
 
-## 6. Memory Management
+- En un método: Se refiere al objeto sobre el que se invoca el método.
 
-### 6.1. What are memory leaks in JavaScript? Discuss potential causes and how to prevent them.
+```javascript
+const persona = {
+  nombre: "Alicia",
+  diHola: function () {
+    console.log(`Hola, mi nombre es ${this.nombre}`);
+  },
+};
 
-### 6.2. Describe the difference between shallow copy and deep copy. How can you achieve each in JavaScript?
+persona.diHola(); // Salida: Hola, mi nombre es Alicia
+```
 
-## 7. ES6 and Beyond
+- En función independiente: aquí, el comportamiento de `this` depende de cómo se llama a la función. Si la función se llama en el ámbito global, `this` se refiere al objeto global.
 
-### 7.1. Explain the purpose and usage of JavaScript's destructuring assignment.
+```javascript
+function saludo() {
+  console.log(`Hola, mi nombre es ${this.nombre}`);
+}
 
-### 7.2. Describe the significance of JavaScript modules and the ES6 `import/export` syntax.
+const nombre = "Alicia";
+saludo(); // Salida: Hola, mi nombre es Alicia
+```
 
-### 7.3. How do template literals enhance string manipulation in ES6? Provide examples.
+- En una función flecha: las funciones flecha capturan este valor de su alcance léxico circundante, a diferencia de las funciones normales. Esto significa que carecen de su propio contexto.
 
-## 8. Functional Programming
+```javascript
+const persona = {
+  nombre: "Roberto",
+  diHola: () => {
+    console.log(`Hola, mi nombre es ${this.nombre}`);
+  },
+};
 
-### 8.1. How does functional programming differ from imperative programming in JavaScript?
+persona.diHola(); // Salida: Hola, mi nombre es undefined
+```
+
+### 5.2. ¿Cómo puede asegurarse de que una función utilice un objeto específico como su valor `this`?
+
+**Respuesta:**
+Podemos asegurarnos de que una función use un objeto específico como su valor `this` en JavaScript usando métodos como bind(), funciones flecha, call(), apply() o definiendo métodos dentro de las clases de ES6. Estas técnicas nos permiten controlar el contexto en el que opera la función y garantizar que acceda a las propiedades y métodos del objeto deseado.
+
+## 6. Gestión de la memoria
+
+### 6.1. ¿Qué son las pérdidas de memoria en JavaScript? Describa las posibles causas y cómo prevenirlas
+
+**Respuesta:**
+Las pérdidas de memoria en JavaScript ocurren cuando el programa retiene involuntariamente referencias a objetos que ya no son necesarios, lo que genera un mayor uso de memoria y posibles problemas con la aplicación. Las causas comunes incluyen variables no utilizadas, cierres, detectores de eventos y referencias circulares. Para evitar pérdidas de memoria, los desarrolladores deben eliminar referencias explícitamente, administrar detectores de eventos, evitar dependencias circulares, usar referencias débiles, emplear herramientas de creación de perfiles de memoria, realizar pruebas y revisiones de código, y utilizar linters y herramientas de análisis estático para detectar problemas potenciales en las primeras etapas del proceso de desarrollo.
+
+### 6.2. Describa la diferencia entre copia superficial y copia profunda. ¿Cómo puedes lograr cada una en JavaScript?
+
+**Respuesta:**
+La copia superficial y la copia profunda son métodos para duplicar objetos o matrices en JavaScript.
+
+La copia superficial duplica la estructura y los valores de nivel superior de un objeto o matriz, pero conserva las referencias a objetos o matrices anidados. Los cambios en estructuras anidadas afectan tanto al original como a la copia.
+La copia profunda crea un nuevo objeto o matriz y duplica recursivamente todos los niveles de estructuras anidadas, asegurando que los cambios en la copia no afecten al original.
+Para lograr una copia superficial, podemos usar métodos como el operador de extensión o slice(). Para una copia profunda, se necesitan lógica personalizada o bibliotecas como cloneDeep de lodash debido a la falta de métodos de copia profunda integrados en JavaScript.
+
+## 7. ES6 y más allá
+
+### 7.1. Explique el propósito y el uso de la asignación de desestructuración de JavaScript
+
+**Respuesta:**
+La asignación de desestructuración de JavaScript es una característica que simplifica la extracción de valores de objetos y matrices, haciendo que el código sea más conciso y legible. Nos permite asignar valores a variables en función de los nombres de propiedad (desestructuración de objetos) o posición (desestructuración de matrices). La desestructuración también se puede utilizar en los parámetros de funciones y admite la sintaxis restante para capturar los elementos restantes. Es una herramienta poderosa para trabajar con estructuras de datos complejas.
+
+### 7.2. Describa la importancia de los módulos JavaScript y la sintaxis `import/export` de ES6
+
+**Respuesta:**
+Los módulos de JavaScript, junto con la sintaxis de import/export de ES6, son cruciales para el desarrollo de JavaScript moderno. Permiten a los desarrolladores organizar, reutilizar y mantener el código de forma eficaz. Los módulos encapsulan código relacionado, promueven la reutilización del código, administran dependencias y mejoran la escalabilidad del código. La sintaxis de import/export de ES6 proporciona una forma estandarizada de declarar y usar módulos, lo que facilita estructurar y compartir código de una manera limpia y fácil de mantener. Estas características se han vuelto esenciales para crear aplicaciones JavaScript modulares y fáciles de mantener, tanto en el lado del cliente como del servidor.
+
+### 7.3. ¿Cómo mejoran los literales de plantilla la manipulación de cadenas en ES6? Proporcione ejemplos
+
+**Respuesta:**
+Los literales de plantilla en ES6 mejoran la manipulación de cadenas al permitir a los desarrolladores crear cadenas con expresiones incrustadas y contenido multilínea de una manera más legible y flexible. Admiten interpolación de variables, cadenas multilínea, evaluación de expresiones, llamadas a funciones e incluso casos de uso avanzados como plantillas etiquetadas. Esta característica mejora la legibilidad y el mantenimiento del código cuando se trabaja con cadenas complejas que involucran contenido o expresiones dinámicas.
+
+## 8. Programación funcional
+
+### 8.1. ¿En qué se diferencia la programación funcional de la programación imperativa en JavaScript?
 
 **Respuesta:**
 
-Functional programming and imperative programming are two predominant programming paradigms.
+La programación funcional y la programación imperativa son dos paradigmas de programación predominantes.
 
-- **Imperative Programming**: This paradigm is about telling the computer "how" to do something and relies on statements that change a programs state. In essence, it focuses on describing the steps to achieve a particular task. This often involves loops, conditionals, and statements that modify variables.
+- **Programación imperativa**: este paradigma consiste en decirle a la computadora "cómo" hacer algo y se basa en declaraciones que cambian el estado de un programa. En esencia, se centra en describir los pasos para lograr una tarea particular. Esto suele implicar bucles, condicionales y declaraciones que modifican variables.
 
   ````javascript
   let total = 0;
@@ -145,48 +206,52 @@ Functional programming and imperative programming are two predominant programmin
   }```
   ````
 
-### Functional Programming (FP)
+- **Programación funcional (FP)**
 
-FP is more about instructing the computer "what" to achieve, rather than detailing "how" to achieve it. It treats computational tasks as evaluations of mathematical functions and steers clear of mutable data and state alterations. In the context of JavaScript and most FP languages:
+La FP se trata más de indicarle a la computadora "qué" lograr, en lugar de detallar "cómo" lograrlo. Trata las tareas computacionales como evaluaciones de funciones matemáticas y evita datos mutables y alteraciones de estado. En el contexto de JavaScript y la mayoría de los lenguajes FP:
 
-- **Pure Functions**: These are functions where the output value is determined solely by its input values, without observable side effects. This means, for the same input, the function will always produce the same output.
+1 **Funciones puras**: Estas son funciones donde el valor de salida está determinado únicamente por sus valores de entrada, sin efectos secundarios observables. Esto significa que, para la misma entrada, la función siempre producirá la misma salida.
 
-- **Immutable Data**: Once data is created, it can never change. Instead of altering existing data, functional programming practices involve creating new data structures.
+2 **Datos inmutables**: una vez que se crean los datos, nunca pueden cambiar. En lugar de alterar los datos existentes, las prácticas de programación funcional implican la creación de nuevas estructuras de datos.
 
-- **First-Class and Higher-Order Functions**: In FP, functions are first-class citizens. This means they can be assigned to variables, passed into other functions as parameters, and returned as values. A higher-order function is a function that receives another function as an argument, returns a function, or both.
+3 **Funciones de Primera Clase y de Orden Superior**: En FP, las funciones son ciudadanos de primera clase. Esto significa que pueden asignarse a variables, pasarse a otras funciones como parámetros y devolverse como valores. Una función de orden superior es una función que recibe otra función como argumento, devuelve una función o ambas cosas.
 
-### 8.2. Explain first-class functions and their importance in functional programming.
+### 8.2. Explique las funciones de primera clase y su importancia en la programación funcional
 
 **Respuesta:**
 
-In JavaScript and many other programming languages, functions are considered as "first-class citizens." This means that functions can be:
+En JavaScript y muchos otros lenguajes de programación, las funciones se consideran "ciudadanos de primera clase". Esto significa que las funciones pueden ser:
 
-- Assigned to variables.
-- Passed as arguments to other functions.
-- Returned from other functions as values.
-- Stored in data structures like arrays and objects.
+- Asignado a variables.
+- Pasado como argumentos a otras funciones.
+- Devueltos de otras funciones como valores.
+- Almacenado en estructuras de datos como matrices y objetos.
 
-Here's a simple example demonstrating these properties:
+Aquí hay un ejemplo simple que demuestra estas propiedades:
 
 ````javascript
-// Assigning a function to a variable
+// Asignando una función a una variable
 const greet = function(name) {
 return "Hello, " + name;
 }
-// Passing a function as an argument to another function
+
+// Pasando una función como un argumento a otra función
 function runFunction(fn, value) {
 return fn(value);
 }
-runFunction(greet, 'John'); // Returns: "Hello, John"
-// Returning a function from another function
+runFunction(greet, 'John'); // Devuelve: "Hello, John"
+
+// Devolviendo una función desde otra función
 function multiplier(factor) {
-return function(number) {
-return number \* factor;
+  return function(number) {
+    return number \* factor;
+  }
 }
-}
+
 const double = multiplier(2);
-double(5); // Returns: 10
-// Storing function in an array
+double(5); // Devuelve: 10
+
+// Almacenando una función en una matriz
 const functions = [greet, double];
 ````
 

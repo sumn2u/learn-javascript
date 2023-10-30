@@ -1,5 +1,7 @@
-- [English](en/)
-- [नेपाली](np/)
-- [Türkiye](tr/)
-- [Français](fr/)
-- [Español](es/)
+# Languages
+
+* [English](en/)
+* [नेपाली](np/)
+* [Türkiye](tr/)
+* [Français](fr/)
+* [Español](es/)

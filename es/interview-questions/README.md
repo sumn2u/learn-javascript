@@ -1,11 +1,11 @@
 ---
 layout: editorial
-chapter: 25
+chapter: 22
 
 pageNumber: 82
 description: 
 ---
-# Capítulo 25
+# Capítulo 22
 
 ## Preguntas de entrevista
 

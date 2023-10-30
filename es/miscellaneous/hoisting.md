@@ -8,12 +8,12 @@ description: El hoisting es un comportamiento predeterminado en JavaScript para 
 El alojamiento es un comportamiento predeterminado en JavaScript para mover declaraciones en la parte superior. Mientras se ejecuta un código, se crea un contexto de ejecución global: creación y ejecución. En la fase de creación, JavaScript mueve la declaración de variables y funciones a la parte superior de la página, lo que se conoce como elevación.
 
 ```javascript
-// elevación variable
+// elevación de la variable
 console.log(contador);
 let contador = 1; // lanza la excepción ReferenceError: contador is not defined
 ```
 
-Aunque el `contador` está presente en la memoria del montón pero no se ha inicializado, genera un error. Esto sucede debido al izado, la variable `contador` se iza aquí.
+Aunque el `contador` está presente en la memoria del montón pero no se ha inicializado, genera un error. Esto sucede debido al izado (hoisting, en inglés), la variable `contador` se iza aquí.
 
 ```javascript
     // función de elevación

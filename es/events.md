@@ -5,7 +5,7 @@ pageNumber: 87
 description: En programación, los eventos son acciones o sucesos en un sistema sobre los que el sistema le informa para que pueda responder a ellos. Por ejemplo, cuando hace clic en el botón Restablecer, se borra la entrada.
 ---
 
-# Chapter 17
+# Capítulo 17
 
 ## Eventos
 
@@ -14,7 +14,6 @@ En programación, los _eventos_ son acciones o sucesos en un sistema sobre los q
 Las interacciones del teclado, como las pulsaciones de teclas, deben leerse constantemente para captar el estado de la tecla antes de volver a soltarla. Realizar otros cálculos que requieren mucho tiempo puede hacer que no presione una tecla. Este solía ser el mecanismo de manejo de entradas de algunas máquinas primitivas. Un paso más adelante es utilizar una cola, es decir, un programa que comprueba periódicamente la cola en busca de nuevos eventos y reacciona ante ellos. Este enfoque se llama _pooling_.
 
 El principal inconveniente de este enfoque es que tiene que mirar la cola de vez en cuando, lo que provoca interrupciones cuando se activa un evento. El mejor mecanismo para esto es notificar al código cuando ocurre un evento. Esto es lo que hacen los navegadores modernos al permitirnos registrar funciones como _controladores_ para eventos específicos.
-
 
 ```javascript
 <p>Haz clic en mí para activar el controlador.</p>
@@ -26,7 +25,6 @@ El principal inconveniente de este enfoque es que tiene que mirar la cola de vez
 ```
 
 Aquí, se llama a `addEventListener` en el objeto `window` (objeto integrado proporcionado por el navegador) para registrar un controlador para toda la `window`. Llamar a su método `addEventListener` registra el segundo argumento que se llamará cada vez que ocurra el evento descrito por su primer argumento.
-
 
 {% hint style="info" %}
 Los detectores de eventos se llaman solo cuando el evento ocurre en el contexto del objeto en el que están registrados.
