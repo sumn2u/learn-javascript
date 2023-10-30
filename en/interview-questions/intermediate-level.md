@@ -2,6 +2,8 @@
 layout: editorial
 title: Intermediate level JavaScript Interview Questions
 description: 
+chapter: 22
+pageNumber: 174
 ---
 
 # Intermediate Level JavaScript Interview Questions
@@ -158,12 +160,12 @@ In JavaScript, "truthy" and "falsy" are terms used to describe how values are ev
 
 # Falsy Values:
 
-- false: The Boolean value false.
-- 0: The numeric value zero.
-- "": An empty string.
-- null: A special value indicating the absence of an object.
-- undefined: A variable that has not been assigned a value.
-- NaN: Stands for "Not-a-Number" and represents an invalid number.
+- `false`: The Boolean value false.
+- `0`: The numeric value zero.
+- `""`: An empty string.
+- `null`: A special value indicating the absence of an object.
+- `undefined`: A variable that has not been assigned a value.
+- `NaN`: Stands for "Not-a-Number" and represents an invalid number.
 - When any of these values are used in a Boolean context, they are treated as "falsy," meaning they are considered equivalent to false.
 
 Example:
@@ -317,3 +319,23 @@ You can use the test() method of regular expression in order to search a string 
 var pattern = /you/;
 console.log(pattern.test("How are you?")); //true
 ```
+### 6.7. What is Currying in Javascript?
+ 
+**Answer:** 
+
+Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument. Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function.
+That is, when we turn a function call sum(1,2,3) into sum(1)(2)(3). 
+
+The number of arguments a function takes is also called arity.
+
+```
+function sum(a, b) {
+    // do something
+}
+function _sum(a, b, c) {
+    // do something
+}
+```
+The function sum takes two arguments (two-arity function) and _sum takes three arguments (three-arity function).
+
+Curried functions are constructed by chaining closures and by defining and immediately returning their inner functions simultaneously.

@@ -2,7 +2,7 @@
 layout: editorial
 chapter: 23
 
-pageNumber: 92
+pageNumber: 190
 description: Design Patterns
 ---
 # Chapter 23

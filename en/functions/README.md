@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 8
-pageNumber: 53
+pageNumber: 67
 description: Functions are blocks of code that perform a specific task or a set of tasks. They are reusable units of code that can be called and executed at any point in a program. 
 ---
 

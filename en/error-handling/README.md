@@ -1,4 +1,12 @@
-# JavaScript Error Handling Guide
+---
+layout: editorial
+chapter: 12
+pageNumber: 82
+description: In programming errors happen for various reasons, some happen from code errors,  some due to wrong input, and other unforeseeable things. The try catch helps prevent the entire script from halting or crashing when an error occurs, allowing us to gracefully handle exceptional cases and provide a fallback behavior.
+---
+
+# Chapter 12
+# Error Handling
 
 Errors are an inevitable part of software development. Handling them effectively is crucial for writing robust and reliable JavaScript code. This guide will walk you through the fundamentals of error handling in JavaScript, including why it's important, types of errors, and how to use the `try...catch` statement.
 

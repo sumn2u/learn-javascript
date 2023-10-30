@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 4
-pageNumber: 23
+pageNumber: 29
 ---
 
 # Chapter 4

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 5
-pageNumber: 29
+pageNumber: 38
 description: Conditions are essential for writing dynamic and responsive code that can adapt to different scenarios and make decisions based on input, user interactions, or data. 
 ---
 

@@ -1,6 +1,6 @@
 ---
 chapter: 3
-pageNumber: 21
+pageNumber: 27
 description: There are several advanced operators that provide powerful functionality and allow us to perform various operations beyond basic arithmetic and logical operations. These advanced operators can be very helpful for manipulating data, performing bitwise operations, working with objects, and more.
 ---
 # Advanced Operators

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 9
-pageNumber: 56
+pageNumber: 70
 description: An object is a composite data type that allows you to store and organize multiple values (properties) as key-value pairs. It is a fundamental data structure in the language and is widely used for representing complex data and creating structured entities.
 ---
 

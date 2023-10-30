@@ -1,6 +1,6 @@
 ---
 chapter: 12
-pageNumber: 69
+pageNumber: 85
 description: try catch finally allows developers to gracefully handle exceptions (errors) that may occur during the execution of a code block and ensure that certain cleanup actions are always executed, regardless of whether an exception was thrown or not.
 ---
 # try...catch...finally

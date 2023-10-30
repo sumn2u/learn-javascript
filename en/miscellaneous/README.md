@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 19
-pageNumber: 92
+pageNumber: 111
 ---
 
 # Chapter 19

@@ -2,9 +2,9 @@
 chapter: 4
 pageNumber: 30
 ---
-# charAt()
+# CharAt
 
-str.charAt() returns the character at the given index of the string index holds the array element position.
+The `str.charAt()` method returns the character at the given index of the string index holds the array element position.
 * using the `charAt()` method
 * using the template literal (introduced in ES6)
 
@@ -48,3 +48,4 @@ func();
 
 //Output
 t
+```

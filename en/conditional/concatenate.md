@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 35
+pageNumber: 45
 description: Concatenating condition refers to combining multiple conditions using logical operators to create more complex and sophisticated conditionals.
 ---
 # Concatenate
