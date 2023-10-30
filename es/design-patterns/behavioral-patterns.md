@@ -9,480 +9,479 @@ Se concentra en cómo los objetos se comunican entre sí y se les asignan las re
 
 ## 1. Cadena de responsabilidad
 
-The Cadena de responsabilidad is a behavioural design pattern and its main purpose is to take a request and pass it along a chain of handlers. When the request goes through the chain each handler will decide either to process the request or pass it to the next handler in the chain. This pattern allows multiple handlers to handle the request without the sender needing to know which one will process it.
+La Cadena de responsabilidad es un patrón de diseño de comportamiento y su objetivo principal es tomar una solicitud y transmitirla a lo largo de una cadena de manejadores. Cuando la solicitud pasa por la cadena, cada controlador decidirá si procesa la solicitud o la pasa al siguiente controlador de la cadena. Este patrón permite que varios controladores manejen la solicitud sin que el remitente necesite saber cuál la procesará.
 
 ### 1.1. Componentes del patrón Cadena de responsabilidad
 
-- *Request*
+- *Solicitud*
 
-The request is just the object the client sends that needs to be processed. The request goes through the chain of handlers until it is processed or reaches the end of the chain.
+La solicitud es solo el objeto que envía el cliente y que debe procesarse. La solicitud pasa por la cadena de controladores hasta que se procesa o llega al final de la cadena.
 
-- *Abstract Handler Interface/Class*
+- *Interfaz/clase del controlador abstracto*
 
-This is the base interface/class that defines the methods that will be used for handling the request. The handler interface contains the logic for the order of the chain and how the request gets passed through.
+Esta es la interfaz/clase base que define los métodos que se utilizarán para manejar la solicitud. La interfaz del controlador contiene la lógica para el orden de la cadena y cómo se pasa la solicitud.
 
-- *Concrete Handlers*
+- *Manipuladores concretos*
 
-These are the methods/classes that implement the abstract handler. Each concrete handler contains logic for handling a particular type of request. If the concrete handler can process the request it will, if it can't then it will pass the request to the next handler.
+Estos son los métodos/clases que implementan el controlador abstracto. Cada controlador concreto contiene lógica para manejar un tipo particular de solicitud. Si el controlador concreto puede procesar la solicitud, lo hará; si no puede, pasará la solicitud al siguiente controlador.
 
 ### 1.2. Beneficios del patrón Cadena de responsabilidad
 
-- **Ease of Use**
+- **Facilidad de uso**
 
-The sender does not need to know the specific method to process the request, the sender just needs to pass it to the chain. This makes it easier for the sender to process requests.
+El remitente no necesita conocer el método específico para procesar la solicitud, solo necesita pasarlo a la cadena. Esto facilita que el remitente procese las solicitudes.
 
-- **Flexibility and Extensibility**
+- **Flexibilidad y extensibilidad**
 
-New Handlers can be added to the chain or removed from the chain without modifying the sender's code. This allows for dynamic modification of the processing order.
+Se pueden agregar o eliminar nuevos controladores a la cadena sin modificar el código del remitente. Esto permite la modificación dinámica del orden de procesamiento.
 
-- **Promotes Responsible Segregation**
+- **Promueve la segregación responsable**
 
-Handlers are responsible for processing specific types of requests based on their defined logic. This promotes a clear separation of responsibilities, making it easier to manage and maintain each handler independently.
+Los controladores son responsables de procesar tipos específicos de solicitudes según su lógica definida. Esto promueve una clara separación de responsabilidades, lo que facilita la gestión y el mantenimiento de cada manejador de forma independiente.
 
-- **Sequential Request Processing**
+- **Procesamiento de solicitudes secuenciales**
 
-The pattern ensures that each request is processed sequentially through the chain of handlers. Each handler can choose to process the request or pass it to the next handler. This can be particularly useful in scenarios where requests need to be processed in a specific order.
+El patrón garantiza que cada solicitud se procese secuencialmente a través de la cadena de controladores. Cada controlador puede optar por procesar la solicitud o pasarla al siguiente controlador. Esto puede resultar especialmente útil en escenarios en los que las solicitudes deben procesarse en un orden específico.
 
 ### 1.3. Ejemplo
 
 ```javascript
-// Handler interface
-class CoffeeHandler {
+// Interfaz del manejador
+class CafeManejador {
   constructor() {
-    this.nextHandler = null;
+    this.siguienteManejador = null;
   }
 
-  setNext(handler) {
-    this.nextHandler = handler;
+  establecerSiguiente(manejador) {
+    this.siguienteManejador = manejador;
   }
 
-  processRequest(request) {
-    throw new Error('processRequest method must be implemented by subclasses');
+  procesarPeticion(peticion) {
+    throw new Error('El método procesarPeticion debe ser implementado por subclases.');
   }
 }
 
-// Concrete handler for ordering coffee
-class OrderCoffeeHandler extends CoffeeHandler {
-  processRequest(request) {
-    if (request === 'Coffee') {
-      return 'Order placed for a cup of coffee.';
-    } else if (this.nextHandler) {
-      return this.nextHandler.processRequest(request);
+// Manejador concreto para pedir un café
+class PedirCafeManejador extends CafeManejador {
+  procesarPeticion(peticion) {
+    if (peticion === 'Cafe') {
+      return 'Pedido realizado para una taza de café.';
+    } else if (this.siguienteManejador) {
+      return this.siguienteManejador.procesarPeticion(peticion);
     } else {
-      return 'Sorry, we do not serve ' + request + '.';
+      return 'Lo sentimos, no atendemos ' + peticion + '.';
     }
   }
 }
 
-// Concrete handler for preparing coffee
-class PrepareCoffeeHandler extends CoffeeHandler {
-  processRequest(request) {
-    if (request === 'PrepareCoffee') {
-      return 'Coffee is being prepared.';
-    } else if (this.nextHandler) {
-      return this.nextHandler.processRequest(request);
+// Manejador concreto para preparar un café
+class PrepararCafeManejanador extends CafeManejador {
+  procesarPeticion(peticion) {
+    if (peticion === 'PrepararCafe') {
+      return 'Se está preparando cafe.';
+    } else if (this.siguienteManejador) {
+      return this.siguienteManejador.procesarPeticion(peticion);
     } else {
-      return 'Cannot prepare ' + request + '.';
+      return 'Cannot prepare ' + peticion + '.';
     }
   }
 }
 
-// Client code
-const orderHandler = new OrderCoffeeHandler();
-const prepareHandler = new PrepareCoffeeHandler();
+// Código del cliente
+const pedirManejador = new PedirCafeManejador();
+const prepararManejador = new PrepararCafeManejanador();
 
-// Set up the chain
-orderHandler.setNext(prepareHandler);
+// Configuramos la cadena de responsabilidad
+pedirManejador.establecerSiguiente(prepararManejador);
 
-// Order coffee
-console.log(orderHandler.processRequest('Coffee'));  // Output: Order placed for a cup of coffee.
+// Pedimos el café
+console.log(pedirManejador.procesarPeticion('Cafe'));  // Salida: Pedido realizado para una taza de café.
 
-// Prepare coffee
-console.log(orderHandler.processRequest('PrepareCoffee'));  // Output: Coffee is being prepared.
+// Preparamos el café
+console.log(pedirManejador.procesarPeticion('PrepararCafe'));  // Salida: Se está preparando cafe.
 
-// Try ordering something else
-console.log(orderHandler.processRequest('Tea'));  // Output: Sorry, we do not serve Tea.
+// Intenta pedir algo más
+console.log(pedirManejador.procesarPeticion('Té'));  // Salida: Lo sentimos, no servimos té.
 ```
 
 ## 2. Comando
 
-The command design pattern is a behavioral design pattern that allows you to encapsulate a request as an object, that object will contain all the necessary information for the request's execution. This pattern allows for the parameterization and queing of requests and provides the ability to undo operations.
+El patrón de diseño de comandos es un patrón de diseño de comportamiento que le permite encapsular una solicitud como un objeto, ese objeto contendrá toda la información necesaria para la ejecución de la solicitud. Este patrón permite la parametrización y puesta en cola de solicitudes y proporciona la capacidad de deshacer operaciones.
 
 ### 2.1. Componentes del patrón Comando
 
-- *Invoker*
+- *Invocador*
 
-This is the object that requests the execution of a command. It has a reference to a command and can execute the command by calling its `execute` method. The Invoker does not need to know the specifics of how the command is executed. It just triggers the command.
+Este es el objeto que solicita la ejecución de un comando. Tiene una referencia a un comando y puede ejecutar el comando llamando a su método `ejecutar`. El invocador no necesita conocer los detalles de cómo se ejecuta el comando. Simplemente activa el comando.
 
 - *Comando*
 
-This is the interface or abstract class that declares the `execute` method. It defines the common method that concrete command classes should implement.
+Esta es la interfaz o clase abstracta que declara el método `ejecutar`. Define el método común que las clases de comando concretas deben implementar.
 
-- *Reciever*
+- *Receptor*
 
-This is an object that performs the actual work when the `execute` method of a command is called. The reciver knows how to carry out the action associate with a specific command.
+Este es un objeto que realiza el trabajo real cuando se llama al método `ejecutar` de un comando. El receptor sabe cómo realizar la acción asociada a un comando específico.
 
 ### 2.2. Beneficios del patrón Comando
 
-- **Flexibility and Extensibility**
+- **Flexibilidad y extensibilidad**
 
-This pattern allows for easy addition of new commands without needing to modify the invoker or reciever.
+Este patrón permite agregar fácilmente nuevos comandos sin necesidad de modificar el invocador o el receptor.
 
-- **Undo and Redo Operations**
+- **Operaciones deshacer y rehacer**
 
-The command pattern facilitates the implementation of undo and redo operations.Each command object can keep track of the previous state, enabling the reversal of the executed action.
+El patrón de comando facilita la implementación de operaciones de deshacer y rehacer. Cada objeto de comando puede realizar un seguimiento del estado anterior, lo que permite revertir la acción ejecutada.
 
-- **Parameterization and Queuing**
+- **Parametrización y colas**
 
-Commands can be parameterized with arguments, allowing for the customization of actions at runtime. Additionally, the pattern enables the queuing and scheduling of requests, providing control over the order of execution.
+Los comandos se pueden parametrizar con argumentos, lo que permite la personalización de acciones en tiempo de ejecución. Además, el patrón permite poner en cola y programar solicitudes, proporcionando control sobre el orden de ejecución.
 
-- **History and Logging**
+- **Historia y registro**
 
-It's possible to maintain a history of executed commands, which can be useful for auditing, logging, or tracking user actions.
+Es posible mantener un historial de comandos ejecutados, lo que puede resultar útil para auditar, registrar o rastrear las acciones del usuario.
 
 ### 2.3. Ejemplo
 
 ```javascript
-
-class Command {
-  constructor(receiver) {
-    this.receiver = receiver;
+class Comando {
+  constructor(receptor) {
+    this.receptor = receptor;
   }
 
-  execute() {
-    throw new Error('execute() method must be implemented');
-  }
-}
-
-class ConcreteCommand extends Command {
-  constructor(receiver, parameter) {
-    super(receiver);
-    this.parameter = parameter;
-  }
-
-  execute() {
-    this.receiver.action(this.parameter);
+  ejecutar() {
+    throw new Error('el método ejecutar() debe ser implementado');
   }
 }
 
-class Receiver {
-  action(parameter) {
-    console.log(`Receiver is performing action with parameter: ${parameter}`);
+class ConcretoComando extends Comando {
+  constructor(receptor, parametro) {
+    super(receptor);
+    this.parametro = parametro;
+  }
+
+  ejecutar() {
+    this.receptor.actuar(this.parametro);
   }
 }
 
-class Invoker {
+class Receptor {
+  actuar(parametro) {
+    console.log(`El receptor está realizando la acción con parámetro: ${parametro}`);
+  }
+}
+
+class Invocador {
   constructor() {
-    this.commands = [];
+    this.comandos = [];
   }
 
-  addCommand(command) {
-    this.commands.push(command);
+  agregarComando(comando) {
+    this.comandos.push(comando);
   }
 
-  executeCommands() {
-    this.commands.forEach(command => command.execute());
-    this.commands = []; // Clear the executed commands
+  ejecutarComandos() {
+    this.comandos.forEach(comando => comando.ejecutar());
+    this.comandos = []; // Borra los comandos ejecutados
   }
 }
 
 // Usage
-const receiver = new Receiver();
-const command1 = new ConcreteCommand(receiver, 'Command 1 parameter');
-const command2 = new ConcreteCommand(receiver, 'Command 2 parameter');
+const receptor = new Receptor();
+const comando1 = new ConcretoComando(receptor, 'parámetro del Comando 1');
+const comando2 = new ConcretoComando(receptor, 'parámetro del Comando 2');
 
-const invoker = new Invoker();
-invoker.addCommand(command1);
-invoker.addCommand(command2);
+const invocador = new Invocador();
+invocador.agregarComando(comando1);
+invocador.agregarComando(comando2);
 
-invoker.executeCommands();
+invocador.ejecutarComandos();
 ```
 
 ## 3. Intérprete
 
-The interperator design pattern is used to define a grammar for a language and provide an interpreter to interpret sentences in that language. It's typically use for creating language interpreters or parsers but you could also use them inside your application. Imagine you have a complex desktop application, you could design a basic scripting language which allows the end-user to manipulate your application through simple instructions.
+El patrón de diseño del intérprete se utiliza para definir una gramática para un idioma y proporcionar un intérprete para interpretar oraciones en ese idioma. Por lo general, se usa para crear intérpretes o analizadores de idiomas, pero también puede usarlos dentro de su aplicación. Imagine que tiene una aplicación de escritorio compleja, podría diseñar un lenguaje de programación básico que permita al usuario final manipular su aplicación mediante instrucciones sencillas.
 
 ### 3.1. Componentes del patrón Intérprete
 
-- *Context*
+- *Contexto*
 
-A global state or context that the Interpreter uses to interpret expressions. It often contains information that is relevant during the interpretation of expressions.
+Un estado o contexto global que el intérprete utiliza para interpretar expresiones. A menudo contiene información que es relevante durante la interpretación de expresiones.
 
-- *Abstract Expressions*
+- *Expresiones abstractas*
 
-Defines an interface for all types of expressions in the language's grammar. These expressions are typically represented as an abstract class or interface.
+Define una interfaz para todo tipo de expresiones en la gramática del idioma. Estas expresiones normalmente se representan como una clase o interfaz abstracta.
 
-- *Terminal Expressions*
+- *Expresiones terminales*
 
-Represents the terminal symbols in the grammar. These are the leaves of the expression tree. Terminal expression implement the interface defined by the abstract expression.
+Representa los símbolos terminales en la gramática. Estas son las hojas del árbol de expresión. La expresión terminal implementa la interfaz definida por la expresión abstracta.
 
-- *Non-terminal Expression*
+- *Expresión no terminal*
 
-Represents the non-terminal symbols in the grammar. Non-terminal expressions use terminal and/or other non-terminal expressions to define complex expressions by combining or composing them.
+Representa los símbolos no terminales en la gramática. Las expresiones no terminales utilizan expresiones terminales y/u otras expresiones no terminales para definir expresiones complejas combinándolas o componiéndolas.
 
-- *Expression Tree*
+- *Árbol de expresiones*
 
-Represents the hierarchical structure of the language's expressions. The expression tree is built by combining terminal and non-terminal expressions based on the rules of the language's grammar.
+Representa la estructura jerárquica de las expresiones del lenguaje. El árbol de expresiones se construye combinando expresiones terminales y no terminales basadas en las reglas gramaticales del idioma.
 
-- *Interpreter*
+- *Intérprete*
 
-Defines an interface or class that interprets the abstract syntax tree created by the expression tree. It typically includes an `interpret` method that takes a context and interprets the expression based on the given context.
+Define una interfaz o clase que interpreta el árbol de sintaxis abstracta creado por el árbol de expresión. Por lo general, incluye un método `interpretar` que toma un contexto e interpreta la expresión según el contexto dado.
 
-- *client*
+- *Cliente*
 
-Builds the abstract syntax tree using terminal and non-terminal expressions based on the language's grammar. The client then uses the interperter to interpret the expression.
+Construye el árbol de sintaxis abstracta (el árbol de expresiones) utilizando expresiones terminales y no terminales basadas en la gramática del idioma. Luego, el cliente utiliza el intérprete para interpretar la expresión.
 
 ### 3.2. Beneficios del patrón Intérprete
 
-- **Ease of Grammar Interpretation**
+- **Facilidad de interpretación de la gramática**
 
-The pattern simplifies the interpretation of complex grammatical rules by breaking them down into smaller, more manageable expressions. Each expression type handles its own interpretation, making the overall interpretation process easier to manage.
+El patrón simplifica la interpretación de reglas gramaticales complejas dividiéndolas en expresiones más pequeñas y manejables. Cada tipo de expresión maneja su propia interpretación, lo que hace que el proceso de interpretación general sea más fácil de gestionar.
 
-- **Better Error Handling**
+- **Mejor manejo de errores**
 
-Since each expression type handles its own interpretation, error handling can be tailored to specific expressions. This allows for more precise and meaningful error messages when parsing or interpreting the input.
+Dado que cada tipo de expresión maneja su propia interpretación, el manejo de errores se puede adaptar a expresiones específicas. Esto permite mensajes de error más precisos y significativos al analizar o interpretar la entrada.
 
-- **Flexibility and Extensibility**
+- **Flexibilidad y extensibilidad**
 
-The interpreter pattern provides a flexible way to define and extend grammatical rules and language expressions without modifying the core interpreter logic. You can easily add new expressions by creating new terminal and non-terminal expression classes.
+El patrón de intérprete proporciona una forma flexible de definir y ampliar reglas gramaticales y expresiones del lenguaje sin modificar la lógica central del intérprete. Puede agregar fácilmente nuevas expresiones creando nuevas clases de expresión terminales y no terminales.
 
-- **Integration with other Design Patterns**
+- **Integración con otros patrones de diseño**
 
-The Interpreter pattern can be combined with other design patterns, such as Composite, to build complex hierarchies of expressions. This allows for the creation of powerful and feature-rich interpreters.
+El patrón Interpreter se puede combinar con otros patrones de diseño, como el patrón de Composición, para crear jerarquías complejas de expresiones. Esto permite la creación de intérpretes potentes y ricos en funciones.
 
 ### 3.3. Ejemplo
 
 ```javascript
-// Abstract Expression
-class Expression {
-  interpret(context) {
-    // To be overridden by subclasses
+// Expresión abstracta
+class Expresion {
+  interpreta(contexto) {
+    // Para ser sobreescrito por sus subclases
   }
 }
 
-// Terminal Expression: NumberExpression
-class NumberExpression extends Expression {
-  constructor(number) {
+// Expresion terminal: NumeroExpresion
+class NumeroExpresion extends Expresion {
+  constructor(numero) {
     super();
-    this.number = number;
+    this.numero = numero;
   }
 
-  interpret(context) {
-    return this.number;
+  interpreta(contexto) {
+    return this.numero;
   }
 }
 
-// Terminal Expression: VariableExpression
-class VariableExpression extends Expression {
+// Expresion terminal: VariableExpresion
+class VariableExpresion extends Expresion {
   constructor(variable) {
     super();
     this.variable = variable;
   }
 
-  interpret(context) {
-    return context[this.variable] || 0;
+  interpreta(contexto) {
+    return contexto[this.variable] || 0;
   }
 }
 
-// Non-terminal Expression: AddExpression
-class AddExpression extends Expression {
-  constructor(expression1, expression2) {
+// Expresion no terminal: SumarExpresion
+class SumarExpresion extends Expresion {
+  constructor(expresion1, expresion2) {
     super();
-    this.expression1 = expression1;
-    this.expression2 = expression2;
+    this.expresion1 = expresion1;
+    this.expresion2 = expresion2;
   }
 
-  interpret(context) {
-    return this.expression1.interpret(context) + this.expression2.interpret(context);
+  interpreta(contexto) {
+    return this.expresion1.interpreta(contexto) + this.expresion2.interpreta(contexto);
   }
 }
 
-// Non-terminal Expression: SubtractExpression
-class SubtractExpression extends Expression {
-  constructor(expression1, expression2) {
+// Expresion no terminal: RestarExpresion
+class RestarExpresion extends Expresion {
+  constructor(expresion1, expresion2) {
     super();
-    this.expression1 = expression1;
-    this.expression2 = expression2;
+    this.expresion1 = expresion1;
+    this.expresion2 = expresion2;
   }
 
-  interpret(context) {
-    return this.expression1.interpret(context) - this.expression2.interpret(context);
+  interpreta(contexto) {
+    return this.expresion1.interpreta(contexto) - this.expresion2.interpreta(contexto);
   }
 }
 
-// Client code
-const context = { a: 10, b: 5, c: 2 };
+// Código del Cliente
+const contexto = { a: 10, b: 5, c: 2 };
 
-const expression = new SubtractExpression(
-  new AddExpression(
-    new VariableExpression('a'),
-    new VariableExpression('b')
+const expression = new RestarExpresion(
+  new SumarExpresion(
+    new VariableExpresion('a'),
+    new VariableExpresion('b')
   ),
-  new VariableExpression('c')
+  new VariableExpresion('c')
 );
 
-const result = expression.interpret(context);
-console.log('Result:', result); // Output: Result: 13
+const resultado = expression.interpreta(contexto);
+console.log('Resultado:', resultado); // Salida: Resultado: 13
 ```
 
 ## 4. Iterador
 
-The Iterator pattern allows clients to effectively loop over a collection of objects
+El patrón Iterador permite a los clientes recorrer de manera efectiva una colección de objetos.
 
 ### 4.1. Componentes del patrón Iterador
 
 - *Iterador*
 
-Implements Iterator interface or class with methods like `first()`,`next()`. The Iterator keeps track of the current position when traversing collections.
+Implementa la interfaz o clase Iterador con métodos como `first()`,`next()`. El iterador realiza un seguimiento de la posición actual al atravesar colecciones.
 
-- *Items*
+- *Elementos*
 
-These are the indiviual objects of the collection that the Iterator will traverse
+Estos son los objetos individuales de la colección que atravesará el iterador.
 
 ### 4.2. Beneficios del patrón Iterador
 
-- **Compatibility with Differnt Data Structures**
+- **Compatibilidad con diferentes estructuras de datos**
 
-The Iterator pattern allows the same iteration logic to be applied to different data structures.
+El patrón Iterador permite aplicar la misma lógica de iteración a diferentes estructuras de datos.
 
-- **Support for concurrent Iteration**
+- **Soporte para iteración concurrente**
 
-Iterators can support concurrent iteration over the same collection without interfering with each other, this enables the client to iterate over the collection in different ways simultaneously.
+Los iteradores pueden admitir iteraciones simultáneas sobre la misma colección sin interferir entre sí, lo que permite al cliente iterar sobre la colección de diferentes maneras simultáneamente.
 
-- **Lazy Loading**
+- **Carga diferida**
 
-Iterators can be designed to load elements on demand, which is beneficial for large collections where loading all elements at once might be impractical or resource-intensive. Elements can be fetched as needed, optimizing memory usage.
+Los iteradores se pueden diseñar para cargar elementos a pedido, lo cual es beneficioso para colecciones grandes donde cargar todos los elementos a la vez puede resultar poco práctico o consumir muchos recursos. Los elementos se pueden recuperar según sea necesario, optimizando el uso de la memoria.
 
-- **Simplified Interface**
+- **Interfaz simplificada**
 
-The Iterator pattern provides a clean and consistent interface for accessing elements in a collection without exposing the internal structure of the collection. This simplifies the usage and understanding of the collection.
+El patrón Iterador proporciona una interfaz limpia y consistente para acceder a elementos de una colección sin exponer la estructura interna de la colección. Esto simplifica el uso y la comprensión de la colección.
 
 ### 4.3. Ejemplo
 
 ```javascript
-// Car class representing a car
-class Car {
-  constructor(make, model) {
-    this.make = make;
-    this.model = model;
+// clase Coche que representa un coche
+class Coche {
+  constructor(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
   }
 
-  getInfo() {
-    return `${this.make} ${this.model}`;
-  }
-}
-
-// Iterator interface
-class Iterator {
-  constructor(collection) {
-    this.collection = collection;
-    this.index = 0;
-  }
-
-  next() {
-    return this.collection[this.index++];
-  }
-
-  hasNext() {
-    return this.index < this.collection.length;
+  obtenerInformacion() {
+    return `${this.marca} ${this.modelo}`;
   }
 }
 
-// Collection of cars
-class CarCollection {
+// interfaz Iterador
+class Iterador {
+  constructor(coleccion) {
+    this.coleccion = coleccion;
+    this.indice = 0;
+  }
+
+  siguiente() {
+    return this.coleccion[this.indice++];
+  }
+
+  tieneSiguiente() {
+    return this.indice < this.coleccion.length;
+  }
+}
+
+// Colección de coches
+class CochesColeccion {
   constructor() {
-    this.cars = [];
+    this.coches = [];
   }
 
-  addCar(car) {
-    this.cars.push(car);
+  agregaCoche(coche) {
+    this.coches.push(coche);
   }
 
-  createIterator() {
-    return new Iterator(this.cars);
+  creaIterador() {
+    return new Iterador(this.coches);
   }
 }
 
-// Usage
-const carCollection = new CarCollection();
-carCollection.addCar(new Car('Toyota', 'Corolla'));
-carCollection.addCar(new Car('Honda', 'Civic'));
-carCollection.addCar(new Car('Ford', 'Mustang'));
+// Uso
+const coleccionCoches = new CochesColeccion();
+coleccionCoches.agregaCoche(new Coche('Toyota', 'Corolla'));
+coleccionCoches.agregaCoche(new Coche('Honda', 'Civic'));
+coleccionCoches.agregaCoche(new Coche('Ford', 'Mustang'));
 
-const iterator = carCollection.createIterator();
+const iterador = coleccionCoches.creaIterador();
 
-while (iterator.hasNext()) {
-  const car = iterator.next();
-  console.log(car.getInfo());
+while (iterador.tieneSiguiente()) {
+  const coche = iterador.siguiente();
+  console.log(coche.obtenerInformacion());
 }
 ```
 
 ## 5. Mediador
 
-The Mediator pattern acts as a middle man between a group of objects by encapsulating how these objects interact. The mediator facilitates communication between different components of a system without them needing to directly reference each other.
+El patrón Mediador actúa como intermediario entre un grupo de objetos al encapsular cómo interactúan estos objetos. El mediador facilita la comunicación entre los diferentes componentes de un sistema sin necesidad de hacer referencia directa entre sí.
 
 ### 5.1. Componentes del patrón Mediador
 
 - *Mediador*
 
-The mediator manages central control over operations. It contains an interface for communicating with the Colleague objects and has a reference to each Colleague object.
+El mediador gestiona el control central de las operaciones. Contiene una interfaz para comunicarse con los objetos Participante y tiene una referencia a cada objeto Participante.
 
-- *Colleague*
+- *Participante*
 
-The colleages are the objects that are being mediated, each colleague has a reference to the mediator.
+Los participantes son los objetos que están siendo mediados, cada participante tiene una referencia al mediador.
 
 ### 5.2. Beneficios del patrón Mediador
 
-- **Centralized Control**
+- **Control centralizado**
 
-Centralizing communication within the Mediator allows for better control and coordination of interactions between components. The ,Mediator can manage message distribution, prioritize messages, and apply specific logic based on the system's requirements.
+Centralizar la comunicación dentro del Mediador permite un mejor control y coordinación de las interacciones entre los componentes. El Mediador puede gestionar la distribución de mensajes, priorizar mensajes y aplicar lógica específica según los requisitos del sistema.
 
-- **Simplified Communication**
+- **Comunicación simplificada**
 
-Mediators simplify communication logic, as components send messages to the Mediator instead of dealing with the complexity of direct communication. This simplifies the interaction between components and allows for easier maintenance and updates.
+Los mediadores simplifican la lógica de la comunicación, ya que los componentes envían mensajes al mediador en lugar de lidiar con la complejidad de la comunicación directa. Esto simplifica la interacción entre componentes y permite un mantenimiento y actualizaciones más fáciles.
 
-- **Reusability of Mediator**
+- **Reutilizabilidad del mediador**
 
-The Mediator can be reused across various components and scenarios, allowing for a single point of control for different parts of the application. This reusability promotes consistency and helps in managing the communication flow efficiently.
+El Mediador se puede reutilizar en varios componentes y escenarios, lo que permite un único punto de control para diferentes partes de la aplicación. Esta reutilización promueve la coherencia y ayuda a gestionar el flujo de comunicación de manera eficiente.
 
-- **Promotes Maintainability**
+- **Promueve la mantenibilidad**
 
-The Mediator pattern promotes maintainability by reducing the complexity of direct inter-component communication. As the system grows, changes and updates can be made within the Mediator without affecting the individual components, making maintenance easier and less error-prone.
+El patrón Mediador promueve la mantenibilidad al reducir la complejidad de la comunicación directa entre componentes. A medida que el sistema crece, se pueden realizar cambios y actualizaciones dentro del Mediador sin afectar los componentes individuales, lo que hace que el mantenimiento sea más fácil y menos propenso a errores.
 
 ### 5.3. Ejemplo
 
 ```javascript
-var Participant = function (name) {
-    this.name = name;
-    this.chatroom = null;
+var Participante = function (nombre) {
+    this.nombre = nombre;
+    this.salaDeChat = null;
 };
 
-Participant.prototype = {
-    send: function (message, to) {
-        this.chatroom.send(message, this, to);
+Participante.prototype = {
+    envia: function (mensaje, para) {
+        this.salaDeChat.envia(mensaje, this, para);
     },
-    receive: function (message, from) {
-        console.log(from.name + " to " + this.name + ": " + message);
+    recibe: function (mensaje, de) {
+        console.log(de.nombre + " para " + this.nombre + ": " + mensaje);
     }
 };
 
-var Chatroom = function () {
-    var participants = {};
+var SalaDeChat = function () {
+    var participantes = {};
 
     return {
 
-        register: function (participant) {
-            participants[participant.name] = participant;
-            participant.chatroom = this;
+        unirse: function (participante) {
+            participantes[participante.nombre] = participante;
+            participante.salaDeChat = this;
         },
 
-        send: function (message, from, to) {
-            if (to) {                      // single message
-                to.receive(message, from);
-            } else {                       // broadcast message
-                for (key in participants) {
-                    if (participants[key] !== from) {
-                        participants[key].receive(message, from);
+        envia: function (mensaje, de, para) {
+            if (para) {                      // mensaje único
+                para.recibe(mensaje, de);
+            } else {                       // mensaje de difusión
+                for (key in participantes) {
+                    if (participantes[key] !== de) {
+                        participantes[key].recibe(mensaje, de);
                     }
                 }
             }
@@ -490,604 +489,606 @@ var Chatroom = function () {
     };
 };
 
-function run() {
+function ejecuta() {
 
-    var yoko = new Participant("Yoko");
-    var john = new Participant("John");
-    var paul = new Participant("Paul");
-    var ringo = new Participant("Ringo");
+    var yoko = new Participante("Yoko");
+    var john = new Participante("John");
+    var paul = new Participante("Paul");
+    var ringo = new Participante("Ringo");
 
-    var chatroom = new Chatroom();
-    chatroom.register(yoko);
-    chatroom.register(john);
-    chatroom.register(paul);
-    chatroom.register(ringo);
+    var salaDeChat = new SalaDeChat();
+    salaDeChat.unirse(yoko);
+    salaDeChat.unirse(john);
+    salaDeChat.unirse(paul);
+    salaDeChat.unirse(ringo);
 
-    yoko.send("All you need is love.");
-    yoko.send("I love you John.");
-    john.send("Hey, no need to broadcast", yoko);
-    paul.send("Ha, I heard that!");
-    ringo.send("Paul, what do you think?", paul);
+    yoko.envia("Todo lo que necesitas es amor.");
+    yoko.envia("Te amo John.");
+    john.envia("Oye, no es necesario transmitir", yoko);
+    paul.envia("¡Ja, escuché eso!");
+    ringo.envia("Paul, ¿qué opinas?", paul);
 }
 ```
 
 ## 6. Recuerdo
 
-The Memento design pattern allows an objects state to be captured and restored at a later time without exposing its internal structure. The Memento is a seperate object that stores the state of the original object.
+El patrón de diseño Recuerdo permite capturar y restaurar el estado de un objeto en un momento posterior sin exponer su estructura interna. El Recuerdo es un objeto separado que almacena el estado del objeto original.
 
 ### 6.1. Componentes del patrón Recuerdo
 
-- *Originator*
+- *Creador*
 
-This is the object that gets saved. It creates a Memento object to store its internal state.
+Este es el objeto que se guarda. Crea un objeto Recuerdo para almacenar su estado interno.
 
 - *Recuerdo*
 
-The Memento is responsible for storing the state of the originator. It has methods to retrieve and set the state of the originator but does not expose the originator's internal structure.
+El Recuerdo es responsable de almacenar el estado del originador. Tiene métodos para recuperar y establecer el estado del originador pero no expone la estructura interna del originador.
 
-- *Caretaker*
+- *Vigilante*
 
-The caretaker is responsible for keeping track and managing the Mementos. It does not modify or inspect the contents of the Mementos
+El Vigilante es responsable de realizar un seguimiento y gestionar los Recuerdos. No modifica ni inspecciona el contenido de los Recuerdos.
 
 ### 6.2. Beneficios del patrón Recuerdo
 
-- **State Preservation and Restoration**
+- **Preservación y Restauración del Estado**
 
-Mementos allow an objects internal state to be captured and restored at a later time.
+Los recuerdos permiten capturar y restaurar el estado interno de un objeto en un momento posterior.
 
-- **Undo/Redo Operations**
+- **Operaciones de deshacer/rehacer**
 
-Memento facilitates implementing undo and redo functionality easily. Since Mementos store the objects state at various points in time, you can support undoing changes made to the object or redoing changes made to the object
+Recuerdo facilita la implementación de la funcionalidad de deshacer y rehacer fácilmente. Dado que el recuerdo almacena el estado del objeto en varios momentos en el tiempo, puede permitir deshacer los cambios realizados en el objeto o rehacer los cambios realizados en el objeto.
 
-- **Improved Performance**
+- **Desempeño mejorado**
 
-Storing the object's state in a Memento allows for more efficient storage and retrival operations compared to other approaches.
+Almacenar el estado del objeto en un Recuerdo permite operaciones de almacenamiento y recuperación más eficientes en comparación con otros enfoques.
 
-- **Flexible Design**
+- **Diseño flexible**
 
-It provides a flexible way to manage the history of an object's state. The caretaker can decide which states to keep and when to restore them, allowing for a customizable approach based on the application's requirements.
+Proporciona una forma flexible de gestionar el historial del estado de un objeto. El vigilante puede decidir qué estados conservar y cuándo restaurarlos, lo que permite un enfoque personalizable según los requisitos de la aplicación.
 
 ### 6.3. Ejemplo
 
 ```javascript
-// Computer class (originator)
-class Computer {
-  constructor() {
-    this.os = '';
-    this.version = '';
+// Clase Computadora  (Creador)
+class Computador {
+    constructor() {
+      this.so = '';
+      this.version = '';
+    }
+  
+    estableceSO(so, version) {
+      this.so = so;
+      this.version = version;
+    }
+  
+    obtenEstado() {
+      return {
+        so: this.so,
+        version: this.version
+      };
+    }
+  
+    restauraEstado(estado) {
+      this.so = estado.so;
+      this.version = estado.version;
+    }
   }
-
-  setOS(os, version) {
-    this.os = os;
-    this.version = version;
+  
+  // Vigilante
+  class Vigilante {
+    constructor() {
+      this.recuerdos = {};
+      this.siguienteClave = 1;
+    }
+  
+    agregar(recuerdo) {
+      const clave = this.siguienteClave++;
+      this.recuerdos[clave] = recuerdo;
+      return clave;
+    }
+  
+    obtener(clave) {
+      return this.recuerdos[clave];
+    }
   }
-
-  getState() {
-    return {
-      os: this.os,
-      version: this.version
-    };
+  
+  function ejecuta() {
+    const computadora = new Computador();
+    const vigilante = new Vigilante();
+  
+    // Salvamos el estado
+    const estadoOriginal = computadora.obtenEstado();
+    const clave = vigilante.agregar(estadoOriginal);
+  
+    // Arruinamos el estado
+    computadora.estableceSO('Windows', '11');
+  
+    // Recuperamos el estado original
+    const estadoRestaurado = vigilante.obtener(clave);
+    computadora.restauraEstado(estadoRestaurado);
+  
+    console.log(computadora.obtenEstado()); // Salida: { so: '', version: '' }
   }
-
-  restoreState(state) {
-    this.os = state.os;
-    this.version = state.version;
-  }
-}
-
-// Caretaker
-class Caretaker {
-  constructor() {
-    this.mementos = {};
-    this.nextKey = 1;
-  }
-
-  add(memento) {
-    const key = this.nextKey++;
-    this.mementos[key] = memento;
-    return key;
-  }
-
-  get(key) {
-    return this.mementos[key];
-  }
-}
-
-function run() {
-  const computer = new Computer();
-  const caretaker = new Caretaker();
-
-  // Save state
-  const originalState = computer.getState();
-  const key = caretaker.add(originalState);
-
-  // Mess up the state
-  computer.setOS('Windows', '11');
-
-  // Restore original state
-  const restoredState = caretaker.get(key);
-  computer.restoreState(restoredState);
-
-  console.log(computer.getState()); // Output: { os: '', version: '' }
-}
-
-run();
+  
+  ejecuta();
 ```
 
 ## 7. Observador
 
-The observer pattern allows many objects to subscribe to events that are broadcast by another object.
+El patrón de observador permite que muchos objetos se suscriban a eventos transmitidos por otro objeto.
 
 ### 7.1. Componentes del patrón Observador
 
-- *Subject*
+- *Sujeto*
 
-The subject is an object that implements an interface that lets observer objects subscribe to it and send notifications to observers when its state changes.
+El sujeto es un objeto que implementa una interfaz que permite a los objetos observadores suscribirse a él y enviar notificaciones a los observadores cuando cambia su estado.
 
 - *Observadores*
 
-The Observer subscribes to the subject and and typically has a function that get invoked when notified by the Subject
+El observador se suscribe al sujeto y normalmente tiene una función que se invoca cuando el sujeto lo notifica.
 
 ### 7.2. Beneficios del patrón Observador
 
-- **Simplified Event Handling**
+- **Manejo de eventos simplificado**
 
-The Observer pattern can simplify event handling mechanisms, as events can be treated as notifications to observers about a state change.
+El patrón Observador puede simplificar los mecanismos de manejo de eventos, ya que los eventos pueden tratarse como notificaciones a los observadores sobre un cambio de estado.
 
-- **Reduces Duplicate code**
+- **Reduce el código duplicado**
 
-Instead of duplicating the same code to respond to state changes in multiple places, the Observer pattern allows for a centralized place to manage these responses, promoting cleaner and more maintainable code.
+En lugar de duplicar el mismo código para responder a cambios de estado en varios lugares, el patrón Observador permite un lugar centralizado para gestionar estas respuestas, promoviendo un código más limpio y fácil de mantener.
 
-- **Support for Broadcast Communication**
+- **Soporte para comunicación por radiodifusión**
 
-The Observer pattern facilitates a "one-to-many" communication model, where a single event triggers actions in multiple observers. This is useful in scenarios where multiple components need to react to a change in state.
+El patrón Observador facilita un modelo de comunicación "uno a muchos", donde un único evento desencadena acciones en múltiples observadores. Esto es útil en escenarios donde varios componentes necesitan reaccionar ante un cambio de estado.
 
-- **Modularity and Resuability**
+- **Modularidad y reutilización**
 
-Observers can be reused across different subjects, promoting modularity and code reusability. This allows for more flexible and maintainable code.
+Los observadores se pueden reutilizar en diferentes temas, promoviendo la modularidad y la reutilización del código. Esto permite un código más flexible y mantenible.
 
 ### 7.3. Ejemplo
 
 ```javascript
-function Click() {
-    this.handlers = [];  // observers
+function HacerClic() {
+    this.manejadores = [];  // observadores
 }
 
-Click.prototype = {
+HacerClic.prototype = {
 
-    subscribe: function (fn) {
-        this.handlers.push(fn);
+    subscribir: function (fn) {
+        this.manejadores.push(fn);
     },
 
-    unsubscribe: function (fn) {
-        this.handlers = this.handlers.filter(
-            function (item) {
-                if (item !== fn) {
-                    return item;
+    abandonar: function (fn) {
+        this.manejadores = this.manejadores.filter(
+            function (elemento) {
+                if (elemento !== fn) {
+                    return elemento;
                 }
             }
         );
     },
 
-    fire: function (o, thisObj) {
-        var scope = thisObj || window;
-        this.handlers.forEach(function (item) {
-            item.call(scope, o);
+    disparar: function (o, esteObj) {
+        var alcance = esteObj || window;
+        this.manejadores.forEach(function (elemento) {
+            elemento.call(alcance, o);
         });
     }
 }
 
-function run() {
+function ejecutar() {
 
-    var clickHandler = function (item) {
-        console.log("fired: " + item);
+    var hacerClicManejador = function (elemento) {
+        console.log("disparado: " + elemento);
     };
 
-    var click = new Click();
+    var hacerClic = new HacerClic();
 
-    click.subscribe(clickHandler);
-    click.fire('event #1');
-    click.unsubscribe(clickHandler);
-    click.fire('event #2');
-    click.subscribe(clickHandler);
-    click.fire('event #3');
+    hacerClic.subscribir(hacerClicManejador);
+    hacerClic.disparar('evento #1');
+    hacerClic.abandonar(hacerClicManejador);
+    hacerClic.disparar('evento #2');
+    hacerClic.subscribir(hacerClicManejador);
+    hacerClic.disparar('evento #3');
 }
+
+ejecutar();
 ```
 
 ## 8. Estado
 
-The State pattern is a behavioral design pattern that allows you to have a base object and provide it with additional functionality based on its state. This pattern is particularly useful when an object needs to change its behavior based on its internal state.
+El patrón Estado es un patrón de diseño de comportamiento que le permite tener un objeto base y proporcionarle funcionalidad adicional según su estado. Este patrón es particularmente útil cuando un objeto necesita cambiar su comportamiento en función de su estado interno.
 
 ### 8.1. Componentes del patrón Estado
 
 - *Estado*
 
-This is the object that encapsulates the State values and the associated behavior of the State.
+Este es el objeto que encapsula los valores del Estado y el comportamiento asociado del Estado.
 
-- *Context*
+- *Contexto*
 
-This is the object that maintains a reference to a State object that defines the current State. It also includes an interface that allows other State objects to change its current State to a differnt State.
+Este es el objeto que mantiene una referencia a un objeto Estado que define el Estado actual. También incluye una interfaz que permite que otros objetos de estado cambien su estado actual a un estado diferente.
 
 ### 8.2. Beneficios del patrón Estado
 
-- **Modular and Organized Code**
+- **Código modular y organizado**
 
-Each State is encapuslated within its own class, making the code modular and easy to manage.
+Cada Estado está encapsulado dentro de su propia clase, lo que hace que el código sea modular y fácil de administrar.
 
-- **No Need for Switch Statements**
+- **No hay necesidad de declaraciones switch**
 
-Switch statements can also be used to change the behavior of an object but the problem with this method is that switch statements can become very lengthy as your project scales. The State pattern fixes this issue.
+Las declaraciones switch también se pueden usar para cambiar el comportamiento de un objeto, pero el problema con este método es que las declaraciones switch pueden volverse muy largas a medida que su proyecto escala. El patrón Estado soluciona este problema.
 
-- **Promotes Reusability**
+- **Promueve la reutilización**
 
-States can be reused across different contexts, this reduces code duplication.
+Los estados se pueden reutilizar en diferentes contextos, lo que reduce la duplicación de código.
 
-- **Simplifies Testing**
+- **Simplifica las pruebas**
 
-Testing individual state classes in isolation is easier and more effective than testing a monolithic object with complex conditional logic.
+Probar clases de estados individuales de forma aislada es más fácil y eficaz que probar un objeto monolítico con lógica condicional compleja.
 
 ### 8.3. Ejemplo
 
 ```javascript
-class Car {
-  constructor() {
-    this.state = new ParkState();
+class Coche {
+    constructor() {
+      this.estado = new AparcadoEstado();
+    }
+  
+    establecerEstado(estado) {
+      this.estado = estado;
+      console.log(`Estado cambiado a : ${estado.constructor.name}`);
+    }
+  
+    aparcar() {
+      this.estado.aparcar(this);
+    }
+  
+    conducir() {
+      this.estado.conducir(this);
+    }
+  
+    darMarchaAtras() {
+      this.estado.darMarchaAtras(this);
+    }
   }
-
-  setState(state) {
-    this.state = state;
-    console.log(`Changed state to: ${state.constructor.name}`);
+  
+  class AparcadoEstado {
+    aparcar(coche) {
+      console.log("El coche ya está en el estacionamiento");
+    }
+  
+    conducir(coche) {
+      console.log("Cambiando a conducir");
+      coche.establecerEstado(new ConduciendoEstado());
+    }
+  
+    darMarchaAtras(coche) {
+      console.log("Cambiando a dar marcha atras");
+      coche.establecerEstado(new DandoMarchaAtrasEstado());
+    }
   }
-
-  park() {
-    this.state.park(this);
+  
+  class ConduciendoEstado {
+    aparcar(coche) {
+      console.log("Cambiando a estacionamiento");
+      coche.establecerEstado(new AparcadoEstado());
+    }
+  
+    conducir(coche) {
+      console.log("El coche ya está conduciéndose");
+    }
+  
+    darMarchaAtras(coche) {
+      console.log("Cambiando a dar marcha atras");
+      coche.establecerEstado(new DandoMarchaAtrasEstado());
+    }
   }
-
-  drive() {
-    this.state.drive(this);
+  
+  class DandoMarchaAtrasEstado {
+    aparcar(coche) {
+      console.log("Cambiando a estacionamiento");
+      coche.establecerEstado(new AparcadoEstado());
+    }
+  
+    conducir(coche) {
+      console.log("Cambiando a conducir");
+      coche.establecerEstado(new ConduciendoEstado());
+    }
+  
+    darMarchaAtras(coche) {
+      console.log("El coche ya está dando marcha atras");
+    }
   }
-
-  reverse() {
-    this.state.reverse(this);
-  }
-}
-
-class ParkState {
-  park(car) {
-    console.log("Car is already in Park");
-  }
-
-  drive(car) {
-    console.log("Shifting to Drive");
-    car.setState(new DriveState());
-  }
-
-  reverse(car) {
-    console.log("Shifting to Reverse");
-    car.setState(new ReverseState());
-  }
-}
-
-class DriveState {
-  park(car) {
-    console.log("Shifting to Park");
-    car.setState(new ParkState());
-  }
-
-  drive(car) {
-    console.log("Car is already in Drive");
-  }
-
-  reverse(car) {
-    console.log("Shifting to Reverse");
-    car.setState(new ReverseState());
-  }
-}
-
-class ReverseState {
-  park(car) {
-    console.log("Shifting to Park");
-    car.setState(new ParkState());
-  }
-
-  drive(car) {
-    console.log("Shifting to Drive");
-    car.setState(new DriveState());
-  }
-
-  reverse(car) {
-    console.log("Car is already in Reverse");
-  }
-}
-
-// Ejemplo usage
-const car = new Car();
-
-car.drive();
-car.reverse();
-car.drive();
-car.park();
-car.drive();  // Trying to drive while parked
+  
+  // Ejemplo de uso
+  const coche = new Coche();
+  
+  coche.conducir();
+  coche.darMarchaAtras();
+  coche.conducir();
+  coche.aparcar();
+  coche.conducir();  // Intentando conducir estando estacionado
 ```
 
 ## 9. Estrategia
 
-The Strategy pattern is essentially a design pattern that allows you to have a group of algorithms (strategies) that are interchangeable.
+El patrón Estrategia es esencialmente un patrón de diseño que le permite tener un grupo de algoritmos (estrategias) que son intercambiables.
 
 ### 9.1. Components del patrón Estrategia
 
 - *Estrategia*
 
-This is an algorithm that implements the Strategy interface.
+Este es un algoritmo que implementa la interfaz Estrategia.
 
-- *Context*
+- *Contexto*
 
-This is the object that maintains a reference to the current strategy. It defines an interface that allows the client to change the current Strategy to a different Strategy or retrieve calculations from the current Strategy refrenced.
+Este es el objeto que mantiene una referencia a la estrategia actual. Define una interfaz que permite al cliente cambiar la estrategia actual a una estrategia diferente o recuperar cálculos de la estrategia actual referenciada.
 
 ### 9.2. Beneficios del patrón Estrategia
 
-- **Dynamically Swappable Algorithms**
+- **Algoritmos dinámicamente intercambiables**
 
-Strategies can be swapped at runtime, allowing for dynamic selection of algorithms based on different conditions or requirements. This is particularly useful when the appropriate algorithm may vary based on user input, configuration settings, or other factors.
+Las estrategias se pueden intercambiar en tiempo de ejecución, lo que permite la selección dinámica de algoritmos en función de diferentes condiciones o requisitos. Esto es particularmente útil cuando el algoritmo apropiado puede variar según la entrada del usuario, los ajustes de configuración u otros factores.
 
-- **Flexibility and Maintainability**
+- **Flexibilidad y mantenibilidad**
 
-Strategies can be changed or extended without modifying the context using them. This makes the system more flexible and easier to maintain since changes in one strategy do not affect others.
+Las estrategias se pueden cambiar o ampliar sin modificar el contexto en el que se utilizan. Esto hace que el sistema sea más flexible y más fácil de mantener, ya que los cambios en una estrategia no afectan a las demás.
 
-- **Simplifies Testing**
+- **Simplifica las pruebas**
 
-Testing strategies in isolation is easier since each strategy is a separate class. This allows for targeted testing and ensures that changes to one strategy don't inadvertently affect others.
+Probar estrategias de forma aislada es más fácil ya que cada estrategia es una clase separada. Esto permite realizar pruebas específicas y garantiza que los cambios en una estrategia no afecten inadvertidamente a otras.
 
-- **Reusability**
+- **Reutilizabilidad**
 
-Strategies can be reused in multiple contexts or applications, promoting code reuse and minimizing redundancy.
+Las estrategias se pueden reutilizar en múltiples contextos o aplicaciones, promoviendo la reutilización del código y minimizando la redundancia.
 
 ### 9.3. Ejemplo
 
 ```javascript
-class RegularCustomerStrategy {
-  calculatePrice(bookPrice) {
-    // Regular customers get a fixed discount of 10%
-    return bookPrice * 0.9;
+class ClienteNormalEstrategia {
+  calculaPrecio(precioLibro) {
+    // Los clientes normales obtienen un descuento fijo del 10%
+    return precioLibro * 0.9;
   }
 }
 
-class VIPCustomerStrategy {
-  calculatePrice(bookPrice) {
-    // VIP customers get a fixed discount of 20%
-    return bookPrice * 0.8;
+class ClienteImportanteEstrategia {
+  calculaPrecio(precioLibro) {
+    // Los clientes importantes obtienen un descuento fijo del 20%
+    return precioLibro * 0.8;
   }
 }
 
-class BookStore {
-  constructor(pricingStrategy) {
-    this.pricingStrategy = pricingStrategy;
+class Libreria {
+  constructor(preciosEstrategia) {
+    this.preciosEstrategia = preciosEstrategia;
   }
 
-  setPricingStrategy(pricingStrategy) {
-    this.pricingStrategy = pricingStrategy;
+  estableceEstrategiaDePrecios(preciosEstrategia) {
+    this.preciosEstrategia = preciosEstrategia;
   }
 
-  calculatePrice(bookPrice) {
-    return this.pricingStrategy.calculatePrice(bookPrice);
+  calculaPrecio(precioLibro) {
+    return this.preciosEstrategia.calculaPrecio(precioLibro);
   }
 }
 
-// Usage
-const regularCustomerStrategy = new RegularCustomerStrategy();
-const vipCustomerStrategy = new VIPCustomerStrategy();
+// Uso
+const clienteNormalEstrategia = new ClienteNormalEstrategia();
+const clienteImportanteEstrategia = new ClienteImportanteEstrategia();
 
-const bookstore = new BookStore(regularCustomerStrategy);
+const libreria = new Libreria(clienteNormalEstrategia);
 
-console.log('Regular customer price:', bookstore.calculatePrice(50)); // Outputs: 45 (10% discount)
-bookstore.setPricingStrategy(vipCustomerStrategy);
-console.log('VIP customer price:', bookstore.calculatePrice(50)); // Outputs: 40 (20% discount)
+console.log('Precio para el cliente normal:', libreria.calculaPrecio(50)); // Salida: 45 (10% de descuento)
+libreria.estableceEstrategiaDePrecios(clienteImportanteEstrategia);
+console.log('Precio para el cliente importante:', libreria.calculaPrecio(50)); // Salida: 40 (20% de descuento)
 ```
 
 ## 10. Método Plantilla
 
-The Template Method is a behavioral design pattern that defines the program skeleton of an algorithm in a method but lets subclasses override specific steps of the algorithm without changing its sturcture.
+El método de plantilla es un patrón de diseño de comportamiento que define el esqueleto del programa de un algoritmo en un método, pero permite que las subclases anulen pasos específicos del algoritmo sin cambiar su estructura.
 
 ### 10.1. Componentes del patrón Método Plantilla
 
-- *Abstract Class*
+- *Clase abstracta*
 
-The abstract class is the template for the algorithm. It defines an interface for the client to invoke its method. It also contains all the functions that can be overriden by subclasses.
+La clase abstracta es la plantilla del algoritmo. Define una interfaz para que el cliente invoque su método. También contiene todas las funciones que las subclases pueden sobreescribir.
 
-- *Concrete Class*
+- *Clase concreta*
 
-Implements the steps as defined in the Abstract Class and can make changes to the steps.
+Implementa los pasos definidos en la clase abstracta y puede realizar cambios en los pasos.
 
 ### 10.2. Beneficios del patrón Método Plantilla
 
-- **Code Reusability**
+- **Reutilización del código**
 
-The pattern promotes code reusability by defining the algorithm's skeleton in a base class. Subclasses can reuse this structure and only need to provide implementations for specific steps.
+El patrón promueve la reutilización del código al definir el esqueleto del algoritmo en una clase base. Las subclases pueden reutilizar esta estructura y solo necesitan proporcionar implementaciones para pasos específicos.
 
-- **Easy Maintenance**
+- **Facil mantenimiento**
 
-Making changes to the algorithm is simplified because modifications only need to be made in one place—the template method in the abstract class—rather than in multiple subclasses. This reduces the chances of errors and makes maintenance more straightforward.
+Realizar cambios en el algoritmo se simplifica porque las modificaciones solo deben realizarse en un lugar (el método de plantilla en la clase abstracta) en lugar de en varias subclases. Esto reduce las posibilidades de errores y hace que el mantenimiento sea más sencillo.
 
-- **Extension and Variation**
+- **Extensión y variación**
 
-The pattern allows for easy extension and variation of the algorithm. Subclasses can override certain steps to provide custom implementations, effectively extending or modifying the behavior of the algorithm without altering its core structure.
+El patrón permite una fácil extensión y variación del algoritmo. Las subclases pueden anular ciertos pasos para proporcionar implementaciones personalizadas, extendiendo o modificando efectivamente el comportamiento del algoritmo sin alterar su estructura central.
 
-- **Control Flow**
+- **Flujo de control**
 
-The template method defines the control flow of the algorithm, making it easier to manage and understand the sequence of operations in the algorithm.
+El método de plantilla define el flujo de control del algoritmo, lo que facilita la gestión y comprensión de la secuencia de operaciones del algoritmo.
 
 ### 10.3. Ejemplo
 
 ```javascript
-class Camera {
-  // Template method defining the common steps for capturing a photo
-  capturePhoto() {
-    this.turnOn();
-    this.initialize();
-    this.setExposure();
-    this.capture();
-    this.turnOff();
+cclass Camara {
+  // Método de plantilla que define los pasos comunes para capturar una fotografía.
+  capturaFoto() {
+    this.enciende();
+    this.inicializa();
+    this.fijaExposicion();
+    this.captura();
+    this.apaga();
   }
 
-  // Common steps for turning on the camera
-  turnOn() {
-    console.log('Turning on the camera');
+  // Pasos comunes para encender una camara
+  enciende() {
+    console.log('Encendiendo la cámara');
   }
 
-  // Abstract method for initializing the camera (to be overridden by subclasses)
-  initialize() {
-    throw new Error('Abstract method: initialize() must be implemented by subclasses');
+  // Método abstracto para inicializar la cámara (para ser sobreescrito por subclases)
+  inicializa() {
+    throw new Error('Método abstracto: inicializa() debe ser implementado por las subclases');
   }
 
-  // Abstract method for setting exposure (to be overridden by subclasses)
-  setExposure() {
-    throw new Error('Abstract method: setExposure() must be implemented by subclasses');
+  // Método abstracto para configurar la exposición (para ser anulado por subclases)
+  fijaExposicion() {
+    throw new Error('Método abstracto: fijaExposicion() debe ser implementado por las subclases');
   }
 
-  // Common steps for capturing a photo
-  capture() {
-    console.log('Capturing a photo');
+  // Pasos comunes para capturar una foto
+  captura() {
+    console.log('Capturando una foto');
   }
 
-  // Common steps for turning off the camera
-  turnOff() {
-    console.log('Turning off the camera');
-  }
-}
-
-class DSLRCamera extends Camera {
-  initialize() {
-    console.log('Initializing DSLR camera');
-  }
-
-  setExposure() {
-    console.log('Setting exposure for DSLR camera');
+  // Pasos comunes para apagar la cámara
+  apaga() {
+    console.log('Apagando la cámara');
   }
 }
 
-class MirrorlessCamera extends Camera {
-  initialize() {
-    console.log('Initializing mirrorless camera');
+class CamaraReflexDigitalObjetivoUnico extends Camara {
+  inicializa() {
+    console.log('Inicializando la cámara Réflex Digital de Objetivo Único');
   }
 
-  setExposure() {
-    console.log('Setting exposure for mirrorless camera');
+  fijaExposicion() {
+    console.log('Fijando la exposición de la cámara Réflex Digital de Objetivo Único');
   }
 }
 
-// Usage
-const dslrCamera = new DSLRCamera();
-console.log('Capturing photo with DSLR camera:');
-dslrCamera.capturePhoto();
+class CamaraSinEspejo extends Camara {
+  inicializa() {
+    console.log('Inicializando la cámara Sin Espejo');
+  }
+
+  fijaExposicion() {
+    console.log('Fijando la exposición de la cámara Sin Espejo');
+  }
+}
+
+// Uso
+const camaraReflexDigitalObjetivoUnico = new CamaraReflexDigitalObjetivoUnico();
+console.log('Capturando foto con la cámara Réflex Digital de Objetivo Único:');
+camaraReflexDigitalObjetivoUnico.capturaFoto();
 console.log('');
 
-const mirrorlessCamera = new MirrorlessCamera();
-console.log('Capturing photo with mirrorless camera:');
-mirrorlessCamera.capturePhoto();
+const camaraSinEspejo = new CamaraSinEspejo();
+console.log('Capturando foto con la cámara Sin Espejo:');
+camaraSinEspejo.capturaFoto();
 ```
 
 ## 11. Visitante
 
-The visitor design pattern is a behavioral design pattern that allows you to seperate algorithms or operations from the object on which they operate.
+El patrón de diseño de visitante es un patrón de diseño de comportamiento que le permite separar algoritmos u operaciones del objeto sobre el que operan.
 
 ### 11.1 Componentes del patrón Visitante
 
-- *ObjectStructure*
+- *ObjetoEstructura*
 
-Maintains a collection of Elements which can be iterated over.
+Mantiene una colección de elementos sobre los que se puede iterar.
 
-- *Elements*
+- *Elementos*
 
-The element contains an accept method that accepts the visitor objects.
+El elemento contiene un método de aceptación que acepta los objetos del visitante.
 
 - *Visitante*
 
-Implements a visit method where the argument of the method is the element being visited. This is how changes to the element get made.
+Implementa un método de visita donde el argumento del método es el elemento que se visita. Así es como se realizan los cambios en el elemento.
 
 ### 11.2. Beneficios del patrón Visitante
 
-- **Open/Closed Principle**
+- **Principio abierto/cerrado**
 
-The pattern aligns with the Open/Closed Principle, which states that software entities (classes, modules, functions) should be open for extension but closed for modification. You can introduce new operations (new visitors) without modifying the existing object structure or elements.
+El patrón se alinea con el Principio Abierto/Cerrado, que establece que las entidades de software (clases, módulos, funciones) deben estar abiertas a la extensión pero cerradas a la modificación. Puede introducir nuevas operaciones (nuevos visitantes) sin modificar la estructura o los elementos del objeto existente.
 
-- **Extensibility**
+- **Extensibilidad**
 
-You can introduce new behaviors or operations by adding new visitor implementations without modifying the existing elements or the object structure. This makes the system more extensible, allowing for new features or behaviors to be added easily.
+Puede introducir nuevos comportamientos u operaciones agregando nuevas implementaciones de visitantes sin modificar los elementos existentes o la estructura del objeto. Esto hace que el sistema sea más extensible, lo que permite agregar fácilmente nuevas funciones o comportamientos.
 
-- **Centralized Behavior**
+- **Comportamiento centralizado**
 
-The Visitor pattern centralizes behavior-related code within the visitor classes. Each visitor encapsulates a specific behavior, which can be reused across different elements, promoting code reuse and modularity.
+El patrón Visitante centraliza el código relacionado con el comportamiento dentro de las clases de visitante. Cada visitante encapsula un comportamiento específico, que puede reutilizarse en diferentes elementos, promoviendo la reutilización y la modularidad del código.
 
-- **Consistency in Operations**
+- **Consistencia en las operaciones**
 
-With the Visitor pattern, you can ensure that a specific operation (visitor method) is applied consistently across various elements, as each element's accept method calls the appropriate visitor method for that element type.
+Con el patrón Visitante, puede asegurarse de que una operación específica (método de visitante) se aplique de manera consistente en varios elementos, ya que el método de aceptación de cada elemento llama al método de visitante apropiado para ese tipo de elemento.
 
 ### 11.3 Ejemplo
 
 ```javascript
-class GymMember {
-    constructor(name, subscriptionType, fitnessScore) {
-        this.name = name;
-        this.subscriptionType = subscriptionType;
-        this.fitnessScore = fitnessScore;
+class GimnasioMiembro {
+    constructor(nombre, tipoSubscripcion, puntuacionFitness) {
+        this.nombre = nombre;
+        this.tipoSubscripcion = tipoSubscripcion;
+        this.puntuacionFitness = puntuacionFitness;
     }
 
-    accept(visitor) {
-        visitor.visit(this);
+    aceptar(visitante) {
+        visitante.visit(this);
     }
 
-    getName() {
-        return this.name;
+    obtenNombre() {
+        return this.nombre;
     }
 
-    getSubscriptionType() {
-        return this.subscriptionType;
+    obtenTipoSubscripcion() {
+        return this.tipoSubscripcion;
     }
 
-    getFitnessScore() {
-        return this.fitnessScore;
+    obtenPuntuacionFitness() {
+        return this.puntuacionFitness;
     }
 
-    setFitnessScore(score) {
-        this.fitnessScore = score;
-    }
-}
-
-class FitnessEvaluation {
-    visit(member) {
-        member.setFitnessScore(member.getFitnessScore() + 10);
+    establecePuntuacionFitness(puntuacion) {
+        this.puntuacionFitness = puntuacion;
     }
 }
 
-class MembershipDiscount {
-    visit(member) {
-        if (member.getSubscriptionType() === 'Premium') {
-            console.log(`${member.getName()}: Fitness score - ${member.getFitnessScore()}, Membership type - ${member.getSubscriptionType()}, Eligible for a 10% discount!`);
+class EvaluacionFitness {
+    visit(miembro) {
+        miembro.establecePuntuacionFitness(miembro.obtenPuntuacionFitness() + 10);
+    }
+}
+
+class DescuentoMembresia {
+    visit(miembro) {
+        if (miembro.obtenTipoSubscripcion() === 'Premium') {
+            console.log(`${miembro.obtenNombre()}: Puntuación Fitness  - ${miembro.obtenPuntuacionFitness()}, Tipo membresía - ${miembro.obtenTipoSubscripcion()}, ¡Elegible para un 10% de descuento!`);
         } else {
-            console.log(`${member.getName()}: Fitness score - ${member.getFitnessScore()}, Membership type - ${member.getSubscriptionType()}, Not eligible for a discount.`);
+            console.log(`${miembro.obtenNombre()}: Puntuación Fitness - ${miembro.obtenPuntuacionFitness()}, Tipo membresía - ${miembro.obtenTipoSubscripcion()}, No elegible para un descuento.`);
         }
     }
 }
 
-function run() {
-    const gymMembers = [
-        new GymMember("Alice", "Basic", 80),
-        new GymMember("Bob", "Premium", 90),
-        new GymMember("Eve", "Basic", 85)
+function ejecuta() {
+    const miembrosGimnasio = [
+        new GimnasioMiembro("Alice", "Basic", 80),
+        new GimnasioMiembro("Bob", "Premium", 90),
+        new GimnasioMiembro("Eve", "Basic", 85)
     ];
 
-    const fitnessEvaluation = new FitnessEvaluation();
-    const membershipDiscount = new MembershipDiscount();
+    const evaluacionFitness = new EvaluacionFitness();
+    const descuentoMembresia = new DescuentoMembresia();
 
-    for (let i = 0; i < gymMembers.length; i++) {
-        const member = gymMembers[i];
+    for (let i = 0; i < miembrosGimnasio.length; i++) {
+        const miembro = miembrosGimnasio[i];
 
-        member.accept(fitnessEvaluation);
-        member.accept(membershipDiscount);
+        miembro.aceptar(evaluacionFitness);
+        miembro.aceptar(descuentoMembresia);
     }
 }
 
-run();
+ejecuta();
 ```
 
 ---
