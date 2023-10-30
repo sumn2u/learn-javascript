@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 51
+pageNumber: 65
 description: While loops repetitively execute a block of code as long as a specified condition is true.
 ---
 # While

@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 50
+pageNumber: 62
 description: A for loop is a powerful control structure used to execute a block of code multiple times, either for a specific number of iterations or over a defined range. It is highly versatile and commonly used for iterating through arrays, strings, and other iterable objects
 ---
 

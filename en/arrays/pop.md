@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 42 
+pageNumber: 52 
 description: The pop methods remove the last element of an array and returns the result. This method changes the array length.
 ---
 # Pop

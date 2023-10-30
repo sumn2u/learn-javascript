@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 85
+pageNumber: 103
 description: History object manages the browser's history stack. As we navigate to pages new entries get pushed into the stack.
 ---
 

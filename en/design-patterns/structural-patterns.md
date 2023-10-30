@@ -2,6 +2,8 @@
 layout: editorial
 title: Structural Design Patterns in Javascript
 description: Focus on how classes and objects are composed to form larger structures
+chapter: 23
+pageNumber: 200
 ---
 
 # Structural Design Patterns 
