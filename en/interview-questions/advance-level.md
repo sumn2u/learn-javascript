@@ -189,6 +189,212 @@ JavaScript modules, along with the ES6 import/export syntax, are crucial for mod
 **Answer:**
 Template literals in ES6 enhance string manipulation by allowing developers to create strings with embedded expressions and multiline content in a more readable and flexible way. They support variable interpolation, multiline strings, expression evaluation, function calls, and even advanced use cases like tagged templates. This feature improves code readability and maintainability when working with complex strings that involve dynamic content or expressions.
 
+### 7.4. Can I redeclare let and const variables ?
+
+**Answer:**
+
+No, you cannot redeclare let and const variables. If you do, it throws below error.
+
+```js
+Uncaught SyntaxError: Identifier 'someVariable' has already been declared
+```
+
+Explanation: The variable declaration with var keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+
+```js
+var name = "John";
+function myFunc() {
+  var name = "Nick";
+  var name = "Abraham"; // Re-assigned in the same function block
+  alert(name); // Abraham
+}
+myFunc();
+alert(name); // John
+```
+
+The block-scoped multi-declaration throws syntax error,
+
+```js
+let name = "John";
+function myFunc() {
+  let name = "Nick";
+  let name = "Abraham"; // Uncaught SyntaxError: Identifier 'name' has already been declared
+  alert(name);
+}
+
+myFunc();
+alert(name);
+```
+
+### 7.5. Is const variable makes the value immutable ?
+
+**Answer:**
+
+No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+
+```js
+const userList = [];
+userList.push("John"); // Can mutate even though it can't re-assign
+console.log(userList); // ['John']
+```
+
+### 7.6. What are default parameters ?
+
+**Answer:**
+
+In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+
+```js
+//ES5
+var calculateArea = function (height, width) {
+  height = height || 50;
+  width = width || 60;
+
+  return width * height;
+};
+console.log(calculateArea()); //300
+```
+
+The default parameters makes the initialization more simpler,
+
+```js
+//ES6
+var calculateArea = function (height = 50, width = 60) {
+  return width * height;
+};
+
+console.log(calculateArea()); //300
+```
+
+### 7.7. What are template literals ?
+
+**Answer:**
+
+Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,
+
+```js
+var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
+```
+
+In ES5, you need break string like below,
+
+```js
+var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+```
+
+Note: You can use multi-line strings and string interpolation features with template literals.
+
+### 7.8. How do you write multi-line strings in template literals ?
+
+**Answer:**
+
+In ES5, you would have to use newline escape characters('\n') and concatenation symbols(+) in order to get multi-line strings.
+
+```js
+console.log("This is string sentence 1\n" + "This is string sentence 2");
+```
+
+Whereas in ES6, You don't need to mention any newline sequence character,
+
+```js
+console.log(`This is string sentence 'This is string sentence 2`);
+```
+
+### 7.9. What are nesting templates ?
+
+**Answer:**
+
+The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+
+```js
+const iconStyles = `icon ${
+  isMobilePlatform()
+    ? ""
+    : `icon-${user.isAuthorized ? "submit" : "disabled"}`
+}`;
+```
+You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
+
+```js
+//Without nesting templates
+const iconStyles = `icon ${
+  isMobilePlatform()
+    ? ""
+    : user.isAuthorized
+    ? "icon-submit"
+    : "icon-disabled"
+}`;
+```
+
+### 7.10. What are tagged templates ?
+
+**Answer:**
+
+Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+
+```js
+var user1 = "John";
+var skill1 = "JavaScript";
+var experience1 = 15;
+
+var user2 = "Kane";
+var skill2 = "JavaScript";
+var experience2 = 5;
+
+function myInfoTag(strings, userExp, experienceExp, skillExp) {
+  var str0 = strings[0]; // "Mr/Ms. "
+  var str1 = strings[1]; // " is a/an "
+  var str2 = strings[2]; // "in"
+
+  var expertiseStr;
+  if (experienceExp > 10) {
+    expertiseStr = "expert developer";
+  } else if (skillExp > 5 && skillExp <= 10) {
+    expertiseStr = "senior developer";
+  } else {
+    expertiseStr = "junior developer";
+  }
+
+  return `${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp}`;
+}
+
+var output1 = myInfoTag`Mr/Ms. ${user1} is a/an ${experience1} in ${skill1}`;
+var output2 = myInfoTag`Mr/Ms. ${user2} is a/an ${experience2} in ${skill2}`;
+
+console.log(output1); // Mr/Ms. John is a/an expert developer in JavaScript
+console.log(output2); // Mr/Ms. Kane is a/an junior developer in JavaScript
+```
+
+### 7.11. What are raw strings ?
+
+**Answer:**
+
+ES6 provides a raw strings feature using the String.raw() method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+
+```js
+ var calculationString = String.raw`The sum of numbers is \n${
+  1 + 2 + 3 + 4
+}!`;
+console.log(calculationString); // The sum of numbers is \n10!
+```
+
+If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+
+```js
+var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
+console.log(calculationString);
+// The sum of numbers is
+// 10!
+```
+
+Also, the raw property is available on the first argument to the tag function
+
+```js
+function tag(strings) {
+  console.log(strings.raw[0]);
+}
+```
+
 ## 8. Functional Programming
 
 ### 8.1. How does functional programming differ from imperative programming in JavaScript?
