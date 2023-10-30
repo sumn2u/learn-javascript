@@ -37,7 +37,7 @@ Here is a simple example of a cookie.
 
 ```javascript
 let cookies = document.cookie;
-// a simple way to reterive all cookie.
+// a simple way to retrieve all cookie.
 
 document.cookie = "book=Learn JavaScript; expires=Fri, 08 Jan 2022 12:00:00 UTC; path=/";
 // setting up a cookie

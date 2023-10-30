@@ -72,7 +72,7 @@
   - [History](browser-object-model-bom/history.md)
   - [Location](browser-object-model-bom/location.md)
 - [Events](events.md)
-- [Promise, async/await](promise-async-await/promise.md)
+- [Promise, async/await](promise-async-await/README.md)
   - [Promise](promise-async-await/promise.md)
   - [Async/Await](promise-async-await/async-await.md)
 - [Miscellaneous](miscellaneous/README.md)

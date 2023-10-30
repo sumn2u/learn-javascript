@@ -1,4 +1,3 @@
-
 ---
 chapter: 6
 pageNumber: 44

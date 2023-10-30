@@ -55,11 +55,72 @@ var a = "Hello World!";
 ### 1.6. What are the types of errors in javascript?
 
 **Answer:**
-There are two types of errors in javascript.
+There are seven types of errors in javascript.
 
-1. **Syntax error**: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+1. **Syntax error** - The error occurs when you use a predefined syntax incorrectly.
+```js
+const func = () =>
+console.log(hello)
+}
+```
+2. **Reference Error** - In a case where a variable reference can't be found or hasn't been declared, then a Reference error occurs.
+```js
+console.log(x);
+```
+3. **Type Error** - An error occurs when a value is used outside the scope of its data type.
+```js
+let num = 15;
+console.log(num.split(""));
+```
+4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block
+```js
+try{
+  throw new EvalError("'Throws an error'")
+}catch(error){
+  console.log(error.name, error.message)
+}
+```
+5. **RangeError** - There is an error when a range of expected values is required
+```js
+const checkRange = (num)=>{
+  if (num < 30) throw new RangeError("Wrong number");
+  return true
+}
 
-2. **Logical error**: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
+checkRange(20);
+```
+6. **URI Error** - When the wrong character(s) are used in a URI function, the error is called uri error
+```js
+console.log(decodeURI("https://www.educative.io/shoteditor"))
+console.log(decodeURI("%sdfk"));
+```
+7. **Internal Error** - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.
+```js
+switch(condition) {
+ case 1:
+ ...
+ break
+ case 2:
+ ...
+ break
+ case 3:
+ ...
+ break
+ case 4:
+ ...
+ break
+ case 5:
+ ...
+ break
+ case 6:
+ ...
+ break
+ case 7:
+ ...
+ break
+ ... up to 500 cases
+ }
+```
 
 ### 1.7. Mention some advantages of javascript.
 
@@ -618,6 +679,15 @@ A promise is an object that may produce a single value sometime in the future: e
 
 Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
+### 4.11. Explain equality in JavaScript ?
+
+**Answer:**
+
+JavaScript provides two types of equality operators: strict equality (===) and loose equality (==)
+
+- Strict Equality (===): This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
+
+- Loose Equality (==): This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
 
 
 ## 5. Object
@@ -764,4 +834,71 @@ Yes, JavaScript is a case sensitive language. The language keywords, variables, 
 2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
 
 
+## 7.JSON
 
+### 7.1. What is JSON ?
+
+**Answer**
+
+JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+
+### 7.2. What are the syntax rules of JSON ?
+
+**Answer** 
+
+Below are the list of syntax rules of JSON
+
+* i. The data is in name/value pairs
+* ii. The data is separated by commas
+* iii. Curly braces hold objects
+* iv. Square brackets hold arrays
+
+### 7.3. What is the purpose JSON stringify ?
+
+**Answer** 
+
+When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+
+```js
+var userJSON = { name: "John", age: 31 };
+var userString = JSON.stringify(userJSON);
+console.log(userString); //"{"name":"John","age":31}"
+```
+
+### 7.4. How do you parse JSON string ?
+
+**Answer** 
+
+When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+
+```js
+var userString = '{"name":"John","age":31}';
+var userJSON = JSON.parse(userString);
+console.log(userJSON); // {name: "John", age: 31}
+```
+
+### 7.5. Why do you need JSON ?
+
+**Answer** 
+
+When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+
+### 7.6. How do you define JSON arrays ?
+
+**Answer** 
+
+JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+```js
+"users":[
+  {"firstName":"John", "lastName":"Abrahm"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Shane", "lastName":"Warn"}
+]
+```
+
+### 7.6. In JSON, what is the purpose of square brackets, and how are they used?
+
+**Answer** 
+
+In JSON, square brackets [ ] are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.
