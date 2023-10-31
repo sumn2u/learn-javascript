@@ -88,6 +88,19 @@ This section of the document elaborates on why ECMAScript is crucial for JavaScr
 
 - **TypeScript**: TypeScript, a superset of ECMAScript, adds static typing for enhanced tooling and code safety.
 
+## Some Examples of ECMAScript Syntax
+
+- **Arrow Function Syntax**: `const x = (x, y) => x + y;`
+
+- **Class Syntax**: `class ClassName { constructor() { ... } }`
+
+- **Promise Syntax**: `const promiseA = new Promise(myExecutorFunc);` 
+`const promiseB = promiseA.then(handleFulfilled1, handleRejected1);`
+
+- **Spread Operator**: `const year = [...q1, ...q2, ...q3, ...q4];`
+
+- **Map**: `const x = new Map([ ["a", 500],["b", 300],["c", 200] ]);`
+
 ## Conclusion
 
 ECMAScript is a fundamental part of web development, shaping how we create dynamic and interactive web applications. Staying informed about the latest ECMAScript features is essential for modern JavaScript development.
