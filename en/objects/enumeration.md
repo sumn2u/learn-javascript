@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 77
+pageNumber: 78
 description: Enumeration refers to the process of iterating over the properties of an object and performing a certain action for each property. One way to enumerate the properties of an object is to use the `for-in` loop. The `for-in` loop iterates over the enumerable properties of an object in an arbitrary order, and for each property it executes a given block of code.
 ---
 # Enumeration

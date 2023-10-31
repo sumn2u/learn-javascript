@@ -2,7 +2,7 @@
 layout: editorial
 title: Basic JavaScript Interview Questions
 chapter: 22
-pageNumber: 157
+pageNumber: 158
 description:
 ---
 
@@ -874,13 +874,7 @@ console.log(eval("1 + 2")); //  3
 
 JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
-### 6.5. Is JavaScript a case-sensitive language ?
-
-**Answer:**
-
-Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
-
-### 6.6. difference between exec () and test () methods
+### 6.5. difference between exec () and test () methods
 
 **Answer**
 

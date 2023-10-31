@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 3
-pageNumber: 17
+pageNumber: 18
 description: Numbers refer to the data type used to represent numeric values. Numbers in JavaScript can be either integers (whole numbers) or floating-point numbers (decimal numbers)
 ---
 

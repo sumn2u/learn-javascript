@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 53
+pageNumber: 54
 description: A break statement is used to break out of a loop whenever a specific condition is met.
 ---
 

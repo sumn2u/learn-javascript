@@ -3,7 +3,7 @@ layout: editorial
 title: Intermediate level JavaScript Interview Questions
 description: 
 chapter: 22
-pageNumber: 174
+pageNumber: 175
 ---
 
 # Intermediate Level JavaScript Interview Questions

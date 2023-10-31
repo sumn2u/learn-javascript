@@ -77,6 +77,14 @@
         {
           "config": "tr",
           "text": "Türkiye"
+        },
+        {
+          "config": "id",
+          "text": "Indonesian"
+        },
+        {
+          "config": "es",
+          "text": "Español"
         }
       ]
     }

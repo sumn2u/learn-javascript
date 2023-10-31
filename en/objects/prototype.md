@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 75
+pageNumber: 76
 description: Every object has a special property called prototype, which is a reference to another object. The prototype property is an essential part of the prototype-based inheritance system in JavaScript, and it allows objects to inherit properties and methods from other objects. 
 ---
 # Prototype

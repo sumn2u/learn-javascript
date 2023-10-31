@@ -1,10 +1,10 @@
 ---
-chapter: [chapter number]
-pageNumber: [page number]
+chapter: 25
+pageNumber: 248
 description: Destructuring, an ES6 feature, streamlines data extraction from arrays and objects. It simplifies the process by allowing you to assign specific values or properties directly to variables, enhancing code clarity and efficiency. Destructuring is an essential tool for working with complex data structures in JavaScript.
 
 ---
-**Destructuring in ES6: Unpacking Arrays and Objects**
+## Destructuring in ES6: Unpacking Arrays and Objects
 
 Destructuring is a powerful feature introduced in ES6 (ECMAScript 2015) that simplifies the process of extracting values from arrays and properties from objects. It allows you to "unpack" values into variables with concise and readable syntax.
 

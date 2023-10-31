@@ -3,7 +3,7 @@ layout: editorial
 title: Behavioral Design Patterns in Javascript
 description: Focus on how objects communicate with each other and assigning responsibilities to them.
 chapter: 23
-pageNumber: 214
+pageNumber: 215
 ---
 
 # Behavioral Design Patterns

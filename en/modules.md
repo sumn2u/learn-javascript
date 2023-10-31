@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 13
-pageNumber: 86
+pageNumber: 87
 description: Modules are a way to organize code into separate, reusable, and encapsulated components. Modules allow developers to break down large and complex codebases into smaller, manageable parts, making it easier to understand, maintain, and collaborate on projects.
 ---
 
