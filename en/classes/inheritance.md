@@ -35,5 +35,9 @@ console.log(myCar.show()); // I have a Camry, it is a Toyota.
 The prototype of the parent class must be an `Object` or `null`.&#x20;
 {% endhint %}
 
-The `super` method is used inside a constructor and refers to the parent class. With this, one can access the parent class properties and methods.
+The `super` method is used inside a constructor and refers to the parent class. With this, one can access the parent class properties and methods. In  the example above we use `super(brand)` in the Model subclass so it can get that `Car` superclasses properties.
+
+{% hint style="info" %}
+Super classes are the main classes used while subclasses are classes that are extended from superclasses.
+{% endhint %}
 
