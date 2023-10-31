@@ -3,9 +3,5 @@ node_modules
 .vscode
 _book
 .DS_Store
+yarn.lock
 package-lock.json
-es/book copy.json
-book.desarrollo.json
-LANGS.desarrollo.md
-
-.markdownlint.json

@@ -1,13 +1,13 @@
 ---
 layout: editorial
 chapter: 19
-pageNumber: 92
+pageNumber: 111
 ---
 
 # Chapter 19
 # Miscellaneous
 
-In this chapter we will be discussing various topics that will come accross through while writing code. The topics are listed below:
+In this chapter we will be discussing various topics that will come across through while writing code. The topics are listed below:
 
 * [Template Literals](./template-literals.md)
 * [Hoisting](./hoisting.md)

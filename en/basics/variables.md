@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 11
+pageNumber: 12
 description: Variables are used to store and hold data. It can hold various types of values, such as numbers, strings, booleans, objects, arrays, functions and more.
 ---
 

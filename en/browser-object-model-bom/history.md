@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 85
+pageNumber: 103
 description: History object manages the browser's history stack. As we navigate to pages new entries get pushed into the stack.
 ---
 
@@ -16,7 +16,7 @@ window.history
 history
 ```
 
-To navigate  between the different history stack we can use   `go()` , `foward()` and  `back()`methods of **history** object.  
+To navigate  between the different history stack we can use   `go()` , `forward()` and  `back()`methods of **history** object.  
 
 1. **go\(\)**: It is used to navigate the specific URL of the history stack.
 

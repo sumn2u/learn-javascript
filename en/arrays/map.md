@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 39  
+pageNumber: 49  
 description: The map method iterates over an array and modifies its element using a callback function. This callback function is applied to each element of the array.
 ---
 # Map

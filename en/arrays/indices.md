@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 48
+pageNumber: 58
 description: Arrays are collection of elements and each element is assigned numerical position called index. Indices are zero based, meaning first element of array has index of 0, second has an index of 1 and so on.  
 ---
 # Indices

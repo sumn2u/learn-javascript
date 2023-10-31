@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 76
+pageNumber: 94
 description: The static keyword defines the static methods or properties for a class. When a method or property is defined as static within a class, then it belongs to the class itself rather than to instances (objects) of the class 
 ---
 # Static

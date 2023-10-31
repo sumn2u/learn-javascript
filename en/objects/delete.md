@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 62
+pageNumber: 76
 description: The `delete` operator can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
 ---
 # Delete Operator
@@ -23,7 +23,7 @@ child.age = 8;
 
 delete child.age;
 
-/* Remove age property from child, revealing the age of the prototype, because then it is not overriden. */
+/* Remove age property from child, revealing the age of the prototype, because then it is not overridden. */
 
 let prototypeAge = child.age;
 // 26, because child does not have its own age property.

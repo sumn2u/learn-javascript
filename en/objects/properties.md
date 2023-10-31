@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 57
+pageNumber: 71
 description: An object is a composite data type that allows you to store and organize data in key-value pairs. Each key-value pair in an object is referred to as a property. Properties are used to represent characteristics, attributes, or features of the object.
 ---
 # Properties
@@ -41,5 +41,5 @@ The following example shows how to **add** a new property **or change** an exist
 language.newProperty = "new value";
 // Now the object has a new property. If the property already exists, its value will be replaced.
 language["newProperty"] = "changed value";
-// Once again, you can access properties both ways. The first one (dot notation) is recomended.
+// Once again, you can access properties both ways. The first one (dot notation) is recommended.
 ```

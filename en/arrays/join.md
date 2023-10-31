@@ -1,7 +1,7 @@
 ---
 chapter: 6
-pageNumber: 43
-description: The join method turns the array in a string an joins it all together without modifiying the original array.  
+pageNumber: 53
+description: The join method turns the array in a string an joins it all together without modifying the original array.  
 ---
 # Join
 

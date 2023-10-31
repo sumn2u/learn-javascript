@@ -1,6 +1,8 @@
 ---
 layout: editorial
 title: Basic JavaScript Interview Questions
+chapter: 22
+pageNumber: 157
 description:
 ---
 
@@ -55,11 +57,74 @@ var a = "Hello World!";
 ### 1.6. What are the types of errors in javascript?
 
 **Answer:**
-There are two types of errors in javascript.
+There are seven types of errors in javascript.
 
-1. **Syntax error**: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+1. **Syntax error** - The error occurs when you use a predefined syntax incorrectly.
+```js
+const func = () =>
+console.log(hello)
+}
+```
+2. **Reference Error** - In a case where a variable reference can't be found or hasn't been declared, then a Reference error occurs.
+```js
+console.log(x);
+```
+3. **Type Error** - An error occurs when a value is used outside the scope of its data type.
+```js
+let num = 15;
+console.log(num.split(""));
+```
+4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block
 
-2. **Logical error**: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
+```js
+try{
+  throw new EvalError("'Throws an error'")
+}catch(error){
+  console.log(error.name, error.message)
+}
+```
+5. **RangeError** - There is an error when a range of expected values is required.
+
+```js
+const checkRange = (num)=>{
+  if (num < 30) throw new RangeError("Wrong number");
+  return true
+}
+
+checkRange(20);
+```
+6. **URI Error** - When the wrong character(s) are used in a URI function, the error is called uri error
+```js
+console.log(decodeURI("https://www.educative.io/shoteditor"))
+console.log(decodeURI("%sdfk"));
+```
+7. **Internal Error** - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.
+```js
+switch(condition) {
+ case 1:
+ ...
+ break
+ case 2:
+ ...
+ break
+ case 3:
+ ...
+ break
+ case 4:
+ ...
+ break
+ case 5:
+ ...
+ break
+ case 6:
+ ...
+ break
+ case 7:
+ ...
+ break
+ ... up to 500 cases
+ }
+```
 
 ### 1.7. Mention some advantages of javascript.
 
@@ -70,6 +135,12 @@ There are many advantages of javascript. Some of them are
 - Javascript is a simple language to learn.
 - Web pages now have more functionality because of Javascript.
 - To the end-user, Javascript is quite quick.
+
+### 1.8. What is the ‘this’ keyword in JavaScript? 
+
+**Answer:**
+
+The Keyword ‘this’ in JavaScript is used to call the current object as a constructor to assign values to object properties.
 
 ## 2. Functions
 
@@ -232,9 +303,7 @@ x(); // Returns "Do something"
 
 ### 2.5. What do you mean by Self Invoking Functions in javascript?
 
-**Answer:**
-
-Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
+**Answer:** Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
 
 Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
 
@@ -243,9 +312,84 @@ Normally, we declare a function and call it, however, anonymous functions may be
 
 **Answer:**
 
-->test () and exec () are RegExp expression methods used in javascript. 
-->We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
-->We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+- test () and exec () are RegExp expression methods used in javascript.
+
+- We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
+- We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+
+### 2.7.  What is the difference between Function declaration and Function expression?
+
+**Answer:**
+
+**Function declaration**:
+<ol style="list-style-type: upper-alpha">
+<li> Declared as a separate statement within the main JavaScript code.</li>
+<li> Can be called before the function is defined.</li>
+<li> Offers better code readability and better code organization.</li>
+
+</ol>
+
+Example:
+
+```js
+function abc() {
+    return 5;
+}
+```
+
+
+**Function expression**:
+<ol style="list-style-type: upper-alpha">
+<li>Created inside an expression or some other construct.</li>
+<li>Created when the execution point reaches it; can be used only after that.</li>
+<li>Used when there is a need for a conditional declaration of a function.</li>
+
+</ol>
+
+Example:
+
+```js
+var a = function abc() {
+    return 5;
+}
+```
+
+
+### 2.8. What are the arrow functions in JavaScript?
+
+**Answer**: Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:
+const helloWorld = () => {
+  console.log("hello world!");
+};
+
+### 2.9. Passed by value and passed by reference :
+
+**Answer:** 
+- Passed By Values Are Primitive Data Types.  
+Consider the following example:
+
+Here, the a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b=a code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
+
+Example:
+```js
+var a = 432;
+var b = a;
+```
+
+
+Passed_by_values_new
+
+- Passed by References Are Non-primitive Data Types.
+
+Consider the following example:
+
+The reference of the 1st variable object i.e. ‘var obj’ is passed through the location of another variable i.e. ‘var obj2’ with the help of an assigned operator.
+
+Example: 
+```js
+var obj = { name: "Raj", surname: "Sharma" };
+var obj2 = obj;
+```
 
 # 3. Data Types and Operator
 
@@ -415,17 +559,18 @@ Hoisting is a JavaScript mechanism where variables and function declarations are
 hoistedVariable = 3;
 console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	
 var hoistedVariable;
+```
 
 **Example 2:** Hoisting of function
-
+```js 
 hoistedFunction();  // Outputs " Hello world! " even when the function is declared after calling
 
 function hoistedFunction(){ 
   console.log(" Hello world! ");
 } 
-
+```
 **Example 3:** Hoisting of function expression
-
+```js 
 // Hoisting takes place in the local scope as well
 function doSomething(){
   x = 33;
@@ -434,16 +579,16 @@ function doSomething(){
 } 
 doSomething(); // Outputs 33 since the local variable “x” is hoisted inside the local scope
 
->Note - Variable initializations are not hoisted, only variable declarations are hoisted:
+/* Note - Variable initializations are not hoisted, only variable declarations are hoisted: */
 var x;
 console.log(x); // Outputs "undefined" since the initialization of "x" is not hoisted
 x = 23;
 
->Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+/* Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code: */
 "use strict";
 x = 23; // Gives an error since 'x' is not declared
 var x;
-
+```
 ### 4.2. Why do we use the word “debugger” in javascript?
 
 **Answer:**
@@ -465,7 +610,8 @@ function add (a) {
 }
 
 add(3)(4) 
-For Example, if we have a function f(a,b), then the function after currying, will be transformed to f(a)(b).
+```
+For Example, if we have a function `f(a,b)`, then the function after currying, will be transformed to `f(a)(b)`.
 
 By using the currying technique, we do not change the functionality of a function, we just change the way it is invoked.
 
@@ -502,6 +648,263 @@ External JavaScript is the JavaScript Code (script) written in a separate file w
 
 Some advantages of external javascript are
 
-->It allows web designers and developers to collaborate on HTML and javascript files.
-->We can reuse the code.
-->Code readability is simple in external javascript.
+- It allows web designers and developers to collaborate on HTML and javascript files.
+- We can reuse the code.
+- Code readability is simple in external javascript.
+
+### 4.5. What is a closure in JavaScript?
+
+**Answer:**
+
+A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
+In Short- A closure is a function that has access to variables from its outer (enclosing) function scope, even after the outer function has finished executing.
+
+### 4.6. What is the DOM in JavaScript?
+
+**Answer:**
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+### 4.7. What is event delegation?
+
+**Answer:**
+
+Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it. The events are handled by the callback function of the parent element.
+
+### 4.8. How can you make an AJAX request in JavaScript?
+
+**Answer:**
+
+AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
+
+You can make AJAX requests using the XMLHttpRequest object or by using the fetch API. Here's an example using fetch:
+  
+```js
+  fetch('https://example.com/api/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+```
+### 4.9. What is a promise in JavaScript?
+
+**Answer:**
+
+A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+### 4.10. Why do you need a promise in JavaScript ?
+
+**Answer:**
+
+Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+
+### 4.11. Explain equality in JavaScript ?
+
+**Answer:**
+
+JavaScript provides two types of equality operators: strict equality (===) and loose equality (==)
+
+- Strict Equality (===): This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
+
+- Loose Equality (==): This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
+
+
+## 5. Object
+
+### 5.1. What are the possible ways to create objects in JavaScript?
+
+ 
+**Answer:**
+
+There are many ways to create objects in javascript as below
+
+Object constructor:
+
+i. The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+``` js
+var object = new Object();
+```
+The Object() is a built-in constructor function so "new" keyword is not required. the above can be written as:
+``` js
+var object = Object();
+```
+ii. Object's create method:
+
+The create method of Object creates a new object by passing the prototype object as a parameter
+
+```js
+var object = Object.create(null);
+```
+iii. Object literal syntax:
+
+
+The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
+
+```js
+var object = {
+     name: "Sudheer",
+     age: 34
+};
+
+Object literal property values can be of any data type, including array, function, and nested object.
+```
+Note: This is an easiest way to create an object
+
+iv. Function constructor:
+
+Create any function and apply the new operator to create object instances,
+
+```js
+function Person(name) {
+  this.name = name;
+  this.age = 21;
+}
+var object = new Person("Sudheer");
+```
+v. Function constructor with prototype:
+
+This is similar to function constructor but it uses prototype for their properties and methods,
+```js
+function Person() {}
+Person.prototype.name = "Sudheer";
+var object = new Person();
+```
+This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
+```js
+function func() {}
+
+new func(x, y, z);
+```
+(OR)
+```js
+// Create a new instance using function prototype.
+var newInstance = Object.create(func.prototype)
+
+// Call the function
+var result = func.call(newInstance, x, y, z),
+
+// If the result is a non-null object then use it otherwise just use the new instance.
+console.log(result && typeof result === 'object' ? result : newInstance);
+```
+vi. ES6 Class syntax:
+
+ES6 introduces class feature to create the objects
+```js
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+var object = new Person("Sudheer");
+```
+
+## 6.Miscellaneous
+
+### 6.1. What is a strict mode in JavaScript ?
+
+**Answer:**
+
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+
+### 6.2. What is null value in JavaScript ?
+
+**Answer:**
+
+The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
+
+```js
+var user = null;
+console.log(typeof user); //object
+```
+
+### 6.3. What is eval in JavaScript ?
+
+**Answer:**
+
+The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+
+```js
+console.log(eval("1 + 2")); //  3
+```
+
+### 6.4. Is JavaScript a compiled or interpreted language ?
+
+**Answer:**
+
+JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+
+### 6.5. Is JavaScript a case-sensitive language ?
+
+**Answer:**
+
+Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+
+
+## 7.JSON
+
+### 7.1. What is JSON ?
+
+**Answer:**
+
+JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+
+### 7.2. What are the syntax rules of JSON ?
+
+**Answer:** 
+
+Below are the list of syntax rules of JSON
+
+*  The data is in name/value pairs
+*  The data is separated by commas
+*  Curly braces hold objects
+*  Square brackets hold arrays
+
+### 7.3. What is the purpose JSON stringify ?
+
+**Answer:** 
+
+When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+
+```js
+var userJSON = { name: "John", age: 31 };
+var userString = JSON.stringify(userJSON);
+console.log(userString); //"{"name":"John","age":31}"
+```
+
+### 7.4. How do you parse JSON string ?
+
+**Answer:** 
+
+When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+
+```js
+var userString = '{"name":"John","age":31}';
+var userJSON = JSON.parse(userString);
+console.log(userJSON); // {name: "John", age: 31}
+```
+
+### 7.5. Why do you need JSON ?
+
+**Answer:** 
+
+When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+
+### 7.6. How do you define JSON arrays ?
+
+**Answer:** 
+
+JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+```js
+"users":[
+  {"firstName":"John", "lastName":"Abrahm"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Shane", "lastName":"Warn"}
+]
+```
+
+### 7.6. In JSON, what is the purpose of square brackets, and how are they used?
+
+**Answer:** 
+
+In JSON, square brackets `[ ]` are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.
