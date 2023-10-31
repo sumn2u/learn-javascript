@@ -1,3 +1,9 @@
+---
+chapter: 8
+pageNumber: 56
+Title: Set Timeout
+---
+
 # Set Timeout
 The set timeout global method is used to add a timer (in milliseconds) before a function is ran. 
 

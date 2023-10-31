@@ -1,3 +1,10 @@
+---
+chapter: 8
+pageNumber: 55
+Title: Set Interval
+---
+
+
 # Set Interval
 The set Interval method is a method used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function runs again and generates another color. This is useful in making functions repeat. 
 
