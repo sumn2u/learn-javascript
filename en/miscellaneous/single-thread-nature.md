@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 132
+pageNumber: 133
 description: JavaScript is a popular programming language primarily known for its use in web development. One of the key characteristics that sets JavaScript apart from many other languages is its single-threaded nature. This means that JavaScript code is executed in a single, main thread of the browser or runtime environment.
 ---
 

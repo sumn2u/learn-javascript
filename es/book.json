@@ -90,16 +90,24 @@
           "text": "Français"
         },
         {
-          "config": "ne",
+          "config": "np",
           "text": "नेपाली"
         },
         {
+          "config": "de",
+          "text": "Deutsch"
+        },
+        {
           "config": "tr",
-          "text": "Turkish"
+          "text": "Türkiye"
+        },
+        {
+          "config": "id",
+          "text": "Indonesian"
         },
         {
           "config": "es",
-          "text": "Spanish"
+          "text": "Español"
         }
       ]
     }

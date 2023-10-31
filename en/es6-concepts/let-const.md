@@ -1,10 +1,10 @@
 ---
-chapter: [chapter number]
-pageNumber: [page number]
+chapter: 25
+pageNumber: 241
 description: Certainly! Let's discuss the `let` and `const` declarations in the context of ES6 (ECMAScript 2015) and compare them to their ES5 counterparts.
 ---
 
-**let and const in ES6:**
+## let and const in ES6
 
 1. **`let` Declaration:**
    - In ES6, the `let` declaration is introduced to create block-scoped variables. This means that a variable declared with `let` is only accessible within the block (e.g., inside a function or a pair of curly braces) where it's defined.

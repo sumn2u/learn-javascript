@@ -2,7 +2,7 @@
 layout: editorial
 title: Basic JavaScript Interview Questions
 chapter: 22
-pageNumber: 157
+pageNumber: 158
 description:
 ---
 

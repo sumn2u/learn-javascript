@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 125
+pageNumber: 126
 description: A callback is a function passed as an argument to another function, executed at a later time, often used for asynchronous operations.Callback hell, also known as the "pyramid of doom," occurs when nested callbacks result in unreadable and unmaintainable code.
 ---
 

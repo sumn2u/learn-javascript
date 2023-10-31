@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 102
+pageNumber: 103
 description: Cookies are pieces of information that are store on a computer and can be accessed by the browser
 ---
 # Cookies 🍪

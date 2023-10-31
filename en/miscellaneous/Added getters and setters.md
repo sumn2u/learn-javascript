@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 123
+pageNumber: 124
 description: In this chapter, we will learn about JavaScript getters and setters. JavaScript getters and setters are special methods that provide access to object properties. Getters are used to read values of properties, while setters are used to write values to properties.
 
 ---

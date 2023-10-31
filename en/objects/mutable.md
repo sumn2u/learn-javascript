@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 72
+pageNumber: 73
 description: Mutable means an object or data type can be changed after creation, while "immutable" means it cannot be changed. Mutable objects allow modifying their internal state, while immutable objects return new instances with changes, leaving the original unchanged.
 ---
 # Mutable

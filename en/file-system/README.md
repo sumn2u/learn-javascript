@@ -1,6 +1,10 @@
 ---
 chapter: 24
+pageNumber: 238
+description:
 ---
+
+# Chapter 24
 # File system
 Filesystem operations in JavaScript are used to interact with the file system of the host environment, which can be a web browser (client-side JavaScript) or a server (Node.js). JavaScript provides various APIs and methods for reading from and writing to the file system. These operations are essential for tasks like saving data, reading configuration files, and processing user-uploaded files. Below is an overview of filesystem operations in JavaScript:
 #### Asynchronous and Non-Blocking I/O:
