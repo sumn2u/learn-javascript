@@ -4,3 +4,4 @@
 - [Français](fr/)
 - [Deutsch](de/)
 - [Indonesian](id/)
+- [Español](es/)

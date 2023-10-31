@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 41  
+pageNumber: 51  
 description: The shift method deletes the first index element of array and move all indexes to the left. It modifies the original array.
 ---
 # Shift

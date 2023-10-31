@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 47
+pageNumber: 57
 description: The sort method sorts the items of an array in specific order.  By default, it sorts the elements as strings and arranges them in ascending order based on their UTF-16 code unit values.  
 ---
 # Sort
