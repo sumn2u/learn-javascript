@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 98
+pageNumber: 99
 description: window is a global object that represents the browser window or tab in which the current web page is loaded. The window object acts as the global object for client-side JavaScript, meaning that variables and functions declared without the var, let, or const keywords become properties and methods of the window object.
 ---
 # Window

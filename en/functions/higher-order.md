@@ -1,6 +1,6 @@
 ---
 chapter: 8
-pageNumber: 68
+pageNumber: 69
 description: Higher order functions are functions that manipulate other functions. It possess considerable power as it enable functional composition, abstraction, and the capability to generate code that is both versatile and easily reusable.
 ---
 # Higher order

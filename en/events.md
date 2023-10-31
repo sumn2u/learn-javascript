@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 17
-pageNumber: 105
+pageNumber: 106
 description: In programming, events are actions or occurrences in a system that the system informs you about so you can respond to them. For example, when you click the reset button it clears the input.
 ---
 

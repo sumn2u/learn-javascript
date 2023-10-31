@@ -8,7 +8,7 @@
     "website": "https://sumankunwar.com.np",
     "keywords": "learn JavaScript, Beginners lessons",
     "language": "en",
-    "totalpages": 239,
+    "totalpages": 240,
     "hidepageheaders": [1,2, 3, 10, 40],
     "hidepagefooters": [1,2, 3, 10, 40],
     "plugins": [
@@ -81,12 +81,20 @@
             "text": "नेपाली"
           },
           {
+            "config": "de",
+            "text": "Deutsch"
+          },
+          {
             "config": "tr",
             "text": "Türkiye"
           },
           {
             "config": "id",
             "text": "Indonesian"
+          },
+          {
+            "config": "es",
+            "text": "Español"
           }
         ]
       }

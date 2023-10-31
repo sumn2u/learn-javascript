@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 39
+pageNumber: 40
 description: The if condition evaluates the condition, and if the condition is true, the code block following the if statement is executed; otherwise, it is skipped.
 ---
 
