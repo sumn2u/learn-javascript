@@ -92,6 +92,7 @@ directory | description
     ├── np                      # content of book in nepali language
     ├── tr                      # content of book in turkish language
     ├── LANGS.md                # supported languages
+    ├── books                   # books in pdf and epub formats with translation
     ├── book.json               # configuration for book
     └── ...
 
