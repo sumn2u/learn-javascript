@@ -87,6 +87,10 @@
           {
             "config": "id",
             "text": "Indonesian"
+          },
+          {
+            "config": "es",
+            "text": "Español"
           }
         ]
       }
