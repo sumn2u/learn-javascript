@@ -1,13 +1,12 @@
 ---
 layout: editorial
 chapter: 25
-pageNumber: 240
+pageNumber: 244
 description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
 ---
 
 
 # Chapter 25
-# File system
 
 
 ## Overview of ES6 (ECMAScript 2015)

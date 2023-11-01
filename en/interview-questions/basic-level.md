@@ -42,8 +42,12 @@ You can declare a variable using `var`, `let`, or `const`:
 **Answer:**
 JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.
 
-<!-- img from here "interview bit" -->
-<img src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/003/407/original/static_vs_dynamic.png?1654852333" alt="static_vs_dynamic" />
+| Feature | Static Typing | Dynamic Typing |
+|---|---|---|
+| Variables have types | Yes | No |
+| Values have types | Yes | Yes |
+| Variables can change type | No | Yes |
+| Variables can change type dramatically | No | Yes |
 
 Since javascript is a _loosely(dynamically)_ typed language, variables in JS are not associated with any type. A variable can hold the value of any data type.
 

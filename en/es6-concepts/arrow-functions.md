@@ -1,6 +1,6 @@
 ---
 chapter: 25
-pageNumber: 244
+pageNumber: 248
 description:  Arrow functions, introduced in ES6, provide a concise syntax for defining functions in JavaScript. They are ideal for short, single-expression functions and offer simplicity and clarity, often used for iterating over arrays and defining compact callback functions. Arrow functions are known for their efficiency and readability.
 
 ---
