@@ -122,4 +122,4 @@
   - [Template literals](es6-concepts/template-literals.md)
 - [References](References.md)
 - [Resources](resources.md)
-- [Contributors](Contributions.md)
+- [Credits](Credits.md)
