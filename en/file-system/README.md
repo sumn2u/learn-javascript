@@ -1,6 +1,6 @@
 ---
 chapter: 24
-pageNumber: 238
+pageNumber: 242
 description:
 ---
 

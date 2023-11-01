@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 6
-pageNumber: 46
+pageNumber: 47
 description: Array is a  list of data and are fundamental part of programming. Here, we can store a lot of data of different types.
 ---
 
