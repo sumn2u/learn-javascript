@@ -1,5 +1,5 @@
 ---
-pageNumber: V
+pageNumber: VI
 chapter: 
 ---
 
@@ -21,6 +21,5 @@ chapter:
 
 ### Contributors
 ---
-
-[![](https://contributors-img.web.app/image?repo=sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/graphs/contributors)
+![Contributors](../.gitbook/assets/contributors.png)
 

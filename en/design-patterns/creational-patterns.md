@@ -2,6 +2,8 @@
 layout: editorial
 title: Creational Design Patterns in Javascript
 description: Creational design patterns focus on object creation mechanisms
+chapter: 23
+pageNumber: 192
 ---
 
 # Creational Design Patterns

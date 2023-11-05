@@ -1,7 +1,10 @@
-# List of Learning Resources
+---
+pageNumber: V
+chapter: 
+---
+# Learning Resources
 ## Articles for learning JavaScript 
 
-Here are some beginner-friendly articles to learn JavaScript - 
 
 1. Introduction to JavaScript by Hostinger [Link](https://www.hostinger.com/tutorials/what-is-javascript)
 

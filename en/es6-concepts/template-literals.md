@@ -1,10 +1,10 @@
 ---
-chapter: [page number]
-pageNumber: [chapter number]
+chapter: 25
+pageNumber: 247
 description: Template literals, introduced in ES6 (ECMAScript 2015), offer a powerful way to create dynamic strings in JavaScript. They allow you to embed expressions directly within strings, making your code more readable and expressive. Template literals are commonly used for generating dynamic content, such as HTML, and for simplifying string manipulation in JavaScript.
 ---
 
-#**Template Literals in ES6: Creating Dynamic Strings**
+## Template Literals in ES6: Creating Dynamic Strings
 
 Template literals, introduced in ES6 (ECMAScript 2015), provide a powerful way to create dynamic strings in JavaScript. These literals are enclosed in backticks (\` \`) instead of single or double quotes and allow for seamless embedding of expressions directly within the string.
 

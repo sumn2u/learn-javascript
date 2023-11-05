@@ -1,4 +1,10 @@
-## Maps
+---
+chapter: 25
+pageNumber: 243
+description: Certainly! Let's discuss the `let` and `const` declarations in the context of ES6 (ECMAScript 2015) and compare them to their ES5 counterparts.
+---
+
+## Map
 
 Map is a collection of keyed data items, just like an `Object`. But the main difference is that `Map` allows keys of any type.
 

@@ -1,13 +1,13 @@
 ---
 layout: editorial
-chapter: [chapter number]
-pageNumber: [page number]
+chapter: 25
+pageNumber: 240
 description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
 ---
 
 
-# Chapter [Chapter Number]
-# [ES6 Concept ]
+# Chapter 25
+# File system
 
 
 ## Overview of ES6 (ECMAScript 2015)
@@ -25,3 +25,10 @@ Arrow functions in ES6 offer a concise syntax for writing functions, and they au
 Template literals provide a convenient way to create dynamic strings with embedded expressions, while destructuring simplifies the extraction of values from arrays and objects, leading to cleaner, more readable code.
 
 Overall, ES6 has become a cornerstone for modern JavaScript development. It is well-supported across modern web browsers and has reshaped the way developers write JavaScript code. Understanding ES6 is crucial for any JavaScript developer looking to stay up-to-date and write more efficient, maintainable, and readable code in today's web development landscape.
+
+In this chapter, we are going to talk about following ES6 syntax.
+* [let const](./let-const.md)
+* [map](./map.md)
+* [arrow functions](./arrow-functions.md)
+* [destructuring](./destructuring.md)
+* [template literals](./template-literals.md)
