@@ -5,14 +5,35 @@ description: In this chapter, we will delve into the critical aspects of testing
 ---
 
 ## Unit Testing
-Unit testing is a fundamental practice in web development. It involves testing individual components or functions to ensure they work as expected. This practice can catch bugs early, improve code quality, and make refactoring safer Unit testing is essential for the following reasons:
+Unit testing is a fundamental practice in web development. It involves testing individual components or functions to ensure they work as expected. This practice is included in a software development approach called test-driven development(TDD) which consists in writing unit tests out of the software requirements first then write code after.Let's now see why we should write Unit tests.
 
-- It verifies that individual parts of your codebase are working correctly.
+## Why write Unit Tests?
+Unit testing is widely used because of the following reasons :
+- In TDD,the software requirements are turned into specific test cases. The software is then improved to pass the new tests.
+- In other to verify that individual parts of the codebase is working correctly.
+- It allows code modification without affecting the functionality of other units or the software
 - It provides a safety net when refactoring or making changes.
 - It helps document the expected behavior of functions and components.
+- It helps to no repetition of modules because each module has it own responsibility
+
+## Benefits of Unit Tests
+The main advantage of unit tests is their laser-sharp focus. Since they test a single function, they give precise feedback. If a unit test fails, in most cases, you can be sure that the specific function being tested is the problem. 
+- Unit tests help to find and fix bugs quickly and easily.
+- Unit tests contribute to higher code quality.
+- Unit tests contribute to better application architecture.
+- Unit tests act as documentation.
+
+## Best Practices for creating Unit Tests
+To ensure that you have good Unit tests follow this best practices :
+- Write tests during development, not after
+- Test cases should not duplicate the implementation logic.
+- Test cases should exhibit the same behavior as long as their code is unchanged.
+- Use a consistent naming convention for the test cases
+- Avoid using conditional logic expressions in Unit tests
+- If possible automate Unit tests
 
 ## Testing Frameworks
-Testing frameworks streamline the process of writing and running tests. Two popular frameworks are Jest and Mocha.
+Testing frameworks streamline the process of writing and running tests. Two popular frameworks in JavaScript are Jest and Mocha.
 
 ## Jest
 Jest is a zero-config, all-in-one popular testing framework. It's suitable for both unit and integration testing. Let's see how to get started with Jest.
