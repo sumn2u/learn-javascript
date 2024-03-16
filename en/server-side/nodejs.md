@@ -26,6 +26,20 @@ This should print the version number of Node.js like this:
 ```bash
 v20.7.0
 ```
+## Running the Node.js REPL
+
+REPL stands for Read Evaluate Print Loop, and allows you to run code from the terminal.
+Type into your terminal this command:
+
+```bash
+node
+```
+In this prompt, you can run code, like this:
+
+```js
+> console.log("Hello World")
+```
+You can leave the REPL by typing CTRL + d
 
 ## Writing your first Node.js program
 
@@ -51,7 +65,13 @@ Hello World!
 
 Express is a popular web framework for Node.js. It provides a simple and elegant API for building web applications. Let's use Express to create a simple web server that will respond to HTTP requests with a "Hello World!" message.
 
-First, we need to install Express. To do this, run the following command in your terminal:
+But before we install Express, we must first run this in order to set up npm, javascript's package manager:
+
+```bash
+npm init
+```
+
+Then, you install express
 
 ```bash
 npm install express
