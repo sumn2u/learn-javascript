@@ -4,27 +4,28 @@ pageNumber: 38
 ---
 # Substring
 
-The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero (0). 
+`string.substring()` es una función incorporada en JavaScript que se utiliza para devolver la parte de la cadena dada desde el índice inicial hasta el índice final. La indexación comienza desde cero (0).
 
-Syntax: 
+Sintaxis:
 
-string.substring(Startindex, Endindex)
+string.substring(indiceInicial, indiceFinal)
 
-# Syntax:
+## Sintaxis
 
-*str.substr(start , length)
+*str.substr(inicio , longitud)
 
-* using the `substr()` method
-* using the template literal (introduced in ES6)
+* usando el método `substr()`
+* usando el literal de plantilla (introducido en ES6)
 
-The substr() method takes in:
+El método substr() tiene en cuenta:
 
-Parameters: Here the Startindex and Endindex describe the part of the string to be taken as a substring. Here the Endindex is optional. 
-Return value: It returns a new string that is part of the given string. JavaScript code to show the working of string.substring() function: 
+Parámetros: Aquí indiceInicial e indiceFinal describen la parte de la cadena que se tomará como subcadena. Aquí el indiceFinal es opcional.
+
+Valor devuelto: Devuelve una cadena nueva que es parte de la cadena dada. El código de JavaScript que muestra el trabajo de la función string.substring():
 
 ```javascript
-//Example 1:
-// JavaScript to illustrate substr() method
+// Ejemplo 1:
+// JavaScript para ilustrar el método substr()
 
 const str = "GeeksforGeeks";
 const result = str.substring(8);
@@ -32,29 +33,29 @@ console.log(result);
 
 
 
-//Output
-for
+//Salida
+'Geeks'
 
 ```
 
 ```javascript
 
-//Example 2: 
-// Taking a string as letiable
+// Ejemplo 2: 
+// Tomamos una cadena y la troceamos
 let string = "geeksforgeeks";
 a = string.substring(-1)
-b = string.substring(2.5)
-c = string.substring(2.9)
+b = string.substring(2,5)
+c = string.substring(2,9)
 
-// Printing new string which are
-// the part of the given string
+//Imprimiendo una nueva cadena que son
+// la parte de la cadena dada
 console.log(a);
 console.log(b);
 console.log(c);
 
 
-//Output
-geeksforgeeks
-eksforgeeks
-eksforgeeks
+//Salida
+'geeksforgeeks'
+'eks'
+'eksforg'
 ```

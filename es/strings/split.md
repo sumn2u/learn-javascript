@@ -4,43 +4,44 @@ pageNumber: 36
 ---
 # Split
 
-The split() method divides a string into a list of substrings and returns them as an array.
-* using the `split()` method
-* using the template literal (introduced in ES6)
+El método split() divide una cadena en una lista de subcadenas y las devuelve como una matriz.
 
-The split() method takes in:
+* usando el método `split()`
+* usando el literal de plantilla (introducido en ES6)
 
-separator (optional) - The pattern (string or regular expression) describing where each split should occur.
-limit (optional) - A non-negative integer limiting the number of pieces to split the given string into.
+El método split() tiene en cuenta:
+
+separador (opcional) - El patrón (cadena o expresión regular) que describe dónde debería ocurrir cada división.
+límite (opcional) - Un entero no negativo que limita el número de partes en las que se dividirá la cadena dada.
 
 ```javascript
 console.log("ABCDEF".split("")); // [ 'A', 'B', 'C', 'D', 'E', 'F' ]
 
-const text = "Java is awesome. Java is fun.";
+const texto = "Java es asombroso. Java es divertido.";
 
-let pattern = ".";
-let newText = text.split(pattern);
-console.log(newText); // [ 'Java is awesome', ' Java is fun', '' ]
+let patron = ".";
+let textoNuevo = texto.split(patron);
+console.log(textoNuevo); // [ 'Java es asombroso', ' Java es divertido', '' ]
 
-let pattern1 = ".";
-// only split string to maximum to parts
-let newText1 = text.split(pattern1, 2);
-console.log(newText1); // [ 'Java is awesome', ' Java is fun' ]
+let patron1 = ".";
+// solo divide la cadena al máximo en partes
+let textoNuevo1 = texto.split(patron1, 2);
+console.log(textoNuevo1); // [ 'Java es asombroso', ' Java es divertido' ]
 
-const text2 = "JavaScript ;  Python ;C;C++";
-let pattern2 = ";";
-let newText2 = text2.split(pattern2);
-console.log(newText2); // [ 'JavaScript ', '  Python ', 'C', 'C++' ]
+const texto2 = "JavaScript ;  Python ;C;C++";
+let patron2 = ";";
+let textoNuevo2 = texto2.split(patron2);
+console.log(textoNuevo2); // [ 'JavaScript ', '  Python ', 'C', 'C++' ]
 
-// using RegEx
-let pattern3 = /\s*(?:;|$)\s*/;
-let newText3 = text2.split(pattern3);
-console.log(newText3); // [ 'JavaScript', 'Python', 'C', 'C++' ]
+// usando una expresión regular
+let patron3 = /\s*(?:;|$)\s*/;
+let textoNuevo3 = texto2.split(patron3);
+console.log(textoNuevo3); // [ 'JavaScript', 'Python', 'C', 'C++' ]
 
 //Output
 [ 'A', 'B', 'C', 'D', 'E', 'F' ]
-[ 'Java is awesome', ' Java is fun', '' ]
-[ 'Java is awesome', ' Java is fun' ]
+[ 'Java es asombroso', ' Java es divertido', '' ]
+[ 'Java es asombroso', ' Java es divertido' ]
 [ 'JavaScript ', '  Python ', 'C', 'C++' ]
 [ 'JavaScript', 'Python', 'C', 'C++' ]
 ```
