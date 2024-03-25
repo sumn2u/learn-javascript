@@ -1,43 +1,43 @@
 ---
 chapter: 25
 pageNumber: 251
-description: Template literals, introduced in ES6 (ECMAScript 2015), offer a powerful way to create dynamic strings in JavaScript. They allow you to embed expressions directly within strings, making your code more readable and expressive. Template literals are commonly used for generating dynamic content, such as HTML, and for simplifying string manipulation in JavaScript.
+description: Los literales de plantilla, introducidos en ES6 (ECMAScript 2015), ofrecen una forma poderosa de crear cadenas dinámicas en JavaScript. Le permiten incrustar expresiones directamente dentro de cadenas, haciendo que su código sea más legible y expresivo. Los literales de plantilla se usan comúnmente para generar contenido dinámico, como HTML, y para simplificar la manipulación de cadenas en JavaScript.
 ---
 
-## Template Literals in ES6: Creating Dynamic Strings
+# Literales de plantilla en ES6: creación de cadenas dinámicas
 
-Template literals, introduced in ES6 (ECMAScript 2015), provide a powerful way to create dynamic strings in JavaScript. These literals are enclosed in backticks (\` \`) instead of single or double quotes and allow for seamless embedding of expressions directly within the string.
+Los literales de plantilla, introducidos en ES6 (ECMAScript 2015), proporcionan una forma poderosa de crear cadenas dinámicas en JavaScript. Estos literales están encerrados entre comillas invertidas (\` \`) en lugar de comillas simples o dobles y permiten la incrustación perfecta de expresiones directamente dentro de la cadena.
 
-**Syntax:**
-
-```javascript
-const dynamicString = `This is a dynamic string with ${expression}`;
-```
-
-- `dynamicString`: This is where you store the dynamic string.
-
-- `${expression}`: This is where you embed JavaScript expressions, variables, or functions, which are evaluated and included within the string.
-
-**Example:**
-
-Here's a simple example of using template literals to create dynamic strings:
+**Sintaxis:**
 
 ```javascript
-const name = "John";
-const greeting = `Hello, ${name}!`;
-console.log(greeting); // Output: Hello, John!
+const cadenaDinamica = `Esta es una cadena dinámica con ${expresion}`;
 ```
 
-**Use Cases:**
+- `cadenaDinamica`: Aquí es donde almacena la cadena dinámica.
 
-Template literals are commonly used for various purposes, including:
+- `${expresion}`: Aquí es donde se insertan expresiones, variables o funciones de JavaScript, que se evalúan e incluyen dentro de la cadena.
 
-1. **String Interpolation:** Inserting variables or expressions within strings.
+**Ejemplo:**
 
-2. **Multi-line Strings:** Creating multi-line strings without needing line breaks and concatenation.
+A continuación se muestra un ejemplo sencillo del uso de literales de plantilla para crear cadenas dinámicas:
 
-3. **Dynamic HTML:** Generating HTML content dynamically for web applications.
+```javascript
+const nombre = "Juan";
+const saludo = `¡Hola, ${nombre}!`;
+console.log(saludo); // Salida: ¡Hola, Juan!
+```
 
-4. **Tagged Templates:** Allowing for custom processing of template literals through template tag functions.
+**Casos de uso:**
 
-By using template literals, you can simplify string concatenation, enhance the readability of your code, and make dynamic string creation a breeze in JavaScript.
+Los literales de plantilla se utilizan habitualmente para diversos fines, entre ellos:
+
+1. **Interpolación de cadenas:** Insertar variables o expresiones dentro de cadenas.
+
+2. **Cadenas multilínea:** Creación de cadenas de varias líneas sin necesidad de saltos de línea ni concatenación.
+
+3. **HTML dinámico:** Generación dinámica de contenido HTML para aplicaciones web.
+
+4. **Plantillas etiquetadas:** Permitir el procesamiento personalizado de literales de plantilla a través de funciones de etiquetas de plantilla.
+
+Al utilizar literales de plantilla, puede simplificar la concatenación de cadenas, mejorar la legibilidad de su código y hacer que la creación dinámica de cadenas sea muy sencilla en JavaScript.
