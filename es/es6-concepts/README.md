@@ -2,32 +2,32 @@
 layout: editorial
 chapter: 25
 pageNumber: 244
-description: Classes are templates for creating an object. It encapsulates data with code to work on with data. The keyword class is used to create a class. 
+description: Las clases son plantillas para crear un objeto. Encapsula datos con código para trabajar con datos. La palabra clave class se utiliza para crear una clase. 
 ---
 
 
-# Chapter 25
+# Capítulo 25
 
+## Descripción general de ES6 (ECMAScript 2015)
 
-## Overview of ES6 (ECMAScript 2015)
+ES6, también conocido como ECMAScript 2016, es una actualización significativa al lenguaje JavaScript. Introduce un montón de nuevas características, sintaxis perfeccionada, y mejoras, convirtiéndolo en un hito fundamental en la evolución de JavaScript. ES6 generó un lenguaje más maduro y potente, que abordó desafíos de larga data y permitió a los desarrolladores escribir código más limpio, más eficiente y fácil de mantener.
 
-ES6, also known as ECMAScript 2015, is a significant upgrade to the JavaScript language. It introduces a wealth of new features, syntax improvements, and enhancements, making it a foundational milestone in the evolution of JavaScript. ES6 brought about a more mature and powerful language, addressing long-standing challenges and empowering developers to write cleaner, more efficient, and maintainable code.
+Uno de los objetivos principales de ES6 era proporcionar a los desarrolladores herramientas para simplificar las tareas comunes de programación, reducir la complejidad del código, y mejorar la calidad general del código. Ha conseguido esto introduciendo numerosas características y conceptos que se han convertido en estándar en el desarrollo moderno de JavaScript.
 
-One of the core goals of ES6 was to provide developers with tools to simplify common programming tasks, reduce code complexity, and enhance overall code quality. It achieved this by introducing numerous features and concepts that have become standard in modern JavaScript development.
+ES6 incluye características notables tales como las funciones flecha, las palabras clave `let` y `const` para la declaración de variables, los literales de plantilla, y la poderosa sintaxis `class` para la programación orientada a objetos. Estas mejoras mejoran significativamente la productividad de los desarrolladores y la legibilidad del código.
 
-ES6 includes notable features such as arrow functions, the `let` and `const` keywords for variable declaration, template literals, and the powerful `class` syntax for object-oriented programming. These enhancements significantly improve developer productivity and the readability of code.
+Adicionalmente, ES6 introduce conceptos como las Promesas (Promises, en inglés) y async/await, que agilizan la programación asíncrona, haciéndola más elegante y menos propensa a errores. Esta simplificación del código asíncrono ha tenido un impacto profundo en el desarrollo web y ha llevado a una forma más intuitiva de manejar operaciones asíncronas, como las solicitudes HTTP.
 
-Additionally, ES6 introduces concepts like Promises and async/await, which streamline asynchronous programming, making it more elegant and less error-prone. This simplification of asynchronous code has had a profound impact on web development and has led to a more intuitive way of handling asynchronous operations, such as HTTP requests.
+Las funciones de flecha en ES6 ofrecen una sintaxis concisa para escribir funciones, y vinculan automáticamente el contexto `this` al código circundante, lo cual alivia los problemas con el enlazado de `this` en JavaScript. La introducción de declaraciones de variables de alcance de bloque con `let`y `const` han mejorado la gestión y alcance de las variables, reduciendo fuentes comunes de errores.
 
-Arrow functions in ES6 offer a concise syntax for writing functions, and they automatically bind the `this` context to the surrounding code, which alleviates issues with `this` binding in JavaScript. The introduction of block-scoped variable declarations with `let` and `const` improved variable management and scoping, reducing common sources of bugs.
+Los literales de plantilla proporcionan una manera conveniente de crear cadenas dinámicas con expresiones incrustadas, mientras que la desestructuración simplifica la extracción de valores de matrices y objetos, lo que genera un código más limpio y legible.
 
-Template literals provide a convenient way to create dynamic strings with embedded expressions, while destructuring simplifies the extraction of values from arrays and objects, leading to cleaner, more readable code.
+En general, ES6 se ha convertido en la piedra angular del desarrollo moderno de JavaScript. Tiene buen soporte en los navegadores web modernos y ha remodelado la forma en que los desarrolladores escriben código JavaScript. Comprender ES6 es crucial para cualquier desarrollador de JavaScript que busque mantenerse actualizado y escribir código más eficiente, mantenible y legible en el panorama de desarrollo web actual.
 
-Overall, ES6 has become a cornerstone for modern JavaScript development. It is well-supported across modern web browsers and has reshaped the way developers write JavaScript code. Understanding ES6 is crucial for any JavaScript developer looking to stay up-to-date and write more efficient, maintainable, and readable code in today's web development landscape.
+En este capítulo, vamos a hablar sobre la siguiente sintaxis de ES6.
 
-In this chapter, we are going to talk about following ES6 syntax.
 * [let const](./let-const.md)
-* [map](./map.md)
-* [arrow functions](./arrow-functions.md)
-* [destructuring](./destructuring.md)
-* [template literals](./template-literals.md)
+* [Objeto map](./map.md)
+* [Funciones flecha](./arrow-functions.md)
+* [Desestructuración](./destructuring.md)
+* [Literales de plantilla](./template-literals.md)

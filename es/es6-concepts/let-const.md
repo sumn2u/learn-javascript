@@ -1,60 +1,63 @@
 ---
 chapter: 25
 pageNumber: 245
-description: Certainly! Let's discuss the `let` and `const` declarations in the context of ES6 (ECMAScript 2015) and compare them to their ES5 counterparts.
+description: ¡Ciertamente! Analicemos las declaraciones `let` y `const` en el contexto de ES6 (ECMAScript 2015) y compárelas con sus contrapartes de ES5.
 ---
 
-## let and const in ES6
+# let y const en ES6
 
-1. **`let` Declaration:**
-   - In ES6, the `let` declaration is introduced to create block-scoped variables. This means that a variable declared with `let` is only accessible within the block (e.g., inside a function or a pair of curly braces) where it's defined.
+1. **Declaración `let`:**
+   - En ES6, la declaración `let` se introdujo para crear variables de ámbito de bloque. Esto significa que una variable declarada con `let` solo es accesible dentro del bloque (por ejemplo, dentro de una función o un par de llaves) donde se definió.
 
-   - `let` variables are not hoisted to the top of their containing function or block. This prevents issues where variables are accessed before they're declared.
+   - Las variables definidas con `let` no se elevan (hoisting, en inglés) a la parte superior de su función o bloque que las contiene. Esto evita problemas cuando se accede a las variables antes de declararlas.
 
+   - `let` le permite reasignar un valor a la variable después de su declaración inicial, haciéndola mutable.
    - `let` allows you to reassign a value to the variable after its initial declaration, making it a mutable variable.
 
-   - Example:
+   - Ejemplo:
+
      ```javascript
-     function exampleFunction() {
+     function funcionEjemplo() {
        if (true) {
          let x = 10;
          console.log(x); // 10
        }
-       console.log(x); // Error: x is not defined
+       console.log(x); // Error: x no está definida
      }
      ```
 
-2. **`const` Declaration:**
-   - The `const` declaration also introduces block-scoped variables, but it comes with an additional constraint: variables declared with `const` cannot be reassigned after their initial assignment. They are constant.
+2. **Declaración `const`:**
+   - La declaración `const` también introduce las variables de ámbito de bloque, pero viene con una restricción adicional: las variables declaradas con `const` no pueden ser reasignadas después de su asingación inicial. Son constantes.
 
-   - `const` is often used for values that should not change, such as constants or references to immutable objects.
+   - `const` se usa a menudo para valores que no deberían cambiar, tales como constantes o referencias a objetos inmutables.
 
-   - Example:
+   - Ejemplo:
+
      ```javascript
      const pi = 3.14159;
-     pi = 3.14; // Error: Assignment to constant variable.
+     pi = 3.14; // Error: Asignación a variable constante.
      ```
 
-**Comparison with ES5:**
+**Comparación con ES5:**
 
-In ES5, JavaScript primarily used the `var` keyword for variable declaration. Here are the key differences when comparing `let` and `const` in ES6 with `var` in ES5:
+En ES5, JavaScript usaba primariamente la palabra clave `var` para la declaración de variables. Aquí están las diferencias clave cuando se compara `let` y `const` en ES6 con `var` en ES5:
 
-1. **Block Scope vs. Function Scope:**
-   - ES6 (`let` and `const`): Variables declared with `let` and `const` are block-scoped, meaning they are limited to the block where they are defined, be it a block within a function or a standalone block.
+1. **Ámbito de bloque versus Ámbito de función:**
+   - ES6 (`let` y `const`): Las variables declaradas con `let` y `const` son de ámbito de bloque, lo que significa que están limitadas al bloque donde se definen, sea este un bloque dentro de una función o un bloque en solitario.
 
-   - ES5 (`var`): Variables declared with `var` are function-scoped, meaning they are accessible throughout the entire function containing the `var` declaration.
+   - ES5 (`var`): Las variables declaradas con `var` son de ámbito de función, lo que significa que son accesibles a través de toda la función que contiene la declaración `var`.
 
-2. **Hoisting:**
-   - ES6 (`let` and `const`): Variables declared with `let` and `const` are not hoisted to the top of their containing block, which prevents the use of variables before they are declared.
+2. **Elevación:**
+   - ES6 (`let` y `const`): Las variables declaradas con `let` y `const` no son elevadas al inicio de su bloque contenedor, lo que previene el uso de variables antes de que sean declaradas.
 
-   - ES5 (`var`): Variables declared with `var` are hoisted to the top of their containing function, which can lead to unexpected behavior if not managed carefully.
+   - ES5 (`var`): Las variables declaradas con `var` son elevadas al inicio de su función contenedora, lo cual puede llevar a comportamientos inesperados si no se maneja cuidadosamente.
 
-3. **Reassignment:**
-   - ES6 (`let` and `const`): Variables declared with `let` can be reassigned after their initial declaration. Variables declared with `const` cannot be reassigned, making them constants.
+3. **Reasignación:**
+   - ES6 (`let` y `const`): Las variables declaradas con `let` pueden ser reasignados después de su declaración inicial. Las variables declaradas con `const` no se pueden reasignar, lo que las convierte en constantes.
 
-   - ES5 (`var`): Variables declared with `var` can be reassigned at any point in the function where they are declared.
+   - ES5 (`var`): Las variables declaradas con `var` se pueden reasignar en cualquier punto de la función donde se declaran.
 
-4. **Constants:**
-   - ES6 (`const`): ES6 introduces the `const` keyword, allowing the creation of constants, which cannot be changed after their initial assignment.
+4. **Constantes:**
+   - ES6 (`const`): ES6 introduce la palabra clave `const`, que permite la creación de constantes, que no se pueden cambiar después de su asignación inicial.
 
-In summary, `let` and `const` in ES6 provide more predictable and controlled variable scoping compared to `var` in ES5. They help avoid common issues associated with variable hoisting and provide the flexibility to choose between mutable and immutable variables based on your needs.
+En resumen, `let` y `const` en ES6 proporciona un alcance de variable controlado y más predecible en comparación con `var` en ES5. Ayudan a evitar problemas comunes asociados con la elevación de variables y brindan la flexibilidad de elegir entre variables mutables e inmutables según sus necesidades.

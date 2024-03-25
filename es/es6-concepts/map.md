@@ -1,46 +1,48 @@
 ---
 chapter: 25
 pageNumber: 247
-description: Certainly! Let's discuss the `let` and `const` declarations in the context of ES6 (ECMAScript 2015) and compare them to their ES5 counterparts.
+description:  ¡Ciertamente! Analicemos las declaraciones `let` y `const` en el contexto de ES6 (ECMAScript 2015) y compárelas con sus contrapartes de ES5.
 ---
 
-## Map
+# Map
 
-Map is a collection of keyed data items, just like an `Object`. But the main difference is that `Map` allows keys of any type.
+El objeto Map es una colección de elementos de datos con clave, al igual que un `Object`. Pero la principal diferencia es que `Map` permite claves de cualquier tipo.
 
+Los métodos y propiedades son:
 
-Methods and properties are:
+- `new Map()` – crea el mapa.  
+- `map.set(key, value)` – almacena el valor por la clave.
+- `map.get(key)` – devuelve el valor por la clave, devuelve undefined si la clave no existe en el mapa.
+- `map.has(key)` – devuelve verdadero (true) si la clave existe, falso (false) en caso contrario.
+- `map.delete(key)` – elimina el elemento (el par clave/valor) por la clave.
+- `map.clear()` – elimina todos los elementos del mapa.
+- `map.size` – devuelve el número actual de elementos.
 
-`new Map()` – creates the map.  
-`map.set(key, value)` – stores the value by the key.   
-`map.get(key)` – returns the value by the key, undefined if key doesn’t exist in map.
-`map.has(key)` – returns true if the key exists, false otherwise.    
-`map.delete(key)` – removes the element (the key/value pair) by the key.        
-`map.clear()` – removes everything from the map.             
-`map.size` – returns the current element count.
+Por ejemplo:
 
-For example
-```sh
+```javascript
+
 let map = new Map();
 
-map.set('1', 'str1');   // a string key
-map.set(1, 'num1');     // a numeric key
-map.set(true, 'bool1'); // a boolean key
+map.set('1', 'str1');   // una clave de cadena (string)
+map.set(1, 'num1');     // una clave numérica
+map.set(true, 'bool1'); // una clave booleana (boolean)
 
-// remember the regular Object? it would convert keys to string
-// Map keeps the type, so these two are different:
+// ¿Recuerdas el Object normal? convertiría las claves en cadenas
+// Map mantiene el tipo, por lo que estos dos son diferentes:
 alert( map.get(1)   ); // 'num1'
 alert( map.get('1') ); // 'str1'
 
 alert( map.size ); // 3
 ```
 
-The differences from a regular `Object`:
+Las diferencias de un `Object` normal:
 
-* Any keys, objects can be keys.
+- Cualquier clave, los objetos pueden ser claves.
 
-* Additional convenient methods, the size property.
+- Métodos convenientes adicionales, la propiedad `size` que devuelve el número de elementos.
 
-## Conclusion
-Maps are a versatile and powerful data structure that provides key-value pairs for efficient data management.
-Maps are often a preferred choice over plain objects for tasks involving key-value associations, as they provide better control and performance.
+## Conclusión
+
+Los mapas son una estructura de datos versátil y potente que proporciona pares clave-valor para una gestión de datos eficiente.
+Los mapas suelen ser una opción preferida a los objetos simples para tareas que involucran asociaciones clave-valor, ya que brindan mejor control y rendimiento.
