@@ -1,6 +1,5 @@
 ---
-chapter: [chapter number]
-pageNumber: [page number]
+chapter: 8
 description: Closures are a JavaScript concept that allows functions to access and remember variables from their containing scope, even after the outer function has finished running. They're vital for data encapsulation, private variables, and various design patterns in JavaScript. Closures enhance code flexibility and maintainability.
 ---
 

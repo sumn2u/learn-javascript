@@ -1,9 +1,9 @@
 ---
-title: Recursive Functions in JavaScript
+chapter: 8
 description: An explanation of recursive functions in JavaScript.
 ---
 
-# Recursive Functions in JavaScript
+# Recursive Functions
 
 In JavaScript, a recursive function is a function that calls itself in order to solve a problem. Recursion is a powerful concept that can be used to solve complex problems by breaking them down into smaller, more manageable subproblems. This document provides an overview of recursive functions in JavaScript, their syntax, common use cases, and best practices.
 
