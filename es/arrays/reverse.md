@@ -1,40 +1,40 @@
 ---
 chapter: 6
 pageNumber: 59 
-description:  To add an element at the beginning of an array we can use the reverse method. It modifies the original array and return the new array length.
+description:  Para agregar un elemento al comienzo de una matriz podemos usar el método inverso. Modifica la matriz original y devuelve la nueva longitud de la matriz.
 ---
 # Reverse
 
-The `reverse` method can be used on any type of array, including arrays of strings, arrays of numbers, and arrays of objects. For example.
+El método `reverse` se puede utilizar en cualquier tipo de matriz, incluidas matrices de cadenas, matrices de números y matrices de objetos. Por ejemplo.
 
 ```javascript
-let users = [{
-  name: "John Smith",
-  age: 30
+let usuarios = [{
+  nombre: "John Smith",
+  edad: 30
 }, {
-  name: "Jane Doe",
-  age: 25
+  nombre: "Jane Doe",
+  edad: 25
 }];
 
-users.reverse();
+usuarios.reverse();
 
-console.log(users);
+console.log(usuarios);
 
-// RESULT: 
+// RESULTADO: 
 [{
-  name: "Jane Doe",
-  age: 25
+  nombre: "Jane Doe",
+  edad: 25
 }, {
-  name: "John Smith",
-  age: 30
+  nombre: "John Smith",
+  edad: 30
 }];
 ```
 
-The `reverse` method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
-Here is an example of using `reverse` of an array:
+El método `reverse` transpone los elementos del objeto de matriz que llama en su lugar, mutando la matriz y devolviendo una referencia a la matriz.
+A continuación se muestra un ejemplo del uso de `reverse` de una matriz:
 
 ```javascript
-const numbers = [1, 2, 3];
-const newLength = numbers.reverse();
-console.log(numbers); // [3, 2, 1]
+const numeros = [1, 2, 3];
+const nuevaLongitud = numeros.reverse();
+console.log(numeros); // [3, 2, 1]
 ```
