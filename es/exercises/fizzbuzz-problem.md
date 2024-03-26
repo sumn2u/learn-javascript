@@ -41,4 +41,4 @@ Buzz
 
 ## 💡 Consejos
 
-- Visite el capítulo [loops](../loops/) para entender cómo trabajan los bucles.
+- Visite el capítulo [Bucles](../loops/) para entender cómo trabajan los bucles.

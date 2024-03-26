@@ -9,7 +9,6 @@ pageNumber: 106
 ## Ejercicios
 
 En este capítulo realizaremos ejercicios para comprobar nuestro conocimiento en JavaScript. Los ejercicios que realizaremos se listan abajo:
-In this chapter we will be performing exercises to test our knowledge in JavaScript. The exercises that we will be performing are listed below:
 
 * [Console](./console.md)
 * [Multiplicación](./multiplication.md)
