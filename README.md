@@ -11,9 +11,9 @@
 
 ## Overview
 
-**This book offers a comprehensive introduction to programming and JavaScript, designed to impart fundamental knowledge in a clear and organized manner. Its content delves into foundational principles and core concepts, presented in simple language to facilitate easy comprehension. The book is thoughtfully structured, providing in-depth explanations and accompanying notes enriched with illustrative examples, thereby enhancing the reader's understanding of the subject matter.
+*This book offers a comprehensive introduction to programming and JavaScript, designed to impart fundamental knowledge in a clear and organized manner. Its content delves into foundational principles and core concepts, presented in simple language to facilitate easy comprehension. The book is thoughtfully structured, providing in-depth explanations and accompanying notes enriched with illustrative examples, thereby enhancing the reader's understanding of the subject matter.*
 
-Furthermore, the inclusion of practical exercises at the end of each section adds significant value to the learning experience, allowing readers to apply the acquired knowledge and reinforce their skills. This thoughtful combination of theoretical explanations, real-world examples, and hands-on exercises ensures a well-rounded educational approach, making the book an invaluable resource for beginners looking to grasp the essentials of programming and JavaScript in a professional and systematic manner.**
+*Furthermore, the inclusion of practical exercises at the end of each section adds significant value to the learning experience, allowing readers to apply the acquired knowledge and reinforce their skills. This thoughtful combination of theoretical explanations, real-world examples, and hands-on exercises ensures a well-rounded educational approach, making the book an invaluable resource for beginners looking to grasp the essentials of programming and JavaScript in a professional and systematic manner.*
 
 ## Table of Contents
 1. [Introduction](#introduction)
