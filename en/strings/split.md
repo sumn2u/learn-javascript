@@ -4,7 +4,7 @@ pageNumber: 36
 ---
 # Split
 
-The split() method divides a string into a list of substrings and returns them as an array.
+The `split()` method divides a string into a list of substrings and returns them as an array.
 * using the `split()` method
 * using the template literal (introduced in ES6)
 

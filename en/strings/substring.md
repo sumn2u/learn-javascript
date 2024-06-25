@@ -8,19 +8,18 @@ The `string.substring()` is an inbuilt function in JavaScript that is used to re
 
 Syntax: 
 
-string.substring(Startindex, Endindex)
+`string.substring(StartIndex, EndIndex)`
 
 # Syntax:
 
-*str.substr(start , length)
-
+* using `str.substr(start , length)`
 * using the `substr()` method
 * using the template literal (introduced in ES6)
 
-The substr() method takes in:
+The `substr()` method takes in:
 
-Parameters: Here the Startindex and Endindex describe the part of the string to be taken as a substring. Here the Endindex is optional. 
-Return value: It returns a new string that is part of the given string. JavaScript code to show the working of string.substring() function: 
+Parameters: Here the StartIndex and EndIndex describe the part of the string to be taken as a substring. Here, the EndIndex is optional. 
+Return value: It returns a new string that is part of the given string. JavaScript code to show the working of `string.substring()` function: 
 
 ```javascript
 //Example 1:
