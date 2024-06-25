@@ -9,17 +9,18 @@ description: Certainly! Let's discuss the `let` and `const` declarations in the 
 Map is a collection of keyed data items, just like an `Object`. But the main difference is that `Map` allows keys of any type.
 
 
-Methods and properties are:
+| Method/Property         | Description                                                                                        |
+| ----------------------- | -------------------------------------------------------------------------------------------------- |
+| `new Map()`             | Creates a new Map object.                                                                           |
+| `map.set(key, value)`   | Stores the `value` in the `map` object under the `key`.                                             |
+| `map.get(key)`          | Returns the `value` associated with the `key`, or `undefined` if the `key` doesn't exist.          |
+| `map.has(key)`          | Returns `true` if the `map` contains the `key`, otherwise returns `false`.                          |
+| `map.delete(key)`       | Removes the element (key/value pair) from the `map` specified by the `key`.                         |
+| `map.clear()`           | Removes all elements from the `map`.                                                                |
+| `map.size`              | Returns the number of elements (key/value pairs) in the `map`.                                       |
 
-`new Map()` – creates the map.  
-`map.set(key, value)` – stores the value by the key.   
-`map.get(key)` – returns the value by the key, undefined if key doesn’t exist in map.
-`map.has(key)` – returns true if the key exists, false otherwise.    
-`map.delete(key)` – removes the element (the key/value pair) by the key.        
-`map.clear()` – removes everything from the map.             
-`map.size` – returns the current element count.
 
-For example
+An example of `Map()` with its various methods and properties is shown below.
 ```sh
 let map = new Map();
 
@@ -41,6 +42,6 @@ The differences from a regular `Object`:
 
 * Additional convenient methods, the size property.
 
-## Conclusion
+
 Maps are a versatile and powerful data structure that provides key-value pairs for efficient data management.
 Maps are often a preferred choice over plain objects for tasks involving key-value associations, as they provide better control and performance.
