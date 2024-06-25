@@ -58,7 +58,6 @@ One of the common error handling techniques is the try...catch block, which is d
 * [try...catch](./try...-catch.md)
 * [try...catch...finally](./try...catch...finally.md)
 
-## Conclusion
 Error handling is a critical aspect of JavaScript development.
 By understanding the types of errors, and following best practices, 
 you can write more reliable and user-friendly applications.

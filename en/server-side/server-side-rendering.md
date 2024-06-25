@@ -32,7 +32,3 @@ There are also some disadvantages to using SSR:
 ## How to implement SSR?
 
 Each library has its own way of implementing SSR. For example, for React, you can use [Next.js](https://nextjs.org/) or [Gatsby](https://www.gatsbyjs.com/). For Vue, you can use [Nuxt.js](https://nuxtjs.org/). For Svelte you can use [SvelteKit](https://kit.svelte.dev/).
-
-## Conclusion
-
-In this chapter, we learned about Server Side Rendering (SSR) and how it can improve the performance of your website. We also learned about the advantages of using SSR over CSR and how to implement SSR with React, Vue, and Svelte.

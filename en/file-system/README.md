@@ -57,4 +57,4 @@ fs.writeFileSync("test.txt","mahima is good girl",() => {
 }) 
 
 ```
-In summary, Node.js provides both synchronous and asynchronous file I/O options. Asynchronous I/O is typically preferred for better performance and responsiveness, while synchronous I/O is used only when necessary and with caution, as it can block the program's execution.
+Node.js provides both synchronous and asynchronous file I/O options. Asynchronous I/O is typically preferred for better performance and responsiveness, while synchronous I/O is used only when necessary and with caution, as it can block the program's execution.

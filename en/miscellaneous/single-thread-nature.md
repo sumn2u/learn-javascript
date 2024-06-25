@@ -84,4 +84,5 @@ In this example, we demonstrate the single-threaded nature of JavaScript and how
 - Callback Hell: Excessive use of callbacks (often referred to as "callback hell") can make the code harder to read and maintain.
 - Concurrency Bottleneck: CPU-bound tasks cannot fully utilize multi-core processors because JavaScript runs in a single thread.
 
-In summary, JavaScript's single-threaded nature is a defining feature of the language. While it simplifies certain aspects of programming, it also presents challenges in terms of handling asynchronous tasks and ensuring responsive applications. Effective use of asynchronous patterns and understanding the event-driven model are essential for JavaScript developers.
+
+JavaScript's single-threaded nature is a defining feature of the language. While it simplifies certain aspects of programming, it also presents challenges in terms of handling asynchronous tasks and ensuring responsive applications. Effective use of asynchronous patterns and understanding the event-driven model are essential for JavaScript developers.

@@ -86,5 +86,4 @@ describe('myFunction', () => {
 ```
 
 
-## Conclusion
-In this chapter, we've explored the fundamentals of testing  in web development and discussed the significance of Unit testing and other testing frameworks and tools that are vital for any web developer. With consistent practice and access to the right set of tools, one can write dependable code and ensure that applications perform optimally.
+We explored the fundamentals of testing  in web development and discussed the significance of Unit testing and other testing frameworks and tools that are vital for any web developer. With consistent practice and access to the right set of tools, one can write dependable code and ensure that applications perform optimally.

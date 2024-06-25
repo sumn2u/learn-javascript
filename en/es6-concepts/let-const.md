@@ -57,4 +57,4 @@ In ES5, JavaScript primarily used the `var` keyword for variable declaration. He
 4. **Constants:**
    - ES6 (`const`): ES6 introduces the `const` keyword, allowing the creation of constants, which cannot be changed after their initial assignment.
 
-In summary, `let` and `const` in ES6 provide more predictable and controlled variable scoping compared to `var` in ES5. They help avoid common issues associated with variable hoisting and provide the flexibility to choose between mutable and immutable variables based on your needs.
+`let` and `const` in ES6 provide more predictable and controlled variable scoping compared to `var` in ES5. They help avoid common issues associated with variable hoisting and provide the flexibility to choose between mutable and immutable variables based on your needs.

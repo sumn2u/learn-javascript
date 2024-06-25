@@ -57,5 +57,4 @@ person.lang = "en";
 document.getElementById("demo").innerHTML = person.language;
 ```
 
-## Conclusion
-getters and setters in JavaScript are powerful tools that enable us to control access to object properties and provide additional functionality. Getters allow us to retrieve property values with custom logic, while setters enable us to validate and modify incoming values. By using getters and setters, we can maintain data encapsulation, enhance security, and ensure the integrity of our objects.
+`getters` and `setters` in JavaScript are powerful tools that enable us to control access to object properties and provide additional functionality. Getters allow us to retrieve property values with custom logic, while setters enable us to validate and modify incoming values. By using getters and setters, we can maintain data encapsulation, enhance security, and ensure the integrity of our objects.

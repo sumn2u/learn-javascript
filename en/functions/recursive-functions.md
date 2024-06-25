@@ -52,4 +52,4 @@ function fibonacci(n) {
 fibonacci(5); // Returns 5
 ```
 
-In conclusion, recursive functions are a valuable tool in JavaScript for solving problems that involve repetitive subtasks. When used correctly, they can lead to elegant and efficient solutions.
+Recursive functions are a valuable tool in JavaScript for solving problems that involve repetitive subtasks. When used correctly, they can lead to elegant and efficient solutions.

@@ -101,7 +101,6 @@ This section of the document elaborates on why ECMAScript is crucial for JavaScr
 
 - **Map**: `const x = new Map([ ["a", 500],["b", 300],["c", 200] ]);`
 
-## Conclusion
 
 ECMAScript is a fundamental part of web development, shaping how we create dynamic and interactive web applications. Staying informed about the latest ECMAScript features is essential for modern JavaScript development.
 ECMAScript plays a crucial role in providing a standardized foundation for JavaScript, ensuring consistency, interoperability, and continuous improvement of the language. This standardization allows developers to write JavaScript code with confidence, knowing that it will work reliably across different platforms and environments.
