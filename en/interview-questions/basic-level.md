@@ -140,19 +140,15 @@ There are many advantages of javascript. Some of them are
 - Web pages now have more functionality because of Javascript.
 - To the end-user, Javascript is quite quick.
 
-### 1.8. What is the ‘this’ keyword in JavaScript? 
+### 1.8. What is the `this` keyword in JavaScript? 
 
-**Answer:**
-
-The Keyword ‘this’ in JavaScript is used to call the current object as a constructor to assign values to object properties.
+**Answer:** The Keyword `this` in JavaScript is used to call the current object as a constructor to assign values to object properties.
 
 ## 2. Functions
 
 ### 2.1. How do you create a function in JavaScript?
 
-**Answer:**
-
-You can create a function using the `function` keyword or arrow functions (`=>`):
+**Answer:** You can create a function using the `function` keyword or arrow functions (`=>`):
 **Example**:
 
 ```js
@@ -307,23 +303,23 @@ x(); // Returns "Do something"
 
 ### 2.5. What do you mean by Self Invoking Functions in javascript?
 
-**Answer:** Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
+**Answer:** Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by `()`, it will execute automatically. A function declaration cannot be invoked by itself.
 
 Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
 
 
-### 2.6. What is the difference between exec () and test () methods in javascript?
+### 2.6. What is the difference between `exec()` and `test()` methods in javascript?
 
-**Answer:**
+**Answer:** The following points discusses the differences between `test()` and `exec()` methods.
 
-- test () and exec () are RegExp expression methods used in javascript.
+- `test()` and `exec()` are RegExp expression methods used in javascript.
 
-- We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
-- We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'
+- We'll use `exec()` to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
+- We will use a `test()` to find a string for a specific pattern. It will return the Boolean value `true` on finding the given text otherwise, it will return `false`
 
 ### 2.7.  What is the difference between Function declaration and Function expression?
 
-**Answer:**
+**Answer:** The difference between function declaration and function expression are as follows:
 
 **Function declaration**:
 <ol style="list-style-type: upper-alpha">
@@ -362,9 +358,11 @@ var a = function abc() {
 ### 2.8. What are the arrow functions in JavaScript?
 
 **Answer**: Arrow functions are a short and concise way of writing functions in JavaScript. The general syntax of an arrow function is as below:
+```js
 const helloWorld = () => {
   console.log("hello world!");
 };
+```
 
 ### 2.9. Passed by value and passed by reference :
 
@@ -372,7 +370,7 @@ const helloWorld = () => {
 - Passed By Values Are Primitive Data Types.  
 Consider the following example:
 
-Here, the a=432 is a primitive data type i.e. a number type that has an assigned value by the operator.  When the var b=a code gets executed, the value of ‘var a’ returns a new address for ‘var b’ by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
+Here, the `a=432` is a primitive data type i.e. a number type that has an assigned value by the operator.  When the `var b=a` code gets executed, the value of `var a` returns a new address for `var b` by allocating a new space in the memory, so that ‘var b’ will be operated at a new location. 
 
 Example:
 ```js
@@ -387,7 +385,7 @@ Passed_by_values_new
 
 Consider the following example:
 
-The reference of the 1st variable object i.e. ‘var obj’ is passed through the location of another variable i.e. ‘var obj2’ with the help of an assigned operator.
+The reference of the 1st variable object i.e. `var obj` is passed through the location of another variable i.e. `var obj2` with the help of an assigned operator.
 
 Example: 
 ```js
@@ -595,15 +593,11 @@ var x;
 ```
 ### 4.2. Why do we use the word “debugger” in javascript?
 
-**Answer:**
-
-The `debugger` keyword is used to create breakpoints in the code. When the browser finds the debugger keyword in the code, it stops executing the code and opens the debugging tool of the browser.
+**Answer:** The `debugger` keyword is used to create breakpoints in the code. When the browser finds the debugger keyword in the code, it stops executing the code and opens the debugging tool of the browser.
 
 ### 4.3. What is currying in JavaScript?
 
-**Answer:**
-
-Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+**Answer:** Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
 
 *Example of a curried function:*
 ``` js
@@ -646,11 +640,9 @@ As one can see in the code above, we have transformed the function multiply(a,b)
 
 ### 4.4. What are some advantages of using External JavaScript?
 
-**Answer:**
+**Answer:** External JavaScript is the JavaScript Code (script) written in a separate file with the extension.js, and then we link that file inside the `<head>` or `<body>` element of the HTML file where the code is to be placed. 
 
-External JavaScript is the JavaScript Code (script) written in a separate file with the extension.js, and then we link that file inside the <head> or <body> element of the HTML file where the code is to be placed. 
-
-Some advantages of external javascript are
+Some advantages of external javascript are:
 
 - It allows web designers and developers to collaborate on HTML and javascript files.
 - We can reuse the code.
@@ -658,28 +650,21 @@ Some advantages of external javascript are
 
 ### 4.5. What is a closure in JavaScript?
 
-**Answer:**
+**Answer:** A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
 
-A closure is a function that has access to its outer function scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
 In Short- A closure is a function that has access to variables from its outer (enclosing) function scope, even after the outer function has finished executing.
 
 ### 4.6. What is the DOM in JavaScript?
 
-**Answer:**
-
-The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+**Answer:** The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
 
 ### 4.7. What is event delegation?
 
-**Answer:**
-
-Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it. The events are handled by the callback function of the parent element.
+**Answer:** Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it. The events are handled by the callback function of the parent element.
 
 ### 4.8. How can you make an AJAX request in JavaScript?
 
-**Answer:**
-
-AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
+**Answer:** AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
 
 You can make AJAX requests using the XMLHttpRequest object or by using the fetch API. Here's an example using fetch:
   
@@ -691,25 +676,19 @@ You can make AJAX requests using the XMLHttpRequest object or by using the fetch
 ```
 ### 4.9. What is a promise in JavaScript?
 
-**Answer:**
-
-A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+**Answer:** A promise is an object that may produce a single value sometime in the future: either a resolved value or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states:  `fulfilled`, `rejected`, or `pending`. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
 ### 4.10. Why do you need a promise in JavaScript ?
 
-**Answer:**
-
-Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+**Answer:** Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
 ### 4.11. Explain equality in JavaScript ?
 
-**Answer:**
+**Answer:** JavaScript provides two types of equality operators: strict equality `(===)` and loose equality `(==)`
 
-JavaScript provides two types of equality operators: strict equality (===) and loose equality (==)
+- Strict Equality `(===)`: This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
 
-- Strict Equality (===): This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
-
-- Loose Equality (==): This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
+- Loose Equality `(==)`: This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
 
 
 ## 5. Object
@@ -717,9 +696,7 @@ JavaScript provides two types of equality operators: strict equality (===) and l
 ### 5.1. What are the possible ways to create objects in JavaScript?
 
  
-**Answer:**
-
-There are many ways to create objects in javascript as below
+**Answer:** There are many ways to create objects in javascript as below
 
 Object constructor:
 
@@ -807,26 +784,20 @@ var object = new Person("Sudheer");
 
 ### 6.1. What is a strict mode in JavaScript ?
 
-**Answer:**
-
-Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+**Answer:** Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
 
 ### 6.2. What is null value in JavaScript ?
 
-**Answer:**
-
-The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
+**Answer:** The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
 
 ```js
 var user = null;
 console.log(typeof user); //object
 ```
 
-### 6.3. What is eval in JavaScript ?
+### 6.3. What is `eval` in JavaScript ?
 
-**Answer:**
-
-The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+**Answer:** The `eval()` function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
 ```js
 console.log(eval("1 + 2")); //  3
@@ -834,41 +805,33 @@ console.log(eval("1 + 2")); //  3
 
 ### 6.4. Is JavaScript a compiled or interpreted language ?
 
-**Answer:**
+**Answer:** JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
-JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+### 6.5. difference between `exec()` and `test()` methods
 
-### 6.5. difference between exec () and test () methods
+**Answer** The differences between `exec()` and `test()` methods are as follows:
 
-**Answer**
-
--> exec():
+`exec()`:
 1) It is an expression method in JavaScript that is used to search a string with a specific pattern. 
 2) Once it has been found, the pattern will be returned directly, otherwise, it returns an “empty” result.
 
--> test ()
+`test()`:
 1) It is an expression method in JavaScript that is also used to search a string with a specific pattern or text. 
-2) Once it has been found, the pattern will return the Boolean value 'true', else it returns ‘false’. 
+2) Once it has been found, the pattern will return the Boolean value `true`, else it returns `false`. 
 
 ### 6.6. Is JavaScript a case-sensitive language ?
 
-**Answer:**
-
-Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+**Answer:** Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
 ## 7.JSON
 
 ### 7.1. What is JSON ?
 
-**Answer:**
-
-JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+**Answer:** JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
 ### 7.2. What are the syntax rules of JSON ?
 
-**Answer:** 
-
-Below are the list of syntax rules of JSON
+**Answer:**  Below are the list of syntax rules of JSON
 
 *  The data is in name/value pairs
 *  The data is separated by commas
@@ -877,9 +840,7 @@ Below are the list of syntax rules of JSON
 
 ### 7.3. What is the purpose JSON stringify ?
 
-**Answer:** 
-
-When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+**Answer:** When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using `stringify()` method.
 
 ```js
 var userJSON = { name: "John", age: 31 };
@@ -889,9 +850,7 @@ console.log(userString); //"{"name":"John","age":31}"
 
 ### 7.4. How do you parse JSON string ?
 
-**Answer:** 
-
-When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+**Answer:** When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using `parse()` method.
 
 ```js
 var userString = '{"name":"John","age":31}';
@@ -901,15 +860,11 @@ console.log(userJSON); // {name: "John", age: 31}
 
 ### 7.5. Why do you need JSON ?
 
-**Answer:** 
-
-When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+**Answer:** When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
 ### 7.6. How do you define JSON arrays ?
 
-**Answer:** 
-
-JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+**Answer:**  JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
 
 ```js
 "users":[
@@ -921,6 +876,4 @@ JSON arrays are written inside square brackets and arrays contain javascript obj
 
 ### 7.6. In JSON, what is the purpose of square brackets, and how are they used?
 
-**Answer:** 
-
-In JSON, square brackets `[ ]` are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.
+**Answer:** In JSON, square brackets `[ ]` are used to encapsulate and define arrays within JSON data structures. JSON arrays can contain a collection of values, which can be of various data types, including objects, strings, numbers, and other JSON arrays.

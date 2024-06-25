@@ -12,24 +12,31 @@ pageNumber: 182
 
 ### 1.1. What is a closure in JavaScript? Provide an example where using closures can be beneficial.
 
-**Answer:**
-
-A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.
+**Answer:** A closure in JavaScript is a function that has access to its enclosing scope's variables, even after the outer function has finished executing. This mechanism allows functions to maintain state between executions.
 
 **Example:**
 One common use of closures is to create factory functions or private variables. For instance, if we wanted to generate unique ID values for elements:
+```javascript
+function createUniqueIdGenerator() {
+  let id = 0;
+  return function() {
+    return id++;
+  };
+}
 
+const generateId = createUniqueIdGenerator();
+
+console.log(generateId()); // 0
+console.log(generateId()); // 1
+console.log(generateId()); // 2
+```
 ### 1.2. How do closures relate to variables' scope and lifetime?
 
-**Answer:**
-
-Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.
+**Answer:** Closures allow a function to access all the variables, as well as functions, that are in its lexical scope, even after the outer function has completed. This results in the variables being preserved in memory, effectively allowing for variables to have a prolonged lifetime compared to standard local variables which would typically be garbage collected after their parent function has executed.
 
 ### 1.3. Give some examples of uses of closures in javascript?
 
-**Answer:**
-
-Here are some example of closures.
+**Answer:** Here are some example of closures.
 - Module Design Pattern.
 - Currying.
 - Memoize
@@ -38,25 +45,19 @@ Here are some example of closures.
 
 ### 2.1. Explain the difference between classical inheritance and prototypal inheritance.
 
-**Answer:**
-
-Classical inheritance is a concept most often found in traditional Object-Oriented Programming languages like Java or C++, where a class can inherit properties and methods from a parent class. Prototypal inheritance, on the other hand, is unique to JavaScript. In JavaScript, each object can have another object as its prototype, and it can inherit properties from its prototype.
+**Answer:** Classical inheritance is a concept most often found in traditional Object-Oriented Programming languages like Java or C++, where a class can inherit properties and methods from a parent class. Prototypal inheritance, on the other hand, is unique to JavaScript. In JavaScript, each object can have another object as its prototype, and it can inherit properties from its prototype.
 
 The primary difference is that classical inheritance is class-based, whereas prototypal inheritance is object-based. Although ES6 introduced the `class` keyword to JavaScript, it's syntactical sugar over the existing prototypal inheritance.
 
 ### 2.2. How can you extend built-in JavaScript objects?
 
-**Answer:**
-
-To extend built-in JavaScript objects, we can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
+**Answer:** To extend built-in JavaScript objects, we can add methods or properties to their prototype. However, it's generally discouraged to modify native prototypes because it can lead to compatibility issues and unexpected behavior, especially if there are future changes to the JavaScript specification.
 
 ## 3. Asynchronous JavaScript
 
 ### 3.1. Explain the event loop in JavaScript. How does it relate to the call stack?
 
-**Answer:**
-
-The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
+**Answer:** The event loop is a fundamental concept in JavaScript and is responsible for handling the execution of multiple chunks of program over time, each run to completion. It works as a continuous loop that checks if there are tasks waiting in the message queue. If there are tasks and the main thread (call stack) is empty, it dequeues the task and executes it.
 
 The call stack, on the other hand, is a data structure that tracks the execution of functions in a program. When a function is called, it is added to the call stack, and when it finishes executing, it is removed from the stack.
 
@@ -64,9 +65,7 @@ In the context of JavaScript, the event loop continuously checks the call stack 
 
 ### 3.2. What are promises, and how do they differ from callbacks in managing asynchronous operations?
 
-**Answer:**
-
-Promises are objects representing the eventual completion (or failure) of an asynchronous operation and its resulting value. A `Promise` is in one of these states:
+**Answer:** Promises are objects representing the eventual completion (or failure) of an asynchronous operation and its resulting value. A `Promise` is in one of these states:
 
 - `pending`: initial state, neither fulfilled nor rejected.
 - `fulfilled`: meaning the promised operation has completed and the promise has a resulting value.
@@ -82,9 +81,7 @@ The key differences include:
 
 ### 3.3. Describe async/await. How does it simplify working with asynchronous code?
 
-**Answer:**
-
-`async/await` is a syntactic feature introduced in ES8 (or ES2017) to work with asynchronous code in a more synchronous-like fashion. It allows for writing asynchronous operations in a linear manner without callbacks, leading to cleaner, more readable code.
+**Answer:** `async/await` is a syntactic feature introduced in ES8 (or ES2017) to work with asynchronous code in a more synchronous-like fashion. It allows for writing asynchronous operations in a linear manner without callbacks, leading to cleaner, more readable code.
 
 The `async` keyword is used to declare an asynchronous function, which ensures that the function returns a promise. The `await` keyword is used inside an `async` function to pause the execution until the promise is resolved or rejected.
 
@@ -94,19 +91,30 @@ Using `async/await` simplifies error handling, as we can use traditional try/cat
 
 ### 4.1. Describe the functions of `map`, `reduce`, and `filter`. Provide an example of a practical use case for each.
 
-**Answer:**
+**Answer:** `map`, `reduce`, and `filter` functions are defined below.
 
 - `map`: It transforms each element of an array based on a function, returning a new array of the same length.
   **Example:** Doubling each number in an array.
-  ````javascript
+  ```javascript
   const numbers = [1, 2, 3, 4];
   const doubled = numbers.map((num) => num * 2); // [2, 4, 6, 8] ```
-  ````
+  ```
+- `reduce`: It applies a function against an accumulator and each element in the array (from left to right), reducing it to a single value..
+  **Example:** Summing all numbers in an array.
+  ```javascript
+  const numbers = [1, 2, 3, 4];
+  const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // 10
+  ```
+- `filter`: It creates a new array with elements that pass a test specified by a function.
+**Example:** Summing all numbers in an array.
+  ```javascript
+  const numbers = [1, 2, 3, 4, 5, 6];
+  const evenNumbers = numbers.filter((num) => num % 2 === 0); // [2, 4, 6]
+  ```
 
 ### 4.2. What are some limitations or pitfalls when using arrow functions?
 
-**Answer:**
-Arrow functions introduce a concise way to write functions in JavaScript, but they come with certain limitations:
+**Answer:** Arrow functions introduce a concise way to write functions in JavaScript, but they come with certain limitations:
 
 1. **No `this` Binding**: Arrow functions do not bind their own `this`. They inherit the `this` binding of the surrounding scope. This can be problematic, especially when using them as methods in objects or as event handlers.
 
@@ -191,9 +199,7 @@ Template literals in ES6 enhance string manipulation by allowing developers to c
 
 ### 7.4. Can I redeclare let and const variables ?
 
-**Answer:**
-
-No, you cannot redeclare let and const variables. If you do, it throws below error.
+**Answer:** No, you cannot redeclare let and const variables. If you do, it throws below error.
 
 ```js
 Uncaught SyntaxError: Identifier 'someVariable' has already been declared
@@ -228,9 +234,7 @@ alert(name);
 
 ### 7.5. Is const variable makes the value immutable ?
 
-**Answer:**
-
-No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+**Answer:** No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
 
 ```js
 const userList = [];
@@ -240,9 +244,7 @@ console.log(userList); // ['John']
 
 ### 7.6. What are default parameters ?
 
-**Answer:**
-
-In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+**Answer:** In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
 
 ```js
 //ES5
@@ -268,9 +270,7 @@ console.log(calculateArea()); //300
 
 ### 7.7. What are template literals ?
 
-**Answer:**
-
-Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,
+**Answer:** Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,
 
 ```js
 var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
@@ -286,9 +286,7 @@ Note: You can use multi-line strings and string interpolation features with temp
 
 ### 7.8. How do you write multi-line strings in template literals ?
 
-**Answer:**
-
-In ES5, you would have to use newline escape characters('\n') and concatenation symbols(+) in order to get multi-line strings.
+**Answer:** In ES5, you would have to use newline escape characters('\n') and concatenation symbols(+) in order to get multi-line strings.
 
 ```js
 console.log("This is string sentence 1\n" + "This is string sentence 2");
@@ -302,9 +300,7 @@ console.log(`This is string sentence 'This is string sentence 2`);
 
 ### 7.9. What are nesting templates ?
 
-**Answer:**
-
-The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+**Answer:** The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
 
 ```js
 const iconStyles = `icon ${
@@ -328,9 +324,7 @@ const iconStyles = `icon ${
 
 ### 7.10. What are tagged templates ?
 
-**Answer:**
-
-Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+**Answer:** Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
 
 ```js
 var user1 = "John";
@@ -367,9 +361,7 @@ console.log(output2); // Mr/Ms. Kane is a/an junior developer in JavaScript
 
 ### 7.11. What are raw strings ?
 
-**Answer:**
-
-ES6 provides a raw strings feature using the String.raw() method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+**Answer:** ES6 provides a raw strings feature using the String.raw() method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
 ```js
  var calculationString = String.raw`The sum of numbers is \n${
@@ -399,9 +391,7 @@ function tag(strings) {
 
 ### 8.1. How does functional programming differ from imperative programming in JavaScript?
 
-**Answer:**
-
-Functional programming and imperative programming are two predominant programming paradigms.
+**Answer:** Functional programming and imperative programming are two predominant programming paradigms.
 
 - **Imperative Programming**: This paradigm is about telling the computer "how" to do something and relies on statements that change a programs state. In essence, it focuses on describing the steps to achieve a particular task. This often involves loops, conditionals, and statements that modify variables.
 
@@ -412,7 +402,7 @@ Functional programming and imperative programming are two predominant programmin
   }```
   ````
 
-### Functional Programming (FP)
+#### Functional Programming (FP)
 
 FP is more about instructing the computer "what" to achieve, rather than detailing "how" to achieve it. It treats computational tasks as evaluations of mathematical functions and steers clear of mutable data and state alterations. In the context of JavaScript and most FP languages:
 
@@ -424,9 +414,7 @@ FP is more about instructing the computer "what" to achieve, rather than detaili
 
 ### 8.2. Explain first-class functions and their importance in functional programming.
 
-**Answer:**
-
-In JavaScript and many other programming languages, functions are considered as "first-class citizens." This means that functions can be:
+**Answer:** In JavaScript and many other programming languages, functions are considered as "first-class citizens." This means that functions can be:
 
 - Assigned to variables.
 - Passed as arguments to other functions.
@@ -459,15 +447,11 @@ const functions = [greet, double];
 
 ### 8.3. What is Execution Context and Lexical Environment?
 
-**Answer:**
-
-Generally, a function has its imaginary container or we can say some sort of context API. It provides the function with 3 things: 
+**Answer:** Generally, a function has its imaginary container or we can say some sort of context API. It provides the function with 3 things: 
 - Variables declared in the function
 - The functions defined in the function
 - Lexical environment
 This is known as Execution Context of a function.
-
-AND
 
 The lexical environment is a type of information source which provides the parent function with the scope of variables it can use. For ex:
 
@@ -494,9 +478,7 @@ Here, the lexical environment will have the information that parent function can
 
 ### 9.1 what are the key differences between Local Storage and Session Storage?
 
-**Answer:**
-
-Web Storage is a web API that provides two mechanisms for storing data in a web browser: Local Storage and Session Storage. The key differences are:
+**Answer:** Web Storage is a web API that provides two mechanisms for storing data in a web browser: Local Storage and Session Storage. The key differences are:
 
 * Lifetime: Local Storage data persists even after the browser is closed, while Session Storage data is only available for the duration of the page session.
 * Scope: Local Storage data is accessible across multiple windows and tabs from the same origin, whereas Session Storage data is limited to the current page or tab.
@@ -504,9 +486,7 @@ Web Storage is a web API that provides two mechanisms for storing data in a web 
 
 ### 9.2 How do you store data in Local Storage and Session Storage using JavaScript?
 
-**Answer:** 
-
-You can use the localStorage and sessionStorage objects to store data. Here's an example of storing data in Local Storage:
+**Answer:** You can use the localStorage and sessionStorage objects to store data. Here's an example of storing data in Local Storage:
 
 `localStorage.setItem('username', 'JohnDoe');`
 
@@ -515,9 +495,7 @@ To store data in Session Storage, replace localStorage with `sessionStorage.`
 
 ### 9.3 How can you clear or remove data from Local Storage and Session Storage?
 
-**Answer:**
-
-You can remove an item from storage using the removeItem method. To clear all items, you can use the clear method. For example:
+**Answer:** You can remove an item from storage using the removeItem method. To clear all items, you can use the clear method. For example:
 
 Remove an item : 
 `localStorage.removeItem('username');`
@@ -527,9 +505,7 @@ Clear all items :
 
 ### 9.4 Explain the security concerns associated with Web Storage.
 
-**Answer:**
-
-Web Storage is domain-specific, meaning that data is accessible only from the same domain that stored it. However, there are security concerns related to storing sensitive information in Web Storage. Data is not encrypted, and it's vulnerable to cross-site scripting (XSS) attacks, where malicious scripts can access and modify the stored data.
+**Answer:** Web Storage is domain-specific, meaning that data is accessible only from the same domain that stored it. However, there are security concerns related to storing sensitive information in Web Storage. Data is not encrypted, and it's vulnerable to cross-site scripting (XSS) attacks, where malicious scripts can access and modify the stored data.
 
 ### B. IndexDB
 
@@ -537,18 +513,14 @@ IndexedDB can be thought of as a “localStorage on steroids”. It’s a simple
 
 ### 9.5 What is IndexDB, and how does it differ from Web Storage (Local Storage and Session Storage)?
 
-**Answer:**
-
-IndexDB is a low-level JavaScript-based database for storing large amounts of structured data. It differs from Web Storage in several ways:
+**Answer:** IndexDB is a low-level JavaScript-based database for storing large amounts of structured data. It differs from Web Storage in several ways:
 * Data Structure: IndexedDB stores structured data, while Web Storage stores key-value pairs.
 * Storage Limit: IndexedDB typically offers a larger storage limit (often in megabytes) compared to the limited storage of Web Storage.
 * API Complexity: IndexedDB has a more complex API, requiring developers to define a database schema and work with transactions.
 
 ### 9.6 How do you open a database and create an object store in IndexedDB using JavaScript?
 
-**Answer:**
-
-You can open a database and create an object store like this:
+**Answer:** You can open a database and create an object store like this:
 
 Open a database (or create if it doesn't exist) :  
 
@@ -566,27 +538,19 @@ request.onupgradeneeded = (event) => {
 
 ### 10.1. What is tree shaking ?
 
-**Answer:**
-
-Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler rollup.
+**Answer:** Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler rollup.
 
 ### 10.2. What is the need of tree shaking ?
 
-**Answer:**
-
-Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
+**Answer:** Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
 
 ### 10.3. Explain the role of the static structure of ES2015 module syntax in tree shaking. How does tree shaking leverage this structure to eliminate dead code?
 
-**Answer:** 
-
-Tree shaking relies on the static structure of ES2015 module syntax, which means that the import and export statements have a clear and static structure at compile time. During the build process, the bundler (e.g., Rollup or Webpack) analyzes the import statements to determine which modules are being used and which are not. It then eliminates the unused modules from the final bundle, resulting in smaller and more efficient code.
+**Answer:** Tree shaking relies on the static structure of ES2015 module syntax, which means that the import and export statements have a clear and static structure at compile time. During the build process, the bundler (e.g., Rollup or Webpack) analyzes the import statements to determine which modules are being used and which are not. It then eliminates the unused modules from the final bundle, resulting in smaller and more efficient code.
 
 ### 10.4. What steps can you take to optimize tree shaking in a complex JavaScript project with multiple dependencies and deep module hierarchies?
 
-**Answer:** 
-
-To optimize tree shaking in a complex project:
+**Answer:** To optimize tree shaking in a complex project:
 
 - Ensure all dependencies use ES2015 module syntax.
 - Configure your bundler to perform tree shaking.
