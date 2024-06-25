@@ -37,23 +37,23 @@ Managing third-party library errors.
 
 Effective error handling offers several advantages:
 
--Prevents script termination.
--Allows for controlled handling of errors.
--Provides detailed error information for debugging.
--Enhances code reliability and user experience.
+- Prevents script termination.
+- Allows for controlled handling of errors.
+- Provides detailed error information for debugging.
+- Enhances code reliability and user experience.
 
 
 ## Best Practices
 
 To make the most of error handling, consider these best practices:
 
--Use specific error types whenever possible.
--Log errors for debugging purposes.
--Provide clear and user-friendly error messages.
--Handle errors as close to their source as possible.
+- Use specific error types whenever possible.
+- Log errors for debugging purposes.
+- Provide clear and user-friendly error messages.
+- Handle errors as close to their source as possible.
 
 ## try...catch Error Handling:
-One of the common error handling techniques is the try...catch block, which is described in the following sections.
+One of the common error handling techniques is the `try...catch` block, which is described in the following sections.
 
 * [try...catch](./try...-catch.md)
 * [try...catch...finally](./try...catch...finally.md)

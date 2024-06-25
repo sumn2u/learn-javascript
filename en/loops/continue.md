@@ -1,9 +1,9 @@
 ---
-title: Continue Statement in JavaScript
+title: Continue
 description: An explanation of the continue statement in JavaScript with an example.
 ---
 
-# Continue Statement in JavaScript
+# Continue 
 
 The `continue` statement in JavaScript is a control flow statement used to skip the current iteration of a loop and continue with the next iteration. It allows you to bypass specific code within a loop under certain conditions. This document provides an overview of the `continue` statement in JavaScript, its syntax, common use cases, and best practices.
 

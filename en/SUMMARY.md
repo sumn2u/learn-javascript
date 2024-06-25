@@ -45,6 +45,8 @@
   - [For](loops/for.md)
   - [While](loops/while.md)
   - [Do...While](loops/dowhile.md)
+  - [Continue](loops/continue.md)
+  - [Break](loops/break.md)
 - [Functions](functions/README.md)
   - [Higher Order Functions](functions/higher-order.md)
   - [Recursive Functions](functions/recursive-functions.md)
