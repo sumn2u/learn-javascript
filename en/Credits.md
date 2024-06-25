@@ -21,5 +21,7 @@ chapter:
 
 ### Contributors
 ---
-![Contributors](../.gitbook/assets/contributors.png)
 
+<a href="https://github.com/sumn2u/learn-javascript/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sumn2u/learn-javascript" />
+</a>

@@ -114,7 +114,9 @@ Contributions to this project are welcome. If you want to contribute, follow the
 ## Contributors
 We would like to thank the open-source community for their valuable contributions to this project
 
-[![](https://contributors-img.web.app/image?repo=sumn2u/learn-javascript)](https://github.com/sumn2u/learn-javascript/graphs/contributors)
+<a href="https://github.com/sumn2u/learn-javascript/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sumn2u/learn-javascript" />
+</a>
 
 
 
