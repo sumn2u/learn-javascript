@@ -33,12 +33,13 @@ Some of the common HTML events are mentioned here.
 
 | Event         | Description                                               |
 | ------------- | --------------------------------------------------------- |
-| `onchange`    | When the user changes or modifies the value of form input |
 | `onclick`     | When the user clicks on the element                       |
-| `onmouseover` | When cursor of the mouse comes over the element           |
-| `onmouseout`  | When cursor of the mouse comes leaves the element         |
+| `onchange`    | When the user changes or modifies the value of form input |
 | `onkeydown`   | When the user press and then releases the key             |
-| `onload`      | When the browser has finished the loading                 |
+| `onload`      | When the browser has finished the loading                |
+| `onmouseout`  | When cursor of the mouse leaves the element               |
+| `onmouseover` | When cursor of the mouse comes over the element           |
+
 
 It is common for handlers registered on nodes with children to also receive events from the children. For example, if a button inside a paragraph is clicked, handlers registered on the paragraph will also receive the click event. In case of the presence of handlers in both, the one at the bottom gets to go first. The event is said to _propagate_ outward, from the initiating node to its parent node and on the root of the document.
 

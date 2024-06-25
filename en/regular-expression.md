@@ -199,12 +199,12 @@ Properties and methods supported by RegEx are listed below.
 | Name          | Description                                                                        |
 | ------------- | ---------------------------------------------------------------------------------- |
 | `constructor` | Returns function that created RegExp object's protype                              |
+| `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
 | `global`      | Checks if the `g` modifier is set                                                  |
 | `ignoreCase`  | Checks if the `i` modifier is set                                                 |
 | `lastIndex`   | Specifies the index at which to start the next match                               |
 | `multiline`   | Checks if the m modifier is set                                                   |
 | `source`      | Returns the text of the string                                                    |
-| `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
 | `test()`      | Test for the match and returns the `true` or `false`                               |
 | `toString()`  | Returns the string value of the regular exression                                  |
 

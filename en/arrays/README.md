@@ -46,30 +46,31 @@ Arrays are a special type of object.  One can have [objects](../objects/) in an 
 
 | Name              | Description                                                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `concat()`        | Returns two or more combined arrays                                                                                                               |
-| `join()`          | Joins all elements in an array into a string                                                                                                      |
-| `push()`          | Adds one or more elements at the end of the array and returns the length                                                                          |
-| `pop()`           | Removes the last element of an array and returns that element                                                                                     |
-| `shift()`         | Removes the first element of an array and returns that element                                                                                    |
-| `unshift()`       | Adds one or more elements at the front of an array and returns the length                                                                         |
-| `slice()`         | Extracts the section of an array and returns the new array                                                                                        |
 | `at()`            | Returns element at the specified index or `undefined`                                                                                             |
-| `splice()`        | Removes elements from an array and (optionally) replaces them, and returns the array                                                              |
-| `reverse()`       | Transposes the elements of an array and returns a reference to an array                                                                           |
-| `flat()`          | Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth                                        |
-| `sort()`          | Sorts the elements of an array in place, and returns a reference to the array                                                                     |
-| `indexOf()`       | Returns the index of the first match of the search element                                                                                        |
-| `lastIndexOf()`   | Returns the index of the last match of the search element                                                                                         |
-| `forEach()`       | Executes a callback in each element of an array and returns undefined                                                                             |
-| `map()`           | Returns a new array with a return value from executing `callback` on every array item.                                                            |
-| `flatMap()`       | Runs `map()` followed by `flat()` of depth 1                                                                                                      |
+| `concat()`        | Returns two or more combined arrays                                                                                                               |
+| `every()`         | Returns `true` if `callback` returns `true` for every item in the array                                                                           |
 | `filter()`        | Returns a new array containing the items for which `callback` returned `true`                                                                     |
 | `find()`          | Returns the first item for which `callback` returned `true`                                                                                       |
-| `findLast()`      | Returns the last item for which `callback` returned `true`                                                                                        |
 | `findIndex()`     | Returns the index of the first item for which `callback` returned `true`                                                                          |
+| `findLast()`      | Returns the last item for which `callback` returned `true`                                                                                        |
 | `findLastIndex()` | Returns the index of the last item for which `callback` returned `true`                                                                           |
-| `every()`         | Returns `true` if `callback` returns `true` for every item in the array                                                                           |
-| `some()`          | Returns `true` if `callback` returns `true` for at least one item in the array                                                                    |
+| `flat()`          | Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth                                        |
+| `flatMap()`       | Runs `map()` followed by `flat()` of depth 1                                                                                                      |
+| `forEach()`       | Executes a callback in each element of an array and returns undefined                                                                             |
+| `indexOf()`       | Returns the index of the first match of the search element                                                                                        |
+| `join()`          | Joins all elements in an array into a string                                                                                                      |
+| `lastIndexOf()`   | Returns the index of the last match of the search element                                                                                         |
+| `map()`           | Returns a new array with a return value from executing `callback` on every array item.                                                            |
+| `pop()`           | Removes the last element of an array and returns that element                                                                                     |
+| `push()`          | Adds one or more elements at the end of the array and returns the length                                                                          |
 | `reduce()`        | Uses `callback(accumulator, currentValue, currentIndex, array)` for reducing purpose and returns the final value returned by `callback` function  |
-| `reduceRight()`   | Works similarly lie `reduce()` but starts with the last element                                                                                   |
+| `reduceRight()`   | Works similarly like `reduce()` but starts with the last element                                                                                   |
+| `reverse()`       | Transposes the elements of an array and returns a reference to an array                                                                           |
+| `shift()`         | Removes the first element of an array and returns that element                                                                                    |
+| `slice()`         | Extracts the section of an array and returns the new array                                                                                        |
+| `some()`          | Returns `true` if `callback` returns `true` for at least one item in the array                                                                    |
+| `sort()`          | Sorts the elements of an array in place, and returns a reference to the array                                                                     |
+| `splice()`        | Removes elements from an array and (optionally) replaces them, and returns the array                                                              |
+| `unshift()`       | Adds one or more elements at the front of an array and returns the length                                                                         |
+
 
