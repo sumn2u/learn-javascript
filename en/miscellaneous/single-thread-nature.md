@@ -75,14 +75,14 @@ In this example, we demonstrate the single-threaded nature of JavaScript and how
 
 ### Benefits:
 
-- Simplicity: Single-threaded execution simplifies the programming model and reduces the risk of complex concurrency-related bugs.
-- Predictability: The single-threaded nature makes it easier to reason about the order of execution and the state of your program.
+- **Simplicity:** Single-threaded execution simplifies the programming model and reduces the risk of complex concurrency-related bugs.
+- **Predictability:** The single-threaded nature makes it easier to reason about the order of execution and the state of your program.
 
 ### Challenges:
 
-- Blocking Operations: Long-running operations can potentially block the main thread, leading to a poor user experience, especially in web applications.
-- Callback Hell: Excessive use of callbacks (often referred to as "callback hell") can make the code harder to read and maintain.
-- Concurrency Bottleneck: CPU-bound tasks cannot fully utilize multi-core processors because JavaScript runs in a single thread.
+- **Blocking Operations:** Long-running operations can potentially block the main thread, leading to a poor user experience, especially in web applications.
+- **Callback Hell:** Excessive use of callbacks (often referred to as "callback hell") can make the code harder to read and maintain.
+- **Concurrency Bottleneck:** CPU-bound tasks cannot fully utilize multi-core processors because JavaScript runs in a single thread.
 
 
 JavaScript's single-threaded nature is a defining feature of the language. While it simplifies certain aspects of programming, it also presents challenges in terms of handling asynchronous tasks and ensuring responsive applications. Effective use of asynchronous patterns and understanding the event-driven model are essential for JavaScript developers.

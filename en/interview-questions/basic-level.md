@@ -395,9 +395,9 @@ var obj2 = obj;
 
 # 3. Data Types and Operator
 
-### 3.1. What are the different data types present in javascript?
+### 3.1. What are the different data types present in JavaScript?
 
-**Answer:**
+**Answer:** The different data types present in JavaScript are as follows:
 
 1. **Primitive types**
 
