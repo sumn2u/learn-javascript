@@ -32,4 +32,8 @@ In order to avoid the if-else hassle, simple logical comparisons can be utilised
 let topper = marks > 85 ? "YES" : "NO";
 ```
 
-In the above example, `?` is a logical operator. The code says that if the value of marks is greater than 85 i.e. `marks > 85` , then `topper = YES` ; otherwise `topper = NO` . Basically, if the comparison condition proves true, the first argument is accessed and if the comparison condition is false, the second argument is accessed.
+In the above example, `?` is a logical operator. The code says that if the value of marks is greater than 85 i.e. `marks > 85` , then `topper = YES` ; otherwise `topper = NO` . Basically, if the comparison condition proves true, the first argument is accessed and if the comparison condition is false, the second argument is accessed. This shorthand operator is also known as the `ternary operator` as it takes three operands.
+
+```javascript
+condition ? expression1 : expression2
+```
