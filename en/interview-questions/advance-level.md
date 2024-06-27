@@ -270,7 +270,7 @@ console.log(calculateArea()); //300
 
 ### 7.7. What are template literals ?
 
-**Answer:** Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,
+**Answer:** Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick *(`)* character instead of double or single quotes. In ES6, this feature enables using dynamic expressions as below,
 
 ```js
 var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
@@ -286,7 +286,7 @@ Note: You can use multi-line strings and string interpolation features with temp
 
 ### 7.8. How do you write multi-line strings in template literals ?
 
-**Answer:** In ES5, you would have to use newline escape characters('\n') and concatenation symbols(+) in order to get multi-line strings.
+**Answer:** In ES5, you would have to use newline escape characters `('\n')` and concatenation symbols `(+)` in order to get multi-line strings.
 
 ```js
 console.log("This is string sentence 1\n" + "This is string sentence 2");
@@ -300,7 +300,7 @@ console.log(`This is string sentence 'This is string sentence 2`);
 
 ### 7.9. What are nesting templates ?
 
-**Answer:** The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+**Answer:** The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder `${ }` within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type:
 
 ```js
 const iconStyles = `icon ${
@@ -361,7 +361,7 @@ console.log(output2); // Mr/Ms. Kane is a/an junior developer in JavaScript
 
 ### 7.11. What are raw strings ?
 
-**Answer:** ES6 provides a raw strings feature using the String.raw() method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+**Answer:** ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
 ```js
  var calculationString = String.raw`The sum of numbers is \n${

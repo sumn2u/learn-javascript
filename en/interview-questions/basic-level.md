@@ -78,7 +78,7 @@ console.log(x);
 let num = 15;
 console.log(num.split(""));
 ```
-4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block
+4. **Evaluation Error** - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the `eval()` backward function is used, as shown in the following code block
 
 ```js
 try{
@@ -166,7 +166,9 @@ const myArrowFunction = () => {
 **Answer:**
 A callback is a function that will be executed after another function gets executed. In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function, and can be used as a property of an object.
 
-Functions that are used as an argument to another function are called callback functions. **Example**:
+Functions that are used as an argument to another function are called callback functions.
+
+**Example**:
 
 ```js
 function divideByHalf(sum) {
@@ -597,7 +599,7 @@ var x;
 
 ### 4.3. What is currying in JavaScript?
 
-**Answer:** Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+**Answer:** Currying is an advanced technique to transform a function of arguments `n`, to `n` functions of one or fewer arguments.
 
 *Example of a curried function:*
 ``` js
@@ -636,11 +638,11 @@ curriedMultiply(4)(3); // Also returns 12
 ```
 
 
-As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply , which takes in one parameter at a time.
+As one can see in the code above, we have transformed the `function multiply(a,b)` to a function `curriedMultiply`, which takes in one parameter at a time.
 
 ### 4.4. What are some advantages of using External JavaScript?
 
-**Answer:** External JavaScript is the JavaScript Code (script) written in a separate file with the extension.js, and then we link that file inside the `<head>` or `<body>` element of the HTML file where the code is to be placed. 
+**Answer:** External JavaScript is the JavaScript Code (script) written in a separate file with the `extension.js`, and then we link that file inside the `<head>` or `<body>` element of the HTML file where the code is to be placed. 
 
 Some advantages of external javascript are:
 
@@ -664,7 +666,7 @@ In Short- A closure is a function that has access to variables from its outer (e
 
 ### 4.8. How can you make an AJAX request in JavaScript?
 
-**Answer:** AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
+**Answer:** [AJAX](../miscellaneous/api-ajax.md) stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications. With AJAX, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
 
 You can make AJAX requests using the XMLHttpRequest object or by using the fetch API. Here's an example using fetch:
   
@@ -686,7 +688,7 @@ You can make AJAX requests using the XMLHttpRequest object or by using the fetch
 
 **Answer:** JavaScript provides two types of equality operators: strict equality `(===)` and loose equality `(==)`
 
-- Strict Equality `(===)`: This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is +0 and the other is -0
+- Strict Equality `(===)`: This operator compares two values without performing any type conversion. If the values have different types, they are considered unequal. If the values have the same type, are not numbers, and have the same value, they are considered equal. For numbers, they are considered equal if they are both not NaN and have the same value, or if one is `+0` and the other is `-0`.
 
 - Loose Equality `(==)`: This operator performs type conversion when comparing the operands. If the operands have the same type, they are compared in the same way as the strict equality operator. If the operands have different types, JavaScript attempts to convert them to a common type and then compare them. The rules for type conversion can sometimes lead to unexpected results, so it's generally recommended to use the strict equality operator to avoid potential issues
 

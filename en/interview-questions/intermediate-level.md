@@ -16,11 +16,11 @@ pageNumber: 175
 
 **Answer:** Various looping structures are used in JavaScript. Some of them are as follows:
 
-**While loop**: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+**While loop**: A [while](../loops/while.md) loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
 
-**For loop**: A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+**For loop**: A [for](../loops/for.md) loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
 
-**Do while**: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+**Do while**: A [do-while](../loops/dowhile.md) loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
 
 ### 1.3. How does the break statement work in a loop?
 
@@ -38,17 +38,17 @@ pageNumber: 175
 
 ### 2.2. What are the advantages of employing a Switch statement?
 
-**Answer:** A switch statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.
+**Answer:** A [switch](../conditional/switch.md) statement can replace multiple checks, and it is more descriptive and easier to read. Switch statements improve code readability, provide better performance, simplify complex conditionals, enhance maintainability, and support cleaner syntax.
 
 ### 2.3. Is the order of case statements important in a switch statement?
 
-**Answer:**The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.
+**Answer:** The order of case statements is important in a switch statement, especially when employing fall-through behavior. Cases are evaluated sequentially, so a matching case found earlier will prevent subsequent cases from being tested, affecting execution and performance.
 
 ## 3. JavaScript cookies
 
 ### 3.1. What are JavaScript Cookies ?
 
-**Answer:** Cookies are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.
+**Answer:** [Cookies](../browser-object-model-bom/cookies.md) are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.
 
 ### 3.2.  How to create a cookie using JavaScript?
 
