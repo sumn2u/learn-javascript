@@ -5,7 +5,7 @@ description: In programming, errors can occur while writing code. It could be du
 ---
 # Debugging
 
-In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.
+In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called *code debugging*.
 
 Fortunately, most modern browsers come with built-in debuggers. These debuggers can be switched on and off, forcing errors to be reported. It is also possible to set up breakpoints during the execution of code to stop execution and examine variables. For this one has to open a debugging window and place the `debugger` keyword in the JavaScript code. The code execution is stopped in each breakpoint, allowing developers to examine the JavaScript values and, resume the execution of code.
 
@@ -31,12 +31,13 @@ Modern browsers come equipped with powerful developer tools that aid in debuggin
 ## Using Breakpoints
 
 Modern browsers offer developer tools with debugging capabilities.
-Set breakpoints to pause code execution and inspect variables and call stacks.
-Step through code to understand its flow.
-Browser Developer Tools
+Setting breakpoints pauses code execution and helps to inspect variables and call stacks.
+
+
+### Browser Developer Tools
 
 Browsers provide a set of developer tools that allow you to inspect HTML, CSS, and JavaScript.
-You can access them by right-clicking on a web page and selecting "Inspect" or by pressing `F12` or `Ctrl+Shift+I`.
+We can access them by right-clicking on a web page and selecting "Inspect" or by pressing `F12` or `Ctrl+Shift+I`.
 Key features include:
 
 **Console:** View and interact with console output.
@@ -48,5 +49,4 @@ Key features include:
 **Network:** Monitor network requests and responses.
 Using debugger Statement
 
-Insert the debugger statement in your code to create breakpoints programmatically.
-When the code encounters debugger, it will pause execution and open the browser's developer tools.
+We can insert the debugger statement in the code to create breakpoints programmatically. When the code encounters debugger, it will pause execution and open the browser's developer tools.

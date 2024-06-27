@@ -25,7 +25,7 @@ function recursiveFunction(params) {
 Common Use Cases
 Recursive functions are often used to solve problems that can be divided into smaller, similar subproblems. Here are some common use cases:
 
-1. Calculating Factorials:
+**Calculating Factorials**:
 
 A recursive function can be used to calculate the factorial of a number.
 
@@ -40,7 +40,7 @@ function factorial(n) {
 
 factorial(5); // Returns 120
 ```
-2. Fibonacci Sequence:
+**Fibonacci Sequence**:
 The Fibonacci sequence can be calculated using recursion.
 
 ```javascript

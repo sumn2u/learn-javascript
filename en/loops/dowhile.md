@@ -5,7 +5,7 @@ description: The do...while statement creates a loop that executes specified blo
 ---
 # Do...While
 
-The do...while statement creates a loop that executes specified bloc statement until the test condition evaluates to be false. The condition is evaluated after executing the block. The syntax for do... while is
+The `do...while` statement creates a loop that executes specified bloc statement until the test condition evaluates to be false. The condition is evaluated after executing the block. The syntax for `do... while` is
 
 ```javascript
 do {

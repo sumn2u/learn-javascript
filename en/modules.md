@@ -12,9 +12,9 @@ In the real world, a program grows organically to cope with the needs of new fun
 
 _Modules_ come to avoid these problems. A `module` specifies which pieces of code it depends on, along with what functionality it provides for other modules to use. Modules that are dependent on another module are called _dependencies_.  Various module libraries are there to organize code into modules and load it on demand.
 
-* AMD - one of the oldest module systems, initially used by [require.js](https://requirejs.org/).
-* CommonJS - module system created for Node.js server.
-* UMD - module system that is compatible with AMD and CommonJS.
+* **AMD** - one of the oldest module systems, initially used by [require.js](https://requirejs.org/).
+* **CommonJS** - module system created for Node.js server.
+* **UMD** - module system that is compatible with AMD and CommonJS.
 
 Modules can load each other, and use special directives `import` and `export` to interchange functionality, and call functions of each other.
 
@@ -75,4 +75,4 @@ import { name, age } from "./person.js"; // named export import
 import message from "./message.js"; // default export import
 ```
 
-While assigning modules, we should avoid _circular dependency_. Circular dependency is a situation where module A depends on B, and B  also depends on A directly or indirectly.&#x20;
+While assigning modules, we should avoid _circular dependency_. Circular dependency is a situation where module `A` depends on `B`, and `B`  also depends on `A` directly or indirectly.

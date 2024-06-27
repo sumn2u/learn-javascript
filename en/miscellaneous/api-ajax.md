@@ -159,11 +159,7 @@ xhr.send();
 
 When you open the HTML file in a web browser, it will display the weather information for the specified location (New York in this case). Make sure to replace `'YOUR_API_KEY'` with your actual OpenWeatherMap API key.
 
-This example demonstrates how to fetch weather data from the OpenWeatherMap API using AJAX and display it on a simple web page.
-
-Remember to host your HTML and JavaScript files on a web server if you plan to access the API from a live website.
-
-That's it! You've successfully fetched and displayed weather data using the OpenWeatherMap API and AJAX.
+This example demonstrates how to fetch weather data from the OpenWeatherMap API using AJAX and display it on a simple web page. Remember to host your HTML and JavaScript files on a web server if you plan to access the API from a live website. That's it! You've successfully fetched and displayed weather data using the OpenWeatherMap API and AJAX.
 
 
 APIs play a crucial role in modern software development by enabling applications to collaborate and share data effectively. Understanding how to use APIs and integrate them into your projects is fundamental for building feature-rich and interconnected software.

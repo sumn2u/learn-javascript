@@ -16,17 +16,11 @@ A factory function is just a function that creates an object and returns it. It 
 
 ### 1.1. Components of the Factory Method
 
-*Creator*
+*Creator*: This is the method implemented in the Factory that creates new products. 
 
-This is the method implemented in the Factory that creates new products. 
+*Abstract Product*: An interface for the product being created.
 
-*Abstract Product*
-
-An interface for the product being created.
-
-*Concrete Product*
-
-This is the actual object being created. 
+*Concrete Product*: This is the actual object being created. 
 
 ### 1.2. Benefits of the Factory Method
 

@@ -5,15 +5,15 @@ description: Linked List is a linear data structure used to store a collection o
 ---
 # Linked List
 
-It is a common data structure found in all programming languages. A Linked List is very similar to a normal array in Javascript, it just acts a little bit differently.
+It is a common data structure found in all programming languages. A linked list is very similar to a normal array in Javascript, it just acts a little bit differently.
 
-Here each element in the list is a separate object containing a link or a pointer to the next. There is no built-in method or function for Linked Lists in Javascript so one has to implement it. An example of a linked list is shown below.&#x20;
+Here each element in the list is a separate object containing a link or a pointer to the next. There is no built-in method or function for linked lists in Javascript so one has to implement it. An example of a linked list is shown below.&#x20;
 
 ```
 ["one", "two", "three", "four"]
 ```
 
-**Types of Linked Lists**
+### Types of Linked Lists
 
 There are three different types of linked lists:
 

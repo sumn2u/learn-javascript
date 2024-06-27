@@ -24,5 +24,5 @@ console.log(Car.hello(myCar));
 ```
 
 {% hint style="info" %}
-One can access the static method or property of another static method of the same class using `this` keyword.  &#x20;
+One can access the static method or property of another static method of the same class using `this` keyword.
 {% endhint %}

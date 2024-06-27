@@ -18,7 +18,7 @@ myObject.key = "another value";
 // myObject points to the same object.
 ```
 
-You can add, modify, or delete properties of an object using the dot notation or the square bracket notation.
+You can **add**, **modify**, or **delete** properties of an object using the dot notation or the square bracket notation.
 
 ```javascript
 let object = {};

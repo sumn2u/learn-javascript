@@ -13,7 +13,7 @@ while (condition) {
 }
 ```
 
-For example, the loop in this example will repetitively execute its block of code as long as the variable i is less than 5:
+For example, the loop in this example will repetitively execute its block of code as long as the variable `i` is less than `5`:
 
 ```javascript
 var i = 0,

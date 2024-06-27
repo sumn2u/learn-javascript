@@ -39,12 +39,12 @@ console.log(originalJSON);
 
 The following data types are supported by JSON.
 
-* string
-* number
-* array
-* boolean
-* object with valid JSON values
-* `null`
+* [string](./strings/README.md)
+* [number](./numbers/README.md)
+* [array](./arrays/README.md)
+* [boolean](./basics/types.md#Boolean)
+* [object](./basics/types.md#Object) with valid JSON values
+* [null](./basics/types.md#NULL)
 
 It can not be `function`,  `date` or `undefined`.
 

@@ -30,7 +30,7 @@ height = (height !== undefined && height !== null) ? height: 200;
 
 **Polyfills**
 
-There are times when new functionality isn't available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a `polyfill`. For example, the `filter()` method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns `true`
+There are times when new functionality isn't available in outdated browser engines. In this case, the code that uses the new functionality won’t work. To fill the gaps, we add the missing functionality which is called a `polyfill`. For example, the `filter()` method was introduced in ES5 and is not supported in some of the old browsers. This method accepts a function and returns an array containing only the values of the original array for which the function returns `true`.
 
 ```javascript
 const arr = [1, 2, 3, 4, 5, 6];
