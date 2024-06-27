@@ -8,10 +8,10 @@ The `split()` method divides a string into a list of substrings and returns them
 * using the `split()` method
 * using the template literal (introduced in ES6)
 
-The split() method takes in:
+The `split()` method takes in:
 
-separator (optional) - The pattern (string or regular expression) describing where each split should occur.
-limit (optional) - A non-negative integer limiting the number of pieces to split the given string into.
+* **separator (optional)** - The pattern (string or regular expression) describing where each split should occur.
+* **limit (optional)** - A non-negative integer limiting the number of pieces to split the given string into.
 
 ```javascript
 console.log("ABCDEF".split("")); // [ 'A', 'B', 'C', 'D', 'E', 'F' ]

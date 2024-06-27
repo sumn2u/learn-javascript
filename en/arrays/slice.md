@@ -6,9 +6,9 @@ description:  The Javascript arr.slice() method returns a new array containing a
 # Slice
 
 The `slice` method accepts two parameters begin and end.
-* begin: This parameter defines the starting index from where the portion is to be extracted. 
+* **begin**: This parameter defines the starting index from where the portion is to be extracted. 
   If this argument is missing then the method takes begin as 0 as it is the default start value.
-* end: This parameter is the index up to which the portion is to be extracted (excluding the end index). 
+* **end**: This parameter is the index up to which the portion is to be extracted (excluding the end index). 
   If this argument is not defined then the array till the end is extracted as it is the default end value If the end value is greater than the length of the array, then the end value changes to the length of the array.
 
 ```javascript
