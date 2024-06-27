@@ -29,8 +29,8 @@ for (var i = 0; i < cars.length; i++) {
 ```
 
 In this chapter, we are going to discuss the following topics:
-* [for](./for.md)
-* [while](./while.md)
-* [do...while](./dowhile.md)
-* [continue](./continue.md)
-* [break](./break.md)
+* [For](./for.md)
+* [While](./while.md)
+* [Do...While](./dowhile.md)
+* [Continue](./continue.md)
+* [Break](./break.md)

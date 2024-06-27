@@ -26,8 +26,8 @@ Template literals provide a convenient way to create dynamic strings with embedd
 Overall, ES6 has become a cornerstone for modern JavaScript development. It is well-supported across modern web browsers and has reshaped the way developers write JavaScript code. Understanding ES6 is crucial for any JavaScript developer looking to stay up-to-date and write more efficient, maintainable, and readable code in today's web development landscape.
 
 In this chapter, we are going to talk about following ES6 syntax.
-* [let const](./let-const.md)
-* [map](./map.md)
-* [arrow functions](./arrow-functions.md)
-* [destructuring](./destructuring.md)
-* [template literals](./template-literals.md)
+* [Let/Const](./let-const.md)
+* [Map](./map.md)
+* [Arrow Functions](./arrow-functions.md)
+* [Destructuring](./destructuring.md)
+* [Template Literals](./template-literals.md)

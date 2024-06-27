@@ -32,3 +32,11 @@ In javascript the objects are **mutable** because we change the values pointed b
     ```
 
     > _**Note:**_ It creates a new object with the specified prototype object and properties.
+
+In this chapter, we will explore following topics:
+* [Delete](./delete.md)
+* [Enumeration](./enumeration.md)
+* [Mutable](./mutable.md)
+* [Properties](./properties.md)
+* [Prototype](./prototype.md)
+* [Reference](./reference.md)

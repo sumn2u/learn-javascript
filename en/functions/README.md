@@ -45,3 +45,10 @@ const double =  (x) =>  2 * x;
 {% hint style="warning" %}
 The `this` keyword in the arrow function represents the object that defined the arrow function.&#x20;
 {% endhint %}
+
+In this chapter, we will explore following topics:
+* [Closures](./for-each.md)
+* [High Order Functions](./higher-order.md)
+* [Recursive Functions](./recursive-functions.md)
+* [Set Interval](./set-interval.md)
+* [Set Timeout](./set-timeout.md)

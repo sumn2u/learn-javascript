@@ -16,8 +16,8 @@ The other thing conditions can do for you is allow for branching. You might have
 
 In this chapter, we'll learn the basics of conditional logic in JavaScript, including the following topics:
 
-* [if](./if.md)
-* [else](./else.md)
-* [switch](./switch.md)
-* [comparators](./comparators.md)
-* [concatenate](./concatenate.md)
+* [If](./if.md)
+* [Else](./else.md)
+* [Switch](./switch.md)
+* [Comparators](./comparators.md)
+* [Concatenate](./concatenate.md)

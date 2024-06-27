@@ -25,3 +25,9 @@ let message = hello + " " + world;
 ```
 
 This code can be executed by another program called an _interpreter_ that will read the code, and execute all the statements in the right order.
+
+In this chapter, we will explore following topics:
+* [Comments](./comments.md)
+* [Equality](./equality.md)
+* [Types](./types.md)
+* [Variables](./variables.md)

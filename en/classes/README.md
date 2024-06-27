@@ -35,3 +35,9 @@ Class must be defined before its usage.
 In the class body, methods or constructors are defined and executed in `strict mode`. Syntax not adhering to the strict mode results in error.&#x20;
 
 Every time we create an object from a class we’re creating an **instance** of that class, for example the `myCar` variable above us with the `new` keyword is an instance. Instances are *independant* meaning it doesn’t affect any other instance. This is why classes are thought to be templates for objects. Since once you make that instance object it'll have the same methods as the original class.
+
+
+In this chapter, we will explore following topics:
+* [Access Modifiers](./access-modifiers.md)
+* [Inheritance](./inheritance.md)
+* [Static](./static.md)

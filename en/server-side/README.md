@@ -46,3 +46,7 @@ Unlike client-side code, which can only be written in JavaScript, server-side co
 - **JSON**: JavaScript Object Notation (JSON) is a popular data format that is used to transmit data between a server and a web application. JSON is based on JavaScript, so it is easy to work with JSON data in JavaScript.
 
 Up next, we will learn how to use JavaScript for server-side code with Node.js and how to use Server Side Rendering (SSR) to generate HTML on the server.
+
+In this chapter, we will explore following topics:
+* [Node.js](./nodejs.md)
+* [Server Side Rendering (SSR)](./server-side-rendering.md)

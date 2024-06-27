@@ -73,4 +73,21 @@ Arrays are a special type of object.  One can have [objects](../objects/) in an 
 | `splice()`        | Removes elements from an array and (optionally) replaces them, and returns the array                                                              |
 | `unshift()`       | Adds one or more elements at the front of an array and returns the length                                                                         |
 
+In this chapter, we will explore following topics:
+* [For-Each](./for-each.md)
+* [Indices](./indices.md)
+* [Join](./join.md)
+* [Length](./length.md)
+* [Map](./map.md)
+* [Pop](./pop.md)
+* [Push](./push.md)
+* [Reverse](./reverse.md)
+* [Shift](./shift.md)
+* [Slice](./slice.md)
+* [Sort](./sort.md)
+* [Spread](./spread.md)
+* [Unshift](./unshift.md)
+
+
+
 

@@ -50,3 +50,12 @@ String indexes are zero-based, meaning that starting position of the first chara
 | `trimStart()`        | Returns string with removed whitespaces from start                                     |
 | `valueOf()`          | Returns primitive value of string or string object                                     |
 
+
+In this chapter, we will explore following topics:
+* [CharAt](./charAt.md)
+* [Concat](./concat.md)
+* [Create](./create.md)
+* [Length](./length.md)
+* [Replace](./replace.md)
+* [Split](./split.md)
+* [Substring](./substring.md)

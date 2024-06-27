@@ -19,13 +19,13 @@ alert("Welcome to Learn JavaScript")
 ```
 
 In this chapter, we are going to talk about various properties and methods of browser object model.
-* [cookies](./cookies.md)
-* [history](./history.md)
-* [location](./location.md)
-* [navigator](./navigator.md)
-* [popup](./popup.md)
-* [screen](./screen.md)
-* [window](./window.md)
+* [Cookies](./cookies.md)
+* [History](./history.md)
+* [Location](./location.md)
+* [Navigator](./navigator.md)
+* [Popup](./popup.md)
+* [Screen](./screen.md)
+* [Window](./window.md)
 
 
 

@@ -39,3 +39,8 @@ The numeric constants are interpreted as hexadecimal if they are preceded by an 
 ```javascript
 let z = 0xFF; // 255
 ```
+
+In this chapter, we will explore following topics:
+* [Math](./math.md)
+* [Basic Operators](./operators.md)
+* [Advanced Operators](./advanced.md)
