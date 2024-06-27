@@ -19,7 +19,7 @@ chapter:
 <br/>
 
 
-Learn JavaScript: Beginners Edition  
+**Learn JavaScript: Beginners Edition**  
 First Edition
 
 Copyright © 2023 by Suman Kunwar

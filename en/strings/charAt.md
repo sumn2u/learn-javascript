@@ -6,7 +6,7 @@ pageNumber: 37
 
 The `str.charAt()` method returns the character at the given index of the string index holds the array element position.
 * using the `charAt()` method
-* using the template literal (introduced in ES6)
+* using the template literal `(``)` (introduced in [ES6](../es6-concepts/template-literals.md))
 
 The `charAt()` method takes in:
 

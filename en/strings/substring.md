@@ -4,7 +4,7 @@ pageNumber: 38
 ---
 # Substring
 
-The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero (0). 
+The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero `(0)`. 
 
 Syntax: 
 
@@ -14,7 +14,7 @@ Syntax:
 
 * using `str.substr(start , length)`
 * using the `substr()` method
-* using the template literal (introduced in ES6)
+* using the template `(``)` literal (introduced in [ES6](../es6-concepts/template-literals.md))
 
 The `substr()` method takes in:
 

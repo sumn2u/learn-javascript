@@ -6,9 +6,9 @@ Title: Set Interval
 
 
 # Set Interval
-The set Interval method is a method used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function runs again and generates another color. This is useful in making functions repeat. 
+The `setInterval` method is used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function runs again and generates another color. This is useful in making functions repeat. 
 
-The first parameter in the method is the name of the function you're setting an interval to, the second parameter is for how long the interval will be.  You can add extra parameters in case you want to add the parameters of a function.
+The first parameter in the method is the name of the function for which you're setting an interval. The second parameter specifies the duration of the interval. You can also add additional parameters if you want to pass arguments to the function.
 
 As another simple example, let's create a function called `repeatSaying` where it says "And again!" every 2 seconds in the [console](https://javascript.sumankunwar.com.np/en/exercises/console.html). 
 

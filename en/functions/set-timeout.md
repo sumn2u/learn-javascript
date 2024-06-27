@@ -5,7 +5,7 @@ Title: Set Timeout
 ---
 
 # Set Timeout
-The set timeout global method is used to add a timer (in milliseconds) before a function is ran. 
+The `setTimeout` global method is used to add a delay (in milliseconds) before a function is ran. 
 
 For instance, in this example after "Ready..." is written in the console, the function `start()` has to wait 3 seconds before running.
 
@@ -22,7 +22,7 @@ setTimeout(start, 3000);
 ```
 
 # Clear Timeout
-The clear timeout global method is used to remove any `setTimeout()` methods that are stores in variables. For instance let's change our last example by storing `setTimeout()` in a variable
+The `clearTimeout` global method is used to remove any `setTimeout()` methods that are stored in variables. For instance, let's change our last example by storing `setTimeout()` in a variable
 ```js
 console.log("Ready...");
 

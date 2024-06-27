@@ -6,7 +6,7 @@ description: Operators are symbols or keywords used to perform operations on dat
 
 # Basic Operators
 
-In JavaScript, an operator is a symbol or keyword user to perform operations on operands (values and variables). For example,
+In JavaScript, an operator is a symbol or keyword user to perform operations on operands (values and variables). For example:
 
 ```javascript
 2 + 3; //5

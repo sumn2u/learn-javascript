@@ -27,7 +27,7 @@ for (initialization; endCondition; change) {
 
 ### Example
 
-- Let use suppose we have an array of number and we have to print the first occurence of a number divisible by 5. We can use break here to achieve this:
+- Let's suppose we have an array of numbers and need to print the first occurrence of a number divisible by 5. We can use the `break` statement to achieve this:
 
 ```javascript
 const arr = [4, 7, 9, 11, 45, 23, 15, 87];
@@ -40,7 +40,7 @@ for(let i = 0; i < arr.length; i++){
 }
 //This code will print 45 which is the first occurence of a number divisible by 5
 ```
-- Break statement can also be used inside while loop.
+- Break statement can also be used inside `while` loop.
 
 ```javascript
 const arr = [4, 7, 9, 11, 45, 23, 15, 87];

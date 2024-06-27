@@ -36,7 +36,7 @@ let double = function (x) {
 &#x20;A callback is a function passed as an argument to another function.
 {% endhint %}
 
-An arrow function is a compact alternative to traditional functions which has some semantic differences with some limitations. These function doesn't have their own bindings to `this`, `arguments` and `super`, and cannot be used as constructors. An example of an arrow function.
+An arrow function is a compact alternative to traditional functions which has some semantic differences with some limitations. These function doesn't have their own bindings to `this`, `arguments` and `super`, and cannot be used as constructors. An example of an arrow function:
 
 ```javascript
 const double =  (x) =>  2 * x;

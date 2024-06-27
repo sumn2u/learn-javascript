@@ -4,12 +4,12 @@ pageNumber: 35
 ---
 # Concatenation
 
-Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings.  The concatenation of a string appends one or more strings to another string.  This is done in JavaScript using the following ways.
+Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings.  The concatenation of a string appends one or more strings to another string.  This is done in JavaScript using the following ways:
 
 * using the  **`+`** operator
 * using the `concat()` method
 * using the array `join()` method
-* using the template literal (introduced in ES6)
+* using the template `(``)` literal (introduced in [ES6](../es6-concepts/template-literals.md))
 
 The string `concat()` method accepts the list of strings as parameters and returns a new string after concatenation i.e. combination of all the strings. Whereas the array `join()` method is used to concatenate all the elements present in an array by converting them into a single string.&#x20;
 

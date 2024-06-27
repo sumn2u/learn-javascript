@@ -12,13 +12,13 @@ The first step towards really understanding programming is looking back at algeb
 3 + 5 = 8
 ```
 
-You start performing calculations when you introduce an unknown, for example, x below:
+You start performing calculations when you introduce an unknown, for example, `x` below:
 
 ```
 3 + x = 8
 ```
 
-Shifting those around you can determine x:
+Shifting those around you can determine `x`:
 
 ```
 x = 8 - 3
@@ -31,7 +31,7 @@ When you introduce more than one you make your terms more flexible - you are usi
 x + y = 8
 ```
 
-You can change the values of x and y and the formula can still be true:
+You can change the values of `x` and `y` and the formula can still be true:
 
 ```
 x = 4
@@ -45,7 +45,7 @@ x = 3
 y = 5
 ```
 
-The same is true for programming languages. In programming, variables are containers for values that change. Variables can hold all kinds of values and also the results of computations. Variables have a `name` and a `value` separated by an equals sign (=). However, it is important to keep in mind that different programming languages have their own limitations and constraints on what can be used as variable names. This is because certain words may be reserved for specific functions or operations within the language.
+The same is true for programming languages. In programming, variables are containers for values that change. Variables can hold all kinds of values and also the results of computations. Variables have a `name` and a `value` separated by an equals sign `(=)`. However, it is important to keep in mind that different programming languages have their own limitations and constraints on what can be used as variable names. This is because certain words may be reserved for specific functions or operations within the language.
 
 Let's check out how it works in Javascript. The following code defines two variables, computes the result of adding the two, and defines this result as a value of a third variable.
 
@@ -57,9 +57,9 @@ let result = x + y;
 
 There are certain guidelines that needs to be followed while  naming variables. They are
 
-- Variable names have to start with a letter, an underscore (_), or a dollar sign ($).
-- After the first character, we can use letters, numbers, underscores, or dollar signs.
-- JavaScript distinguishes between uppercase and lowercase letters (case-sensitive), so myVariable, MyVariable, and MYVARIABLE are all separate variables.
+- Variable names have to start with a letter, an underscore `(_)`, or a dollar sign `($)`.
+- After the first character, we can use _letters_, _numbers_, _underscores_, or _dollar_ signs.
+- JavaScript distinguishes between uppercase and lowercase letters (case-sensitive), so `myVariable`, `MyVariable`, and `MYVARIABLE` are all separate variables.
 - To make your code easy to read and maintain, it's recommended to use descriptive variable names that accurately reflect their purpose.
 
 {% exercise %}

@@ -21,9 +21,9 @@ JavaScript (_JS for short_) is the programming language that is used to create d
 Initially, it was created for making webpages alive and was able to run only on a browser. Now, it runs on any device that supports the JavaScript engine. Standard objects such as [Array](./arrays/README.md), [Date](./date-and-time.md), and [Math](./numbers/math.md) are available in JavaScript, as well as operators, control structures, and statements. _Client-side JavaScript_ and _Server-side JavaScript_ are the extended versions of core JavaScript.
 
 * _Client-side JavaScript_ enables the enhancement and manipulation of web pages, and client browsers. Responses to user events such as mouse clicks, form input, and page navigation are some of its examples.
-* _Server-side JavaScript_ enables access to servers, databases, and file systems.
+* [_Server-side JavaScript_](./server-side/README.md) enables access to servers, databases, and file systems.
 
-JavaScript is an interpreted language. While running Javascript an interpreter interprets each line and runs it. The modern browser uses Just In Time (JIT) technology for compilation, which compiles JavaScript into executable bytecode.
+JavaScript is an interpreted language. While running Javascript an interpreter interprets each line and runs it. The modern browser uses [Just In Time (JIT)](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) compilers for compilation, which compiles JavaScript into executable bytecode.
 
 {% hint style="info" %}
 "LiveScript" was the initial name given to JavaScript.

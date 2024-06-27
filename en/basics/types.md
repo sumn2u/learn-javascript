@@ -17,7 +17,7 @@ The most common types are:
 * **Undefined**: The undefined type represents a value that has not been set. If a variable has been declared, but has not been assigned a value, it is `undefined`.
 * **Object**: An object is a collection of properties, each of which has a name and a value. You can create an object using curly braces (`{}`) and assigning properties to it using name-value pairs.
 * **Array**: An array is a special type of object that can hold a collection of items. You can create an array using square brackets (`[]`) and assigning a list of values to it.
-* **Function**: A function is a block of code that can be defined and then called by name. Functions can accept arguments (inputs) and return a value (output). You can create a function using the `function` keyword.
+* **Function**: A function is a block of code that can be defined and then called by name. [Functions](../functions/README.md) can accept arguments (inputs) and return a value (output). You can create a function using the `function` keyword.
 
 JavaScript is a "_loosely typed_"  language, which means that you don't have to explicitly declare what type of data the variables are. You just need to use the `var` keyword to indicate that you are declaring a variable, and the interpreter will work out what data type you are using from the context, and use of quotes.
 

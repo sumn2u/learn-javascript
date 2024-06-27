@@ -28,8 +28,7 @@ func();
 [23,56,87,32,75,13]
 ```
 
-The `slice()` method copies object references to the new array. 
-(For example, a nested array) So if the referenced object is modified, the changes are visible in the returned new array.
+The `slice()` method copies object references to the new array (example, a nested array). So, if the referenced object is modified, the changes are visible in the returned new array.
 
 ```javascript
 let human = {

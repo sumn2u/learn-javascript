@@ -107,7 +107,7 @@ for (const paragraph of paragraphs) {
 
 ## `for...of` loop
 
-The `for...of` loop was introduced in the later versions of \*\*JavaScript ES6. The `for...of` statement executes a loop that operates on a sequence of values sourced from an iterable objects such as Array, String, TypedArray, Map, Set, NodeList(and other DOM collections).
+The `for...of` loop was introduced in the later versions of **[JavaScript ES6](../es6-concepts/README.md)**. The `for...of` statement executes a loop that operates on a sequence of values sourced from an iterable objects such as `Array`, `String`, `TypedArray`, `Map`, `Set`, `NodeList`(and other DOM collections).
 
 ### Syntax
 
@@ -124,7 +124,7 @@ Here,
 - **iterable** - an iterable object
 - **element** - items in the iterable
 
-In plain English, you can read the above code as: \*for every element in the iterable, run the body of the loop.
+In plain English, you can read the above code as: “for every element in the iterable, run the body of the loop”.
 
 ### Examples
 
