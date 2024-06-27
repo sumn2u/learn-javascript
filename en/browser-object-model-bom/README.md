@@ -18,7 +18,16 @@ window.alert("Welcome to Learn JavaScript");
 alert("Welcome to Learn JavaScript")
 ```
 
-In a similar fashion, we can call other properties underneath the window object such as history, screen, navigator, location, and so on.
+In this chapter, we are going to talk about various properties and methods of browser object model.
+* [cookies](./cookies.md)
+* [history](./history.md)
+* [location](./location.md)
+* [navigator](./navigator.md)
+* [popup](./popup.md)
+* [screen](./screen.md)
+* [window](./window.md)
+
+
 
 
 

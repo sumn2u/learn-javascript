@@ -16,7 +16,7 @@ const dynamicString = `This is a dynamic string with ${expression}`;
 
 - `dynamicString`: This is where you store the dynamic string.
 
-- `${expression}`: This is where you embed JavaScript expressions, variables, or functions, which are evaluated and included within the string.
+- `${expression}`: This is where you embed JavaScript expressions, [variables](../basics/variables.md), or [functions](../functions/README.md), which are evaluated and included within the string.
 
 **Example:**
 

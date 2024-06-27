@@ -14,7 +14,7 @@ _Modules_ come to avoid these problems. A `module` specifies which pieces of cod
 
 * **AMD** - one of the oldest module systems, initially used by [require.js](https://requirejs.org/).
 * **CommonJS** - module system created for Node.js server.
-* **UMD** - module system that is compatible with AMD and CommonJS.
+* **UMD** - module system that is compatible with [AMD](https://requirejs.org/docs/whyamd.html#amd) and [CommonJS](https://requirejs.org/docs/whyamd.html#commonjs).
 
 Modules can load each other, and use special directives `import` and `export` to interchange functionality, and call functions of each other.
 

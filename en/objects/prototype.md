@@ -15,14 +15,14 @@ let adult = { age: 26 },
 // The line above
 ```
 
-First, the interpreter looks through every property the object itself has. For example, `adult` has only one own property — `age`. But besides that one, it actually has a few more properties, which were inherited from `Object.prototype.`
+First, the interpreter looks through every property the object itself has. For example, `adult` has only one own property—`age`. However, it also has several properties inherited from `Object.prototype`.
 
 ```javascript
 let stringRepresentation = adult.toString();
 // the variable has value of '[object Object]'
 ```
 
-The `toString` is an Object.prototype's property, which was inherited. It has a value of a function, which returns a string representation of the object. If you want it to return a more meaningful representation, then you can override it. Simply add a new property to the adult object.
+The `toString` is an `Object.prototype`'s property, which was inherited. It has a value of a function, which returns a string representation of the object. If you want it to return a more meaningful representation, then you can override it. Simply add a new property to the adult object.
 
 ```javascript
 adult.toString = function () {

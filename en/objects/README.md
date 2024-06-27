@@ -25,10 +25,10 @@ In javascript the objects are **mutable** because we change the values pointed b
     ```
 
     > _**Note:**_ it's almost like Java.
-3.  **and using `object.create`**
+3.  **using `object.create`**
 
     ```javascript
     let object = Object.create(proto[, propertiesObject]);
     ```
 
-    > _**Note:**_ it creates a new object with the specified prototype object and properties.
+    > _**Note:**_ It creates a new object with the specified prototype object and properties.

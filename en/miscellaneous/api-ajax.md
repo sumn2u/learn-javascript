@@ -11,7 +11,7 @@ In this section, we will discuss API and AJAX, the two important technologies th
 
 An **API** (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information.
 
-## Key Points
+### Key Points
 
 - APIs enable developers to access the functionality of other software components, services, or platforms without needing to understand their internal workings.
 
@@ -25,7 +25,7 @@ An **API** (Application Programming Interface) is a set of rules and protocols t
 
 - Examples of popular APIs include social media APIs (e.g., Facebook Graph API), payment gateway APIs (e.g., PayPal API), and cloud service APIs (e.g., AWS API).
 
-## Benefits of APIs
+### Benefits of APIs
 
 - **Interoperability:** APIs allow different software systems to work together, promoting compatibility and data exchange.
 
@@ -37,15 +37,15 @@ An **API** (Application Programming Interface) is a set of rules and protocols t
 
 - **Security:** APIs often include authentication and authorization mechanisms to ensure secure access to data and services.
 
-# AJAX (Asynchronous JavaScript and XML)
+## AJAX (Asynchronous JavaScript and XML)
 
 AJAX, short for **Asynchronous JavaScript and XML**, is a foundational technology in web development. It enables web applications to make asynchronous requests to a server, retrieve data, and update parts of a web page without requiring a full page reload. While the name suggests XML, AJAX can work with various data formats, with JSON being the most common.
 
-## What is AJAX?
+### What is AJAX?
 
 At its core, AJAX is a technique that allows web pages to communicate with a server in the background, without disrupting the user's interaction with the page. This asynchronous behavior is achieved using JavaScript and enables the development of more interactive and responsive web applications.
 
-## How does AJAX work?
+### How does AJAX work?
 
 1. **JavaScript**: AJAX heavily relies on JavaScript to initiate requests and handle responses asynchronously.
 
@@ -59,7 +59,7 @@ At its core, AJAX is a technique that allows web pages to communicate with a ser
 
 6. **Rendering**: The updated content is rendered on the web page without requiring a full page reload, resulting in a smoother user experience.
 
-## Benefits of AJAX
+### Benefits of AJAX
 
 - **Improved User Experience**: AJAX allows web applications to load and display data without the need for full page refreshes, making the user experience more seamless and interactive.
 
@@ -69,7 +69,7 @@ At its core, AJAX is a technique that allows web pages to communicate with a ser
 
 - **Dynamic Loading**: Content can be loaded on-demand, leading to faster initial page load times and more responsive applications.
 
-## Common Use Cases
+### Common Use Cases
 
 Some common scenarios where AJAX is used include:
 
@@ -81,26 +81,26 @@ Some common scenarios where AJAX is used include:
 
 - **Updating Content**: Dynamically updating content like news feeds, weather information, or sports scores without requiring manual page refreshes.
 
-# Fetching Weather Data with OpenWeatherMap API using AJAX
+## Fetching Weather Data with OpenWeatherMap API using AJAX
 
 In this example, we'll demonstrate how to use AJAX (Asynchronous JavaScript and XML) to fetch weather information from the OpenWeatherMap API and display it on a web page.
 
-## Introduction
+### Introduction
 
 The OpenWeatherMap API is a powerful tool for retrieving weather information for locations around the world. This example demonstrates how to use the API to fetch current weather data for a specific city and display it in your application or documentation.
 
-## API Key
+### API Key
 
 Before getting started, you need to sign up for an API key from [OpenWeatherMap](https://openweathermap.org/api) to access their weather data API. Replace `'YOUR_API_KEY'` in the code below with your actual API key.
 
 ```javascript
 const apiKey = 'YOUR_API_KEY';
 ```
-# Simple Weather App HTML
+### Simple Weather App HTML
 
 In this example, we'll provide the HTML structure for a simple weather app that fetches and displays weather data from the OpenWeatherMap API.
 
-## HTML Structure
+#### HTML Structure
 
 ```html
 <!DOCTYPE html>
@@ -121,7 +121,7 @@ In this example, we'll provide the HTML structure for a simple weather app that 
 </html>
 ```
 
-## JavaScript (script.js)
+#### JavaScript (script.js)
 
 Create a JavaScript file named `script.js` to handle the AJAX request and update the weather data on the page:
 
@@ -155,7 +155,7 @@ xhr.onload = function () {
 
 xhr.send();
 ```
-## Result
+### Result
 
 When you open the HTML file in a web browser, it will display the weather information for the specified location (New York in this case). Make sure to replace `'YOUR_API_KEY'` with your actual OpenWeatherMap API key.
 

@@ -21,7 +21,7 @@ There are three different types of linked lists:
 2. **Doubly Linked Lists:**  There are two pointers at each node, one to the next node and one to the previous node.
 3. **Circular Linked Lists:**  A circular linked list forms a loop by having the last node pointing to the first node or any other node before it.
 
-# Add
+## Add
 
 The `add` method is created here to add value to a linked list.
 
@@ -52,7 +52,7 @@ class LinkedList {
 }
 ```
 
-# Pop
+## Pop
 
 Here, a `pop` method is created to remove a value from the linked list.
 
@@ -78,7 +78,7 @@ class LinkedList {
 }
 ```
 
-# Prepend
+## Prepend
 
 Here, a `prepend` method is created to add a value before the first child of the linked list.
 
@@ -107,7 +107,7 @@ class LinkedList {
 }
 ```
 
-# Shift
+## Shift
 
 Here, the `shift` method is created to remove the first element of the Linked List.
 

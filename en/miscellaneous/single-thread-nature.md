@@ -24,7 +24,7 @@ Here are some key points to understand about JavaScript's single-threaded execut
 
 6. **Browser and Environment Interaction:** In web development, JavaScript interacts with the browser's Document Object Model (DOM) and other browser APIs. To maintain a responsive user interface, JavaScript code must execute quickly and efficiently and delegate time-consuming operations to separate threads when necessary.
 
-## Single-Threaded Asynchronous Example
+## Example
 
 ```javascript
 // Simulating an asynchronous operation with a callback
