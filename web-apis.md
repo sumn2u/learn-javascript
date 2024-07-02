@@ -10,8 +10,7 @@ The Document Object Model (DOM) is a programming interface for web documents. It
 
 ### Example Code: Changing the Content of an Element
 
-```javascript
-document.getElementById("demo").innerHTML = "Hello, World!";```
+```document.getElementById("demo").innerHTML = "Hello, World!";```
 
 ##Fetch API 
 
@@ -19,7 +18,8 @@ The Fetch API provides an interface for fetching resources (including across the
 
 ###Example Code: Simple Fetch Request
 
-```fetch('https://api.example.com/data')
+```
+fetch('https://api.example.com/data')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:'));```
