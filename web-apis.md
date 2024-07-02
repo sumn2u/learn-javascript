@@ -30,7 +30,8 @@ The Geolocation API allows the user to provide their location to web application
 
 ###Example Code: Getting User Location
 
-```if ("geolocation" in navigator) {
+```
+if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition(function(position) {
     console.log("Latitude: " + position.coords.latitude);
     console.log("Longitude: " + position.coords.longitude);
@@ -45,7 +46,8 @@ The Canvas API provides a means for drawing graphics via JavaScript and the HTML
 
 ###Example Code: Drawing Shapes on Canvas
 
-```var canvas = document.getElementById('myCanvas');
+```
+var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
 // Draw a rectangle
@@ -59,7 +61,8 @@ The Web Storage API provides mechanisms by which browsers can store key-value pa
 ###Example Code: Storing Data in localStorage
 
 ####Local stoage
-```// Save data to local storage
+```
+// Save data to local storage
 localStorage.setItem('key', 'value');
 
 // Retrieve data from local storage
@@ -68,7 +71,8 @@ console.log(value);```
 
 ####Session Storage
 
-```// Save data to session storage
+```
+// Save data to session storage
 sessionStorage.setItem('key', 'value');
 
 // Retrieve data from session storage
@@ -81,7 +85,8 @@ The Notification API allows web pages to control the display of system notificat
 
 ###Example Code: Displaying a Notification
 
-```if (Notification.permission === "granted") {
+```
+if (Notification.permission === "granted") {
   new Notification("Hello, World!");
 } else if (Notification.permission !== "denied") {
   Notification.requestPermission().then(permission => {
