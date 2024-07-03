@@ -40,6 +40,7 @@ The Document Object Model (DOM) is a programming interface for web documents. It
 
 ### Example Code: Changing the Content of an Element
 
+<<<<<<< HEAD
 ````md
 ```javascript
 document.getElementById("demo").innerHTML = "Hello, World!";
@@ -47,12 +48,21 @@ document.getElementById("demo").innerHTML = "Hello, World!";
 ````
 		
 ## Fetch API 
+=======
+```document.getElementById("demo").innerHTML = "Hello, World!";```
+
+##Fetch API 
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 
 The Fetch API provides an interface for fetching resources (including across the network).
 
 ### Example Code: Simple Fetch Request
 
+<<<<<<< HEAD
 ```javascript
+=======
+```
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 fetch('https://api.example.com/data')
   .then(response => response.json())
   .then(data => console.log(data))
@@ -64,7 +74,11 @@ The Geolocation API allows the user to provide their location to web application
 
 ### Example Code: Getting User Location
 
+<<<<<<< HEAD
 ```javascript
+=======
+```
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition(function(position) {
     console.log("Latitude: " + position.coords.latitude);
@@ -80,9 +94,15 @@ The Canvas API provides a means for drawing graphics via JavaScript and the HTML
 
 ###Example Code: Drawing Shapes on Canvas
 
+<<<<<<< HEAD
 ```javascript
 let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
+=======
+```
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 
 // Draw a rectangle
 context.fillStyle = '#FF0000';
@@ -94,8 +114,13 @@ The Web Storage API provides mechanisms by which browsers can store key-value pa
 
 ### Example Code: Storing Data in localStorage
 
+<<<<<<< HEAD
 #### Local stoage
 ```javascript
+=======
+####Local stoage
+```
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 // Save data to local storage
 localStorage.setItem('key', 'value');
 
@@ -105,7 +130,11 @@ console.log(value);```
 
 #### Session Storage
 
+<<<<<<< HEAD
 ```javascript
+=======
+```
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 // Save data to session storage
 sessionStorage.setItem('key', 'value');
 
@@ -119,7 +148,11 @@ The Notification API allows web pages to control the display of system notificat
 
 ### Example Code: Displaying a Notification
 
+<<<<<<< HEAD
 ```javascript
+=======
+```
+>>>>>>> f4a5824ee93448bb49bc1c8b1f89fc4160ceb557
 if (Notification.permission === "granted") {
   new Notification("Hello, World!");
 } else if (Notification.permission !== "denied") {
