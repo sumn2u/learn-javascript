@@ -315,12 +315,12 @@ Understanding truthy and falsy values allows us to write more concise and expres
   + Public
     - Can be accessed from anywhere.
   + Private
-    - Indicated by prefixing them with the ```#``` symbol.
+    - Indicated by prefixing members with the ```#``` symbol.
     - Cannot be accessed from instances or child classes.
     - Only available within the class itself.
     - Useful for information hiding.
   + Protected
-    - Indicated by prefixing them with the ```_``` symbol.
+    - Indicated by prefixing members with the ```_``` symbol.
     - Can be accessed from the within the class and any class that inherits from it.
     - Useful for sharing state between classes.
 
@@ -365,6 +365,8 @@ Example of encapsulation using getters and setters:
       //  ...validate new ID
       this.#id = id;
     }
+
+    //  ...
   }
 ```
 
@@ -393,54 +395,47 @@ Example of encapsulation using getters and setters:
 
     class Person extends Animal {
         constructor(name) {
-            //  Call the parent class constructor
-            super("Human");
+            super("Human"); //  Call the parent class constructor
             this.name = name;
         } 
     }
     ```
-    - If no constructor is explicitly declared, a default one will be given to the class.
-
-      - Base class - If the class doesn't extend any other class, a default constructor will be assigned to it:
-
-      ```javascript
-        constructor() {}
-      ```
-
-      - Child class - If the class extends another class, it will inherit its constructor
-
-      ```javascript
-        class Vehicle {
-          constructor(type) {
-            this.type = type;
-          }
-
-          move() {
-            return `The ${this.type} is moving`;
-          }
-        }
-
-        class Car extends Vehicle {
-          #model;
-
-          set model(model) {
-            this.#model = model;
-          }
-          
-          drive() {
-            `Driving ${this.#model}`;
-          }
-        }
-      ```
-
-      Even though the constructor is not explicitly declared, the class Car inherits it from the Vehicle class:
-
-      ```javascript
+  + iv. Default constructor - If no constructor is explicitly declared, a default one will be given to the class.
+    - Base class - If the class doesn't extend any other class, a default constructor will be assigned to it:
+    ```javascript
+      constructor() {}
+    ```
+    - Child class - If the class extends another class, it will inherit its constructor
+    ```javascript
+      class Vehicle {
         constructor(type) {
-          super(type);
+          this.type = type;
         }
-      ``` 
+
+        move() {
+          return `The ${this.type} is moving`;
+        }
+      }
+
+      class Car extends Vehicle {
+        #model;
+
+        set model(model) {
+          this.#model = model;
+        }
+        
+        drive() {
+          `Driving ${this.#model}`;
+        }
+      }
+    ```
+    Even though the constructor is not explicitly declared, the class Car inherits it from the Vehicle class:
+    ```javascript
+      constructor(type) {
+        super(type);
+      }
+    ``` 
 
 ### 8.6. Static members vs Instance members
 
-**Answer:** By default, properties and methods that we define inside a class, belong to each instance of the class that we create. We can also assign members to the class itself. Such members are called static, and are declared using the ```static``` keyword. They cannot be directly accessed on instances of the class.
+**Answer:** By default, properties and methods which we define inside a class belong to each instance of the class that we create. We can also assign members to the class itself. Such members are called static and are declared using the ```static``` keyword. They cannot be directly accessed on instances of the class.
