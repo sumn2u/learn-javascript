@@ -288,3 +288,154 @@ if ([] === true) {
 ```
 
 Understanding truthy and falsy values allows us to write more concise and expressive code, especially when dealing with conditional logic. We can use this behavior to write shorter and more readable code when evaluating conditions and choosing between two values or actions.
+
+## 8. Classes
+
+### 8.1. What are JavaScript classes?
+
+**Answer:** Classes are templates for creating objects. They encapsulate data and logic that works with the data.
+
+### 8.2. What are class members?
+
+**Answer:** Class members refer to the methods and fields within a class.
+
+  + i. Methods
+    - Functions that are defined within the class.
+    - They can operate on fields and perform actions with the data.
+    - They define the behavior of the class.
+  + ii. Fields
+    - Variables that are defined within the class.
+    - They hold data specific to the class instance.
+    - They define the state of the class.
+
+### 8.3. Explain the types of access modifiers and their purpose in JavaScript
+
+**Answer:** There are three types of access modifiers which are used to encapsulate information.
+
+  + Public
+    - Can be accessed from anywhere.
+  + Private
+    - Indicated by prefixing members with the ```#``` symbol.
+    - Cannot be accessed from instances or child classes.
+    - Only available within the class itself.
+    - Useful for information hiding.
+  + Protected
+    - Indicated by prefixing members with the ```_``` symbol.
+    - Can be accessed from the within the class and any class that inherits from it.
+    - Useful for sharing state between classes.
+
+
+### 8.4. What are class properties?
+**Answer:** Properties refer to the getter and setter within a class, which provide a way to control access to the fields of a class. The getter and setter are property bindings to a function that will be called when the property is accessed.
+
+  + i. Getter
+    - A getter is a method that gets the value of a field.
+    - It must have exactly zero parameters.
+    - It must return a value.
+    - It is defined using the ```get``` keyword.
+  + ii. Setter
+    - A setter is a method that sets the value of a field.
+    - It must have exactly one parameter.
+    - It is defined using the ```set``` keyword.
+
+They are used to encapsulate the data, ensuring only certain fields can be accessed or modified in a specific way.
+
+Example of encapsulation using getters and setters:
+
+```javascript
+  class Task {
+    #id;
+    #description;
+
+    constructor(id, description, ) {
+      //  Use setters instead of directly modifying the private fields
+      this.id = id;
+      this.description = description;
+    }
+
+    //  Use getters to read the values
+    get id() {
+      return this.#id;
+    }
+
+    //  ...
+
+    //  Use setters to validate data before writing
+    set id(id) {
+      //  ...validate new ID
+      this.#id = id;
+    }
+
+    //  ...
+  }
+```
+
+### 8.5. Explain class constructors
+
+**Answer:** The constructor is a special method of a class called upon the initialization of that class. It is used to initialize the object's properties and perform any setup that is necessary when the object is created.
+
+  + i. Declaration
+    - The constructor method is declared using the ```constructor``` keyword within the class body.
+    - Each class can only have one constructor method.
+    - The constructor cannot be an async method.
+    - The constructor cannot be a private method.
+  + ii. Initialization
+    - The constructor can accept parameters that are used to initialize the instance's properties.
+    - It sets up the initial state by assigning values to properties.
+  + iii. Inheritance
+    - In derived classes (classes that extend another class), the ```super``` keyword is used within the child's constructor to call the constructor of the parent class.
+    - The ```super``` call must be made before accessing any properties in the constructor of a derived class. Example of constructor inheritance:
+
+    ```javascript
+    class Animal {
+        constructor(species) {
+            this.species = species;
+        }
+    }
+
+    class Person extends Animal {
+        constructor(name) {
+            super("Human"); //  Call the parent class constructor
+            this.name = name;
+        } 
+    }
+    ```
+  + iv. Default constructor - If no constructor is explicitly declared, a default one will be given to the class.
+    - Base class - If the class doesn't extend any other class, a default constructor will be assigned to it:
+    ```javascript
+      constructor() {}
+    ```
+    - Child class - If the class extends another class, it will inherit its constructor
+    ```javascript
+      class Vehicle {
+        constructor(type) {
+          this.type = type;
+        }
+
+        move() {
+          return `The ${this.type} is moving`;
+        }
+      }
+
+      class Car extends Vehicle {
+        #model;
+
+        set model(model) {
+          this.#model = model;
+        }
+        
+        drive() {
+          `Driving ${this.#model}`;
+        }
+      }
+    ```
+    Even though the constructor is not explicitly declared, the class Car inherits it from the Vehicle class:
+    ```javascript
+      constructor(type) {
+        super(type);
+      }
+    ``` 
+
+### 8.6. Static members vs Instance members
+
+**Answer:** By default, properties and methods which we define inside a class belong to each instance of the class that we create. We can also assign members to the class itself. Such members are called static and are declared using the ```static``` keyword. They cannot be directly accessed on instances of the class.
