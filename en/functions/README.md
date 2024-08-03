@@ -52,3 +52,7 @@ In this chapter, we will explore following topics:
 * [Recursive Functions](./recursive-functions.md)
 * [Set Interval](./set-interval.md)
 * [Set Timeout](./set-timeout.md)
+* [This Keyword](./this-keyword.md)
+* [Rest Operator](./rest-operator.md)
+* [Hoisting](./hoisting.md)
+* [Getters and Setters](./getters-setters.md)
