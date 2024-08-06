@@ -14,7 +14,7 @@
     "gitbook-plugin-hints": "^1.0.2",
     "gitbook-plugin-intopic-toc": "^1.0.6",
     "gitbook-plugin-sharing": "https://github.com/sumn2u/plugin-sharing.git",
-    "gitbook-plugin-sidebar-ad": "0.0.4",
+    "gitbook-plugin-sidebar-ad": "https://github.com/sumn2u/gitbook-plugin-sidebar-ad.git",
     "gitbook-plugin-sitemap": "^1.2.0",
     "gitbook-plugin-theme-creative": "https://github.com/sumn2u/gitbook-plugin-theme-creative.git",
     "honkit": "^4.0.4",
