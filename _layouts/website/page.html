@@ -104,7 +104,14 @@
         <div class="body-inner">
             {% block book_inner %}
             {% include "website/header.html" %}
-
+            {{ super()}}
+            <div>
+                <h2>JavaScript Interpreter</h2>
+                <textarea id="code" rows="10" cols="50">// Write your JavaScript code here</textarea><br>
+                <button id="run">Run Code</button><br>
+                <h3>Output:</h3>
+                <pre id="output"></pre>
+            </div>
 
             <div class="page-wrapper" tabindex="-1" role="main">
                 <div class="page-inner">
@@ -119,13 +126,7 @@
             </div>
 
 
-            <div>
-                <h2>JavaScript Interpreter</h2>
-                <textarea id="code" rows="10" cols="50">// Write your JavaScript code here</textarea><br>
-                <button id="run">Run Code</button><br>
-                <h3>Output:</h3>
-                <pre id="output"></pre>
-            </div>
+
 
             {% endblock %}
         </div>
