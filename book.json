@@ -24,7 +24,8 @@
       "favicon-custom",
       "chapter-fold",
       "hide-published-with",
-      "edit-link"
+      "edit-link",
+      "ace-editor"
     ],
     "pdf": {
       "pageNumbers": true,

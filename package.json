@@ -6,6 +6,7 @@
   "devDependencies": {
     "@honkit/honkit-plugin-ga": "^1.0.1",
     "cz-conventional-changelog": "^3.3.0",
+    "gitbook-plugin-ace-editor": "github:sumn2u/gitbook-plugin-ace-editor",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-exercises": "^3.0.0",
@@ -13,10 +14,10 @@
     "gitbook-plugin-hide-published-with": "0.0.1",
     "gitbook-plugin-hints": "^1.0.2",
     "gitbook-plugin-intopic-toc": "^1.0.6",
-    "gitbook-plugin-sharing": "https://github.com/sumn2u/plugin-sharing.git",
-    "gitbook-plugin-sidebar-ad": "https://github.com/sumn2u/gitbook-plugin-sidebar-ad.git",
+    "gitbook-plugin-sharing": "github:sumn2u/plugin-sharing",
+    "gitbook-plugin-sidebar-ad": "github:sumn2u/gitbook-plugin-sidebar-ad",
     "gitbook-plugin-sitemap": "^1.2.0",
-    "gitbook-plugin-theme-creative": "https://github.com/sumn2u/gitbook-plugin-theme-creative.git",
+    "gitbook-plugin-theme-creative": "github:sumn2u/gitbook-plugin-theme-creative",
     "honkit": "^4.0.4",
     "honkit-plugin-i18nsettings": "^1.0.0"
   },

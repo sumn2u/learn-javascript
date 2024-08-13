@@ -29,3 +29,5 @@ const books = [
 
 * Visit the [arrays](../arrays/) and [objects](../objects/) chapter to understand how the array and object work.
 
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}

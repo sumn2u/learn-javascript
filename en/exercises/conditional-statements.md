@@ -23,3 +23,6 @@ Conditional logic is vital in programming as it makes sure that the program work
 ### 💡 Hints:
 
 - Visit the [conditional logic](../conditional/) chapter to understand how to use conditional logic and conditional statements.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}

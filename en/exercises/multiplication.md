@@ -24,3 +24,6 @@ Here, we stored the product of `3 * 2` into a `resultingValue` variable.
 ### 💡 Hints:
 
 - Visit the [Basic Operators](../numbers/operators.md) chapter to understand the mathematical operations.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}

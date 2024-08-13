@@ -42,3 +42,6 @@ The _FizzBuzz_ problem is one of the commonly asked questions, here one has to p
 ### 💡 Hints:
 
 * Visit the [loops](../loops/) chapter to understand how the loop works.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
