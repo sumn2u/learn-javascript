@@ -45,3 +45,6 @@ let family = {
 * Visit the [objects](../objects/) chapter to understand how the object work.
 * You can get `luckyNumbers` from each person object inside the family object.
 * Once you get each array just loop over it adding every element and then add each sum of the 3 family members.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}

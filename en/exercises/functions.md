@@ -18,3 +18,6 @@ A function is a block of code designed to perform a specific task and executed w
 ### 💡 Hints:
 
 - Visit the [functions](../functions/) chapter to understand functions and how to create them.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}

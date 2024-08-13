@@ -39,3 +39,6 @@ const icon = "👋";
 ### 💡 Hints:
 
 - Visit the [concatenation](../strings/concat.md) chapter of strings for more info about string concatenation.
+
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
