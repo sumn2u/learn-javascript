@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 17
-pageNumber: 87
+pageNumber: 106
 description: En programación, los eventos son acciones o sucesos en un sistema sobre los que el sistema le informa para que pueda responder a ellos. Por ejemplo, cuando hace clic en el botón Restablecer, se borra la entrada.
 ---
 

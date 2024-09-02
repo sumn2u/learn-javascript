@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 34
+pageNumber: 45
 description: Los comparadores son funciones que se utilizan para comparar dos valores y determinar su relación. Aquí, el valor devuelto indica si los valores son iguales, mayores que, menores que o alguna otra relación basada en un criterio de comparación específico.  
 ---
 # Comparadores
@@ -32,4 +32,8 @@ Para evitar la molestia de si o si no, se pueden utilizar comparaciones lógicas
 let topper = marcas > 85 ? "SI" : "NO";
 ```
 
-En el ejemplo anterior, `?` es un operador lógico. El código dice que si el valor de las marcas es mayor que 85, es decir, `marcas > 85`, entonces `topper = SI`; de lo contrario `topper = NO`. Básicamente, si la condición de comparación resulta verdadera, se accede al primer argumento y si la condición de comparación es falsa, se accede al segundo argumento.
+En el ejemplo anterior, `?` es un operador lógico. El código dice que si el valor de las marcas es mayor que 85, es decir, `marcas > 85`, entonces `topper = SI`; de lo contrario `topper = NO`. Básicamente, si la condición de comparación resulta verdadera, se accede al primer argumento y si la condición de comparación es falsa, se accede al segundo argumento. Este operador abreviado también se conoce como `operador ternario`, ya que toma tres operandos.
+
+```javascript
+condicion ? expresion1 : expresion2
+```

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 10
-pageNumber: 64
+pageNumber: 79
 description: El objeto date almacena la fecha y la hora y proporciona métodos para administrarla. Los objetos Date son estáticos y utilizan la zona horaria predeterminada del navegador para mostrar la fecha como una cadena de texto completo.
 ---
 

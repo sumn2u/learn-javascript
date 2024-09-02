@@ -26,3 +26,10 @@ let mensaje = hola + " " + mundo;
 ```
 
 Este código puede ser ejecutado por otro programa llamado _intérprete_ que leerá el código y ejecutará todas las declaraciones en el orden correcto.
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [Comentarios](./comments.md)
+* [Igualdad](./equality.md)
+* [Tipos](./types.md)
+* [Variables](./variables.md)

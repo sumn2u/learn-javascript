@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 31
+pageNumber: 42
 description: La palabra clave else se utiliza junto con la declaración if para proporcionar un bloque de código alternativo para ejecutar cuando la condición especificada en la declaración if se evalúa como falsa.
 ---
 # Else

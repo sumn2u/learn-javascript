@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 6
-pageNumber: 36
+pageNumber: 47
 description: Un array (matriz, en español) es una lista de datos y es parte fundamental de la programación. Aquí podemos almacenar una gran cantidad de datos de diferentes tipos.
 ---
 
@@ -29,7 +29,6 @@ const coches = new Array("Saab", "Volvo", "BMW"); // usando la palabra clave new
 
 Se utiliza un número de índice para acceder a los valores de una matriz. El índice del primer elemento de una matriz es siempre `0`, ya que los índices de las matrices comienzan con `0`. El número de índice también se puede utilizar para cambiar los elementos de una matriz.
 
-
 ```javascript
 const coches = ["Saab", "Volvo", "BMW"];
 console.log(coches[0]); 
@@ -48,29 +47,45 @@ La propiedad `length` de una matriz devuelve el recuento de elementos numéricos
 
 | Nombre            | Descripción                                                                                                                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `concat()`        | Devuelve dos o más matrices combinadas                                                                                                                  |
-| `join()`          | Une todos los elementos de una matriz en una cadena                                                                                                     |
-| `push()`          | Agrega uno o más elementos al final de la matriz y devuelve la longitud                                                                                 |
-| `pop()`           | Elimina el último elemento de una matriz y devuelve ese elemento                                                                                        |
-| `shift()`         | Elimina el primer elemento de una matriz y devuelve ese elemento                                                                                        |
-| `unshift()`       | Agrega uno o más elementos al frente de una matriz y devuelve la longitud                                                                               |
-| `slice()`         | Extrae la sección de una matriz y devuelve la nueva matriz.                                                                                             |
 | `at()`            | Devuelve el elemento en el índice especificado o `undefined`                                                                                            |
-| `splice()`        | Elimina elementos de una matriz y (opcionalmente) los reemplaza y devuelve la matriz                                                                    |
-| `reverse()`       | Transpone los elementos de una matriz y devuelve una referencia a una matriz                                                                            |
-| `flat()`          | Devuelve una nueva matriz con todos los elementos de la submatriz concatenados en ella de forma recursiva hasta la profundidad especificada             |
-| `sort()`          | Ordena los elementos de una matriz en su lugar y devuelve una referencia a la matriz                                                                    |
-| `indexOf()`       | Devuelve el índice de la primera coincidencia del elemento de búsqueda.                                                                                 |
-| `lastIndexOf()`   | Devuelve el índice de la última coincidencia del elemento de búsqueda.                                                                                  |
-| `forEach()`       | Ejecuta una devolución de llamada en cada elemento de una matriz y devuelve undefined                                                                   |
-| `map()`           | Devuelve una nueva matriz con un valor de retorno al ejecutar `callback` en cada elemento de la matriz.                                                 |
-| `flatMap()`       | Ejecuta `map()` seguido de `flat()` de profundidad 1                                                                                                    |
+| `concat()`        | Devuelve dos o más matrices combinadas                                                                                                                  |
+| `every()`         | Devuelve `true` si `callback` devuelve `true` para cada elemento en la matriz                                                                           |
 | `filter()`        | Devuelve una nueva matriz que contiene los elementos para los cuales `callback` devolvió `true`                                                         |
 | `find()`          | Devuelve el primer elemento para el cual `callback` devolvió `true`                                                                                     |
 | `findLast()`      | Devuelve el último elemento para el cual `callback` devolvió `true`                                                                                     |
 | `findIndex()`     | Devuelve el índice del primer elemento para el cual `callback` devolvió `true`                                                                          |
 | `findLastIndex()` | Devuelve el índice del último elemento para el cual `callback` devolvió `true`                                                                          |
-| `every()`         | Devuelve `true` si `callback` devuelve `true` para cada elemento en la matriz                                                                           |
-| `some()`          | Devuelve `true` si `callback` devuelve `true` para al menos un elemento en la matriz                                                                    |
+| `flat()`          | Devuelve una nueva matriz con todos los elementos de la submatriz concatenados en ella de forma recursiva hasta la profundidad especificada             |
+| `flatMap()`       | Ejecuta `map()` seguido de `flat()` de profundidad 1                                                                                                    |
+| `forEach()`       | Ejecuta una devolución de llamada en cada elemento de una matriz y devuelve undefined                                                                   |
+| `indexOf()`       | Devuelve el índice de la primera coincidencia del elemento de búsqueda.                                                                                 |
+| `join()`          | Une todos los elementos de una matriz en una cadena                                                                                                     |
+| `lastIndexOf()`   | Devuelve el índice de la última coincidencia del elemento de búsqueda.                                                                                  |
+| `map()`           | Devuelve una nueva matriz con un valor de retorno al ejecutar `callback` en cada elemento de la matriz.                                                 |
+| `pop()`           | Elimina el último elemento de una matriz y devuelve ese elemento                                                                                        |
+| `push()`          | Agrega uno o más elementos al final de la matriz y devuelve la longitud                                                                                 |
 | `reduce()`        | Usa `callback(acumulador, valorActual, indiceActual, matriz)` con el propósito de reducir y devuelve el valor final devuelto por la función `callback`  |
 | `reduceRight()`   | Funciona de forma similar a `reduce()` pero comienza con el último elemento                                                                             |
+| `reverse()`       | Transpone los elementos de una matriz y devuelve una referencia a una matriz                                                                            |
+| `shift()`         | Elimina el primer elemento de una matriz y devuelve ese elemento                                                                                        |
+| `slice()`         | Extrae la sección de una matriz y devuelve la nueva matriz.                                                                                             |
+| `some()`          | Devuelve `true` si `callback` devuelve `true` para al menos un elemento en la matriz                                                                    |
+| `sort()`          | Ordena los elementos de una matriz en su lugar y devuelve una referencia a la matriz                                                                    |
+| `splice()`        | Elimina elementos de una matriz y (opcionalmente) los reemplaza y devuelve la matriz                                                                    |
+| `unshift()`       | Agrega uno o más elementos al frente de una matriz y devuelve la longitud                                                                               |
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [For-Each](./for-each.md)
+* [Indices](./indices.md)
+* [Join](./join.md)
+* [Length](./length.md)
+* [Map](./map.md)
+* [Pop](./pop.md)
+* [Push](./push.md)
+* [Reverse](./reverse.md)
+* [Shift](./shift.md)
+* [Slice](./slice.md)
+* [Sort](./sort.md)
+* [Spread](./spread.md)
+* [Unshift](./unshift.md)

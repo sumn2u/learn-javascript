@@ -1,6 +1,6 @@
 ---
 chapter: 5
-pageNumber: 35
+pageNumber: 46
 description: La condición de concatenación se refiere a la combinación de múltiples condiciones utilizando operadores lógicos para crear condicionales más complejos y sofisticados.
 ---
 # Concatenación

@@ -1,6 +1,6 @@
 ---
 chapter: 1
-pageNumber: 7
+pageNumber: 9
 description: JavaScript es un lenguaje de programación de alto nivel, interpretado y de tipo dinámico que se utiliza principalmente para el desarrollo web. Es una de las tecnologías centrales utilizadas para crear sitios web y aplicaciones web interactivos y dinámicos.
 ---
 # Capítulo 1
@@ -22,19 +22,17 @@ JavaScript (_JS para abreviar_) es el lenguaje de programación que se usa para 
 Inicialmente, fue creado para dar vida a las páginas web y solo podía ejecutarse en un navegador. Ahora se ejecuta en cualquier dispositivo que admita el motor JavaScript. Los objetos estándar como [Array](./arrays/README.md), [Date](./date-and-time.md) y [Math](./numbers/math.md) están disponibles en JavaScript, así como operadores, estructuras de control y declaraciones. _JavaScript del lado del cliente_ y _JavaScript del lado del servidor_ son las versiones extendidas del JavaScript principal.
 
 * _JavaScript del lado del cliente_ permite la mejora y manipulación de páginas web y navegadores de clientes. Las respuestas a eventos del usuario, como clics del mouse, entrada de formularios y navegación de páginas, son algunos de sus ejemplos.
-* _JavaScript del lado del servidor_ permite el acceso a servidores, bases de datos y sistemas de archivos.
+* [_JavaScript del lado del servidor_](./server-side/README.md) permite el acceso a servidores, bases de datos y sistemas de archivos.
 
-JavaScript es un lenguaje interpretado. Mientras ejecuta Javascript, un intérprete interpreta cada línea y la ejecuta. El navegador moderno utiliza la tecnología Just In Time (JIT) para la compilación, que compila JavaScript en un código de bytes ejecutable.
+JavaScript es un lenguaje interpretado. Mientras ejecuta Javascript, un intérprete interpreta cada línea y la ejecuta. El navegador moderno utiliza la tecnología [Just In Time (JIT)](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) para la compilación, que compila JavaScript en un código de bytes ejecutable.
 
 {% hint style="info" %}
 "LiveScript" fue el nombre inicial dado a JavaScript.
 {% endhint %}
 
-### Código y qué hacer con él
+### Código y qué hacer con él y Convenciones tipográficas
 
 _Código_ son las instrucciones escritas que componen un programa. Aquí, muchos capítulos contienen mucho código y es importante leer y escribir código como parte del aprendizaje de programación. No se limite a leer rápidamente los ejemplos: léalos atentamente y trate de comprenderlos. Esto puede resultar difícil al principio, pero con la práctica mejorará. Lo mismo ocurre con los ejercicios: asegúrese de intentar escribir una solución antes de asumir que los comprende. También es útil intentar ejecutar las soluciones de los ejercicios en un intérprete de JavaScript, ya que esto le permitirá ver si su código funciona correctamente y puede animarlo a experimentar e ir más allá de los ejercicios.
-
-### Convenciones tipográficas
 
 Aquí, el texto escrito en una fuente monoespaciada representa elementos de un programa. Puede ser un fragmento autónomo o una referencia a parte de un programa cercano. Los programas, como el que se muestra a continuación, se escriben de esta manera:
 

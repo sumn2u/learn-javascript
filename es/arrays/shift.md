@@ -5,7 +5,7 @@ description: El método shift elimina el primer elemento de índice de la matriz
 ---
 # Shift
 
-El método `shift` elimina el primer índice de esa matriz y mueve todos los índices hacia la izquierda. Cambia la matriz original. Aquí está la sintaxis para usar "shift":
+El método `shift` elimina el primer índice de esa matriz y mueve todos los índices hacia la izquierda. Cambia la matriz original. Aquí está la sintaxis para usar `shift`:
 
 ```javascript
 array.shift();

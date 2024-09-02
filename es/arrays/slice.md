@@ -7,11 +7,10 @@ description:  El método Javascript arr.slice() devuelve una nueva matriz que co
 
 El método `slice` acepta dos parametros inicio y fin.
 
-* inicio: Este parámetro define el índice inicial desde donde la porción va a ser extraída.
-Si este argumento se pierde entonces el método tomca como inicio el 0 como valor de inicio por defecto.
+* **inicio**: Este parámetro define el índice inicial desde donde la porción va a ser extraída.
+  Si este argumento se pierde entonces el método tomca como inicio el `0` como valor de inicio por defecto.
 
-* final: Este parámetro es el índice hasta el cual se extraerá la porción (excluyendo el índice final).
-
+* **final**: Este parámetro es el índice hasta el cual se extraerá la porción (excluyendo el índice final).
   Si este argumento no está definido, entonces se extrae la matriz hasta el final, ya que es el valor final predeterminado. Si el valor final es mayor que la longitud de la matriz, entonces el valor final cambia a la longitud de la matriz.
 
 ```javascript

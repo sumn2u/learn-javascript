@@ -11,8 +11,8 @@ El método split() divide una cadena en una lista de subcadenas y las devuelve c
 
 El método split() tiene en cuenta:
 
-separador (opcional) - El patrón (cadena o expresión regular) que describe dónde debería ocurrir cada división.
-límite (opcional) - Un entero no negativo que limita el número de partes en las que se dividirá la cadena dada.
+* **Separador (opcional)** - El patrón (cadena o expresión regular) que describe dónde debería ocurrir cada división.
+* **Límite (opcional)** - Un entero no negativo que limita el número de partes en las que se dividirá la cadena dada.
 
 ```javascript
 console.log("ABCDEF".split("")); // [ 'A', 'B', 'C', 'D', 'E', 'F' ]

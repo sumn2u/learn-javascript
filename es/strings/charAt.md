@@ -11,10 +11,9 @@ El método `str.charAt()` devuelve el carácter en el índice dado del índice d
 
 El método charAt() tiene en cuenta:
 
-Argumentos: El único argumento en esta función es el índice en la cadena de donde se extraerá el carácter único.
-
-índice: El rango de este índice está entre 0 y longitud - 1. Si no se especifica el índice entonces se devuelve el primer carácter de la cadena ya que el índice usado por defecto para esta función es 0.
-Valor de Retorno: Devuelve un único carácter localizado en el índice especificado como el argumento de la función. Si el índice está fuera de rango, esta función devolverá una cadena vacía.
+* **Argumentos**: El único argumento en esta función es el índice en la cadena de donde se extraerá el carácter único.
+* **Índice**: El rango de este índice está entre 0 y longitud - 1. Si no se especifica el índice entonces se devuelve el primer carácter de la cadena ya que el índice usado por defecto para esta función es 0.
+* **Valor de Retorno**: Devuelve un único carácter localizado en el índice especificado como el argumento de la función. Si el índice está fuera de rango, esta función devolverá una cadena vacía.
 
 ```javascript
 //Ejemplo 1:

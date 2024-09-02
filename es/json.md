@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 11
-pageNumber: 67
+pageNumber: 82
 description: JSON (JavaScript Object Notation, Notación de objetos JavaScript en español ) es un formato de intercambio de datos ligero que se utiliza para representar e intercambiar datos entre diferentes sistemas y plataformas. Es ampliamente utilizado para la transmisión y almacenamiento de datos, especialmente en el desarrollo web.
 ---
 
@@ -36,11 +36,11 @@ console.log(JSONoriginal);
 
 Los siguientes tipos de datos son compatibles con JSON.
 
-* string
-* number
-* array
-* boolean
-* objeto con valores JSON válidos
-* `null`
+* [string](./strings/README.md)
+* [number](./numbers/README.md)
+* [array](./arrays/README.md)
+* [boolean](./basics/types.md#Boolean)
+* [object](./basics/types.md#Object) con valores JSON válidos
+* [null](./basics/types.md#NULL)
 
 No puede ser `function`, `date` o `undefined`.
