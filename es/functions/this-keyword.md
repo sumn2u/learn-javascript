@@ -1,124 +1,124 @@
 ---
 chapter: 8
-description: Understanding the `this` Keyword in JavaScript.
+description: Entendiendo la palabra clave `this` en JavaScript.
 ---
 
-## Understanding the `this` Keyword in JavaScript
+# Entendiendo la palabra clave `this` en JavaScript
 
-The `this` keyword in JavaScript refers to the object it belongs to. It has different values depending on where it is used: in a method, alone, in a function, in an event, etc.
+La palabra clave `this` en JavaScript hace referencia al objeto al que pertenece. Tiene distintos valores según dónde se utilice: en un método, sola, en una función, en un evento, etc.
 
-### `this` in Global Context
+## `this` en el Contexto global
 
-In the global execution context (outside of any function), `this` refers to the global object, which is `window` in browsers.
+En el contexto de ejecución global (fuera de cualquier función), `this` se refiere al objeto global, que es `window` en los navegadores.
 
 ```javascript
-console.log(this); // Output: Window {...}
+console.log(this); // Salida: Window {...}
 ```
 
-### `this` in Object Methods
+## `this` en los métodos de un objeto
 
-When used in an object method, `this` refers to the object the method belongs to.
+Cuando se utiliza en un método de objeto, `this` se refiere al objeto al que pertenece el método.
 
 ```javascript
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    fullName: function() {
-        return `${this.firstName} ${this.lastName}`;
+const persona = {
+    nombre: "Juan",
+    apellido: "Pérez",
+    nombreCompleto: function() {
+        return `${this.nombre} ${this.apellido}`;
     }
 };
 
-console.log(person.fullName()); // Output: John Doe
+console.log(persona.nombreCompleto()); // Salida: Juan Pérez
 ```
 
-### `this` in Constructor Functions
+## `this` en funciones de construcción
 
-In a constructor function, `this` refers to the newly created instance.
+En una función constructora, `this` se refiere a la instancia recién creada.
 
 ```javascript
-function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+function Persona(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
 }
 
-const person1 = new Person("Jane", "Smith");
-console.log(person1.firstName); // Output: Jane
+const persona1 = new Persona("Juana", "Herrera");
+console.log(persona1.nombre); // Salida: Juana
 ```
 
-### `this` in Arrow Functions
+## `this` en funciones flecha
 
-Arrow functions do not have their own `this`. Instead, `this` is lexically inherited from the outer function where the arrow function is defined.
+Las funciones de flecha no tienen su propio `this`. En cambio, `this` se hereda léxicamente de la función externa donde se define la función de flecha.
 
 ```javascript
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    fullName: function() {
-        const getFullName = () => `${this.firstName} ${this.lastName}`;
-        return getFullName();
+const persona = {
+    nombre: "Juan",
+    apellido: "Pérez",
+    nombreCompleto: function() {
+        const dameNombreCompleto = () => `${this.nombre} ${this.apellido}`;
+        return dameNombreCompleto();
     }
 };
 
-console.log(person.fullName()); // Output: John Doe
+console.log(persona.nombreCompleto()); // Saslida: Juan Pérez
 ```
 
-### `this` in Event Handlers
+## `this` en manejadores de eventos
 
-In event handlers, `this` refers to the element that received the event.
+En los controladores de eventos, `this` se refiere al elemento que recibió el evento.
 
 ```html
-<button id="myButton">Click me</button>
+<button id="miBoton">Púlsame</button>
 <script>
-    document.getElementById("myButton").addEventListener("click", function() {
-        console.log(this); // Output: <button id="myButton">Click me</button>
+    document.getElementById("miBoton").addEventListener("click", function() {
+        console.log(this); // Salida: <button id="miBoton">Púlsame</button>
     });
 </script>
 ```
 
-### Changing `this` with `call`, `apply`, and `bind`
+## Cambiar `this` con `call`, `apply`, y `bind`
 
-You can explicitly set the value of `this` using `call`, `apply`, and `bind`.
+Puede establecer explícitamente el valor de `this` usando `call`, `apply` y `bind`.
 
-#### `call` Method
+### Método `call`
 
-The `call` method calls a function with a given `this` value and arguments provided individually.
-
-```javascript
-function greet() {
-    console.log(`Hello, ${this.name}`);
-}
-
-const person = { name: "Alice" };
-greet.call(person); // Output: Hello, Alice
-```
-
-#### `apply` Method
-
-The `apply` method calls a function with a given `this` value and arguments provided as an array.
+El método `call` llama a una función con un valor `this` dado y argumentos proporcionados individualmente.
 
 ```javascript
-function greet(greeting) {
-    console.log(`${greeting}, ${this.name}`);
+function saluda() {
+    console.log(`Hola, ${this.nombre}`);
 }
 
-const person = { name: "Bob" };
-greet.apply(person, ["Hi"]); // Output: Hi, Bob
+const persona = { nombre: "Alicia" };
+saluda.call(persona); // Salida: Hola, Alicia
 ```
 
-#### `bind` Method
+### Método  `apply`
 
-The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value.
+El método `apply` llama a una función con un valor `this` dado y argumentos proporcionados como una matriz.
 
 ```javascript
-function greet() {
-    console.log(`Hello, ${this.name}`);
+function saluda(saludo) {
+    console.log(`${saludo}, ${this.nombre}`);
 }
 
-const person = { name: "Charlie" };
-const greetPerson = greet.bind(person);
-greetPerson(); // Output: Hello, Charlie
+const persona = { nombre: "Roberto" };
+saluda.apply(persona, ["Hola"]); // Salida: Hola, Roberto
 ```
 
-### Conclusion
+### Método `bind`
 
-Understanding the `this` keyword is crucial for writing effective JavaScript code. Its value depends on the context in which it is used, and it can be explicitly set using `call`, `apply`, and `bind`.
+El método `bind` crea una nueva función que, cuando se llama, tiene su palabra clave `this` establecida en el valor proporcionado.
+
+```javascript
+function saluda() {
+    console.log(`Hola, ${this.nombre}`);
+}
+
+const persona = { nombre: "Carlos" };
+const saludaPersona = saluda.bind(persona);
+saludaPersona(); // Salida: Hola, Carlos
+```
+
+## Conclusión
+
+Comprender la palabra clave `this` es fundamental para escribir código JavaScript eficaz. Su valor depende del contexto en el que se utiliza y se puede configurar explícitamente mediante `call`, `apply` y `bind`.

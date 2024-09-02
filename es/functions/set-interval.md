@@ -6,52 +6,49 @@ Title: Set Interval
 
 
 # Set Interval
-The `setInterval` method is used to call a function and add a delay time to it, in milliseconds,  before the function will run again. For example, if you're making a function that generates a random color, you can use `setInterval()` to say how long the computer has to wait before the function runs again and generates another color. This is useful in making functions repeat. 
 
-The first parameter in the method is the name of the function for which you're setting an interval. The second parameter specifies the duration of the interval. You can also add additional parameters if you want to pass arguments to the function.
+El método `setInterval` se utiliza para llamar a una función y agregarle un tiempo de retraso, en milisegundos, antes de que la función se ejecute nuevamente. Por ejemplo, si estás creando una función que genera un color aleatorio, puedes usar `setInterval()` para indicar cuánto tiempo debe esperar la computadora antes de que la función se ejecute nuevamente y genere otro color. Esto es útil para hacer que las funciones se repitan.
 
-As another simple example, let's create a function called `repeatSaying` where it says "And again!" every 2 seconds in the [console](https://javascript.sumankunwar.com.np/en/exercises/console.html). 
+El primer parámetro del método es el nombre de la función para la que estás configurando un intervalo. El segundo parámetro especifica la duración del intervalo. También puedes agregar parámetros adicionales si quieres pasar argumentos a la función.
 
-```js
-function repeatSaying() {
-console.log("And again");
-}
-//when called, it generates in the console: "And again!"
-
-setInterval(repeatSaying, 2000);
-//calls the function every 2 seconds
-
-
-```
-You can also add parameters of a function when you use set interval. Continuing on with the previous example let's add an ellipsis to the console statement, to show that it repeats. First we'll add a parameter called `el` which is short for ellipse. Next we'll add a `+` followed by calling are parameter `el` to show that the value of the parameter comes after. Finally in set interval let's add a comma `,` followed by a string for the value of the ellipse parameter, we'll put `"..."`.
+Como otro ejemplo simple, creemos una función llamada `repetirDicho` donde dice "¡Y otra vez!" cada 2 segundos en la [consola](https://javascript.sumankunwar.com.np/en/exercises/console.html).
 
 ```js
-function repeatSaying(el) {
-console.log("And again!" + el);
+function repetirDicho() {
+  console.log("¡Y otra vez!");
 }
+// al llamarla genera en la consola: "¡Y otra vez!"
 
-setInterval(repeatSaying, 2000, "...");
-//When it runs, it'll repeat the saying "And again!..."
+setInterval(repetirDicho, 2000);
+// llama a la función cada 2 segundos
 ```
 
-As you can see from this example, after you put the function and interval for the function, you can set the values of the function parameters inside set interval. 
+También puedes agregar parámetros de una función cuando usas `setInterval`. Continuando con el ejemplo anterior, agreguemos puntos suspensivos a la declaración de la consola para mostrar que se repite. Primero, agregaremos un parámetro llamado `el`, que es la abreviatura de elipse. Luego, agregaremos un `+` seguido de llamar a nuestro parámetro `el` para mostrar que el valor del parámetro viene después. Finalmente, en `setInterval`, agreguemos una coma `,` seguida de una cadena para el valor del parámetro elipse, pondremos `"..."`.
 
+```js
+function repetirDicho(el) {
+  console.log("¡Y otra vez!" + el);
+}
 
+setInterval(repetirDicho, 2000, "...");
+// Cuando se ejecuta, repetirá el dicho "¡Y otra vez!..."
+```
 
+Como puede ver en este ejemplo, después de poner la función y el intervalo para la función, puede establecer los valores de los parámetros de la función dentro del intervalo establecido.
 
 ## Clear Interval
-You can use the `clearInterval()` method to remove a set interval with a specefic variable name. As an example based on the previous one let's store set interval into a variable named `intervalTime`, however, right after our variable we'll call it inside clear interval by writing `clearInterval(intervalTime).`
+
+Puede utilizar el método `clearInterval()` para eliminar un intervalo establecido con un nombre de variable específico. Como ejemplo basado en el anterior, almacenemos el intervalo establecido en una variable llamada `intervalo`, sin embargo, justo después de nuestra variable la llamaremos dentro de clear interval escribiendo `clearInterval(intervalo).`
 
 ```js
-function repeatSaying(el) {
-console.log("And again!" + el);
+function repetirDicho(el) {
+console.log("¡Y otra vez!" + el);
 }
 
-var interval = setInterval(repeatSaying, 2000, "...");
+var interval = setInterval(repetirDicho, 2000, "...");
 
 clearInterval(interval);
-//The clear Interval method stops setInterval
+//El método clearInterval detiene setInterval
 ```
 
-When this code is run, you'll see that there is no output. This is because `setInterval` was the only thing calling the `repeatSaying` function, but since it was removed by `clearInterval` it's no longer is called. Even if it was called seperately using `repeatSaying()` it would only run once because clear Interval stops it from repeating.
-
+Cuando se ejecuta este código, verá que no hay salida. Esto se debe a que `setInterval` era lo único que llamaba a la función `repetirDicho`, pero como fue eliminada por `clearInterval`, ya no se llama. Incluso si se llamara por separado usando `repetirDicho()`, solo se ejecutaría una vez porque `clearInterval` evita que se repita.
