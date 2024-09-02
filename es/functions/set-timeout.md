@@ -5,33 +5,36 @@ Title: Set Timeout
 ---
 
 # Set Timeout
-The `setTimeout` global method is used to add a delay (in milliseconds) before a function is ran. 
 
-For instance, in this example after "Ready..." is written in the console, the function `start()` has to wait 3 seconds before running.
+El método global `setTimeout` se utiliza para agregar un retraso (en milisegundos) antes de que se ejecute una función.
+
+Por ejemplo, en este ejemplo, después de escribir "Listo..." en la consola, la función `arranca()` tiene que esperar 3 segundos antes de ejecutarse.
 
 ```js
-console.log("Ready...");
+console.log("Listo...");
 
-function start() {
-console.log("go!!");
+function arranca() {
+console.log("¡ya está!");
 }
 
-setTimeout(start, 3000);
+setTimeout(arranca, 3000);
 
-//Output: "Ready..." then after 3 seconds, "go!!"
+// Salida: "Listo..." y luego, después de 3 segundos, "¡ya está!"
 ```
 
-# Clear Timeout
-The `clearTimeout` global method is used to remove any `setTimeout()` methods that are stored in variables. For instance, let's change our last example by storing `setTimeout()` in a variable
-```js
-console.log("Ready...");
+## Clear Timeout
 
-function start() {
-console.log("go!!");
+El método global `clearTimeout` se utiliza para eliminar cualquier método `setTimeout()` que esté almacenado en variables. Por ejemplo, cambiemos nuestro último ejemplo almacenando `setTimeout()` en una variable
+
+```js
+console.log("Listo...");
+
+function arranca() {
+console.log("¡ya está!");
 }
 
-let timeBeforeStart = setTimeout(start, 3000);
+let tiempoAntesDeComenzar = setTimeout(arranca, 3000);
 
-clearTimeout(timeBeforeStart);
-// Stops the function as a whole from running
+clearTimeout(tiempoAntesDeComenzar);
+// Detiene la ejecución de la función en su totalidad
 ```

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 8
-pageNumber: 53
+pageNumber: 68
 description: Las funciones son bloques de código que realizan una tarea específica o un conjunto de tareas. Son unidades de código reutilizables que se pueden llamar y ejecutar en cualquier punto de un programa.
 ---
 
@@ -46,3 +46,15 @@ const double =  (x) =>  2 * x;
 {% hint style="warning" %}
 La palabra clave `this` en la función de flecha representa el objeto que definió la función de flecha.
 {% endhint %}
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [Cierres](./closures.md)
+* [Funciones de orden superior](./higher-order.md)
+* [Funciones recursivas](./recursive-functions.md)
+* [Set Interval](./set-interval.md)
+* [Set Timeout](./set-timeout.md)
+* [Palabra clave this](./this-keyword.md)
+* [Operador de resto](./rest-operator.md)
+* [Elevación (Hoisting)](./hoisting.md)
+* [Captadores y definidores (Getters / Setters)](./getters-setters.md)

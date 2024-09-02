@@ -1,64 +1,64 @@
 ---
 chapter: 8
-description: Understanding Hoisting for Functions in JavaScript.
+description: Comprender la elevación de funciones en JavaScript.
 ---
 
-## Understanding Hoisting for Functions in JavaScript
+# Comprender la elevación de funciones en JavaScript
 
 Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase. This means that you can use functions and variables before they are declared in the code.
 
-### Function Hoisting
+## Elevación de funciones
 
-In JavaScript, function declarations are hoisted to the top of their containing scope. This allows you to call a function before it is defined in the code.
+En JavaScript, las declaraciones de funciones se colocan en la parte superior del ámbito que las contiene. Esto permite llamar a una función antes de que se defina en el código.
 
-### Example of Function Hoisting
+## Ejemplo de elevación de funciones
 
-Here's an example to illustrate function hoisting:
+A continuación se muestra un ejemplo para ilustrar la elevación de funciones:
 
 ```javascript
-console.log(greet()); // Output: Hello, World!
+console.log(saludo()); // Salida: ¡Hola mundo!
 
-function greet() {
-    return "Hello, World!";
+function saludo() {
+    return "¡Hola mundo!";
 }
 ```
 
-In this example, the `greet` function is called before it is defined, but it works because the function declaration is hoisted to the top of the scope.
+En este ejemplo, se llama a la función `saludo` antes de definirla, pero funciona porque la declaración de la función se eleva a la parte superior del ámbito.
 
-### Function Expressions and Hoisting
+## Expresiones de función y elevación
 
-Unlike function declarations, function expressions are not hoisted. This means that you cannot call a function expression before it is defined.
+A diferencia de las declaraciones de funciones, las expresiones de funciones no se pueden elevar. Esto significa que no se puede llamar a una expresión de función antes de que se defina.
 
-### Example of Function Expression
+## Ejemplo de expresión de función
 
-Here's an example to illustrate the difference:
+He aquí un ejemplo para ilustrar la diferencia:
 
 ```javascript
-console.log(greet()); // Output: TypeError: greet is not a function
+console.log(saludo()); // Salida: TypeError: saludo is not a function
 
-var greet = function() {
-    return "Hello, World!";
+var saludo = function() {
+    return "¡Hola mundo!";
 };
 ```
 
-In this example, the `greet` function is defined as a function expression, and calling it before the definition results in an error because the variable `greet` is hoisted, but its assignment is not.
+En este ejemplo, la función `saludo` se define como una expresión de función, y llamarla antes de la definición genera un error porque la variable `saludo` se eleva, pero su asignación no.
 
-### Hoisting with `let` and `const`
+## Elevación con `let` y `const`
 
-Variables declared with `let` and `const` are also hoisted, but they are not initialized. This means that accessing them before their declaration results in a `ReferenceError`.
+Las variables declaradas con `let` y `const` también se elevan, pero no se inicializan. Esto significa que acceder a ellas antes de su declaración da como resultado un `ReferenceError`.
 
-### Example with `let` and `const`
+## Ejemplo con `let` y `const`
 
 ```javascript
-console.log(greet); // Output: ReferenceError: Cannot access 'greet' before initialization
+console.log(saludo); // Salida: ReferenceError: saludo is not defined
 
-let greet = function() {
-    return "Hello, World!";
+let saludo = function() {
+    return "¡Hola mundo!";
 };
 ```
 
-In this example, the `greet` variable is hoisted, but it is not initialized, resulting in a `ReferenceError` when accessed before its declaration.
+En este ejemplo, la variable `saludo` se eleva, pero no se inicializa, lo que genera un `ReferenceError` cuando se accede a ella antes de su declaración.
 
-### Conclusion
+## Conclusión
 
-Understanding hoisting is crucial for writing predictable and bug-free JavaScript code. Function declarations are hoisted, allowing them to be called before they are defined, while function expressions are not hoisted, leading to potential errors if called before their definition. Variables declared with `let` and `const` are hoisted but not initialized, resulting in `ReferenceError` if accessed before their declaration.
+Comprender el hoisting es crucial para escribir código JavaScript predecible y libre de errores. Las declaraciones de funciones se elevan, lo que permite llamarlas antes de que se definan, mientras que las expresiones de función no se elevan, lo que genera posibles errores si se llaman antes de su definición. Las variables declaradas con `let` y `const` se elevan pero no se inicializan, lo que genera `ReferenceError` si se accede a ellas antes de su declaración.

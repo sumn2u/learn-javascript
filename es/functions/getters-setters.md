@@ -1,105 +1,105 @@
 ---
 chapter: 8
-description: Understanding Getters and Setters in JavaScript.
+description: Comprender los métodos Getters y Setters en JavaScript
 ---
 
-## Understanding Getters and Setters in JavaScript
+# Comprender los métodos Getters y Setters en JavaScript
 
-Getters and setters in JavaScript are special methods that provide a way to access and update the properties of an object. They allow you to control how a property is accessed and modified, adding a layer of abstraction and encapsulation.
+Los métodos getters y setters de JavaScript son métodos especiales que proporcionan una forma de acceder y actualizar las propiedades de un objeto. Permiten controlar cómo se accede a una propiedad y cómo se modifica, agregando una capa de abstracción y encapsulamiento.
 
-### What are Getters and Setters?
+## ¿Qué son los Getters y Setters?
 
-- **Getters**: Methods that get the value of a specific property.
-- **Setters**: Methods that set the value of a specific property.
+- **Getters**: métodos que obtienen el valor de una propiedad específica.
+- **Setters**: métodos que establecen el valor de una propiedad específica.
 
-### Defining Getters and Setters
+## Definición de métodos get y set
 
-You can define getters and setters using the `get` and `set` keywords within an object literal or a class.
+Puede definir getters y setters utilizando las palabras clave `get` y `set` dentro de un objeto literal o una clase.
 
-### Example with Object Literals
+## Ejemplos con literales de objeto
 
-Here's an example of defining getters and setters in an object literal:
+A continuación se muestra un ejemplo de definición de captadores y definidores en un literal de objeto:
 
 ```javascript
-let person = {
-    firstName: "John",
-    lastName: "Doe",
-    get fullName() {
-        return `${this.firstName} ${this.lastName}`;
+let persona = {
+    nombre: "Juan",
+    apellido: "Pérez",
+    get nombreCompleto() {
+        return `${this.nombre} ${this.apellido}`;
     },
-    set fullName(name) {
-        [this.firstName, this.lastName] = name.split(" ");
+    set nombreCompleto(nombre) {
+        [this.nombre, this.apellido] = nombre.split(" ");
     }
 };
 
-console.log(person.fullName); // Output: John Doe
-person.fullName = "Jane Smith";
-console.log(person.firstName); // Output: Jane
-console.log(person.lastName); // Output: Smith
+console.log(persona.nombreCompleto); // Salida: 'Juan Pérez'
+persona.nombreCompleto = "Juana Herrera";
+console.log(persona.nombre); // Salida: 'Juana'
+console.log(persona.apellido); // Salida: 'Herrera'
 ```
 
-### Example with Classes
+## Ejemplo con clases
 
-Here's an example of defining getters and setters in a class:
+A continuación se muestra un ejemplo de definición de getters y setters en una clase:
 
 ```javascript
-class Person {
-    constructor(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+class Persona {
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
-    get fullName() {
-        return `${this.firstName} ${this.lastName}`;
+    get nombreCompleto() {
+        return `${this.nombre} ${this.apellido}`;
     }
 
-    set fullName(name) {
-        [this.firstName, this.lastName] = name.split(" ");
+    set nombreCompleto(nombre) {
+        [this.nombre, this.apellido] = nombre.split(" ");
     }
 }
 
-let person = new Person("John", "Doe");
-console.log(person.fullName); // Output: John Doe
-person.fullName = "Jane Smith";
-console.log(person.firstName); // Output: Jane
-console.log(person.lastName); // Output: Smith
+let persona = new Persona("Juan", "Pérez");
+console.log(persona.nombreCompleto); // Output: 'Juan Pérez'
+persona.nombreCompleto = "Juana Herrera";
+console.log(persona.nombre); // Output: 'Juana'
+console.log(persona.apellido); // Output: 'Herrera'
 ```
 
-### Benefits of Using Getters and Setters
+## Beneficios del uso de getters y setters
 
-1. **Encapsulation**: Control how properties are accessed and modified.
-2. **Validation**: Add validation logic when setting a property.
-3. **Computed Properties**: Create properties that are computed based on other properties.
+1. **Encapsulación**: controla cómo se accede a las propiedades y cómo se modifican.
+2. **Validación**: agrega lógica de validación al configurar una propiedad.
+3. **Propiedades calculadas**: crea propiedades que se calculan en función de otras propiedades.
 
-### Example of Validation
+## Ejemplo de validación
 
-Here's an example of adding validation logic in a setter:
+A continuación se muestra un ejemplo de cómo agregar lógica de validación en un setter:
 
 ```javascript
-class User {
-    constructor(username) {
-        this._username = username;
+class Usuario {
+    constructor(nombreUsuario) {
+        this._nombreUsuario = nombreUsuario;
     }
 
-    get username() {
-        return this._username;
+    get nombreUsuario() {
+        return this._nombreUsuario;
     }
 
-    set username(name) {
-        if (name.length < 3) {
-            console.error("Username must be at least 3 characters long.");
+    set nombreUsuario(nombre) {
+        if (nombre.length < 3) {
+            console.error("El nombre de usuario debe tener al menos 3 caracteres.");
         } else {
-            this._username = name;
+            this._nombreUsuario = nombre;
         }
     }
 }
 
-let user = new User("jsmith");
-console.log(user.username); // Output: jsmith
-user.username = "jo"; // Output: Username must be at least 3 characters long.
-console.log(user.username); // Output: jsmith
+let usuario = new Usuario("jperez");
+console.log(usuario.nombreUsuario); // Output: 'jperez'
+usuario.nombreUsuario = "jp"; // Output: 'El nombre de usuario debe tener al menos 3 caracteres.'
+console.log(usuario.nombreUsuario); // Output: jperez'
 ```
 
-### Conclusion
+## Conclusión
 
-Getters and setters provide a powerful way to manage object properties in JavaScript. By using them, you can add validation, encapsulation, and computed properties, making your code more robust and maintainable.
+Los métodos getter y setter proporcionan una forma eficaz de gestionar las propiedades de los objetos en JavaScript. Al usarlos, puede agregar validación, encapsulación y propiedades calculadas, lo que hace que su código sea más sólido y fácil de mantener.
