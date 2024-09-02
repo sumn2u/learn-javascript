@@ -13,8 +13,9 @@
 
 *This book offers a comprehensive introduction to programming and JavaScript, designed to impart fundamental knowledge in a clear and organized manner. Its content delves into foundational principles and core concepts, presented in simple language to facilitate easy comprehension. The book is thoughtfully structured, providing in-depth explanations and accompanying notes enriched with illustrative examples, thereby enhancing the reader's understanding of the subject matter.*
 
-[![Learn JavaScript](./cover.jpg)
-](https://leanpub.com/learnjavascriptbeginnersguide/signup)
+
+<a href="https://leanpub.com/learnjavascriptbeginnersguide/signup"><img src="https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero?1672944047" width="250px"></a>
+
 
 *Furthermore, the inclusion of practical exercises at the end of each section adds significant value to the learning experience, allowing readers to apply the acquired knowledge and reinforce their skills. This thoughtful combination of theoretical explanations, real-world examples, and hands-on exercises ensures a well-rounded educational approach, making the book an invaluable resource for beginners looking to grasp the essentials of programming and JavaScript in a professional and systematic manner.*
 
@@ -110,9 +111,12 @@ Contributions to this project are welcome. If you want to contribute, follow the
 3. Make your changes locally.
 4. Push your changes and create a pull request.
 
-**Tips**
+<br>
 
-*For Adding new documents* : Create `*.md` file under `<lang>/chapter-<n>/` directory.
+> [!TIP]
+> For Adding new documents* : Create `*.md` file under `<lang>/chapter-<n>/` directory.
+
+<br>
 
 ## Contributors
 We would like to thank the open-source community for their valuable contributions to this project
@@ -124,7 +128,7 @@ We would like to thank the open-source community for their valuable contribution
 
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to contact us at sumn2u@gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜.
+If you have any questions or feedback, please don't hesitate to contact us at sumn2u[at]gmail.com, or reach out to Suman directly. We hope you find this resource helpful 💜.
 
 
 ## License Information
