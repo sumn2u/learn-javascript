@@ -8,20 +8,18 @@ pageNumber: 38
 
 Sintaxis:
 
-string.substring(indiceInicial, indiceFinal)
+`string.substring(indiceInicial, indiceFinal)`
 
 ## Sintaxis
 
-*str.substr(inicio , longitud)
-
+* usando `str.substr(inicio , longitud)`
 * usando el método `substr()`
-* usando el literal de plantilla (introducido en ES6)
+* usando el literal de plantilla (introducido en [ES6](../es6-concepts/template-literals.md))
 
-El método substr() tiene en cuenta:
+El método `substr()` tiene en cuenta:
 
-Parámetros: Aquí indiceInicial e indiceFinal describen la parte de la cadena que se tomará como subcadena. Aquí el indiceFinal es opcional.
-
-Valor devuelto: Devuelve una cadena nueva que es parte de la cadena dada. El código de JavaScript que muestra el trabajo de la función string.substring():
+* **Parámetros**: Aquí indiceInicial e indiceFinal describen la parte de la cadena que se tomará como subcadena. Aquí el indiceFinal es opcional.
+* **Valor devuelto**: Devuelve una cadena nueva que es parte de la cadena dada. El código de JavaScript que muestra el trabajo de la función `string.substring()`:
 
 ```javascript
 // Ejemplo 1:

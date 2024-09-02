@@ -5,7 +5,7 @@ description: Las matrices son una colección de elementos y a cada elemento se l
 ---
 # Índices
 
-Entonces tienes tu conjunto de elementos de datos, pero ¿qué pasa si quieres acceder a un elemento específico? Ahí es donde entran los índices. Un **índice** se refiere a un lugar en la matriz. Los índices progresan lógicamente uno por uno, pero cabe señalar que el primer índice de una matriz es 0, como ocurre en la mayoría de los lenguajes. Los corchetes `[]` se utilizan para indicar que se está haciendo referencia a un índice de una matriz.
+Entonces tienes tu conjunto de elementos de datos, pero ¿qué pasa si quieres acceder a un elemento específico? Ahí es donde entran los índices. Un **índice** se refiere a un lugar en la matriz. Los índices progresan lógicamente uno por uno, pero cabe señalar que el primer índice de una matriz es `0`, como ocurre en la mayoría de los lenguajes. Los corchetes `[]` se utilizan para indicar que se está haciendo referencia a un índice de una matriz.
 
 ```javascript
 // Esto es una matriz de cadenas

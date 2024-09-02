@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 5
-pageNumber: 29
+pageNumber: 39
 description: Las condiciones son esenciales para escribir código dinámico y responsivo que pueda adaptarse a diferentes escenarios y tomar decisiones basadas en entradas, interacciones del usuario o datos. 
 ---
 
@@ -15,4 +15,10 @@ En primer lugar, se pueden utilizar condiciones para garantizar que su programa 
 
 La otra cosa que las condiciones pueden hacer por usted es permitir la ramificación. Es posible que haya encontrado diagramas de ramificación antes, por ejemplo, al completar un formulario. Básicamente, esto se refiere a ejecutar diferentes “ramas” (partes) de código, dependiendo de si se cumple o no la condición.
 
-En este capítulo, aprenderemos las bases de la lógica condicional en JavaScript.
+En este capítulo, aprenderemos las bases de la lógica condicional en JavaScript, incluyendo los siguientes temas:
+
+* [If](./if.md)
+* [Else](./else.md)
+* [Switch](./switch.md)
+* [Comparadores](./comparators.md)
+* [Concatenación](./concatenate.md)

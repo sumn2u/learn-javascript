@@ -40,3 +40,9 @@ Las constantes numéricas se interpretan como hexadecimales si van precedidas de
 ```javascript
 let z = 0xFF; // 255
 ```
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [Math](./math.md)
+* [Operadores básicos](./operators.md)
+* [Operadores avanzados](./advanced.md)

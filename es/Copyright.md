@@ -19,7 +19,7 @@ chapter:
 <br/>
 <!-- markdownlint-restore -->
 
-Aprenda JavaScript: Edición para principiantes
+**Aprenda JavaScript: Edición para principiantes**
 Primera Edición
 
 Copyright © 2023 por Suman Kunwar

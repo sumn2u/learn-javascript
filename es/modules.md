@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 13
-pageNumber: 70
+pageNumber: 87
 description: Los módulos son una forma de organizar el código en componentes separados, reutilizables y encapsulados. Los módulos permiten a los desarrolladores dividir bases de código grandes y complejas en partes más pequeñas y manejables, lo que facilita la comprensión, el mantenimiento y la colaboración en los proyectos.
 ---
 
@@ -13,9 +13,9 @@ En el mundo real, un programa crece orgánicamente para hacer frente a las neces
 
 Los _Módulos_ vienen a evitar estos problemas. Un `módulo` especifica de qué piezas de código depende, junto con qué funcionalidad proporciona para que la utilicen otros módulos. Los módulos que dependen de otro módulo se denominan _dependencias_. Existen varias bibliotecas de módulos para organizar el código en módulos y cargarlo según demanda.
 
-* AMD - uno de los sistemas modulares más antiguos, utilizado inicialmente por [require.js](https://requirejs.org/).
-* CommonJS - Sistema de módulos creado para el servidor Node.js.
-* UMD - Sistema de módulos compatible con AMD y CommonJS.
+* **AMD** - uno de los sistemas modulares más antiguos, utilizado inicialmente por [require.js](https://requirejs.org/).
+* **CommonJS** - Sistema de módulos creado para el servidor Node.js.
+* **UMD** - Sistema de módulos compatible con AMD y CommonJS.
 
 Los módulos pueden cargarse entre sí y utilizar directivas especiales `import` y `export` para intercambiar funcionalidades y llamar funciones entre sí.
 

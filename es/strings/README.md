@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 4
-pageNumber: 23
+pageNumber: 30
 ---
 
 # Capítulo 4
@@ -13,7 +13,7 @@ Las cadenas (strings, en inglés) de JavaScript comparten muchas similitudes con
 A continuación se muestra un ejemplo de una cadena:
 
 ```Javascript
-"Hello World"
+"Hola mundo"
 ```
 
 Los índices de cadenas tienen base cero, lo que significa que la posición inicial del primer carácter es "0" seguida de otros en orden incremental. Varios métodos son compatibles con cadenas y devuelven un nuevo valor. Estos métodos se describen a continuación.
@@ -50,3 +50,13 @@ Los índices de cadenas tienen base cero, lo que significa que la posición inic
 | `trimEnd()`          | Devuelve una cadena con espacios en blanco eliminados del final                                  |
 | `trimStart()`        | Devuelve una cadena con espacios en blanco eliminados desde el inicio.                           |
 | `valueOf()`          | Devuelve el valor primitivo de una cadena o un objeto string.                                    |
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [Creación](./create.md)
+* [CharAt](./charAt.md)
+* [Concatenación](./concat.md)
+* [Length](./length.md)
+* [Replace](./replace.md)
+* [Split](./split.md)
+* [Substring](./substring.md)
