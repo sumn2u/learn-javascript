@@ -1,67 +1,67 @@
 ---
 chapter: 9
-description: Understanding the `constructor` Property in JavaScript.
+description: Comprender la propiedad `constructor` en JavaScript.
 ---
 
-## Understanding the `constructor` Property in JavaScript
+# Comprender la propiedad `constructor` en JavaScript
 
-The `constructor` property in JavaScript is a reference to the function that created an instance's prototype. It is a property of all objects that points to the function that was used to create the object.
+La propiedad `constructor` en JavaScript es una referencia a la función que creó el prototipo de una instancia. Es una propiedad de todos los objetos que apunta a la función que se utilizó para crear el objeto.
 
-### What is the `constructor` Property?
+## ¿Qué es la propiedad `constructor`?
 
-The `constructor` property returns a reference to the constructor function that created the instance. This is useful for identifying the type of an object.
+La propiedad `constructor` devuelve una referencia a la función constructora que creó la instancia. Esto resulta útil para identificar el tipo de un objeto.
 
-### Example of the `constructor` Property
+## Ejemplo de la propiedad `constructor`
 
-Here's a basic example to illustrate the `constructor` property:
+A continuación se muestra un ejemplo básico para ilustrar la propiedad `constructor`:
 
 ```javascript
-function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+function Persona(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
 }
 
-const person1 = new Person("John", "Doe");
-console.log(person1.constructor); // Output: [Function: Person]
+const persona1 = new Persona("Juan", "Herrera");
+console.log(persona1.constructor); // Output: [Function: Persona]
 ```
 
-In this example, the `constructor` property of `person1` points to the `Person` function.
+En este ejemplo, la propiedad `constructor` de `persona1` apunta a la función `Persona`.
 
-### Using the `constructor` Property to Create New Instances
+## Uso de la propiedad `constructor` para crear nuevas instancias
 
-You can use the `constructor` property to create new instances of the same type:
+Puede utilizar la propiedad `constructor` para crear nuevas instancias del mismo tipo:
 
 ```javascript
-const person2 = new person1.constructor("Jane", "Smith");
-console.log(person2.firstName); // Output: Jane
+const persona2 = new persona1.constructor("Juana", "Herrera");
+console.log(persona2.nombre); // Output: Juana
 ```
 
-### `constructor` Property in Built-in Objects
+## La propiedad `constructor` en objetos integrados
 
-The `constructor` property is also available in built-in JavaScript objects:
+La propiedad `constructor` también está disponible en objetos JavaScript integrados:
 
 ```javascript
-const arr = [];
-console.log(arr.constructor); // Output: [Function: Array]
+const array = [];
+console.log(array.constructor); // Output: [Function: Array]
 
-const obj = {};
-console.log(obj.constructor); // Output: [Function: Object]
+const objeto = {};
+console.log(objeto.constructor); // Output: [Function: Object]
 ```
 
-### Modifying the `constructor` Property
+## Modificación de la propiedad `constructor`
 
-You can modify the `constructor` property, but it is generally not recommended as it can lead to unexpected behavior:
+Puedes modificar la propiedad `constructor`, pero generalmente no se recomienda ya que puede generar un comportamiento inesperado:
 
 ```javascript
-function Animal(name) {
-    this.name = name;
+function Animal(nombre) {
+    this.nombre = nombre;
 }
 
-const dog = new Animal("Rex");
-dog.constructor = Person;
-console.log(dog.constructor); // Output: [Function: Person]
+const perro = new Animal("Rex");
+perro.constructor = Persona;
+console.log(perro.constructor); // Output: [Function: Persona]
 ```
 
-### Conclusion
+## Conclusión
 
-The `constructor` property is a useful feature in JavaScript that allows you to reference the function that created an instance's prototype. It can be used to identify the type of an object and create new instances of the same type. However, modifying the `constructor` property should be done with caution.
+La propiedad `constructor` es una característica útil de JavaScript que permite hacer referencia a la función que creó el prototipo de una instancia. Se puede utilizar para identificar el tipo de un objeto y crear nuevas instancias del mismo tipo. Sin embargo, la modificación de la propiedad `constructor` debe realizarse con precaución.

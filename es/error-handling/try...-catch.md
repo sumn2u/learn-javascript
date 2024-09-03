@@ -1,17 +1,11 @@
 ---
 layout: editorial
 chapter: 12
-pageNumber: 68
+pageNumber: 85
 description: En la programación, los errores ocurren por varias razones, algunos se deben a errores de código, otros se deben a una entrada incorrecta y otras cosas imprevisibles. La captura de prueba ayuda a evitar que todo el script se detenga o falle cuando se produce un error, lo que nos permite manejar con elegancia casos excepcionales y proporcionar un comportamiento alternativo.
 ---
 
-# Capítulo 12
-
-## Manejo de errores
-
-En la programación, los errores ocurren por varias razones, algunos se deben a errores de código, otros se deben a una entrada incorrecta y otras cosas imprevisibles. Cuando ocurre un error, el código se detiene y genera un mensaje de error que normalmente se ve en la consola.
-
-## try... catch
+# try... catch
 
 En lugar de detener la ejecución del código, podemos usar la construcción `try...catch` que permite detectar errores sin que el script muera. La construcción `try...catch` tiene dos bloques principales; `try` y luego `catch`.
 

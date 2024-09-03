@@ -200,12 +200,12 @@ Las propiedades y métodos admitidos por RegEx se enumeran a continuación.
 | Nombre        | Descripción                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------------------- |
 | `constructor` | Devuelve la función que creó el prototipo del objeto RegEx                                         |
+| `exec()`      | Prueba la coincidencia y devuelve la primera coincidencia; si no hay coincidencia, devuelve `null` |
 | `global`      | Comprueba si el modificador `g` está configurado                                                   |
 | `ignoreCase`  | Comprueba si el modificador `i` está configurado                                                   |
 | `lastIndex`   | Especifica el índice en el que comenzar la próxima coincidencia.                                   |
 | `multiline`   | Comprueba si el modificador m está configurado                                                     |
 | `source`      | Devuelve el texto de la cadena.                                                                    |
-| `exec()`      | Prueba la coincidencia y devuelve la primera coincidencia; si no hay coincidencia, devuelve `null` |
 | `test()`      | Prueba la coincidencia y devuelve `true` o `false`                                                 |
 | `toString()`  | Devuelve el valor de cadena de la expresión regular.                                               |
 

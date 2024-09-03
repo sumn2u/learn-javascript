@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 58
+pageNumber: 73
 description: Mutable significa que un objeto o tipo de datos se puede cambiar después de su creación, mientras que "inmutable" significa que no se puede cambiar. Los objetos mutables permiten modificar su estado interno, mientras que los objetos inmutables devuelven nuevas instancias con cambios, dejando el original sin cambios.
 ---
 # Mutable
@@ -18,7 +18,7 @@ miObjeto.clave = "otro valor";
 // miObjeto apunta al mismo objeto.
 ```
 
-Puede agregar, modificar o eliminar propiedades de un objeto utilizando la notación de puntos o la notación de corchetes.
+Puede **agregar**, **modificar** o **eliminar** propiedades de un objeto utilizando la notación de puntos o la notación de corchetes.
 
 ```javascript
 let objeto = {};

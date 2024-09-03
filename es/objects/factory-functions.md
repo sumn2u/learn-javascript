@@ -1,106 +1,105 @@
 ---
 chapter: 9
-description: Understanding Factory Functions for Objects in JavaScript.
+description: Comprensión de las funciones factoría para objetos en JavaScript.
 ---
 
-## Understanding Factory Functions for Objects in JavaScript
+# Comprensión de las funciones factoría para objetos en JavaScript
 
-Factory functions are functions that create and return objects. They provide a flexible way to create multiple instances of objects without using the `new` keyword or constructor functions.
+Las funciones de factoría son funciones que crean y devuelven objetos. Ofrecen una forma flexible de crear múltiples instancias de objetos sin utilizar la palabra clave `new` ni funciones constructoras.
 
-### Defining a Factory Function
+## Definición de una función factoría
 
-A factory function is a regular function that returns an object. It can include parameters to customize the properties of the created object.
+Una función factoría es una función normal que devuelve un objeto. Puede incluir parámetros para personalizar las propiedades del objeto creado.
 
-### Example of a Factory Function
+## Ejemplo de una función factoría
 
-Here's a basic example of a factory function:
+He aquí un ejemplo básico de una función factoría:
 
 ```javascript
-function createPerson(firstName, lastName) {
+function creaPersona(nombre, apellido) {
     return {
-        firstName: firstName,
-        lastName: lastName,
-        getFullName: function() {
-            return `${this.firstName} ${this.lastName}`;
+        nombre: nombre,
+        apellido: apellido,
+        obtenNombreCompleto: function() {
+            return `${this.nombre} ${this.apellido}`;
         }
     };
 }
 
-const person1 = createPerson("John", "Doe");
-const person2 = createPerson("Jane", "Smith");
+const persona1 = creaPersona("Juan", "Pérez");
+const persona2 = creaPersona("Juana", "Herrera");
 
-console.log(person1.getFullName()); // Output: John Doe
-console.log(person2.getFullName()); // Output: Jane Smith
+console.log(persona1.obtenNombreCompleto()); // Salida: 'Juan Pérez'
+console.log(persona2.obtenNombreCompleto()); // Salida: 'Juana Herrera'
 ```
 
-In this example, the `createPerson` function returns a new object with `firstName`, `lastName`, and `getFullName` properties.
+En este ejemplo, la función `creaPersona` devuelve un nuevo objeto con propiedades `nombre`, `apellido` y `obtenNombreCompleto`.
 
-### Advantages of Factory Functions
+## Ventajas de las funciones factoría
 
-1. **No `new` Keyword**: Factory functions do not require the `new` keyword, making them simpler and less error-prone.
-2. **Encapsulation**: Factory functions can encapsulate private variables and methods.
-3. **Flexibility**: They can return different types of objects based on conditions.
+1. **Sin palabra clave `new`: Las funciones factoría no requieren la palabra clave `new`, lo que las hace más simples y menos propensas a errores.
+2. **Encapsulación**: Las funciones factoría pueden encapsular variables y métodos privados.
+3. **Flexibilidad**: Pueden devolver diferentes tipos de objetos según las condiciones.
 
-### Encapsulation with Factory Functions
+## Encapsulación con funciones factoría
 
-Factory functions can encapsulate private data by defining variables inside the function scope and returning an object with methods that access those variables.
+Las funciones factoría pueden encapsular datos privados definiendo variables dentro del alcance de la función y devolviendo un objeto con métodos que acceden a esas variables.
 
 ```javascript
-function createCounter() {
-    let count = 0;
+function creaContador() {
+    let cuenta = 0;
     return {
-        increment: function() {
-            count++;
-            return count;
+        incrementa: function() {
+            cuenta++;
+            return cuenta;
         },
-        decrement: function() {
-            count--;
-            return count;
+        decrementa: function() {
+            cuenta--;
+            return cuenta;
         },
-        getCount: function() {
-            return count;
+        dameCuenta: function() {
+            return cuenta;
         }
     };
 }
 
-const counter = createCounter();
-console.log(counter.increment()); // Output: 1
-console.log(counter.getCount()); // Output: 1
-console.log(counter.decrement()); // Output: 0
+const contador = creaContador();
+console.log(contador.incrementa()); // Salida: 1
+console.log(contador.dameCuenta()); // Salida: 1
+console.log(contador.decrementa()); // Salida: 0
 ```
 
-### Returning Different Objects
+## Devolviendo objetos diferentes
 
-Factory functions can return different objects based on conditions, providing flexibility in object creation.
+Las funciones factoría pueden devolver diferentes objetos según las condiciones, lo que proporciona flexibilidad en la creación de objetos.
 
 ```javascript
-function createShape(type) {
-    if (type === "circle") {
+function creaForma(tipo) {
+    if (tipo === "circulo") {
         return {
-            type: "circle",
-            radius: 10,
-            getArea: function() {
-                return Math.PI * this.radius * this.radius;
+            tipo: "circulo",
+            radio: 10,
+            obtenArea: function() {
+                return Math.PI * this.radio * this.radio;
             }
         };
-    } else if (type === "square") {
+    } else if (tipo === "cuadrado") {
         return {
-            type: "square",
-            side: 10,
-            getArea: function() {
-                return this.side * this.side;
+            tipo: "cuadrado",
+            lado: 10,
+            obtenArea: function() {
+                return this.lado * this.lado;
             }
         };
     }
 }
 
-const circle = createShape("circle");
-const square = createShape("square");
+const circulo = creaForma("circulo");
+const cuadrado = creaForma("cuadrado");
 
-console.log(circle.getArea()); // Output: 314.1592653589793
-console.log(square.getArea()); // Output: 100
-```
+console.log(circulo.obtenArea()); // Salida: 314.1592653589793
+console.log(cuadrado.obtenArea()); // Salida: 100```
 
-### Conclusion
+## Conclusión
 
-Factory functions are a powerful and flexible way to create objects in JavaScript. They provide advantages such as avoiding the `new` keyword, encapsulating private data, and returning different types of objects based on conditions. By using factory functions, you can write more modular and maintainable code.
+Las funciones factoría son una forma potente y flexible de crear objetos en JavaScript. Ofrecen ventajas como evitar la palabra clave `new`, encapsular datos privados y devolver distintos tipos de objetos en función de condiciones. Al utilizar funciones de fábrica, puede escribir código más modular y fácil de mantener.

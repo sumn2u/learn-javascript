@@ -1,117 +1,113 @@
 ---
 chapter: 9
-description: Understanding the Dynamic Nature of Objects in JavaScript.
+description: Comprender la naturaleza dinámica de los objetos en JavaScript.
 ---
 
-## Understanding the Dynamic Nature of Objects in JavaScript
+# Comprender la naturaleza dinámica de los objetos en JavaScript
 
-JavaScript objects are dynamic, meaning their properties can be added, modified, or deleted at runtime. This flexibility
-allows for powerful and adaptable code but requires careful management to avoid unexpected behavior.
+Los objetos de JavaScript son dinámicos, lo que significa que sus propiedades se pueden agregar, modificar o eliminar en tiempo de ejecución. Esta flexibilidad
+permite un código potente y adaptable, pero requiere una gestión cuidadosa para evitar comportamientos inesperados.
 
-### Adding Properties
+## Agregar propiedades
 
-You can add properties to an object at any time using dot notation or bracket notation.
+Puede agregar propiedades a un objeto en cualquier momento utilizando la notación de puntos o la notación de corchetes.
 
 ```javascript
-const person = {
-  firstName: "John",
-  lastName: "Doe"
+const persona = {
+  nombre: "Juan",
+  apellido: "Pérez"
 };
 
-// Adding a new property
-person.age = 30;
-console.log( person.age ); // Output: 30
+// Agrega una propiedad nueva
+persona.edad = 30;
+console.log( persona.edad ); // Salida: 30
 
-// Adding a property using bracket notation
-person["gender"] = "male";
-console.log( person.gender ); // Output: male
+// Agrega una propiedad usando la notación de corchetes
+persona["genero"] = "masculino";
+console.log( persona.genero ); // Salida: masculino
 ```
 
-### Modifying Properties
+## Modificación de propiedades
 
-Existing properties can be modified by reassigning their values.
+Las propiedades existentes se pueden modificar reasignando sus valores.
 
 ```javascript
-const car = {
-  make: "Toyota",
-  model: "Corolla"
+const coche = {
+  marca: "Toyota",
+  modelo: "Corolla"
 };
 
-// Modifying a property
-car.model = "Camry";
-console.log( car.model ); // Output: Camry
+// Se modifica una propiedad
+coche.modelo = "Camry";
+console.log( coche.modelo ); // Salida: Camry
 ```
 
-### Deleting Properties
+## Eliminar propiedades
 
-Properties can be removed from an object using the `delete` operator.
+Se pueden eliminar propiedades de un objeto utilizando el operador `delete`.
 
 ```javascript
-const book = {
-  title: "1984",
-  author: "George Orwell",
-  year: 1949
+const libro = {
+  titulo: "1984",
+  autor: "George Orwell",
+  año: 1949
 };
 
-// Deleting a property
-delete book.year;
-console.log( book.year ); // Output: undefined
+// Eliminando una propiedad
+delete libro.año;
+console.log( libro.año ); // Output: undefined
 ```
 
-### Checking for Properties
+## Comprobando propiedades
 
-You can check if an object has a specific property using the `in` operator or the `hasOwnProperty` method.
+Puede comprobar si un objeto tiene una propiedad específica utilizando el operador `in` o el método `hasOwnProperty`.
 
 ```javascript
-const user = {
-  username: "johndoe",
-  email: "john@example.com"
+const usuario = {
+  nombreUsuario: "johndoe",
+  correo: "john@example.com"
 };
 
-// Using the `in` operator
-console.log( "email" in user ); // Output: true
+// Usando el operador 'in'
+console.log( "correo" in usuario ); // Salida: true
 
-// Using `hasOwnProperty` method
-console.log( user.hasOwnProperty( "username" ) ); // Output: true
+// Usando el método `hasOwnProperty`
+console.log( usuario.hasOwnProperty( "nombreUsuario" ) ); // Salida: true 
 ```
 
-### Iterating Over Properties
+## Iteración sobre propiedades
 
-You can iterate over an object's properties using a `for...in` loop.
+Puedes iterar sobre las propiedades de un objeto usando un bucle `for...in`.
 
 ```javascript
-const student = {
-  name: "Alice",
-  age: 22,
-  major: "Computer Science"
+const estudiante = {
+  nombre: "Alice",
+  edad: 22,
+  importante: "Ciencias de la Computación"
 };
 
-for (let key in student) {
-  if (student.hasOwnProperty( key )) {
-    console.log( `${key}: ${student[key]}` );
+for (let clave in estudiante) {
+  if (estudiante.hasOwnProperty( clave )) {
+    console.log( `${clave}: ${estudiante[clave]}` );
   }
 }
-// Output:
-// name: Alice
-// age: 22
-// major: Computer Science
+// Salida:
+'nombre: Alice' 'edad: 22' 'importante: Ciencias de la Computación'
 ```
 
-### Dynamic Property Names
+## Nombres de propiedades dinámicas
 
-You can use dynamic property names by using computed property names in object literals.
+Puede utilizar nombres de propiedad dinámicos mediante el uso de nombres de propiedad calculados en literales de objeto.
 
 ```javascript
-const propName = "score";
-const game = {
-  [propName]: 100
+const nombrePropiedad = "resultado";
+const juego = {
+  [nombrePropiedad]: 100
 };
 
-console.log( game.score ); // Output: 100
+console.log( juego.resultado); // Salida: 100
 ```
 
-### Conclusion
+## Conclusión
 
-The dynamic nature of JavaScript objects provides great flexibility in managing data structures. You can add, modify,
-and delete properties at runtime, check for the existence of properties, and iterate over them. This flexibility, while
-powerful, requires careful handling to maintain code stability and predictability.
+La naturaleza dinámica de los objetos de JavaScript proporciona una gran flexibilidad en la gestión de estructuras de datos. Puede agregar, modificar y eliminar propiedades en tiempo de ejecución, verificar la existencia de propiedades e iterar sobre ellas. Esta flexibilidad, si bien es poderosa, requiere un manejo cuidadoso para mantener la estabilidad y la previsibilidad del código.

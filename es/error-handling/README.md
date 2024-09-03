@@ -1,4 +1,13 @@
-# Guía de manejo de errores de JavaScript
+---
+layout: editorial
+chapter: 12
+pageNumber: 83
+description: En programación, los errores ocurren por diversas razones, algunos se deben a errores de código, otros a una entrada incorrecta y otras cosas imprevisibles. El método try catch ayuda a evitar que todo el script se detenga o se bloquee cuando ocurre un error, lo que nos permite manejar con elegancia los casos excepcionales y proporcionar un comportamiento alternativo.
+---
+
+# Capítulo 12
+
+## Guía de manejo de errores de JavaScript
 
 Los errores son una parte inevitable del desarrollo de software. Manejarlos de manera efectiva es crucial para escribir código JavaScript robusto y confiable. Esta guía lo guiará a través de los fundamentos del manejo de errores en JavaScript, incluido por qué es importante, los tipos de errores y cómo usar la declaración `try...catch`.
 

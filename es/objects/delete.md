@@ -1,9 +1,9 @@
 ---
 chapter: 9
-pageNumber: 62
+pageNumber: 77
 description: Se puede utilizar una propiedad `delete` para **eliminar una propiedad** de un objeto. Cuando se elimina una propiedad, se elimina del objeto y no se puede acceder a ella ni enumerarla (es decir, no aparece en un bucle for-in).
 ---
-# Delete
+# Operador Delete
 
 Un operador `delete` se puede usar para **eliminar una propiedad** de un objeto. Cuando se elimina una propiedad, es eliminada del objeto y no puede ser accedida o enumerada (por ejemplo, no se muestra en un bucle for-in).
 
@@ -23,7 +23,7 @@ niño.edad = 8;
 
 delete niño.edad;
 
-/* Elimine la propiedad de edad del niño, revelando la edad del prototipo, porque entonces no se anula.. */
+/* Elimina la propiedad de edad del niño, revelando la edad del prototipo, porque entonces no se anula. */
 
 let prototipoEdad = niño.edad;
 // 26, porque el niño no tiene su propia propiedad de edad.

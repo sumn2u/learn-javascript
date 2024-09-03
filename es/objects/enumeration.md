@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 63
+pageNumber: 78
 description: La enumeración se refiere al proceso de iterar sobre las propiedades de un objeto y realizar una determinada acción para cada propiedad. Una forma de enumerar las propiedades de un objeto es utilizar el bucle `for-in`. El bucle `for-in` itera sobre las propiedades enumerables de un objeto en un orden arbitrario, y para cada propiedad ejecuta un bloque de código determinado.
 ---
 # Enumeración

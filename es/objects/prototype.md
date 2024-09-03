@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 61
+pageNumber: 76
 description: Cada objeto tiene una propiedad especial llamada prototipo, que es una referencia a otro objeto. La propiedad prototype es una parte esencial del sistema de herencia basado en prototipos en JavaScript y permite que los objetos hereden propiedades y métodos de otros objetos.
 ---
 # Prototype
@@ -38,12 +38,17 @@ Para configurar su propio objeto como prototipo en lugar del Object.prototype pr
 
 ```javascript
 let niño = Object.create(adulto);
+
 /* Esta forma de crear objetos nos permite reemplazar fácilmente el Object.prototype predeterminado por el que queramos. En este caso, el prototipo de niño es el objeto adulto. */
+
 niño.edad = 8;
+
 /* Anteriormente, niño no tenía su propia propiedad edad y el intérprete tenía que buscar más allá del prototipo del objeto niño  para encontrarla.
   Ahora, cuando establezcamos la edad del niño, el intérprete no irá más lejos.
   Nota: la edad del adulto sigue siendo 26 años. */
+
 let cadenaPresentacion = niño.toString();
+
 // El valor es "Tengo 8".
 /* Nota: no hemos anulado la propiedad toString del niño, por lo que se invocará el método del adulto. Si el adulto no tuviera la propiedad toString, entonces se invocaría el método toString de Object.prototype y obtendríamos "[object Object]" en lugar de "Tengo 8 años" */
 ```
