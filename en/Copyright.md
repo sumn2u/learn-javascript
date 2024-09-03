@@ -12,9 +12,6 @@ chapter:
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
 
 
 **Learn JavaScript: Beginners Edition**  
