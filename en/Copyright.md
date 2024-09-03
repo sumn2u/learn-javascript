@@ -32,4 +32,9 @@ Based on a work at [javascript.sumankunwar.com.np](https://javascript.sumankunwa
 
 ASIN: B0C53J11V7
 
+ISBN: 9789937171892
+<br/>
+![ISBN](../.gitbook/assets/isbn.png)
+
+
 
