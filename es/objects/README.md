@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 9
-pageNumber: 56
+pageNumber: 71
 description: Un objeto es un tipo de datos compuesto que le permite almacenar y organizar múltiples valores (propiedades) como pares clave-valor. Es una estructura de datos fundamental en el lenguaje y se usa ampliamente para representar datos complejos y crear entidades estructuradas.
 ---
 
@@ -9,7 +9,7 @@ description: Un objeto es un tipo de datos compuesto que le permite almacenar y 
 
 ## Objetos
 
-En javascript los objetos son **mutables** porque cambiamos los valores apuntados por el objeto de referencia, en cambio, cuando cambiamos un valor primitivo estamos cambiando su referencia que ahora apunta al nuevo valor y por lo tanto los primitivos son **inmutables**. Los tipos primitivos de JavaScript son `true`, `false`, `numbers`, `strings`, `null` e `undefined`. Cualquier otro valor es un `object`. Los objetos contienen pares `propertyName`:`propertyValue`. Hay tres formas de crear un "objeto" en JavaScript:
+En javascript los objetos son **mutables** porque cambiamos los valores apuntados por el objeto de referencia, en cambio, cuando cambiamos un valor primitivo estamos cambiando su referencia que ahora apunta al nuevo valor y por lo tanto los primitivos son **inmutables**. Los tipos primitivos de JavaScript son `true`, `false`, `numbers`, `strings`, `null` e `undefined`. Cualquier otro valor es un `object`. Los objetos contienen pares `nombrePropiedad`:`valorPropiedad`. Hay tres formas de crear un "objeto" en JavaScript:
 
 1. literal
 
@@ -33,3 +33,12 @@ En javascript los objetos son **mutables** porque cambiamos los valores apuntado
     ```
 
     > _**Nota:**_ crea un nuevo objeto con el objeto prototipo y las propiedades especificadas.
+
+En este capítulo, exploraremos los siguientes temas:
+
+* [Delete](./delete.md)
+* [Enumeración](./enumeration.md)
+* [Mutable](./mutable.md)
+* [Propiedades](./properties.md)
+* [Prototype](./prototype.md)
+* [Referencia](./reference.md)

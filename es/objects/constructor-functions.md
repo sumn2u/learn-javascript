@@ -1,95 +1,96 @@
 ---
 chapter: 9
-description: Understanding Constructor Functions in JavaScript.
+description: Comprensión de las funciones constructoras en JavaScript.
 ---
 
-## Understanding Constructor Functions in JavaScript
+# Comprensión de las funciones constructoras en JavaScript
 
-Constructor functions in JavaScript are special functions used to create and initialize objects. They provide a way to define a blueprint for creating multiple objects with similar properties and methods.
+Las funciones constructoras en JavaScript son funciones especiales que se utilizan para crear e inicializar objetos. Ofrecen una forma de definir un modelo para crear varios objetos con propiedades y métodos similares.
 
-### Defining a Constructor Function
+## Definición de una función constructora
 
-A constructor function is defined like a regular function but is typically named with an initial capital letter to distinguish it from regular functions.
+Una función constructora se define como una función regular, pero normalmente se nombra con una letra mayúscula inicial para distinguirla de las funciones regulares.
 
-### Example of a Constructor Function
+## Ejemplo de una función constructora
 
-Here's a basic example of a constructor function:
+He aquí un ejemplo básico de una función constructora:
 
 ```javascript
-function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+function Persona(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
 }
 
-const person1 = new Person("John", "Doe");
-const person2 = new Person("Jane", "Smith");
+const persona1 = new Persona("Juan", "Pérez");
+const persona2 = new Persona("Juana", "Herrera");
 
-console.log(person1.firstName); // Output: John
-console.log(person2.lastName); // Output: Smith
+console.log(persona1.nombre); // Output: Juan
+console.log(persona2.apellido); // Output: Herrera
 ```
 
-In this example, the `Person` constructor function initializes the `firstName` and `lastName` properties for each new object created.
+En este ejemplo, la función constructora `Persona` inicializa las propiedades `nombre` y `apellido` para cada nuevo objeto creado.
 
-### Adding Methods to Constructor Functions
+## Agregar métodos a funciones constructoras
 
-You can add methods to the objects created by a constructor function by defining them on the constructor's prototype.
+Puede agregar métodos a los objetos creados por una función constructora definiéndolos en el prototipo del constructor.
 
 ```javascript
-function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+function Persona(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
 }
 
-Person.prototype.getFullName = function() {
-    return `${this.firstName} ${this.lastName}`;
+Persona.prototype.dameNombreCompleto = function() {
+    return `${this.nombre} ${this.apellido}`;
 };
 
-const person1 = new Person("John", "Doe");
-console.log(person1.getFullName()); // Output: John Doe
+const persona1 = new Persona("Juan", "Pérez");
+console.log(persona1.dameNombreCompleto()); // Output: Juan Pérez
 ```
 
-### Using `new` Keyword
+## Uso de la palabra clave `new`
 
-The `new` keyword is used to create an instance of an object from a constructor function. It performs the following steps:
-1. Creates a new empty object.
-2. Sets the `this` keyword to the new object.
-3. Executes the constructor function.
-4. Returns the new object.
+La palabra clave `new` se utiliza para crear una instancia de un objeto a partir de una función constructora. Realiza los siguientes pasos:
 
-### Example with `new` Keyword
+1. Crea un nuevo objeto vacío.
+2. Establece la palabra clave `this` en el nuevo objeto.
+3. Ejecuta la función constructora.
+4. Devuelve el nuevo objeto.
+
+## Ejemplo con la palabra clave `new`
 
 ```javascript
-function Car(make, model) {
-    this.make = make;
-    this.model = model;
+function Coche(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
 }
 
-const car1 = new Car("Toyota", "Corolla");
-console.log(car1.make); // Output: Toyota
+const coche1 = new Coche("Toyota", "Corolla");
+console.log(coche1.marca); // Salida: Toyota
 ```
 
-### Constructor Functions vs. Classes
+## Funciones constructoras vs. clases
 
-ES6 introduced the `class` syntax, which provides a more concise and readable way to define constructor functions and methods.
+ES6 introdujo la sintaxis `class`, que proporciona una forma más concisa y legible de definir funciones y métodos constructores.
 
-### Example with Classes
+## Ejemplo con Clases
 
 ```javascript
-class Person {
-    constructor(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+class Persona {
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
-    getFullName() {
-        return `${this.firstName} ${this.lastName}`;
+    dameNombreCompleto() {
+        return `${this.nombre} ${this.apellido}`;
     }
 }
 
-const person1 = new Person("John", "Doe");
-console.log(person1.getFullName()); // Output: John Doe
+const persona1 = new Persona("Juan", "Pérez");
+console.log(persona1.dameNombreCompleto()); // Salida: Juan Pérez
 ```
 
-### Conclusion
+## Conclusión
 
-Constructor functions are a fundamental feature in JavaScript for creating and initializing objects. They allow you to define a blueprint for objects and add methods to their prototype. With the introduction of ES6, the `class` syntax provides a more modern and readable way to achieve the same functionality.
+Las funciones constructoras son una característica fundamental de JavaScript para crear e inicializar objetos. Permiten definir un modelo para los objetos y agregar métodos a su prototipo. Con la introducción de ES6, la sintaxis de `class` proporciona una forma más moderna y legible de lograr la misma funcionalidad.
