@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 113
+chapter: 21
+pageNumber: 153
 ---
 # Sentencias condicionales
 
@@ -12,7 +12,17 @@ La lógica condicional es vital en programación para asegurar que el programa f
   - Si hay más de 100 km por recorrer, imprima `"Todavía te queda un poco de camino por recorrer"`.
   - Si son más de 50 km, pero menores o iguales a 100 km, imprima: `"Estaré ahí en 5 minutos"`.
   - Si son menores o iguales a 50 km, imprimir: `"Estoy estacionando. Te veo ahora mismo"`.
+- [ ] Escriba un programa que verifique si una persona es elegible para votar o no en función de su edad.
+
+  - Si la edad del usuario es 18 o más, imprima `Usted es elegible para votar`.
+  - Si la edad del usuario es menor de 18 años, imprima `No es elegible para votar`.
+
+    **_Nota: `edad` puede estar entre `1` y `100`._**
+
 
 ## 💡 Consejos
 
 - Visite el capítulo [lógica condicional](../conditional/) para entender como usar la lógica condicional y las declaraciones condicionales.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}

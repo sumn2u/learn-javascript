@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 116
+chapter: 21
+pageNumber: 156
 ---
 # ¡Consigue los títulos&excl;
 
@@ -28,3 +28,6 @@ const libros = [
 ## 💡 Consejos
 
 - Viste los capítulos de [matrices](../arrays/) y [objetos](../objects/) para entender como trabajan los objetos y las matrices.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}

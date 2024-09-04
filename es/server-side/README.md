@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 20
-pageNumber: 103
+pageNumber: 141
 ---
 
 # Capítulo 20
@@ -46,3 +46,8 @@ A diferencia del código del lado del cliente, que sólo se puede escribir en Ja
 - **JSON**: La Notación de Objetos JavaScript (JSON) es un formato de datos popular que se utiliza para transmitir datos entre un servidor y una aplicación web. JSON se basa en JavaScript, por lo que es fácil trabajar con datos JSON en JavaScript.
 
 A continuación, aprenderemos cómo usar JavaScript para el código del lado del servidor con Node.js y cómo usar Server Side Rendering (SSR) para generar HTML en el servidor.
+
+En este capítulo, exploraremos los siguientes temas:
+
+- [Node.js](./nodejs.md)
+- [Renderizado del lado del servidor (SSR)](./server-side-rendering.md)

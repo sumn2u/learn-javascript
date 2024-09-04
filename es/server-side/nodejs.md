@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 104
+pageNumber: 143
 ---
 
 # Node.js
@@ -27,31 +27,33 @@ Esto debería imprimir el número de versión de Node.js de esta manera:
 v20.7.0
 ```
 
-## Escribiendo su primer programa Node.js
+## Node.js REPL
 
-Ahora que ha instalado Node.js, escribamos nuestro primer programa Node.js. Cree un nuevo archivo llamado `hola.js` y agregue el siguiente código:
+REPL es una interfaz de línea de comandos que significa Leer, evaluar, imprimir, bucle (Read, Evaluate, Print, Loop en inglés), que permite ejecutar código desde la terminal. Para comenzar, escriba el siguiente comando en la terminal:
+
+```bash
+node
+```
+
+Una vez que ingreses a este mensaje, puedes ejecutar un código como este:
 
 ```js
-console.log('¡Hola mundo!');
+> console.log("Hola mundo")
 ```
 
-Para ejecutar este programa, abra su terminal y navegue hasta el directorio donde guardó el archivo `hola.js`. Luego ejecute el siguiente comando:
-
-```bash
-node hola.js
-```
-
-Esto debería imprimir el siguiente resultado:
-
-```bash
-'¡Hola mundo!'
-```
+Puede dejar el REPL pulsando la combinación de teclas CTRL + d
 
 ## Escribir un servidor web simple usando Express y Node.js
 
 Express es un marco web popular para Node.js. Proporciona una API simple y elegante para crear aplicaciones web. Usemos Express para crear un servidor web simple que responda a las solicitudes HTTP con un "¡Hola mundo!" mensaje.
 
-Primero, necesitamos instalar Express. Para hacer esto, ejecute el siguiente comando en su terminal:
+First, we need to initialize npm by running npm init.
+
+```bash
+npm init
+```
+
+Después, necesitamos instalar Express. Para hacer esto, ejecute el siguiente comando en su terminal:
 
 ```bash
 npm install express

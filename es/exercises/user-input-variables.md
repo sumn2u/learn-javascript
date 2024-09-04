@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 109
+chapter: 21
+pageNumber: 149
 ---
 # Variables de entrada del usuario
 
@@ -15,3 +15,6 @@ En JavaScript, podemos tomar información de los usuarios y usarla como una vari
 - El contenido de una variable se determina por las entradas del usuario. El método `prompt()` salva el valor de entrada como una cadena.
 - Necesitará asegurarse de que el valor de cadena se convierte en un entero para los cálculos.
 - Visite el capítulo [Operadores básicos](../numbers/operators.md) para la conversión de tipos de `string` a `int`.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}
