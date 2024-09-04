@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 114
+chapter: 21
+pageNumber: 154
 ---
 # Objetos
 
@@ -45,3 +45,6 @@ let familia = {
 - Visite el capítulo [objetos](../objects/) para entender cómo trabajan los objetos.
 - Puede obtener los `numerosAfortunados` de cada objeto persona dentro del objeto familia.
 - Una vez obtenga cada matriz simplemente itere sobre ella agregando cada elemento y después sume cada uno de los tres miembros de la familia.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}

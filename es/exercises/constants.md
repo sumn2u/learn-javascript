@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 110
+chapter: 21
+pageNumber: 150
 ---
 # Constantes
 
@@ -22,6 +22,17 @@ VERSION = '0.9';
 console.log(VERSION);
 ```
 
+- [ ] Escriba un programa que solicite al usuario ingresar una temperatura en _grados Celsius_, luego use la constante `FACTOR_CONVERSION` que es igual a `9/5` para convertir a _grados Fahrenheit_.
+
+  ```javascript
+  const FACTOR_CONVERSION = 9 / 5;
+
+  /* Comienza tu código desde aquí */
+  ```
+
 ## 💡 Consejos
 
 - Visite el capítulo [Variables](../basics/variables.md) para más información sobre const y tambíen busque "_TypeError assignment to constant variable_" en los buscadores para encontrar una solución.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}

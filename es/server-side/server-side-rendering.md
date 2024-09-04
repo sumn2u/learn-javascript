@@ -1,6 +1,6 @@
 ---
 chapter: 20
-pageNumber: 105
+pageNumber: 145
 ---
 
 # Renderizado del lado del servidor (SSR)
@@ -32,7 +32,3 @@ También existen algunas desventajas al usar SSR:
 ## ¿Cómo implementar SSR?
 
 Cada biblioteca tiene su propia forma de implementar SSR. Por ejemplo, para React, puede usar [Next.js](https://nextjs.org/) o [Gatsby](https://www.gatsbyjs.com/). Para Vue, puede utilizar [Nuxt.js](https://nuxtjs.org/). Para Svelte puedes usar [SvelteKit](https://kit.svelte.dev/).
-
-## Conclusión
-
-En este capítulo, aprendimos sobre la representación del lado del servidor (SSR) y cómo puede mejorar el rendimiento de su sitio web. También aprendimos sobre las ventajas de usar SSR sobre CSR y cómo implementar SSR con React, Vue y Svelte.

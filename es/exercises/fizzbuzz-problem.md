@@ -1,6 +1,6 @@
 ---
-chapter: 20
-pageNumber: 115
+chapter: 21
+pageNumber: 155
 ---
 # Problema de FizzBuzz
 
@@ -42,3 +42,6 @@ Buzz
 ## 💡 Consejos
 
 - Visite el capítulo [Bucles](../loops/) para entender cómo trabajan los bucles.
+
+{% aceeditor compilerTitle="¡Inténtelo!" %}
+{% endaceeditor %}
