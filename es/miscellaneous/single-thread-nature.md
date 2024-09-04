@@ -1,9 +1,10 @@
 ---
 layout: editorial
 chapter: 23
-pageNumber: 81
+pageNumber: 133
 description: JavaScript es un lenguaje de programación popular conocido principalmente por su uso en el desarrollo web. Una de las características clave que diferencia a JavaScript de muchos otros lenguajes es su naturaleza de subproceso único. Esto significa que el código JavaScript se ejecuta en un único hilo principal del navegador o del entorno de ejecución.
 ---
+
 # Naturaleza de un solo hilo de JavaScript
 
 JavaScript es un lenguaje de programación de un solo subproceso que ejecuta código de forma secuencial en un subproceso principal. Se basa en patrones asincrónicos sin bloqueo para manejar tareas de manera eficiente sin bloquear el hilo principal, lo que garantiza la capacidad de respuesta en las aplicaciones web. Si bien simplifica la concurrencia, requiere un uso eficaz de retrollamadas y programación basada en eventos.

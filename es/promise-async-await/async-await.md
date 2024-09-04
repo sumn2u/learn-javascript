@@ -1,12 +1,12 @@
 ---
 chapter: 18
-pageNumber: 91
+pageNumber: 111
 description: Async/Await es una característica introducida en ECMAScript 2017 (ES8) que proporciona una sintaxis más concisa y legible para trabajar con código JavaScript asincrónico. Está construido sobre JavaScript Promises y se utiliza para manejar operaciones asincrónicas de manera síncrona.
 ---
+
 # Async/Await
 
 Con las promesas, se puede usar una palabra clave `async` para declarar una función asincrónica que devuelve una promesa, mientras que la sintaxis `await` hace que JavaScript espere hasta que esa promesa se establezca y devuelva su valor. Estas palabras clave facilitan la redacción de promesas. A continuación se muestra un ejemplo de `async`.
-
 
 ```javascript
 //función asíncrona f

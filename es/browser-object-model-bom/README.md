@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 16
-pageNumber: 79
+pageNumber: 98
 description: El modelo de objetos del navegador nos permite interactuar con la ventana del navegador. A través de él se pueden controlar o manipular varios aspectos del navegador, como la ventana, marcos, historial, ubicación y más.
 ---
 
@@ -19,4 +19,12 @@ window.alert("Bienvenido a Aprender JavaScript");
 alert("Bienvenido a Aprender JavaScript")
 ```
 
-De manera similar, podemos llamar a otras propiedades debajo del objeto `window`(ventana), como `history` (historial), `screen` (pantalla), `navigator`(navegador), `location`(ubicación), etc.
+En este capítulo, vamos a hablar sobre varias propiedades y métodos del modelo de objetos del navegador.
+
+* [Cookies](./cookies.md)
+* [History](./history.md)
+* [Location](./location.md)
+* [Navigator](./navigator.md)
+* [Ventanas emergentes](./popup.md)
+* [Screen](./screen.md)
+* [Window](./window.md)

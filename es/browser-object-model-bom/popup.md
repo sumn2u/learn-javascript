@@ -1,9 +1,9 @@
 ---
 chapter: 16
-pageNumber: 81
+pageNumber: 100
 description: Las ventanas emergentes son pequeñas ventanas que aparecen en la parte superior del navegador principal para proporcionar información. Se utiliza para mostrar notificaciones, alertas, cuadros de diálogo, formularios de inicio de sesión o cualquier otro contenido que deba aparecer temporalmente o en un contexto separado de la página principal.
 ---
-# Ventanas emergentes
+# Ventanas emergentes (Popup windows, en inglés)
 
 Las ventanas emergentes son una forma adicional de mostrar información, recibir confirmación del usuario o recibir información del usuario de documentos adicionales. Una ventana emergente puede navegar a una nueva URL y enviar información a la ventana de apertura. **Cuadro de alerta** (función `alert()`), **Cuadro de confirmación** (función `confirm()`) y **Cuadro de mensaje** (función `prompt()`) son las funciones globales donde podemos mostrar la información emergente.
 
@@ -32,9 +32,9 @@ Las ventanas emergentes son una forma adicional de mostrar información, recibir
 
     let persona = prompt("Por favor, introduzca su nombre", "Harry Potter");
 
-    if (person == null || person == "") {
+    if (persona == null || persona == "") {
       txt = "El usuario canceló el mensaje.";
     } else {
-      txt = "¡Hola, " + person + "! ¿Cómo estás hoy?";
+      txt = "¡Hola, " + persona + "! ¿Cómo estás hoy?";
     }
     ```

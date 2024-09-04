@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 82
+pageNumber: 136
 description: Este documento de Markdown proporciona una descripción general de ECMAScript, su historia, características y su papel en el desarrollo web.
 ---
 # ECMAScript (ES)
@@ -86,6 +86,21 @@ Esta sección del documento explica por qué ECMAScript es crucial para JavaScri
 - **Transpiladores**: herramientas como Babel pueden transpilar código ECMAScript más nuevo a versiones anteriores para una mayor compatibilidad con el navegador.
 
 - **TypeScript**: TypeScript, un superconjunto de ECMAScript, agrega escritura estática para mejorar las herramientas y la seguridad del código.
+
+### Algunos ejemplos de sintaxis ECMAScript
+
+- **Sintaxis de las funciones flecha**: `const x = (x, y) => x + y;`
+
+- **Sintaxis de Class**: `class ClassName { constructor() { ... } }`
+
+- **Sintaxis de Promise**: `const promiseA = new Promise(myExecutorFunc);`
+`const promiseB = promiseA.then(handleFulfilled1, handleRejected1);`
+
+- **Operador Spread**: `const year = [...q1, ...q2, ...q3, ...q4];`
+
+- **Objeto Map**: `const x = new Map([ ["a", 500],["b", 300],["c", 200] ]);`
+
+
 
 ## Conclusión
 

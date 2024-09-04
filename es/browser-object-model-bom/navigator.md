@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 83
+pageNumber: 102
 description: La propiedad navigator es un objeto integrado que proporciona información sobre el navegador web del usuario y el sistema del usuario. Contiene varias propiedades y métodos que dan acceso a información sobre el entorno del usuario, como el nombre del navegador, la versión, el agente de usuario, las preferencias de idioma y más. 
 
 ---

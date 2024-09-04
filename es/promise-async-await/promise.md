@@ -1,12 +1,10 @@
 ---
 chapter: 18
-pageNumber: 89
+pageNumber: 109
 description: Promise es un objeto que representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante. Las promesas proporcionan una forma más estructurada y organizada de manejar operaciones asincrónicas, como realizar solicitudes de red, leer archivos o interactuar con bases de datos.
 ---
 
-# Capítulo 18
-
-## Promise, async/await
+# Promise, async/await
 
 Imagine que es un escritor de libros popular y planea publicar un nuevo libro en un día determinado. Los lectores que estén interesados en este libro lo agregarán a su lista de deseos y recibirán una notificación cuando se publique o incluso si el día de lanzamiento también se pospuso. El día del lanzamiento, todos reciben una notificación y pueden comprar el libro, haciendo felices a todas las partes. Esta es una analogía de la vida real que ocurre en la programación.
 
@@ -14,7 +12,7 @@ Imagine que es un escritor de libros popular y planea publicar un nuevo libro en
 2. Un "_código consumidor_" es alguien que consume el "código productor" una vez que está listo. En este caso, es un "lector".
 3. El vínculo entre el "_código productor_" y el "_código consumidor_" puede denominarse _promesa_ ya que garantiza la obtención de los resultados del "_código productor_" al "_código consumidor_".
 
-### Promise
+## Promise
 
 La analogía que hicimos también es válida para el objeto `promise` de JavaScript. La sintaxis del constructor para el objeto `promise` es:
 
@@ -40,7 +38,7 @@ Las propiedades internas del objeto `promise` devuelta por el constructor `new P
 No se puede acceder a las propiedades de la promesa: `state` y `result`. Se necesitan métodos de promesa para manejar las promesas.
 {% endhint %}
 
-Ejemplo de una promesa.
+## Ejemplo de una promesa
 
 ```javascript
 let promesaUno = new Promise(function(resuelve, rechaza) {

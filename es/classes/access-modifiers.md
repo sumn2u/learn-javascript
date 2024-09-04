@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 78
+pageNumber: 97
 description: Los modificadores de acceso controlan la visibilidad y accesibilidad de los miembros de la clase (propiedades y métodos). public, private y protected son los tres modificadores de acceso utilizados en clase para controlar su acceso desde el exterior. De forma predeterminada, todos los miembros (propiedades, campos, métodos o funciones) son accesibles públicamente desde fuera de la clase.
 ---
 # Modificadores de acceso
@@ -20,7 +20,7 @@ let miCoche = new Coche("Toyota");
 console.log(Coche.hola(miCoche)); // Hola Toyota
 ```
 
-Los miembros `privados` sólo pueden acceder internamente dentro de la clase y no pueden ser accesibles desde fuera. Los elementos de la clase privados deben comenzar con el carácter de la almohadilla: `#`.
+Los miembros `privados` sólo pueden accederse internamente dentro de la clase y no pueden ser accesibles desde fuera. Los elementos de la clase privados deben comenzar con el carácter de la almohadilla: `#`.
 
 ```javascript
 class Coche {

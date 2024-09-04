@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 96
+pageNumber: 116
 description: Polyfills y transpilers son dos herramientas importantes que se utilizan en el desarrollo web para ayudar a garantizar que el código JavaScript moderno pueda ejecutarse en navegadores más antiguos y aprovechar las últimas funciones de JavaScript manteniendo la compatibilidad con entornos más antiguos.
 ---
 # Polyfills y transpiladores
