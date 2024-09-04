@@ -1,10 +1,10 @@
 ---
 chapter: 19
-pageNumber: 85
+pageNumber: 126
 description: Una retrollamada es una función que se pasa como argumento a otra función, se ejecuta más tarde y se usa a menudo para operaciones asincrónicas. El infierno de las retrollamadas, también conocido como la "pirámide de la perdición", ocurre cuando las retrollamadas anidadas dan como resultado un código ilegible e imposible de mantener.
 ---
 
-# Funciones de retrollamada en JavaScript
+# Funciones de retrollamada (Callback function, en inglés) en JavaScript
 
 Las funciones de retrollamada son un concepto fundamental en JavaScript, que permite la programación asincrónica y basada en eventos. Este documento de Markdown proporciona una explicación detallada de las funciones de retrollamada, su propósito y cómo usarlas de manera efectiva.
 

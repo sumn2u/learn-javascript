@@ -1,15 +1,16 @@
 ---
 chapter: 19
-pageNumber: 80
+pageNumber: 129
 description: Este capítulo presenta el concepto de IPA (Interfaz de Programación de Aplicaciones) y demuestra su uso a través de AJAX (JavaScript asíncrono y XML). Aprenda a obtener datos de fuentes externas e integrarlos en aplicaciones web para mejorar su funcionalidad..
 ---
+
 # IPA de Web y AJAX
 
 En este capítulo, analizaremos IPA y AJAX, las dos tecnologías importantes que permiten que las aplicaciones interactúen con servidores y envíen o recuperen datos sin la necesidad de recargar la página completa.
 
 ## IPA (Interfaz de Programación de Aplicaciones)
 
-Un **IPA** (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y protocolos que permite a diferentes aplicaciones de software comunicarse entre sí. Define los métodos y los formatos de datos que las aplicaciones pueden usar para solicitar e intercambiar información.
+Una **IPA** (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y protocolos que permite a diferentes aplicaciones de software comunicarse entre sí. Define los métodos y los formatos de datos que las aplicaciones pueden usar para solicitar e intercambiar información.
 
 ## Puntos clave
 
@@ -17,13 +18,13 @@ Un **IPA** (Interfaz de Programación de Aplicaciones) es un conjunto de reglas 
 
 - Las IPA proporcionan una forma para que las aplicaciones envíen solicitudes y reciban respuestas, lo que les permite interactuar y compartir datos sin problemas.
 
-- Los tipos comunes de IPA incluyen **IPA web** que permiten que las aplicaciones web se comuniquen a través de Internet, **IPA de biblioteca** que proporcionan funciones de código reutilizables y **IPA del sistema operativo** que permiten la interacción con el sistema operativo subyacente.
+- Los tipos comunes de IPA incluyen **IPAs de web** que permiten que las aplicaciones web se comuniquen a través de Internet, **IPAs de biblioteca** que proporcionan funciones de código reutilizables e **IPAs del sistema operativo** que permiten la interacción con el sistema operativo subyacente.
 
 - Las IPA son esenciales para crear integraciones, crear software sobre plataformas existentes y permitir la interoperabilidad entre diferentes sistemas.
 
 - La documentación de IPA, a menudo proporcionada por desarrolladores o proveedores de servicios, explica cómo utilizar una IPA, incluidos los puntos finales disponibles, los métodos de solicitud y los formatos de respuesta.
 
-- Ejemplos de IPA populares incluyen IPA de redes sociales (por ejemplo, IPA Graph de Facebook), IPA de pasarela de pago (por ejemplo, IPA de PayPal) y IPA de servicios en la nube (por ejemplo, IPA de AWS).
+- Ejemplos de IPA populares incluyen IPAs de redes sociales (por ejemplo, la IPA Graph de Facebook), IPAs de pasarela de pago (por ejemplo, la IPA de PayPal) e IPAs de servicios en la nube (por ejemplo, la IPA de AWS).
 
 ## Beneficios de las IPA
 

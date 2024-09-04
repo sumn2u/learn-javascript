@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 102
+pageNumber: 122
 description: En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
 ---
 # Depuración

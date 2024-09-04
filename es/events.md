@@ -32,16 +32,16 @@ Los detectores de eventos se llaman solo cuando el evento ocurre en el contexto 
 
 Algunos de los eventos HTML comunes se mencionan aquí.
 
-| Evento        | Descripción |
-| ------------- | ------------|
+| Evento        | Descripción                                                               |
+| ------------- | ------------------------------------------------------------------------- |
+| `onclick`     | Cuando el usuario hace clic en el elemento.                               |
 | `onchange`    | Cuando el usuario cambia o modifica el valor de la entrada del formulario |
-| `onclick`     | Cuando el usuario hace clic en el elemento. |
-| `onmouseover` | Cuando el cursor del mouse pasa sobre el elemento |
-| `onmouseout`  | Cuando el cursor del mouse sale del elemento. |
-| `onkeydown`   | Cuando el usuario presiona y luego suelta la tecla |
-| `onload`      | Cuando el navegador haya terminado de cargar|
+| `onkeydown`   | Cuando el usuario presiona y luego suelta la tecla                        |
+| `onload`      | Cuando el navegador haya terminado de cargar                              |
+| `onmouseout`  | Cuando el cursor del mouse sale del elemento.                             |
+| `onmouseover` | Cuando el cursor del mouse pasa sobre el elemento                         |
 
-Es común que los controladores registrados en nodos con hijos también reciban eventos de los hijos. Por ejemplo, si se hace clic en un botón dentro de un párrafo, los controladores registrados en el párrafo también recibirán el evento de clic. En caso de presencia de manejadores en ambos, el de abajo irá primero. Se dice que el evento se propaga hacia afuera, desde el nodo iniciador hasta su nodo padre y en la raíz del documento.
+Es común que los controladores registrados en nodos con hijos también reciban eventos de los hijos. Por ejemplo, si se hace clic en un botón dentro de un párrafo, los controladores registrados en el párrafo también recibirán el evento de clic. En caso de presencia de manejadores en ambos, el de abajo irá primero. Se dice que el evento se _propaga_ hacia afuera, desde el nodo iniciador hasta su nodo padre y en la raíz del documento.
 
 El controlador de eventos puede llamar al método `stopPropagation` en el objeto del evento para evitar que los controladores más arriba reciban el evento. Esto es útil en casos como, tienes un botón dentro de un elemento en el que se puede hacer clic y no deseas activar el comportamiento de clic del elemento externo al hacer clic en un botón.
 
@@ -60,7 +60,7 @@ El controlador de eventos puede llamar al método `stopPropagation` en el objeto
 </script> 
 ```
 
-Aquí, los controladores _`mousedown`_ se registran tanto por párrafo como por botón. Al hacer clic en el botón, el controlador del botón llama a "stopPropagation", lo que evitará que se ejecute el controlador del párrafo.
+Aquí, los controladores _`mousedown`_ se registran tanto por párrafo como por botón. Al hacer clic en el botón, el controlador del botón llama a `stopPropagation`, lo que evitará que se ejecute el controlador del párrafo.
 
 Los eventos pueden tener un comportamiento predeterminado. Por ejemplo, los enlaces navegan hasta el destino del enlace al hacer clic, se navega al final de una página al hacer clic en la flecha hacia abajo, y así sucesivamente. Estos comportamientos predeterminados se pueden evitar llamando a un método `preventDefault` en el objeto del evento.
 
@@ -75,4 +75,4 @@ Los eventos pueden tener un comportamiento predeterminado. Por ejemplo, los enla
 </script>
 ```
 
-Aquí, se evita el comportamiento predeterminado del enlace al hacer clic, es decir, navegar hacia el destino del enlace.target.
+Aquí, se evita el comportamiento predeterminado del enlace al hacer clic, es decir, navegar hacia el destino del enlace.

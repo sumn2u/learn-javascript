@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 93
+pageNumber: 113
 description: Los literales de plantilla son literales delaminados con comillas invertidas (` `) y se usan en la interpolación de variables y expresiones en cadenas.
 ---
 # Literales de plantilla
