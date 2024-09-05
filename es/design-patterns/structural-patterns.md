@@ -2,6 +2,8 @@
 layout: editorial
 title: Patrones de diseño estructural en Javascript
 description: Se centra en cómo se componen las clases y los objetos para formar estructuras más grandes.
+chapter: 23
+pageNumber: 205
 ---
 
 # Patrones de diseño estructural

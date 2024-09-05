@@ -1,38 +1,38 @@
 ---
 chapter: 26
 pageNumber: 254
-description: Creating animations with Anime.js, a lightweight JavaScript animation library.
+description: Creación de animaciones con Anime.js, una biblioteca de animación JavaScript ligera.
 ---
 
-## Creating Animations with Anime.js
+# Creación de animaciones con Anime.js
 
-Anime.js is a lightweight JavaScript animation library with a simple yet powerful API.
+Anime.js es una biblioteca de animación de JavaScript liviana con una API simple pero poderosa.
 
-**Installation**
+## Instalación
 
-You can include Anime.js in your project using npm:
+Puedes incluir Anime.js en tu proyecto usando npm:
 
 ```bash
 npm install animejs
 ```
 
-Or you can use a CDN:
+O puedes utilizar un CDN:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 ```
 
-**Basic Animation**
+## Animación básica
 
-Here's a simple example of using Anime.js to animate an element:
+A continuación se muestra un ejemplo sencillo del uso de Anime.js para animar un elemento:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime.js Animation</title>
+    <title>Animación Anime.js</title>
 </head>
 <body>
     <div id="box" style="width:100px; height:100px; background-color:red;"></div>
@@ -48,13 +48,12 @@ Here's a simple example of using Anime.js to animate an element:
 </html>
 ```
 
-**Advanced Animation**
+## Animación avanzada
 
-Anime.js provides various features for advanced animations, such as keyframes, timeline, and easing.
+Anime.js proporciona varias funciones para animaciones avanzadas, como fotogramas clave, línea de tiempo y suavizado.
 
-
-- **Keyframes:**
-Keyframes allow you to define multiple stages of an animation. Here's an example:
+- **Fotogramas clave:**
+Los fotogramas clave permiten definir varias etapas de una animación. A continuación, se muestra un ejemplo:
 
 ```javascript
 anime({
@@ -69,9 +68,8 @@ anime({
 });
 ```
 
-
-- **Timeline:**
-Timelines allow you to sequence animations. Here's an example:
+- **Línea de tiempo:**
+Las líneas de tiempo permiten secuenciar animaciones. A continuación, se muestra un ejemplo:
 
 ```javascript
 var tl = anime.timeline({
@@ -85,12 +83,11 @@ tl.add({
 }).add({
     targets: '#box',
     translateY: 250
-}, '-=500'); // Starts 500ms before the previous animation ends
+}, '-=500'); // Comienza 500 ms antes de que finalice la animación anterior.
 ```
 
-
-- **Easing:**
-Anime.js provides a variety of easing options to make animations look more natural. Here's an example:
+- **Suavizado:**
+Anime.js ofrece una variedad de opciones de suavizado para que las animaciones se vean más naturales. A continuación, se muestra un ejemplo:
 
 ```javascript
 anime({
@@ -102,5 +99,5 @@ anime({
 ```
 
 {% hint style="info" %}
-For more details and examples, check out the Anime.js documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de Anime.js.
 {% endhint %}

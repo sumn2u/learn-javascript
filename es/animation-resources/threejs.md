@@ -1,38 +1,38 @@
 ---
 chapter: 26
 pageNumber: 253
-description: Creating 3D animations with Three.js, a JavaScript library for 3D graphics.
+description: Creación de animaciones 3D con Three.js, una biblioteca JavaScript para gráficos 3D.
 ---
 
-## 3D Animations with Three.js
+# Animaciones 3D con Three.js
 
-Three.js is a JavaScript library that makes creating 3D graphics on the web easier. It is widely used for creating immersive 3D experiences.
+Three.js es una biblioteca de JavaScript que facilita la creación de gráficos 3D en la web. Se utiliza ampliamente para crear experiencias 3D inmersivas.
 
-**Installation**
+## Instalación
 
-You can include Three.js in your project using npm:
+Puedes incluir Three.js en tu proyecto usando npm:
 
 ```bash
 npm install three
 ```
 
-Or you can use a CDN:
+O puedes utilizar un CDN:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 ```
 
-**Basic Animation**
+## Animación básica
 
-Here's a simple example of using Three.js to create a rotating cube:
+A continuación se muestra un ejemplo sencillo del uso de Three.js para crear un cubo giratorio:
 
-```html
+````html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js Animation</title>
+    <title>Animación Three.js</title>
     <style>
         body { margin: 0; }
         canvas { display: block; }
@@ -68,15 +68,14 @@ Here's a simple example of using Three.js to create a rotating cube:
     </script>
 </body>
 </html>
-```
+````
 
-**Advanced Animation**
+## Animación avanzada
 
-Three.js provides various features for advanced animations, such as lighting, textures, and physics.
+Three.js proporciona varias funciones para animaciones avanzadas, como iluminación, texturas y física.
 
-
-- **Lighting**
-Adding lighting to your scene can make it more realistic. Here's an example:
+- **Iluminación**
+Añadir iluminación a la escena puede hacerla más realista. Aquí tienes un ejemplo:
 
 ```javascript
 const light = new THREE.PointLight(0xffffff);
@@ -84,9 +83,8 @@ light.position.set(10, 10, 10);
 scene.add(light);
 ```
 
-
-- **Textures**
-Applying textures to your objects can make them more detailed. Here's an example:
+- **Texturas**
+La aplicación de texturas a los objetos puede hacer que tengan más detalles. A continuación, se muestra un ejemplo:
 
 ```javascript
 const texture = new THREE.TextureLoader().load('path/to/texture.jpg');
@@ -94,10 +92,9 @@ const material = new THREE.MeshBasicMaterial({ map: texture });
 const cube = new THREE.Mesh(geometry, material);
 ```
 
-
-- **Physics**
-Integrating physics can make your 3D world more dynamic. One popular physics engine that works with Three.js is Cannon.js.
+- **Física**
+La integración de la física puede hacer que tu mundo 3D sea más dinámico. Un motor de física popular que funciona con Three.js es Cannon.js.
 
 {% hint style="info" %}
-For more details and examples, check out the Three.js documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de Three.js.
 {% endhint %}
