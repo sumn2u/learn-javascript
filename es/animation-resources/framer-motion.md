@@ -1,24 +1,24 @@
 ---
 chapter: 26
 pageNumber: 255
-description: Using Framer Motion for animations in React applications.
+description: Uso de Framer Motion para animaciones en aplicaciones React.
 ---
 
-## Animating with Framer Motion
+# Animación con Framer Motion
 
-Framer Motion is a production-ready motion library for React. It makes it easy to create complex animations.
+Framer Motion es una biblioteca de movimiento lista para producción para React. Facilita la creación de animaciones complejas.
 
-**Installation**
+## Instalación
 
-You can include Framer Motion in your project using npm:
+Puedes incluir Framer Motion en tu proyecto usando npm:
 
 ```bash
 npm install framer-motion
 ```
 
-**Basic Animation**
+## Animación básica
 
-Here's a simple example of using Framer Motion to animate a component:
+A continuación se muestra un ejemplo sencillo del uso de Framer Motion para animar un componente:
 
 ```javascript
 import React from 'react';
@@ -27,7 +27,7 @@ import { motion } from 'framer-motion';
 const AnimatedComponent = () => {
     return (
         <motion.div animate={{ x: 100 }} transition={{ duration: 1 }}>
-            I will move to the right
+            Me moveré hacia la derecha
         </motion.div>
     );
 };
@@ -35,13 +35,12 @@ const AnimatedComponent = () => {
 export default AnimatedComponent;
 ```
 
-**Advanced Animation**
+## Animación avanzada
 
-Framer Motion provides various features for advanced animations, such as keyframes, gestures, and layout animations.
+Framer Motion proporciona varias funciones para animaciones avanzadas, como fotogramas clave, gestos y animaciones de diseño.
 
-
-- **Keyframes:**
-Keyframes allow you to define multiple stages of an animation. Here's an example:
+- **Fotogramas clave:**
+Los fotogramas clave permiten definir varias etapas de una animación. A continuación, se muestra un ejemplo:
 
 ```javascript
 import React from 'react';
@@ -53,7 +52,7 @@ const KeyframeComponent = () => {
             animate={{ x: [0, 100, 0] }}
             transition={{ duration: 2, ease: 'easeInOut' }}
         >
-            I will move back and forth
+            Me moveré de un lado a otro
         </motion.div>
     );
 };
@@ -61,9 +60,8 @@ const KeyframeComponent = () => {
 export default KeyframeComponent;
 ```
 
-
-- **Gestures**
-Framer Motion allows you to create animations based on user gestures. Here's an example:
+- **Gestos**
+Framer Motion te permite crear animaciones basadas en los gestos del usuario. Aquí tienes un ejemplo:
 
 ```javascript
 import React from 'react';
@@ -75,7 +73,7 @@ const GestureComponent = () => {
             drag
             dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
         >
-            Drag me around
+            Arrástrame por ahí
         </motion.div>
     );
 };
@@ -83,9 +81,8 @@ const GestureComponent = () => {
 export default GestureComponent;
 ```
 
-
-- **Layout Animations**
-Framer Motion makes it easy to animate layout changes. Here's an example:
+- **Animaciones de diseño**
+Framer Motion facilita la animación de cambios de diseño. A continuación, se muestra un ejemplo:
 
 ```javascript
 import React, { useState } from 'react';
@@ -96,7 +93,7 @@ const LayoutAnimationComponent = () => {
 
     return (
         <motion.div layout onClick={() => setIsOpen(!isOpen)} style={{ background: 'lightblue', padding: '10px' }}>
-            {isOpen ? 'Click to collapse' : 'Click to expand'}
+            {isOpen ? 'Haga clic para contraer' : 'Haga clic para expandir'}
         </motion.div>
     );
 };
@@ -105,5 +102,5 @@ export default LayoutAnimationComponent;
 ```
 
 {% hint style="info" %}
-For more details and examples, check out the Framer Motion documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de Framer Motion.
 {% endhint %}

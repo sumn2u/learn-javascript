@@ -2,49 +2,50 @@
 layout: editorial
 chapter: 26
 pageNumber: 252
-description: JavaScript animation resources, including libraries, tutorials, articles, and frameworks to create engaging animations.
+description: Recursos de animación de JavaScript, incluidas bibliotecas, tutoriales, artículos y marcos para crear animaciones atractivas.
 ---
 
-# Chapter 26
-# Animation Resources
+# Capítulo 26
 
-Animations in JavaScript are a powerful way to create engaging user experiences on the web. This chapter will cover various resources, including libraries, tutorials, articles, and frameworks, that assist developers in creating animations using JavaScript.
+## Recursos de animación
 
-## Introduction to JavaScript Animations
+Las animaciones en JavaScript son una forma eficaz de crear experiencias de usuario atractivas en la Web. En este capítulo se tratarán diversos recursos, incluidas bibliotecas, tutoriales, artículos y marcos de trabajo, que ayudan a los desarrolladores a crear animaciones con JavaScript.
 
-JavaScript animations allow developers to create dynamic, visually appealing web content. Animations can be used for various purposes, such as enhancing user interfaces, providing feedback, and making content more engaging.
+## Introducción a las animaciones de JavaScript
 
-### Libraries
+Las animaciones de JavaScript permiten a los desarrolladores crear contenido web dinámico y visualmente atractivo. Las animaciones se pueden utilizar para diversos fines, como mejorar las interfaces de usuario, proporcionar comentarios y hacer que el contenido sea más atractivo.
 
-JavaScript animation libraries make it easier to create complex animations. Here are some popular libraries:
+### Bibliotecas
 
-1. **[GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)**: A powerful library for creating high-performance animations.
-2. **[Anime.js](https://animejs.com/)**: A lightweight library for handling animations.
-3. **[Three.js](https://threejs.org/)**: A library for creating 3D animations.
-4. **[Velocity.js](http://velocityjs.org/)**: A fast animation engine.
+Las bibliotecas de animación de JavaScript facilitan la creación de animaciones complejas. Estas son algunas bibliotecas populares:
 
-### Tutorials
+1. **[GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)**: Una potente biblioteca para crear animaciones de alto rendimiento.
+2. **[Anime.js](https://animejs.com/)**: Una biblioteca ligera para gestionar animaciones.
+3. **[Three.js](https://threejs.org/)**: Una biblioteca para crear animaciones 3D.
+4. **[Velocity.js](http://velocityjs.org/)**: Un motor de animación rápido.
 
-To get started with JavaScript animations, check out these tutorials:
+### Tutoriales
 
-1. **[MDN Web Docs: Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)**: A comprehensive guide on CSS animations.
-2. **[JavaScript.info: JavaScript Animations](https://javascript.info/js-animation/)**: An introduction to JavaScript animations.
-3. **[GreenSock Learning Resources](https://greensock.com/learning/)**: Tutorials and resources for learning GSAP.
+Para comenzar a utilizar animaciones en JavaScript, consulte estos tutoriales:
 
-### Frameworks
+1. **[MDN Web Docs: Usando animaciones CSS](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Animations/Using_CSS_animations)**: Una guía completa sobre animaciones CSS.
+2. **[JavaScript.info: JavaScript Animations](https://javascript.info/js-animation/)**: Una introducción a las animaciones de JavaScript.
+3. **[GreenSock Learning Resources](https://greensock.com/learning/)**: Tutoriales y recursos para aprender GSAP.
 
-Frameworks provide a structured approach to building animations. Some popular frameworks include:
+### Marcos de trabajo (Frameworks, en inglés)
 
-1. **[React Spring](https://react-spring.io/)**: A spring-physics based animation library for React.
-2. **[Framer Motion](https://www.framer.com/motion/)**: A production-ready motion library for React.
+Los marcos de trabajo proporcionan un enfoque estructurado para crear animaciones. Algunos marcos de trabajo populares son:
 
-In this chapter, we will explore the following topics in detail:
+1. **[React Spring](https://react-spring.io/)**: Una biblioteca de animación basada en física de resortes para React.
+2. **[Framer Motion](https://www.framer.com/motion/)**: Una biblioteca de movimiento lista para producción para React.
 
-* [Getting Started with GSAP](./gsap.md)
-* [Creating Animations with Anime.js](./animejs.md)
-* [3D Animations with Three.js](./threejs.md)
-* [Fast Animations with Velocity.js](./velocityjs.md)
-* [Using React Spring for Animations](./react-spring.md)
-* [Animating with Framer Motion](./framer-motion.md)
+En este capítulo, exploraremos los siguientes temas en detalle:
 
-Let's dive into each topic to understand how to use these resources effectively.
+* [Introducción a GSAP](./gsap.md)
+* [Creando animaciones con Anime.js](./animejs.md)
+* [Animaciones 3D con Three.js](./threejs.md)
+* [Animaciones rápidas con Velocity.js](./velocityjs.md)
+* [Uso de React Spring para animaciones](./react-spring.md)
+* [Animación con Framer Motion](./framer-motion.md)
+
+Profundicemos en cada tema para comprender cómo utilizar estos recursos de manera efectiva.

@@ -1,24 +1,24 @@
 ---
 chapter: 26
 pageNumber: 255
-description: Using React Spring for animations in React applications.
+description: Usando React Spring para animaciones en aplicaciones React.
 ---
 
-## Using React Spring for Animations
+# Uso de React Spring para animaciones
 
-React Spring is a spring-physics-based animation library for React that makes it easy to create animations.
+React Spring es una biblioteca de animación basada en física de resortes para React que facilita la creación de animaciones.
 
-**Installation**
+## Instalación
 
-You can include React Spring in your project using npm:
+Puedes incluir React Spring en tu proyecto usando npm:
 
 ```bash
 npm install react-spring
 ```
 
-**Basic Animation**
+## Animación básica
 
-Here's a simple example of using React Spring to animate a component:
+A continuación se muestra un ejemplo sencillo del uso de React Spring para animar un componente:
 
 ```javascript
 import React from 'react';
@@ -27,19 +27,18 @@ import { useSpring, animated } from 'react-spring';
 const AnimatedComponent = () => {
     const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
-    return <animated.div style={props}>I will fade in</animated.div>;
+    return <animated.div style={props}>Me desvaneceré</animated.div>;
 };
 
 export default AnimatedComponent;
 ```
 
-**Advanced Animation**
+## Animación avanzada
 
-React Spring provides various features for advanced animations, such as transitions, trails, and keyframes.
+React Spring proporciona varias funciones para animaciones avanzadas, como transiciones, estelas y fotogramas clave.
 
-
-- **Transitions**
-Transitions allow you to animate components as they mount and unmount. Here's an example:
+- **Transiciones**
+Las transiciones permiten animar los componentes mientras se montan y desmontan. A continuación, se muestra un ejemplo:
 
 ```javascript
 import React, { useState } from 'react';
@@ -68,9 +67,8 @@ const TransitionComponent = () => {
 export default TransitionComponent;
 ```
 
-
-- **Trails**
-Trails allow you to animate a list of components in sequence. Here's an example:
+- **Estelas**
+Las estelas permiten animar una lista de componentes en secuencia. A continuación, se muestra un ejemplo:
 
 ```javascript
 import React from 'react';
@@ -99,5 +97,5 @@ export default TrailComponent;
 ```
 
 {% hint style="info" %}
-For more details and examples, check out the React Spring documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de React Spring.
 {% endhint %}

@@ -1,7 +1,9 @@
 ---
 layout: editorial
 title: Preguntas de entrevista sobre JavaScript de nivel básico
-description: 
+chapter: 22
+pageNumber: 158
+description:
 ---
 <!-- markdownlint-disable-file MD025 -->
 # Preguntas de entrevista sobre JavaScript de nivel básico
@@ -40,8 +42,12 @@ Puede declarar una variable usando `var`, `let`, o `const`:
 **Respuesta:**
 JavaScript es un lenguaje de tipado dinámico. En un lenguaje de tipado dinámico, el tipo de una variable se verifica durante el tiempo de ejecución, a diferencia de un lenguaje de tipado estático, donde el tipo de una variable se verifica durante el tiempo de compilación.
 
-<!-- img from here "interview bit" -->
-![Estático versus dinámico](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/003/407/original/static_vs_dynamic.png?1654852333)
+| Característica | Tipado estático | Tipado dinámico |
+|---|---|---|
+| Las variables tienen tipos | Sí | No |
+| Los valores tienen tipos | Sí | Sí |
+| Las variables pueden cambiar de tipo | No | Sí |
+| Las variables pueden cambiar de tipo drásticamente | No | Sí |
 
 Dado que JavaScript es un lenguaje de _tipo debilmente acoplado (dinámico)_, las variables en JS no están asociadas con ningún tipo. Una variable puede contener el valor de cualquier tipo de datos.
 
@@ -55,11 +61,85 @@ var a = "¡Hola mundo!";
 ### 1.6. ¿Cuáles son los tipos de errores en JavaScript?
 
 **Respuesta:**
-Hay dos tipos de errores en JavaScript.
+Hay siete tipos de error en JavaScript.
 
-1. **Error de sintaxis**: Los errores de sintaxis son errores o problemas ortográficos en el código que hacen que el programa no se ejecute en absoluto o deje de ejecutarse a la mitad. Por lo general, también se proporcionan mensajes de error.
+1 . **Error de sintaxis** - El error ocurre cuando usa una sintaxis predefinida incorrectamente
 
-2. **Error lógico**: Los errores de razonamiento ocurren cuando la sintaxis es correcta pero la lógica o el programa son incorrectos. La aplicación se ejecuta sin problemas en este caso. Sin embargo, los resultados son inexactos. A veces, estos son más difíciles de corregir que los problemas de sintaxis, ya que estas aplicaciones no muestran señales de error para fallas lógicas.
+```js
+const func = () =>
+console.log(hello)
+}
+```
+
+2 . **Error de referencia** - En un caso donde no se puede encontrar una referencia de variable o no se ha declarado, se produce un error de referencia.
+
+```js
+console.log(x);
+```
+
+3 . **Error de tipo** - Se produce un error cuando se utiliza un valor fuera del ámbito de su tipo de datos.
+
+```js
+let num = 15;
+console.log(num.split(""));
+```
+
+4 . **Error de evaluación** - Los motores JavaScript actuales y las especificaciones de EcmaScript no generan este error. Sin embargo, sigue estando disponible por compatibilidad con versiones anteriores. El error se invoca cuando se utiliza la función de versiones anteriores `eval()`, como se muestra en el siguiente bloque de código
+
+```js
+try{
+  throw new EvalError("'Throws an error'")
+}catch(error){
+  console.log(error.name, error.message)
+}
+```
+
+5 . **Error de rango** - Hay un error cuando se requiere un rango de valores esperados.
+
+```js
+const checkRange = (num)=>{
+  if (num < 30) throw new RangeError("Wrong number");
+  return true
+}
+
+checkRange(20);
+```
+
+6 . **Error URI** - Cuando se utilizan caracteres incorrectos en una función URI, el error se denomina error de URI.
+
+```js
+console.log(decodeURI("https://www.educative.io/shoteditor"))
+console.log(decodeURI("%sdfk"));
+```
+
+7 . **Error interno** - En el motor de JavaScript, este error se produce con mayor frecuencia cuando hay demasiados datos y la pila supera su tamaño crítico. Cuando hay demasiados patrones de recursión, casos de conmutación, etc., el motor de JavaScript se ve sobrecargado.
+
+```js
+switch(condition) {
+ case 1:
+ ...
+ break
+ case 2:
+ ...
+ break
+ case 3:
+ ...
+ break
+ case 4:
+ ...
+ break
+ case 5:
+ ...
+ break
+ case 6:
+ ...
+ break
+ case 7:
+ ...
+ break
+ ... hasta 500 casos
+ }
+```
 
 ### 1.7. Mencione algunas ventajas de JavaScript
 
@@ -70,6 +150,10 @@ Hay muchas ventajas de JavaScript. Algunos de ellos son:
 - Javascript es un lenguaje sencillo de aprender.
 - Las páginas web ahora tienen más funciones gracias a Javascript.
 - Para el usuario final, Javascript es bastante rápido.
+
+### 1.8. ¿Qué es la palabra clave `this` en JavaScript?
+
+**Respuesta:** La palabra clave `this` en JavaScript se utiliza para llamar al objeto actual como constructor para asignar valores a las propiedades del objeto.
 
 ## 2. Funciones
 
@@ -240,13 +324,85 @@ Sin ser solicitada, se invoca (inicia) automáticamente una expresión de autoin
 
 Normalmente, declaramos una función y la llamamos; sin embargo, se pueden usar funciones anónimas para ejecutar una función automáticamente cuando se describe y no se volverá a llamar. Y no existe un nombre para este tipo de funciones.
 
-### 2.6. ¿Cuál es la diferencia entre los métodos exec() y test() en JavaScript?
+### 2.6. ¿Cuál es la diferencia entre los métodos `exec()` y `test()` en JavaScript?
 
 **Respuesta:**
 
-->test() y exec() son métodos de expresión RegExp utilizados en JavaScript.
-->Usaremos exec() para buscar una cadena para un patrón específico, y si lo encuentra, devolverá el patrón directamente; de lo contrario, devolverá un resultado 'empty'.
-->Usaremos una prueba() para encontrar una cadena para un patrón específico. Devolverá el valor booleano 'true' al encontrar el texto dado; de lo contrario, devolverá 'false'
+- `test()` y `exec()` son métodos de expresión RegExp utilizados en JavaScript.
+- Usaremos `exec()` para buscar una cadena para un patrón específico, y si lo encuentra, devolverá el patrón directamente; de lo contrario, devolverá un resultado 'empty'.
+- Usaremos un `test()` para encontrar una cadena para un patrón específico. Devolverá el valor booleano `true` al encontrar el texto dado; de lo contrario, devolverá `false`.
+
+### 2.7.  ¿Cuál es la diferencia entre declaración de función y expresión de función?
+
+**Respuesta:** La diferencia entre declaración de función y expresión de función es la siguiente:
+
+**Declaración de función**:
+
+1. Declarado como una declaración separada dentro del código principal de JavaScript.
+2. Se puede llamar antes de que se defina la función.
+3. Ofrece una mejor legibilidad del código y una mejor organización del código.
+
+Ejemplo:
+
+```js
+function abc() {
+    return 5;
+}
+```
+
+**Expresión de función**:
+
+1. Creado dentro de una expresión o alguna otra construcción.
+2. Se crea cuando el punto de ejecución lo alcanza; se puede utilizar sólo después de eso.
+3. Se utiliza cuando es necesario realizar una declaración condicional de una función.
+
+Ejemplo:
+
+```js
+var a = function abc() {
+    return 5;
+}
+```
+
+### 2.8. ¿Qué son las funciones de flecha en JavaScript?
+
+**Respuesta**: Las funciones de flecha son una forma breve y concisa de escribir funciones en JavaScript. La sintaxis general de una función de flecha es la siguiente:
+
+```js
+const helloWorld = () => {
+  console.log("hello world!");
+};
+```
+
+### 2.9. Pasado por valor y pasado por referencia
+
+**Respuesta**:
+
+- Los valores pasados por valor ​​son tipos de datos primitivos.
+
+    Consideremos el siguiente ejemplo:
+
+    Aquí, `a=432` es un tipo de datos primitivo, es decir, un tipo de número al que el operador le asigna un valor. Cuando se ejecuta el código `var b=a`, el valor de `var a` devuelve una nueva dirección para `var b` asignando un nuevo espacio en la memoria, de modo que `var b` se opere en una nueva ubicación.
+
+    Ejemplo:
+
+```js
+var a = 432;
+var b = a;
+```
+
+- Los valores pasado por referencia son tipos de datos no primitivos.
+
+    Consideremos el siguiente ejemplo:
+
+    La referencia del primer objeto variable, es decir, `var obj`, se pasa a través de la ubicación de otra variable, es decir, `var obj2` con la ayuda de un operador asignado.
+
+    Ejemplo:
+
+```js
+var obj = { name: "Raj", surname: "Sharma" };
+var obj2 = obj;
+```
 
 ## 3. Tipos de datos y operadores
 
@@ -468,7 +624,7 @@ La palabra clave `debugger` se utiliza para crear puntos de interrupción en el 
 
 Currying es una técnica avanzada para transformar una función de argumentos n en n funciones de uno o menos argumentos.
 
-*Ejemplo de una función curried:*
+**Ejemplo de una función curried:**
 
 ```javascript
 function add (a) {
@@ -480,7 +636,7 @@ function add (a) {
 add(3)(4) 
 ```
 
-Por ejemplo, si tenemos una función f (a, b), entonces la función después del currying se transformará en f(a)(b).
+Por ejemplo, si tenemos una función `f(a, b)`, entonces la función después del currying se transformará en `f(a)(b)`.
 
 Al utilizar la técnica del currying, no cambiamos la funcionalidad de una función, solo cambiamos la forma en que se invoca.
 
@@ -506,7 +662,7 @@ multiply(4, 3); // Devuelve 12
 curriedMultiply(4)(3); // También devuelve 12
 ```
 
-Como se puede ver en el código anterior, hemos transformado la función multiplicar(a,b) en una función curriedMultiply, que toma un parámetro a la vez.
+Como se puede ver en el código anterior, hemos transformado `function multiply(a,b)` en una función `curriedMultiply`, que toma un parámetro a la vez.
 
 ### 4.4. ¿Cuáles son algunas de las ventajas de utilizar JavaScript externo?
 
@@ -514,10 +670,252 @@ Como se puede ver en el código anterior, hemos transformado la función multipl
 
 JavaScript externo es el código JavaScript (script) escrito en un archivo separado con la extensión.js, y luego vinculamos ese archivo dentro del elemento &lt;head&gt; o &lt;body&gt; del archivo HTML donde se colocará el código.
 
-Algunas ventajas del JavaScript externo son
+Algunas ventajas del JavaScript externo son:
 
-->Permite a los diseñadores y desarrolladores web colaborar en archivos HTML y JavaScript.
+- Permite a los diseñadores y desarrolladores web colaborar en archivos HTML y JavaScript.
+- Podemos reutilizar el código.
+- La legibilidad del código es simple en JavaScript externo.
 
-->Podemos reutilizar el código.
+### 4.5. ¿Qué es un cierre en JavaScript?
 
-->La legibilidad del código es simple en JavaScript externo.
+**Respuesta:** Un cierre es una función que tiene acceso a su ámbito de función externo incluso después de que la función externa haya regresado. Esto significa que un cierre puede recordar y acceder a las variables y argumentos de su función externa incluso después de que la función haya terminado.
+
+En resumen: un cierre es una función que tiene acceso a las variables de su ámbito de función externo (que lo encierra), incluso después de que la función externa haya terminado de ejecutarse.
+
+### 4.6. ¿Qué es el DOM en JavaScript?
+
+**Respuesta:** El Modelo de Objetos del Documento (DOM) es una interfaz de programación para documentos HTML y XML. Representa la página para que los programas puedan cambiar la estructura, el estilo y el contenido del documento. El DOM representa el documento como nodos y objetos. De esa manera, los lenguajes de programación pueden conectarse a la página.
+
+### 4.7. ¿Qué es la delegación de eventos?
+
+**Respuesta:** La delegación de eventos es una técnica para escuchar eventos en la que se delega un elemento principal como receptor de todos los eventos que ocurren dentro de él. Los eventos son manejados por la función de devolución de llamada del elemento principal.
+
+### 4.8. ¿Cómo puedes realizar una solicitud AJAX en JavaScript?
+
+**Respuesta:** [AJAX](../miscellaneous/api-ajax.md) significa Asynchronous JavaScript and XML (JavaScript y XML asincrónicos). Es un conjunto de técnicas de desarrollo web que utilizan muchas tecnologías web del lado del cliente para crear aplicaciones web asincrónicas. Con AJAX, las aplicaciones web pueden enviar y recuperar datos de un servidor de forma asincrónica (en segundo plano) sin interferir con la visualización y el comportamiento de la página existente.
+
+Puede realizar solicitudes AJAX mediante el objeto XMLHttpRequest o mediante la API fetch. A continuación, se muestra un ejemplo de uso de fetch:
+  
+```js
+  fetch('https://example.com/api/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+```
+
+### 4.9. ¿Qué es una promesa en JavaScript?
+
+**Respuesta:** Una promesa es un objeto que puede producir un único valor en algún momento en el futuro: ya sea un valor resuelto o un motivo por el cual no se ha resuelto (por ejemplo, se produjo un error de red). Una promesa puede estar en uno de los tres estados posibles: `fulfilled` (cumplida), `rejected` (rechazada) o `pending` (pendiente). Los usuarios de Promise pueden adjuntar devoluciones de llamadas para gestionar el valor cumplido o el motivo del rechazo.
+
+### 4.10. ¿Por qué necesitas una promesa en JavaScript?
+
+**Respuesta:** Las promesas se utilizan para gestionar operaciones asincrónicas. Ofrecen un enfoque alternativo para las retrollamadas, ya que reducen el problema de las retrollamadas y escriben un código más limpio.
+
+### 4.11. ¿Explica la igualdad en JavaScript?
+
+**Respuesta:** JavaScript proporciona dos tipos de operadores de igualdad: igualdad estricta `(===)` e igualdad flexible `(==)`
+
+- Igualdad estricta `(===)`: este operador compara dos valores sin realizar ninguna conversión de tipo. Si los valores tienen tipos diferentes, se consideran desiguales. Si los valores tienen el mismo tipo, no son números y tienen el mismo valor, se consideran iguales. En el caso de los números, se consideran iguales si ambos no son NaN y tienen el mismo valor, o si uno es `+0` y el otro es `-0`.
+
+- Igualdad flexible `(==)`: este operador realiza una conversión de tipo al comparar los operandos. Si los operandos tienen el mismo tipo, se comparan de la misma manera que el operador de igualdad estricta. Si los operandos tienen tipos diferentes, JavaScript intenta convertirlos a un tipo común y luego compararlos. Las reglas para la conversión de tipo a veces pueden generar resultados inesperados, por lo que generalmente se recomienda utilizar el operador de igualdad estricta para evitar posibles problemas.
+
+## 5. Objetos
+
+### 5.1. ¿Cuáles son las posibles formas de crear objetos en JavaScript?
+
+**Respuesta:** Hay muchas formas de crear objetos en javascript como se muestra a continuación
+
+Constructor Object:
+
+i. La forma más sencilla de crear un objeto vacío es mediante el constructor Object. Actualmente, este enfoque no se recomienda.
+
+``` js
+var object = new Object();
+```
+
+Object() es una función constructora incorporada, por lo que no se requiere la palabra clave "new". Lo anterior se puede escribir como:
+
+``` js
+var object = Object();
+```
+
+ii. Método create de Object:
+
+El método create de Object crea un nuevo objeto pasando el objeto prototipo como parámetro
+
+```js
+var object = Object.create(null);
+```
+
+iii. Sintaxis de objeto literal:
+
+La sintaxis de objeto literal (o inicializador de objeto) es un conjunto de pares de nombre-valor separados por comas y envueltos entre llaves.
+
+```js
+var object = {
+     name: "Sudheer",
+     age: 34
+};
+```
+
+Los valores de propiedad de un objeto literal pueden ser de cualquier tipo de datos, incluidas matrices, funciones y objetos anidados.
+
+Nota: Esta es la forma más sencilla de crear un objeto.
+
+iv. Constructor de funciones:
+
+Cree cualquier función y aplique el nuevo operador para crear instancias de objeto,
+
+```js
+function Person(name) {
+  this.name = name;
+  this.age = 21;
+}
+var object = new Person("Sudheer");
+```
+
+v. Constructor de funciones con prototipo:
+
+Esto es similar al constructor de funciones pero utiliza prototipos para sus propiedades y métodos.
+
+```js
+function Person() {}
+Person.prototype.name = "Sudheer";
+var object = new Person();
+```
+
+Esto es equivalente a una instancia creada con un método de creación de objeto con un prototipo de función y luego llamar a esa función con una instancia y parámetros como argumentos.
+
+```js
+function func() {}
+
+new func(x, y, z);
+```
+
+(O)
+
+```js
+
+// Cree una nueva instancia utilizando el prototipo de función.
+var newInstance = Object.create(func.prototype)
+
+// Llama a la función
+var result = func.call(newInstance, x, y, z),
+
+// Si el resultado es un objeto no nulo, úselo; de lo contrario, simplemente utilice la nueva instancia.
+console.log(result && typeof result === 'object' ? result : newInstance);
+```
+
+vi. Sintaxis de la clase ES6:
+
+ES6 introduce la función de clase para crear los objetos
+
+```js
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+var object = new Person("Sudheer");
+```
+
+## 6.Misceláneas
+
+### 6.1. ¿Qué es un modo estricto en JavaScript?
+
+**Respuesta:** El modo estricto es una nueva característica de ECMAScript 5 que permite colocar un programa o una función en un contexto operativo "estricto". De esta manera, evita que se realicen determinadas acciones y genera más excepciones. La expresión literal "use strict" indica al navegador que utilice el código javascript en modo estricto.
+
+### 6.2. ¿Qué es un valor nulo en JavaScript?
+
+**Respuesta:** El valor null representa la ausencia intencional de cualquier valor de objeto. Es uno de los valores primitivos de JavaScript. El tipo de valor null es object. Puedes vaciar la variable estableciendo el valor en null.
+
+```js
+var user = null;
+console.log(typeof user); //object
+```
+
+### 6.3. ¿Qué es `eval` en JavaScript?
+
+**Respuesta:** La función `eval()` evalúa el código JavaScript representado como una cadena. La cadena puede ser una expresión, una variable, una declaración o una secuencia de declaraciones de JavaScript.
+
+```js
+console.log(eval("1 + 2")); //  3
+```
+
+### 6.4. ¿JavaScript es un lenguaje compilado o interpretado?
+
+**Respuesta:** JavaScript es un lenguaje interpretado, no compilado. Un intérprete en el navegador lee el código JavaScript, interpreta cada línea y la ejecuta. En la actualidad, los navegadores modernos utilizan una tecnología conocida como compilación Just-In-Time (JIT), que compila JavaScript en código de bytes ejecutable justo cuando está a punto de ejecutarse.
+
+### 6.5. Diferencia entre los métodos `exec()` y `test()`
+
+**Respuesta** Las diferencias entre los métodos `exec()` y `test()` son las siguientes:
+
+`exec()`:
+
+1. Es un método de expresión en JavaScript que se utiliza para buscar una cadena con un patrón específico.
+2. Una vez encontrado, el patrón se devolverá directamente, de lo contrario, devuelve un resultado “vacío”.
+
+`test()`:
+
+1. Es un método de expresión en JavaScript que también se utiliza para buscar una cadena con un patrón o texto específico.
+2. Una vez encontrado, el patrón devolverá el valor booleano `true`, de lo contrario devolverá `false`.
+
+### 6.6. ¿JavaScript es un lenguaje que distingue entre mayúsculas y minúsculas?
+
+**Respuesta:** Sí, JavaScript es un lenguaje que distingue entre mayúsculas y minúsculas. Las palabras clave del lenguaje, las variables, los nombres de funciones y objetos y cualquier otro identificador deben escribirse siempre con mayúsculas y minúsculas uniformes.
+
+## 7.JSON
+
+### 7.1. ¿Qué es JSON?
+
+**Respuesta:** JSON (JavaScript Object Notation) es un formato liviano que se utiliza para intercambiar datos. Se basa en un subconjunto del lenguaje JavaScript en la forma en que se crean los objetos en JavaScript.
+
+### 7.2. ¿Cuáles son las reglas de sintaxis de JSON?
+
+**Respuesta:**  A continuación se muestra la lista de reglas de sintaxis de JSON
+
+- Los datos están en pares nombre/valor
+- Los datos están separados por comas.
+- Las llaves contienen objetos
+- Los corchetes contienen matrices
+
+### 7.3.¿Cuál es el propósito de JSON stringify?
+
+**Respuesta:** Al enviar datos a un servidor web, estos deben estar en formato de cadena. Para lograrlo, puedes convertir un objeto JSON en una cadena mediante el método `stringify()`.
+
+```js
+var userJSON = { name: "John", age: 31 };
+var userString = JSON.stringify(userJSON);
+console.log(userString); //"{"name":"John","age":31}"
+```
+
+### 7.4. ¿Cómo se analiza una cadena JSON?
+
+**Respuesta:** Al recibir datos de un servidor web, estos siempre están en formato de cadena. Sin embargo, puedes convertir este valor de cadena en un objeto de JavaScript mediante el método `parse()`.
+
+```js
+var userString = '{"name":"John","age":31}';
+var userJSON = JSON.parse(userString);
+console.log(userJSON); // {name: "John", age: 31}
+```
+
+### 7.5. ¿Por qué necesitas JSON?
+
+**Respuesta:** Al intercambiar datos entre un navegador y un servidor, los datos solo pueden ser texto. Como JSON es solo texto, se puede enviar fácilmente hacia y desde un servidor y cualquier lenguaje de programación puede usarlo como formato de datos.
+
+### 7.6. ¿Cómo se definen las matrices JSON?
+
+**Respuesta:**  Las matrices JSON se escriben entre corchetes y contienen objetos de JavaScript. Por ejemplo, la matriz JSON de usuarios sería la siguiente:
+
+```js
+"users":[
+  {"firstName":"John", "lastName":"Abrahm"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Shane", "lastName":"Warn"}
+]
+```
+
+### 7.6. En JSON, ¿cuál es el propósito de los corchetes y cómo se utilizan?
+
+**Respuesta:** En JSON, los corchetes `[ ]` se utilizan para encapsular y definir matrices dentro de las estructuras de datos JSON. Las matrices JSON pueden contener una colección de valores, que pueden ser de varios tipos de datos, incluidos objetos, cadenas, números y otras matrices JSON.

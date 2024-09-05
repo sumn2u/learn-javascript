@@ -8,17 +8,17 @@ description:  ¡Ciertamente! Analicemos las declaraciones `let` y `const` en el 
 
 El objeto Map es una colección de elementos de datos con clave, al igual que un `Object`. Pero la principal diferencia es que `Map` permite claves de cualquier tipo.
 
-Los métodos y propiedades son:
+| Método/Propiedad         | Descripción                                                                                        |
+| ------------------------ | -------------------------------------------------------------------------------------------------- |
+| `new Map()`              | Crea un un nuevo objeto Map.                                                                       |
+| `map.set(clave, valor)`  | Almacena el `valor` en el objeto `map` bajo la `clave`.                                            |
+| `map.get(clave)`         | Devuelve el `valor` asociado con la `clave`, o `undefined` si la `clave` no existe.                |
+| `map.has(clave)`         | Devuelve `true` si el `map` contiene la `clave`, de lo contrario devuelve `false`.                 |
+| `map.delete(clave)`      | Elimina el elemento (par clave/valor) del `map` especificado por la `clave`.                       |
+| `map.clear()`            | Elimina todos los elementos del `map`.                                                             |
+| `map.size`               | Devuelve el número de elementos (pares clave/valor) en el `map`.                                   |
 
-- `new Map()` – crea el mapa.  
-- `map.set(key, value)` – almacena el valor por la clave.
-- `map.get(key)` – devuelve el valor por la clave, devuelve undefined si la clave no existe en el mapa.
-- `map.has(key)` – devuelve verdadero (true) si la clave existe, falso (false) en caso contrario.
-- `map.delete(key)` – elimina el elemento (el par clave/valor) por la clave.
-- `map.clear()` – elimina todos los elementos del mapa.
-- `map.size` – devuelve el número actual de elementos.
-
-Por ejemplo:
+A continuación se muestra un ejemplo de `Map()` con sus diversos métodos y propiedades.
 
 ```javascript
 
@@ -36,7 +36,7 @@ alert( map.get('1') ); // 'str1'
 alert( map.size ); // 3
 ```
 
-Las diferencias de un `Object` normal:
+Las diferencias un mapa con un `Object` normal:
 
 - Cualquier clave, los objetos pueden ser claves.
 

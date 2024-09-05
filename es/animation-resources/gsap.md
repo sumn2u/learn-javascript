@@ -1,38 +1,38 @@
 ---
 chapter: 26
 pageNumber: 253
-description: Getting started with GSAP, a powerful library for creating high-performance animations.
+description: Introducción a GSAP, una potente biblioteca para crear animaciones de alto rendimiento.
 ---
 
-## Getting Started with GSAP
+# Introducción a GSAP
 
-GSAP (GreenSock Animation Platform) is a powerful library for creating high-performance animations. It is widely used due to its robustness and flexibility.
+GSAP (GreenSock Animation Platform) es una potente biblioteca para crear animaciones de alto rendimiento. Es muy utilizada debido a su robustez y flexibilidad.
 
-**Installation**
+## Instalación
 
-You can include GSAP in your project using npm:
+Puede incluir GSAP en su proyecto usando npm:
 
 ```bash
 npm install gsap
 ```
 
-Or you can use a CDN:
+O puedes utilizar un CDN:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 ```
 
-**Basic Animation**
+## Animación básica
 
-Here's a simple example of using GSAP to animate an element:
+A continuación se muestra un ejemplo sencillo del uso de GSAP para animar un elemento:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP Animation</title>
+    <title>Animación GSAP</title>
 </head>
 <body>
     <div id="box" style="width:100px; height:100px; background-color:red;"></div>
@@ -44,13 +44,12 @@ Here's a simple example of using GSAP to animate an element:
 </html>
 ```
 
-**Advanced Animation**
+## Animación avanzada
 
-GSAP provides various features for advanced animations, such as timelines, stagger, and easing.
+GSAP proporciona varias funciones para animaciones avanzadas, como líneas de tiempo, escalonamiento y suavizado.
 
-
-- **Timelines:**
-Timelines allow you to sequence animations. Here's an example:
+- **Líneas de tiempo:**
+Las líneas de tiempo permiten secuenciar animaciones. A continuación, se muestra un ejemplo:
 
 ```javascript
 const name = "John";
@@ -58,22 +57,21 @@ const greeting = `Hello, ${name}!`;
 console.log(greeting); // Output: Hello, John!
 ```
 
-
-- **Stagger:**
-Stagger allows you to animate multiple elements with a delay between each. Here's an example:
+- **Escalonamiento:**
+El escalonamiento te permite animar varios elementos con un retraso entre cada uno. A continuación, se muestra un ejemplo:
 
 ```javascript
 gsap.to(".box", {x: 100, duration: 1, stagger: 0.2});
 ```
 
 
-- **Easing:**
-GSAP provides a variety of easing options to make animations look more natural. Here's an example:
+- **Suavizado:**
+GSAP ofrece una variedad de opciones de suavizado para que las animaciones se vean más naturales. A continuación, se muestra un ejemplo:
 
 ```javascript
 gsap.to("#box", {x: 100, duration: 1, ease: "bounce"});
 ```
 
 {% hint style="info" %}
-For more details and examples, check out the GSAP documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de GSAP.
 {% endhint %}

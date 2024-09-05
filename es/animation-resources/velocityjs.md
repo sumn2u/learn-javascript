@@ -1,37 +1,38 @@
 ---
 chapter: 26
 pageNumber: 254
-description: Creating fast animations with Velocity.js, a high-performance animation engine.
+description: Creación de animaciones rápidas con Velocity.js, un motor de animación de alto rendimiento.
 ---
 
-## Fast Animations with Velocity.js
+# Animaciones rápidas con Velocity.js
 
-Velocity.js is a high-performance animation engine that is easy to use and works with and without jQuery.
+Velocity.js es un motor de animación de alto rendimiento que es fácil de usar y funciona con y sin jQuery.
 
-**Installation**
+## Instalación
 
-You can include Velocity.js in your project using npm:
+Puedes incluir Velocity.js en tu proyecto usando npm:
 
 ```bash
 npm install velocity-animate
 ```
 
-Or you can use a CDN:
+O puedes utilizar un CDN:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
 ```
 
-**Basic Animation**
-Here's a simple example of using Velocity.js to animate an element:
+## Animación básica
+
+A continuación se muestra un ejemplo sencillo del uso de Velocity.js para animar un elemento:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velocity.js Animation</title>
+    <title>Animación Velocity.js</title>
 </head>
 <body>
     <div id="box" style="width:100px; height:100px; background-color:red;"></div>
@@ -43,14 +44,13 @@ Here's a simple example of using Velocity.js to animate an element:
 </html>
 ```
 
-**Advanced Animation**
+## Animación avanzada
 
-Velocity.js provides various features for advanced animations, such as sequences, easing, and SVG animations.
+Velocity.js proporciona varias funciones para animaciones avanzadas, como secuencias, facilitación y animaciones SVG.
 
+- **Secuencias**
 
-- **Sequences**
-
-Sequences allow you to chain animations together. Here's an example:
+Las secuencias permiten encadenar animaciones. A continuación, se muestra un ejemplo:
 
 ```javascript
 Velocity(document.getElementById('box'), { left: "100px" }, { duration: 1000 })
@@ -59,24 +59,22 @@ Velocity(document.getElementById('box'), { left: "100px" }, { duration: 1000 })
     });
 ```
 
+- **Suavizado**
 
-- **Easing**
-
-Velocity.js provides a variety of easing options to make animations look more natural. Here's an example:
+Velocity.js ofrece una variedad de opciones de suavizado para que las animaciones se vean más naturales. A continuación, se muestra un ejemplo:
 
 ```javascript
 Velocity(document.getElementById('box'), { left: "100px" }, { duration: 1000, easing: "spring" });
 ```
 
+- **Animaciones SVG**
 
-- **SVG Animations**
-
-Velocity.js can also animate SVG elements. Here's an example:
+Velocity.js también puede animar elementos SVG. A continuación, se muestra un ejemplo:
 
 ```javascript
 Velocity(document.querySelector('svg'), { strokeDashoffset: 0 }, { duration: 1000 });
 ```
 
 {% hint style="info" %}
-For more details and examples, check out the Velocity.js documentation.
+Para obtener más detalles y ejemplos, consulte la documentación de Velocity.js.
 {% endhint %}
