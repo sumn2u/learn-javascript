@@ -1,53 +1,54 @@
 ---
 chapter: 27
 pageNumber: 262
-description: Understanding Runtime Environment in JavaScript.
+description: Comprender el entorno de ejecución en JavaScript.
 ---
 
-## Understanding Runtime Environment in JavaScript
+# Comprender el entorno de ejecución en JavaScript
 
-The runtime environment in JavaScript is the context in which your code is executed. It includes the JavaScript engine, the call stack, the memory heap, and the APIs provided by the environment (such as the browser or Node.js).
+El entorno de ejecución en JavaScript es el contexto en el que se ejecuta el código. Incluye el motor de JavaScript, la pila de llamadas, el montón de memoria y las API proporcionadas por el entorno (como el navegador o Node.js).
 
-### JavaScript Engine
+## Motor de JavaScript
 
-The JavaScript engine is responsible for executing your code. Popular engines include V8 (used in Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari).
+El motor de JavaScript es responsable de ejecutar el código. Entre los motores más populares se encuentran V8 (usado en Chrome y Node.js), SpiderMonkey (usado en Firefox) y JavaScriptCore (usado en Safari).
 
-### Call Stack
+## Pila de llamadas
 
-The call stack is a data structure that keeps track of function calls. When a function is called, it is added to the top of the stack. When the function returns, it is removed from the stack.
+La pila de llamadas es una estructura de datos que lleva un registro de las llamadas a funciones. Cuando se llama a una función, se agrega a la parte superior de la pila. Cuando la función retorna, se elimina de la pila.
 
-### Example of Call Stack
+### Ejemplo de pila de llamadas
 
-```javascript
-function first() {
-    console.log("First function");
-    second();
+````javascript
+function primera() {
+    console.log("Primera función");
+    segunda();
 }
 
-function second() {
-    console.log("Second function");
-    third();
+function segunda() {
+    console.log("Segunda función");
+    tercera();
 }
 
-function third() {
-    console.log("Third function");
+function tercera() {
+    console.log("Tercera función");
 }
 
-first();
-```
+primera();
+````
 
-**Output:**
-```
-First function
-Second function
-Third function
-```
+**Salida:**
 
-### Memory Heap
+````text
+Primera función
+Segunda función
+Tercera función
+````
 
-The memory heap is where objects, strings, and closures are stored. It is managed by the garbage collector, which reclaims memory that is no longer in use.
+## Montón de memoria
 
-### Example of Memory Allocation
+El montón de memoria es donde se almacenan los objetos, las cadenas y los cierres. Lo administra el recolector de elementos no utilizados, que recupera la memoria que ya no se utiliza.
+
+### Ejemplo de asignación de memoria
 
 ```javascript
 let obj = {
@@ -58,55 +59,56 @@ let obj = {
 let arr = [1, 2, 3, 4, 5];
 ```
 
-### Event Loop
+## Bucle de eventos
 
-The event loop is responsible for handling asynchronous operations. It continuously checks the call stack and the task queue, executing tasks from the queue when the stack is empty.
+El bucle de eventos es responsable de gestionar las operaciones asincrónicas. Revisa continuamente la pila de llamadas y la cola de tareas, y ejecuta las tareas de la cola cuando la pila está vacía.
 
-### Example of Event Loop
+### Ejemplo de bucle de eventos
 
-```javascript
-console.log("Start");
+````javascript
+console.log("Comenzar");
 
 setTimeout(() => {
-    console.log("Timeout");
+    console.log("Se acabó el tiempo");
 }, 0);
 
-console.log("End");
+console.log("Final");
+````
+
+**Salida:**
+
+```text
+Comenzar
+Final
+Se acabó el tiempo
 ```
 
-**Output:**
-```
-Start
-End
-Timeout
-```
+## IPAs proporcionadas por el entorno
 
-### APIs Provided by the Environment
+El entorno de ejecución proporciona varias IPAs que puedes usar en tu código. En un navegador, estas incluyen DOM, fetch y setTimeout. En Node.js, estas incluyen operaciones del sistema de archivos, solicitudes HTTP y más.
 
-The runtime environment provides various APIs that you can use in your code. In a browser, these include the DOM, fetch, and setTimeout. In Node.js, these include file system operations, HTTP requests, and more.
-
-### Example of Browser API
+### Ejemplo de IPA del navegador
 
 ```javascript
 document.getElementById("myButton").addEventListener("click", () => {
-    alert("Button clicked!");
+    alert("¡Botón pulsado!");
 });
 ```
 
-### Example of Node.js API
+### Ejemplo de IPA de Node.js
 
-```javascript
+````javascript
 const fs = require('fs');
 
-fs.readFile('example.txt', 'utf8', (err, data) => {
+fs.readFile('ejemplo.txt', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
     }
     console.log(data);
 });
-```
+````
 
-### Conclusion
+## Conclusión
 
-Understanding the runtime environment in JavaScript is crucial for writing efficient and effective code. By knowing how the call stack, memory heap, event loop, and provided APIs work, you can better manage your code's execution and performance.
+Comprender el entorno de ejecución en JavaScript es fundamental para escribir código eficiente y eficaz. Si conoce cómo funcionan la pila de llamadas, el montón de memoria, el bucle de eventos y las API proporcionadas, podrá gestionar mejor la ejecución y el rendimiento de su código.

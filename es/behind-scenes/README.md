@@ -2,46 +2,37 @@
 layout: editorial
 chapter: 27
 pageNumber: 256
-description: JavaScript behind the scenes.
+description: JavaScript detrás de escena.
 ---
 
-## JavaScript Behind the Scenes
+# Capítulo 27
 
-JavaScript is a versatile language that runs in various environments, including browsers and servers. Understanding how
-JavaScript works behind the scenes can help you write more efficient and effective code. This guide covers key concepts
-such as the JavaScript engine, execution context, call stack, memory heap, runtime environment, and event loop.
+## JavaScript detrás de escena
 
-### JavaScript Engine
+JavaScript es un lenguaje versátil que se ejecuta en varios entornos, incluidos navegadores y servidores. Comprender cómo funciona JavaScript en segundo plano puede ayudarlo a escribir código más eficiente y eficaz. Esta guía cubre conceptos clave como el motor de JavaScript, el contexto de ejecución, la pila de llamadas, el montón de memoria, el entorno de ejecución y el bucle de eventos.
 
-A JavaScript engine is a program or interpreter that executes JavaScript code. Popular engines like V8 (used in Google
-Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari) parse the code into an Abstract
-Syntax Tree (AST), compile it into bytecode or machine code, and then execute it.
+### Motor de JavaScript
 
-### Execution Context
+Un motor de JavaScript es un programa o intérprete que ejecuta código JavaScript. Los motores populares como V8 (usado en Google Chrome y Node.js), SpiderMonkey (usado en Firefox) y JavaScriptCore (usado en Safari) analizan el código en un árbol de sintaxis abstracta (AST), lo compilan en código de bytes o código de máquina y luego lo ejecutan.
 
-An execution context is an environment where JavaScript code is evaluated and executed. There are three types: global,
-function, and eval. Each context has a creation phase, where variables, functions, and the `this` keyword are created,
-and an execution phase, where the code is executed line by line.
+### Contexto de ejecución
 
-### Call Stack
+Un contexto de ejecución es un entorno en el que se evalúa y ejecuta el código JavaScript. Hay tres tipos: global,
+función y evaluación. Cada contexto tiene una fase de creación, donde se crean las variables, las funciones y la palabra clave `this`, y una fase de ejecución, donde se ejecuta el código línea por línea.
 
-The call stack is a data structure that keeps track of function calls in a Last-In, First-Out (LIFO) manner. It helps
-the JavaScript engine manage the execution of multiple functions by pushing and popping function calls as they are
-invoked and completed.
+### Pila de llamadas
 
-### Memory Heap
+La pila de llamadas es una estructura de datos que realiza un seguimiento de las llamadas a funciones en el modo LIFO (último en entrar, primero en salir). Ayuda al motor de JavaScript a gestionar la ejecución de múltiples funciones al enviar y recibir llamadas a funciones a medida que se invocan y se completan.
 
-The memory heap is a region in memory where objects are stored. JavaScript uses garbage collection to manage memory,
-automatically freeing up memory that is no longer in use, thus preventing memory leaks and optimizing performance.
+### Montón de memoria
 
-### Runtime Environment
+El montón de memoria es una región de la memoria donde se almacenan los objetos. JavaScript utiliza la recolección de elementos no utilizados para administrar la memoria, liberando automáticamente la memoria que ya no se utiliza, lo que evita fugas de memoria y optimiza el rendimiento.
 
-The runtime environment provides the necessary resources for JavaScript to execute. In a browser, this includes the
-Document Object Model (DOM), Web APIs, and the JavaScript engine. In Node.js, it includes the file system, HTTP module,
-and other Node.js-specific APIs.
+### Entorno de ejecución
 
-### Event Loop
+El entorno de ejecución proporciona los recursos necesarios para que JavaScript se ejecute. En un navegador, esto incluye el
+modelo de objetos de documento (DOM), las API web y el motor de JavaScript. En Node.js, incluye el sistema de archivos, el módulo HTTP y otras API específicas de Node.js.
 
-The event loop allows JavaScript to perform non-blocking operations by offloading tasks to the system kernel whenever
-possible. It continuously checks the call stack and processes the callback queue, enabling asynchronous programming and
-efficient execution of code.
+### Bucle de eventos
+
+El bucle de eventos permite que JavaScript realice operaciones sin bloqueos al transferir tareas al núcleo del sistema siempre que sea posible. Verifica continuamente la pila de llamadas y procesa la cola de devolución de llamadas, lo que permite la programación asincrónica y la ejecución eficiente del código.
