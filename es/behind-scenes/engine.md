@@ -1,92 +1,93 @@
 ---
 chapter: 27
 pageNumber: 258
-description: Understanding JavaScript Engines and how they execute JavaScript code. 
+description: Comprender los motores de JavaScript y cómo ejecutan el código JavaScript. 
 ---
 
-## Understanding JavaScript Engines
+# Comprender los motores de JavaScript y cómo ejecutan el código JavaScript
 
-A JavaScript engine is a program or an interpreter that executes JavaScript code. The most well-known JavaScript engines are V8 (used in Google Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari).
+Un motor de JavaScript es un programa o intérprete que ejecuta código JavaScript. Los motores de JavaScript más conocidos son V8 (utilizado en Google Chrome y Node.js), SpiderMonkey (utilizado en Firefox) y JavaScriptCore (utilizado en Safari).
 
-### How JavaScript Engines Work
+## Cómo funcionan los motores de JavaScript
 
-JavaScript engines perform several key tasks to execute JavaScript code efficiently:
+Los motores de JavaScript realizan varias tareas clave para ejecutar el código JavaScript de manera eficiente:
 
-1. **Parsing**: The engine parses the JavaScript code into an Abstract Syntax Tree (AST).
-2. **Compilation**: The AST is then compiled into bytecode or machine code.
-3. **Execution**: The compiled code is executed by the engine.
+1. **Análisis**: El motor analiza el código JavaScript en un árbol de sintaxis abstracta (AST).
+2. **Compilación**: Luego, el AST se compila en código de bytes o código de máquina.
+3. **Ejecución**: El código compilado es ejecutado por el motor.
 
-### Example of JavaScript Engine Workflow
+### Ejemplo de flujo de trabajo del motor JavaScript
 
-Here's a simple example to illustrate the workflow of a JavaScript engine:
+A continuación se muestra un ejemplo sencillo para ilustrar el flujo de trabajo de un motor de JavaScript:
 
-```javascript
-function add(a, b) {
+````javascript
+function agrega(a, b) {
     return a + b;
 }
 
-console.log(add(2, 3)); // Output: 5
-```
+console.log(agrega(2, 3)); // Salida: 5
+````
 
-### Parsing
+### Análisis
 
-The engine first parses the code into an AST. For the above code, the AST might look something like this:
+El motor primero analiza el código y lo convierte en un AST. Para el código anterior, el AST podría verse así:
 
-```
-Program
- ├── FunctionDeclaration (add)
- │   ├── Identifier (a)
- │   ├── Identifier (b)
- │   └── BlockStatement
- │       └── ReturnStatement
- │           └── BinaryExpression (+)
- │               ├── Identifier (a)
- │               └── Identifier (b)
- └── ExpressionStatement
-     └── CallExpression (console.log)
-         └── CallExpression (add)
+```text
+Programacion
+ ├── DeclaracionFuncion (agrega)
+ │   ├── Identificador (a)
+ │   ├── Identificador (b)
+ │   └── SentenciaDeBloque
+ │       └── SentenciaReturn
+ │           └── ExpresionBinaria (+)
+ │               ├── Identificador (a)
+ │               └── Identificador (b)
+ └── SentenciaExpresion
+     └── LlamadaExpresion (console.log)
+         └── LlamadaExpresion (agrega)
              ├── Literal (2)
              └── Literal (3)
 ```
 
-### Compilation
+### Compilación
 
-The AST is then compiled into bytecode or machine code. This step involves optimizations to improve performance.
+Luego, el AST se compila en código de bytes o código de máquina. Este paso implica optimizaciones para mejorar el rendimiento.
 
-### Execution
+### Ejecución
 
-The compiled code is executed by the engine. In this case, the `add` function is called with arguments `2` and `3`, and the result `5` is logged to the console.
+El motor ejecuta el código compilado. En este caso, se llama a la función `add` con los argumentos `2` y `3`, y el resultado `5` se registra en la consola.
 
-### Just-In-Time (JIT) Compilation
+### Compilación Just-In-Time (JIT)
 
-Modern JavaScript engines use Just-In-Time (JIT) compilation to improve performance. JIT compilation involves compiling code at runtime, rather than before execution. This allows the engine to optimize the code based on actual usage patterns.
+Los motores de JavaScript modernos utilizan la compilación Just-In-Time (JIT) para mejorar el rendimiento. La compilación JIT implica compilar el código en tiempo de ejecución, en lugar de antes de la ejecución. Esto permite que el motor optimice el código en función de los patrones de uso reales.
 
-### Example of JIT Compilation
+### Ejemplo de compilación JIT
 
 ```javascript
-function multiply(a, b) {
+function multiplica(a, b) {
     return a * b;
 }
 
 for (let i = 0; i < 1000000; i++) {
-    multiply(2, 3);
+    multiplica(2, 3);
 }
 ```
 
-In this example, the `multiply` function is called repeatedly. A JIT compiler can optimize the function after detecting that it is a hot function (i.e., frequently called).
+En este ejemplo, la función `multiplica` se llama repetidamente. Un compilador JIT puede optimizar la función después de detectar que es una función activa (es decir, que se llama con frecuencia).
 
-### Garbage Collection
+### Recolección de basura
 
-JavaScript engines also include garbage collectors to manage memory. The garbage collector automatically frees up memory that is no longer in use, preventing memory leaks.
+Los motores de JavaScript también incluyen recolectores de basura para administrar la memoria. El recolector de basura libera automáticamente la memoria que ya no se utiliza, lo que evita fugas de memoria.
 
-### Example of Garbage Collection
+### Ejemplo de Recolección de Basura
 
 ```javascript
-function createObject() {
-    return { name: "Object" };
+function creaObjeto() {
+    return { nombre: "Objeto" };
 }
 
-let obj = createObject();
-obj = null; // The object is now eligible for garbage collection
+let obj = creaObjeto();
+obj = null; // El objeto ahora es elegible para la recolección de basura.
 ```
-In this example, the object created by `createObject` is eligible for garbage collection after `obj` is set to `null`.
+
+En este ejemplo, el objeto creado por `creaObjeto` es elegible para la recolección de basura después de que `obj` se establece en `null`.

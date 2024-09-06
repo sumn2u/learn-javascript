@@ -1,132 +1,134 @@
 ---
 chapter: 27
 pageNumber: 259
-description: Understanding the Event Loop in JavaScript.
+description: Comprender el bucle de eventos en JavaScript.
 ---
 
-## Understanding the Event Loop in JavaScript
+# Comprender el bucle de eventos en JavaScript
 
-The event loop is a fundamental concept in JavaScript that allows for asynchronous programming. It is responsible for executing code, collecting and processing events, and executing queued sub-tasks.
+El bucle de eventos es un concepto fundamental en JavaScript que permite la programación asincrónica. Es responsable de ejecutar código, recopilar y procesar eventos y ejecutar subtareas en cola.
 
-### How the Event Loop Works
+## Cómo funciona el bucle de eventos
 
-JavaScript is single-threaded, meaning it can execute one piece of code at a time. The event loop allows JavaScript to perform non-blocking operations by offloading operations to the system kernel whenever possible.
+JavaScript es de un solo subproceso, lo que significa que puede ejecutar un fragmento de código a la vez. El bucle de eventos permite que JavaScript realice operaciones sin bloqueos al delegar operaciones al núcleo del sistema siempre que sea posible.
 
-### Components of the Event Loop
+### Componentes del bucle de eventos
 
-1. **Call Stack**: The call stack is where the JavaScript engine keeps track of function calls.
-2. **Web APIs**: These are provided by the browser (or Node.js) and include things like `setTimeout`, `DOM events`, and `HTTP requests`.
-3. **Callback Queue**: This is where functions are queued up to be executed after the call stack is clear.
-4. **Event Loop**: The event loop continuously checks the call stack to see if it's empty. If it is, it takes the first event from the callback queue and pushes it to the call stack.
+1. **Pila de llamadas**: La pila de llamadas es donde el motor de JavaScript realiza un seguimiento de las llamadas a funciones.
+2. **API web**: las proporciona el navegador (o Node.js) e incluyen cosas como `setTimeout`, `eventos DOM` y `solicitudes HTTP`.
+3. **Cola de devolución de llamada**: aquí es donde las funciones se ponen en cola para ejecutarse después de que se borre la pila de llamadas.
+4. **Bucle de eventos**: el bucle de eventos verifica continuamente la pila de llamadas para ver si está vacía. Si lo está, toma el primer evento de la cola de devolución de llamadas y lo envía a la pila de llamadas.
 
-### Example of the Event Loop
+### Ejemplo del bucle de eventos
 
-Here's a simple example to illustrate how the event loop works:
+A continuación se muestra un ejemplo sencillo para ilustrar cómo funciona el bucle de eventos:
 
 ```javascript
-console.log("Start");
+console.log("Comenzar");
 
 setTimeout(() => {
-    console.log("Timeout");
+    console.log("Se acabó el tiempo");
 }, 0);
 
-console.log("End");
+console.log("Fin");
 ```
 
-**Output:**
+**Salida:**
+
+```text
+Comenzar
+Fin
+Se acabó el tiempo
 ```
-Start
-End
-Timeout
-```
 
-### Explanation
+### Explicación del bucle de eventos
 
-1. `console.log("Start")` is executed and "Start" is printed.
-2. `setTimeout` is called, and the callback is sent to the Web API. The main thread continues.
-3. `console.log("End")` is executed and "End" is printed.
-4. The event loop checks the call stack and finds it empty. It then pushes the `setTimeout` callback to the call stack.
-5. The `setTimeout` callback is executed and "Timeout" is printed.
+1. Se ejecuta `console.log("Comenzar")` y se imprime "Comenzar".
+2. Se llama a `setTimeout` y la devolución de llamada se envía a la API web. El hilo principal continúa.
+3. Se ejecuta `console.log("Fin")` y se imprime "Fin".
+4. El bucle de eventos comprueba la pila de llamadas y la encuentra vacía. Luego envía la devolución de llamada `setTimeout` a la pila de llamadas.
+5. Se ejecuta la devolución de llamada `setTimeout` y se imprime "Se acabó el tiempo".
 
-### Event Loop in Action
+### Bucle de eventos en acción
 
-Here's a more complex example to demonstrate the event loop in action:
+A continuación se muestra un ejemplo más complejo para demostrar el bucle de eventos en acción:
 
 ```javascript
-console.log("Start");
+console.log("Comenzar");
 
 setTimeout(() => {
-    console.log("Timeout 1");
+    console.log("Se acabó el tiempo 1");
 }, 1000);
 
 setTimeout(() => {
-    console.log("Timeout 2");
+    console.log("Se acabó el tiempo 2");
 }, 0);
 
 Promise.resolve().then(() => {
-    console.log("Promise");
+    console.log("Promesa");
 });
 
-console.log("End");
+console.log("Fin");
 ```
 
-**Output:**
+**Salida:**
+
+```text
+Comenzar
+Fin
+Promesa
+Se acabó el tiempo 2
+Se acabó el tiempo 1
 ```
-Start
-End
-Promise
-Timeout 2
-Timeout 1
-```
 
-### Explanation
+### Explicación del bucle de eventos en acción
 
-1. `console.log("Start")` is executed and "Start" is printed.
-2. `setTimeout` with 1000ms delay is called and the callback is sent to the Web API.
-3. `setTimeout` with 0ms delay is called and the callback is sent to the Web API.
-4. `Promise.resolve().then` is called and the callback is sent to the microtask queue.
-5. `console.log("End")` is executed and "End" is printed.
-6. The event loop checks the call stack and finds it empty. It then processes the microtask queue first, executing the `Promise` callback and printing "Promise".
-7. The event loop then processes the callback queue, executing the `setTimeout` with 0ms delay and printing "Timeout 2".
-8. Finally, the `setTimeout` with 1000ms delay is executed and "Timeout 1" is printed.
+1. Se ejecuta `console.log("Comenzar")` y se imprime "Comenzar".
+2. Se llama a `setTimeout` con un retraso de 1000 ms y se envía la devolución de llamada a la API web.
+3. Se llama a `setTimeout` con un retraso de 0 ms y se envía la devolución de llamada a la API web.
+4. Se llama a `Promise.resolve().then` y se envía la devolución de llamada a la cola de microtareas.
+5. Se ejecuta `console.log("Fin")` y se imprime "Fin".
+6. El bucle de eventos verifica la pila de llamadas y la encuentra vacía. Luego procesa primero la cola de microtareas, ejecuta la devolución de llamada `Promise` e ​​imprime "Promesa".
+7. Luego, el bucle de eventos procesa la cola de devolución de llamada, ejecuta `setTimeout` con un retraso de 0 ms e imprime "Se acabó el tiempo 2".
+8. Finalmente, se ejecuta `setTimeout` con un retraso de 1000ms y se imprime "Se acabó el tiempo 1".
 
-### Microtasks vs Macrotasks
+### Microtareas vs Macrotareas
 
-Microtasks (e.g., Promises) have higher priority than macrotasks (e.g., `setTimeout`). The event loop processes all microtasks before moving on to the next macrotask.
+Las microtareas (por ejemplo, las Promesas) tienen mayor prioridad que las macrotareas (por ejemplo, `setTimeout`). El bucle de eventos procesa todas las microtareas antes de pasar a la siguiente macrotarea.
 
-### Example of Microtasks and Macrotasks
+### Ejemplos de microtareas y macrotareas
 
 ```javascript
-console.log("Start");
+console.log("Comenzar");
 
 setTimeout(() => {
-    console.log("Timeout");
+    console.log("Se acabó el tiempo");
 }, 0);
 
 Promise.resolve().then(() => {
-    console.log("Promise 1");
+    console.log("Promesa 1");
 }).then(() => {
-    console.log("Promise 2");
+    console.log("Promesa 2");
 });
 
-console.log("End");
+console.log("Fin");
 ```
 
-**Output:**
+**Salida:**
+
+```Text
+Comenzar
+Fin
+Promisa 1
+Promisa 2
+Se acabó el tiempo
 ```
-Start
-End
-Promise 1
-Promise 2
-Timeout
-```
 
-### Explanation
+### Explicación de microtareas y macrotareas
 
-1. `console.log("Start")` is executed and "Start" is printed.
-2. `setTimeout` is called and the callback is sent to the Web API.
-3. `Promise.resolve().then` is called and the callback is sent to the microtask queue.
-4. `console.log("End")` is executed and "End" is printed.
-5. The event loop processes the microtask queue, executing the `Promise` callbacks and printing "Promise 1" and "Promise 2".
-6. The event loop then processes the callback queue, executing the `setTimeout` callback and printing "Timeout".
-
+1. Se ejecuta `console.log("Comenzar")` y se imprime "Comenzar".
+2. Se llama a `setTimeout` y se envía la devolución de llamada a la API web.
+3. Se llama a `Promise.resolve().then` y se envía la devolución de llamada a la cola de microtareas.
+4. Se ejecuta `console.log("Fin")` y se imprime "Fin".
+5. El bucle de eventos procesa la cola de microtareas, ejecuta las devoluciones de llamada de `Promise` e ​​imprime "Promesa 1" y "Promesa 2".
+6. A continuación, el bucle de eventos procesa la cola de devoluciones de llamada, ejecuta la devolución de llamada de `setTimeout` e imprime "Se acabó el tiempo".

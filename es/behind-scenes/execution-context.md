@@ -1,47 +1,48 @@
 ---
 chapter: 27
 pageNumber: 260
-description: Understanding Execution Context in JavaScript.
+description: Comprender el contexto de ejecución en JavaScript.
 ---
 
-## Understanding Execution Context in JavaScript
+# Comprender el contexto de ejecución en JavaScript
 
-In JavaScript, an execution context is an environment where the code is evaluated and executed. It is a fundamental concept that helps manage the scope and behavior of variables and functions.
+En JavaScript, un contexto de ejecución es un entorno en el que se evalúa y ejecuta el código. Es un concepto fundamental que ayuda a gestionar el alcance y el comportamiento de las variables y funciones.
 
-### Types of Execution Context
+## Tipos de contexto de ejecución
 
-There are three main types of execution contexts in JavaScript:
+Existen tres tipos principales de contextos de ejecución en JavaScript:
 
-1. **Global Execution Context**: This is the default context where the code starts execution. It creates a global object (e.g., `window` in browsers) and sets up the global scope.
-2. **Function Execution Context**: Created whenever a function is invoked. Each function has its own execution context.
-3. **Eval Execution Context**: Created when code is executed inside the `eval` function.
+1. **Contexto de ejecución global**: este es el contexto predeterminado en el que el código comienza a ejecutarse. Crea un objeto global (por ejemplo, `window` en los navegadores) y configura el alcance global.
+2. **Contexto de ejecución de función**: se crea siempre que se invoca una función. Cada función tiene su propio contexto de ejecución.
+3. **Contexto de ejecución de evaluación**: se crea cuando el código se ejecuta dentro de la función `eval`.
 
-### Phases of Execution Context
+## Fases de Ejecución Contexto
 
-Each execution context goes through two phases:
+Cada contexto de ejecución pasa por dos fases:
 
-1. **Creation Phase**: In this phase, the JavaScript engine sets up the environment for the code to be executed. It involves:
-   - Creating the `this` binding.
-   - Setting up the scope chain.
-   - Creating the variable object (variables, functions, and arguments).
+1 . **Fase de creación**: en esta fase, el motor de JavaScript configura el entorno para que se ejecute el código. Implica:
 
-2. **Execution Phase**: In this phase, the JavaScript engine executes the code line by line.
+- Crear el enlace `this`.
+- Configurar la cadena de alcance.
+- Crear el objeto variable (variables, funciones y argumentos).
 
-### Example of Execution Context
+2 . **Fase de ejecución**: en esta fase, el motor de JavaScript ejecuta el código línea por línea.
 
-Here's an example to illustrate how execution contexts work:
+### Ejemplo de contexto de ejecución
+
+A continuación se muestra un ejemplo para ilustrar cómo funcionan los contextos de ejecución:
 
 ```javascript
-var globalVar = "I am a global variable";
+var globalVar = "Soy una variable global";
 
 function outerFunction() {
-    var outerVar = "I am an outer variable";
+    var outerVar = "Soy una variable externa";
 
     function innerFunction() {
-        var innerVar = "I am an inner variable";
-        console.log(globalVar); // Accesses global variable
-        console.log(outerVar);  // Accesses outer variable
-        console.log(innerVar);  // Accesses inner variable
+        var innerVar = "Soy una variable interna";
+        console.log(globalVar); // Accede a la variable global
+        console.log(outerVar);  // Acceder a la variable externa
+        console.log(innerVar);  // Accede a la variable interna
     }
 
     innerFunction();
@@ -50,32 +51,36 @@ function outerFunction() {
 outerFunction();
 ```
 
-**Output:**
+**Salida:**
+
+```text
+Soy una variable global
+Soy una variable externa
+Soy una variable interna
 ```
-I am a global variable
-I am an outer variable
-I am an inner variable
-```
 
-### Explanation
+### Explicación del ejemplo de contexto de ejecución
 
-1. **Global Execution Context**:
-    - `globalVar` is created and assigned the value "I am a global variable".
-    - `outerFunction` is created and stored in memory.
+1 . **Contexto de ejecución global**:
 
-2. **Function Execution Context (outerFunction)**:
-    - `outerVar` is created and assigned the value "I am an outer variable".
-    - `innerFunction` is created and stored in memory.
+- Se crea `globalVar` y se le asigna el valor "Soy una variable global".
+- Se crea `outerFunction` y se almacena en memoria.
 
-3. **Function Execution Context (innerFunction)**:
-    - `innerVar` is created and assigned the value "I am an inner variable".
-    - The `console.log` statements access variables from their respective scopes.
+2 . **Contexto de ejecución de función (outerFunction)**:
 
-### Scope Chain and Lexical Environment
+- Se crea `outerVar` y se le asigna el valor "Soy una variable externa".
+- Se crea `innerFunction` y se almacena en memoria.
 
-The scope chain is a list of all the variable objects that the currently executing code has access to. The lexical environment is the environment in which the code is written, and it determines the scope chain.
+3 . **Contexto de ejecución de función (innerFunction)**:
 
-### Example of Scope Chain
+- Se crea `innerVar` y se le asigna el valor "Soy una variable interna".
+- Las sentencias `console.log` acceden a las variables desde sus respectivos ámbitos.
+
+### Cadena de alcance y entorno léxico
+
+La cadena de alcance es una lista de todos los objetos variables a los que tiene acceso el código que se está ejecutando actualmente. El entorno léxico es el entorno en el que se escribe el código y determina la cadena de alcance.
+
+### Ejemplo de cadena de alcance
 
 ```javascript
 var a = 10;
@@ -85,7 +90,7 @@ function foo() {
 
     function bar() {
         var c = 30;
-        console.log(a + b + c); // Accesses variables from all scopes
+        console.log(a + b + c); // Accede a variables de todos los ámbitos.
     }
 
     bar();
@@ -94,34 +99,35 @@ function foo() {
 foo();
 ```
 
-**Output:**
-```
+**Salida:**
+
+```text
 60
 ```
 
-### Explanation
+### Explicación del ejemplo de cadena de alcance
 
-1. **Global Scope**: Contains `a`.
-2. **Function Scope (foo)**: Contains `b` and has access to `a`.
-3. **Function Scope (bar)**: Contains `c` and has access to `a` and `b`.
+1. **Ámbito global**: contiene `a`.
+2. **Ámbito de función (foo)**: contiene `b` y tiene acceso a `a`.
+3. **Ámbito de función (bar)**: contiene `c` y tiene acceso a `a` y `b`.
 
-### Hoisting
+### Elevación
 
-Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the creation phase.
+La elevación es un comportamiento en JavaScript donde las declaraciones de variables y funciones se mueven a la parte superior de su ámbito contenedor durante la fase de creación.
 
-### Example of Hoisting
+### Ejemplo de elevación
 
 ```javascript
-console.log(hoistedVar); // Output: undefined
-var hoistedVar = "I am hoisted";
+console.log(hoistedVar); // Salida: undefined
+var hoistedVar = "Estoy levantado";
 
-hoistedFunction(); // Output: I am a hoisted function
+hoistedFunction(); // Salida: Soy una función elevada
 function hoistedFunction() {
-    console.log("I am a hoisted function");
+    console.log("Soy una función elevada");
 }
 ```
 
-### Explanation
+### Explicación del ejemplo de elevación
 
-- `hoistedVar` is declared but not initialized during the creation phase, so it is `undefined` when accessed.
-- `hoistedFunction` is fully hoisted and can be called before its declaration.
+- `hoistedVar` se declara pero no se inicializa durante la fase de creación, por lo que es "indefinido" cuando se accede a él.
+- `hoistedFunction` está completamente izado y puede ser llamado antes de su declaración.

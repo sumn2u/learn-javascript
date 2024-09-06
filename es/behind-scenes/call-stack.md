@@ -1,75 +1,75 @@
 ---
 chapter: 27
 pageNumber: 257
-description: Understanding Call Stacks in JavaScript 
+description: Comprensión de las pilas de llamadas en JavaScript
 ---
 
 
-## Understanding Call Stacks in JavaScript
+# Comprensión de las pilas de llamadas en JavaScript
 
-In JavaScript, a Call Stack is a data structure that uses the Last-In, First-Out (LIFO) principle to temporarily store and manage function invocation (call).
+En JavaScript, una pila de llamadas es una estructura de datos que utiliza el principio de último en entrar, primero en salir (LIFO) para almacenar y administrar temporalmente la invocación de una función (llamada).
 
-### What is a Call Stack?
+## ¿Qué es una pila de llamadas?
 
-A call stack is responsible for keeping track of function calls in your code. The call stack helps the JavaScript interpreter to keep track of what function is currently being run and what functions are called from within that function, and so on.
+Una pila de llamadas es responsable de realizar un seguimiento de las llamadas a funciones en su código. La pila de llamadas ayuda al intérprete de JavaScript a realizar un seguimiento de qué función se está ejecutando actualmente y qué funciones se invocan desde dentro de esa función, etc.
 
-When a script calls a function, JavaScript's interpreter adds that function to the call stack and then starts carrying out the function. Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
+Cuando un script llama a una función, el intérprete de JavaScript agrega esa función a la pila de llamadas y luego comienza a ejecutarla. Todas las funciones que son llamadas por esa función se agregan a la pila de llamadas más arriba y se ejecutan donde se alcanzan sus llamadas.
 
-When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last line of code that was run.
+Cuando finaliza la función actual, el intérprete la saca de la pila y reanuda la ejecución donde la dejó en la última línea de código que se ejecutó.
 
-### Example of a Call Stack
+### Ejemplo de una pila de llamadas
 
-Here's a basic example to understand how a call stack works:
+A continuación se muestra un ejemplo básico para comprender cómo funciona una pila de llamadas:
 
 ```javascript
-function firstFunction() {
-    console.log("First function is called.");
-    secondFunction();
-    console.log("First function is done.");
+function primeraFuncion() {
+    console.log("Se llama la primera función.");
+    segundaFuncion();
+    console.log("La primera función está realizada.");
 }
 
-function secondFunction() {
-    console.log("Second function is called.");
-    thirdFunction();
-    console.log("Second function is done.");
+function segundaFuncion() {
+    console.log("Se llama la segunda función.");
+    terceraFuncion();
+    console.log("La segunda función está realizada.");
 }
 
-function thirdFunction() {
-    console.log("Third function is called.");
+function terceraFuncion() {
+    console.log("Se llama la tercera función.");
 }
 
-firstFunction();
+primeraFuncion();
 ```
 
 **Output:**
+
+```text
+Se llama la primera función.
+Se llama la segunda función.
+Se llama la tercera función.
+La segunda función está realizada.
+La primera función está realizada.
 ```
-First function is called.
-Second function is called.
-Third function is called.
-Second function is done.
-First function is done.
-```
 
-### How the Call Stack Works
+## Cómo funciona la pila de llamadas
 
-1. When `firstFunction` is called, it is added to the call stack.
-2. Inside `firstFunction`, `secondFunction` is called, so it is added to the call stack.
-3. Inside `secondFunction`, `thirdFunction` is called, so it is added to the call stack.
-4. `thirdFunction` completes and is removed from the call stack.
-5. `secondFunction` resumes, completes, and is removed from the call stack.
-6. `firstFunction` resumes, completes, and is removed from the call stack.
+1. Cuando se llama a `primeraFuncion`, se agrega a la pila de llamadas.
+2. Dentro de `primeraFuncion`, se llama a `segundaFuncion`, por lo que se agrega a la pila de llamadas.
+3. Dentro de `segundaFuncion`, se llama a `terceraFuncion`, por lo que se agrega a la pila de llamadas.
+4. `terceraFuncion` se completa y se elimina de la pila de llamadas.
+5. `segundaFuncion` se reanuda, se completa y se elimina de la pila de llamadas.
+6. `primeraFuncion` se reanuda, se completa y se elimina de la pila de llamadas.
 
-### Stack Overflow
+## Desbordamiento de pila
 
-A stack overflow occurs when there are too many function calls in the call stack. This can happen with recursive functions that do not have a base case to stop the recursion.
+Un desbordamiento de pila ocurre cuando hay demasiadas llamadas de función en la pila de llamadas. Esto puede suceder con funciones recursivas que no tienen un caso base para detener la recursión.
 
 ```javascript
-function recursiveFunction() {
-    recursiveFunction();
+function funcionRecursiva() {
+    funcionRecursiva();
 }
 
-recursiveFunction();
+funcionRecursiva();
 ```
 
-This will result in a "Maximum call stack size exceeded" error.
-
+Esto generará un error "Se excedió el tamaño máximo de la pila de llamadas" (En la consola aparecerá el error en inglés: "RangeError: Maximum call stack size exceeded").
