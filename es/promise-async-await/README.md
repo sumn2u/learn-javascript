@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 17
-pageNumber: 108
+pageNumber: 138
 description: Promises are now used by most modern APIs. It is therefore important to understand how they work and to know how to use them to optimize your code.
 ---
 

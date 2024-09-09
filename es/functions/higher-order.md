@@ -1,6 +1,6 @@
 ---
 chapter: 8
-pageNumber: 54
+pageNumber: 74
 description: Las funciones de orden superior son funciones que manipulan otras funciones. Posee un poder considerable ya que permite la composición funcional, la abstracción y la capacidad de generar código que es versátil y fácilmente reutilizable.
 ---
 # Funciones de orden superior

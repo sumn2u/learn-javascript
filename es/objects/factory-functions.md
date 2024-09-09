@@ -1,5 +1,6 @@
 ---
 chapter: 9
+pageNumber: 101
 description: Comprensión de las funciones factoría para objetos en JavaScript.
 ---
 

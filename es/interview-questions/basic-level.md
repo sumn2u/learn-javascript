@@ -2,7 +2,7 @@
 layout: editorial
 title: Preguntas de entrevista sobre JavaScript de nivel básico
 chapter: 22
-pageNumber: 158
+pageNumber: 195
 description:
 ---
 <!-- markdownlint-disable-file MD025 -->

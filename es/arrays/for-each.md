@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 46
+pageNumber: 59
 description: El método forEach ejecuta una función proporcionada una vez para cada elemento de la matriz.  
 ---
 # For Each

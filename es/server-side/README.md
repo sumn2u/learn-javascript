@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 20
-pageNumber: 141
+pageNumber: 173
 ---
 
 # Capítulo 20

@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 115
+pageNumber: 145
 description: Currying es una técnica avanzada en programación funcional para transformar una función con múltiples argumentos en una secuencia de funciones anidadas. Transforma una función invocable como f(a,b,c) a invocable como f(a)(b)(c). No llama a una función, sino que la transforma.
 ---
 # Currying

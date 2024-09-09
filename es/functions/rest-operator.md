@@ -1,5 +1,6 @@
 ---
 chapter: 8
+pageNumber: 83
 description: Comprender el operador de resto para funciones en JavaScript.
 ---
 

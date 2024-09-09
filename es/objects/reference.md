@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 74
+pageNumber: 96
 description: Una referencia a un objeto es un valor que apunta a la ubicación de la memoria donde está almacenado el objeto. Cuando se crea un objeto, se asigna un espacio de memoria para almacenar sus propiedades y valores. Cuando asignamos este objeto a una variable, esa variable contiene una referencia a la ubicación de la memoria donde está almacenado el objeto.
 ---
 # Referencia

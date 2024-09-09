@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 54
+pageNumber: 71
 description: Una declaración break se utiliza para salir de un bucle siempre que se cumple una condición específica.
 ---
 

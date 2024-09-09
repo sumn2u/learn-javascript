@@ -1,6 +1,6 @@
 ---
 chapter: 3
-pageNumber: 21
+pageNumber: 20
 description: Los operadores son símbolos o palabras clave que se utilizan para realizar operaciones con datos, como variables, valores o expresiones. Son una parte esencial del lenguaje y permiten a los desarrolladores realizar operaciones aritméticas, de comparación, lógicas, de asignación y de otro tipo.
 ---
 

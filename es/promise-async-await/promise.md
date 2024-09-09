@@ -1,6 +1,6 @@
 ---
 chapter: 18
-pageNumber: 109
+pageNumber: 139
 description: Promise es un objeto que representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante. Las promesas proporcionan una forma más estructurada y organizada de manejar operaciones asincrónicas, como realizar solicitudes de red, leer archivos o interactuar con bases de datos.
 ---
 

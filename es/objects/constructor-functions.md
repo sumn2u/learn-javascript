@@ -1,5 +1,6 @@
 ---
 chapter: 9
+pageNumber: 103
 description: Comprensión de las funciones constructoras en JavaScript.
 ---
 

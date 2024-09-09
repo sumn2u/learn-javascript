@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 63
+pageNumber: 65
 description:  Un bucle for es una potente estructura de control que se utiliza para ejecutar un bloque de código varias veces, ya sea para un número específico de iteraciones o en un rango definido. Es muy versátil y se usa comúnmente para iterar a través de matrices, cadenas y otros objetos iterables.
 ---
 

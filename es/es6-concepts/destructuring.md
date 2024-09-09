@@ -1,6 +1,6 @@
 ---
 chapter: 25
-pageNumber: 250
+pageNumber: 288
 description: La desestructuración, una característica de ES6, agiliza la extracción de datos de matrices y objetos. Simplifica el proceso al permitirle asignar valores o propiedades específicas directamente a las variables, lo que mejora la claridad y la eficiencia del código. La desestructuración es una herramienta esencial para trabajar con estructuras de datos complejas en JavaScript.
 
 ---

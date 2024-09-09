@@ -1,8 +1,7 @@
 ---
 layout: editorial
 chapter: 22
-
-pageNumber: 157
+pageNumber: 194
 description: 
 ---
 # Capítulo 22

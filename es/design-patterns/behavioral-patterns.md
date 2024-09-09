@@ -3,7 +3,7 @@ layout: editorial
 title: Patrones de diseño de comportamiento
 description: Se concentra en cómo los objetos se comunican entre sí y se les asignan las responsabilidades.
 chapter: 23
-pageNumber: 219
+pageNumber: 257
 ---
 
 # Patrones de diseño de comportamiento

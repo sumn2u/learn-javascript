@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 118
+pageNumber: 148
 description: La lista enlazada es una estructura de datos lineal que se utiliza para almacenar una colección de elementos, llamados nodos. Cada nodo en una lista enlazada contiene dos partes - los datos o el valor del elemento que representa y una referencia (puntero) al siguiente nodo de la secuencia. El último nodo de la lista apunta a nulo, lo que indica el final de la lista.
 ---
 # Lista Enlazada

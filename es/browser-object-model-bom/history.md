@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 104
+pageNumber: 134
 description: La propiedad history es un objeto que gestiona la pila del historial del navegador. A medida que navegamos por las páginas, las nuevas entradas se introducen en la pila.
 ---
 

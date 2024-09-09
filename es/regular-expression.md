@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 14
-pageNumber: 89
+pageNumber: 119
 description: Una expresión regular, a menudo abreviada como "regex", es una poderosa herramienta para la coincidencia de patrones y la búsqueda dentro de cadenas. Proporciona una forma concisa y flexible de buscar, unir y manipular texto según patrones específicos.
 ---
 

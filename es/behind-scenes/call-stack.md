@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 257
+pageNumber: 305
 description: Comprensión de las pilas de llamadas en JavaScript
 ---
 

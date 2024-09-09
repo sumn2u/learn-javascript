@@ -1,4 +1,6 @@
 ---
+chapter: 23
+pageNumber: 236
 layout: editorial
 title: Patrones de diseño creacionales
 description: Los patrones de diseño creacional se centran en los mecanismos de creación de objetos.

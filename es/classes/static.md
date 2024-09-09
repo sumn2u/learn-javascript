@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 95
+pageNumber: 125
 description: La palabra clave static define los métodos o propiedades estáticas de una clase. Cuando un método o propiedad se define como estático dentro de una clase, entonces pertenece a la clase misma y no a instancias (objetos) de la clase.
  
 ---

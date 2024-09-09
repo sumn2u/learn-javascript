@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 3
-pageNumber: 16
+pageNumber: 17
 description: Los números se refieren al tipo de datos utilizado para representar valores numéricos. Los números en JavaScript pueden ser números enteros (números enteros) o números de punto flotante (números decimales)
 ---
 

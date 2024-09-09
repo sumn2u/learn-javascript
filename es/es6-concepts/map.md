@@ -1,6 +1,6 @@
 ---
 chapter: 25
-pageNumber: 247
+pageNumber: 285
 description:  ¡Ciertamente! Analicemos las declaraciones `let` y `const` en el contexto de ES6 (ECMAScript 2015) y compárelas con sus contrapartes de ES5.
 ---
 

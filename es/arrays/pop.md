@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 42 
+pageNumber: 55 
 description: El método pop eliminan el último elemento de una matriz y devuelven el resultado. Este método cambia la longitud de la matriz.
 ---
 # Pop

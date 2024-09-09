@@ -1,6 +1,6 @@
 ---
 chapter: 25
-pageNumber: 251
+pageNumber: 289
 description: Los literales de plantilla, introducidos en ES6 (ECMAScript 2015), ofrecen una forma poderosa de crear cadenas dinámicas en JavaScript. Le permiten incrustar expresiones directamente dentro de cadenas, haciendo que su código sea más legible y expresivo. Los literales de plantilla se usan comúnmente para generar contenido dinámico, como HTML, y para simplificar la manipulación de cadenas en JavaScript.
 ---
 

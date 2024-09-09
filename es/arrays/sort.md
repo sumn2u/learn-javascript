@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 47
+pageNumber: 60
 description: El método sort ordena los elementos de una matriz en un orden específico. De forma predeterminada, clasifica los elementos como cadenas y los organiza en orden ascendente según sus valores de unidad de código UTF-16.  
 ---
 # Sort

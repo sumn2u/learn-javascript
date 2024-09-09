@@ -1,5 +1,7 @@
 ---
+chapter: 7
 title: Continue
+pageNumber: 70
 description: Una explicación de la declaración continue en JavaScript con un ejemplo.
 ---
 

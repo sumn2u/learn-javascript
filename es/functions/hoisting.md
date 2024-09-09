@@ -1,5 +1,6 @@
 ---
 chapter: 8
+pageNumber: 88
 description: Comprender la elevación de funciones en JavaScript.
 ---
 

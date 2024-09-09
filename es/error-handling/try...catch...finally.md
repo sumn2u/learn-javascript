@@ -1,6 +1,6 @@
 ---
 chapter: 12
-pageNumber: 86
+pageNumber: 116
 description: try catch finally permite a los desarrolladores manejar con elegancia las excepciones (errores) que pueden ocurrir durante la ejecución de un bloque de código y garantizar que ciertas acciones de limpieza siempre se ejecuten, independientemente de si se lanzó una excepción o no.
 ---
 # try...catch...finally

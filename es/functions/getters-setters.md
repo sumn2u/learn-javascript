@@ -1,5 +1,6 @@
 ---
 chapter: 8
+pageNumber: 90
 description: Comprender los métodos Getters y Setters en JavaScript
 ---
 

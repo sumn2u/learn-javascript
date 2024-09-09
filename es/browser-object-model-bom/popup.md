@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 100
+pageNumber: 130
 description: Las ventanas emergentes son pequeñas ventanas que aparecen en la parte superior del navegador principal para proporcionar información. Se utiliza para mostrar notificaciones, alertas, cuadros de diálogo, formularios de inicio de sesión o cualquier otro contenido que deba aparecer temporalmente o en un contexto separado de la página principal.
 ---
 # Ventanas emergentes (Popup windows, en inglés)

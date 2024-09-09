@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 43
+pageNumber: 56
 description: El método join convierte la matriz en una cadena y la une sin modificar la matriz original.  
 ---
 # Join

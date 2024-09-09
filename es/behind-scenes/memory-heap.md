@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 261
+pageNumber: 315
 description: Comprender el montón de memoria en JavaScript.
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 26
-pageNumber: 252
+pageNumber: 290
 description: Recursos de animación de JavaScript, incluidas bibliotecas, tutoriales, artículos y marcos para crear animaciones atractivas.
 ---
 

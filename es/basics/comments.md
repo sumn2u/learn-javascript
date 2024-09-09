@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 10
+pageNumber: 11
 description: Los comentarios se utilizan para marcar anotaciones para otros programadores o pequeñas descripciones sobre el código que ayudan a otros a comprenderlo. Estas declaraciones no son ejecutadas por el intérprete.
 ---
 

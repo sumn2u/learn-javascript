@@ -1,6 +1,6 @@
 ---
 chapter: 15
-pageNumber: 96
+pageNumber: 126
 description: La herencia se refiere a la capacidad de un objeto (subclase) de heredar propiedades y métodos de otro objeto (superclase). JavaScript admite la herencia de prototipos, lo que significa que los objetos pueden heredar propiedades y métodos directamente de otros objetos, lo que se conoce como prototipos.
 ---
 # Herencia

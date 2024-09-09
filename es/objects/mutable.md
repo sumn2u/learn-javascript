@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 73
+pageNumber: 95
 description: Mutable significa que un objeto o tipo de datos se puede cambiar después de su creación, mientras que "inmutable" significa que no se puede cambiar. Los objetos mutables permiten modificar su estado interno, mientras que los objetos inmutables devuelven nuevas instancias con cambios, dejando el original sin cambios.
 ---
 # Mutable

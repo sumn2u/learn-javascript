@@ -1,5 +1,6 @@
 ---
 chapter: 9
+pageNumber: 105
 description: Comprender la propiedad `constructor` en JavaScript.
 ---
 

@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 258
+pageNumber: 307
 description: Comprender los motores de JavaScript y cómo ejecutan el código JavaScript. 
 ---
 

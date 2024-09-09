@@ -1,5 +1,6 @@
 ---
 chapter: 9
+pageNumber: 107
 description: Comprender la naturaleza dinámica de los objetos en JavaScript.
 ---
 

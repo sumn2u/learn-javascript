@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 136
+pageNumber: 167
 description: Este documento de Markdown proporciona una descripción general de ECMAScript, su historia, características y su papel en el desarrollo web.
 ---
 # ECMAScript (ES)

@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 126
+pageNumber: 157
 description: Una retrollamada es una función que se pasa como argumento a otra función, se ejecuta más tarde y se usa a menudo para operaciones asincrónicas. El infierno de las retrollamadas, también conocido como la "pirámide de la perdición", ocurre cuando las retrollamadas anidadas dan como resultado un código ilegible e imposible de mantener.
 ---
 

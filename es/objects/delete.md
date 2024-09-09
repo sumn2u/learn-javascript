@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 77
+pageNumber: 99
 description: Se puede utilizar una propiedad `delete` para **eliminar una propiedad** de un objeto. Cuando se elimina una propiedad, se elimina del objeto y no se puede acceder a ella ni enumerarla (es decir, no aparece en un bucle for-in).
 ---
 # Operador Delete

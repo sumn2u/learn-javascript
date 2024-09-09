@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 15
+pageNumber: 16
 description: El operador de igualdad se utiliza para comparar. Puede determinar si dos variables son iguales, incluso si no son del mismo tipo.
 ---
 

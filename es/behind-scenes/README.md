@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 27
-pageNumber: 256
+pageNumber: 304
 description: JavaScript detrás de escena.
 ---
 

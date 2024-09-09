@@ -1,6 +1,6 @@
 ---
 chapter: 16
-pageNumber: 103
+pageNumber: 133
 description: Las cookies son piezas de información que se almacenan en una computadora y a las que puede acceder el navegador.
 ---
 # Cookies 🍪

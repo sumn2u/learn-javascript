@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 9
-pageNumber: 71
+pageNumber: 93
 description: Un objeto es un tipo de datos compuesto que le permite almacenar y organizar múltiples valores (propiedades) como pares clave-valor. Es una estructura de datos fundamental en el lenguaje y se usa ampliamente para representar datos complejos y crear entidades estructuradas.
 ---
 

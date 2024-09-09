@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 260
+pageNumber: 312
 description: Comprender el contexto de ejecución en JavaScript.
 ---
 

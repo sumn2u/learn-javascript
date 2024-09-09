@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 13
+pageNumber: 14
 description: Los tipos son los tipos de datos que se pueden representar y manipular en el lenguaje.
 ---
 

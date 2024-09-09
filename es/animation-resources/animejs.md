@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 254
+pageNumber: 293
 description: Creación de animaciones con Anime.js, una biblioteca de animación JavaScript ligera.
 ---
 

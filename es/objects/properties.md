@@ -1,6 +1,6 @@
 ---
 chapter: 9
-pageNumber: 57
+pageNumber: 94
 description: Un objeto es un tipo de datos compuesto que le permite almacenar y organizar datos en pares clave-valor. Cada par clave-valor de un objeto se denomina propiedad. Las propiedades se utilizan para representar características, atributos o rasgos del objeto.
 ---
 # Propiedades

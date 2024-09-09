@@ -1,6 +1,6 @@
 ---
 chapter: 3
-pageNumber: 28
+pageNumber: 27
 description: Existen varios operadores avanzados que brindan una potente funcionalidad y nos permiten realizar diversas operaciones más allá de las operaciones aritméticas y lógicas básicas. Estos operadores avanzados pueden resultar muy útiles para manipular datos, realizar operaciones bit a bit, trabajar con objetos y más.
 ---
 # Operadores avanzados

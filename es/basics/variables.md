@@ -1,6 +1,6 @@
 ---
 chapter: 2
-pageNumber: 11
+pageNumber: 12
 description: Las variables se utilizan para almacenar y retener datos. Puede contener varios tipos de valores, como números, cadenas, valores booleanos, objetos, matrices, funciones y más.
 ---
 

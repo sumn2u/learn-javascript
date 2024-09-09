@@ -1,7 +1,7 @@
 ---
 layout: editorial
-capítulo: 2
-pageNumber: 8
+chapter: 2
+pageNumber: 10
 description: Programar significa escribir código. Un libro se compone de capítulos, párrafos, oraciones, frases, palabras y finalmente puntuación y letras, así mismo un programa se puede dividir en componentes cada vez más pequeños.
 ---
 

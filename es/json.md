@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 11
-pageNumber: 82
+pageNumber: 112
 description: JSON (JavaScript Object Notation, Notación de objetos JavaScript en español ) es un formato de intercambio de datos ligero que se utiliza para representar e intercambiar datos entre diferentes sistemas y plataformas. Es ampliamente utilizado para la transmisión y almacenamiento de datos, especialmente en el desarrollo web.
 ---
 

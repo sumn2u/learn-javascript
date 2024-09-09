@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 41  
+pageNumber: 54  
 description: El método shift elimina el primer elemento de índice de la matriz y mueve todos los índices hacia la izquierda. Modifica la matriz original.
 ---
 # Shift

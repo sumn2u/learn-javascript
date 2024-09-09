@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 12
-pageNumber: 85
+pageNumber: 115
 description: En la programación, los errores ocurren por varias razones, algunos se deben a errores de código, otros se deben a una entrada incorrecta y otras cosas imprevisibles. La captura de prueba ayuda a evitar que todo el script se detenga o falle cuando se produce un error, lo que nos permite manejar con elegancia casos excepcionales y proporcionar un comportamiento alternativo.
 ---
 

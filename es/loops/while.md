@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 51
+pageNumber: 68
 description: Los bucles while ejecutan repetidamente un bloque de código siempre que una condición especificada sea verdadera.
 ---
 # While

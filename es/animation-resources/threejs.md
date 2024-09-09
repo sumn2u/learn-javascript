@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 253
+pageNumber: 295
 description: Creación de animaciones 3D con Three.js, una biblioteca JavaScript para gráficos 3D.
 ---
 

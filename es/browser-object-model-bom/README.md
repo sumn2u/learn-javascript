@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 16
-pageNumber: 98
+pageNumber: 128
 description: El modelo de objetos del navegador nos permite interactuar con la ventana del navegador. A través de él se pueden controlar o manipular varios aspectos del navegador, como la ventana, marcos, historial, ubicación y más.
 ---
 

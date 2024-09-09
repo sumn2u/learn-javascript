@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 255
+pageNumber: 300
 description: Usando React Spring para animaciones en aplicaciones React.
 ---
 

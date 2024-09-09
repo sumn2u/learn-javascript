@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 6
-pageNumber: 47
+pageNumber: 48
 description: Un array (matriz, en español) es una lista de datos y es parte fundamental de la programación. Aquí podemos almacenar una gran cantidad de datos de diferentes tipos.
 ---
 

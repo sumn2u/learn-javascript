@@ -1,5 +1,6 @@
 ---
 chapter: 8
+pageNumber: 78
 description: Los cierres son un concepto de JavaScript que permite a las funciones acceder y recordar variables de su ámbito de contención, incluso después de que la función externa haya terminado de ejecutarse. Son fundamentales para la encapsulación de datos, las variables privadas y varios patrones de diseño en JavaScript. Los cierres mejoran la flexibilidad y la capacidad de mantenimiento del código.
 ---
 

@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 40  
+pageNumber: 53  
 description: El operador Spread permite que una matriz u objeto manipule rápidamente matrices y objetos. Proporciona una sintaxis concisa para copiar, fusionar o extraer elementos de matrices y para copiar propiedades de objetos.
 ---
 # Spread

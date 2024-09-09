@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 44
+pageNumber: 57
 description: Las matrices tienen una propiedad llamada length que mide la longitud de una matriz. 
 ---
 # Length

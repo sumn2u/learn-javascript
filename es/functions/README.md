@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 8
-pageNumber: 68
+pageNumber: 72
 description: Las funciones son bloques de código que realizan una tarea específica o un conjunto de tareas. Son unidades de código reutilizables que se pueden llamar y ejecutar en cualquier punto de un programa.
 ---
 

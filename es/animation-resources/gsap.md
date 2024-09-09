@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 253
+pageNumber: 291
 description: Introducción a GSAP, una potente biblioteca para crear animaciones de alto rendimiento.
 ---
 

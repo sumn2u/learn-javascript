@@ -1,6 +1,6 @@
 ---
 layout: editorial
-chapter: 23
+chapter: 19
 pageNumber: 133
 description: JavaScript es un lenguaje de programación popular conocido principalmente por su uso en el desarrollo web. Una de las características clave que diferencia a JavaScript de muchos otros lenguajes es su naturaleza de subproceso único. Esto significa que el código JavaScript se ejecuta en un único hilo principal del navegador o del entorno de ejecución.
 ---

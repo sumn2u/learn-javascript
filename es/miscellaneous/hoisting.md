@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 114
+pageNumber: 144
 description: El hoisting es un comportamiento predeterminado en JavaScript para mover declaraciones en la parte superior. Mientras se ejecuta un código, se crea un contexto de ejecución global y se ejecuta. En la fase de creación, JavaScript mueve la declaración de variable y función a la parte superior de la página, lo que se conoce como elevación..
 ---
 # Hoisting (Alzado)

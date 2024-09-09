@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 39  
+pageNumber: 52  
 description: El método map itera sobre una matriz y modifica su elemento mediante una retrollamada. Esta retrollamada se aplica a cada elemento de la matriz. 
 ---
 # Map

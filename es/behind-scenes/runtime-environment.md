@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 262
+pageNumber: 317
 description: Comprender el entorno de ejecución en JavaScript.
 ---
 

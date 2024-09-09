@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 48
+pageNumber: 61
 description: Las matrices son una colección de elementos y a cada elemento se le asigna una posición numérica llamada índice. Los índices están basados en cero, lo que significa que el primer elemento de la matriz tiene un índice de 0, el segundo tiene un índice de 1 y así sucesivamente.  
 ---
 # Índices

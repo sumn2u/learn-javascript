@@ -1,6 +1,6 @@
 ---
 chapter: 7
-pageNumber: 52
+pageNumber: 69
 description: La instrucción do... while crea un bucle que ejecuta una instrucción específica hasta que la condición de prueba se evalúa como falsa. La condición se evalúa después de ejecutar la declaración.
 ---
 # Do...While

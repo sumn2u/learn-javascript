@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 129
+pageNumber: 160
 description: Este capítulo presenta el concepto de IPA (Interfaz de Programación de Aplicaciones) y demuestra su uso a través de AJAX (JavaScript asíncrono y XML). Aprenda a obtener datos de fuentes externas e integrarlos en aplicaciones web para mejorar su funcionalidad..
 ---
 

@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 59 
+pageNumber: 62 
 description:  Para agregar un elemento al comienzo de una matriz podemos usar el método inverso. Modifica la matriz original y devuelve la nueva longitud de la matriz.
 ---
 # Reverse

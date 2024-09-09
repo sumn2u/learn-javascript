@@ -1,6 +1,6 @@
 ---
 chapter: 25
-pageNumber: 248
+pageNumber: 286
 description:  Las funciones de flecha, introducidas en ES6, proporcionan una sintaxis concisa para definir funciones en JavaScript. Son ideales para funciones cortas de una sola expresión y ofrecen simplicidad y claridad, a menudo se usan para iterar sobre matrices y definir funciones de devolución de llamada compactas. Las funciones de flecha son conocidas por su eficiencia y legibilidad.
 
 ---

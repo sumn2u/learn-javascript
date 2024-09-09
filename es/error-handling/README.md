@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 12
-pageNumber: 83
+pageNumber: 113
 description: En programación, los errores ocurren por diversas razones, algunos se deben a errores de código, otros a una entrada incorrecta y otras cosas imprevisibles. El método try catch ayuda a evitar que todo el script se detenga o se bloquee cuando ocurre un error, lo que nos permite manejar con elegancia los casos excepcionales y proporcionar un comportamiento alternativo.
 ---
 

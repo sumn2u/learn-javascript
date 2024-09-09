@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 25
-pageNumber: 244
+pageNumber: 282
 description: Las clases son plantillas para crear un objeto. Encapsula datos con código para trabajar con datos. La palabra clave class se utiliza para crear una clase. 
 ---
 

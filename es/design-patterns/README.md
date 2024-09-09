@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 23
-pageNumber: 195
+pageNumber: 235
 description: Patrones de diseño
 ---
 # Capítulo 23

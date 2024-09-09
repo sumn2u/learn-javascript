@@ -1,6 +1,6 @@
 ---
 chapter: 19
-pageNumber: 139
+pageNumber: 170
 description: En este capítulo, profundizaremos en los aspectos críticos de las pruebas en el desarrollo web. Estas habilidades son indispensables para garantizar la confiabilidad y funcionalidad de las aplicaciones web. Exploremos el mundo de las pruebas unitarias utilizando varias herramientas y marcos.
 ---
 

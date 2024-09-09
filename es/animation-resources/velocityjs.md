@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 254
+pageNumber: 298
 description: Creación de animaciones rápidas con Velocity.js, un motor de animación de alto rendimiento.
 ---
 

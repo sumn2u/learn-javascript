@@ -1,6 +1,6 @@
 ---
 chapter: 6
-pageNumber: 60 
+pageNumber: 63 
 description:  El método Javascript arr.slice() devuelve una nueva matriz que contiene una parte de la matriz en la que se implementa. El original permanece sin cambios.
 ---
 # Slice

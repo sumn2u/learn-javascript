@@ -1,6 +1,6 @@
 ---
 chapter: 27
-pageNumber: 259
+pageNumber: 309
 description: Comprender el bucle de eventos en JavaScript.
 ---
 

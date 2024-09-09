@@ -1,6 +1,6 @@
 ---
 chapter: 26
-pageNumber: 255
+pageNumber: 302
 description: Uso de Framer Motion para animaciones en aplicaciones React.
 ---
 

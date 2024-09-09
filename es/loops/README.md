@@ -1,7 +1,7 @@
 ---
 layout: editorial
 chapter: 7
-pageNumber: 62
+pageNumber: 64
 description: Los bucles son estructuras de control que le permiten ejecutar un bloque de código repetidamente hasta que se cumpla una condición específica. Son esenciales para automatizar tareas repetitivas e iterar sobre estructuras de datos como matrices y cadenas.
 ---
 

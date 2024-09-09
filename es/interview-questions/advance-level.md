@@ -3,7 +3,7 @@ layout: editorial
 title: Preguntas avanzadas de entrevista sobre JavaScript
 description: Profundiza en complejas preguntas de entrevistas de nivel avanzado sobre JavaScript para evaluar la profundidad del conocimiento y la experiencia de los candidatos potenciales.
 chapter: 22
-pageNumber: 182
+pageNumber: 222
 ---
 <!-- markdownlint-disable-file MD025 -->
 # Preguntas avanzadas de entrevista sobre JavaScript
