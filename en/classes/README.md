@@ -39,5 +39,6 @@ Every time we create an object from a class we’re creating an **instance** of 
 
 In this chapter, we will explore following topics:
 * [Access Modifiers](./access-modifiers.md)
+* [Composition](./composition.md)
 * [Inheritance](./inheritance.md)
 * [Static](./static.md)
