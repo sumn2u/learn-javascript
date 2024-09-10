@@ -58,5 +58,7 @@ console.log(edad === 50);
 - Visite el capítulo [Variables](../basics/variables.md) para entender más sobre variables.
 - Visite el capítulo [Operadores](https://javascript.sumankunwar.com.np/en/numbers/operators.html) para conocer los posibles operadores que puede usar.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

@@ -58,5 +58,7 @@ console.log(age === 50);
 * Visit the [variable](../basics/variables.md) chapter to understand more about variables.
 * Visit the [operators](https://javascript.sumankunwar.com.np/en/numbers/operators.html) page to know the possible operators you can use.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

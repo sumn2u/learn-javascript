@@ -24,5 +24,7 @@ Conditional logic is vital in programming as it makes sure that the program work
 
 - Visit the [conditional logic](../conditional/) chapter to understand how to use conditional logic and conditional statements.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

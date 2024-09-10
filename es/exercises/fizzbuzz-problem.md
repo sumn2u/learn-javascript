@@ -43,5 +43,7 @@ Buzz
 
 - Visite el capítulo [Bucles](../loops/) para entender cómo trabajan los bucles.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

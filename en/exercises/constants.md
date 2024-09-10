@@ -35,5 +35,7 @@ const VERSION = "1.2";
 
 - Visit the [Variables](../basics/variables.md) chapter for more info about const and also look for "_TypeError assignment to constant variable_" in search engines to learn a fix.&#x20;
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

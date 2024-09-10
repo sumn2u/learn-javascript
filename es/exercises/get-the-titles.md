@@ -29,5 +29,7 @@ const libros = [
 
 - Viste los capítulos de [matrices](../arrays/) y [objetos](../objects/) para entender como trabajan los objetos y las matrices.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

@@ -39,5 +39,7 @@ const icono = '👋';
 
 - Visite el capítulo de cadenas [concatenación](../strings/concat.md) para tener más información sobre la concatenación de cadenas.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

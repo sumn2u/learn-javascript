@@ -29,5 +29,7 @@ const books = [
 
 * Visit the [arrays](../arrays/) and [objects](../objects/) chapter to understand how the array and object work.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

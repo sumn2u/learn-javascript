@@ -16,5 +16,7 @@ Una función es un bloque de código diseñado para realizar una tarea específi
 
 - Visite el capítulo [funciones](../functions/) para entender las funciones y cómo crearlas.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

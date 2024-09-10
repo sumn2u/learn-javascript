@@ -46,5 +46,7 @@ let familia = {
 - Puede obtener los `numerosAfortunados` de cada objeto persona dentro del objeto familia.
 - Una vez obtenga cada matriz simplemente itere sobre ella agregando cada elemento y después sume cada uno de los tres miembros de la familia.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

@@ -16,5 +16,7 @@ En JavaScript, podemos tomar información de los usuarios y usarla como una vari
 - Necesitará asegurarse de que el valor de cadena se convierte en un entero para los cálculos.
 - Visite el capítulo [Operadores básicos](../numbers/operators.md) para la conversión de tipos de `string` a `int`.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

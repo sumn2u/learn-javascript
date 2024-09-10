@@ -39,6 +39,8 @@ const icon = "👋";
 ### 💡 Hints:
 
 - Visit the [concatenation](../strings/concat.md) chapter of strings for more info about string concatenation.
-
+Console output: {{ output.name }}
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

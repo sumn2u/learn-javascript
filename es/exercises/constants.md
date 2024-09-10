@@ -34,5 +34,7 @@ console.log(VERSION);
 
 - Visite el capítulo [Variables](../basics/variables.md) para más información sobre const y tambíen busque "_TypeError assignment to constant variable_" en los buscadores para encontrar una solución.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

@@ -23,5 +23,7 @@ Aquí, hemos almacenado el producto de `3 * 2` en la variable `valorResultante`.
 
 - Visite el capítulo [Operadores básicos](../numbers/operators.md) para entender las operaciones matemáticas.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

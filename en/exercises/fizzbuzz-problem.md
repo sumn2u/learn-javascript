@@ -43,5 +43,7 @@ The _FizzBuzz_ problem is one of the commonly asked questions, here one has to p
 
 * Visit the [loops](../loops/) chapter to understand how the loop works.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

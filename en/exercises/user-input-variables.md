@@ -16,5 +16,7 @@ In JavaScript, we can take input from users and use it as a variable. One doesn'
 * You will need to make sure that the string value is converted into an integer for calculations.&#x20;
 * Visit the [Basic Operators](../numbers/operators.md) chapter for the type conversion of `string` to `int`.&#x20;
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}

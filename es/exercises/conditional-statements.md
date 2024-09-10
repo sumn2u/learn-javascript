@@ -24,5 +24,7 @@ La lógica condicional es vital en programación para asegurar que el programa f
 
 - Visite el capítulo [lógica condicional](../conditional/) para entender como usar la lógica condicional y las declaraciones condicionales.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="¡Inténtelo!" %}
 {% endaceeditor %}
+{% endif %}

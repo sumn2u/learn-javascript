@@ -25,5 +25,7 @@ Here, we stored the product of `3 * 2` into a `resultingValue` variable.
 
 - Visit the [Basic Operators](../numbers/operators.md) chapter to understand the mathematical operations.
 
+{% if output.name == "website" %}
 {% aceeditor compilerTitle="Try it!" %}
 {% endaceeditor %}
+{% endif %}
