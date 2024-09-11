@@ -61,6 +61,9 @@
                 <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf"  title="Download PDF" style="margin-left: 8px;">
                   <i style="font-size:14px" class="fa">&#xf1c1;</i>
                 </a>
+                <a href="{{ (lang.id + "/README.md")|contentURL }}" title="Preview" style="margin-left: 8px;" target="_blank">
+                  <i style="font-size:14px" class="fa fa-eye"></i>
+                </a>
             </li>
         {% endfor %}
         </ul>
