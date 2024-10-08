@@ -203,11 +203,14 @@ In general terms, the scope will let us know at a given part of code, what are v
 
 There are three types of scopes in JS:
 
-- Global Scope
-- Local or Function Scope
-- Block Scope
+- [Global Scope](#global-scope)
+- [Local or Function Scope](#function-scope)
+- [Block Scope](#block-scope)
 
-**Global Scope**: Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code.
+**[Global Scope](#global-scope)**:
+<a name="global-scope"></a>
+### Global Scope
+ Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code.
 
 ```js
 var globalVariable = "Hello world";
@@ -221,7 +224,9 @@ function sendMessage2() {
 sendMessage2(); // Returns “Hello world”
 ```
 
-**Function Scope**: Any variables or functions declared inside a function have `local/function scope`, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
+**[Function Scope](#function-scope)**:
+<a name="function-scope"></a>
+ Any variables or functions declared inside a function have `local/function scope`, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
 
 ```js
 function awesomeFunction() {
@@ -236,7 +241,9 @@ console.log(a); // Throws reference error since a is written in local scope and 
 multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
 ```
 
-**Block Scope**: `Block scope` is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block `{ }`, can be accessed only inside that block and cannot be accessed outside of it.
+**[Block Scope](#block-scope)**: 
+<a name="block-scope"></a>
+`Block scope` is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block `{ }`, can be accessed only inside that block and cannot be accessed outside of it.
 
 ```js
 {
