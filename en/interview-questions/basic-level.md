@@ -226,6 +226,7 @@ sendMessage2(); // Returns “Hello world”
 
 **[Function Scope](#function-scope)**:
 <a name="function-scope"></a>
+### Function Scope
  Any variables or functions declared inside a function have `local/function scope`, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
 
 ```js
@@ -243,6 +244,7 @@ multiplyBy2(); // Throws reference error since multiplyBy2 is written in local s
 
 **[Block Scope](#block-scope)**: 
 <a name="block-scope"></a>
+### Block Scope
 `Block scope` is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block `{ }`, can be accessed only inside that block and cannot be accessed outside of it.
 
 ```js
