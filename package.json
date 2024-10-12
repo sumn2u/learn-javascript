@@ -13,7 +13,7 @@
     "gitbook-plugin-favicon-custom": "^1.0.0",
     "gitbook-plugin-hide-published-with": "0.0.1",
     "gitbook-plugin-hints": "^1.0.2",
-    "gitbook-plugin-intopic-toc": "^1.0.6",
+    "gitbook-plugin-intopic-toc": "github:clairebeware/gitbook-plugin-intopic-toc",
     "gitbook-plugin-sharing": "github:sumn2u/plugin-sharing",
     "gitbook-plugin-sidebar-ad": "github:sumn2u/gitbook-plugin-sidebar-ad",
     "gitbook-plugin-sitemap": "^1.2.0",
