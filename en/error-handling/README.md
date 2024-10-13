@@ -58,8 +58,10 @@ One of the common error handling techniques is the `try...catch` block, which is
 * [try...catch](./try...-catch.md)
 * [try...catch...finally](./try...catch...finally.md)
 
-Error handling is a critical aspect of JavaScript development.
-By understanding the types of errors, and following best practices, 
-you can write more reliable and user-friendly applications.
+## Asynchronous Error Handling
+
+Handling errors in asynchronous code can be tricky. In synchronous code, errors are caught immediately, but with asynchronous operations like API calls, errors may occur later. You'll handle them in callbacks or promises, so you need to be prepared. We'll cover how to manage these errors using promises and `async/await` in the section below.
+
+* [Asynchronous Error Handling](./async_errorhandling.md)
 
 

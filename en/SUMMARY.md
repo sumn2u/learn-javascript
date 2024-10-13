@@ -73,6 +73,7 @@
 - [Error Handling](error-handling/README.md)
   - [Try...Catch](error-handling/try...-catch.md)
   - [Try...Catch...Finally](error-handling/try...catch...finally.md)
+  - [Asynchronous Error Handling](error-handling/async_errorhandling.md)
 - [Modules](modules.md)
 - [Regular Expression](regular-expression.md)
 - [Classes](classes/README.md)
