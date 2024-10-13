@@ -4,7 +4,7 @@ pageNumber: 260
 description: Understanding Execution Context in JavaScript.
 ---
 
-## Understanding Execution Context in JavaScript
+## Execution Context in JavaScript
 
 In JavaScript, an execution context is an environment where the code is evaluated and executed. It is a fundamental concept that helps manage the scope and behavior of variables and functions.
 

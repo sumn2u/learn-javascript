@@ -4,7 +4,7 @@ pageNumber: 258
 description: Understanding JavaScript Engines and how they execute JavaScript code. 
 ---
 
-## Understanding JavaScript Engines
+## JavaScript Engines
 
 A JavaScript engine is a program or an interpreter that executes JavaScript code. The most well-known JavaScript engines are V8 (used in Google Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari).
 

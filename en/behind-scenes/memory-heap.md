@@ -4,7 +4,7 @@ pageNumber: 261
 description: Understanding Memory Heap in JavaScript.
 ---
 
-## Understanding Memory Heap in JavaScript
+## Memory Heap in JavaScript
 
 In JavaScript, memory management is crucial for ensuring efficient and smooth performance of applications. The memory heap is a region in memory where objects, strings, and closures are stored. It is managed by the JavaScript engine's garbage collector.
 
