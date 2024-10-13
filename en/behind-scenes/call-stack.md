@@ -5,7 +5,7 @@ description: Understanding Call Stacks in JavaScript
 ---
 
 
-## Understanding Call Stacks in JavaScript
+## Call Stacks in JavaScript
 
 In JavaScript, a Call Stack is a data structure that uses the Last-In, First-Out (LIFO) principle to temporarily store and manage function invocation (call).
 

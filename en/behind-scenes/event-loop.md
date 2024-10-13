@@ -4,7 +4,7 @@ pageNumber: 259
 description: Understanding the Event Loop in JavaScript.
 ---
 
-## Understanding the Event Loop in JavaScript
+## Event Loop in JavaScript
 
 The event loop is a fundamental concept in JavaScript that allows for asynchronous programming. It is responsible for executing code, collecting and processing events, and executing queued sub-tasks.
 

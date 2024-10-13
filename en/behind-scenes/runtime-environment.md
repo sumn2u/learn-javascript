@@ -4,7 +4,7 @@ pageNumber: 262
 description: Understanding Runtime Environment in JavaScript.
 ---
 
-## Understanding Runtime Environment in JavaScript
+## Runtime Environment in JavaScript
 
 The runtime environment in JavaScript is the context in which your code is executed. It includes the JavaScript engine, the call stack, the memory heap, and the APIs provided by the environment (such as the browser or Node.js).
 
