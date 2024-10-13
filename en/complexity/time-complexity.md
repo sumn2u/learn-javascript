@@ -31,7 +31,7 @@ If the time complexity is **O(n)**:
 
 ### **Big O Notation**
 Big Oh (Big O) is a mathematical notation used to represent the time complexity of an algorithm.
-```
+```javascript
 let total = 0;
 const n = 100;
 
