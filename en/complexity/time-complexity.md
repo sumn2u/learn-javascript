@@ -1,7 +1,7 @@
 ---
 chapter: 8
 pageNumber: 54
-description: 
+description: Time complexity measures the efficiency of an algorithm by counting the number of steps it takes relative to the input size, rather than the actual running time, which can vary due to external factors. Big O notation is used to represent this complexity, helping to evaluate how an algorithm’s performance.
 ---
 
 # Time Complexity
