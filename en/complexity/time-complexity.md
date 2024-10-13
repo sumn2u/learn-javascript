@@ -51,6 +51,6 @@ The code takes n steps to run. Instead of using just plain n for time complexity
 Some common types of Big O notations are as follows:
 
 - O(log n) - logarithmic time complexity
-- O($n^2$) - quadratic time complexity
+- O(n^2) - quadratic time complexity
 - O(n) - linear time complexity
 - O(1) - constant time complexity
