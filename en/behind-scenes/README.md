@@ -1,47 +1,24 @@
 ---
 layout: editorial
-chapter: 27
-pageNumber: 256
-description: JavaScript behind the scenes.
+chapter: 28
+pageNumber: 260
+description: JavaScript is a versatile language used in both browsers and servers. This guide explains key concepts like the JavaScript engine, execution context, call stack, memory heap, runtime environment, and event loop to help you write more efficient code.
 ---
 
-## JavaScript Behind the Scenes
+# Chapter 28
 
-JavaScript is a versatile language that runs in various environments, including browsers and servers. Understanding how
-JavaScript works behind the scenes can help you write more efficient and effective code. This guide covers key concepts
-such as the JavaScript engine, execution context, call stack, memory heap, runtime environment, and event loop.
+# JavaScript Behind the Scenes
 
-### JavaScript Engine
+JavaScript is a versatile language that powers both browsers and servers. To write efficient code, it helps to understand how JavaScript works behind the scenes. At its core is the JavaScript engine, a program responsible for executing your code. Popular engines like V8 (used in Chrome and Node.js), SpiderMonkey (in Firefox), and JavaScriptCore (in Safari) break down your code and run it. Alongside this, the execution context defines the environment in which your code is evaluated. Whether it's global, function, or eval, each context goes through a setup phase (creating variables, functions, and this) before executing the code line by line.
 
-A JavaScript engine is a program or interpreter that executes JavaScript code. Popular engines like V8 (used in Google
-Chrome and Node.js), SpiderMonkey (used in Firefox), and JavaScriptCore (used in Safari) parse the code into an Abstract
-Syntax Tree (AST), compile it into bytecode or machine code, and then execute it.
+Key components like the call stack and memory heap further support JavaScript's execution. The call stack manages function calls in a Last-In, First-Out order, while the memory heap stores objects, with JavaScript automatically freeing up memory through garbage collection. The runtime environment—whether in the browser or Node.js—provides additional resources, such as the DOM or Node.js-specific modules. Finally, the event loop plays a crucial role in enabling asynchronous programming by offloading tasks and processing callbacks, ensuring JavaScript remains non-blocking and efficient.
 
-### Execution Context
 
-An execution context is an environment where JavaScript code is evaluated and executed. There are three types: global,
-function, and eval. Each context has a creation phase, where variables, functions, and the `this` keyword are created,
-and an execution phase, where the code is executed line by line.
+In this chapter we are going to talk about following topics.
 
-### Call Stack
-
-The call stack is a data structure that keeps track of function calls in a Last-In, First-Out (LIFO) manner. It helps
-the JavaScript engine manage the execution of multiple functions by pushing and popping function calls as they are
-invoked and completed.
-
-### Memory Heap
-
-The memory heap is a region in memory where objects are stored. JavaScript uses garbage collection to manage memory,
-automatically freeing up memory that is no longer in use, thus preventing memory leaks and optimizing performance.
-
-### Runtime Environment
-
-The runtime environment provides the necessary resources for JavaScript to execute. In a browser, this includes the
-Document Object Model (DOM), Web APIs, and the JavaScript engine. In Node.js, it includes the file system, HTTP module,
-and other Node.js-specific APIs.
-
-### Event Loop
-
-The event loop allows JavaScript to perform non-blocking operations by offloading tasks to the system kernel whenever
-possible. It continuously checks the call stack and processes the callback queue, enabling asynchronous programming and
-efficient execution of code.
+* [Call Stack](./call-stack.md)
+* [Event Loop](./runtime-environment.md)
+* [Execution Context](./execution-context.md)
+* [JavaScript Engine](./engine.md)
+* [Memory Heap](./memory-heap.md)
+* [Runtime Environment](./runtime-environment.md)
