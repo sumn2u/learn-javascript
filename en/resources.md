@@ -16,6 +16,14 @@ chapter:
 
 5. JavaScript Tutorial by Stackify [Link]( https://stackify.com/learn-javascript-tutorials/)
 
+6. What is the DOM? (CSS-Tricks) [Link](https://css-tricks.com/dom/)
+
+7. Document Object Model reference [Link](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+8. JavaScript HTML DOM reference [Link](https://www.w3schools.com/js/js_htmldom.asp)
+
+9. Introduction to Events [Link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
 ## Books for learning JavaScript  
 
 1. A Smarter Way to Learn JavaScript – Mark Myers [Link](https://www.amazon.in/Smarter-Way-Learn-JavaScript-technology-ebook/dp/B00H1W9I6C)
