@@ -66,7 +66,7 @@ submitBtn.addEventListener("click", function (event) {
 });
 ```
 
-### Types of Events {-}
+### Types of Events
 
 There are [numerous different events](https://developer.mozilla.org/en-US/docs/Web/Events) that you can listen for, including:
 
@@ -109,7 +109,7 @@ There are [numerous different events](https://developer.mozilla.org/en-US/docs/W
 
 <p class="alert alert-warning">**Style guideline**: always register event listeners in the JavaScript&mdash;do _not_ utilize the HTML attributes such as `onclick`. This is to help keep concerns separated: the HTML should not need to know anything about the JavaScript that is utilized (since the browser may not even support JavaScript!), but it's okay for the JavaScript to rely on and modify the HTML.</p>
 
-### Event-Driven Programming {-}
+### Event-Driven Programming
 
 In a typical web program event callback functions can occur repeatedly, over and over again (e.g., every time the user clicks a button). This makes them potentially act a bit like the body of a `while` loop. However, because these callbacks are _functions_, any variables defined within them are **scoped** to that function, and will not be available on subsequent executions. Thus if you want to keep track of some additional information (e.g., how many times the button was clicked), you will need to use a variable declared _outside_ of the function (e.g., a **global** ). Such variables can be used to represent the **state** (situation) of the program, which can then be used to determine what behavior to perform when an event occurs, following the below pattern:
 

@@ -7,7 +7,7 @@ description: Understanding DOM Manipulation in JavaScript.
 
 While `window` represents the Browser, the **DOM** itself is represented by the [**`document`**](https://developer.mozilla.org/en-US/docs/Web/API/Document) global object&mdash;`document` _is_ the DOM (the _current_ HTML rendered in the browser). You access properties and call methods of this object in order to manipulate the content displayed in the browser!
 
-### Referencing HTML Elements {-}
+### Referencing HTML Elements
 
 In order to manipulate the DOM elements in a page, you first need to get a _reference_ to the element you want to change&mdash;that is, you need a variable that refers to that element. You can get these variable references by using one of the `document` "selector" functions:
 
@@ -35,13 +35,13 @@ let elems = document.querySelectorAll(cssSelector);
 
 - Note that the methods that return multiple nodes (e.g., `querySelectorAll`) return a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) object. While this is like an array (you can access elements via index through bracket notation and it has a `.length` property), it is **not** an array: meaning it doesn't support methods like `forEach()` and `map()` across all browsers. If you need to iterate through a `NodeList`, you should use a regular `for` loop. But in practice, you're much more likely to only work with single elements at a time.
 
-### Modifying HTML Elements {-}
+### Modifying HTML Elements
 
 Once you have a reference to an element, you access properties and call methods on that object in order to modify its state in the DOM&mdash;which will in turn modify how it _currently_ is displayed on the page. Thus by modifying these objects, you are dynamically changing the web page's content!
 
 <p class="alert alert-warning">**Important**: setting these properties do not change the `.html` source code file! Instead, they just change the _rendered DOM elements_ (think: the content stored in the computer's memory rather than in a file). If you refresh the page, the content will go back to how the `.html` source code file specifies it should appear&mdash;unless that also loads the script that modifies the DOM. What is shown on the page is the HTML with the JavaScript modifications added in.</p>
 
-#### Changing Content {-}
+#### Changing Content
 
 You can use JavaScript to access and modify the **content** of a DOM element (e.g., the stuff between the start and close tags):
 
@@ -69,7 +69,7 @@ The `textContent` property of the element refers to _all_ of the content, but co
   alertElem.textContent = ""; //no more alert!
   ```
 
-#### Changing Attributes {-}
+#### Changing Attributes
 
 You can also change the **attributes** of individual elements. Each attribute defined in the HTML specification is typically exposed as a _property_ of the element object:
 
@@ -100,7 +100,7 @@ let isThick = document.querySelector("svg rect").hasAttribute("stroke-width"); /
 
 These methods will let you interact with attributes that are _not_ defined by the HTML spec, such as `data-` attribute. However, they _don't_ work with certain element attributes (such as the `value` attribute of an `<input>` element). Other elements may have their own special DOM properties: see the [DOM Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) for a list of [HTML interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#HTML_interfaces).
 
-#### Changing Element CSS {-}
+#### Changing Element CSS
 
 It is possible to modify the **CSS classes** (and even inline styling) of an element. But rather than using the `class` property like with other attributes, you instead access the **`classList`** property. On modern browsers (IE 10 or later), this property supports methods `.add()` and `.remove()` for adding and removing classes from the list:
 
@@ -140,7 +140,7 @@ h1.style.backgroundColor = "black"; //not `.background-color`
 
 <p class="alert alert-info">In general, you should modify element CSS by changing the class of the element, rather than specific style properties.</p>
 
-### Modifying the DOM Tree {-}
+### Modifying the DOM Tree
 
 In addition to modifying the individual DOM elements, it is also possible to access and modify the _DOM tree itself!_ That is, you can create new elements and add them to the tree (read: webpage), remove elements from the tree, or pluck them out of the tree and insert them somewhere else!
 
@@ -205,7 +205,7 @@ main.removeChild(main.querySelector("p"));
 
 The `appendChild()` method is considered a cleaner approach than just modifying the `innerHTML` property, as it allows you to adjust the DOM tree without erasing what was previously there. A common practice is to use `document.createElement()` to create a _block_ element, then set the `innerHTML` of that element to its content (which can include _inline_ elements), and then use `appendChild` to add the new block element to the tree at the desired location.
 
-### Accessibility {-}
+### Accessibility
 
 Whenever you learn a new technology, you should ask: **how does this affect accessibility?** With the JavaScript code modifying the rendered DOM, it is possible that the content of a page will change _after_ it has been read by a screen reader. And while a sighted user will likely be able to see the change visually, a screen reader has no way of knowing that something on the page is different unless you tell it.
 

@@ -15,7 +15,7 @@ Considering a web page's content to be a tree of HTML elements is one way to _mo
 
 Moreover, the DOM also provides an **Application Programming Interface (API)** which allows computer _applications_ to _programmatically_ (e.g., through JavaScript code) _interact_ with it: accessing and manipulating the tree of elements. An API is often a set of _functions_ and _variables_ that can be used give instructions to a program. The DOM API is no different: it is a group of functions you can call and variables (usually Object properties) you can adjust to change the rendered web content. You write code to call these functions in order to make a page interactive.
 
-### Global Variables {-}
+### Global Variables
 
 You can programmatically access the API in JavaScript by utilizing a set of global variables. **Global variables** are variables that are "globally" scoped: they are available anywhere in the program (not just within a particular function).
 
@@ -46,4 +46,4 @@ window.setTimeout(callback, 1000); //execute callback after an delay
 window.setInterval(callback, 1000); //execute callback repeatedly after interval
 ```
 
-<p class="alert alert-warning">While these examples are included for completeness, most `window` functions are rarely used and should be avoided. Popups with the `window.alert()` function are inelegant, interrupt the user's actions, and produce a bad user experience&mdash;you should instead use in-window alerting options instead (such as showing a `<p class="alert">`). Browser control functions such as `scrollTo()` are non-standard and can vary drastically across systems and platforms. Proceed with caution when using `window` functions!</p>
+<p class="alert alert-warning">While these examples are included for completeness, most `window` functions are rarely used and should be avoided. Popups with the `window.alert()` function are inelegant, interrupt the user's actions, and produce a bad user experience&mdash;you should instead use in-window alerting options instead (such as showing a  `class="alert-class" `). Browser control functions such as `scrollTo()` are non-standard and can vary drastically across systems and platforms. Proceed with caution when using `window` functions!</p>

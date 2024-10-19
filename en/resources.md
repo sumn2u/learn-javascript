@@ -6,23 +6,23 @@ chapter:
 ## Articles for learning JavaScript 
 
 
-1. Introduction to JavaScript by Hostinger [Link](https://www.hostinger.com/tutorials/what-is-javascript)
+1. Document Object Model reference [Link](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-2. Introduction to JavaScript by Microverse [Link](https://www.microverse.org/blog/introduction-to-javascript-a-guide-for-beginners)
+2. Introduction to Events [Link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
-3. 	JavaScript Basics by Mozilla Developer [Link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+3. Introduction to JavaScript by Hostinger [Link](https://www.hostinger.com/tutorials/what-is-javascript)
 
-4. JavaScript Tutorial by Geeks for Geeks [Link](https://www.geeksforgeeks.org/javascript/)
+4. Introduction to JavaScript by Microverse [Link](https://www.microverse.org/blog/introduction-to-javascript-a-guide-for-beginners)
 
-5. JavaScript Tutorial by Stackify [Link]( https://stackify.com/learn-javascript-tutorials/)
+5. 	JavaScript Basics by Mozilla Developer [Link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 
-6. What is the DOM? (CSS-Tricks) [Link](https://css-tricks.com/dom/)
+6. JavaScript Tutorial by Geeks for Geeks [Link](https://www.geeksforgeeks.org/javascript/)
 
-7. Document Object Model reference [Link](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+7. JavaScript Tutorial by Stackify [Link]( https://stackify.com/learn-javascript-tutorials/)
 
 8. JavaScript HTML DOM reference [Link](https://www.w3schools.com/js/js_htmldom.asp)
 
-9. Introduction to Events [Link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+9. What is the DOM? (CSS-Tricks) [Link](https://css-tricks.com/dom/)
 
 ## Books for learning JavaScript  
 
