@@ -2,7 +2,7 @@
 layout: editorial
 chapter: 26
 pageNumber: 252
-description: "Ressources pour les animations en JavaScript, y compris des bibliothèques, des tutoriels, des articles et des cadres pour créer des animations engageantes.
+description: Ressources pour les animations en JavaScript, y compris des bibliothèques, des tutoriels, des articles et des cadres pour créer des animations engageantes."
 ---
 
 # Chapitre 26
