@@ -6,10 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="{% block description %}{% endblock %}">
         <meta name="generator" content="HonKit {{ gitbook.version }}">
+        <link rel="stylesheet" href="../_assets/styles/accordion.css">
+       
+        
         {% if config.author %}<meta name="author" content="{{ config.author }}">{% endif %}
         {% if config.isbn %}<meta name="identifier" content="{{ config.isbn }}" scheme="ISBN">{% endif %}
         {% block style %}
             {% for resource in plugins.resources.css %}
+                {{resource}}
                 {% if resource.url %}
                 <link rel="stylesheet" href="{{ resource.url }}">
                 {% else %}
@@ -21,6 +25,51 @@
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascript %}{% endblock %}
+        {% block javascript %}
+         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    const accordion = document.querySelector('.accordion');
+    
+    // Sample accordion data - modify as needed
+    const items = [
+      {title: 'Section 1', content: 'Content for section 1'},
+      {title: 'Section 2', content: 'Content for section 2'},
+      {title: 'Section 3', content: 'Content for section 3'}
+    ];
+  
+    // Create accordion items
+    items.forEach(item => {
+      const accordionItem = document.createElement('div');
+      accordionItem.className = 'accordion-item';
+      
+      accordionItem.innerHTML = `
+        <h1 class="accordion-header">${item.title}</h1>
+        <div class="accordion-content">${item.content}</div>
+      `;
+      
+      accordion.appendChild(accordionItem);
+    });
+  
+    // Add click handlers
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isActive = content.classList.contains('active');
+        
+        // Close all sections
+        document.querySelectorAll('.accordion-content').forEach(c => {
+          c.classList.remove('active');
+        });
+  
+        // Open clicked section if it wasn't already active
+        if (!isActive) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+         </script>
+        {% endblock %}
     </body>
 </html>
