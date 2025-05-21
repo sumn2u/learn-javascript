@@ -8,39 +8,39 @@ description: Variables are used to store and hold data. It can hold various type
 
 The first step towards really understanding programming is looking back at algebra. If you remember it from school, algebra starts with writing terms such as the following.
 
-```
+```javascript
 3 + 5 = 8
 ```
 
 You start performing calculations when you introduce an unknown, for example, `x` below:
 
-```
+```javascript
 3 + x = 8
 ```
 
 Shifting those around you can determine `x`:
 
-```
+```javascript
 x = 8 - 3
 -> x = 5
 ```
 
 When you introduce more than one you make your terms more flexible - you are using variables:
 
-```
+```javascript
 x + y = 8
 ```
 
 You can change the values of `x` and `y` and the formula can still be true:
 
-```
+```javascript
 x = 4
 y = 4
 ```
 
 or
 
-```
+```javascript
 x = 3
 y = 5
 ```
