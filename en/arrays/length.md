@@ -1,8 +1,9 @@
 ---
 chapter: 6
 pageNumber: 54
-description: Arrays have a property called length that measures the length of an array. 
+description: Arrays have a property called length that measures the length of an array.
 ---
+
 # Length
 
 Arrays have a property called `length`, and it's pretty much exactly as it sounds, it's the length of the array.
@@ -43,3 +44,8 @@ The `length` property is automatically updated when elements are added or remove
 {% endhint %}
 
 It's also worth noting that the `length` property is not a method, so you don't need to use parentheses when accessing it. It's simply a property of the array object that you can access like any other object property.
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

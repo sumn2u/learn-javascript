@@ -1,8 +1,9 @@
 ---
 chapter: 6
-pageNumber: 55 
-description: The push method adds element in an array making the last index the newly added item. This method changes the array length and returns a new length. 
+pageNumber: 55
+description: The push method adds element in an array making the last index the newly added item. This method changes the array length and returns a new length.
 ---
+
 # Push
 
 One can push certain items to an array making the last index the newly added item. It changes the length of an array and returns a new length.
@@ -18,10 +19,10 @@ The `element1, ..., elementN` arguments represent the elements to be added to th
 For example:
 
 ```javascript
-let array = [1, 2, 3]; 
-array.push(4); 
+let array = [1, 2, 3];
+array.push(4);
 
-console.log(array); 
+console.log(array);
 
 // Result: array = [1, 2, 3, 4]
 ```
@@ -31,11 +32,16 @@ You can also use `push` to add elements to the end of an array-like object (such
 ```javascript
 function printArguments() {
   let args = Array.prototype.slice.call(arguments);
-  args.push('d', 'e', 'f');
+  args.push("d", "e", "f");
   console.log(args);
 }
 
-printArguments('a', 'b', 'c'); // Result: ["a", "b", "c", "d", "e", "f"]
+printArguments("a", "b", "c"); // Result: ["a", "b", "c", "d", "e", "f"]
 ```
 
 > **Note**: The `push` method modifies the original array. It does not create a new array.
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

@@ -1,8 +1,9 @@
 ---
 chapter: 6
-pageNumber: 52 
+pageNumber: 52
 description: The pop methods remove the last element of an array and returns the result. This method changes the array length.
 ---
+
 # Pop
 
 The `pop` method removes the last element from an array and returns that element. This method changes the length of the array.
@@ -16,10 +17,10 @@ array.pop();
 For example:
 
 ```javascript
-let arr = ["one", "two", "three", "four", "five"]; 
-arr.pop(); 
+let arr = ["one", "two", "three", "four", "five"];
+arr.pop();
 
-console.log(arr); 
+console.log(arr);
 
 // Result: ['one', 'two', 'three', 'four']
 ```
@@ -38,3 +39,8 @@ console.log(array); // Result: []
 The `pop` method only works on arrays, and not on other objects that are similar to arrays such as arguments objects or NodeList objects. If you need to pop elements from one of these types of objects, you will need to convert it to an array first using the `Array.prototype.slice()` method.
 
 {% endhint %}
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

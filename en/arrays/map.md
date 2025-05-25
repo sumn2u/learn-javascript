@@ -1,8 +1,9 @@
 ---
 chapter: 6
-pageNumber: 49  
+pageNumber: 49
 description: The map method iterates over an array and modifies its element using a callback function. This callback function is applied to each element of the array.
 ---
+
 # Map
 
 The `Array.prototype.map()` method iterates over an array and modifies its elements using a callback function. The callback function will then be applied to each element of the array.
@@ -10,7 +11,7 @@ The `Array.prototype.map()` method iterates over an array and modifies its eleme
 Here's the syntax for using `map`.
 
 ```javascript
-let newArray = oldArray.map(function(element, index, array) {
+let newArray = oldArray.map(function (element, index, array) {
   // element: current element being processed in the array
   // index: index of the current element being processed in the array
   // array: the array map was called upon
@@ -23,7 +24,7 @@ For example, let's say you have an array of numbers and you want to create a new
 ```javascript
 const numbers = [2, 4, 6, 8];
 
-const doubledNumbers = numbers.map(number => number * 2);
+const doubledNumbers = numbers.map((number) => number * 2);
 
 console.log(doubledNumbers);
 
@@ -40,9 +41,14 @@ You can also use the arrow function syntax to define the function passed to `map
 or
 
 ```typescript
-let doubledNumbers = numbers.map(number => number * 2);
+let doubledNumbers = numbers.map((number) => number * 2);
 ```
 
 {% hint style="info" %}
 The `map()` method doesn't execute function for empty elements and doesn't change the original array.
 {% endhint %}
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

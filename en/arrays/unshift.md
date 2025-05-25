@@ -1,15 +1,16 @@
 ---
 chapter: 6
-pageNumber: 48 
-description:  To add an element at the beginning of an array we can use the unshift method. It modifies the original array and return the new array length.
+pageNumber: 48
+description: To add an element at the beginning of an array we can use the unshift method. It modifies the original array and return the new array length.
 ---
+
 # Unshift
 
 The `unshift` method adds new elements sequentially to the start, or front of the array. It modifies the original array and returns the new length of the array. For example.
 
 ```javascript
 let array = [0, 5, 10];
-array.unshift(-5);  // 4
+array.unshift(-5); // 4
 
 // RESULT: array = [-5 , 0, 5, 10];
 ```
@@ -28,3 +29,8 @@ const newLength = numbers.unshift(-1, 0);
 console.log(numbers); // [-1, 0, 1, 2, 3]
 console.log(newLength); // 5
 ```
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

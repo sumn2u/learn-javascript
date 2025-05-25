@@ -1,26 +1,26 @@
 ---
 chapter: 6
 pageNumber: 56
-description: The forEach method executes a provided function once for each array element.  
+description: The forEach method executes a provided function once for each array element.
 ---
+
 # For Each
 
 The `forEach` method executes a provided function once for each array element. Here's the syntax for using `forEach`:
 
 ```javascript
-array.forEach(function(element, index, array) {
+array.forEach(function (element, index, array) {
   // element: current element being processed in the array
   // index: index of the current element being processed in the array
   // array: the array forEach was called upon
 });
 ```
 
-
 For example, let's say you have an array of numbers and you want to print the double of each number to the console. You could do this using `forEach` like this:
 
 ```typescript
 let numbers = [1, 2, 3, 4, 5];
-numbers.forEach(function(number) {
+numbers.forEach(function (number) {
   console.log(number * 2);
 });
 ```
@@ -36,7 +36,7 @@ numbers.forEach((number) => {
 or
 
 ```typescript
-numbers.forEach(number => console.log(number * 2));
+numbers.forEach((number) => console.log(number * 2));
 ```
 
 The `forEach` method does not modify the original array. It simply iterates over the elements of the array and executes the provided function for each element.
@@ -44,3 +44,8 @@ The `forEach` method does not modify the original array. It simply iterates over
 {% hint style="warning" %}
 The `forEach()` method is not executed for the empty statement.
 {% endhint %}
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}
