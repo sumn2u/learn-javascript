@@ -3,6 +3,7 @@ chapter: 5
 pageNumber: 42
 description: The else keyword used in conjunction with the if statement to provide an alternative code block to execute when the condition specified in the if statement evaluates to false.
 ---
+
 # Else
 
 There is also an `else` clause that will be applied when the first condition isn’t `true`. This is very powerful if you want to react to any value, but single out one in particular for special treatment.
@@ -50,9 +51,9 @@ let result;
 
 // check if num1 is greater than num2
 if (num1 > num2) {
-  result = "num1 is greater than num2";
+result = "num1 is greater than num2";
 } else {
-  result = "num1 is less than or equal to num2";
+result = "num1 is less than or equal to num2";
 }
 
 {% validation %}
@@ -60,3 +61,8 @@ assert(result == "num1 is greater than num2" );
 
 {% context %}
 {% endexercise %}
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

@@ -1,8 +1,9 @@
 ---
 chapter: 5
 pageNumber: 45
-description: Comparators are functions that are used to compare two values and determine their relationship. Here. the returned value indicates whether the values are equal, greater than, less than, or some other relationship based on a specific comparison criterion.  
+description: Comparators are functions that are used to compare two values and determine their relationship. Here. the returned value indicates whether the values are equal, greater than, less than, or some other relationship based on a specific comparison criterion.
 ---
+
 # Comparators
 
 Lets now focus on the conditional part:
@@ -17,12 +18,12 @@ The conditional part is the variable `country` followed by the three equal signs
 
 Other conditional tests:
 
-* `x > a`: is x bigger than a?
-* `x < a`: is x less than a?
-* `x <= a`: is x less than or equal to a?
-* `x >=a`: is x greater than or equal to a?
-* `x != a`: is x not a?
-* `x`: does x exist?
+- `x > a`: is x bigger than a?
+- `x < a`: is x less than a?
+- `x <= a`: is x less than or equal to a?
+- `x >=a`: is x greater than or equal to a?
+- `x != a`: is x not a?
+- `x`: does x exist?
 
 ## Logical Comparison
 
@@ -35,5 +36,10 @@ let topper = marks > 85 ? "YES" : "NO";
 In the above example, `?` is a logical operator. The code says that if the value of marks is greater than 85 i.e. `marks > 85` , then `topper = YES` ; otherwise `topper = NO` . Basically, if the comparison condition proves true, the first argument is accessed and if the comparison condition is false, the second argument is accessed. This shorthand operator is also known as the `ternary operator` as it takes three operands.
 
 ```javascript
-condition ? expression1 : expression2
+condition ? expression1 : expression2;
 ```
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

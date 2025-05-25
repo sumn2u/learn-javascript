@@ -3,12 +3,13 @@ chapter: 5
 pageNumber: 43
 description: Switch is a conditional statement that performs actions based on different conditions. It uses strict comparison to match the conditions and executes the code blocks of matched condition.
 ---
+
 # Switch
 
-A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition.  The syntax of the `switch` expression is shown below.
+A `switch` is a conditional statement that performs actions based on different conditions. It uses strict ( `===` ) comparison to match the conditions and executes the code blocks of matched condition. The syntax of the `switch` expression is shown below.
 
 ```javascript
-switch(expression) {
+switch (expression) {
   case x:
     // code block
     break;
@@ -16,7 +17,7 @@ switch(expression) {
     // code block
     break;
   default:
-    // code block
+  // code block
 }
 ```
 
@@ -33,7 +34,7 @@ switch (new Date().getDay()) {
     day = "Monday";
     break;
   case 2:
-     day = "Tuesday";
+    day = "Tuesday";
     break;
   case 3:
     day = "Wednesday";
@@ -59,37 +60,42 @@ let dayOfWeek = "Monday";
 let result;
 // check if it's a weekday or the weekend
 switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
+case x:
+// code block
+break;
+case y:
+// code block
+break;
+default:
+// code block
 }
 {% solution %}
 let dayOfWeek = "Monday";
 let result;
 // check if it's a weekday or the weekend
 switch (dayOfWeek) {
-  case "Monday":
-  case "Tuesday":
-  case "Wednesday":
-  case "Thursday":
-  case "Friday":
-    result = "It's a weekday";
-    break;
-  case "Saturday":
-  case "Sunday":
-    result = "It's the weekend";
-    break;
-  default:
-    result = "Invalid day of the week";
-    break;
+case "Monday":
+case "Tuesday":
+case "Wednesday":
+case "Thursday":
+case "Friday":
+result = "It's a weekday";
+break;
+case "Saturday":
+case "Sunday":
+result = "It's the weekend";
+break;
+default:
+result = "Invalid day of the week";
+break;
 }
 {% validation %}
 assert(result == "It's a weekday" );
 
 {% context %}
 {% endexercise %}
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

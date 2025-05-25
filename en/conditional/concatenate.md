@@ -3,6 +3,7 @@ chapter: 5
 pageNumber: 46
 description: Concatenating condition refers to combining multiple conditions using logical operators to create more complex and sophisticated conditionals.
 ---
+
 # Concatenate
 
 Furthermore, you can concatenate different conditions with "`or`" or “`and`” statements, to test whether either statement is true, or both are true, respectively.
@@ -26,3 +27,8 @@ if (country === "England" || country === "Germany") {
 ```
 
 > **Note**: Just like operations on numbers, conditions can be grouped using parenthesis, ex: `if ( (name === "John" || name === "Jennifer") && country === "France")`.
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}
