@@ -2,16 +2,18 @@
 chapter: 4
 pageNumber: 36
 ---
+
 # Split
 
 The `split()` method divides a string into a list of substrings and returns them as an array.
-* using the `split()` method
-* using the template literal (introduced in ES6)
+
+- using the `split()` method
+- using the template literal (introduced in ES6)
 
 The `split()` method takes in:
 
-* **separator (optional)** - The pattern (string or regular expression) describing where each split should occur.
-* **limit (optional)** - A non-negative integer limiting the number of pieces to split the given string into.
+- **separator (optional)** - The pattern (string or regular expression) describing where each split should occur.
+- **limit (optional)** - A non-negative integer limiting the number of pieces to split the given string into.
 
 ```javascript
 console.log("ABCDEF".split("")); // [ 'A', 'B', 'C', 'D', 'E', 'F' ]
@@ -38,9 +40,12 @@ let newText3 = text2.split(pattern3);
 console.log(newText3); // [ 'JavaScript', 'Python', 'C', 'C++' ]
 
 //Output
-[ 'A', 'B', 'C', 'D', 'E', 'F' ]
-[ 'Java is awesome', ' Java is fun', '' ]
-[ 'Java is awesome', ' Java is fun' ]
-[ 'JavaScript ', '  Python ', 'C', 'C++' ]
-[ 'JavaScript', 'Python', 'C', 'C++' ]
+["A", "B", "C", "D", "E", "F"][("Java is awesome", " Java is fun", "")][
+  ("Java is awesome", " Java is fun")
+][("JavaScript ", "  Python ", "C", "C++")][("JavaScript", "Python", "C", "C++")];
 ```
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

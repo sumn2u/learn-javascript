@@ -2,24 +2,25 @@
 chapter: 4
 pageNumber: 38
 ---
+
 # Substring
 
-The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero `(0)`. 
+The `string.substring()` is an inbuilt function in JavaScript that is used to return the part of the given string from the start index to the end index. Indexing start from zero `(0)`.
 
-Syntax: 
+Syntax:
 
 `string.substring(StartIndex, EndIndex)`
 
 ### Syntax:
 
-* using `str.substr(start , length)`
-* using the `substr()` method
-* using the template `(``)` literal (introduced in [ES6](../es6-concepts/template-literals.md))
+- using `str.substr(start , length)`
+- using the `substr()` method
+- using the template ` (``) ` literal (introduced in [ES6](../es6-concepts/template-literals.md))
 
 The `substr()` method takes in:
 
-* **parameters**: Here the StartIndex and EndIndex describe the part of the string to be taken as a substring. Here, the EndIndex is optional. 
-* **return value**: It returns a new string that is part of the given string. JavaScript code to show the working of `string.substring()` function: 
+- **parameters**: Here the StartIndex and EndIndex describe the part of the string to be taken as a substring. Here, the EndIndex is optional.
+- **return value**: It returns a new string that is part of the given string. JavaScript code to show the working of `string.substring()` function:
 
 ```javascript
 //Example 1:
@@ -37,13 +38,12 @@ for
 ```
 
 ```javascript
-
-//Example 2: 
+//Example 2:
 // Taking a string as letiable
 let string = "geeksforgeeks";
-a = string.substring(-1)
-b = string.substring(2.5)
-c = string.substring(2.9)
+a = string.substring(-1);
+b = string.substring(2.5);
+c = string.substring(2.9);
 
 // Printing new string which are
 // the part of the given string
@@ -51,9 +51,13 @@ console.log(a);
 console.log(b);
 console.log(c);
 
-
 //Output
-geeksforgeeks
-eksforgeeks
-eksforgeeks
+geeksforgeeks;
+eksforgeeks;
+eksforgeeks;
 ```
+
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}

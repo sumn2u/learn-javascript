@@ -2,6 +2,7 @@
 chapter: 4
 pageNumber: 33
 ---
+
 # Replace
 
 The `replace` method allows us to replace a character, word, or sentence with a string. For example.
@@ -23,9 +24,13 @@ It searches for a string for a value or a regular expression and returns a new s
 
 ```javascript
 let text = "Mr Blue has a blue house and a blue car";
-let result = text.replace(/blue/gi, "red"); 
+let result = text.replace(/blue/gi, "red");
 
-console.log(result); 
-//Result: Mr red has a red house and a red car 
+console.log(result);
+//Result: Mr red has a red house and a red car
 ```
 
+{% if output.name == "website" %}
+{% aceeditor compilerTitle="Try it!" %}
+{% endaceeditor %}
+{% endif %}
