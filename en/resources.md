@@ -3,18 +3,6 @@ pageNumber: V
 chapter: 
 ---
 # Learning Resources
-## Projects to Practice
-
-- [Digital Clock](./beginner-projects/digital-clock.md)
-- [Drum Kits](./beginner-projects/electronic-drum-kit.md)
-- [Image Search App](../beginner-projects/image-search.md)
-- [Month Calendar](./beginner-projects/monthly-calendar.md)
-- [Random Photos](./beginner-projects/random-photos-generator.md)
-- [Rock Paper Scissors Game](../beginner-projects/rock-paper-scissors-game.md)
-- [Stopwatch](./beginner-projects/simple-stopwatch.md)
-- [Tip Calculator](./beginner-projects/tip-calculator.md)
-- [Video Trailer Popup](../beginner-projects/video-trailer-popup.md)
-- [Weather App](./beginner-projects/weather-app.md)
 
 ## Articles for learning JavaScript 
 
@@ -68,3 +56,16 @@ chapter:
 9. The Net Ninja - [Link](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 10. thenewboston - [Link](https://www.youtube.com/@thenewboston)
 11. Traversy Media - [Link](https://www.youtube.com/user/TechGuyWeb)
+
+## Projects to Practice
+
+- [Digital Clock](./beginner-projects/digital-clock.md)
+- [Drum Kits](./beginner-projects/electronic-drum-kit.md)
+- [Image Search App](./beginner-projects/image-search.md)
+- [Month Calendar](./beginner-projects/monthly-calendar.md)
+- [Random Photos](./beginner-projects/random-photos-generator.md)
+- [Rock Paper Scissors Game](./beginner-projects/rock-paper-scissors-game.md)
+- [Stopwatch](./beginner-projects/simple-stopwatch.md)
+- [Tip Calculator](./beginner-projects/tip-calculator.md)
+- [Video Trailer Popup](./beginner-projects/video-trailer-popup.md)
+- [Weather App](./beginner-projects/weather-app.md)
