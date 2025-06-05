@@ -22,15 +22,15 @@ Each project includes:
 - Helpful hints (if needed)
 
 ## Projects Included:
-- [Tip Calculator](./tip-calculator.md)
-- [Stopwatch](./stopwatch.md)
-- [Rock Paper Scissors Game](./rock-paper-scissors-game.md)
-- [Video Trailer Popup](./video-trailer-popup.md)
-- [Random Photos](./random-photos.md)
-- [Monthly Calendar](./month-calendar.md)
-- [Digital Clock](./digital-clock.md)
-- [Image Search App](./image-search-app.md)
-- [Weather App](./weather-app.md)
-- [Electronic Drum Kits](./drum-kits.md)
+- [Digital Clock](../beginner-projects/digital-clock.md)
+- [Drum Kits](../beginner-projects/electronic-drum-kit.md)
+- [Image Search App](../beginner-projects/image-search.md)
+- [Month Calendar](../beginner-projects/monthly-calendar.md)
+- [Random Photos](../beginner-projects/random-photos-generator.md)
+- [Rock Paper Scissors Game](../beginner-projects/rock-paper-scissors-game.md)
+- [Stopwatch](../beginner-projects/simple-stopwatch.md)
+- [Tip Calculator](../beginner-projects/tip-calculator.md)
+- [Video Trailer Popup](../beginner-projects/video-trailer-popup.md)
+- [Weather App](../beginner-projects/weather-app.md)
 
 Happy Coding! 
