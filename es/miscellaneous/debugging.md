@@ -5,20 +5,59 @@ description: En programación, pueden ocurrir errores al escribir código. Podr�
 ---
 # Depuración
 
-En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
+En programación, es común que ocurran errores mientras se escribe el código. Estos pueden ser errores sintácticos o lógicos. La depuración de código es el proceso de identificar, aislar y corregir estos errores, lo cual puede ser un proceso complicado y que consume tiempo.
 
-Afortunadamente, la mayoría de los navegadores modernos vienen con depuradores integrados. Estos depuradores se pueden activar y desactivar, lo que obliga a informar los errores. También es posible configurar puntos de interrupción durante la ejecución del código para detener la ejecución y examinar las variables. Para esto, hay que abrir una ventana de depuración y colocar la palabra clave `debugger` en el código JavaScript. La ejecución del código se detiene en cada punto de interrupción, lo que permite a los desarrolladores examinar los valores de JavaScript y reanudar la ejecución del código.
+Afortunadamente, la mayoría de los navegadores modernos incluyen depuradores integrados. Estos depuradores pueden activarse y desactivarse para forzar la notificación de errores. También es posible establecer puntos de interrupción durante la ejecución del código, lo que permite detener su ejecución y examinar las variables. Para ello, se debe abrir la ventana de depuración y colocar la palabra clave debugger en el código JavaScript. La ejecución se detendrá en cada punto de interrupción, permitiendo al desarrollador examinar los valores y luego reanudar la ejecución.
 
-También se puede utilizar el método `console.log()` para imprimir los valores de JavaScript en la ventana del depurador.
+## La técnica de console.log()
+
+Una de las formas más simples y populares de depurar código es utilizando la función console.log(). Esta permite seguir el flujo del código y examinar los valores de las variables en momentos específicos de la ejecución.
 
 ```javascript
-const a = 5, b = 6;
-const c = a + b;
-console.log(c);
-// Resultado : c = 11;
+function calcularTotal(precio, porcentajeImpuesto) {
+  const impuesto = precio * porcentajeImpuesto;
+  console.log('Impuesto calculado:', impuesto);  // Salida para inspección
+  const total = precio + impuesto;
+  return total;
+}
+
+calcularTotal(100, 0.2);
 ```
 
-## Herramientas de desarrollo del navegador
+Usa `console.log()` para:
+
+- Verificar si una función se está ejecutando.
+- Imprimir el valor de las variables.
+- Monitorear el flujo de control (por ejemplo, si se cumple una condición).
+
+Otras funciones útiles de console:
+
+- `console.error()` – para registrar errores.
+- `console.warn()` – para advertencias.
+- `console.table()` – para imprimir datos en forma de tabla.
+- `console.trace()` – para imprimir el seguimiento de llamadas (stack trace).
+
+## Uso de puntos de interrupción (Breakpoints)
+
+Un punto de interrupción es una línea en tu código donde la ejecución se detendrá para que puedas examinar el estado actual: valores de variables, pila de llamadas, cadena de alcance (scope), entre otros.
+
+Los navegadores modernos ofrecen herramientas para desarrolladores con capacidades de depuración.
+
+### Cómo establecer puntos de interrupción
+1. Abre el panel Sources en las DevTools.
+2. Navega hasta tu archivo de script.
+3. Haz clic en el número de línea donde quieres que la ejecución se detenga.
+
+Una vez pausado el código, puedes:
+
+- **Step over (pasar por encima)** – avanzar a la siguiente línea.
+- **Step into (entrar en)** – entrar dentro de una llamada a función.
+- **Step out (salir de)** – salir de la función actual.
+- **Resume (reanudar)** – continuar la ejecución hasta el siguiente punto de interrupción.
+
+Los puntos de interrupción no son intrusivos y pueden agregarse o eliminarse sin modificar el código fuente.
+
+## Herramientas para desarrolladores del navegador
 
 Los navegadores modernos vienen equipados con potentes herramientas de desarrollo que ayudan a depurar JavaScript, inspeccionar HTML y CSS y monitorear las solicitudes de red. A continuación se ofrece una breve descripción general de algunas herramientas esenciales:
 
@@ -30,26 +69,37 @@ Los navegadores modernos vienen equipados con potentes herramientas de desarroll
 
 **Safari Web Inspector:** Web Inspector de Safari es un sólido conjunto de herramientas para depurar y crear perfiles de aplicaciones web.
 
-## Usando puntos de interrupción
+### Acceso a las herramientas del navegador
+Los navegadores ofrecen herramientas para inspeccionar HTML, CSS y JavaScript. Podemos acceder a ellas:
+Haciendo clic derecho sobre la página y seleccionando "Inspeccionar" o presionando `F12` o `Ctrl + Shift + I` / `Cmd + Option + I` (Mac)
 
-Los navegadores modernos ofrecen herramientas para desarrolladores con capacidades de depuración.
-Establezca puntos de interrupción para pausar la ejecución del código e inspeccionar variables y pilas de llamadas.
-Recorra el código para comprender su flujo.
-Herramientas de desarrollo del navegador
+### Paneles clave en las herramientas del navegador
+- **Console (Consola)**: Muestra registros, errores y permite ejecutar JavaScript en tiempo real.
+- **Elements / Inspector**: Permite examinar y modificar el HTML y CSS del documento.
+- **Sources**: Lugar donde se depura JavaScript usando puntos de interrupción.
+- **Network (Red)**: Visualiza la carga de recursos, tiempos, y solicitudes/respuestas.
+- **Performance / Memory**: Útil para identificar cuellos de botella y fugas de memoria.
 
-Los navegadores proporcionan un conjunto de herramientas para desarrolladores que le permiten inspeccionar HTML, CSS y JavaScript.
-Puede acceder a ellos haciendo clic derecho en una página web y seleccionando "Inspeccionar" o presionando `F12` o `Ctrl+Shift+I`.
-Las características clave incluyen:
+Podemos insertar la instrucción debugger directamente en el código para crear un punto de interrupción de forma programada. Cuando el código encuentra debugger, se pausará la ejecución y se abrirán las herramientas de desarrollo del navegador (si están abiertas).
 
-**Consola:** Ver e interactuar con la salida de la consola.
+### Expresiones de vigilancia y alcance (Watch & Scope)
+En las DevTools puedes vigilar variables o expresiones. Esto es útil cuando depuras lógica compleja o haces seguimiento de una variable a lo largo del tiempo.
 
-**Elementos:** Inspeccionar y modificar el DOM.
+- Usa el panel Watch para seguir expresiones como usuario.nombre o carrito.length.
+- Examina los alcances Local, Closure y Global para inspeccionar las variables disponibles en cada contexto.
 
-**Fuentes:** Depurar JavaScript con puntos de interrupción y observar expresiones.
+### Rastreo de pila y Call Stack
+Cuando el código se detiene en un punto de interrupción (o tras un error), puedes inspeccionar el panel de Call Stack:
 
-**Red:** Supervise las solicitudes y respuestas de la red.
+- Muestra la secuencia de funciones llamadas que llevaron hasta el punto actual.
+- Al hacer clic en un marco (frame), puedes examinar variables en ese contexto.
+Entender la pila de llamadas es esencial para corregir comportamientos inesperados producidos por un flujo de ejecución incorrecto.
 
-## Usando la declaración del depurador
+## Estrategias comunes de depuración
 
-Inserte la declaración `debugger` en su código para crear puntos de interrupción mediante programación.
-Cuando el código encuentre el depurador, pausará la ejecución y abrirá las herramientas de desarrollo del navegador.
+- **Simplifica el problema**: Intenta aislar el ejemplo más pequeño y reproducible.
+- **Usa afirmaciones (assertions)**: Verifica manualmente supuestos en tu código.
+- **Depuración con pato de goma (rubber duck debugging)**: Explica tu código a otra persona (¡o a un objeto!) para descubrir errores lógicos.
+- **Busca mensajes de error**: Los errores de JavaScript a menudo contienen información útil.
+- **Verifica la compatibilidad con navegadores**: No todos los navegadores se comportan igual.
+- **Usa linters**: Herramientas como ESLint pueden detectar errores comunes antes de que se ejecute el código.
