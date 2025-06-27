@@ -46,11 +46,35 @@ document.getElementById("myH").innerHTML = "My First Page";
 document.getElementById("myP").innerHTML = "My first paragraph.";
 ```
 
+```javascript
+/*
+  Temporarily disabled welcome message while testing new UI flow.
+*/
+ 
+/*
+document.getElementById("myH").innerHTML = "Welcome back!";
+document.getElementById("myP").innerHTML = "We're glad to see you again.";
+*/
+```
+
 They are also useful for debugging purposes:
 
 ```javascript
 let total = 0;
 // total = calculateTotal(items); // Temporarily disabled during testing
+```
+
+```javascript
+/*
+  Debugging logs for login issue
+  Commented out after issue was resolved
+*/
+
+/*
+console.log("User data:", user);
+console.log("Auth token:", token);
+console.log("Response from API:", response);
+*/
 ```
 
 Including comments in code is essential for maintaining code quality, enabling collaboration, and simplifying the debugging process. By providing context and explanations for various parts of the program, comments make it easier to understand the code in the future. Therefore, it is considered a beneficial practice to include comments in code.
