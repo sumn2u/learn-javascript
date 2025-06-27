@@ -8,23 +8,49 @@ description: Comments are used to mark annotations for other programmers or smal
 
 Comments are statements that will not be executed by the interpreter. They are used to mark annotations for other programmers or small descriptions of what code does, thus making it easier for others to understand what your code does. They are also used to temporarily disable code without affecting the program control flow.
 
-In JavaScript, comments can be written in two different ways:
+## Types of Comments
 
-* **Single-line comments**: It starts with two forward slashes (`//`) and continue until the end of the line. Anything following the slashes is ignored by the JavaScript interpreter. For example:
+### Single Line Comments
+
+Single-line comments start with two forward slashes (`//`) and continue until the end of the line. Anything following the slashes is ignored by the JavaScript interpreter.
 
 ```javascript
 // This is a comment, it will be ignored by the interpreter
-let a = "this is a variable defined in a statement";
+let a = "This is a variable";
 ```
 
-* **Multi-line comments**: It starts with a forward slash and an asterisk (`/*`) and end with an asterisk and a forward slash (`*/`). Anything between the opening and closing markers is ignored by the JavaScript interpreter. For example:
+You can also use them at the end of a line:
+
+```javascript
+let b = 5; // This is also a valid single-line comment
+```
+
+### Multi-line Comments
+Multi-line comments start with /* and end with */. Everything in between is ignored.
 
 ```javascript
 /*
-This is a multi-line comment,
-it will be ignored by the interpreter
+  This is a multi-line comment.
+  You can use it to explain more complex logic
+  or block out code temporarily.
 */
-let a = "this is a variable defined in a statement";
+let x = 10;
+```
+
+### Real-life Examples of Comments
+```javascript
+// Change heading:
+document.getElementById("myH").innerHTML = "My First Page";
+
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+```
+
+They are also useful for debugging purposes:
+
+```javascript
+let total = 0;
+// total = calculateTotal(items); // Temporarily disabled during testing
 ```
 
 Including comments in code is essential for maintaining code quality, enabling collaboration, and simplifying the debugging process. By providing context and explanations for various parts of the program, comments make it easier to understand the code in the future. Therefore, it is considered a beneficial practice to include comments in code.
