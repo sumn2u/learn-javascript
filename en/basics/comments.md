@@ -26,7 +26,7 @@ let b = 5; // This is also a valid single-line comment
 ```
 
 ### Multi-line Comments
-Multi-line comments start with /* and end with */. Everything in between is ignored.
+Multi-line comments start with `/*` and end with `*/`. Everything in between is ignored.
 
 ```javascript
 /*
