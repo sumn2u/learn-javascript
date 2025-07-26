@@ -2,71 +2,437 @@
 
 {% block title %}{{ "LANGS_CHOOSE"|t }} · {{ super() }}{% endblock %}
 
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{% endblock %}
+
 {% block body %}
-<div class="book-langs-index" role="navigation" style="width: unset;height:unset;">
-    <div class="inner">
-      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 250 740 420" id="svg2" style="display:inline;enable-background:new">
-          <defs id="defs4">
-            <filter x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" id="filter4141">
-              <feColorMatrix values="0" type="saturate" id="feColorMatrix4143"/>
-            </filter>
-          </defs>
-          <metadata id="metadata7">
-        </metadata>
-          <g id="layer4" style="display:none">
-            <path d="m 20,3 0,850" id="path7396" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 36.211155,202.36211 0,283.66628" transform="translate(0,-199.36211)" id="path7396-4" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 35.714289,769.10039 0,283.66631" transform="translate(0,-199.36211)" id="path7396-4-2" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-          </g>
-          <g transform="translate(0,-199.36211)" id="layer1" style="display:inline">
-            <text x="48.288597" y="500.63922" id="text2985" xml:space="preserve" style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya">
-                <tspan x="48.288597" y="500.63922" dx="0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0" id="tspan2987" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:3px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">Learn JavaScript: Beginners Edition</tspan>
-                <tspan x="48.288597" y="546.83923" dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 -0.5" id="tspan2989" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">
-                </text>
-            <text x="276.42462" y="748.46985" id="text4059" xml:space="preserve" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya">
-              <tspan x="276.42462" y="748.46985" dx="-1.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" id="tspan4063" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Suman Kunwar </tspan>
-              <tspan x="276.20007" y="770.47363" dx="1" id="tspan7192" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">ASIN: B0C53J11V7</tspan>
-              <tspan x="276.20007" y="790.47363" dx="1" id="tspan7195" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">ISBN: 9789937171892</tspan>
-              <tspan x="276.20007" y="820.47363" dx="1" id="tspan7198" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">This work is licensed under a Apache 2.0 License <a href="http://www.apache.org/licenses/LICENSE-2.0"  target="_blank" rel="noopener noreferrer">(Apache 2.0)</a>.</tspan>
-              <tspan x="276.20007" y="838.47363" dx="1" id="tspan7199" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Based on a work at <a href="https://github.com/sumn2u/learn-javascript"  target="_blank" rel="noopener noreferrer">learn-javascript</a>.</tspan>
-            </text>
-            <text x="276.20007" y="663.35364" id="text5884" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.20007" y="663.35364" dx="0 0 0 0 0 0 0 0 0" dy="0 0 0 0 0 0 0 0 0" id="tspan5892" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"><tspan dx="0.5" id="tspan3026" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Web Version</tspan><tspan x="276.20007" y="684.47363" dx="1" id="tspan7192" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">LAST UPDATED ON 2025-05-21</tspan></text>
-            <text x="276.0762" y="639.08075" id="text5896" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.0762" y="639.08075" dx="0 1 1 1 1 1 0 1 1 1 1 1 1 1" id="tspan5898" style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.79999995px;fill:#a02c2c;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O">First Edition</tspan></text>
-          </g>
-          <g transform="translate(0,-199.36211)" id="layer3" style="opacity:0.8;display:inline">
-            <image xlink:href="./cover.jpg" id="image7052" height="300.42499" width="206.97501" y="568.92511" x="54.313999"/>
-          </g>
-          <g transform="translate(0,-199.36211)" id="layer2" style="display:none">
-            <path d="m 284,590.36211 0,280" id="path7232" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 490,623.79068 -360,0" id="path7254" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 40,573 0,280" transform="translate(0,199.36211)" id="path7334" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 40,202.36211 0,280" id="path7334-0" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 488.71429,686.98974 -360,0" id="path7254-5" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 523.14285,772.36211 0,279.99999" id="path7334-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 522.71429,856.50497 -360,0" id="path7254-8" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 522.85714,726.64782 -360,0" id="path7254-8-7" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 52,273 0,440" transform="translate(0,199.36211)" id="path7604" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 462.90241,590.12345 0,280" id="path7232-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="M 50,253 0,253" transform="translate(0,199.36211)" id="path3038" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-            <path d="m 640,452.36211 -50,0" id="path3038-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-          </g>
-        </svg>
-        <hr>
-        <h3 style="text-align: center; margin: revert;">{{ "LANGS_CHOOSE"|t }}</h3>
+<div class="language-selector-container">
+    <!-- hero section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Learn JavaScript</h1>
+            <p class="subtitle">Beginner's Edition</p>
+            <div class="version-badge">First Edition</div>
+            
+            <div class="hero-meta">
+                <span><i class="fas fa-globe"></i> Web Version</span>
+                <span><i class="fas fa-calendar-alt"></i> Updated: 2025-05-21</span>
+            </div>
+        </div>
         
-        <ul class="languages">
-        {%  for lang in languages.list %}
-            <li>
-                <a href="{{ (lang.id + "/README.md")|contentURL }}">{{ lang.title }}</a>
-                <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf"  title="Download PDF" style="margin-left: 8px;">
-                  <i style="font-size:14px" class="fa">&#xf1c1;</i>
-                </a>
-                <a href="{{ (lang.id + "/README.md")|contentURL }}" title="Preview" style="margin-left: 8px;" target="_blank">
-                  <i style="font-size:14px" class="fa fa-eye"></i>
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
+        <div class="book-cover-container">
+            <img src="./cover.jpg" alt="Learn JavaScript Book Cover" class="book-cover">
+            <div class="cover-shine"></div>
+        </div>
+    </div>
+
+    <!-- language selection -->
+    <div class="language-selection-section">
+        <div class="section-header">
+            <h2><i class="fas fa-language"></i> {{ "LANGS_CHOOSE"|t }}</h2>
+            <p>Select your preferred language to begin your JavaScript journey</p>
+        </div>
+        
+        <div class="language-grid">
+            {% for lang in languages.list %}
+            <div class="language-card">
+                <div class="card-content">
+                    <div class="language-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>{{ lang.title }}</h3>
+                </div>
+                <div class="card-actions">
+                    <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
+                        <i class="fas fa-eye"></i> Preview
+                    </a>
+                    <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf" class="action-btn download">
+                        <i class="fas fa-download"></i> PDF
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-section">
+        <div class="author-info">
+            <div class="author-avatar">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="author-details">
+                <h4>Suman Kunwar</h4>
+                <div class="publication-info">
+                    <span>ASIN: B0C53J11V7</span>
+                    <span>ISBN: 9789937171892</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="license-info">
+            <p>
+                <i class="fas fa-balance-scale"></i> Licensed under 
+                <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>
+            </p>
+            <p>
+                <i class="fab fa-github"></i> Source at 
+                <a href="https://github.com/sumn2u/learn-javascript" target="_blank">GitHub</a>
+            </p>
+        </div>
     </div>
 </div>
+
+<style>
+
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #f72585;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --text-color: #495057;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f5f7ff;
+    margin: 0;
+    padding: 0;
+}
+
+.language-selector-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* hero styles */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 3rem;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: var(--dark-color);
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #4361ee, #3a0ca3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0.5rem 0 1.5rem;
+    font-weight: 400;
+}
+
+.version-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(247, 37, 133, 0.3);
+}
+
+.hero-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.hero-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.book-cover-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    transform: rotateY(-10deg);
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.cover-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 60%);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+/* language selection styles */
+.language-selection-section {
+    margin: 5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.section-header p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.language-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.language-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.language-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.language-card h3 {
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.action-btn {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.preview {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.preview:hover {
+    background: #e9ecef;
+}
+
+.download {
+    background: var(--primary-color);
+    color: white;
+}
+
+.download:hover {
+    background: var(--secondary-color);
+}
+
+/* footer selection styles */
+.footer-section {
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.author-avatar {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.author-details h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.publication-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.license-info {
+    max-width: 400px;
+}
+
+.license-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.license-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.license-info a:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .hero-meta {
+        justify-content: center;
+    }
+    
+    .book-cover-container {
+        margin: 0 auto;
+    }
+    
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* animate */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.language-card {
+    animation: fadeIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.language-card:nth-child(1) { animation-delay: 0.1s; }
+.language-card:nth-child(2) { animation-delay: 0.2s; }
+.language-card:nth-child(3) { animation-delay: 0.3s; }
+.language-card:nth-child(4) { animation-delay: 0.4s; }
+.language-card:nth-child(5) { animation-delay: 0.5s; }
+.language-card:nth-child(6) { animation-delay: 0.6s; }
+</style>
 {% endblock %}
