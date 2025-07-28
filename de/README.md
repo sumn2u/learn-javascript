@@ -18,7 +18,7 @@ Früher erfolgte die Interaktion mit Computern hauptsächlich über sprachbasier
 
 JavaScript (kurz JS) ist eine Programmiersprache für dynamische Interaktionen bei der Entwicklung von Webseiten, Spielen, Anwendungen und sogar Servern. JavaScript entstand in den 1990er Jahren bei Netscape, einem Webbrowser, und ist heute eine der bekanntesten und am häufigsten verwendeten Programmiersprachen.
 
-Ursprünglich wurde es entwickelt, um Webseiten lebendig zu gestalten und konnte nur im Browser ausgeführt werden. Jetzt läuft es auf jedem Gerät, das die JavaScript-Engine unterstützt. Standardobjekte wie [Array](./arrays/README.md), [Date](./date-and-time.md), and [Math](./numbers/math.md) are available in JavaScript, as well as operators, control structures, and statements. _Client-side JavaScript_ and _Server-side JavaScript_ are the extended versions of core JavaScript.
+Ursprünglich wurde es entwickelt, um Webseiten lebendig zu gestalten und konnte nur im Browser ausgeführt werden. Jetzt läuft es auf jedem Gerät, das die JavaScript-Engine unterstützt. Standardobjekte wie [Array](./arrays/README.md), [Date](./date-and-time.md) und [Math](./numbers/math.md) sind in JavaScript verfügbar, ebenso wie Operatoren, Kontrollstrukturen und Anweisungen. _Clientseitiges JavaScript_ und _Serverseitiges JavaScript_ sind die erweiterten Versionen des Kern-JavaScripts.
 
 * _Clientseitiges JavaScript_ ermöglicht die Verbesserung und Bearbeitung von Webseiten und Client-Browsern. Reaktionen auf Benutzerereignisse wie Mausklicks, Formulareingaben und Seitennavigation sind einige Beispiele.
 * [_Serverseitiges JavaScript_](./server-side/README.md) ermöglicht den Zugriff auf Server, Datenbanken und Dateisysteme.
