@@ -79,5 +79,5 @@ Les méthodes et les propriétés supportées par `date` sont décrites ci-desso
 | `toString()`           | Renvoie une chaîne de caractères représentant l'objet                                                          |
 | `toTimeString()`       | Renvoie la partie _temps_ de la date dans un format lisible par un humain                                      |
 | `toUTCString()`        | Convertit la date en chaîne selon le format universel                                                          |
-| `toTemporalInstant()`  | Renvoie un objet Date converti en un Temporal.Instant, qui représente un point fixe dans le temps (jusqu'aux nanosecondes, en UTC) PRISE DE CLÉ : Il ne contient aucune information de fuseau horaire ou de calendrier, ce qui le rend approprié pour représenter un horodatage universel et sans ambiguïté. REMARQUE : La méthode Temporal n'est pas encore entièrement prise en charge dans tous les environnements, alors assurez-vous que votre environnement la prend en charge.                                    |
+| `toTemporalInstant()`  | Renvoie un objet Date converti en Temporal.Instant, qui représente un point fixe dans le temps (jusqu'aux nanosecondes, en UTC).                                    |
 | `valueOf()`            | Renvoie la valeur primitive de l'objet `Date`                                                                  |

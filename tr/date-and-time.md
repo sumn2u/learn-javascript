@@ -77,5 +77,5 @@ Aylar `0` ile `11` arasında belirtilebilir, daha fazlası bir sonraki yıla aka
 | `toString()`           | Belirtilen tarihi string temsilini döndürür                                                    |
 | `toTimeString()`       | _time_ kısmını insan tarafından okunabilir bir formatta döndürür                               |
 | `toUTCString()`        | Tarihi evrensel formata göre bir dizeye dönüştürür                                             |
-| `toTemporalInstant()`  | Dönüştürülmüş bir Date nesnesini, UTC'de nanosaniyelere kadar sabit bir zaman noktasını temsil eden bir Temporal.Instant nesnesine döndürür. KEY-TAKE: Herhangi bir zaman dilimi veya takvim bilgisi içermediğinden, evrensel ve belirsiz olmayan bir zaman damgasını temsil etmek için uygundur. NOT: Temporal yöntemi henüz tüm ortamlarda tam olarak desteklenmemektedir, bu nedenle ortamınızın bunu desteklediğinden emin olun.                       |
+| `toTemporalInstant()`  | Sabit bir zaman noktasını (UTC'de nanosaniyelere kadar) temsil eden Temporal.Instant'a dönüştürülmüş bir Date nesnesi döndürür.                       |
 | `valueOf()`            | `Date`'nin ilkel değerini döndürür                                                             |
