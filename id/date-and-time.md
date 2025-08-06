@@ -81,5 +81,5 @@ ISO |
 | `toString()` | Mengembalikan representasi string dari tanggal yang ditentukan |
 | `toTimeString()` | Mengembalikan bagian _waktu_ dalam format yang mudah dibaca |
 | `toUTCString()` | Mengubah tanggal menjadi string sesuai dengan format universal |
-| `toUTC()` | Mengembalikan milidetik sejak tengah malam 1 Januari 1970 dalam format UTC |
+| `toTemporalInstant()` | Mengembalikan objek Tanggal yang dikonversi ke Temporal.Instant, yang merepresentasikan titik waktu tetap (hingga nanodetik, dalam UTC). KEY-TAKE: Tidak mengandung informasi zona waktu atau kalender, sehingga cocok untuk merepresentasikan stempel waktu universal yang tidak ambigu. CATATAN: Metode Temporal belum sepenuhnya didukung di semua lingkungan, jadi pastikan lingkungan Anda mendukungnya. |
 | `valueOf()` | Mengembalikan nilai primitif dari `Date` |

@@ -79,5 +79,5 @@ Los métodos y propiedades admitidos por date se describen a continuación:
 | `toString()`           | Devuelve una representación de cadena de la fecha especificada. |
 | `toTimeString()`       | Devuelve la parte _time_ en un formato legible por humanos     |
 | `toUTCString()`        | Convierte la fecha en una cadena según el formato universal.   |
-| `toUTC()`              | Devuelve los milisegundos desde la medianoche del 1 de enero de 1970 en formato UTC |
+| `toTemporalInstant()`  |Devuelve un objeto Date convertido a un Temporal.Instant, que representa un punto fijo en el tiempo (hasta nanosegundos, en UTC). CLAVE: No contiene información de zona horaria ni calendario, lo que lo hace adecuado para representar una marca de tiempo universal e inequívoca. NOTA: El método Temporal aún no es totalmente compatible con todos los entornos, así que asegúrese de que su entorno lo admita. |
 | `valueOf()`            | Devuelve el valor primitivo de `Date                           |
