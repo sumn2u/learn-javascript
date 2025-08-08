@@ -86,6 +86,10 @@
           {
             "config": "es",
             "text": "Español"
+          },
+          {
+            "config": "de",
+            "text": "Deutsch"
           }
         ]
       }

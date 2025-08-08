@@ -45,12 +45,18 @@
                     <h3>{{ lang.title }}</h3>
                 </div>
                 <div class="card-actions">
-                    <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
-                        <i class="fas fa-eye"></i> Preview
-                    </a>
-                    <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf" class="action-btn download">
-                        <i class="fas fa-download"></i> PDF
-                    </a>
+                    {% if lang.id == 'de' %}
+                        <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
+                            <i class="fas fa-eye"></i> Preview
+                        </a>
+                    {% else %}
+                        <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
+                            <i class="fas fa-eye"></i> Preview
+                        </a>
+                        <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf" class="action-btn download">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
