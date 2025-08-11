@@ -16,8 +16,8 @@ In this example, you are using the `fs.readFile` function to read data from the 
 
 ```javascript
 const fs= require('fs');
-//async
-//non  blokcing i/0 thats why runs at last as ti takes moer time
+//asynchronous, non-blocking I/O that's why this runs last, as it takes more time
+
 fs.readFile('test.txt','utf8',(err,data) => {
     console.log(err,data)
 })
@@ -29,7 +29,7 @@ Here, you use fs.writeFile to write data to the 'test.txt' file asynchronously. 
 
 ```javascript
 fs.writeFile("test.txt","mahima is good girl", () => {
-    console.log("This runs after writting in a file: written to file")
+    console.log("This runs after writing in a file: written to file")
 })
 ```
 
@@ -41,7 +41,7 @@ Synchronous I/O operations block the execution of the program until the operatio
 The `fs.readFileSync` function is used for synchronous file reading. It blocks the execution until the entire file is read, and then it continues with the rest of the code. This is generally not recommended because it can cause the program to become unresponsive during the file read.
 
 ```javascript
-const a=fs.readFileSync("test.txt") //nodejs intetntionally blocks
+const a=fs.readFileSync("test.txt") //nodejs intentionally blocks
 console.log(a.toString())
 console.log("At last")
 ```
@@ -52,9 +52,8 @@ console.log("At last")
 
 
 ```javascript
-fs.writeFileSync("test.txt","mahima is good girl",() => {    
-    console.log("This is sync: intentionally process is blocked ")
-}) 
+fs.writeFileSync("test.txt","mahima is good girl")  
+console.log("This is sync: the process is intentionally blocked ")
 
 ```
 Node.js provides both synchronous and asynchronous file I/O options. Asynchronous I/O is typically preferred for better performance and responsiveness, while synchronous I/O is used only when necessary and with caution, as it can block the program's execution.
