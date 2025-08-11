@@ -52,7 +52,7 @@ console.log("At last")
 
 
 ```javascript
-fs.writeFileSync("test.txt","mahima is good girl")  
+fs.writeFileSync("test.txt","mahima is good girl", 'utf8')  
 console.log("This is sync: the process is intentionally blocked ")
 
 ```
