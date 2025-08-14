@@ -38,7 +38,7 @@ Beberapa peristiwa HTML umum disebutkan di sini.
 | `onclick`     | Saat pengguna mengklik elemen                                 |
 | `onmouseover` | Saat kursor mouse berada di atas elemen                       |
 | `onmouseout`  | Saat kursor mouse meninggalkan elemen                         |
-| `onkeydown`   | Saat pengguna menekan dan kemudian melepaskan tombol          |
+| `onkeydown`   | Ketika pengguna menekan tombol                                |
 | `onload`      | Saat peramban selesai memuat                                  |
 
 Umumnya, handler yang terdaftar pada node dengan anak-anak juga akan menerima peristiwa dari anak-anak tersebut. Misalnya, jika sebuah tombol di dalam sebuah paragraf diklik, handler yang terdaftar pada paragraf juga akan menerima peristiwa klik. Jika ada handler pada keduanya, yang ada di bawah akan dieksekusi terlebih dahulu. Peristiwa dikatakan _menyebar_ ke luar, dari node yang memulai ke node induknya dan pada akar dokumen.

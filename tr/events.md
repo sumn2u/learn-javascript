@@ -37,7 +37,7 @@ Bazı yaygın HTML olayları burada belirtilmiştir:
 | `onclick`     | Kullanıcı, öğeye tıkladığında                                  |
 | `onmouseover` | Fare imleci öğenin üzerine geldiğinde                          |
 | `onmouseout`  | Fare imleci öğeden ayrıldığında                                |
-| `onkeydown`   | Kullanıcı anahtarı basıp sonra bırakır                         |
+| `onkeydown`   | Kullanıcı bir tuşa bastığında                                  |
 | `onload`      | Tarayıcı yüklemeyi tamamladığında                              |
 
 Çocukları olan düğümlere kaydedilen handlers, çocuklardan da olaylar alabilir. Örneğin, bir paragraf içindeki bir düğme tıklandığında, paragrafta kaydedilen handlers de tıklama olayını alır.

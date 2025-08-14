@@ -37,7 +37,7 @@ pageNumber: ८८
 | `onclick`     | When the user clicks on the element                       |
 | `onmouseover` | When cursor of the mouse comes over the element           |
 | `onmouseout`  | When cursor of the mouse comes leaves the element         |
-| `onkeydown`   | When the user press and then releases the key             |
+| `onkeydown`   | When the user presses a key                               |
 | `onload`      | When the browser has finished the loading                 |
 
 | घटना          | विवरण                                                       |
@@ -46,7 +46,7 @@ pageNumber: ८८
 | `onclick`     | जब प्रयोगकर्ताले तत्वमा क्लिक गर्दछ                         |
 | `onmouseover` | जब माउसको कर्सर तत्वमाथि आउँछ                               |
 | `onmouseout`  | जब माउसको कर्सर आउँछ तत्व छोड्छ                             |
-| `onkeydown`   | जब प्रयोगकर्ताले प्रेस गर्दछ र त्यसपछि कुञ्जी जारी गर्दछ    |
+| `onkeydown`   | जब प्रयोगकर्ताले कुञ्जी थिच्छ    |
 | `onload`      | जब ब्राउजरले लोडिङ समाप्त गरेको छ                           |
 
 
