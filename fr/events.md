@@ -38,7 +38,7 @@ Some of the common HTML events are mentioned here.
 | `onclick`     | Quand l'utilisateur clique sur un élément                                     |
 | `onmouseover` | Quand le curseur de la souris entre sur un élément                            |
 | `onmouseout`  | Quand le curseur de la souris quitte un élément                               |
-| `onkeydown`   | Quand l'utilisateur presse une touche et relâche une touche                   |
+| `onkeydown`   | Lorsque l'utilisateur appuie sur une touche                  |
 | `onload`      | Quand le navigateur a terminé son chargement                                  |
 
 Il est courant pour les handlers enregistrés sur des noeuds avec enfants de recevoir également recevoir les événements de leurs enfants. Par exemple, si un bouton à l'intérieur d'un paragraphe est cliqué, les handlers enregistré sur le paragraphe recevront également l'événement clic. Dans le cas ou un gestionnaire est présent sur les deux éléments, celui le plus bas dans la hiérarchie sera déclenché le premier. On dit que l'événement se _propage_ à l'extérieur, du noeud initial vers son parent et à la racine du document.

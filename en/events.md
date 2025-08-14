@@ -35,7 +35,7 @@ Some of the common HTML events are mentioned here.
 | ------------- | --------------------------------------------------------- |
 | `onclick`     | When the user clicks on the element                       |
 | `onchange`    | When the user changes or modifies the value of form input |
-| `onkeydown`   | When the user press and then releases the key             |
+| `onkeydown`   | When the user presses a key             |
 | `onload`      | When the browser has finished the loading                |
 | `onmouseout`  | When cursor of the mouse leaves the element               |
 | `onmouseover` | When cursor of the mouse comes over the element           |
