@@ -179,7 +179,7 @@ _Metacharacters_ are special character that has special meaning in the regular e
 | `\w`          | Match a word character (alphanumeric character `[a-zA-Z0–9_]`)   |
 | `\W`          | Match a non word character (same as `[^a-zA-Z0–9_]`)             |
 | `\d`          | Match any digit character( same as `[0-9]`)                      |
-| `\D`          | Match any non digit character                                   |
+| `\D`          | Match any non-digit character                                   |
 | `\s`          | Match a whitespace character (spaces, tabs etc)                  |
 | `\S`          | Match a non whitespace character                                 |
 | `\b`          | Match at the beginning / end of a word                            |
