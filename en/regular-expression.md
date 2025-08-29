@@ -15,7 +15,7 @@ A regular expression is an object that can either be constructed with the `RegEx
 new RegExp(pattern[, flags]);
 
 // using literals
-/pattern/modifiers
+/pattern/flags
 ```
 
 The flags are optional while creating a regular expression using literals. Example of creating identical regular using above mentioned method is as follows.
@@ -39,7 +39,7 @@ Example :
 
 ```javascript
 const str = "Hello world, hello again!";
-const regex = /hello/g;
+const regex = /hello/gi;
 const matches = str.match(regex);
 // If you are thinking about .match() Read This 👇
 // It is a built-in method in JavaScript that is used to search a string for a match against an expression.
@@ -175,11 +175,11 @@ _Metacharacters_ are special character that has special meaning in the regular e
 
 | Metacharacter | Description                                                      |
 | ------------- | ---------------------------------------------------------------- |
-| `.`           | Match a single character excpet newline or a terminator          |
+| `.`           | Match a single character except newline or a terminator          |
 | `\w`          | Match a word character (alphanumeric character `[a-zA-Z0–9_]`)   |
 | `\W`          | Match a non word character (same as `[^a-zA-Z0–9_]`)             |
 | `\d`          | Match any digit character( same as `[0-9]`)                      |
-| `\D`          | Match any non digiti character                                   |
+| `\D`          | Match any non digit character                                   |
 | `\s`          | Match a whitespace character (spaces, tabs etc)                  |
 | `\S`          | Match a non whitespace character                                 |
 | `\b`          | Match at the beginning / end of a word                            |
@@ -219,7 +219,7 @@ let text = "The best things in life are free";
 let result = /e/.exec(text); // looks for a match  of e in a string
 // result: e
 
-
+console.log(result); // Result: ["e", 2, "The best things in life ar..."]
 let helloWorldText = "Hello world!";
 // Look for "Hello"
 let pattern1 = /Hello/g;
