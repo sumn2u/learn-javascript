@@ -5,7 +5,7 @@ description: Understanding Listening of events in JavaScript.
 
 ## Listening for Events
 
-In order to make a page **interactive** (that is, able to change in response to user actions), you need to be able to respond to _user events_. Whenever a user interacts with a computer, the operating system announces that interaction as an **event**&mdash;the _event_ of a button being clicked, the _event_ of the mouse being moved, the _event_ of a keyboard key being pressed, etc. These events are **broadcast** to the entire system, allowing any application (including the browser) to "respond" the occurrence of the event, such as by executing a particular JavaScript function.
+In order to make a page **interactive** (that is, able to change in response to user actions), you need to be able to respond to _user events_. Whenever a user interacts with a computer, the operating system announces that interaction as an **event**: the _event_ of a button being clicked, the _event_ of the mouse being moved, the _event_ of a keyboard key being pressed, etc. These events are **broadcast** to the entire system, allowing any application (including the browser) to "respond" the occurrence of the event, such as by executing a particular JavaScript function.
 
 Thus in order to respond to user actions (and the _events_ those actions generate), we need to define a function that will be executed **when the event occurs**. You will define a function as normal, but the function will not get called by you as a particular step in your script. Instead, the function you specify will be executed _by the system_ when an event occurs, which will be at some indeterminate time in the future. This process is known as [event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming). It is also an example of <a href="https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)">**asynchronous programming**</a>: in which statements are not executed in a single order one after another ("synchronously"), but may occur "out of order" or even at the same time! (For more about working with asynchronous programming, see [Chapter 14](#ajax)).
 
@@ -97,8 +97,6 @@ There are [numerous different events](https://developer.mozilla.org/en-US/docs/W
   });
   ```
 
-  (See [the documentation](https://developer.mozilla.org/en-US/docs/Web/Events/resize) for advise on using this callback)
-
   Additionally, the `window` global defines a special event callback that occurs when the web page has finished loading. You can assign your own function to this callback to run code only _after_ the webpage has loaded (e.g., for scripts specified in the `<head>`):
 
   ```js
@@ -107,7 +105,7 @@ There are [numerous different events](https://developer.mozilla.org/en-US/docs/W
   };
   ```
 
-<p class="alert alert-warning">**Style guideline**: always register event listeners in the JavaScript&mdash;do _not_ utilize the HTML attributes such as `onclick`. This is to help keep concerns separated: the HTML should not need to know anything about the JavaScript that is utilized (since the browser may not even support JavaScript!), but it's okay for the JavaScript to rely on and modify the HTML.</p>
+<p class="alert alert-warning">Do not mix JavaScript into your HTML using attributes like `onclick`. Always register event listeners in a separate JavaScript file to keep your code organized and ensure a clean separation of concerns.</p>
 
 ### Event-Driven Programming
 
