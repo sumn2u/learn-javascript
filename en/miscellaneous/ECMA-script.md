@@ -28,7 +28,7 @@ ECMAScript, commonly abbreviated as ES, is a standardized scripting language spe
 - **ES11 (ECMAScript 2020)**: Released in 2020. Introduced `BigInt`, `Promise.allSettled()`, `globalThis`, optional chaining (`?.`), and nullish coalescing operator (`??`).
 - **ES12 (ECMAScript 2021)**: Released in 2021. Added `String.prototype.replaceAll()`, `Promise.any()`, `AggregateError`, logical assignment operators (`&&=`, `||=`, `??=`), and `WeakRefs`.
 - **ES13 (ECMAScript 2022)**: Released in 2022. Introduced top-level `await`, `Object.hasOwn()`, `Error.cause`, `at()` method for `Array`, `String`, and `TypedArray`, and private class fields/methods.
-- **ES14 (ECMAScript 2023)**: Released in 2023. Added `Array.prototype.toReversed()`, `Array.prototype.toSorted()`, `Array.prototype.toSpliced()`, `Array.prototype.with()`, `Map.prototype.emplace()`, `Set.prototype.emplace()`, and `Symbol.prototype.description` as a getter.
+- **ES14 (ECMAScript 2023)**: Released in 2023. Added `Array.prototype.toReversed()`, `Array.prototype.toSorted()`, `Array.prototype.toSpliced()`, `Array.prototype.with()`, and `Symbol.prototype.description` as a getter.
 
 # Why ECMAScript (ES) is Standardized for JavaScript
 
