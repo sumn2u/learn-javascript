@@ -1,6 +1,6 @@
 # 📸 Random Photos
 
-![Random Photos Preview](../../assets/random-photos.png)
+![Random Photos Preview](../../assets/random-photos.PNG)
 
 ## Description
 Create a fun app that displays random photos from a collection each time you click a button.

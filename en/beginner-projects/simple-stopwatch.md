@@ -1,6 +1,6 @@
 # ⏱️ Stopwatch
 
-![Stopwatch Preview](../../assets/stopwatch.png)
+![Stopwatch Preview](../../assets/stopwatch.PNG)
 
 ## Description
 Create a simple stopwatch app that lets users start, stop, and reset a timer to track elapsed time.
