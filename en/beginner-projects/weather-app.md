@@ -1,6 +1,6 @@
 # ☁️ Weather App
 
-![Weather App Preview](./assets/waether-app.png)
+![Weather App Preview](../../assets/waether-app.png)
 
 ## Description
 A simple app that fetches and displays weather information based on user location or search.

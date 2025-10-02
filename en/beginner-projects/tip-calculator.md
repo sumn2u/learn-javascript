@@ -1,6 +1,6 @@
 # 💸 Tip Calculator
 
-![Tip Calculator Preview](./assets/tip-calculator.png)
+![Tip Calculator Preview](../../assets/tip-calculator.png)
 
 ## Description
 Create a project where users can calculate tips based on a given bill amount and tip percentage.

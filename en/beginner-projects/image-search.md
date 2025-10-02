@@ -1,6 +1,6 @@
 # 🔍 Image Search App
 
-![Image Search App Preview](./assets/image-search.png)
+![Image Search App Preview](../../assets/image-search.png)
 
 ## Description
 Build an app that lets users search for images using keywords and displays results dynamically.
