@@ -1,6 +1,6 @@
 # ⏰ Digital Clock
 
-![Digital Clock Preview](./assets/digital-clock.png)
+![Digital Clock Preview](../../assets/digital-clock.png)
 
 ## Description
 A live digital clock that shows the current time in hours, minutes, and seconds.

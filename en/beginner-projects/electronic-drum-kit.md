@@ -1,6 +1,6 @@
 # 🥁 Drum Kits
 
-![Drum Kits Preview](./assets/drum-kit.png)
+![Drum Kits Preview](../../assets/drum-kit.png)
 
 ## Description
 Create a fun interactive drum kit that plays sounds when you click buttons or press keys.
