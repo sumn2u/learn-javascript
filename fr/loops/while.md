@@ -28,6 +28,6 @@ while (i < 5) {
 console.log(x);
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 &#x20; Faites attention d'éviter les boucles infinies qui arrivent lorsque la condition est indéfiniment évaluée à vraie.
 {% endhint %}

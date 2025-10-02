@@ -16,7 +16,7 @@ console.log(new_str);
 // Sonuç: Hi World!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Bir [regular expression](../regular-expression.md) öğesinin tüm örneklerinde bir değeri `g` değiştiricisi ile değiştirmek için ayarlanır.{% endhint %}
 
 Bir değer veya düzenli ifade için bir dize arar ve değer(ler)in değiştirildiği yeni bir dize döndürür. Orijinal dizeyi değiştirmez. Büyük/küçük harfe duyarsız global değiştirme örneğini görelim.

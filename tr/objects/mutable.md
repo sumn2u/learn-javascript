@@ -28,6 +28,6 @@ object.foo = "quux"; // Modify property 'foo'
 delete object.baz; // Delete property 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Primitive (_ilkel_) değerler (sayılar ve dizeler gibi) değişmezken, objeler (diziler ve objeler gibi) değişebilirdir.
 {% endhint %}

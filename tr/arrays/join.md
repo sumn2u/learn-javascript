@@ -23,7 +23,7 @@ console.log(array.join(" "));
 // Sonuç: bir iki üç dört
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Herhangi bir ayırıcı belirtilebilir, ancak varsayılanı virgüldür (,).
 {% endhint %}
 

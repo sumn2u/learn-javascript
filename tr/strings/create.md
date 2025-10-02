@@ -38,7 +38,7 @@ const message = `Hello, ${name}!`;
 
 Şablon literalleri birden çok satıra da sahip olabilir ve yer tutucular içinde herhangi bir ifade içerebilir.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Dizeler çıkarılamaz, çarpılamaz veya bölünemez.
 {% endhint %}
 

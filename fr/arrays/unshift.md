@@ -15,7 +15,7 @@ array.unshift(-5); // 4
 // RESULT: array = [-5 , 0, 5, 10];
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `unshift()` écrase le tableau d'origine.
 {% endhint %}
 

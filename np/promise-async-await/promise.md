@@ -34,7 +34,7 @@ let promise = new Promise(function(resolve, reject) {
 <figure><img src="../_book/.gitbook/assets/async_await.png" alt=""><figcaption><p>Promise with resolve and reject callbacks</p></figcaption></figure>
 
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 एक प्रतिज्ञा गुणहरू पहुँच गर्न सक्दैन: `स्टेट` र `परिणाम`। प्रतिज्ञाहरू सम्हाल्न प्रतिज्ञा विधिहरू आवश्यक छन्।
 
@@ -91,7 +91,7 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // shows "Error: Whoops!" after 1 second
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 `Promise.then()` विधिमा, दुबै कलब्याक तर्कहरू वैकल्पिक छन्।
 {% endhint %}

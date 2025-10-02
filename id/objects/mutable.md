@@ -29,6 +29,6 @@ objek.foo = "quux"; // Mengubah properti 'foo'
 delete objek.baz; // Menghapus properti 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Nilai primitif (seperti angka dan string) adalah immutable, sedangkan objek (seperti array dan objek) adalah mutable.
 {% endhint %}

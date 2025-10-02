@@ -21,7 +21,7 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 महिनाहरू `०` देखि `११` सम्म निर्दिष्ट गर्न सकिन्छ, त्यो भन्दा बढी अर्को वर्षको लागि ओभरफ्लोमा परिणत हुनेछ।
 {% endhint %}

@@ -24,6 +24,6 @@ while (i < 5) {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 &#x20;Koşula her zaman doğru dönen bir ifade vermeye dikkat edin! Çünkü bu sonsuz döngü oluşturacaktır.
 {% endhint %}

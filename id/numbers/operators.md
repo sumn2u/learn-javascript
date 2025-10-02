@@ -84,7 +84,7 @@ console.log(12 % 3); // 0
 
 Penerjemah JavaScript bekerja dari kiri ke kanan. Seseorang dapat menggunakan tanda kurung seperti dalam matematika untuk memisahkan dan mengelompokkan ekspresi: `c = (a / b) + d`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 JavaScript menggunakan operator `+` baik untuk penambahan maupun penggabungan (konkatenasi). Angka ditambahkan sementara string digabungkan.
 {% endhint %}
 

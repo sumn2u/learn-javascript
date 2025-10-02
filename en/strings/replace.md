@@ -15,7 +15,7 @@ console.log(new_str);
 // Result: Hi World!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 To replace a value on all instances of a [regular expression](../regular-expression.md) with a `g` modifier is set.
 {% endhint %}
 

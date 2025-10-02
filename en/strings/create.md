@@ -37,7 +37,7 @@ const message = `Hello, ${name}!`;
 
 Template literals can also contain multiple lines and can include any expression inside the placeholders.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Strings can not be subtracted, multiplied, or divided.
 {% endhint %}
 

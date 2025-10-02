@@ -43,6 +43,6 @@ Une fonction fléchée est une alternative compacte aux fonctions traditionnelle
 const double = (x) => 2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Le mot-clé `this` dans la fonction fléchée représente l'objet qui a défini la fonction arrow.&#x20;
 {% endhint %}

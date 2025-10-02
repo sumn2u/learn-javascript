@@ -41,6 +41,6 @@ async function f() {
 f();
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Le mot clé `await` net peut être utilisé que dans une fonction déclarée avec `async`.
 {% endhint %}

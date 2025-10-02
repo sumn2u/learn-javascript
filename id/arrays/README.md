@@ -39,7 +39,7 @@ console.log(cars);
 // Result: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Array adalah tipe objek khusus. Anda dapat memiliki [objek](../objects/) dalam sebuah array.
 {% endhint %}
 

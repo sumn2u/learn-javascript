@@ -23,7 +23,7 @@ console.log(array.join(" "));
 // Ergebnis: eins zwei drei vier
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Es kann ein beliebiges Trennzeichen angegeben werden, aber das Standardtrennzeichen ist ein Komma `(,)`.
 {% endhint %}
 

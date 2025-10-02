@@ -43,6 +43,6 @@ Fungsi panah adalah alternatif ringkas untuk fungsi tradisional yang memiliki be
 const double = (x) => 2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Kata kunci `this` dalam fungsi panah mewakili objek yang mendefinisikan fungsi panah tersebut.&#x20;
 {% endhint %}

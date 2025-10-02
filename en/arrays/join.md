@@ -23,7 +23,7 @@ console.log(array.join(" "));
 // Result: one two three four
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Any separator can be specified but the default one is a comma `(,)`.
 {% endhint %}
 

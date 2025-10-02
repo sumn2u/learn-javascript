@@ -40,6 +40,6 @@ numeros.forEach(numero => console.log(numero * 2));
 
 El método `forEach` no modifica la matriz original. Simplemente itera sobre los elementos de la matriz y ejecuta la función proporcionada para cada elemento.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 El método `forEach()` no se ejecuta para la declaración vacía.
 {% endhint %}

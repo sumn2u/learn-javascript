@@ -15,7 +15,7 @@ console.log(new_str);
 // Resultado: ¡Hey, mundo!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Para reemplazar un valor en todas las instancias de una [expresión regular](../regular-expression.md) se establece con un modificador `g`.
 {% endhint %}
 

@@ -34,7 +34,7 @@ while (array.length > 0) {
 console.log(array); // Sonuç: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `pop()` fonksiyonu yalnızca dizilerde çalışır ve diğer dizilere benzer nesnelerde (örneğin, arguments nesneleri veya NodeList nesneleri) çalışmaz. Bu tür nesnelerden elemanları çıkarmak istiyorsanız, önce `Array.prototype.slice()` fonksiyonunu kullanarak onları bir diziye dönüştürmeniz gerekecektir.\
 
 {% endhint %}

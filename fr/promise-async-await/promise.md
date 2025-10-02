@@ -35,7 +35,7 @@ Les propriétés internes de la promesse retournée par l'appel du constructeur 
 * `state` - initialement `pending` (en cours), ensuite change à soit `fulfill` (accomplie) lorsque `resolve` est appelée, soit `rejected` (rejetée) lorsque c'est `reject` qui est appelée.
 * `result` - initialement `undefined`, ensuite change à `value` en cas d'appel à `resolve` ou `error` lorsque c'est `reject` qui est appelée.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Nous ne pouvons pas accéder aux propriétés : `state` et `result`. Les méthodes spécifiques au type Promise sont nécessaires pour gérer les promesses.
 {% endhint %}
 
@@ -90,6 +90,6 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // montre l'erreur "Error: Whoops!" après une seconde
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Dans la méthode `Promise.then()`, toutes les deux fonctions de callback sont optionels.
 {% endhint %}

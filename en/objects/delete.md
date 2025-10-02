@@ -29,7 +29,7 @@ let prototypeAge = child.age;
 // 26, because child does not have its own age property.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 The `delete` operator only works on own properties of an object, and not on inherited properties. It also does not work on properties that have the `configurable` attribute set to `false`.
 {% endhint %}
 

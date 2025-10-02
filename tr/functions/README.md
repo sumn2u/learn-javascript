@@ -42,6 +42,6 @@ Bir arrow fonksiyonu, bazı sınırlamalarla birlikte bazı semantik farklılık
 const double = (x) => 2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Arrow fonksiyonundaki `this` anahtar sözcüğü, arrow fonksiyonunu tanımlayan nesneyi temsil eder.&#x20;
 {% endhint %}

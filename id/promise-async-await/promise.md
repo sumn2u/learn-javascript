@@ -36,7 +36,7 @@ Properti internal objek `promise` yang dikembalikan oleh konstruktor `new Promis
 - `state` - awalnya `pending,` kemudian berubah menjadi `fulfill` saat `resolve` atau `rejected` saat `reject` dipanggil
 - `result` - awalnya `undefined`, kemudian berubah menjadi `value` saat `resolve` atau `error` saat `reject` dipanggil
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Tidak dapat mengakses properti `promise`: `state` dan `result`. Diperlukan metode promise untuk menangani promise.
 {% endhint %}
 
@@ -89,6 +89,6 @@ let promiseTiga = new Promise((resolve, reject) => {
 promiseTiga.catch(alert); // menampilkan "Error: Whoops!" setelah 1 detik
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Pada metode `Promise.then()`, kedua argumen panggilan balik adalah opsional.
 {% endhint %}

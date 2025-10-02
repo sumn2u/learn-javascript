@@ -82,7 +82,7 @@ RegEx tarafından desteklenen özellikler ve yöntemler aşağıda listelenmişt
 | `test()`      | Eşleşmeyi test eder ve `true` veya `false` döndürür                          |
 | `toString()`  | Düzenli ifadenin dize değerini döndürür                                      |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Bir `complie()` yöntemi düzenli ifadeyi uyumlu hale getirir ve kullanımdan kaldırılmıştır.
 {% endhint %}
 

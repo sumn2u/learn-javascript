@@ -208,7 +208,7 @@ Properties and methods supported by RegEx are listed below.
 | `test()`      | Test for the match and returns the `true` or `false`                               |
 | `toString()`  | Returns the string value of the regular exression                                  |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 A `complie()` method complies the regular expression and is deprecated.
 {% endhint %}
 

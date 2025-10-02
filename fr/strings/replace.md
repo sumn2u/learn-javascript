@@ -16,7 +16,7 @@ console.log(new_str);
 // Resultat: Hi World!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Pour remplacer une valeur sur l'ensemble des occurrences d'une [expression régulière](../regular-expression.md) on devra indiquer un drapeau `g`.
 {% endhint %}
 

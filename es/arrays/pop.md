@@ -35,7 +35,7 @@ while (matriz.length > 0) {
 console.log(matriz); // Resultado: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 El método `pop` solo funciona en matrices, y no en otros objetos que sean similares a matrices, como objetos de argumentos u objetos NodeList. Si necesita extraer elementos de uno de estos tipos de objetos, primero deberá convertirlo en una matriz utilizando el método `Array.prototype.slice()`.
 
 {% endhint %}

@@ -83,7 +83,7 @@ Les propriétés et les méthodes supportées par les regex sont listées ci-des
 | `test()`      | Teste la correspondance et renvoie `true` ou `false`                                         |
 | `toString()`  | Renvoie la valeur de chaîne de l'expression régulière                                        |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `compile()` recompile une expression régulière et est dépréciée. Elle ne doit plus être utilisée.
 {% endhint %}
 

@@ -86,7 +86,7 @@ Properti dan metode yang didukung oleh RegEx tercantum di bawah ini.
 | `test()` | Uji kecocokan dan mengembalikan `true` atau `false` |
 | `toString()` | Mengembalikan nilai string dari ekspresi reguler |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Metode `complie()` mengompilasi ekspresi reguler dan sudah tidak digunakan lagi.
 {% endhint %}
 

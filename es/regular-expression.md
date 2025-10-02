@@ -209,7 +209,7 @@ Las propiedades y métodos admitidos por RegEx se enumeran a continuación.
 | `test()`      | Prueba la coincidencia y devuelve `true` o `false`                                                 |
 | `toString()`  | Devuelve el valor de cadena de la expresión regular.                                               |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Un método `compile()` compila la expresión regular y está en desuso.
 {% endhint %}
 

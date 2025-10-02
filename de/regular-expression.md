@@ -210,7 +210,7 @@ Eigenschaften und Methoden, die von RegEx unterstützt werden:
 | `test()`      | Testet, ob ein Treffer existiert, und gibt `true` oder `false` zurück |
 | `toString()`  | Gibt das Muster als Zeichenkette zurück                               |
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Eine `compile()` Methode zum Kompilieren eines regulären Ausdrucks ist veraltet. Sie war früher nützlich, um bestehende RegEx-Objekte neu zu konfigurieren, ist aber heute durch direktes Neuerstellen überflüssig.
 {% endhint %}
 

@@ -30,7 +30,7 @@ let usiaPrototipe = anak.usia;
 // 26, karena anak tidak memiliki properti usia sendiri.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Operator `delete` hanya berfungsi pada properti sendiri dari objek, dan tidak pada properti yang diwarisi. Ini juga tidak berfungsi pada properti yang memiliki atribut `configurable` yang diatur ke `false`.
 {% endhint %}
 

@@ -58,7 +58,7 @@ const age = 30;
 export {name, age};
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Solo se puede tener una `export` predeterminada en un archivo.
 {% endhint %}
 

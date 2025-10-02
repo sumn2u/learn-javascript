@@ -41,6 +41,6 @@ numbers.forEach((number) => console.log(number * 2));
 
 Metode `forEach` tidak memodifikasi array asli. Ia hanya mengulanginya melalui elemen-elemen dalam array dan menjalankan fungsi yang diberikan untuk setiap elemen.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Metode `forEach()` tidak akan dieksekusi jika tidak ada pernyataan (statement) dalamnya.
 {% endhint %}

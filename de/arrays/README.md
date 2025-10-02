@@ -37,7 +37,7 @@ autos[0] = "Opel"; // Ändern des ersten Elements eines Arrays
 console.log(autos);
 // Ergebnis: ['Opel', 'Volvo', 'BMW']
 ```
-{% hint style="warning" %}
+{% hint style="working" %}
 Arrays sind eine spezielle Art von Objekt. Es können Objekte in einem Array vorhanden sein.
 {% endhint %}
 

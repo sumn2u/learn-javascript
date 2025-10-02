@@ -25,7 +25,7 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Les mois sont spécifiés de `0` à `11`, si on excède ces index, on débordera sur l'année suivante.
 {% endhint %}
 

@@ -39,7 +39,7 @@ console.log(cars);
 // Résultat: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Les tableaux sont un type spécial d'objets. On peut même stocker des [objects](../objects/) dans un tableau.
 {% endhint %}
 

@@ -42,6 +42,6 @@ async function f() {
 f();
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Kata kunci `await` hanya dapat digunakan di dalam fungsi `async`.
 {% endhint %}

@@ -45,6 +45,6 @@ puntos.sort((a, b) => {return a-b});
 // Resultado: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 El método `sort()` anula la matriz original.
 {% endhint %}

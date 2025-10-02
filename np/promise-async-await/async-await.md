@@ -43,7 +43,7 @@ async function f() {
 f();
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 `प्रतिक्षा` कुञ्जीशब्द केवल `एसिंक` प्रकार्य भित्र प्रयोग गर्न सकिन्छ।
 {% endhint %}

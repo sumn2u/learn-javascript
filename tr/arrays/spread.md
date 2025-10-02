@@ -26,7 +26,7 @@ dizi1 = [...dizi1, ...dizi2];
 console.log(dizi1); //Sonuç: [1, 2, 3, 4, 5, 6, 7]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Spread operatörü yalnızca bu özelliği destekleyen modern tarayıcılarda çalışır. Daha eski tarayıcıları desteklemeniz gerekiyorsa, spread operatörü sözdizimini eşdeğer ES5 koduna dönüştürmek için Babel gibi bir _transpiler_ kullanmanız gerekecektir.
 
 {% endhint %}

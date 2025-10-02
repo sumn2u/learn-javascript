@@ -42,7 +42,7 @@ An arrow function is a compact alternative to traditional functions which has so
 const double =  (x) =>  2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 The `this` keyword in the arrow function represents the object that defined the arrow function.&#x20;
 {% endhint %}
 

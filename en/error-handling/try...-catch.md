@@ -28,7 +28,7 @@ try {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `try...catch` works for runtime errors meaning that the code must be runnable and synchronous.
 {% endhint %}
 

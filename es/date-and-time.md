@@ -25,7 +25,7 @@ new Date(año,mes,dia,hora,minutos,segundos,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Los meses se pueden especificar de `0` a `11`, más de eso resultará en un desbordamiento al año siguiente.
 {% endhint %}
 

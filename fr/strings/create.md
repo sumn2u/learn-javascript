@@ -39,7 +39,7 @@ const message = `Hello, ${name}!`;
 
 Les littéraux de gabarit peuvent également contenir plusieurs lignes et inclure des expressions au sein des espaces réservés.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Les chaînes de caractères ne peuvent être soustraites, multipliées ou divisées.
 {% endhint %}
 

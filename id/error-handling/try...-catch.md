@@ -35,7 +35,7 @@ try {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `try...catch` bekerja untuk kesalahan saat runtime, yang berarti kode harus dapat dijalankan dan bersifat sinkron.
 {% endhint %}
 

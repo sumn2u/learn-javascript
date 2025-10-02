@@ -31,6 +31,6 @@ while (array.length > 0) {
 console.log(array); // Résultat: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `shift` ne fonctionne que sur les tableaux, et pas sur d'autres objets similaires aux tableaux tels que les objets arguments ou les objets NodeList. Si vous devez déplacer des éléments de l'un de ces types d'objets, vous devrez d'abord le convertir en tableau à l'aide de la méthode `Array.prototype.slice()`.
 {% endhint %}

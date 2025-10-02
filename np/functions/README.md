@@ -41,7 +41,7 @@ let double = function (x) {
 const double =  (x) =>  2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 एरो प्रकार्यमा `this` कुञ्जीशब्दले तीर प्रकार्य परिभाषित गर्ने वस्तुलाई प्रतिनिधित्व गर्दछ ।
 {% endhint %}

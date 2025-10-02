@@ -27,6 +27,6 @@ console.log(arr);   //Resultado: [1, 2, 3, 4, 5, 6, 7]
 
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 El operador de propagación solo funciona en navegadores modernos que admiten esta función. Si necesita admitir navegadores más antiguos, deberá utilizar un transpilador como Babel para convertir la sintaxis del operador de extensión a código ES5 equivalente.
 {% endhint %}

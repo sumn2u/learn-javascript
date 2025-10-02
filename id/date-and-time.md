@@ -25,7 +25,7 @@ new Date(tahun, bulan, hari, jam, menit, detik, ms)
 new Date(milidetik)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Bulan dapat ditentukan dari `0` hingga `11`, lebih dari itu akan mengakibatkan overflow ke tahun berikutnya.
 {% endhint %}
 

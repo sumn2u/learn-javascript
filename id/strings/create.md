@@ -38,6 +38,6 @@ const message = `Halo, ${name}!`;
 
 Literal template juga dapat berisi beberapa baris dan dapat mencakup ekspresi apa pun di dalam placeholder.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 String tidak dapat dikurangkan, dikalikan, atau dibagi.
 {% endhint %}

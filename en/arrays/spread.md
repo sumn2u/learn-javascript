@@ -27,6 +27,6 @@ console.log(arr);   //Result: [1, 2, 3, 4, 5, 6, 7]
 
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 The spread operator only works in modern browsers that support the feature. If you need to support older browsers, you will need to use a transpiler like Babel to convert the spread operator syntax to equivalent ES5 code.
 {% endhint %}

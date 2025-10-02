@@ -55,7 +55,7 @@ const age = 30;
 export {name, age};
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Bir dosyada yalnızca bir tane `default` dışa aktarım olabilir!
 {% endhint %}
 

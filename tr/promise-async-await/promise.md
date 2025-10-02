@@ -36,7 +36,7 @@ Burada, `new Promise`'ye bir işlev geçirilir, buna executor da denir ve oluşt
 
 - result - başlangıçta `undefined`, ardından `resolve` üzerine `value` veya `reject` üzerine `error` değişir
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Promise özelliklerine `state` ve `result` erişilemez. Promise'leri işlemek için promise yöntemlerine ihtiyaç vardır.
 {% endhint %}
 
@@ -89,6 +89,6 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // shows "Error: Whoops!" after 1 second
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `Promise.then()` metodunda, her iki callback argümanının da kullanımı isteğe bağlıdır.
 {% endhint %}

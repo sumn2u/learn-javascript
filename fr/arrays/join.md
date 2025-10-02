@@ -24,7 +24,7 @@ console.log(array.join(" "));
 // Résultat: one two three four
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 N'importe quel séparateur peut-être spécifié, mais la virgule est le séparateur par défaut `(,)`.
 {% endhint %}
 

@@ -35,6 +35,6 @@ while (array.length > 0) {
 console.log(array); // Résultat: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `pop` ne fonctionne que sur les tableaux, et non sur d'autres objets similaires aux tableaux tels que les objets arguments ou les objets NodeList. Si vous devez extraire des éléments de l'un de ces types d'objets, vous devrez d'abord le convertir en tableau à l'aide de la méthode `Array.prototype.slice()`.
 {% endhint %}

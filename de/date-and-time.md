@@ -29,7 +29,7 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Monate können von `0` bis `11` angegeben werden, darüber hinaus erfolgt ein Überlauf in das nächste Jahr.
 {% endhint %}
 

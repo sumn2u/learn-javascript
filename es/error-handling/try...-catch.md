@@ -29,7 +29,7 @@ try {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `try...catch` Funciona para errores de tiempo de ejecución, lo que significa que el código debe ser ejecutable y sincrónico.
 {% endhint %}
 

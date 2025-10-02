@@ -84,7 +84,7 @@ console.log(12 % 3); // 0
 
 The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: `c = (a / b) + d`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 JavaScript uses the `+` operator for both addition and concatenation. Numbers are added whereas strings are concatenated.
 {% endhint %}
 
