@@ -1,6 +1,6 @@
 # ✊✋✌️ Rock Paper Scissors Game
 
-![Rock Paper Scissors Preview](../../assets/rps-game.png)
+![Rock Paper Scissors Preview](../../assets/rps-game.PNG)
 
 ## Description
 Build a classic Rock Paper Scissors game where you play against the computer. Choose your move and see who wins!

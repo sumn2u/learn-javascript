@@ -1,6 +1,6 @@
 # 📅 Month Calendar
 
-![Month Calendar Preview](../../assets/calendar.png)
+![Month Calendar Preview](../../assets/calendar.PNG)
 
 ## Description
 Create a simple interactive calendar that displays the days of a selected month and year.

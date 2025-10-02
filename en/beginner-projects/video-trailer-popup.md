@@ -1,6 +1,6 @@
 # 📽️ Video Trailer Popup
 
-![Video Trailer Popup Preview](../../assets/video-trailer.png)
+![Video Trailer Popup Preview](../../assets/video-trailer.PNG)
 
 ## Description
 Create a popup modal that plays a video trailer when triggered. Perfect for movie or product previews!
