@@ -3,6 +3,7 @@ chapter: 19
 pageNumber: 122
 description: In programming, errors can occur while writing code. It could be due to syntactical or logical errors. The process of finding errors can be time-consuming and tricky and is called code debugging.
 ---
+
 # Debugging
 
 In programming, errors can occur while writing code. It could be due to syntactical or logical errors. **Code debugging** is the process of identifying, isolating, and fixing errors, which can be time-consuming and tricky.
@@ -11,18 +12,19 @@ Fortunately, most modern browsers come with built-in debuggers. These debuggers 
 
 ## The console.log() Technique
 
-One of the simplest and most widely used debugging methods is using the `console.log()` function. It helps you track the flow of your code and inspect the values of variables at specific points in execution. 
+One of the simplest and most widely used debugging methods is using the `console.log()` function. It helps you track the flow of your code and inspect the values of variables at specific points in execution.
 
 ```javascript
 function calculateTotal(price, taxRate) {
   const tax = price * taxRate;
-  console.log('Tax calculated:', tax);  // Output for inspection
+  console.log("Tax calculated:", tax); // Output for inspection
   const total = price + tax;
   return total;
 }
 
 calculateTotal(100, 0.2);
 ```
+
 Use `console.log()` to:
 
 - Check if a function is being called.
@@ -42,6 +44,7 @@ A breakpoint is a spot in your code where execution will pause, allowing you to 
 Modern browsers offer developer tools with debugging capabilities.
 
 ### How to Set Breakpoints
+
 1. Open the Sources panel in DevTools.
 2. Navigate to your script file.
 3. Click on the line number where you want execution to pause.
@@ -52,9 +55,10 @@ Once paused, you can:
 - **Step into** – dive into a function call.
 - **Step out** – exit the current function.
 - **Resume** – continue execution until the next breakpoint.
-Breakpoints are non-intrusive and can be added/removed without changing your code.
+  Breakpoints are non-intrusive and can be added/removed without changing your code.
 
 ## Browser Developer Tools
+
 Modern browsers come equipped with powerful developer tools that aid in debugging JavaScript, inspecting HTML and CSS, and monitoring network requests. Here's a brief overview of some essential tools:
 
 **Chrome DevTools:** Google Chrome's developer tools offer a wide range of features for debugging web applications.
@@ -71,6 +75,7 @@ Browsers provide a set of developer tools that allow you to inspect HTML, CSS, a
 We can access them by right-clicking on a web page and selecting "Inspect" or by pressing `F12` or `Ctrl+Shift+I`/ `Cmd + Option + I` (Mac).
 
 ### Key Panels in Developer Tools
+
 - **Console:** Displays logs, errors, and allows executing JS in real time.
 - **Elements / Inspector:** Lets you browse and edit the HTML and CSS.
 - **Sources:** Where you debug JavaScript using breakpoints.
@@ -83,7 +88,7 @@ We can insert the debugger statement in the code to create breakpoints programma
 
 In the DevTools, you can **watch** variables or expressions. This is helpful when debugging complex logic or tracking a variable over time.
 
-- Use the **Watch** panel to track expressions like user.name or cart.length.
+- Use the **Watch** panel to track expressions like `user.name` or `cart.length`.
 - View **Local**, **Closure**, and **Global** scopes to inspect available variables.
 
 ### Stack Trace and Call Stack
@@ -92,7 +97,7 @@ When paused at a breakpoint (or after an error), you can inspect the Call Stack 
 
 - It shows the series of function calls that led to the current point.
 - Clicking on a frame lets you inspect variables in that context.
-Understanding the call stack is vital for fixing unexpected behaviors caused by incorrect function flows.
+  Understanding the call stack is vital for fixing unexpected behaviors caused by incorrect function flows.
 
 ## Common Debugging Strategies
 
@@ -102,4 +107,3 @@ Understanding the call stack is vital for fixing unexpected behaviors caused by 
 - **Search for error messages**: JavaScript errors often contain helpful information.
 - **Check browser compatibility**: Not all browsers behave identically.
 - **Use linters**: Tools like ESLint can catch many common bugs before you run your code.
-

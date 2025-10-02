@@ -3,6 +3,7 @@ chapter: 19
 pageNumber: 152
 description: En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
 ---
+
 # Depuración
 
 En programación, es común que ocurran errores mientras se escribe el código. Estos pueden ser errores sintácticos o lógicos. La depuración de código es el proceso de identificar, aislar y corregir estos errores, lo cual puede ser un proceso complicado y que consume tiempo.
@@ -16,7 +17,7 @@ Una de las formas más simples y populares de depurar código es utilizando la f
 ```javascript
 function calcularTotal(precio, porcentajeImpuesto) {
   const impuesto = precio * porcentajeImpuesto;
-  console.log('Impuesto calculado:', impuesto);  // Salida para inspección
+  console.log("Impuesto calculado:", impuesto); // Salida para inspección
   const total = precio + impuesto;
   return total;
 }
@@ -44,6 +45,7 @@ Un punto de interrupción es una línea en tu código donde la ejecución se det
 Los navegadores modernos ofrecen herramientas para desarrolladores con capacidades de depuración.
 
 ### Cómo establecer puntos de interrupción
+
 1. Abre el panel Sources en las DevTools.
 2. Navega hasta tu archivo de script.
 3. Haz clic en el número de línea donde quieres que la ejecución se detenga.
@@ -70,10 +72,12 @@ Los navegadores modernos vienen equipados con potentes herramientas de desarroll
 **Safari Web Inspector:** Web Inspector de Safari es un sólido conjunto de herramientas para depurar y crear perfiles de aplicaciones web.
 
 ### Acceso a las herramientas del navegador
+
 Los navegadores ofrecen herramientas para inspeccionar HTML, CSS y JavaScript. Podemos acceder a ellas:
 Haciendo clic derecho sobre la página y seleccionando "Inspeccionar" o presionando `F12` o `Ctrl + Shift + I` / `Cmd + Option + I` (Mac)
 
 ### Paneles clave en las herramientas del navegador
+
 - **Console (Consola)**: Muestra registros, errores y permite ejecutar JavaScript en tiempo real.
 - **Elements / Inspector**: Permite examinar y modificar el HTML y CSS del documento.
 - **Sources**: Lugar donde se depura JavaScript usando puntos de interrupción.
@@ -83,17 +87,19 @@ Haciendo clic derecho sobre la página y seleccionando "Inspeccionar" o presiona
 Podemos insertar la instrucción debugger directamente en el código para crear un punto de interrupción de forma programada. Cuando el código encuentra debugger, se pausará la ejecución y se abrirán las herramientas de desarrollo del navegador (si están abiertas).
 
 ### Expresiones de vigilancia y alcance (Watch & Scope)
+
 En las DevTools puedes vigilar variables o expresiones. Esto es útil cuando depuras lógica compleja o haces seguimiento de una variable a lo largo del tiempo.
 
-- Usa el panel Watch para seguir expresiones como usuario.nombre o carrito.length.
+- Usa el panel Watch para seguir expresiones como `usuario.nombre` o `carrito.length`.
 - Examina los alcances Local, Closure y Global para inspeccionar las variables disponibles en cada contexto.
 
 ### Rastreo de pila y Call Stack
+
 Cuando el código se detiene en un punto de interrupción (o tras un error), puedes inspeccionar el panel de Call Stack:
 
 - Muestra la secuencia de funciones llamadas que llevaron hasta el punto actual.
 - Al hacer clic en un marco (frame), puedes examinar variables en ese contexto.
-Entender la pila de llamadas es esencial para corregir comportamientos inesperados producidos por un flujo de ejecución incorrecto.
+  Entender la pila de llamadas es esencial para corregir comportamientos inesperados producidos por un flujo de ejecución incorrecto.
 
 ## Estrategias comunes de depuración
 
