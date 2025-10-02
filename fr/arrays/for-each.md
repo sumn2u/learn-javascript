@@ -41,6 +41,6 @@ numbers.forEach((number) => console.log(number * 2));
 
 La méthode `forEach` ne modifie pas le tableau original. Elle itère simplement les éléments les uns après les autres et exécute le colback sur chacun d'entre eux.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `forEach()` n'est pas exécutée dans le cas d'une instruction vide.
 {% endhint %}

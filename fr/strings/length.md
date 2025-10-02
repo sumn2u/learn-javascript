@@ -19,6 +19,6 @@ console.log(emptyStringSize);
 
 La propriété `length` d'une chaîne vide est `0`.&#x20;
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La propriété `length`est en lecture seule, cela signifie qu'il est impossible de lui assigner une nouvelle valeur.
 {% endhint %}

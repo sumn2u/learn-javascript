@@ -36,7 +36,7 @@ console.log(cars);
 // Result: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Diziler, özel bir nesne türüdür. Bir dizide [nesneler](../objects/) bulunabilir.
 {% endhint %}
 

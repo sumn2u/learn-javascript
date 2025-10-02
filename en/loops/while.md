@@ -24,6 +24,6 @@ while (i < 5) {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 &#x20;Be careful to avoid infinite looping if the condition is always true!
 {% endhint %}

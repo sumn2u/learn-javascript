@@ -46,6 +46,6 @@ points.sort((a, b) => {
 // Résultat: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La méthode `sort()` écrase le tableau original.
 {% endhint %}

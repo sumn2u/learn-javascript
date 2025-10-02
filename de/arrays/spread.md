@@ -28,6 +28,6 @@ console.log(arr);   // Ergebnis: [1, 2, 3, 4, 5, 6, 7]
 
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Der Spread-Operator funktioniert nur in modernen Browsern, die diese Funktion unterstützen. Wenn Sie ältere Browser unterstützen müssen, müssen Sie einen Transpiler wie Babel verwenden, um die Syntax des Spread-Operators in äquivalenten ES5-Code umzuwandeln.
 {% endhint %}

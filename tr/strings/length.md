@@ -19,6 +19,6 @@ console.log(emptyStringSize);
 
 Boş bir dizenin length özelliği `0`'dır.&#x20;
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `length` özelliği salt okunur bir özelliktir, bu nedenle ona yeni bir değer atayamazsınız.
 {% endhint %}

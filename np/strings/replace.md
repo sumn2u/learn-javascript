@@ -16,7 +16,7 @@ console.log(new_str);
 // Result: Hi World!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 [परिमार्जकसँग](../regular-expression.md) नियमित अभिव्यक्तिको सबै उदाहरणहरूमा मान प्रतिस्थापन गर्न सेट गरिएको छ।
 

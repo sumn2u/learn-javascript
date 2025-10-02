@@ -20,6 +20,6 @@ console.log(emptyStringSize);
 
 La propiedad length de una cadena vacía es `0`.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La propiedad `length` es una propiedad de solo lectura, así que no puede asignarle un nuevo valor.
 {% endhint %}

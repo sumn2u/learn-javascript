@@ -43,6 +43,6 @@ points.sort((a, b) => {
 // Hasil: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Metode `sort()` mengganti array asli.
 {% endhint %}

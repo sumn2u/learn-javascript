@@ -35,7 +35,7 @@ try {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `try...catch` fonctionne pour les erreurs d'exécution, ce qui signifie que le code doit être exécutable et synchrone.
 {% endhint %}
 

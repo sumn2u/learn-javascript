@@ -24,6 +24,6 @@ while (i < 5) {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 ¡Tenga cuidado de evitar bucles infinitos si la condición siempre es verdadera!
 {% endhint %}

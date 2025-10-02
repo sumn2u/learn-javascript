@@ -24,7 +24,7 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Months can be specified from `0` to `11`, more than that will result in an overflow to the next year.
 {% endhint %}
 

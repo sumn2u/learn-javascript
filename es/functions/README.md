@@ -43,7 +43,7 @@ Una función de flecha es una alternativa compacta a las funciones tradicionales
 const double =  (x) =>  2 * x;
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La palabra clave `this` en la función de flecha representa el objeto que definió la función de flecha.
 {% endhint %}
 

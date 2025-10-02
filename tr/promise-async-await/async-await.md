@@ -41,6 +41,6 @@ async function f() {
 f();
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `await` anahtar kelimesi yalnızca `async` fonksiyonları içinde kullanılabilir.
 {% endhint %}

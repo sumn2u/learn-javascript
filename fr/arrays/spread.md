@@ -27,6 +27,6 @@ arr = [...arr, ...arr1];
 console.log(arr); //Résultat: [1, 2, 3, 4, 5, 6, 7]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 L'opérateur de décomposition spread fonctionne uniquement avec les navigateurs modernes qui supportent la fonctionnalités. Si vous souhaitez l'utiliser avec d'anciens navigateurs, vous devrez utiliser un transpiler comme Babel pour convertir la syntaxe du spread dans son équivalent ES5.
 {% endhint %}

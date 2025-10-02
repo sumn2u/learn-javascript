@@ -40,7 +40,7 @@ zahlen.forEach(zahl => console.log(zahl * 2));
 
 Die `forEach`-Methode ändert nicht das ursprüngliche Array. Sie durchläuft lediglich die Elemente des Arrays und führt die bereitgestellte Funktion für jedes Element aus.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Die `forEach()`-Methode wird nicht für die leere Anweisung ausgeführt.
 {% endhint %}
 ```

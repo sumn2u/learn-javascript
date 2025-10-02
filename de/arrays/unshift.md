@@ -13,7 +13,7 @@ array.unshift(-5);  // 4
 
 // ERGEBNIS: array = [-5 , 0, 5, 10];
 ```
-{% hint style="warning" %}
+{% hint style="working" %}
 Die Methode unshift() überschreibt das ursprüngliche Array.
 {% endhint %}
 

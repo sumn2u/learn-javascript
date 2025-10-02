@@ -34,7 +34,7 @@ try {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `try...catch` 'in kullanılabilmesi için kodun çalışabilir ve senkronize olması gerekir.
 {% endhint %}
 

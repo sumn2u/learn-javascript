@@ -29,7 +29,7 @@ let prototypeAge = child.age;
 // 26, because child does not have its own age property.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 'मेट्नुहोस्' अपरेटरले वस्तुको आफ्नै गुणहरूमा मात्र काम गर्दछ, र वंशानुगत गुणहरूमा होइन। यसले 'कन्फिगरेसन योग्य' विशेषता 'गलत' मा सेट गरिएको गुणहरूमा पनि काम गर्दैन।
 

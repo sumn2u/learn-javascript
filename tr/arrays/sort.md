@@ -45,6 +45,6 @@ puanlar.sort((a, b) => {
 // Sonuç: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `sort()` yöntemi, orijinal diziyi değiştirir.
 {% endhint %}

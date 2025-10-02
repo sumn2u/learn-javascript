@@ -41,6 +41,6 @@ numbers.forEach((number) => console.log(number * 2));
 
 &#x20;`forEach` fonksiyonu orijinal diziyi değiştirmez. Sadece dizinin elemanları üzerinde işlem yapar ve her eleman için sağlanan fonksiyonu çalıştırır.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `forEach()` fonksiyonu bu şekilde tek başına çağrılmaz.
 {% endhint %}

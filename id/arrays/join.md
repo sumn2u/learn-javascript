@@ -24,7 +24,7 @@ console.log(array.join(" "));
 // Hasil: satu dua tiga empat
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Anda dapat menentukan pemisah apa pun, tetapi yang default adalah koma (`,`).
 {% endhint %}
 

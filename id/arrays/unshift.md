@@ -15,7 +15,7 @@ array.unshift(-5); // 4
 // HASIL: array = [-5 , 0, 5, 10];
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Metode `unshift()` menimpa array asli.
 {% endhint %}
 

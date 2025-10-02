@@ -39,7 +39,7 @@ console.log(coches);
 // Resultado: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Las matrices son un tipo especial de objeto. Uno puede tener [objetos](../objects/) en una matriz.
 {% endhint %}
 

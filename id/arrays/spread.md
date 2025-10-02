@@ -27,6 +27,6 @@ arr = [...arr, ...arr1];
 console.log(arr); //Hasil: [1, 2, 3, 4, 5, 6, 7]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Operator spread hanya berfungsi di peramban modern yang mendukung fitur tersebut. Jika Anda perlu mendukung peramban yang lebih tua, Anda perlu menggunakan transpiler seperti Babel untuk mengonversi sintaks operator spread menjadi kode ES5 yang setara.
 {% endhint %}

@@ -42,6 +42,6 @@ async function f() {
 f();
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 La palabra clave `await` solo se puede usar dentro de una función `async`.
 {% endhint %}

@@ -34,7 +34,7 @@ while (array.length > 0) {
 console.log(array); // Result: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 The `pop` method only works on arrays, and not on other objects that are similar to arrays such as arguments objects or NodeList objects. If you need to pop elements from one of these types of objects, you will need to convert it to an array first using the `Array.prototype.slice()` method.
 
 {% endhint %}

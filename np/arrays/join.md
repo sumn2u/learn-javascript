@@ -23,7 +23,7 @@ console.log(array.join(" "));
 // Result: one two three four
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 कुनै पनि विभाजक निर्दिष्ट गर्न सकिन्छ तर पूर्वनिर्धारित अल्पविराम `(,)` हो।
 {% endhint %}

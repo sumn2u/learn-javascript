@@ -55,7 +55,7 @@ const age = 30;
 export { name, age };
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 एउटा फाइलमा एउटा मात्र पूर्वनिर्धारित 'निर्यात' हुन सक्छ ।
 {% endhint %}

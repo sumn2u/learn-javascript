@@ -14,7 +14,7 @@ array.unshift(-5);  // 4
 // RESULT: array = [-5 , 0, 5, 10];
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 `unshift()` मेथठले मूल एरेलाई अधिलेखन९overwrite) गर्दछ।
 

@@ -58,7 +58,7 @@ const age = 30;
 export { name, age };
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Hanya dapat ada satu ekspor `default` dalam satu file.
 {% endhint %}
 

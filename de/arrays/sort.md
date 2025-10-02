@@ -46,6 +46,6 @@ punkte.sort((a, b) => {return a-b});
 // Ergebnis: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Die sort()-Methode überschreibt das ursprüngliche Array.
 {% endhint %}

@@ -85,7 +85,7 @@ let re2 = /xyz/;
 | `toString()`  | नियमित एक्स्रेसनको स्ट्रिङ मान फर्काउँछ                                  |
 
 
-{% hint style="warning" %}
+{% hint style="working" %}
 एक `complie()` विधि नियमित अभिव्यक्ति को अनुपालन गर्दछ र अवमूल्यन गरिएको छ।
 
 {% endhint %}

@@ -28,7 +28,7 @@ let prototypeAge = child.age;
 // 26, car child n'a pas de propriété age.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 L'opérateur `delete` marche uniquement sur les propriétés de l'objet (définis sur l'objet) mais pas ceux qui sont hérités.  Il ne marche pas non plus sur les propriété qui ont l'attribut `configurable` mis à `false`.
 {% endhint %}
 

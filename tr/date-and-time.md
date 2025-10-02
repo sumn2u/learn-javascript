@@ -23,7 +23,7 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 new Date(milliseconds)
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Aylar `0` ile `11` arasında belirtilebilir, daha fazlası bir sonraki yıla akacaktır.
 {% endhint %}
 

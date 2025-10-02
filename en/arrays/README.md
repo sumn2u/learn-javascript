@@ -38,7 +38,7 @@ console.log(cars);
 // Result: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Arrays are a special type of object.  One can have [objects](../objects/) in an array.
 {% endhint %}
 

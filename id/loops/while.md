@@ -25,6 +25,6 @@ while (i < 5) {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 &#x20;Hati-hati untuk menghindari perulangan tak terbatas jika kondisinya selalu benar!
 {% endhint %}

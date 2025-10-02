@@ -24,7 +24,7 @@ console.log(matriz.join(" "));
 // Resultado: uno dos tres cuatro
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Se puede especificar cualquier separador pero el predeterminado es una coma `(,)`.
 {% endhint %}
 

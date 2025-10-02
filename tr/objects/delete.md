@@ -29,7 +29,7 @@ let prototypeAge = child.age;
 // 26, because child does not have its own age property.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `delete` operatörü sadece bir objenin kendi özellikleri üzerinde çalışır, miras alınan özellikler üzerinde çalışmaz. Ayrıca `configurable` niteliği `false` olarak ayarlanmış özellikler üzerinde de çalışmaz.
 {% endhint %}
 

@@ -34,7 +34,7 @@ cars[0] = "Opel"; // changing the first element of an array
 console.log(cars);          // Output: ['Opel', 'Volvo', 'BMW']
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 एरेहरू एक विशेष प्रकारको अब्जेक्ट(Object) अब्जेक्ट हो। एरेमा [अब्जेक्टहरू](../objects/) हुन सक्छन्।
 {% endhint %}

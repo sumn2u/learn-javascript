@@ -34,7 +34,7 @@ The internal properties of `promise` object returned by the `new Promise` constr
 * `state` - initially `pending,` then changes to either `fulfill` upon `resolve` or `rejected` when `reject` is called
 * `result` - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
 
-{% hint style="warning" %}
+{% hint style="working" %}
 One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.
 {% endhint %}
 
@@ -87,6 +87,6 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // shows "Error: Whoops!" after 1 second
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 In the `Promise.then()` method, both callback arguments are optional.
 {% endhint %}

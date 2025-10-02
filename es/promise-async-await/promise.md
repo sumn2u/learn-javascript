@@ -34,7 +34,7 @@ Las propiedades internas del objeto `promise` devuelta por el constructor `new P
 * `state` - inicialmente `pending`, luego cambia a `fulfill` al resolverse o `rejected` cuando se llama a `reject`
 * `result` - inicialmente `undefined`, luego cambia a `value` al resolverse `resolve` o `error` cuando se llama a `reject`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 No se puede acceder a las propiedades de la promesa: `state` y `result`. Se necesitan métodos de promesa para manejar las promesas.
 {% endhint %}
 
@@ -87,6 +87,6 @@ let promesaTres = new Promise((resuelve, rechaza) => {
 promesaTres.catch(alert); // muestra "Error: ¡vaya!" después de un segundo
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 En el método `Promise.then()`, ambas retrollamadas son opcionales.
 {% endhint %}

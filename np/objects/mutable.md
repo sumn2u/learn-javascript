@@ -28,7 +28,7 @@ object.foo = 'quux'; // Modify property 'foo'
 delete object.baz; // Delete property 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 आदिम मानहरू (जस्तै संख्या र स्ट्रिङहरू) अपरिवर्तनीय छन्, जबकि वस्तुहरू (जस्तै एरे र वस्तुहरू) परिवर्तनशील छन्।
 {% endhint %}

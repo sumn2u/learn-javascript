@@ -84,7 +84,7 @@ console.log(12 % 3); // 0
 
 El intérprete de JavaScript funciona de izquierda a derecha. Se pueden utilizar paréntesis, como en matemáticas, para separar y agrupar expresiones.: `c = (a / b) + d`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 JavaScript utiliza el operador `+` tanto para la suma como para la concatenación. Los números se suman mientras que las cadenas se concatenan.
 {% endhint %}
 

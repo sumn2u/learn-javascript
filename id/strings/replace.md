@@ -16,7 +16,7 @@ console.log(new_str);
 // Hasil: Hi Dunia!
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Untuk mengganti nilai pada semua instansi dari ekspresi reguler, tambahkan modifikasi `g`.
 {% endhint %}
 

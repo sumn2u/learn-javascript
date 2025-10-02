@@ -37,7 +37,7 @@ const mensaje = `¡Hola, ${nombre}!`;
 
 Los literales de plantilla también pueden contener varias líneas y pueden incluir cualquier expresión dentro de los marcadores de posición.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Las cadenas no se pueden restar, multiplicar ni dividir.
 {% endhint %}
 

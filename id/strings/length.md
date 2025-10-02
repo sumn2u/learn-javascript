@@ -19,6 +19,6 @@ console.log(ukuranStringKosong);
 
 Properti panjang dari string kosong adalah `0`.
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Properti `length` adalah properti hanya-baca, sehingga Anda tidak dapat memberikan nilai baru kepadanya.
 {% endhint %}

@@ -46,7 +46,7 @@ console.log(12 % 3); // 0
 
 L'interpréteur JavaScript fonctionne de la gauche vers la droite. Il est donc impératif d'utiliser les parenthèses pour séparer et regrouper les expressions: `c = (a / b) + d`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 En JavaScript on utilise aussi bien l'opérateur d'addition `+` pour réaliser des calculs que des concaténations. L'usage est implicite en fonction du type: les nombres seront additionnés, alors que les chaînes de caractères seront concaténées.
 {% endhint %}
 

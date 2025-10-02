@@ -29,7 +29,7 @@ let prototipoEdad = niño.edad;
 // 26, porque el niño no tiene su propia propiedad de edad.
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 El operador `delete` solo funciona con las propiedades propias de un objeto y no con las propiedades heredadas. Tampoco funciona en propiedades que tienen el atributo `configurable` establecido en `false`.
 {% endhint %}

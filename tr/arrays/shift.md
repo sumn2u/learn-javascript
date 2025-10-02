@@ -30,7 +30,7 @@ while (array.length > 0) {
 console.log(array); // Sonuç: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 `shift` fonksiyonu yalnızca diziler üzerinde çalışır, argüman nesneleri veya NodeList nesneleri gibi dizilere benzeyen diğer nesneler üzerinde çalışmaz. Bu tür nesnelerden birinin öğelerini kaydırmanız gerekiyorsa, önce `Array.prototype.slice()` fonksiyonunu kullanarak onu bir diziye dönüştürmeniz gerekir.
 
 {% endhint %}

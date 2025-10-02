@@ -44,6 +44,6 @@ points.sort((a, b) => {return a-b});
 // Result: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 The `sort()` method overrides the original array.
 {% endhint %}

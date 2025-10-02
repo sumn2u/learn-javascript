@@ -31,6 +31,6 @@ object.foo = 'quux'; // Changer la propriété 'foo'
 delete object.baz; // Supprimer la propriété 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Les valeurs primitives comme les nombres et les chaînes sont immutables tandis que les objets comme les tableaux sont mutables.
 {% endhint %}

@@ -35,7 +35,7 @@ while (array.length > 0) {
 console.log(array); // Result: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Metode `pop` hanya berfungsi pada array, dan tidak pada objek lain yang mirip dengan array, seperti objek arguments atau objek NodeList. Jika Anda perlu menghapus elemen dari salah satu jenis objek ini, Anda perlu mengonversinya menjadi array terlebih dahulu menggunakan metode `Array.prototype.slice()`.
 
 {% endhint %}

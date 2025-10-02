@@ -14,7 +14,7 @@ matriz.unshift(-5);  // 4
 // RESULTADO: matriz = [-5 , 0, 5, 10];
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 El método `unshift()` sobrescribe la matriz original.
 {% endhint %}
 

@@ -31,6 +31,6 @@ while (array.length > 0) {
 console.log(array); // Ergebnis: []
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Die "shift"-Methode funktioniert nur bei Arrays und nicht bei anderen Objekten, die Arrays ähneln, wie zum Beispiel Argument-Objekten oder NodeList-Objekten. Wenn Sie Elemente aus einem dieser Arten von Objekten verschieben müssen, müssen Sie es zuerst in ein Array umwandeln, indem Sie die Methode Array.prototype.slice() verwenden.
 {% endhint %}

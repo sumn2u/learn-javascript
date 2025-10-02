@@ -24,7 +24,7 @@ while (i < 5) {
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 
 यदि अवस्था सधैं साँचो छ भने अनन्त लूपिङबाट जोगिन होसियार हुनुहोस्!
 {% endhint %}

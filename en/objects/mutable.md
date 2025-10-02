@@ -28,6 +28,6 @@ object.foo = 'quux'; // Modify property 'foo'
 delete object.baz; // Delete property 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Primitive values (such as numbers and strings) are immutable, while objects (such as arrays and objects) are mutable.
 {% endhint %}

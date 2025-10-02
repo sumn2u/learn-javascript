@@ -28,6 +28,6 @@ objeto.foo = 'quux'; // Modifica la propiedad 'foo'
 delete objeto.baz; // Borra la propiedad 'baz'
 ```
 
-{% hint style="warning" %}
+{% hint style="working" %}
 Los valores primitivos (como números y cadenas) son inmutables, mientras que los objetos (como matrices y objetos) son mutables.
 {% endhint %}

@@ -45,7 +45,7 @@ console.log(12 % 3); // 0
 
 JavaScript yorumlayıcısı soldan sağa doğru çalışır. İfadeleri ayırmak ve gruplamak için matematikte olduğu gibi parantezler kullanılabilir: `c = (a / b) + d`
 
-{% hint style="warning" %}
+{% hint style="working" %}
 JavaScript hem toplama hem de birleştirme için `+` operatörü kullanır. Sayılar eklenirken, dizeler (**string**) birleştirilir.
 {% endhint %}
 
