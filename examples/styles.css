@@ -1,0 +1,161 @@
+/* ---------- Base styles ---------- */
+body {
+    background-color: #f2f4f7;
+    color: #1e1e1e;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d6cdf;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Containers ---------- */
+.parent-container {
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 360px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 3rem;
+    transform: scale(1.2);
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* ---------- Input + Button ---------- */
+.city-name-input {
+    flex: 1;
+    padding: 0.6rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    color: #1e293b;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.city-name-input:focus {
+    border-color: #b1b1b1;
+    box-shadow: 0 2px 5px 3px #9097a133;
+}
+
+.srch-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600; /* <-- Bold text */
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.srch-btn:hover {
+    background-color: #2563eb;
+}
+
+.srch-btn:active {
+    transform: scale(0.97);
+}
+
+/* ---------- Outputs ---------- */
+.outputs-container {
+    border: 2px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+.city-name-output {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2563eb;
+}
+
+.temp-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+/* ---------- Text data boxes ---------- */
+.text-container-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.text-container-parent div {
+    flex: 1;
+    border: 2px solid #e2e8f0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.text-container-parent div p {
+    margin: 0;
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 1rem;
+}
+
+.text-container-parent div span {
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .parent-container {
+        transform: scale(1); /* normal size */
+        margin-top: 1.5rem;
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 480px) {
+    .parent-container {
+        transform: scale(0.80); /* smaller size */
+        margin-top: 1rem;
+    }
+}
