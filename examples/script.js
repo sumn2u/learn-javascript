@@ -27,7 +27,9 @@ async function getWeatherInfo(city) {
 		const { feels_like, temp, humidity } = res.main;
 		const { speed } = res.wind;
 		const name = res.name;
-		assignWeatherDetails(speed, temp, humidity, feels_like, name);
+		const desc = res.weather[0].main;
+		console.log(res.weather[0].description);
+		assignWeatherDetails(speed, temp, humidity, feels_like, name, desc);
 	} catch (e) {
 		document.querySelector(".city-name-input").value = "";
 		console.log(e);
@@ -42,9 +44,9 @@ city.addEventListener("keydown", (event) => {
 	}
 });
 
-function assignWeatherDetails(s, t, h, fl, n) {
+function assignWeatherDetails(s, t, h, fl, n, desc) {
 	windspeed.innerHTML = s;
-	temp.innerHTML = t + "<sup>o</sup>C";
+	temp.innerHTML = t + "<sup>o</sup>C" + `<p>${desc}</p>`;
 	humidity.innerHTML = h;
 	feels_like.innerHTML = fl + "<sup>o</sup>C";
 	cityOp.innerHTML = n;
