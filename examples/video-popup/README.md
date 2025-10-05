@@ -34,11 +34,11 @@ video-modal/
 The `index.html` file defines the structure of the webpage. It includes:
 
 #### **Key Elements**
-- `<div class="movie-container">` — Wraps all content like the movie thumbnail, title, description, and button.
+- `<div class="movie-card">` — Wraps all content like the movie thumbnail, title, description, and button.
 - `<img>` — Displays the movie’s thumbnail or poster image.
 - `<h1>` — The movie title.
 - `<p>` — A short movie description or tagline.
-- `<button id="openModal">` — Button to trigger the modal popup.
+- `<button id="openModalBtn">` — Button to trigger the modal popup.
 - `<div id="videoModal" class="modal">` — The modal container that holds the video player.
 - `<span class="close">&times;</span>` — The close icon (×) used to close the modal.
 - `<video>` — The HTML5 video element that plays the trailer inside the modal.
@@ -92,9 +92,9 @@ The `script.js` file manages all interactions between the user and the modal.
 1. **Element References**
    ```js
    const modal = document.getElementById("videoModal");
-   const btn = document.getElementById("openModal");
-   const span = document.getElementsByClassName("close")[0];
-   const video = document.getElementById("trailerVideo");
+   const btn = document.getElementById("openModalBtn");
+   const span = document.getElementById("closeModalBtn");
+   const video = document.getElementById("trailer");
    ```
    These lines reference the key DOM elements for manipulation.
 
