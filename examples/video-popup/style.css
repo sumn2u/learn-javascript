@@ -1,0 +1,177 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Movie card container */
+.movie-card {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin: 10px 0 5px;
+}
+
+.popup-title{
+  font-size: 24px;
+  margin: 10px;
+}
+
+.movie-description {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+/* Trigger button */
+.btn {
+  background: #e50914;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  padding: 10px;
+}
+.modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Video */
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ============================= */
+/*        Responsive Styles       */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .movie-card {
+    max-width: 90%;
+    padding: 16px;
+  }
+  .movie-title {
+    font-size: 20px;
+  }
+  .movie-description {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  body {
+    flex-direction: column;
+  }
+  .movie-card {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .thumbnail {
+    border-radius: 8px;
+  }
+  .movie-title {
+    font-size: 18px;
+  }
+  .movie-description {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 15px;
+    width: 100%;
+  }
+  .close-btn {
+    font-size: 24px;
+    right: 10px;
+    top: 8px;
+  }
+  .modal-content {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
