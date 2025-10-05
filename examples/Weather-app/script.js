@@ -16,7 +16,7 @@ async function getWeatherInfo(city) {
 		}
 
 		let res = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=6244ab888f079565d5ce1deabddc3f77`
+			`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 		);
 		console.log(res);
 		if (!res.ok) {
