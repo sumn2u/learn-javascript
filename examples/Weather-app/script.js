@@ -6,7 +6,7 @@ const windspeed = document.querySelector(".windspeed");
 const btn = document.querySelector(".srch-btn");
 const cityOp = document.querySelector(".city-name-output");
 
-// IMPORTANT: Replace "YOUR_API_KEY" with your actual OpenWeatherMap API key."6244ab888f079565d5ce1deabddc3f77"
+// IMPORTANT: Replace "YOUR_API_KEY" with your actual OpenWeatherMap API key.
 const apiKey = "YOUR_API_KEY";
 async function getWeatherInfo(city) {
 	try {
