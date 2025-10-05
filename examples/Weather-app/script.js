@@ -6,7 +6,8 @@ const windspeed = document.querySelector(".windspeed");
 const btn = document.querySelector(".srch-btn");
 const cityOp = document.querySelector(".city-name-output");
 
-const apiKey = "6244ab888f079565d5ce1deabddc3f77";
+// IMPORTANT: Replace "YOUR_API_KEY" with your actual OpenWeatherMap API key."6244ab888f079565d5ce1deabddc3f77"
+const apiKey = "YOUR_API_KEY";
 async function getWeatherInfo(city) {
 	try {
 		console.log(city);
@@ -15,11 +16,15 @@ async function getWeatherInfo(city) {
 		}
 
 		let res = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+			`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=6244ab888f079565d5ce1deabddc3f77`
 		);
 		console.log(res);
 		if (!res.ok) {
-			throw Error("Error occured.Could not find the city ");
+			if (res.status === 404) {
+				throw Error("City not found");
+			} else if (res.status === 401) {
+				throw Error("Access denied.Check your api key ");
+			}
 		}
 		res = await res.json();
 		console.log(res);
@@ -28,7 +33,6 @@ async function getWeatherInfo(city) {
 		const { speed } = res.wind;
 		const name = res.name;
 		const desc = res.weather[0].main;
-		console.log(res.weather[0].description);
 		assignWeatherDetails(speed, temp, humidity, feels_like, name, desc);
 	} catch (e) {
 		document.querySelector(".city-name-input").value = "";
@@ -50,9 +54,26 @@ function assignWeatherDetails(s, t, h, fl, n, desc) {
 	humidity.innerHTML = h;
 	feels_like.innerHTML = fl + "<sup>o</sup>C";
 	cityOp.innerHTML = n;
+	// Use textContent to prevent XSS vulnerabilities
+	windspeed.textContent = s;
+	humidity.textContent = h;
+	cityOp.textContent = n;
+
+	temp.innerHTML = "";
+	feels_like.innerHTML = "";
+
+	temp.textContent = t;
+	temp.insertAdjacentHTML("beforeend", "<sup>o</sup>C");
+	const descPara = document.createElement("p");
+	descPara.textContent = desc;
+	temp.appendChild(descPara);
+
+	feels_like.textContent = fl;
+	feels_like.insertAdjacentHTML("beforeend", "<sup>o</sup>C");
+
 	city.value = "";
 }
 
 window.addEventListener("load", () => {
-	getWeatherInfo("kurnool");
+	getWeatherInfo("London");
 });
