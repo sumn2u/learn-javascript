@@ -40,7 +40,7 @@ The `index.html` file defines the structure of the webpage. It includes:
 - `<p>` — A short movie description or tagline.
 - `<button id="openModalBtn">` — Button to trigger the modal popup.
 - `<div id="videoModal" class="modal">` — The modal container that holds the video player.
-- `<span class="close">&times;</span>` — The close icon (×) used to close the modal.
+- `<button class="close-btn" id="closeModalBtn">&times;</button>` — The close icon (×) used to close the modal.
 - `<video>` — The HTML5 video element that plays the trailer inside the modal.
 
 These elements are organized in a clean hierarchy to ensure readability and easy maintenance.
@@ -91,41 +91,43 @@ The `script.js` file manages all interactions between the user and the modal.
 #### **Functions Explained**
 1. **Element References**
    ```js
-   const modal = document.getElementById("videoModal");
-   const btn = document.getElementById("openModalBtn");
-   const span = document.getElementById("closeModalBtn");
-   const video = document.getElementById("trailer");
+    const openBtn = document.getElementById("openModalBtn");
+    const closeBtn = document.getElementById("closeModalBtn");
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("trailer");
+
    ```
    These lines reference the key DOM elements for manipulation.
 
 2. **Open Modal Functionality**
    ```js
-   btn.onclick = function() {
-       modal.style.display = "flex";
-       video.play();
-   }
+    openBtn.addEventListener("click", () => {
+      modal.classList.add("active");
+      video.play();
+    });
+
    ```
    When the **Play Trailer** button is clicked, this function makes the modal visible and starts playing the video.
 
 3. **Close Modal Functionality**
    ```js
-   span.onclick = function() {
-       modal.style.display = "none";
-       video.pause();
-       video.currentTime = 0;
-   }
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("active");
+      video.pause();
+      video.currentTime = 0; // reset to beginning
+    });
    ```
    When the close icon (×) is clicked, the modal hides, the video pauses, and the playback resets.
 
 4. **Outside Click Close**
    ```js
-   window.onclick = function(event) {
-       if (event.target == modal) {
-           modal.style.display = "none";
-           video.pause();
-           video.currentTime = 0;
-       }
-   }
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("active");
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
    ```
    This ensures that clicking **outside the modal content** also closes the popup and stops the video.
 
