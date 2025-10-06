@@ -18,6 +18,7 @@ body {
 .game-container {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -25,6 +26,7 @@ body {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 /* Header */
 .game-header {
@@ -342,7 +344,7 @@ body {
     padding: 1rem;
 }
 
-/* Animations */
+/* Shake animation */
 @keyframes shake {
     0%, 100% {
         transform: translateX(0);
@@ -358,6 +360,19 @@ body {
 .shake {
     animation: shake 0.5s ease-in-out;
 }
+
+/* Respect users' reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .choice-btn.selected,
+    .shake {
+        animation: none !important;
+    }
+
+    .score {
+        transition: none !important;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
