@@ -31,7 +31,7 @@ A classic Rock Paper Scissors game built with HTML, CSS, and JavaScript that dem
 
 **CSS Concepts:**
 - **Responsive Design** - Mobile-first approach with media queries
-- **CSS Grid & Flexbox** - Layout management
+- **Flexbox** - Layout management
 - **Animations** - `@keyframes` for smooth transitions
 - **Modern Styling** - Gradients, backdrop-filter, and shadows
 
