@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-year" class="nav-btn">&laquo;</button>
+            <button id="prev-month" class="nav-btn">&lt;</button>
+            <h1 id="month-year">October 2025</h1>
+            <button id="next-month" class="nav-btn">&gt;</button>
+            <button id="next-year" class="nav-btn">&raquo;</button>
+        </div>
+
+        <div class="calendar-grid">
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div id="calendar-days" class="days"></div>
+        </div>
+
+        <div class="calendar-controls">
+            <button id="today-btn" class="control-btn">Today</button>
+            <div class="quick-nav">
+                <select id="month-select">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+                <input type="number" id="year-input" min="1900" max="2100">
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Modal -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-date">Event Details</h2>
+            <div id="event-list"></div>
+            <div class="event-form">
+                <input type="text" id="event-title" placeholder="Event title" maxlength="50">
+                <button id="add-event-btn">Add Event</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
