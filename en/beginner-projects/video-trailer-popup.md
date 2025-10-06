@@ -21,3 +21,12 @@ Create a popup modal that plays a video trailer when triggered. Perfect for movi
 Add autoplay and pause video when popup is closed.
 
 
+## Live Demo
+<div align="center">
+  <iframe src="https://codesandbox.io/embed/zsvp9c?view=preview"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="video popup"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+</div>
