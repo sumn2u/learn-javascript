@@ -36,7 +36,7 @@
                     <h3 id="playerChoiceText">Make your move!</h3>
                 </div>
 
-                <div class="result-display" id="gameResult">
+               <div class="result-display" id="gameResult" role="status" aria-live="polite" aria-atomic="true">
                     <h2>Choose your move to start!</h2>
                 </div>
 
@@ -48,21 +48,21 @@
             </div>
 
             <div class="controls">
-                <button class="choice-btn rock" id="rockBtn" data-choice="rock">
-                    <span class="emoji">🪨</span>
-                    <span class="label">Rock</span>
-                </button>
-                <button class="choice-btn paper" id="paperBtn" data-choice="paper">
-                    <span class="emoji">📄</span>
-                    <span class="label">Paper</span>
-                </button>
-                <button class="choice-btn scissors" id="scissorsBtn" data-choice="scissors">
-                    <span class="emoji">✂️</span>
-                    <span class="label">Scissors</span>
-                </button>
-            </div>
-
-            <button class="reset-btn" id="resetBtn">
+                            <button type="button" class="choice-btn rock" id="rockBtn" data-choice="rock" aria-keyshortcuts="R">
+	                    <span class="emoji">🪨</span>
+	                    <span class="label">Rock</span>
+	                </button>
+	                <button type="button" class="choice-btn paper" id="paperBtn" data-choice="paper" aria-keyshortcuts="P">
+	                    <span class="emoji">📄</span>
+	                    <span class="label">Paper</span>
+	                </button>
+	                <button type="button" class="choice-btn scissors" id="scissorsBtn" data-choice="scissors" aria-keyshortcuts="S">
+	                    <span class="emoji">✂️</span>
+	                    <span class="label">Scissors</span>
+	                </button>
+	            </div>
+	
+	            <button type="button" class="reset-btn" id="resetBtn" aria-keyshortcuts="X">
                 <span class="reset-icon">🔄</span>
                 Reset Game
             </button>
