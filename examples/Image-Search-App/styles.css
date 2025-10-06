@@ -266,13 +266,15 @@ body {
     font-size: 0.9rem;
     color: #6b7280;
     margin-bottom: 0.5rem;
-    /* Multi-line text truncation using webkit for maximum browser compatibility */
-    display: -webkit-box;
-    display: block;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  
+display: -webkit-box;        
+-webkit-box-orient: vertical;  
+-webkit-line-clamp: 2;         
+overflow: hidden;              
+
+/* Optional fallback for non-webkit browsers */
+line-clamp: 2;                  /* Future standard (not widely supported yet) */
+
     /* Ensure consistent behavior across browsers */
     text-overflow: ellipsis;
 }
