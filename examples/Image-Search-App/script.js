@@ -189,34 +189,38 @@ class ImageSearchApp {
         }, 50);
     }
 
-    createImageElement(image) {
-        const imageItem = document.createElement('div');
-        imageItem.className = 'image-item';
-        imageItem.style.opacity = '0';
-        imageItem.style.transform = 'translateY(20px)';
+ createImageElement(image) {
+    const imageItem = document.createElement('div');
+    imageItem.className = 'image-item';
+    imageItem.style.opacity = '0';
+    imageItem.style.transform = 'translateY(20px)';
+    imageItem.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
 
-        const imageUrl = image.urls.regular;
-        const thumbnailUrl = image.urls.thumb;
-        const description = image.description || image.alt_description || 'Beautiful image';
-        const authorName = image.user.name;
+    const imageUrl = image.urls.regular;
+    const thumbnailUrl = image.urls.thumb;
+    const description = image.description || image.alt_description || 'Beautiful image';
+    const authorName = image.user.name;
 
-        imageItem.innerHTML = `
-            <div class="image-container">
-                <img src="${thumbnailUrl}" alt="${description}" loading="lazy" onload="this.parentElement.parentElement.style.transition='opacity 0.6s ease, transform 0.6s ease'; this.parentElement.parentElement.style.opacity='1'; this.parentElement.parentElement.style.transform='translateY(0)';">
-            </div>
-            <div class="image-info">
-                <div class="image-description">${this.escapeHtml(description)}</div>
-                <div class="image-author">Photo by ${this.escapeHtml(authorName)}</div>
-            </div>
-        `;
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'image-container';
 
-        // Add click handler for full-size view (bonus feature)
-        imageItem.addEventListener('click', () => {
-            this.openFullSizeImage(imageUrl, description, authorName);
-        });
+    const img = document.createElement('img');
+    img.src = thumbnailUrl;
+    img.alt = description;
+    img.loading = 'lazy';
 
-        return imageItem;
-    }
+    // Add load event listener for animation
+    img.addEventListener('load', () => {
+        imageItem.style.opacity = '1';
+        imageItem.style.transform = 'translateY(0)';
+    });
+
+    imageContainer.appendChild(img);
+    imageItem.appendChild(imageContainer);
+
+    return imageItem;
+}
+
 
     openFullSizeImage(imageUrl, description, authorName) {
         // Create modal for full-size image view
@@ -304,19 +308,35 @@ class ImageSearchApp {
             document.head.appendChild(styleElement);
         }
 
-        document.body.appendChild(modal);
-
-        // Close modal functionality
-        modal.querySelector('.modal-close').addEventListener('click', () => {
-            document.body.removeChild(modal);
-        });
-
-        modal.querySelector('.modal-overlay').addEventListener('click', (e) => {
-            if (e.target === e.currentTarget) {
-                document.body.removeChild(modal);
-            }
-        });
-
+        Using removeChild without checking if the element still exists could throw an error if the modal has already been removed. Use modal.remove() or check for element existence before removal.
+Suggested change
+	            document.body.removeChild(modal);
+	        });
+	
+	        modal.querySelector('.modal-overlay').addEventListener('click', (e) => {
+	            if (e.target === e.currentTarget) {
+	                document.body.removeChild(modal);
+	            }
+	        });
+	
+	        const escapeHandler = (e) => {
+	            if (e.key === 'Escape') {
+	                document.body.removeChild(modal);
+	            modal.remove();
+	        });
+	
+	        modal.querySelector('.modal-overlay').addEventListener('click', (e) => {
+	            if (e.target === e.currentTarget) {
+	                modal.remove();
+	            }
+	        });
+	
+	        // Close on escape key
+	        const escapeHandler = (e) => {
+	            if (e.key === 'Escape') {
+	                modal.remove();
+Commit suggestion
+Add suggestion to batch
         // Close on escape key
         const escapeHandler = (e) => {
             if (e.key === 'Escape') {
@@ -410,17 +430,28 @@ class ImageSearchApp {
         this.showError(errorMessage);
     }
 
-    handleLoadMoreError(error) {
-        console.error('Load more error:', error);
-        // Show a subtle error for load more (don't replace existing content)
-        this.loadMoreButton.innerHTML = 'Error loading more images. Try again.';
-        setTimeout(() => {
-            this.loadMoreButton.innerHTML = `
-                <div class="load-more-spinner" style="display: none;"></div>
-                Load More Images
-            `;
-        }, 3000);
-    }
+   handleLoadMoreError(error) {
+    console.error('Load more error:', error);
+
+    this.loadMoreButton.textContent = 'Error loading more images. Try again.';
+
+    setTimeout(() => {
+        this.loadMoreButton.innerHTML = `
+            <div class="load-more-spinner hidden"></div>
+        `;
+    }, 2000); 
+}
+
+showSpinner() {
+    const spinner = this.loadMoreButton.querySelector('.load-more-spinner');
+    if (spinner) spinner.classList.remove('hidden');
+}
+
+hideSpinner() {
+    const spinner = this.loadMoreButton.querySelector('.load-more-spinner');
+    if (spinner) spinner.classList.add('hidden');
+}
+
 
     escapeHtml(text) {
         const div = document.createElement('div');
