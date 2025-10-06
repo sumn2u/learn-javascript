@@ -65,15 +65,15 @@ class RockPaperScissorsGame {
     }
 
     animateChoices(playerChoice, computerChoice) {
-        // Add selected animation to buttons
-        this.rockBtn.classList.remove('selected');
-        this.paperBtn.classList.remove('selected');
-        this.scissorsBtn.classList.remove('selected');
+       
+document.querySelectorAll('.choice-btn.selected')
+    .forEach(el => el.classList.remove('selected'));
 
-        const playerBtn = document.querySelector(`[data-choice="${playerChoice}"]`);
-        if (playerBtn) {
-            playerBtn.classList.add('selected');
-        }
+const playerBtn = document.querySelector(`[data-choice="${playerChoice}"]`);
+if (playerBtn) {
+    playerBtn.classList.add('selected');
+}
+
 
         // Add shake animation to choice displays
         this.playerChoiceEl.classList.add('shake');
@@ -136,7 +136,8 @@ class RockPaperScissorsGame {
             result: result
         };
 
-        this.gameHistory.unshift(historyItem);
+         this.gameHistory.unshift(historyItem);
+	        if (this.gameHistory.length > 10) this.gameHistory.length = 10;
         this.displayHistory();
     }
 
@@ -212,20 +213,18 @@ class RockPaperScissorsGame {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
 }
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = RockPaperScissorsGame;
+}
 
-// Initialize the game when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const game = new RockPaperScissorsGame();
 
-    // Add keyboard support for accessibility
     document.addEventListener('keydown', (e) => {
-        if (e.key.toLowerCase() === 'r') {
-            game.playRound('rock');
-        } else if (e.key.toLowerCase() === 'p') {
-            game.playRound('paper');
-        } else if (e.key.toLowerCase() === 's') {
-            game.playRound('scissors');
-        }
+        const key = e.key.toLowerCase();
+        if (key === 'r') game.playRound('rock');
+        else if (key === 'p') game.playRound('paper');
+        else if (key === 's') game.playRound('scissors');
     });
 
     // Add sound effects (optional)
@@ -235,9 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // audio.volume = 0.3;
         // audio.play().catch(e => console.log('Audio play failed:', e));
     };
-
-    // Export for potential testing
-    if (typeof module !== 'undefined' && module.exports) {
-        module.exports = RockPaperScissorsGame;
-    }
 });
+
+
