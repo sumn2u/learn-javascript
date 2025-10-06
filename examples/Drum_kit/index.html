@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Drum Kits 🥁</h1>
+
+      <div class="kits">
+        <button class="drum" data-key="w" aria-label="Crash cymbal - Press W">Crash<br><span class="key">W</span></button>
+        <button class="drum" data-key="a" aria-label="Kick drum - Press A">Kick<br><span class="key">A</span></button>
+        <button class="drum" data-key="s" aria-label="Snare drum - Press S">Snare<br><span class="key">S</span></button>
+        <button class="drum" data-key="d" aria-label="Tom drum - Press D">Tom<br><span class="key">D</span></button>
+        <button class="drum" data-key="j" aria-label="Closed hi-hat - Press J">HiHat C<br><span class="key">J</span></button>
+        <button class="drum" data-key="k" aria-label="Open hi-hat - Press K">HiHat O<br><span class="key">K</span></button>
+        <button class="drum" data-key="l" aria-label="Clap - Press L">Clap<br><span class="key">L</span></button>
+        <button class="drum" data-key=";" aria-label="Low tom - Press semicolon">Low Tom<br><span class="key">;</span></button>
+      </div>
+
+      <div class="volume-control">
+        <label for="volume">🔊 Volume</label>
+        <input type="range" id="volume" min="0" max="100" value="90" aria-label="Master volume control">
+        <span id="volume-value">90%</span>
+      </div>
+
+      <div class="controls">
+        <button id="record" aria-label="Start recording">● Record</button>
+        <button id="stop" disabled aria-label="Stop recording">■ Stop</button>
+        <button id="play" disabled aria-label="Play recording">▶ Play</button>
+        <button id="clear" disabled aria-label="Clear recording">✕ Clear</button>
+        <button id="download" disabled aria-label="Download pattern">⬇ Save</button>
+        <button id="upload" aria-label="Upload pattern">⬆ Load</button>
+        <input type="file" id="file-input" accept=".json" style="display:none">
+        <div class="status" id="status">Idle</div>
+      </div>
+
+      <p class="hint">Tip: Click a pad or press the keys on your keyboard to play. Try recording a short beat!</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
