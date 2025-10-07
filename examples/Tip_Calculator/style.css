@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 24px 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 12px 0 4px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.tips {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tip-btn {
+    flex: 1;
+    padding: 8px 0;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tip-btn.active,
+.tip-btn:hover {
+    background: #38bdf8;
+    color: #fff;
+}
+
+#customTip {
+    flex: 1;
+    padding: 8px;
+}
+
+#results {
+    margin-top: 18px;
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.4s;
+}
+
+#results p {
+    margin: 8px 0;
+    font-size: 1.05em;
+}
