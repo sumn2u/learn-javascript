@@ -20,4 +20,12 @@ Create a fun app that displays random photos from a collection each time you cli
 ## Bonus Challenge
 Fetch random photos from an external API like Unsplash.
 
-
+## Live Demo
+<div align="center">
+<iframe src="https://codesandbox.io/embed/lpg2t5?view=preview&module=%2Fapp.js"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="random-photo-viewer"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+</div>
