@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Image Search</h1>
+            <p class="subtitle">Discover amazing images from around the world</p>
+
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search for images... (e.g., nature, technology, animals)"
+                        class="search-input"
+                        autocomplete="off"
+                    >
+                    <button id="searchButton" class="search-button">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="loadingIndicator" class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Searching for images...</p>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <div class="error-content">
+                    <svg class="error-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                    <h3>Oops! Something went wrong</h3>
+                    <p id="errorText">Please check your internet connection and try again.</p>
+                    <button id="retryButton" class="retry-button">Try Again</button>
+                </div>
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <svg class="no-results-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                        <path d="M11 8a3 3 0 1 1 0 6"></path>
+                    </svg>
+                    <h3>No images found</h3>
+                    <p>Try searching for something else or use different keywords.</p>
+                </div>
+            </div>
+
+            <div id="imageGrid" class="image-grid">
+                <!-- Images will be dynamically inserted here -->
+            </div>
+
+            <div id="loadMoreContainer" class="load-more-container" style="display: none;">
+                <button id="loadMoreButton" class="load-more-button">
+                    <div class="load-more-spinner"></div>
+                    Load More Images
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
