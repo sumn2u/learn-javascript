@@ -1,6 +1,6 @@
 # 🎮 Simon Says Game
 
-![Simon Says Preview](../../assets/simon-says-preview.PNG)
+![Simon Says Preview](../../assets/simon-says-preview.png)
 
 ## Description
 
