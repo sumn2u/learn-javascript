@@ -48,21 +48,21 @@
             </div>
 
             <div class="controls">
-                            <button type="button" class="choice-btn rock" id="rockBtn" data-choice="rock" aria-keyshortcuts="R">
+                            <button type="button" class="choice-btn rock" id="rockBtn" data-choice="rock" aria-keyshortcuts="R" aria-label="Select Rock (R)">
 	                    <span class="emoji">🪨</span>
 	                    <span class="label">Rock</span>
 	                </button>
-	                <button type="button" class="choice-btn paper" id="paperBtn" data-choice="paper" aria-keyshortcuts="P">
+	                <button type="button" class="choice-btn paper" id="paperBtn" data-choice="paper" aria-keyshortcuts="P" aria-label="Select Paper (P)">
 	                    <span class="emoji">📄</span>
 	                    <span class="label">Paper</span>
 	                </button>
-	                <button type="button" class="choice-btn scissors" id="scissorsBtn" data-choice="scissors" aria-keyshortcuts="S">
+	                <button type="button" class="choice-btn scissors" id="scissorsBtn" data-choice="scissors" aria-keyshortcuts="S" aria-label="Select Scissors (S)">
 	                    <span class="emoji">✂️</span>
 	                    <span class="label">Scissors</span>
 	                </button>
 	            </div>
 	
-	            <button type="button" class="reset-btn" id="resetBtn" aria-keyshortcuts="X">
+	            <button type="button" class="reset-btn" id="resetBtn" aria-keyshortcuts="X" aria-label="Reset Game (X)">
                 <span class="reset-icon">🔄</span>
                 Reset Game
             </button>
@@ -71,7 +71,9 @@
         <div class="round-history" id="roundHistory">
             <h3>Round History</h3>
             <div class="history-list" id="historyList">
-                <p class="no-history">No rounds played yet. Make your first move!</p>
+                <ul id="historyUl"> 
+                    <li class="no-history">No rounds played yet. Make your first move!</li>
+                </ul>
             </div>
         </div>
     </div>
