@@ -25,7 +25,7 @@ class RockPaperScissorsGame {
         this.paperBtn = document.getElementById('paperBtn');
         this.scissorsBtn = document.getElementById('scissorsBtn');
         this.resetBtn = document.getElementById('resetBtn');
-        this.historyListEl = document.getElementById('historyList');
+        this.historyListEl = document.getElementById('historyUl');
     }
 
     bindEvents() {
@@ -143,14 +143,14 @@ if (playerBtn) {
 
     displayHistory() {
         if (this.gameHistory.length === 0) {
-            this.historyListEl.innerHTML = '<p class="no-history">No rounds played yet. Make your first move!</p>';
+            this.historyListEl.innerHTML = '<li class="no-history">No rounds played yet. Make your first move!</li>';
             return;
         }
 
         this.historyListEl.innerHTML = '';
 
         this.gameHistory.slice(0, 10).forEach(item => {
-            const historyItemEl = document.createElement('div');
+            const historyItemEl = document.createElement('li');
             historyItemEl.className = `history-item ${item.result}`;
 
             historyItemEl.innerHTML = `
