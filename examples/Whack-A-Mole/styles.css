@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #3b1c32, #1b1a55);
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+#difficulty {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #fdbb2d;
+  background: #1b1a55;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+}
+
+#difficulty option {
+  background: #1b1a55;
+  color: #fff;
+  font-weight: bold;
+}
+
+#start-btn {
+  padding: 8px 20px;
+  background: #fdbb2d;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+#start-btn:hover {
+  transform: scale(1.05);
+  background: #ffc94d;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mole {
+  width: 70px;
+  height: 70px;
+  background: url("https://cdn-icons-png.flaticon.com/512/616/616408.png")
+    no-repeat center/contain;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pop 0.9s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  0% {
+    bottom: -70px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -70px;
+  }
+}
