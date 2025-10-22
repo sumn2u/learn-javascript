@@ -3,6 +3,7 @@ const scoreDisplay = document.getElementById("score");
 const timeLeftDisplay = document.getElementById("time-left");
 const difficultySelect = document.getElementById("difficulty");
 const startBtn = document.getElementById("start-btn");
+const resetBtn = document.getElementById("reset-btn");
 
 let score = 0;
 let gameActive = false;
@@ -100,13 +101,17 @@ startBtn.addEventListener("click", () => {
   scoreDisplay.textContent = score;
   gameActive = true;
   startBtn.textContent = "Playing...";
-  const { totalTimeSec } = LEVELS[difficultySelect.value] || LEVELS.easy;
+  startBtn.disabled = true;
+  resetBtn.disabled = false;
+  difficultySelect.disabled = true; // Lock difficulty during game
+  
+  const { totalTimeSec } = LEVELS[difficultySelect.value] || LEVELS.beginner;
   timeLeftDisplay.textContent = totalTimeSec;
 
   // Kick off the loop
   showMole();
 
-  // Stop after 30 seconds
+  // Stop after specified duration
   clearTimeout(endTimer);
   clearInterval(tickTimer);
 
@@ -127,6 +132,32 @@ startBtn.addEventListener("click", () => {
     timeLeftDisplay.textContent = 0;
     if (currentMole && currentMole.isConnected) currentMole.remove();
     startBtn.textContent = "Start Game";
+    startBtn.disabled = false;
+    difficultySelect.disabled = false; // Re-enable difficulty selection
     alert(`⏱️ Time's up! Your score: ${score}`);
   }, totalMs);
+});
+
+// Reset game logic
+resetBtn.addEventListener("click", () => {
+  if (!gameActive) return;
+  
+  // Stop the game
+  gameActive = false;
+  clearTimeout(moleTimer);
+  clearTimeout(endTimer);
+  clearInterval(tickTimer);
+  
+  // Clean up mole
+  if (currentMole && currentMole.isConnected) currentMole.remove();
+  
+  // Reset UI
+  score = 0;
+  scoreDisplay.textContent = score;
+  const { totalTimeSec } = LEVELS[difficultySelect.value] || LEVELS.beginner;
+  timeLeftDisplay.textContent = totalTimeSec;
+  startBtn.textContent = "Start Game";
+  startBtn.disabled = false;
+  resetBtn.disabled = true;
+  difficultySelect.disabled = false; // Allow difficulty change after reset
 });

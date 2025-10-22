@@ -44,7 +44,8 @@ h1 {
   font-weight: bold;
 }
 
-#start-btn {
+#start-btn,
+#reset-btn {
   padding: 8px 20px;
   background: #fdbb2d;
   border: none;
@@ -54,9 +55,25 @@ h1 {
   transition: transform 0.2s, background 0.3s;
 }
 
-#start-btn:hover {
+#start-btn:hover:not(:disabled),
+#reset-btn:hover:not(:disabled) {
   transform: scale(1.05);
   background: #ffc94d;
+}
+
+#start-btn:disabled,
+#reset-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#reset-btn {
+  background: #e74c3c;
+}
+
+#reset-btn:hover:not(:disabled) {
+  background: #c0392b;
 }
 
 .grid {
