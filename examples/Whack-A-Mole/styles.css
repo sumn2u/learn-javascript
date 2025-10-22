@@ -9,23 +9,33 @@ body {
   background: linear-gradient(135deg, #3b1c32, #1b1a55);
   color: #fff;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   margin-bottom: 20px;
 }
 
 .scoreboard {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.8rem;
   margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.scoreboard p,
+.scoreboard label {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin: 0;
 }
 
 #difficulty {
@@ -36,6 +46,8 @@ h1 {
   color: #fff;
   font-weight: bold;
   outline: none;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  min-width: 100px;
 }
 
 #difficulty option {
@@ -46,13 +58,15 @@ h1 {
 
 #start-btn,
 #reset-btn {
-  padding: 8px 20px;
+  padding: 8px 16px;
   background: #fdbb2d;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s, background 0.3s;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  white-space: nowrap;
 }
 
 #start-btn:hover:not(:disabled),
@@ -78,14 +92,17 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-gap: 15px;
+  grid-template-columns: repeat(3, minmax(80px, 120px));
+  grid-gap: clamp(10px, 2vw, 15px);
   justify-content: center;
+  max-width: 100%;
+  padding: 0 10px;
 }
 
 .hole {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 120px;
   background: #333;
   border-radius: 50%;
   position: relative;
@@ -94,26 +111,94 @@ h1 {
 }
 
 .mole {
-  width: 70px;
-  height: 70px;
+  width: 70%;
+  height: 70%;
   background: url("https://cdn-icons-png.flaticon.com/512/616/616408.png")
     no-repeat center/contain;
   position: absolute;
-  bottom: -70px;
+  bottom: -70%;
   left: 50%;
   transform: translateX(-50%);
   animation: pop 0.9s ease-out forwards;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 @keyframes pop {
   0% {
-    bottom: -70px;
+    bottom: -70%;
   }
   50% {
-    bottom: 10px;
+    bottom: 10%;
   }
   100% {
-    bottom: -70px;
+    bottom: -70%;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .scoreboard {
+    gap: 0.6rem;
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(70px, 100px));
+    grid-gap: 10px;
+  }
+
+  #start-btn,
+  #reset-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .scoreboard {
+    gap: 0.5rem;
+    margin-bottom: 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(60px, 80px));
+    grid-gap: 8px;
+  }
+
+  #start-btn,
+  #reset-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  #difficulty {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: repeat(3, 55px);
+    grid-gap: 6px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
   }
 }
