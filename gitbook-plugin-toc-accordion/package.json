@@ -1,0 +1,9 @@
+{
+  "name": "gitbook-plugin-toc-accordion",
+  "version": "1.0.0",
+  "description": "Adds accordion functionality to In This Chapter section",
+  "main": "index.js",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  }
+}

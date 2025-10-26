@@ -1,0 +1,41 @@
+/* Accordion functionality for "In This Chapter" section */
+nav.intopic-toc h3 {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav.intopic-toc h3:hover {
+  color: #6c767f;
+}
+
+/* Add arrow indicator */
+nav.intopic-toc h3::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  vertical-align: middle;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #9DAAB6;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when collapsed */
+nav.intopic-toc.toc-collapsed h3::after {
+  transform: rotate(-90deg);
+}
+
+/* Hide content when collapsed */
+nav.intopic-toc.toc-collapsed .navbar-nav {
+  display: none;
+}
+
+/* Smooth transition for content */
+nav.intopic-toc .navbar-nav {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}

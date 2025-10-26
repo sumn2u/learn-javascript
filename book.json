@@ -16,6 +16,7 @@
       "theme-creative",
       "sidebar-ad",
       "intopic-toc",
+      "toc-accordion",
       "sharing",
       "exercises",
       "@honkit/honkit-plugin-ga",
@@ -27,6 +28,9 @@
       "edit-link",
       "ace-editor"
     ],
+    "styles": {
+      "website": "styles/website.css"
+    },
     "pdf": {
       "pageNumbers": true,
       "margin": {
