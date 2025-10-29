@@ -56,5 +56,26 @@ function calculate() {
   resultsDiv.style.background = '#f1f5f9';
 }
 
+document.querySelectorAll('pre > code').forEach(codeBlock => {
+  const button = document.createElement('button');
+  button.className = 'copy-btn';
+  button.textContent = 'Copy';
+
+  const pre = codeBlock.parentNode;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-block';
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+  wrapper.appendChild(button);
+
+  button.addEventListener('click', () => {
+    const text = codeBlock.textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      button.textContent = 'Copied!';
+      setTimeout(() => (button.textContent = 'Copy'), 2000);
+    });
+  });
+});
+
 // Initial calculation on load
 calculate();
