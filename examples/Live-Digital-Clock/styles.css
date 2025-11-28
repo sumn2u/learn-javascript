@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f6fa;
+    color: #1f2a44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+}
+
+.page {
+    width: min(960px, 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.clock-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e4e7ee;
+    border-radius: 14px;
+    padding: 28px 22px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.clock-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+
+.clock-header h1 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 0.93rem;
+    line-height: 1.5;
+}
+
+.clock-face {
+    background: #f4f6fb;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e4e7ee;
+}
+
+.time-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.time-block {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px 10px;
+    border: 1px solid #e4e7ee;
+    min-width: 110px;
+}
+
+.label {
+    display: block;
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.value {
+    display: inline-block;
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.colon {
+    text-align: center;
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #2563eb;
+    padding: 0 4px;
+}
+
+.ampm {
+    justify-self: end;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #e8f1ff;
+    color: #1d4ed8;
+    font-weight: 600;
+    border: 1px solid #d6e5ff;
+    letter-spacing: 0.05em;
+}
+
+.controls {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.controls button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.controls button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.28);
+}
+
+.controls button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 680px) {
+    body {
+        padding: 16px;
+    }
+
+    .clock-card {
+        padding: 22px 16px;
+    }
+
+    .time-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .colon {
+        display: none;
+    }
+
+    .ampm {
+        width: 100%;
+        text-align: center;
+    }
+}
