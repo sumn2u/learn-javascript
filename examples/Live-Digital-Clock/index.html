@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+        <div class="clock-card">
+            <header class="clock-header">
+                <h1>Digital Clock</h1>
+                <p class="subtitle">Shows the current time with a 12/24-hour toggle using the JavaScript Date object.</p>
+            </header>
+
+            <section class="clock-face" role="timer" aria-live="polite">
+                <div class="time-row">
+                    <div class="time-block">
+                        <span class="label">Hours</span>
+                        <span class="value" id="hours">00</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-block">
+                        <span class="label">Minutes</span>
+                        <span class="value" id="minutes">00</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-block">
+                        <span class="label">Seconds</span>
+                        <span class="value" id="seconds">00</span>
+                    </div>
+                    <div class="ampm" id="ampm">AM</div>
+                </div>
+            </section>
+
+            <div class="controls">
+                <button type="button" id="formatToggle" aria-pressed="false">Switch to 24-hour</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
