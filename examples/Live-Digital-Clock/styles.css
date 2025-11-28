@@ -45,33 +45,30 @@ body {
 }
 
 .subtitle {
+    margin-top: 20px;
+    margin-bottom: 30px;
     color: #6b7280;
     font-size: 0.93rem;
     line-height: 1.5;
-}
-
-.clock-face {
-    background: #f4f6fb;
-    border-radius: 12px;
-    padding: 20px;
-    border: 1px solid #e4e7ee;
 }
 
 .time-row {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .time-block {
     text-align: center;
     background: #ffffff;
     border-radius: 10px;
-    padding: 12px 10px;
+    padding: 10px 8px;
     border: 1px solid #e4e7ee;
-    min-width: 110px;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .label {
@@ -83,17 +80,17 @@ body {
 
 .value {
     display: inline-block;
-    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-size: clamp(2rem, 5vw, 2.6rem);
     font-weight: 700;
     letter-spacing: 0.04em;
 }
 
 .colon {
     text-align: center;
-    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-size: clamp(2rem, 5vw, 2.4rem);
     font-weight: 700;
     color: #2563eb;
-    padding: 0 4px;
+    padding: 0 3px;
 }
 
 .ampm {
@@ -105,6 +102,7 @@ body {
     font-weight: 600;
     border: 1px solid #d6e5ff;
     letter-spacing: 0.05em;
+    flex: 0 1 auto;
 }
 
 .controls {
@@ -149,16 +147,30 @@ body {
     }
 
     .time-row {
-        flex-direction: column;
-        gap: 10px;
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .time-block {
+        min-width: 0;
+        padding: 8px 6px;
+        flex: 1 1 0;
+    }
+
+    .value {
+        font-size: clamp(1.6rem, 8vw, 2.1rem);
     }
 
     .colon {
-        display: none;
+        font-size: clamp(1.6rem, 8vw, 2.1rem);
+        padding: 0 2px;
     }
 
     .ampm {
-        width: 100%;
+        width: auto;
         text-align: center;
+        align-self: center;
+        padding: 8px 10px;
+        font-size: 0.85rem;
     }
 }
