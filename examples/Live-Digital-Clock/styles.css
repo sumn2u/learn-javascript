@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: edf2fb;
+    background: #edf2fb;
     color: #1f2a44;
     display: flex;
     align-items: center;
