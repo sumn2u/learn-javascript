@@ -19,9 +19,3 @@ cd examples/Live-Digital-Clock
 open index.html
 # or double-click index.html in your file explorer
 ```
-
-## Files
-
-- `index.html` – Markup for the clock layout and controls.
-- `styles.css` – Gradient background and responsive card-style UI.
-- `script.js` – Reads time with `Date`, updates the DOM, and handles the format toggle.
