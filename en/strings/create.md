@@ -8,7 +8,7 @@ Strings can be defined by enclosing the text in single quotes or double quotes:
 
 ```javascript
 // Single quotes can be used
-let str = "Our lovely string";
+let str = 'Our lovely string';
 
 // Double quotes as well
 let otherStr = "Another nice string";
