@@ -32,7 +32,7 @@ function func() {
 func();
 
 //Output
-j
+J
 s
 
 //Example 2: 
