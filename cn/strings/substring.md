@@ -33,7 +33,7 @@ console.log(result);
 
 
 // 输出
-for
+Geeks
 ```
 
 ```javascript
