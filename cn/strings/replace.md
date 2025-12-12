@@ -3,7 +3,7 @@ chapter: 4
 pageNumber: 33
 ---
 
-# Replace
+# 代替
 
 `replace` 方法允许我们用一个字符串替换某个字符、单词或句子。例如：
 

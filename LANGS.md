@@ -5,3 +5,4 @@
 - [Indonesian](id/)
 - [Español](es/)
 - [Deutsch](de/)
+- [中文 (简体)](cn/)

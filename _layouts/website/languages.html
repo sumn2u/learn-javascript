@@ -45,7 +45,7 @@
                     <h3>{{ lang.title }}</h3>
                 </div>
                 <div class="card-actions">
-                    {% if lang.id == 'de' %}
+                    {% if lang.id == 'de' or lang.id == 'cn' %}
                         <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
                             <i class="fas fa-eye"></i> Preview
                         </a>

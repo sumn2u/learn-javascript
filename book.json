@@ -96,6 +96,10 @@
           {
             "config": "de",
             "text": "Deutsch"
+          }, 
+           {
+            "config": "zh-Hans",
+            "text": "中文 (简体)"
           }
         ]
       }
