@@ -1,8 +1,12 @@
 ---
 chapter: 16
 pageNumber: 131
-description: El objeto screen contiene la información sobre la pantalla en la que se está representando la ventana actual. Permite a los desarrolladores acceder a propiedades relacionadas con el tamaño de la pantalla del usuario, la resolución, la profundidad del color y otra información relacionada con la visualización.
+description: >-
+  El objeto screen contiene la información sobre la pantalla en la que se está
+  representando la ventana actual. Permite a los desarrolladores acceder a
+  propiedades relacionadas con el tamaño de la panta
 ---
+
 # Screen
 
 El objeto `screen` contiene la información sobre la pantalla en la que se está representando la ventana actual. Para acceder al objeto `screen` podemos usar la propiedad `screen` del objeto `window`.
@@ -16,7 +20,7 @@ screen
 El objeto `window.screen` tiene diferentes propiedades, algunas de ellas se enumeran aquí:
 
 | Propiedad     | Descripción                                                                                                                           |
-| --------------| ------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `height`      | Representa la altura de píxeles de la pantalla.                                                                                       |
 | `left`        | Representa la distancia en píxeles del lado izquierdo de la pantalla actual.                                                          |
 | `pixelDepth`  | Una propiedad de solo lectura que devuelve la profundidad de bits de la pantalla.                                                     |

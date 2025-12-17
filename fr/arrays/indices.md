@@ -1,13 +1,15 @@
 ---
 chapter: 6
 pageNumber: 48
-description: Les tableaux sont des collections d'éléments et chacun d'entre eux est positionné numériquement à l'intérieur du tableau grâce à un index (ou indices). Les indices sont basés sur 0 ce qui signifie que le premier élément possède l'index 0, le deuxième est à l'index 1 et ainsi de suite.
+description: >-
+  Les tableaux sont des collections d'éléments et chacun d'entre eux est
+  positionné numériquement à l'intérieur du tableau grâce à un index (ou
+  indices). Les indices sont basés sur 0 ce qui signifie que
 ---
 
 # Indices
 
-Désormais vous possédez un tableau stockant des données, mais comment faire pour accéder à un élément spécifique ? C'est ici que les indices entrent en jeu. Un **index** r
-So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. Un **index** fait référence à un endroit du tableau. Les indices progressent logiquement un par un, mais il convient de noter que le premier index d'un tableau est 0, comme c'est le cas dans la plupart des langages. Les crochets `[]` sont utilisés pour signifier que vous faites référence à l'index d'un tableau.
+Désormais vous possédez un tableau stockant des données, mais comment faire pour accéder à un élément spécifique ? C'est ici que les indices entrent en jeu. Un **index** r So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. Un **index** fait référence à un endroit du tableau. Les indices progressent logiquement un par un, mais il convient de noter que le premier index d'un tableau est 0, comme c'est le cas dans la plupart des langages. Les crochets `[]` sont utilisés pour signifier que vous faites référence à l'index d'un tableau.
 
 ```javascript
 // Voici un tableau stockant des chaînes de caractères

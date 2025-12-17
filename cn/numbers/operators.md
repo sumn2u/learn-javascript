@@ -1,7 +1,10 @@
 ---
 chapter: 3
 pageNumber: 21
-description: Operators are symbols or keywords used to perform operations on data, such as variables, values, or expressions. They are an essential part of the language and allow developers to perform arithmetic, comparison, logical, assignment, and other operations.
+description: >-
+  Operators are symbols or keywords used to perform operations on data, such as
+  variables, values, or expressions. They are an essential part of the language
+  and allow developers to perform arithmetic,
 ---
 
 # 基本运算符
@@ -18,25 +21,25 @@ description: Operators are symbols or keywords used to perform operations on dat
 
 JavaScript 支持多种运算符，包括：
 
-* [算术运算符](#arithmetic-operators)
-* [赋值运算符](#assignment-operators)
-* [比较运算符](#Comparison-operators)
-* [逻辑运算符](#logical-operators)
-* [三元运算符](#ternary-operators)
-* [按位运算符](#bitwise-operators)
-* [`typeof` 运算符](#typeof-operators)
+* [算术运算符](operators.md#arithmetic-operators)
+* [赋值运算符](operators.md#assignment-operators)
+* [比较运算符](operators.md#Comparison-operators)
+* [逻辑运算符](operators.md#logical-operators)
+* [三元运算符](operators.md#ternary-operators)
+* [按位运算符](operators.md#bitwise-operators)
+* [`typeof` 运算符](operators.md#typeof-operators)
 
-### 算术运算符 {#arithmetic-operators}
+### 算术运算符 <a href="#arithmetic-operators" id="arithmetic-operators"></a>
 
 算术运算符用于对值执行数学运算。包括：
 
-* [加法 (`+`) 运算符](#addition-operator)
-* [减法 (`-`) 运算符](#subtraction-operator)
-* [乘法 (`*`) 运算符](#multiplication-operator)
-* [除法 (`/`) 运算符 ](#multiplication-operator)
-* [取余 (`%`) 运算符](#remainder-operator)
+* [加法 (`+`) 运算符](operators.md#addition-operator)
+* [减法 (`-`) 运算符](operators.md#subtraction-operator)
+* [乘法 (`*`) 运算符](operators.md#multiplication-operator)
+* [除法 (`/`) 运算符](operators.md#multiplication-operator)
+* [取余 (`%`) 运算符](operators.md#remainder-operator)
 
-#### 加法运算符（`+`） {#addition-operator}
+#### 加法运算符（`+`） <a href="#addition-operator" id="addition-operator"></a>
 
 加法运算符用于将两个数字相加。例如：
 
@@ -45,7 +48,7 @@ console.log(1 + 2); // 3
 console.log(1 + -2); // -1
 ```
 
-#### 减法运算符（`-`） {#subtraction-operator}
+#### 减法运算符（`-`） <a href="#subtraction-operator" id="subtraction-operator"></a>
 
 减法运算符用于用一个数减去另一个数。例如：
 
@@ -54,7 +57,7 @@ console.log(3 - 2); // 1
 console.log(3 - -2); // 5
 ```
 
-#### 乘法运算符（`*`） {#multiplication-operator}
+#### 乘法运算符（`*`） <a href="#multiplication-operator" id="multiplication-operator"></a>
 
 乘法运算符用于将两个数字相乘。例如：
 
@@ -63,7 +66,7 @@ console.log(2 * 3); // 6
 console.log(2 * -3); // -6
 ```
 
-#### 除法运算符（`/`） {#division-operator}
+#### 除法运算符（`/`） <a href="#division-operator" id="division-operator"></a>
 
 除法运算符用于用一个数除以另一个数。例如：
 
@@ -72,7 +75,7 @@ console.log(6 / 2); // 3
 console.log(6 / -2); // -3
 ```
 
-#### 取余运算符（`%`） {#remainder-operator}
+#### 取余运算符（`%`） <a href="#remainder-operator" id="remainder-operator"></a>
 
 取余运算符返回一次除法运算的余数。例如：
 
@@ -84,7 +87,7 @@ console.log(12 % 3); // 0
 
 JavaScript 解释器自左向右执行。可以像数学中那样使用括号来分隔和分组表达式：`c = (a / b) + d`
 
-{% hint style="working" %}
+{% hint style="info" %}
 JavaScript 使用 `+` 运算符同时完成加法和字符串拼接。对数字执行时是加法，对字符串执行时是拼接。
 {% endhint %}
 
@@ -113,53 +116,13 @@ let x = 2 / 0; // Infinity
 let y = -2 / 0; // -Infinity
 ```
 
-{% exercise %}
-使用数学运算符 +、-、*、/ 和 % 对 `num1` 和 `num2` 执行下列运算。
+### 赋值运算符 <a href="#assignment-operators" id="assignment-operators"></a>
 
-{% initial %}
-let num1 = 10;
-let num2 = 5;
-
-// Add num1 and num2.
-let addResult =
-// Subtract num2 from num1.
-let subtractResult =
-// Multiply num1 and num2.
-let multiplyResult =
-// Divide num1 by num2.
-let divideResult =
-// Find the remainder num1 is divided by num2.
-let reminderResult =
-
-{% solution %}
-let num1 = 10;
-let num2 = 5;
-
-// Add num1 and num2.
-let addResult = (num1 + num2);
-// Subtract num2 from num1.
-let subtractResult = (num1 - num2);
-// Multiply num1 and num2.
-let multiplyResult = (num1 * num2);
-// Divide num1 by num2.
-let divideResult = (num1 / num2);
-// Find the remainder num1 is divided by num2.
-let reminderResult = (num1 % num2);
-
-{% validation %}
-assert(addResult === 15 && subtractResult === 5 && multiplyResult === 50 && divideResult === 2 && reminderResult === 0 );
-
-{% context %}
-{% endexercise %}
-
-### 赋值运算符 {#assignment-operators}
-
-赋值运算符用于给变量赋值，或者对赋值的结果进行求值。*也可以将赋值运算符串联，以便把同一个值赋给多个变量。* 它们包括赋值（`=`）运算符以及诸如 `+=`、`-=`、`*=` 和 `/=` 等复合赋值运算符。
+赋值运算符用于给变量赋值，或者对赋值的结果进行求值。_也可以将赋值运算符串联，以便把同一个值赋给多个变量。_ 它们包括赋值（`=`）运算符以及诸如 `+=`、`-=`、`*=` 和 `/=` 等复合赋值运算符。
 
 #### `=`（赋值运算符）
 
-该运算符用于将右侧的值赋给左侧的变量。
-例如：
+该运算符用于将右侧的值赋给左侧的变量。 例如：
 
 ```javascript
 let x = 10; //Assigns the value 10 to the variable x.
@@ -167,26 +130,25 @@ let x = 10; //Assigns the value 10 to the variable x.
 
 #### 复合赋值运算符
 
-这些运算符把算术运算与赋值运算结合在一起。它们是“先运算再把结果重新赋值给变量”的快捷写法。
-例如：
+这些运算符把算术运算与赋值运算结合在一起。它们是“先运算再把结果重新赋值给变量”的快捷写法。 例如：
 
-##### `+=`（加法赋值）
+**`+=`（加法赋值）**
 
 将右侧的值加到变量上，并把结果重新赋值给该变量。
 
-##### `-=`（减法赋值）
+**`-=`（减法赋值）**
 
 从变量中减去右侧的值，并把结果重新赋值给该变量。
 
-##### `*=-`（乘法赋值）
+**`*=-`（乘法赋值）**
 
 将变量与右侧的值相乘，并把结果重新赋值给该变量。
 
-##### `/=`（除法赋值）
+**`/=`（除法赋值）**
 
 用变量除以右侧的值，并把结果重新赋值给该变量。
 
-##### `%=`（取模/取余赋值）
+**`%=`（取模/取余赋值）**
 
 计算变量被右侧的值除时的余数，并把结果重新赋值给该变量。
 
@@ -199,7 +161,7 @@ a /= 4; // Equivalent to a = a / 4; (a becomes 6)
 a %= 5; // Equivalent to a = a % 5; (a becomes 1)
 ```
 
-### 比较运算符 {#Comparison-operators}
+### 比较运算符 <a href="#comparison-operators" id="comparison-operators"></a>
 
 比较运算符用于比较两个值或表达式，并返回一个 `boolean` 结果，即 `true` 或 `false`。这些运算符通常用于条件语句中，用来做出决策或判断条件。
 
@@ -275,7 +237,7 @@ a %= 5; // Equivalent to a = a % 5; (a becomes 1)
 8 <= 2; // false
 ```
 
-### 逻辑运算符 {#logical-operators}
+### 逻辑运算符 <a href="#logical-operators" id="logical-operators"></a>
 
 逻辑运算符用于对布尔值或表达式执行逻辑运算。它们允许你组合或处理布尔值，从而做出决策或判断更复杂的条件。
 
@@ -310,14 +272,13 @@ false || false; // false
 !false; // true
 ```
 
-### 三元运算符 {#ternary-operators}
+### 三元运算符 <a href="#ternary-operators" id="ternary-operators"></a>
 
 三元运算符有三个操作数。它是 `if/else` 的简写形式。
 
 它是 `if-else` 条件语句的简写形式。
 
-**语法**
-**Syntax**
+**语法** **Syntax**
 
 ```js
 Y =  ? A : B
@@ -329,7 +290,7 @@ let isEven = 8 % 2 === 0 ? "Even" : "Odd";
 console.log(isEven); // "Even"
 ```
 
-### 按位运算符 {#bitwise-operators}
+### 按位运算符 <a href="#bitwise-operators" id="bitwise-operators"></a>
 
 按位运算符用于操作二进制数的各个位。它们在位级别上执行运算，在需要控制或分析底层数据的场景中尤其有用。
 
@@ -381,7 +342,7 @@ console.log(isEven); // "Even"
 1010 >> 2; // 0010 (shifted right by 2 positions)
 ```
 
-### `typeof` 运算符 {#typeof-operators}
+### `typeof` 运算符 <a href="#typeof-operators" id="typeof-operators"></a>
 
 它返回操作数的类型。JavaScript 中可能的类型包括：undefined、Object、boolean、number、string、symbol 和 function。
 

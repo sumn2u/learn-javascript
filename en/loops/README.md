@@ -1,12 +1,18 @@
 ---
-layout: editorial
 chapter: 7
 pageNumber: 62
-description: Loops are control structures that allow you to execute a block of code repeatedly until a specified condition is met. They are essential for automating repetitive tasks and iterating over data structures like arrays and strings.
+description: >-
+  Loops are control structures that allow you to execute a block of code
+  repeatedly until a specified condition is met. They are essential for
+  automating repetitive tasks and iterating over data structu
+layout: editorial
 ---
 
-# Chapter 7
-# Loops
+# loops
+
+## Chapter 7
+
+## Loops
 
 Loops are repetitive instructions where one variable in the loop changes. Loops are handy, if you want to run the same code over and over again, each time with a different value.
 
@@ -29,8 +35,9 @@ for (var i = 0; i < cars.length; i++) {
 ```
 
 In this chapter, we are going to discuss the following topics:
-* [For](./for.md)
-* [While](./while.md)
-* [Do...While](./dowhile.md)
-* [Continue](./continue.md)
-* [Break](./break.md)
+
+* [For](for.md)
+* [While](while.md)
+* [Do...While](dowhile.md)
+* [Continue](continue.md)
+* [Break](break.md)

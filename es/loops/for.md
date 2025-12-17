@@ -1,9 +1,11 @@
 ---
 chapter: 7
 pageNumber: 65
-description:  Un bucle for es una potente estructura de control que se utiliza para ejecutar un bloque de código varias veces, ya sea para un número específico de iteraciones o en un rango definido. Es muy versátil y se usa comúnmente para iterar a través de matrices, cadenas y otros objetos iterables.
+description: >-
+  Un bucle for es una potente estructura de control que se utiliza para ejecutar
+  un bloque de código varias veces, ya sea para un número específico de
+  iteraciones o en un rango definido. Es muy versátil
 ---
-
 
 # Bucles For
 
@@ -21,10 +23,10 @@ for (inicializacion; condicion_finalizacion; cambio) {
 
 ### Explicación
 
-- En la parte `inicializacion`, ejecutada antes de la primera iteración, se inicializa su variable de bucle
-- En la parte `condicion_finalizacion`, se coloca una condición que puede ser comprobada antes de cada iteración. En el momento en el que la condición se vuelva `false`, el bucle termina.
-- En la parte `cambio`, le indicamos al programa cómo actualizar la variable de bucle
-- In the `change` part, tell the program how to update the loop variable.
+* En la parte `inicializacion`, ejecutada antes de la primera iteración, se inicializa su variable de bucle
+* En la parte `condicion_finalizacion`, se coloca una condición que puede ser comprobada antes de cada iteración. En el momento en el que la condición se vuelva `false`, el bucle termina.
+* En la parte `cambio`, le indicamos al programa cómo actualizar la variable de bucle
+* In the `change` part, tell the program how to update the loop variable.
 
 Veamos cómo ejecutar el mismo código diez veces usando un bucle `for`:
 
@@ -40,7 +42,7 @@ for (let i = 0; i < 10; i = i + 1) {
 
 Para recorrer las propiedades enumerables de un objeto también se puede utilizar un bucle `for in`. Por cada propiedad distinta, JavaScript ejecuta las sentencias especificadas.
 
-### Sintaxis  `for...in`
+### Sintaxis `for...in`
 
 ```javascript
 for (variable in objeto) {
@@ -110,7 +112,7 @@ for (const parrafo of parrafos) {
 
 ## Bucle `for...of`
 
-El bucle `for...of` se introdujo en las versiones posteriores de **[JavaScript ES6](../es6-concepts/README.md)**. La instrucción `for...of` ejecuta un bucle que opera sobre una secuencia de valores provenientes de objetos iterables como `Array`, `String`, `TypedArray`, `Map`, `Set`, `NodeList` (y otras colecciones del DOM).
+El bucle `for...of` se introdujo en las versiones posteriores de [**JavaScript ES6**](../es6-concepts/). La instrucción `for...of` ejecuta un bucle que opera sobre una secuencia de valores provenientes de objetos iterables como `Array`, `String`, `TypedArray`, `Map`, `Set`, `NodeList` (y otras colecciones del DOM).
 
 ### Sintaxis `for...of`
 
@@ -124,8 +126,8 @@ for (elemento of objeto_iterable) {
 
 Donde:
 
-- **objeto_iterable** - un objeto iterable (cuyas propiedades pueden recorrerse con un bucle)
-- **elemento** - los distintos elementos en el objeto iterable
+* **objeto\_iterable** - un objeto iterable (cuyas propiedades pueden recorrerse con un bucle)
+* **elemento** - los distintos elementos en el objeto iterable
 
 En términos simples, puedes leer el código anterior como: “para cada elemento del iterable, ejecuta el cuerpo del bucle”.
 

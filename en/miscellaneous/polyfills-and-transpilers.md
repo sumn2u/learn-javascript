@@ -1,19 +1,23 @@
 ---
 chapter: 19
 pageNumber: 116
-description: Polyfills and transpilers are two important tools used in web development to help ensure that modern JavaScript code can run on older browsers and to take advantage of the latest JavaScript features while maintaining compatibility with older environments.
+description: >-
+  Polyfills and transpilers are two important tools used in web development to
+  help ensure that modern JavaScript code can run on older browsers and to take
+  advantage of the latest JavaScript features w
 ---
+
 # Polyfills and Transpilers
 
-JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to [https://tc39.github.io/ecma262/ ](https://tc39.github.io/ecma262/)and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced.&#x20;
+JavaScript evolves every now and then. Regularly, new language proposals are submitted, analyzed, and added to [https://tc39.github.io/ecma262/ ](https://tc39.github.io/ecma262/)and then incorporated into the specification. There may be differences in how it is implemented in JavaScript engines depending on the browser. Some may implement the draft proposals, while others wait until the whole specification is released. Backward compatibility issues arise as new things are introduced.
 
 To support the modern code in old browsers we use two tools: `transpilers` and `polyfills`.
 
 **Transpilers**
 
-It is a program that translates modern code and rewrites it using older syntax constructs so, that the older engine can understand it. For example, "`nullish` coalescing operator" `??`  was introduced in 2020, and outdated browsers can’t understand it.&#x20;
+It is a program that translates modern code and rewrites it using older syntax constructs so, that the older engine can understand it. For example, "`nullish` coalescing operator" `??` was introduced in 2020, and outdated browsers can’t understand it.
 
-Now, it’s the transpiler's job to make the `nullish` coalescing operator” `??` understandable to the old browsers.&#x20;
+Now, it’s the transpiler's job to make the `nullish` coalescing operator” `??` understandable to the old browsers.
 
 ```javascript
 // before running the transpiler
@@ -25,7 +29,7 @@ height = (height !== undefined && height !== null) ? height: 200;
 ```
 
 {% hint style="info" %}
-&#x20;[Babel](https://babeljs.io/) is one of the most prominent transpilers. In the development process, we can use build tools like [webpack](https://webpack.js.org/) or [parcel](https://parceljs.org/) to transpile code.
+[Babel](https://babeljs.io/) is one of the most prominent transpilers. In the development process, we can use build tools like [webpack](https://webpack.js.org/) or [parcel](https://parceljs.org/) to transpile code.
 {% endhint %}
 
 **Polyfills**
@@ -61,6 +65,3 @@ Array.prototype.filter = function (callback) {
 {% hint style="info" %}
 [caniuse](https://caniuse.com/) shows the updated functionality and syntax supported by different browser engines.
 {% endhint %}
-
-
-

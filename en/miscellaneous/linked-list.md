@@ -1,13 +1,17 @@
 ---
 chapter: 19
 pageNumber: 118
-description: Linked List is a linear data structure used to store a collection of elements, called nodes. Each node in a linked list contains two parts the data or value of the element it represents and a reference (pointer) to the next node in the sequence. The last node in the list points to null, indicating the end of the list.
+description: >-
+  Linked List is a linear data structure used to store a collection of elements,
+  called nodes. Each node in a linked list contains two parts the data or value
+  of the element it represents and a referenc
 ---
+
 # Linked List
 
 It is a common data structure found in all programming languages. A linked list is very similar to a normal array in Javascript, it just acts a little bit differently.
 
-Here each element in the list is a separate object containing a link or a pointer to the next. There is no built-in method or function for linked lists in Javascript so one has to implement it. An example of a linked list is shown below.&#x20;
+Here each element in the list is a separate object containing a link or a pointer to the next. There is no built-in method or function for linked lists in Javascript so one has to implement it. An example of a linked list is shown below.
 
 ```
 ["one", "two", "three", "four"]
@@ -17,9 +21,9 @@ Here each element in the list is a separate object containing a link or a pointe
 
 There are three different types of linked lists:
 
-1. **Singly Linked Lists:**  Each node contains only one pointer to the next node.
-2. **Doubly Linked Lists:**  There are two pointers at each node, one to the next node and one to the previous node.
-3. **Circular Linked Lists:**  A circular linked list forms a loop by having the last node pointing to the first node or any other node before it.
+1. **Singly Linked Lists:** Each node contains only one pointer to the next node.
+2. **Doubly Linked Lists:** There are two pointers at each node, one to the next node and one to the previous node.
+3. **Circular Linked Lists:** A circular linked list forms a loop by having the last node pointing to the first node or any other node before it.
 
 ## Add
 

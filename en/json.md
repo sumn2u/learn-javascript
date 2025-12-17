@@ -1,14 +1,20 @@
 ---
-layout: editorial
 chapter: 11
 pageNumber: 82
-description: JSON (JavaScript Object Notation) is a lightweight data interchange format used to represent and exchange data between different systems and platforms. It is widely used for data transmission and storage, especially in web development.
+description: >-
+  JSON (JavaScript Object Notation) is a lightweight data interchange format
+  used to represent and exchange data between different systems and platforms.
+  It is widely used for data transmission and stor
+layout: editorial
 ---
 
-# Chapter 11
-# JSON
+# json
 
-**J**ava**S**cript **O**bject **N**otation (JSON) is a text-based format for storing and transporting data.  The Javascript Objects can be easily converted into JSON and vice versa.  For example.
+## Chapter 11
+
+## JSON
+
+**J**ava**S**cript **O**bject **N**otation (JSON) is a text-based format for storing and transporting data. The Javascript Objects can be easily converted into JSON and vice versa. For example.
 
 ```javascript
 //  a JavaScript object
@@ -26,25 +32,20 @@ console.log(originalJSON);
 // Result: {name: 'Ryan', age: 30, city: 'Austin'}
 ```
 
+`stringify` and `parse` are the two methods supported by JSON.
 
-
-`stringify` and  `parse` are the two methods supported by JSON.
-
-| Method        | Description                                            |
-| ------------- | ------------------------------------------------------ |
-| `parse()`     | Returns  JavaScript object from the parsed JSON string |
-| `stringify()` | Returns JSON string from JavaScript Object             |
-
-
+| Method        | Description                                           |
+| ------------- | ----------------------------------------------------- |
+| `parse()`     | Returns JavaScript object from the parsed JSON string |
+| `stringify()` | Returns JSON string from JavaScript Object            |
 
 The following data types are supported by JSON.
 
-* [string](./strings/README.md)
-* [number](./numbers/README.md)
-* [array](./arrays/README.md)
-* [boolean](./basics/types.md#Boolean)
-* [object](./basics/types.md#Object) with valid JSON values
-* [null](./basics/types.md#NULL)
+* [string](strings/)
+* [number](numbers/)
+* [array](arrays/)
+* [boolean](basics/types.md#Boolean)
+* [object](basics/types.md#Object) with valid JSON values
+* [null](basics/types.md#NULL)
 
-It can not be `function`,  `date` or `undefined`.
-
+It can not be `function`, `date` or `undefined`.

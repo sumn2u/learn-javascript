@@ -1,8 +1,12 @@
 ---
 chapter: 9
 pageNumber: 62
-description: L'opérateur `delete` peut être utilisé pour **supprimer une propriété**. Lorsqu'une propriété est supprimée, elle est enlevée de l'objet et ne peut ni être accédée ni énumérée (i.e., n'apparaît pas dans une boucle for-in).
+description: >-
+  L'opérateur `delete` peut être utilisé pour **supprimer une propriété**.
+  Lorsqu'une propriété est supprimée, elle est enlevée de l'objet et ne peut ni
+  être accédée ni énumérée (i.e., n'apparaît pas da
 ---
+
 # Le mot clé delete
 
 L'opérateur `delete` peut être utilisé pour **supprimer une propriété**. Lorsqu'une propriété est supprimée, elle est enlevée de l'objet et ne peut ni être accédée ni énumérée (i.e., n'apparaît pas dans une boucle for-in).
@@ -28,8 +32,8 @@ let prototypeAge = child.age;
 // 26, car child n'a pas de propriété age.
 ```
 
-{% hint style="working" %}
-L'opérateur `delete` marche uniquement sur les propriétés de l'objet (définis sur l'objet) mais pas ceux qui sont hérités.  Il ne marche pas non plus sur les propriété qui ont l'attribut `configurable` mis à `false`.
+{% hint style="info" %}
+L'opérateur `delete` marche uniquement sur les propriétés de l'objet (définis sur l'objet) mais pas ceux qui sont hérités. Il ne marche pas non plus sur les propriété qui ont l'attribut `configurable` mis à `false`.
 {% endhint %}
 
-L'opérateur `delete` ne modifie pas la chaîne de prototypage. Elle supprime purement et simplement la propriété spécifiée de l'objet et  n'agit pas sur l'objet lui-même. Cela permet de rendre la propriété inaccessible comme si elle n'avait pas été attribuée. Si vous désirez supprimer un objet et libérer la mémoire occupée, vous pouvez tout simplement affecter `null` à la variable.
+L'opérateur `delete` ne modifie pas la chaîne de prototypage. Elle supprime purement et simplement la propriété spécifiée de l'objet et n'agit pas sur l'objet lui-même. Cela permet de rendre la propriété inaccessible comme si elle n'avait pas été attribuée. Si vous désirez supprimer un objet et libérer la mémoire occupée, vous pouvez tout simplement affecter `null` à la variable.

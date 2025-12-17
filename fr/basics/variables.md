@@ -1,7 +1,10 @@
 ---
 chapter: 2
 pageNumber: 11
-description: Les variables sont utilisées stockées et mémoriser des données. Il est possible de stocker différents types de données dans les variables comme des nombres, des chaînes de caractères, des booléens, des objets, des tableaux, des fonctions et autres.
+description: >-
+  Les variables sont utilisées stockées et mémoriser des données. Il est
+  possible de stocker différents types de données dans les variables comme des
+  nombres, des chaînes de caractères, des booléens, de
 ---
 
 # Variables
@@ -57,28 +60,14 @@ let result = x + y;
 
 Il existe quelques lignes directrices impératives à respecter quand vous nommez des variables. Ce sont les suivantes:
 
-- Le nom d'une variable ne peut commencer que par une lettre, un underscore (\_) ou un signe dollar ($).
-- Après le premier caractère, il est possible d'utiliser des lettres, des chiffres, des underscores ou des signes dollar.
-- JavaScript fait la distinction entre les caractères en majuscules des caractères en minuscules. On dit que JavaScript est sensible à la casse. De ce fait, maVariable, MaVariable et MAVARIABLE sont trois variables distinctes.
-- Pour rendre votre code facile à lire et à comprendre, il est recommandé d'utiliser des noms de variables qui possèdent un sens descriptif et qui reflète leur utilisation.
+* Le nom d'une variable ne peut commencer que par une lettre, un underscore (\_) ou un signe dollar ($).
+* Après le premier caractère, il est possible d'utiliser des lettres, des chiffres, des underscores ou des signes dollar.
+* JavaScript fait la distinction entre les caractères en majuscules des caractères en minuscules. On dit que JavaScript est sensible à la casse. De ce fait, maVariable, MaVariable et MAVARIABLE sont trois variables distinctes.
+* Pour rendre votre code facile à lire et à comprendre, il est recommandé d'utiliser des noms de variables qui possèdent un sens descriptif et qui reflète leur utilisation.
 
-{% exercise %}
-Définir une variable `x` égale à 20.
+\*\*ES6 Version\*\*
 
-{% initial %}
-let x =
-
-{% solution %}
-let x = 20;
-
-{% validation %}
-assert(x == 20);
-
-{% context %}
-{% endexercise %}
-**ES6 Version**
-
-[ECMAScript 2015 ou ES2015](https://262.ecma-international.org/6.0/) aussi appelé ES6 est une mise à jour significative du langage JavaScript ayant eu lieu en 2009. En ES6, il existe trois manière de déclarer des variables.&#x20;
+[ECMAScript 2015 ou ES2015](https://262.ecma-international.org/6.0/) aussi appelé ES6 est une mise à jour significative du langage JavaScript ayant eu lieu en 2009. En ES6, il existe trois manière de déclarer des variables.
 
 ```javascript
 var x = 5;

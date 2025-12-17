@@ -1,8 +1,12 @@
 ---
 chapter: 15
 pageNumber: 97
-description: Access modifiers control the visibility and accessibility of class members (properties and methods). public, private, and protected are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
+description: >-
+  Access modifiers control the visibility and accessibility of class members
+  (properties and methods). public, private, and protected are the three access
+  modifiers used in class to control its access f
 ---
+
 # Access Modifiers
 
 `public`, `private`, and `protected` are the three access modifiers used in class to control its access from the outside. By default, all members (properties, fields, methods, or functions) are publicly accessible from outside the class.
@@ -20,7 +24,7 @@ let myCar = new Car("Toyota");
 console.log(Car.hello(myCar)); // Hello Toyota
 ```
 
-`private`  members can access only internally within the class and cannot be accessible from outside.  Private should start with `#`.
+`private` members can access only internally within the class and cannot be accessible from outside. Private should start with `#`.
 
 ```javascript
 class Car {
@@ -39,7 +43,7 @@ console.log(myCar.#present("Camry")); // Error
 console.log(Car.hello(myCar)); // Hello Toyota
 ```
 
-`protected` fields are accessible only from inside the class and those extending it. These are useful for the internal interface as the inheriting class also gains access to the parent class.  Protected fields with `_` .
+`protected` fields are accessible only from inside the class and those extending it. These are useful for the internal interface as the inheriting class also gains access to the parent class. Protected fields with `_` .
 
 ```javascript
 class Car {

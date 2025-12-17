@@ -1,12 +1,15 @@
 ---
 chapter: 9
 pageNumber: 96
-description: Una referencia a un objeto es un valor que apunta a la ubicación de la memoria donde está almacenado el objeto. Cuando se crea un objeto, se asigna un espacio de memoria para almacenar sus propiedades y valores. Cuando asignamos este objeto a una variable, esa variable contiene una referencia a la ubicación de la memoria donde está almacenado el objeto.
+description: >-
+  Una referencia a un objeto es un valor que apunta a la ubicación de la memoria
+  donde está almacenado el objeto. Cuando se crea un objeto, se asigna un
+  espacio de memoria para almacenar sus propiedades
 ---
+
 # Referencia
 
-Los objetos **nunca se copian**. Se transmiten por referencia. Una referencia de objeto es un valor que hace referencia a un objeto. Cuando crea un objeto utilizando el operador `new` o la sintaxis literal del objeto, JavaScript crea un objeto y le asigna una referencia.
-A continuación se muestra un ejemplo de creación de un objeto utilizando la sintaxis literal del objeto:
+Los objetos **nunca se copian**. Se transmiten por referencia. Una referencia de objeto es un valor que hace referencia a un objeto. Cuando crea un objeto utilizando el operador `new` o la sintaxis literal del objeto, JavaScript crea un objeto y le asigna una referencia. A continuación se muestra un ejemplo de creación de un objeto utilizando la sintaxis literal del objeto:
 
 ```javascript
 var objeto = {

@@ -1,8 +1,12 @@
 ---
 chapter: 19
 pageNumber: 95
-description: Le currying est une technique avancée dans la programmation modulaire qui consiste à transformer une fonction avec des arguments multiples en une séquence de fonctions imbriquées. Cela transforme la fonction de f(a, b, c) en f(a)(b)(c). Cela n'appelle pas la fonction, mais plutôt la transforme.
+description: >-
+  Le currying est une technique avancée dans la programmation modulaire qui
+  consiste à transformer une fonction avec des arguments multiples en une
+  séquence de fonctions imbriquées. Cela transforme la f
 ---
+
 # Le currying
 
 Le `currying` est une technique avancée dans la programmation modulaire qui consiste à transformer une fonction avec des arguments multiples en une séquence de fonctions imbriquées. Cela transforme la fonction de `f(a, b, c)` en `f(a)(b)(c)`. Cela n'appelle pas la fonction, mais plutôt la transforme.

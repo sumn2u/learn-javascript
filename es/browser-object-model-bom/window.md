@@ -1,12 +1,15 @@
 ---
 chapter: 16
 pageNumber: 129
-description: window es un objeto global que representa la ventana o pestaña del navegador en la que está cargada la página web actual. El objeto window actúa como objeto global para JavaScript del lado del cliente, lo que significa que las variables y funciones declaradas sin las palabras clave var, let o const se convierten en propiedades y métodos del objeto window.
+description: >-
+  window es un objeto global que representa la ventana o pestaña del navegador
+  en la que está cargada la página web actual. El objeto window actúa como
+  objeto global para JavaScript del lado del cliente
 ---
 
 # Window
 
-El objeto `window` representa la ventana del navegador y es compatible con los navegadores. Las variables, objetos y funciones globales también forman parte del objeto `window`.  
+El objeto `window` representa la ventana del navegador y es compatible con los navegadores. Las variables, objetos y funciones globales también forman parte del objeto `window`.
 
 Las **variables** globales son **propiedades** y las **funciones** son **métodos** del objeto window.
 
@@ -15,7 +18,7 @@ Tomemos un ejemplo de las propiedades de la pantalla. Se utiliza para determinar
 * `window.innerHeight` - la altura interior de la ventana del navegador
 * `window.innerWidth` - el ancho interior de la ventana del navegador
 
-> _**Nota**_: `window.document` es lo mismo que `document.location` ya que el Modelo de Objetos del documento\(DOM\) es parte del objeto de ventana.
+> _**Nota**_: `window.document` es lo mismo que `document.location` ya que el Modelo de Objetos del documento(DOM) es parte del objeto de ventana.
 
 Algunos ejemplos de los métodos de ventana.
 

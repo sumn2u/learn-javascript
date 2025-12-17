@@ -1,12 +1,18 @@
 ---
-layout: editorial
 chapter: 14
 pageNumber: 89
-description: A regular expression, often abbreviated as "regex," is a powerful tool for pattern matching and searching within strings. It provides a concise and flexible way to search, match, and manipulate text based on specific patterns.
+description: >-
+  A regular expression, often abbreviated as "regex," is a powerful tool for
+  pattern matching and searching within strings. It provides a concise and
+  flexible way to search, match, and manipulate text b
+layout: editorial
 ---
 
-# Chapter 14
-# Regular Expression
+# regular-expression
+
+## Chapter 14
+
+## Regular Expression
 
 A regular expression is an object that can either be constructed with the `RegEx` constructor or written as a literal value by enclosing a pattern in a forward slash `(/)` characters. The syntaxes for creating a regular expression are shown below.
 
@@ -62,7 +68,7 @@ const match = regex.test(str);
 console.log(match); // true
 ```
 
-* `m` - multiline matching 
+* `m` - multiline matching
 
 Example :
 
@@ -179,16 +185,16 @@ _Metacharacters_ are special character that has special meaning in the regular e
 | `\w`          | Match a word character (alphanumeric character `[a-zA-Z0–9_]`)   |
 | `\W`          | Match a non word character (same as `[^a-zA-Z0–9_]`)             |
 | `\d`          | Match any digit character( same as `[0-9]`)                      |
-| `\D`          | Match any non-digit character                                   |
+| `\D`          | Match any non-digit character                                    |
 | `\s`          | Match a whitespace character (spaces, tabs etc)                  |
 | `\S`          | Match a non whitespace character                                 |
-| `\b`          | Match at the beginning / end of a word                            |
+| `\b`          | Match at the beginning / end of a word                           |
 | `\B`          | Match but not at the begining / end of a word                    |
 | `\0`          | Match a `NULL` character                                         |
-|  `\n`             | Match a new line character                                       |
+| `\n`          | Match a new line character                                       |
 | `\f`          | Match a form feed character                                      |
-|   `\r`            | Match a carriage return character                                |
-|    `\t`           | Match a tab character                                            |
+| `\r`          | Match a carriage return character                                |
+| `\t`          | Match a tab character                                            |
 | `\v`          | Match a tab vertical character                                   |
 | `\xxx`        | Match a character specified by an octal number `xxx`             |
 | `\xdd`        | Match a character specified by a hexadecimal number `dd`         |
@@ -201,18 +207,18 @@ Properties and methods supported by RegEx are listed below.
 | `constructor` | Returns function that created RegExp object's protype                              |
 | `exec()`      | Test for the match and returns the first match, if no match then it returns `null` |
 | `global`      | Checks if the `g` modifier is set                                                  |
-| `ignoreCase`  | Checks if the `i` modifier is set                                                 |
+| `ignoreCase`  | Checks if the `i` modifier is set                                                  |
 | `lastIndex`   | Specifies the index at which to start the next match                               |
-| `multiline`   | Checks if the m modifier is set                                                   |
-| `source`      | Returns the text of the string                                                    |
+| `multiline`   | Checks if the m modifier is set                                                    |
+| `source`      | Returns the text of the string                                                     |
 | `test()`      | Test for the match and returns the `true` or `false`                               |
 | `toString()`  | Returns the string value of the regular exression                                  |
 
-{% hint style="working" %}
+{% hint style="info" %}
 A `complie()` method complies the regular expression and is deprecated.
 {% endhint %}
 
-### A common example of regular expression
+#### A common example of regular expression
 
 ```javascript
 let text = "The best things in life are free";
@@ -230,7 +236,7 @@ let pattern1String = pattern1.toString();
 // pattern1String : '/Hello/g'
 ```
 
-### A Real Life Example of Regex in Pincode Checking
+#### A Real Life Example of Regex in Pincode Checking
 
 ```javascript
 const handleSubmit = (e) => {

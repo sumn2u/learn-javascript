@@ -1,13 +1,18 @@
 ---
-layout: editorial
 chapter: 14
 pageNumber: 73
-description: Une expression rationnelle, aussi appelée expression régulière et abrégé "regex", est un outil puissant pour la correspondance de modèles et la recherche à l'intérieur des chaînes. Les regex apportent une manière rapide et flexible de chercher, faire correspondre et manipuler le texte en se basant sur des modèles spécifiques.
+description: >-
+  Une expression rationnelle, aussi appelée expression régulière et abrégé
+  "regex", est un outil puissant pour la correspondance de modèles et la
+  recherche à l'intérieur des chaînes. Les regex apportent
+layout: editorial
 ---
 
-# Chapitre 14
+# regular-expression
 
-# Expression régulières
+## Chapitre 14
+
+## Expression régulières
 
 Une expression régulière est un objet qui peut être indifféremment construit grâce au constructeur `RegEx` ou écrit comme une valeur littérale délimitée par des slash avant `(/)`. Les syntaxes pour créer une expression rationnelle sont expliquées ci-dessous.
 
@@ -34,17 +39,17 @@ Dans les cas où nous voulons qu'un slash fasse partie d'une expression réguli�
 
 Les différents modificateurs utilisés pour effectuer des recherches insensibles à la casse sont:
 
-- `g` - recherche globale (trouve toutes les occurrences au lieu de s'arrêter à la première occurrence)
-- `i` - recherche insensible à la casse
-- `m` - correspondance multiligne
+* `g` - recherche globale (trouve toutes les occurrences au lieu de s'arrêter à la première occurrence)
+* `i` - recherche insensible à la casse
+* `m` - correspondance multiligne
 
 Les _crochets_ sont utilisés à l'intérieur d'une expression régulière pour trouver une plage de caractères. Certaines d'entre elles sont mentionnées ci-dessous.
 
-- `[abc]` - trouve n'importe quel caractère entre les crochets
-- `[^abc]` - trouve n'importe quel caractère qui n'est pas entre les crochets
-- `[0-9]` - trouve n'importe quel chiffre entre les crochets
-- `[^0-9]` - trouve n'importe quel caractère qui n'est pas entre les crochets (non numérique)
-- `(x|y)`- trouve l'une des alternatives séparées par |
+* `[abc]` - trouve n'importe quel caractère entre les crochets
+* `[^abc]` - trouve n'importe quel caractère qui n'est pas entre les crochets
+* `[0-9]` - trouve n'importe quel chiffre entre les crochets
+* `[^0-9]` - trouve n'importe quel caractère qui n'est pas entre les crochets (non numérique)
+* `(x|y)`- trouve l'une des alternatives séparées par |
 
 Les _métacaractères_ sont des caractères spéciaux qui possèdent une signification particulière au sein de l'expression. Ces caractères sont décrits en détail ci-après :
 
@@ -83,7 +88,7 @@ Les propriétés et les méthodes supportées par les regex sont listées ci-des
 | `test()`      | Teste la correspondance et renvoie `true` ou `false`                                         |
 | `toString()`  | Renvoie la valeur de chaîne de l'expression régulière                                        |
 
-{% hint style="working" %}
+{% hint style="info" %}
 La méthode `compile()` recompile une expression régulière et est dépréciée. Elle ne doit plus être utilisée.
 {% endhint %}
 

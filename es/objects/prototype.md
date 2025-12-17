@@ -1,8 +1,12 @@
 ---
 chapter: 9
 pageNumber: 98
-description: Cada objeto tiene una propiedad especial llamada prototipo, que es una referencia a otro objeto. La propiedad prototype es una parte esencial del sistema de herencia basado en prototipos en JavaScript y permite que los objetos hereden propiedades y métodos de otros objetos.
+description: >-
+  Cada objeto tiene una propiedad especial llamada prototipo, que es una
+  referencia a otro objeto. La propiedad prototype es una parte esencial del
+  sistema de herencia basado en prototipos en JavaScript
 ---
+
 # Prototype
 
 Cada objeto está vinculado a un objeto prototype (en español, prototipo) del cual hereda propiedades. Los objetos creados a partir de literales de objetos (`{}`) se vinculan automáticamente a `Object.prototype`, que es un objeto que viene estándar con JavaScript.

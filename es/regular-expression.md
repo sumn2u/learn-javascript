@@ -1,8 +1,11 @@
 ---
-layout: editorial
 chapter: 14
 pageNumber: 119
-description: Una expresión regular, a menudo abreviada como "regex", es una poderosa herramienta para la coincidencia de patrones y la búsqueda dentro de cadenas. Proporciona una forma concisa y flexible de buscar, unir y manipular texto según patrones específicos.
+description: >-
+  Una expresión regular, a menudo abreviada como "regex", es una poderosa
+  herramienta para la coincidencia de patrones y la búsqueda dentro de cadenas.
+  Proporciona una forma concisa y flexible de buscar
+layout: editorial
 ---
 
 # Capítulo 14
@@ -174,26 +177,26 @@ console.log(matches); // Matriz de todas las apariciones de 'x' o 'y'
 
 Los _metacaracteres_ son caracteres especiales que tienen un significado especial en la expresión regular. Estos caracteres se describen con más detalle a continuación:
 
-| Metacaracter | Descripción                                                                     |
-| ------------- | ------------------------------------------------------------------------------ |
-| `.`           | Coincide con un solo carácter excepto nueva línea o un terminador              |
-| `\w`          | Coincide con un carácter de palabra (carácter alfanumérico `[a-zA-Z0–9_]`)     |
-| `\W`          | Coincide con un carácter que no es una palabra (igual que `[^a-zA-Z0–9_]`)     |
-| `\d`          | Coincide con cualquier carácter de dígito (igual que `[0-9]`)                  |
-| `\D`          | Coincide con cualquier carácter que no sea un dígito                           |
-| `\s`          | Coincide con un carácter de espacio en blanco (espacios, tabulaciones, etc.)   |
-| `\S`          | Coincide con un carácter que no sea un espacio en blanco                       |
-| `\b`          | Coincidencia al principio/final de una palabra                                 |
-| `\B`          | Coincide pero no al principio/final de una palabra                             |
-| `\0`          | Coincide con un carácter `NULL`                                                |
-| `\n`          | Coincide con un carácter de nueva línea                                        |
-| `\f`          | Coincide con un carácter de avance de formulario                               |
-| `\r`          | Coincide con un carácter de retorno de carro                                   |
-| `\t`          | Coincide con un carácter de tabulación                                         |
-| `\v`          | Coincide un carácter de tabulación vertical                                    |
-| `\xxx`        | Coincide con un carácter especificado por un número octal `xxx`                |
-| `\xdd`        | Coincide con un carácter especificado por un número hexadecimal `dd`           |
-| `\udddd`      | Coincide con un carácter especificado por un número hexadecimal `dddd`         |
+| Metacaracter | Descripción                                                                  |
+| ------------ | ---------------------------------------------------------------------------- |
+| `.`          | Coincide con un solo carácter excepto nueva línea o un terminador            |
+| `\w`         | Coincide con un carácter de palabra (carácter alfanumérico `[a-zA-Z0–9_]`)   |
+| `\W`         | Coincide con un carácter que no es una palabra (igual que `[^a-zA-Z0–9_]`)   |
+| `\d`         | Coincide con cualquier carácter de dígito (igual que `[0-9]`)                |
+| `\D`         | Coincide con cualquier carácter que no sea un dígito                         |
+| `\s`         | Coincide con un carácter de espacio en blanco (espacios, tabulaciones, etc.) |
+| `\S`         | Coincide con un carácter que no sea un espacio en blanco                     |
+| `\b`         | Coincidencia al principio/final de una palabra                               |
+| `\B`         | Coincide pero no al principio/final de una palabra                           |
+| `\0`         | Coincide con un carácter `NULL`                                              |
+| `\n`         | Coincide con un carácter de nueva línea                                      |
+| `\f`         | Coincide con un carácter de avance de formulario                             |
+| `\r`         | Coincide con un carácter de retorno de carro                                 |
+| `\t`         | Coincide con un carácter de tabulación                                       |
+| `\v`         | Coincide un carácter de tabulación vertical                                  |
+| `\xxx`       | Coincide con un carácter especificado por un número octal `xxx`              |
+| `\xdd`       | Coincide con un carácter especificado por un número hexadecimal `dd`         |
+| `\udddd`     | Coincide con un carácter especificado por un número hexadecimal `dddd`       |
 
 Las propiedades y métodos admitidos por RegEx se enumeran a continuación.
 
@@ -209,7 +212,7 @@ Las propiedades y métodos admitidos por RegEx se enumeran a continuación.
 | `test()`      | Prueba la coincidencia y devuelve `true` o `false`                                                 |
 | `toString()`  | Devuelve el valor de cadena de la expresión regular.                                               |
 
-{% hint style="working" %}
+{% hint style="info" %}
 Un método `compile()` compila la expresión regular y está en desuso.
 {% endhint %}
 

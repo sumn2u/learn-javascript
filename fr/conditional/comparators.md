@@ -1,7 +1,10 @@
 ---
 chapter: 5
 pageNumber: 34
-description: La comparaison est un mécanisme indissociable des conditions. En effet, c'est notamment grâce à elle qu'on est capable d'évaluer des valeur l'une avec l'autre et leurs relations. Le boolén renvoyé indique si les valeurs sont égales, supérieures ou inférieures à ou toute autre relation basée sur un critère de comparaison spécifique.
+description: >-
+  La comparaison est un mécanisme indissociable des conditions. En effet, c'est
+  notamment grâce à elle qu'on est capable d'évaluer des valeur l'une avec
+  l'autre et leurs relations. Le boolén renvoyé ind
 ---
 
 # Comparaison
@@ -18,12 +21,12 @@ La partie conditionnelle (ou la condition) est représentée par la variable `co
 
 Autre test conditionnels fréquents:
 
-- `x > a`: x est strictement supérieur à a?
-- `x < a`: x est strictement inférieur à a?
-- `x <= a`: x est inférieur ou égal à a?
-- `x >=a`: x est supérieur ou égal à a?
-- `x != a`: x est différent de a?
-- `x`: est-ce que x existe?
+* `x > a`: x est strictement supérieur à a?
+* `x < a`: x est strictement inférieur à a?
+* `x <= a`: x est inférieur ou égal à a?
+* `x >=a`: x est supérieur ou égal à a?
+* `x != a`: x est différent de a?
+* `x`: est-ce que x existe?
 
 ## Comparaison logique - ternaire
 

@@ -1,13 +1,17 @@
 ---
 chapter: 16
 pageNumber: 102
-description:  The navigator is a built-in object that provides information about the user's web browser and the user's system. It contains various properties and methods that give access to information about the user's environment, such as the browser's name, version, user agent, language preferences, and more.
+description: >-
+  The navigator is a built-in object that provides information about the user's
+  web browser and the user's system. It contains various properties and methods
+  that give access to information about the us
 ---
+
 # Navigator
 
-The `window.navigator`  or `navigator`   is a **read-only** property and contains different methods and functions related to the browser.&#x20;
+The `window.navigator` or `navigator` is a **read-only** property and contains different methods and functions related to the browser.
 
-Let's look at a  few examples of navigation.
+Let's look at a few examples of navigation.
 
 1.  **navigator.appName**: It gives the name of the browser application
 
@@ -29,6 +33,3 @@ Let's look at a  few examples of navigation.
     navigator.platform;
     "MacIntel"
     ```
-
-
-

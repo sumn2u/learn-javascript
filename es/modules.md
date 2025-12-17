@@ -1,8 +1,11 @@
 ---
-layout: editorial
 chapter: 13
 pageNumber: 117
-description: Los módulos son una forma de organizar el código en componentes separados, reutilizables y encapsulados. Los módulos permiten a los desarrolladores dividir bases de código grandes y complejas en partes más pequeñas y manejables, lo que facilita la comprensión, el mantenimiento y la colaboración en los proyectos.
+description: >-
+  Los módulos son una forma de organizar el código en componentes separados,
+  reutilizables y encapsulados. Los módulos permiten a los desarrolladores
+  dividir bases de código grandes y complejas en parte
+layout: editorial
 ---
 
 # Capítulo 13
@@ -58,7 +61,7 @@ const age = 30;
 export {name, age};
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 Solo se puede tener una `export` predeterminada en un archivo.
 {% endhint %}
 

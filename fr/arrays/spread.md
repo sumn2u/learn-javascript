@@ -1,7 +1,10 @@
 ---
 chapter: 6
 pageNumber: 40
-description: L’opérateur de décomposition (spread) permet à un tableau ou à un objet de manipuler rapidement des tableaux et des objets. Il fournit une syntaxe concise pour copier, fusionner ou extraire des éléments de tableaux et pour copier des propriétés d'objets.
+description: >-
+  L’opérateur de décomposition (spread) permet à un tableau ou à un objet de
+  manipuler rapidement des tableaux et des objets. Il fournit une syntaxe
+  concise pour copier, fusionner ou extraire des élémen
 ---
 
 # Opérateur de décomposition (spread)
@@ -27,6 +30,6 @@ arr = [...arr, ...arr1];
 console.log(arr); //Résultat: [1, 2, 3, 4, 5, 6, 7]
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 L'opérateur de décomposition spread fonctionne uniquement avec les navigateurs modernes qui supportent la fonctionnalités. Si vous souhaitez l'utiliser avec d'anciens navigateurs, vous devrez utiliser un transpiler comme Babel pour convertir la syntaxe du spread dans son équivalent ES5.
 {% endhint %}

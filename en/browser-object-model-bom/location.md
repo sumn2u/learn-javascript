@@ -1,8 +1,12 @@
 ---
 chapter: 16
 pageNumber: 105
-description: The location is a built-in object that represents the current URL of the web page being displayed in the browser. It provides current web page's location and allows to perform various operations related to URLs.
+description: >-
+  The location is a built-in object that represents the current URL of the web
+  page being displayed in the browser. It provides current web page's location
+  and allows to perform various operations relat
 ---
+
 # Location
 
 The `location` object is used to retrieve the current location (URL) of the document and provides different methods to manipulate document location. One can access the current location by

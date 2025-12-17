@@ -1,8 +1,12 @@
 ---
 chapter: 9
 pageNumber: 77
-description: The `delete` operator can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
+description: >-
+  The `delete` operator can be used to **remove a property** from an object.
+  When a property is deleted, it is removed from the object and cannot be
+  accessed or enumerated (i.e., it does not show up in
 ---
+
 # Delete Operator
 
 The `delete` operator can be used to **remove a property** from an object. When a property is deleted, it is removed from the object and cannot be accessed or enumerated (i.e., it does not show up in a for-in loop).
@@ -29,7 +33,7 @@ let prototypeAge = child.age;
 // 26, because child does not have its own age property.
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 The `delete` operator only works on own properties of an object, and not on inherited properties. It also does not work on properties that have the `configurable` attribute set to `false`.
 {% endhint %}
 

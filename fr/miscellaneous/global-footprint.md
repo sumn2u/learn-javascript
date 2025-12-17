@@ -1,8 +1,12 @@
 ---
 chapter: 19
 pageNumber: 101
-description: L'empreinte globale fait reférence à l'impact ou l'influence qu'un script ou une application a sur la portée globale de l'environnement d'exécution. Quand un script ou une application crée des variables ou des fonctions de portée globale, cela affecte l'empreinte globale.
+description: >-
+  L'empreinte globale fait reférence à l'impact ou l'influence qu'un script ou
+  une application a sur la portée globale de l'environnement d'exécution. Quand
+  un script ou une application crée des variabl
 ---
+
 # L'Empreinte Globale
 
 Quant vous développeé un module, qui pourrait s'exécuter sur une page web, qui exécute également d'autres modules, alors vous devez faire attention au chevauchement du nom des variables.

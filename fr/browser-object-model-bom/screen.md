@@ -1,7 +1,10 @@
 ---
 chapter: 16
 pageNumber: 82
-description: L'objet screen contient des informations sur l'écran sur lequel la fenêtre actuelle est affichée. Il permet aux développeurs d'accéder aux propriétés liées à la taille de l'écran de l'utilisateur, à la résolution, à la profondeur des couleurs et à d'autres informations relatives à l'affichage.
+description: >-
+  L'objet screen contient des informations sur l'écran sur lequel la fenêtre
+  actuelle est affichée. Il permet aux développeurs d'accéder aux propriétés
+  liées à la taille de l'écran de l'utilisateur, à l
 ---
 
 # Screen (écran)

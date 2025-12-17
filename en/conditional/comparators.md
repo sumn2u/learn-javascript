@@ -1,8 +1,12 @@
 ---
 chapter: 5
 pageNumber: 45
-description: Comparators are functions that are used to compare two values and determine their relationship. Here. the returned value indicates whether the values are equal, greater than, less than, or some other relationship based on a specific comparison criterion.  
+description: >-
+  Comparators are functions that are used to compare two values and determine
+  their relationship. Here. the returned value indicates whether the values are
+  equal, greater than, less than, or some other
 ---
+
 # Comparators
 
 Lets now focus on the conditional part:

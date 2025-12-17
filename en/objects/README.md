@@ -1,12 +1,18 @@
 ---
-layout: editorial
 chapter: 9
 pageNumber: 71
-description: An object is a composite data type that allows you to store and organize multiple values (properties) as key-value pairs. It is a fundamental data structure in the language and is widely used for representing complex data and creating structured entities.
+description: >-
+  An object is a composite data type that allows you to store and organize
+  multiple values (properties) as key-value pairs. It is a fundamental data
+  structure in the language and is widely used for repr
+layout: editorial
 ---
 
-# Chapter 9
-# Objects
+# objects
+
+## Chapter 9
+
+## Objects
 
 In javascript the objects are **mutable** because we change the values pointed by the reference object, instead, when we change a primitive value we are changing its reference which now is pointing to the new value and so primitive are **immutable**. The primitive types of JavaScript are `true`, `false`, `numbers`, `strings`, `null` and `undefined`. Every other value is an `object`. Objects contain `propertyName`: `propertyValue` pairs. There are three ways to create an `object` in JavaScript:
 
@@ -34,9 +40,10 @@ In javascript the objects are **mutable** because we change the values pointed b
     > _**Note:**_ It creates a new object with the specified prototype object and properties.
 
 In this chapter, we will explore following topics:
-* [Delete](./delete.md)
-* [Enumeration](./enumeration.md)
-* [Mutable](./mutable.md)
-* [Properties](./properties.md)
-* [Prototype](./prototype.md)
-* [Reference](./reference.md)
+
+* [Delete](delete.md)
+* [Enumeration](enumeration.md)
+* [Mutable](mutable.md)
+* [Properties](properties.md)
+* [Prototype](prototype.md)
+* [Reference](reference.md)

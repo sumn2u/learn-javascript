@@ -1,7 +1,10 @@
 ---
 chapter: 12
 pageNumber: 69
-description: Le bloc try...catch...finally permet aux développeurs de gérer avec élégance les exceptions (erreurs) qui peuvent survenir au cours de l'exécution d'un bloc de code et de s'assurer que certaines actions de nettoyage sont toujours exécutées, qu'une exception ait été levée ou non.
+description: >-
+  Le bloc try...catch...finally permet aux développeurs de gérer avec élégance
+  les exceptions (erreurs) qui peuvent survenir au cours de l'exécution d'un
+  bloc de code et de s'assurer que certaines actio
 ---
 
 # try...catch...finally
@@ -31,38 +34,3 @@ try {
 ```
 
 Dans l'exemple ci-dessus, le bloc `try` est exécuté en premier, puis il est suivi par `finally` puisqu'il n'y a pas d'erreur.
-
-{% exercise %}
-Ecrivez une fonction `divideNumbers()` qui prend deux arguments "numerator" et "denominator" et renvoie le résultat de la division du numerator par le denominator en utilisant les paramètres suivants.
-
-{% initial %}
-function divideNumbers(numerator, denominator) {
-try {
-// instruction try pour diviser le numérateur par le dénominateur.
-} catch (error) {
-// impression du message d'erreur
-} finally {
-// afficher que l'exécution est terminée
-}
-// return result
-}
-let answer = divideNumbers(10, 2);
-
-{% solution %}
-function divideNumbers(numerator, denominator) {
-let result;
-try {
-result = numerator / denominator;
-} catch (error) {
-console.error(`Erreur : ${error}`);
-} finally {
-console.log('Function finished executing');
-}
-return result;
-}
-let answer = divideNumbers(10, 2);
-{% validation %}
-assert(answer == 5);
-
-{% context %}
-{% endexercise %}

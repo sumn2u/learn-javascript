@@ -1,10 +1,14 @@
 ---
 Kapitel: 2
 Seitenzahl: 15
-Beschreibung: Der Gleichheitsoperator wird zur Vergleich verwendet. Er kann feststellen, ob zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
+Beschreibung: >-
+  Der Gleichheitsoperator wird zur Vergleich verwendet. Er kann feststellen, ob
+  zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
 ---
 
-# Gleichheit
+# equality
+
+## Gleichheit
 
 Beim Schreiben eines Programms müssen wir häufig die Gleichheit von Variablen in Bezug auf andere Variablen feststellen. Dies erfolgt mithilfe eines Gleichheitsoperators. Der einfachste Gleichheitsoperator ist der `==` Operator. Dieser Operator versucht, so gut wie möglich festzustellen, ob zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
 
@@ -17,18 +21,13 @@ let baz = "42";
 let qux = "life";
 ```
 
-
 Here's the translation of the provided text into German:
 
-markdown
-Copy code
----
-Kapitel: 2
-Seitenzahl: 15
-Beschreibung: Der Gleichheitsoperator wird zur Vergleich verwendet. Er kann feststellen, ob zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
----
+### markdown Copy code
 
-# Gleichheit
+### Kapitel: 2 Seitenzahl: 15 Beschreibung: Der Gleichheitsoperator wird zur Vergleich verwendet. Er kann feststellen, ob zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
+
+## Gleichheit
 
 Beim Schreiben eines Programms müssen wir häufig die Gleichheit von Variablen in Bezug auf andere Variablen feststellen. Dies erfolgt mithilfe eines Gleichheitsoperators. Der einfachste Gleichheitsoperator ist der `==` Operator. Dieser Operator versucht, so gut wie möglich festzustellen, ob zwei Variablen gleich sind, selbst wenn sie nicht denselben Typ haben.
 
@@ -44,10 +43,12 @@ let qux = "life";
 
 Der `===` Gleichheitsoperator bestimmt, dass zwei Variablen gleich sind, wenn sie denselben Typ und denselben Wert haben. Unter denselben Annahmen wie zuvor bedeutet dies, dass `foo === bar` immer noch true ergibt, aber `foo === baz` nun false ergibt. baz `===` qux wird weiterhin false ergeben.
 
-{% exercise %}
+<div data-gb-custom-block data-tag="exercise">
+
 Verwenden Sie den `==` und den `===` Operator, um die Werte von str1 und str2 zu vergleichen.
 
-{% initial %}
+<div data-gb-custom-block data-tag="initial"></div>
+
 let str1 = "hallo";
 let str2 = "HALLO";
 let bool1 = true;
@@ -58,7 +59,9 @@ let boolResult1 =
 // Vergleichen Sie mit ===
 let stringResult2 =
 let boolResult2 =
-{% solution %}
+
+<div data-gb-custom-block data-tag="solution"></div>
+
 let str1 = "hallo";
 let str2 = "HALLO";
 let bool1 = true;
@@ -71,9 +74,12 @@ let boolResult1 = bool1 == bool2 // true
 let stringResult2 = str1 === str2 // false
 let boolResult2 = bool1 === bool2 // false
 
-{% validation %}
+<div data-gb-custom-block data-tag="validation"></div>
+
 assert(stringResult1 === false && stringResult2 === false && boolResult1 === true && boolResult2 === false);
 
-{% context %}
-{% endexercise %}
+<div data-gb-custom-block data-tag="context"></div>
 
+</div>
+
+```

@@ -1,19 +1,24 @@
 ---
-layout: editorial
 chapter: 12
 pageNumber: 68
-description: En programmation, les erreurs surviennent pour diverses raisons, certaines sont dues à des erreurs de code, d'autres à des entrées erronées, et d'autres encore sont imprévisibles. Le try catch permet d'éviter que le script entier ne s'arrête ou ne se bloque lorsqu'une erreur se produit, ce qui nous permet de gérer avec élégance les cas exceptionnels et de fournir un comportement de repli.
+description: >-
+  En programmation, les erreurs surviennent pour diverses raisons, certaines
+  sont dues à des erreurs de code, d'autres à des entrées erronées, et d'autres
+  encore sont imprévisibles. Le try catch permet
+layout: editorial
 ---
 
-# Chapitre 12
+# try...-catch
 
-# Gestion des erreurs
+## Chapitre 12
 
-En programmation, les erreurs surviennent pour diverses raisons, certaines sont dues à des erreurs de code, d'autres à des entrées erronées, et d'autres encore sont imprévisibles. Lorsqu'une erreur se produit, le code s'arrête et génère un message d'erreur généralement affiché dans la console.&#x20;
+## Gestion des erreurs
 
-# try... catch
+En programmation, les erreurs surviennent pour diverses raisons, certaines sont dues à des erreurs de code, d'autres à des entrées erronées, et d'autres encore sont imprévisibles. Lorsqu'une erreur se produit, le code s'arrête et génère un message d'erreur généralement affiché dans la console.
 
-Au lieu d'arrêter l'exécution du code, nous pouvons utiliser la construction `try...catch` qui permet d'attraper les erreurs sans interrompre le script. La construction `try...catch` a deux blocs principaux; `try` et ensuite `catch`.&#x20;
+## try... catch
+
+Au lieu d'arrêter l'exécution du code, nous pouvons utiliser la construction `try...catch` qui permet d'attraper les erreurs sans interrompre le script. La construction `try...catch` a deux blocs principaux; `try` et ensuite `catch`.
 
 ```javascript
 try {
@@ -35,14 +40,13 @@ try {
 }
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 `try...catch` fonctionne pour les erreurs d'exécution, ce qui signifie que le code doit être exécutable et synchrone.
 {% endhint %}
 
-Pour lancer une erreur personnalisée, une instruction `throw` peut être utilisée. L'objet error, qui est généré par les erreurs, a deux propriétés principales.&#x20;
+Pour lancer une erreur personnalisée, une instruction `throw` peut être utilisée. L'objet error, qui est généré par les erreurs, a deux propriétés principales.
 
-**name** : nom de l'erreur
-**message** : détails sur l'erreur&#x20;
+**name** : nom de l'erreur **message** : détails sur l'erreur
 
 {% hint style="info" %}
 Si nous n'avons pas besoin d'un message d'erreur, la capture peut être omise.

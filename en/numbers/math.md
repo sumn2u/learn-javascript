@@ -1,7 +1,10 @@
 ---
 chapter: 3
 pageNumber: 19
-description: The Math object allows performing mathematical operations in JavaScript. It is static and doesn't have a constructor. One can use method and properties of Math object without creating a Math object first.
+description: >-
+  The Math object allows performing mathematical operations in JavaScript. It is
+  static and doesn't have a constructor. One can use method and properties of
+  Math object without creating a Math object fi
 ---
 
 # Math
@@ -57,17 +60,17 @@ To access maths method, one can call its methods directly with arguments whereve
 | `cos(x)`           | Returns consine of `x`, in radians                                              |
 | `cosh(x)`          | Returns hyperbolic cosine of `x`                                                |
 | `exp(x)`           | Returns exponential value of `x`                                                |
-| `floor(x)`         | Returns round downwards to the nearest integer of `x`                          |
+| `floor(x)`         | Returns round downwards to the nearest integer of `x`                           |
 | `log(x)`           | Returns natural logarithmetic of `x`                                            |
 | `max(x,y,z,... n)` | Returns number with the highest value                                           |
 | `min(x,y,z,... n)` | Returns number with the lowest value                                            |
 | `pow(x,y)`         | Returns value of `x` to the power of `y`                                        |
 | `random()`         | Returns number between 0 and 1                                                  |
-| `round(x)`         | Rounds number to the nearest `x`                                                 |
+| `round(x)`         | Rounds number to the nearest `x`                                                |
 | `sign(x)`          | Returns if x is negative, `null` or positive (-1,0,1)                           |
-| `sin(x)`           | Returns sine of `x`, in radians                                                   |
-| `sinh(x)`          | Returns hyperbolic sine of `x`                                                    |
-| `sqrt(x)`          | Returns square root of `x`                                                        |
+| `sin(x)`           | Returns sine of `x`, in radians                                                 |
+| `sinh(x)`          | Returns hyperbolic sine of `x`                                                  |
+| `sqrt(x)`          | Returns square root of `x`                                                      |
 | `tan(x)`           | Returns tangent of an angle                                                     |
-| `tanh(x)`          | Returns hyperbolic tangent of `x`                                                 |
-| `trunc(x)`         | Returns integer part of a number (`x`)                                            |
+| `tanh(x)`          | Returns hyperbolic tangent of `x`                                               |
+| `trunc(x)`         | Returns integer part of a number (`x`)                                          |

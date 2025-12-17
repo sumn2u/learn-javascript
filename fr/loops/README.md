@@ -1,12 +1,18 @@
 ---
-layout: editorial
 chapter: 7
 pageNumber: 49
-description: Les boucles sont des structures de controles qui vous permettent d'exécuter un bloc de code de façon répétée jusquà ce que une condition précise soit remplie. Les boucles sont essentielles pour automatiser des tâches répétitives et l'itération sur les structures de données telles que les tableaux et les chaînes de caractères.
+description: >-
+  Les boucles sont des structures de controles qui vous permettent d'exécuter un
+  bloc de code de façon répétée jusquà ce que une condition précise soit
+  remplie. Les boucles sont essentielles pour automa
+layout: editorial
 ---
 
-# Chapitre 7
-# Les boucles
+# loops
+
+## Chapitre 7
+
+## Les boucles
 
 Les boucles sont des instructions répétitives où une variable de la boucle change. Les boucles sont utiles: si vous voulez exécuter le même code encore et encore, à chaque fois avec une valeur différente.
 

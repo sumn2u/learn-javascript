@@ -1,8 +1,12 @@
 ---
 chapter: 5
 pageNumber: 46
-description: Los comparadores son funciones que se utilizan para comparar dos valores y determinar su relación. Aquí, el valor devuelto indica si los valores son iguales, mayores que, menores que o alguna otra relación basada en un criterio de comparación específico.  
+description: >-
+  Los comparadores son funciones que se utilizan para comparar dos valores y
+  determinar su relación. Aquí, el valor devuelto indica si los valores son
+  iguales, mayores que, menores que o alguna otra rel
 ---
+
 # Comparadores
 
 Centrémonos ahora en la parte condicional:

@@ -1,8 +1,11 @@
 ---
-layout: editorial
 chapter: 12
 pageNumber: 115
-description: En la programación, los errores ocurren por varias razones, algunos se deben a errores de código, otros se deben a una entrada incorrecta y otras cosas imprevisibles. La captura de prueba ayuda a evitar que todo el script se detenga o falle cuando se produce un error, lo que nos permite manejar con elegancia casos excepcionales y proporcionar un comportamiento alternativo.
+description: >-
+  En la programación, los errores ocurren por varias razones, algunos se deben a
+  errores de código, otros se deben a una entrada incorrecta y otras cosas
+  imprevisibles. La captura de prueba ayuda a evit
+layout: editorial
 ---
 
 # try... catch
@@ -29,13 +32,13 @@ try {
 }
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 `try...catch` Funciona para errores de tiempo de ejecución, lo que significa que el código debe ser ejecutable y sincrónico.
 {% endhint %}
 
 Para generar un error personalizado, se puede utilizar una declaración `throw`. El objeto de error generado por errores tiene dos propiedades principales.
 
-* **name**:  nombre del error
+* **name**: nombre del error
 * **message**: detalles sobre el error
 
 {% hint style="info" %}

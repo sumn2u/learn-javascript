@@ -1,11 +1,15 @@
 ---
 chapter: 7
 pageNumber: 50
-description:  La boucle for est une structure de controle très puissante utilisée pour exécuter un bloc de code plusieurs fois, que ça soit pour un nombre d'itération fixé ou alors sur un interval défini. Cette instruction est très polyvalente est couramment utilisée pour parcourir les tableaux, les chaîne de caracètres et les autres objets itérables.
+description: >-
+  La boucle for est une structure de controle très puissante utilisée pour
+  exécuter un bloc de code plusieurs fois, que ça soit pour un nombre
+  d'itération fixé ou alors sur un interval défini. Cette ins
 ---
+
 # For
 
-La form la plus simple et intuitive des boucles est la boucle *for*. Sa syntaxe est presque similaire à celle de l'instruction `if()` mais avec plus d'options:
+La form la plus simple et intuitive des boucles est la boucle _for_. Sa syntaxe est presque similaire à celle de l'instruction `if()` mais avec plus d'options:
 
 ```javascript
 for (initialisation; condition de sortie; changement) {
@@ -19,8 +23,7 @@ for (initialisation; condition de sortie; changement) {
 * Dans la partie `condition de sortie`, mettez une condition qui sera vérifiée avant chaque itération. La boucle s'arrête le moment où cette condition s'avère fausse.
 * Dans la partie `changement`, dites au programme comment mettre à jour la variable de boucle.
 
-
-Voyons comment exécuter un bloc d'instruction 10 fois avec une boucle for: 
+Voyons comment exécuter un bloc d'instruction 10 fois avec une boucle for:
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
@@ -62,7 +65,7 @@ for (let x in nombres) {
 // Resultat: txt = '45491625'
 ```
 
-La valeur des objets itérables comme `Arrays`, `Strings`, `Maps`, `NodeLists` peuvent être parcourues en utilisant l'instruction `for of`.&#x20;
+La valeur des objets itérables comme `Arrays`, `Strings`, `Maps`, `NodeLists` peuvent être parcourues en utilisant l'instruction `for of`.
 
 ```javascript
 let langage = "JavaScript";

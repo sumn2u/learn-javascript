@@ -1,8 +1,12 @@
 ---
 chapter: 8
 pageNumber: 74
-description: Las funciones de orden superior son funciones que manipulan otras funciones. Posee un poder considerable ya que permite la composición funcional, la abstracción y la capacidad de generar código que es versátil y fácilmente reutilizable.
+description: >-
+  Las funciones de orden superior son funciones que manipulan otras funciones.
+  Posee un poder considerable ya que permite la composición funcional, la
+  abstracción y la capacidad de generar código que es
 ---
+
 # Funciones de orden superior
 
 Las funciones de orden superior son funciones que manipulan otras funciones. Por ejemplo, una función puede tomar otras funciones como argumentos y/o producir una función como valor de retorno. Estas técnicas funcionales _elegantes_ son construcciones poderosas disponibles en JavaScript y otros lenguajes de alto nivel como python, lisp, etc.

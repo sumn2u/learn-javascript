@@ -1,8 +1,12 @@
 ---
 chapter: 19
 pageNumber: 151
-description: La huella global se refiere al impacto o influencia que tiene un script o una aplicación en el alcance global del entorno de ejecución. Cuando un script o una aplicación crea variables o funciones en el ámbito global, afecta la huella global. 
+description: >-
+  La huella global se refiere al impacto o influencia que tiene un script o una
+  aplicación en el alcance global del entorno de ejecución. Cuando un script o
+  una aplicación crea variables o funciones en
 ---
+
 # Huella global
 
 Si está desarrollando un módulo, que podría estar ejecutándose en una página web, que también ejecuta otros módulos, debe tener cuidado con la superposición de nombres de variables.

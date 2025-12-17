@@ -1,7 +1,10 @@
 ---
 chapter: 2
 pageNumber: 11
-description: Los comentarios se utilizan para marcar anotaciones para otros programadores o pequeñas descripciones sobre el código que ayudan a otros a comprenderlo. Estas declaraciones no son ejecutadas por el intérprete.
+description: >-
+  Los comentarios se utilizan para marcar anotaciones para otros programadores o
+  pequeñas descripciones sobre el código que ayudan a otros a comprenderlo.
+  Estas declaraciones no son ejecutadas por el in
 ---
 
 # Comentarios
@@ -18,8 +21,6 @@ let a = "esto es una variable definida en una declaración";
 ```
 
 * _Comentarios multilínea_: Comienzan con una barra diagonal y un asterisco (`/*`) y terminan con un asterisco y una barra diagonal (`*/`). El intérprete de JavaScript ignora todo lo que se encuentre entre los marcadores de apertura y cierre. Por ejemplo:
-
-
 
 ```javascript
 /*

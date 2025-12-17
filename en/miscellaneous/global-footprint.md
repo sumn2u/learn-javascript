@@ -1,11 +1,15 @@
 ---
 chapter: 19
 pageNumber: 121
-description: Global footprint refers to the impact or influence that a script or application has on the global scope of the runtime environment. When a script or application creates variables or functions in the global scope, it affects the global footprint. 
+description: >-
+  Global footprint refers to the impact or influence that a script or
+  application has on the global scope of the runtime environment. When a script
+  or application creates variables or functions in the g
 ---
+
 # Global footprint
 
-If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware  of the variable name overlapping.
+If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware of the variable name overlapping.
 
 Suppose we are developing a counter module:
 

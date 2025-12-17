@@ -1,7 +1,10 @@
 ---
 chapter: 3
 pageNumber: 21
-description: Operators are symbols or keywords used to perform operations on data, such as variables, values, or expressions. They are an essential part of the language and allow developers to perform arithmetic, comparison, logical, assignment, and other operations.
+description: >-
+  Operators are symbols or keywords used to perform operations on data, such as
+  variables, values, or expressions. They are an essential part of the language
+  and allow developers to perform arithmetic,
 ---
 
 # Basic Operators
@@ -18,23 +21,23 @@ Here `+` is an operator that performs addition, and `2` and `3` are operands.
 
 There are various operators supported by JavaScript. They are as follows:
 
-- [Arithmetic Operators](#arithmetic-operators)
-- [Assignment Operators](#assignment-operators)
-- [Comparison Operators](#Comparison-operators)
-- [Logical Operators](#logical-operators)
-- [Ternary Operators](#ternary-operators)
-- [Bitwise Operators](#bitwise-operators)
-- [`typeof`` Operators](#typeof-operators)
+* [Arithmetic Operators](operators.md#arithmetic-operators)
+* [Assignment Operators](operators.md#assignment-operators)
+* [Comparison Operators](operators.md#Comparison-operators)
+* [Logical Operators](operators.md#logical-operators)
+* [Ternary Operators](operators.md#ternary-operators)
+* [Bitwise Operators](operators.md#bitwise-operators)
+* [\`typeof\`\` Operators](operators.md#typeof-operators)
 
 ### Arithmetic Operators
 
 Arithmetic operators are used to perform mathematical operations on values. They include
 
-- [Addition (`+`) operator](#addition-operator)
-- [Subtraction (`-`) operator](#subtraction-operator)
-- [Multiplication (`*`) operator](#multiplication-operator)
-- [Division (`/`) operator ](#multiplication-operator)
-- [Remainder (`%`) operator](#remainder-operator)
+* [Addition (`+`) operator](operators.md#addition-operator)
+* [Subtraction (`-`) operator](operators.md#subtraction-operator)
+* [Multiplication (`*`) operator](operators.md#multiplication-operator)
+* [Division (`/`) operator](operators.md#multiplication-operator)
+* [Remainder (`%`) operator](operators.md#remainder-operator)
 
 #### Addition Operator (`+`)
 
@@ -84,7 +87,7 @@ console.log(12 % 3); // 0
 
 The JavaScript interpreter works from left to right. One can use parentheses just like in math to separate and group expressions: `c = (a / b) + d`
 
-{% hint style="working" %}
+{% hint style="info" %}
 JavaScript uses the `+` operator for both addition and concatenation. Numbers are added whereas strings are concatenated.
 {% endhint %}
 
@@ -113,53 +116,13 @@ let x = 2 / 0; // Infinity
 let y = -2 / 0; // -Infinity
 ```
 
-{% exercise %}
-Use the math operators +, -, \*, /, and % to perform the following operations on `num1` and `num2`.
-
-{% initial %}
-let num1 = 10;
-let num2 = 5;
-
-// Add num1 and num2.
-let addResult =
-// Subtract num2 from num1.
-let subtractResult =
-// Multiply num1 and num2.
-let multiplyResult =
-// Divide num1 by num2.
-let divideResult =
-// Find the remainder num1 is divided by num2.
-let reminderResult =
-
-{% solution %}
-let num1 = 10;
-let num2 = 5;
-
-// Add num1 and num2.
-let addResult = (num1 + num2);
-// Subtract num2 from num1.
-let subtractResult = (num1 - num2);
-// Multiply num1 and num2.
-let multiplyResult = (num1 \* num2);
-// Divide num1 by num2.
-let divideResult = (num1 / num2);
-// Find the remainder num1 is divided by num2.
-let reminderResult = (num1 % num2);
-
-{% validation %}
-assert(addResult === 15 && subtractResult === 5 && multiplyResult === 50 && divideResult === 2 && reminderResult === 0 );
-
-{% context %}
-{% endexercise %}
-
 ### Assignment Operators
 
 Assignment operators are used to assign values to variables or evaluates the assigned value. _Chaining the assignmentoperator is possible in order to assign a single value to multiple values._ They includes the assignment(`=`) operator and compound assignment operators like `+=`, `-=`, `*=` and `/=`.
 
 #### `=` (Assignment Operator)
 
-This operator is used to assign the value on the right side to the variable on the left side.
-For examples:
+This operator is used to assign the value on the right side to the variable on the left side. For examples:
 
 ```javascript
 let x = 10; //Assigns the value 10 to the variable x.
@@ -167,26 +130,25 @@ let x = 10; //Assigns the value 10 to the variable x.
 
 #### Compound Assignment Operators
 
-These operator combine the arithmetic operation with the assignment operation. They are shortcuts for performing an operation and then assigning the result back to the variable.
-For example:
+These operator combine the arithmetic operation with the assignment operation. They are shortcuts for performing an operation and then assigning the result back to the variable. For example:
 
-##### `+=` (Addition Assignment)
+**`+=` (Addition Assignment)**
 
 It adds the value on the right side to the variable and assigns the result back to the variable.
 
-##### `-=` (Subtraction Assignment)
+**`-=` (Subtraction Assignment)**
 
 It subtracts the value on the right side from the variable and assigns the result back to the variable.
 
-##### `*=-` (Multiplication Assignment)
+**`*=-` (Multiplication Assignment)**
 
 It multiplies the variable by the value on the right side and assigns the result back to the variable.
 
-##### `/=` (Division Assignment)
+**`/=` (Division Assignment)**
 
 It divides the variable by the value on the right side and assigns the result back to the variable.
 
-##### `%=` (Modules/Remainder Assignment)
+**`%=` (Modules/Remainder Assignment)**
 
 It computes the remainder when the variable is divided by the value on the right side and assigns the result back to the variable.
 

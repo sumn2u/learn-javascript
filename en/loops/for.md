@@ -1,14 +1,19 @@
 ---
 chapter: 7
 pageNumber: 63
-description: A for loop is a powerful control structure used to execute a block of code multiple times, either for a specific number of iterations or over a defined range. It is highly versatile and commonly used for iterating through arrays, strings, and other iterable objects
+description: >-
+  A for loop is a powerful control structure used to execute a block of code
+  multiple times, either for a specific number of iterations or over a defined
+  range. It is highly versatile and commonly used
 ---
 
-## For
+# for
+
+### For
 
 The easiest form of a loop is the for statement. This one has a syntax that is similar to an if statement, but with more options:
 
-### Syntax
+#### Syntax
 
 The syntax of `for` loop in javascript is given below
 
@@ -18,12 +23,11 @@ for (initialization; end condition; change) {
 }
 ```
 
-### Explanation:
+#### Explanation:
 
-- In the `initialization` part, executed before the first iteration, initialize your loop variable
-- In the `end codition` part, put a condition that may be checked before each iteration. The moment the condition becomes `false`, the loop ends.
-- In the `change` part, tell the program how to update the loop variable.
-  Let's see how to execute the same code ten-times using a `for` loop:
+* In the `initialization` part, executed before the first iteration, initialize your loop variable
+* In the `end codition` part, put a condition that may be checked before each iteration. The moment the condition becomes `false`, the loop ends.
+* In the `change` part, tell the program how to update the loop variable. Let's see how to execute the same code ten-times using a `for` loop:
 
 ```javascript
 for (let i = 0; i < 10; i = i + 1) {
@@ -33,11 +37,11 @@ for (let i = 0; i < 10; i = i + 1) {
 
 > _**Note**_: `i = i + 1` can be written `i++`.
 
-## `for...in` loop
+### `for...in` loop
 
 To loop through the enumerable properties of an object `for in` loop can be used. For each distinct property, JavaScript executes the specified statements.
 
-### Syntax
+#### Syntax
 
 ```javascript
 for (variable in object) {
@@ -45,7 +49,7 @@ for (variable in object) {
 }
 ```
 
-### Example
+#### Example
 
 Let use suppose we have following object:
 
@@ -74,7 +78,7 @@ Doe
 25
 ```
 
-> **Note: The iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for in` statement.&#x20;**
+> **Note: The iterable objects such as `Arrays`, `Strings`, `Maps`, `NodeLists` can be looped using `for in` statement.**
 
 ```javascript
 // Example with Arrays
@@ -105,11 +109,11 @@ for (const paragraph of paragraphs) {
 }
 ```
 
-## `for...of` loop
+### `for...of` loop
 
-The `for...of` loop was introduced in the later versions of **[JavaScript ES6](../es6-concepts/README.md)**. The `for...of` statement executes a loop that operates on a sequence of values sourced from an iterable objects such as `Array`, `String`, `TypedArray`, `Map`, `Set`, `NodeList`(and other DOM collections).
+The `for...of` loop was introduced in the later versions of [**JavaScript ES6**](../es6-concepts/). The `for...of` statement executes a loop that operates on a sequence of values sourced from an iterable objects such as `Array`, `String`, `TypedArray`, `Map`, `Set`, `NodeList`(and other DOM collections).
 
-### Syntax
+#### Syntax
 
 The syntax of the `for...of` loop is:
 
@@ -121,12 +125,12 @@ for (element of iterable) {
 
 Here,
 
-- **iterable** - an iterable object
-- **element** - items in the iterable
+* **iterable** - an iterable object
+* **element** - items in the iterable
 
 In plain English, you can read the above code as: “for every element in the iterable, run the body of the loop”.
 
-### Examples
+#### Examples
 
 Let use suppose we have following object:
 

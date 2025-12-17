@@ -17,11 +17,10 @@ let emptyStringSize = "".length
 console.log(emptyStringSize);
 // emptyStringSize: 0
 
-````
+```
 
-空字符串的 `length` 属性是 `0`。&#x20;
+空字符串的 `length` 属性是 `0`。
 
-{% hint style="working" %}
-`length` 属性是只读属性，因此你不能为它赋予新的值。
-{% endhint %}
+\{% hint style="working" %\} \`
 
+length\` 属性是只读属性，因此你不能为它赋予新的值。

@@ -1,13 +1,18 @@
 ---
-layout: editorial
 chapter: 3
 pageNumber: 16
-description: Les nombres se rapportent à un type de données utilisé pour représenter des valeurs numériques. En JavaScript, les nombres peuvent tout aussi bien être des entiers que des décimaux (nombres à virgule).
+description: >-
+  Les nombres se rapportent à un type de données utilisé pour représenter des
+  valeurs numériques. En JavaScript, les nombres peuvent tout aussi bien être
+  des entiers que des décimaux (nombres à virgule)
+layout: editorial
 ---
 
-# Chapitre 3
+# numbers
 
-# Nombres
+## Chapitre 3
+
+## Nombres
 
 JavaScript n'admet qu'**un seul type de nombre** – les flottants stockés sur 64 bits. Pour ceux et celles qui connaissent Java, il s'agit des nombres `double`. À la différence de la plupart des autres langages de programmation, JavaScript ne différencie pas les nombres en mettant à disposition un type spécial pour les entiers par exemple. Aussi, en JavaScript, 1 et 1.0 représentent exactement la même valeur (attention, on utilise le point numérique `.` pour indiquer un décimal). Créer un nombre en JavaScript est simplissime, il suffit de rentrer une valeur numérique à la suite du mot clé `var`, du nom de sa variable et de l'opérateur d'affectation `=`.
 

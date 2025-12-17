@@ -1,8 +1,12 @@
 ---
 chapter: 9
 pageNumber: 76
-description: Every object has a special property called prototype, which is a reference to another object. The prototype property is an essential part of the prototype-based inheritance system in JavaScript, and it allows objects to inherit properties and methods from other objects. 
+description: >-
+  Every object has a special property called prototype, which is a reference to
+  another object. The prototype property is an essential part of the
+  prototype-based inheritance system in JavaScript, and i
 ---
+
 # Prototype
 
 Every object is linked to a prototype object from which it inherits properties. The objects created from object literals (`{}`) are automatically linked to `Object.prototype`, which is an object that comes standard with JavaScript.
@@ -53,4 +57,4 @@ let stringRepresentation = child.toString();
 /* Note: we have not overridden the child's toString property, thus the adult's method will be invoked. If adult did not have toString property, then Object.prototype's toString method would be invoked, and we would get "[object Object]" instead of "I'm 8" */
 ```
 
-The `child`'s prototype is `adult`, whose prototype is `Object.prototype`. This sequence of prototypes is called a  **prototype chain**.
+The `child`'s prototype is `adult`, whose prototype is `Object.prototype`. This sequence of prototypes is called a **prototype chain**.

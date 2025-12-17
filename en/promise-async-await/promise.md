@@ -1,10 +1,15 @@
 ---
 chapter: 18
 pageNumber: 109
-description: Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a more structured and organized way to handle asynchronous operations, such as making network requests, reading files, or interacting with databases.
+description: >-
+  Promise is an object that represents the eventual completion (or failure) of
+  an asynchronous operation and its resulting value. Promises provide a more
+  structured and organized way to handle asynchron
 ---
 
-# Promise, async/await
+# promise
+
+## Promise, async/await
 
 Imagine you are a popular book writer, and you are planning to release a new book on a certain day. Readers who have an interest in this book are adding this book to their wishlist and are notified when published or even if the release day got postponed too. On the release day, everyone gets notified and can buy the book making all parties happy. This is a real-life analogy that happens in programming.
 
@@ -12,7 +17,7 @@ Imagine you are a popular book writer, and you are planning to release a new boo
 2. A "_consuming code_" is someone who consumes the "producing code" once it's ready. In this case, it's a "reader".
 3. The linkage between the "_producing code_" and the "_consuming code_" can be called a _promise_ as it assures getting the results from the "_producing code_" to the "_consuming code_".
 
-# Promise
+## Promise
 
 The analogy that we made is also true for the JavaScript `promise` object. The constructor syntax for the `promise` object is:
 
@@ -34,7 +39,7 @@ The internal properties of `promise` object returned by the `new Promise` constr
 * `state` - initially `pending,` then changes to either `fulfill` upon `resolve` or `rejected` when `reject` is called
 * `result` - initially `undefined`, then changes to `value` upon `resolve` or `error` when `reject` is called
 
-{% hint style="working" %}
+{% hint style="info" %}
 One cannot access promise properties: `state` and `result`. Promise methods are needed to handle promises.
 {% endhint %}
 
@@ -87,6 +92,6 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // shows "Error: Whoops!" after 1 second
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 In the `Promise.then()` method, both callback arguments are optional.
 {% endhint %}

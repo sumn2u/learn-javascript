@@ -1,7 +1,10 @@
 ---
 chapter: 6
 pageNumber: 47
-description: La méthode sort trie les éléments d’un tableau dans un ordre spécifique. Par défaut, elle trie les éléments sous forme de chaînes et les organise par ordre croissant en fonction de leurs valeurs d'unité de code UTF-16.
+description: >-
+  La méthode sort trie les éléments d’un tableau dans un ordre spécifique. Par
+  défaut, elle trie les éléments sous forme de chaînes et les organise par ordre
+  croissant en fonction de leurs valeurs d'uni
 ---
 
 # Sort
@@ -33,9 +36,9 @@ Les nombres peuvent être mal triés numériquement lors de `sort`. Par exemple,
 
 Pour résoudre le problème de tri en nombres, des fonctions de comparaison sont utilisées. Les fonctions de comparaison définissent des ordres de tri et renvoient une valeur **négative**, **zéro** ou **positive** en fonction des arguments, comme ceci :
 
-- Une valeur négative si `a` doit être trié avant `b`
-- Une valeur positive si `a` doit être trié après `b`
-- `0` si `a` et `b` sont égaux et leur ordre n'a pas d'importance
+* Une valeur négative si `a` doit être trié avant `b`
+* Une valeur positive si `a` doit être trié après `b`
+* `0` si `a` et `b` sont égaux et leur ordre n'a pas d'importance
 
 ```javascript
 const points = [40, 100, 1, 5, 25, 10];
@@ -46,6 +49,6 @@ points.sort((a, b) => {
 // Résultat: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="working" %}
+{% hint style="info" %}
 La méthode `sort()` écrase le tableau original.
 {% endhint %}

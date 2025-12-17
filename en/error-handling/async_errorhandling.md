@@ -1,7 +1,10 @@
 ---
 chapter: 12
 pageNumber: 87
-description: Handling asynchronous errors is a bit more complex than synchronous errors. The issue is that the code that generates the error is not directly responsible for handling the error. Instead, the error will be handled by the callback function that is executed when the asynchronous operation is complete.
+description: >-
+  Handling asynchronous errors is a bit more complex than synchronous errors.
+  The issue is that the code that generates the error is not directly
+  responsible for handling the error. Instead, the error w
 ---
 
 # Asynchronous Error Handling
@@ -9,6 +12,7 @@ description: Handling asynchronous errors is a bit more complex than synchronous
 Handling asynchronous errors is a bit more complex than synchronous errors. The issue is that the code that generates the error is not directly responsible for handling the error. Instead, the error will be handled by the callback function that is executed when the asynchronous operation is complete.
 
 The example below shows how you can handle asynchronous errors:
+
 ## Examples
 
 A common example is when using the `fetch` API to download some data from a server. The `fetch` API returns a promise that resolves with the server response. If the server returns an error, the promise will reject with the error.
@@ -32,8 +36,8 @@ async function fetchData(url) {
 }
 ```
 
-
 #### Handling errors with `.catch()` in Promises
+
 When using Promises directly, you can handle errors using the `.catch()` method:
 
 ```javascript
@@ -54,11 +58,9 @@ fetch('https://api.example.com/data')
 
 ```
 
-
 ### Best Practices
 
 Always Handle Errors: Ensure that every asynchronous operation has error handling.
-
 
 ```javascript
 async function fetchData(url) {
@@ -74,7 +76,6 @@ async function fetchData(url) {
     }
 }
 ```
-
 
 Use `try...catch` with `async/await:` This makes the code more readable and easier to maintain.
 
@@ -93,7 +94,6 @@ async function fetchData(url) {
 }
 ```
 
-
 #### Graceful Degradation: Provide fallback behavior or user-friendly error messages.
 
 ```javascript
@@ -111,7 +111,6 @@ async function fetchData(url) {
     }
 }
 ```
-
 
 #### Logging: Log errors for debugging and monitoring purposes.
 
@@ -136,9 +135,7 @@ function logErrorToService(error) {
 }
 ```
 
-
 #### Avoid Silent Failures: Ensure that errors are not swallowed silently; always log or handle them.
-
 
 ```javascript
 async function fetchData(url) {
@@ -155,10 +152,7 @@ async function fetchData(url) {
 }
 ```
 
-
-
 #### Centralized Error Handling: Consider using a centralized error handling mechanism for larger applications.
-
 
 ```javascript
 async function fetchData(url) {
@@ -180,7 +174,4 @@ function handleError(error) {
 }
 ```
 
-
 Proper error handling in asynchronous operations is crucial for building resilient JavaScript applications. By following the examples and best practices outlined in this guide, you can ensure that your code gracefully handles errors, provides meaningful feedback to users, and maintains overall application stability. Always remember to handle errors in every asynchronous operation, use try...catch with async/await for readability, and implement centralized error handling for larger applications. With these strategies, you can effectively manage asynchronous errors and create more reliable and user-friendly applications.
-
-
