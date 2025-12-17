@@ -1,12 +1,8 @@
 ---
 chapter: 6
 pageNumber: 58
-description: >-
-  Arrays are collection of elements and each element is assigned numerical
-  position called index. Indices are zero based, meaning first element of array
-  has index of 0, second has an index of 1 and so o
+description: Arrays are collection of elements and each element is assigned numerical position called index. Indices are zero based, meaning first element of array has index of 0, second has an index of 1 and so on.  
 ---
-
 # Indices
 
 So you have your array of data elements, but what if you want to access a specific element? That is where indices come in. An **index** refers to a spot in the array. Indices logically progress one by one, but it should be noted that the first index in an array is `0`, as it is in most languages. Brackets `[]` are used to signify you are referring to an index of an array.
@@ -30,7 +26,7 @@ array[4] = 'f';
 console.log(array); // Result: ['a', 'b', 'c', 'd', 'f']
 ```
 
-Note that if you try to access or set an element using an index that is outside the bounds of the array (i.e., an index that is less than `0` or greater than or equal to the length of the [array](./)), you will get an `undefined` value.
+Note that if you try to access or set an element using an index that is outside the bounds of the array (i.e., an index that is less than `0` or greater than or equal to the length of the [array](./README.md)), you will get an `undefined` value.
 
 ```javascript
 console.log(array[5]); // Output: undefined

@@ -1,10 +1,7 @@
 ---
 chapter: 8
 pageNumber: 54
-description: >-
-  Les fonctions d'ordre supérieur sont des fonctions qui manipulent d'autres
-  fonctions. Elles possèdent une puissance considérable car elles permettent la
-  composition fonctionnelle, l'abstraction et la
+description: Les fonctions d'ordre supérieur sont des fonctions qui manipulent d'autres fonctions. Elles possèdent une puissance considérable car elles permettent la composition fonctionnelle, l'abstraction et la capacité de générer un code à la fois polyvalent et facilement réutilisable.
 ---
 
 # Fonctions d'ordre supérieur

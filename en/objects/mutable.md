@@ -1,12 +1,8 @@
 ---
 chapter: 9
 pageNumber: 73
-description: >-
-  Mutable means an object or data type can be changed after creation, while
-  "immutable" means it cannot be changed. Mutable objects allow modifying their
-  internal state, while immutable objects return n
+description: Mutable means an object or data type can be changed after creation, while "immutable" means it cannot be changed. Mutable objects allow modifying their internal state, while immutable objects return new instances with changes, leaving the original unchanged.
 ---
-
 # Mutable
 
 The difference between objects and primitive values is that we can **change objects**, whereas primitive values are **immutable**.
@@ -32,6 +28,6 @@ object.foo = 'quux'; // Modify property 'foo'
 delete object.baz; // Delete property 'baz'
 ```
 
-{% hint style="info" %}
+{% hint style="working" %}
 Primitive values (such as numbers and strings) are immutable, while objects (such as arrays and objects) are mutable.
 {% endhint %}

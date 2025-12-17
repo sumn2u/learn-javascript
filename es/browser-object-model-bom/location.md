@@ -1,12 +1,8 @@
 ---
 chapter: 16
 pageNumber: 135
-description: >-
-  La propiedad location es un objeto integrado que representa la URL actual de
-  la página web que se muestra en el navegador. Proporciona la ubicación de la
-  página web actual y permite realizar diversas
+description: La propiedad location es un objeto integrado que representa la URL actual de la página web que se muestra en el navegador. Proporciona la ubicación de la página web actual y permite realizar diversas operaciones relacionadas con las URL.
 ---
-
 # Location
 
 El objeto `location` se utiliza para recuperar la ubicación actual (URL) del documento y proporciona diferentes métodos para manipular la ubicación del documento. Se puede acceder a la ubicación actual mediante

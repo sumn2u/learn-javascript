@@ -1,18 +1,13 @@
 ---
+layout: editorial
 chapter: 5
 pageNumber: 29
-description: >-
-  Les conditions sont essentielles pour écrire un code dynamique et réactif qui
-  peut s'adapter à différents cas de figures. Avec les conditions, on introduit
-  une couche décisionnelle dans les programmes
-layout: editorial
+description: Les conditions sont essentielles pour écrire un code dynamique et réactif qui peut s'adapter à différents cas de figures. Avec les conditions, on introduit une couche décisionnelle dans les programmes basée sur les entrées, les interactions de l'utilisateur ou sur la donnée elle même.
 ---
 
-# conditional
+# Chapitre 5
 
-## Chapitre 5
-
-## Logique conditionnelle
+# Logique conditionnelle
 
 Une condition consiste en un test. Les conditions sont un point clé de tous les langages de programmation, de plusieurs manières:
 

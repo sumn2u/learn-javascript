@@ -1,18 +1,13 @@
 ---
+layout: editorial
 chapter: 11
 pageNumber: 67
-description: >-
-  Le JSON (JavaScript Object Notation) est un format léger d'échange de données
-  utilisé pour représenter et partager la donnée entre les différents systèmes
-  et/ou plateformes. Le format JSON est largeme
-layout: editorial
+description: Le JSON (JavaScript Object Notation) est un format léger d'échange de données utilisé pour représenter et partager la donnée entre les différents systèmes et/ou plateformes. Le format JSON est largement utilisé pour transmettre des données et les stocker, spécialement dans le développement web.
 ---
 
-# json
+# Chapitre 11
 
-## Chapitre 11
-
-## JSON
+# JSON
 
 **J**ava**S**cript **O**bject **N**otation (JSON) est un format textuele dévolu à stocker et transporter des données. Les objets Javascript peuvent être facilement convertis en JSON et vice versa. Par exemple:
 
@@ -41,11 +36,11 @@ console.log(originalJSON);
 
 Les types de données suivants sont supportés en JSON.
 
-* chaîne de caractères
-* nombre
-* tableau
-* booléen
-* un objet contenant des valeurs JSON valides
-* `null`
+- chaîne de caractères
+- nombre
+- tableau
+- booléen
+- un objet contenant des valeurs JSON valides
+- `null`
 
 Par contre, JSON ne supporte pas les `function`, les `date` ou les `undefined`.

@@ -1,12 +1,8 @@
 ---
 chapter: 9
 pageNumber: 59
-description: >-
-  La référence d'un objet est une valeur qui pointe à l'emplacement mémoire où
-  l'objet est stocké. Lorsque un objet est créé, un espace mémoire est alloué
-  pour stocker ses propriétés et valeurs. Quand o
+description: La référence d'un objet est une valeur qui pointe à l'emplacement mémoire où l'objet est stocké. Lorsque un objet est créé, un espace mémoire est alloué pour stocker ses propriétés et valeurs. Quand on assigne cet objet à une variable, cette variable contient une référence à l'emplacement mémoire où l'objet est stockée.
 ---
-
 # Les références
 
 Les objets ne sont **jamais copiés**. On les manipule par leur référence. La référence d'un objet est une valeur qui référence l'objet. Lorsqu'on crée un objet en utilisant l'opérateur `new`, ou la syntaxe littérale des objets (`{}`), JavaScript crée un objet et lui assigne une référence.
@@ -42,8 +38,9 @@ console.log(object1 === object2); // Output: true
 
 Dans l'exemple ci-dessus, et `object1`, et `object2` sont des variables qui contiennent une référence vers le même objet. L'opérateur `===` est utilisé pour comparer les références, pas les objets eux-mêmes. Vu que les deux variables contiennent la même référence, voilà pourquoi le résultat sera `true`.
 
+
 {% hint style="info" %}
-Vous pouvez utiliser la méthode `Object.assign()` pour créer un nouveau objet qui représente une copie d'un objet existant.
+Vous pouvez utiliser la méthode `Object.assign()` pour créer un nouveau objet qui représente une copie d'un objet existant.&#x20;
 {% endhint %}
 
 Voici un exemple de création d'un objet par référence.

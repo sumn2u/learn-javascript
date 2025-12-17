@@ -1,15 +1,11 @@
 ---
 chapter: 18
 pageNumber: 91
-description: >-
-  La fonctionnalité Async/Await a été introduite avec ECMAScript 2017 (ES8) qui
-  fourni une syntaxe plus concise et lisible de la programmation asynchrone en
-  JavaScript. Il est construit au dessus des Pr
+description: La fonctionnalité Async/Await a été introduite avec ECMAScript 2017 (ES8) qui fourni une syntaxe plus concise et lisible de la programmation asynchrone en JavaScript. Il est construit au dessus des Promesses en JavaScript et est utilisée pour gérer les opérations asynchrones de façon synchrone.
 ---
-
 # Async/Await
 
-Avec les promesses, nous pouvons utiliser le mot clé `async` pour déclarer les fonctions asynchrones qui vont renvoyer une promesse. Tandis que le mot clé `await` fait attendre JavaScript jusqu'à ce que la promesse s'achève et renvoie une réponse. Ces deux mots clés rendent l'écriture des promesses plus facile. Voici un exemple:
+Avec les promesses, nous pouvons utiliser le mot clé `async` pour déclarer les fonctions asynchrones qui vont renvoyer une promesse. Tandis que  le mot clé `await` fait attendre JavaScript jusqu'à ce que la promesse s'achève et renvoie une réponse. Ces deux mots clés rendent l'écriture des promesses plus facile. Voici un exemple:
 
 ```javascript
 // Une fonction asynchrone f
@@ -30,7 +26,7 @@ function f() {
 f().then(alert); // 1
 ```
 
-`async` fait en sorte que la fonction renvoie une promesse, cela permet d'encapsuler les valeurs qui ne sont pas des promesses. Avec `await`, nous pouvons indiquer à JavaScript d'attendre jusqu'à ce que la promesse soit résulue et renvoie sa valeur.
+`async` fait en sorte que la fonction renvoie une promesse, cela permet d'encapsuler les valeurs qui ne sont pas des promesses. Avec `await`, nous pouvons indiquer à JavaScript d'attendre jusqu'à ce que la promesse soit résulue et renvoie sa valeur.&#x20;
 
 ```javascript
 async function f() {
@@ -45,6 +41,6 @@ async function f() {
 f();
 ```
 
-{% hint style="info" %}
+{% hint style="working" %}
 Le mot clé `await` net peut être utilisé que dans une fonction déclarée avec `async`.
 {% endhint %}

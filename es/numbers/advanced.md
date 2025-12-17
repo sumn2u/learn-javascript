@@ -1,12 +1,8 @@
 ---
 chapter: 3
 pageNumber: 27
-description: >-
-  Existen varios operadores avanzados que brindan una potente funcionalidad y
-  nos permiten realizar diversas operaciones más allá de las operaciones
-  aritméticas y lógicas básicas. Estos operadores avanz
+description: Existen varios operadores avanzados que brindan una potente funcionalidad y nos permiten realizar diversas operaciones más allá de las operaciones aritméticas y lógicas básicas. Estos operadores avanzados pueden resultar muy útiles para manipular datos, realizar operaciones bit a bit, trabajar con objetos y más.
 ---
-
 # Operadores avanzados
 
 Cuando los operadores se juntan sin paréntesis, el orden en el que se aplican está determinado por la _precedencia_ de los operadores. La multiplicación `(*)` y la división `(/)` tienen mayor prioridad que la suma `(+)` y la resta `(-)`.
@@ -63,6 +59,46 @@ console.log(Math.random()); // un número aleatorio entre 0 y 1
 ```
 
 Estos son sólo algunos ejemplos de las funciones y operadores matemáticos avanzados disponibles en JavaScript. Hay muchos más que puede usar para realizar operaciones matemáticas avanzadas mientras escribe un programa.
+
+{% exercise %}
+Utilice los siguientes operadores avanzados para realizar operaciones en `num1` y `num2`.
+
+{% initial %}
+let num1 = 10;
+let num2 = 5;
+
+// Use el operador ++ para incrementar el valor de num1.
+const result1 =
+// Use el operador -- para decrementar el valor de num2.
+const result2 =
+// Use el operador += para agregar num2 a num1.
+const result3 =
+// Use el operador -= para substraer num2 de num1.
+const result4 =
+
+{% solution %}
+let num1 = 10;
+let num2 = 5;
+
+// Use el operador ++ para incrementar el valor de num1.
+
+num1++;
+const result1 = num1; // 11
+// Use el operador -- para decrementar el valor de num2.
+num2--;
+const result2 = num2; // 4
+// Use el operador += para agregar num2 a num1.
+num1 += num2;
+const result3 = num1 // 15
+// Use el operador -= para substraer num2 de num1.
+num1 -= num2;
+const result4 = num1 // 11
+
+{% validation %}
+assert(result1 === 11 && result2 === 4 && result3 === 15 && result4 === 11 );
+
+{% context %}
+{% endexercise %}
 
 ## Operador coalescente nulo '??'
 

@@ -1,12 +1,8 @@
 ---
 chapter: 6
 pageNumber: 61
-description: >-
-  Las matrices son una colección de elementos y a cada elemento se le asigna una
-  posición numérica llamada índice. Los índices están basados en cero, lo que
-  significa que el primer elemento de la matriz
+description: Las matrices son una colección de elementos y a cada elemento se le asigna una posición numérica llamada índice. Los índices están basados en cero, lo que significa que el primer elemento de la matriz tiene un índice de 0, el segundo tiene un índice de 1 y así sucesivamente.  
 ---
-
 # Índices
 
 Entonces tienes tu conjunto de elementos de datos, pero ¿qué pasa si quieres acceder a un elemento específico? Ahí es donde entran los índices. Un **índice** se refiere a un lugar en la matriz. Los índices progresan lógicamente uno por uno, pero cabe señalar que el primer índice de una matriz es `0`, como ocurre en la mayoría de los lenguajes. Los corchetes `[]` se utilizan para indicar que se está haciendo referencia a un índice de una matriz.

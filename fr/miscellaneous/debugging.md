@@ -1,12 +1,8 @@
 ---
 chapter: 19
 pageNumber: 102
-description: >-
-  Dans la programmation, des erreurs peuvent arriver lorsque vous écrivez du
-  code. Ces erreurs peuvent être d'origine syntaxique ou logique. Le processus
-  qui vous mène à retrouver ces erreurs peut être
+description: Dans la programmation, des erreurs peuvent arriver lorsque vous écrivez du code. Ces erreurs peuvent être d'origine syntaxique ou logique. Le processus qui vous mène à retrouver ces erreurs peut être très pénible et prendre du temps; ceci est appelé le débogage.
 ---
-
 # Le débogage
 
 Dans la programmation, des erreurs peuvent arriver lorsque vous écrivez du code. Ces erreurs peuvent être d'origine syntaxique ou logique. Le processus qui vous mène à retrouver ces erreurs peut être très pénible et prendre du temps; ceci est appelé le débogage.

@@ -1,10 +1,7 @@
 ---
 chapter: 3
 pageNumber: 20
-description: >-
-  Los operadores son símbolos o palabras clave que se utilizan para realizar
-  operaciones con datos, como variables, valores o expresiones. Son una parte
-  esencial del lenguaje y permiten a los desarrolla
+description: Los operadores son símbolos o palabras clave que se utilizan para realizar operaciones con datos, como variables, valores o expresiones. Son una parte esencial del lenguaje y permiten a los desarrolladores realizar operaciones aritméticas, de comparación, lógicas, de asignación y de otro tipo.
 ---
 
 # Operadores básicos
@@ -21,25 +18,25 @@ Aquí `+` es un operador que realiza la suma, y `2` y `3` son los operandos.
 
 Hay varios operadores soportados por JavaScript. Son los siguientes:
 
-* [Operadores aritméticos](operators.md#arithmetic-operators)
-* [Operadores de asignación](operators.md#assignment-operators)
-* [Operadores de comparación](operators.md#comparison-operators)
-* [Operadores lógicos](operators.md#logical-operators)
-* [Operadores ternarios](operators.md#ternary-operators)
-* [Operadores bit a bit](operators.md#bitwise-operators)
-* [Operador `typeof`](operators.md#typeof-operators)
+- [Operadores aritméticos](#arithmetic-operators)
+- [Operadores de asignación](#assignment-operators)
+- [Operadores de comparación](#comparison-operators)
+- [Operadores lógicos](#logical-operators)
+- [Operadores ternarios](#ternary-operators)
+- [Operadores bit a bit](#bitwise-operators)
+- [Operador `typeof`](#typeof-operators)
 
-### Operadores aritméticos <a href="#arithmetic-operators" id="arithmetic-operators"></a>
+### Operadores aritméticos {#arithmetic-operators}
 
 Los operadores aritméticos se usan para realizar operaciones matemáticas con los valores. Estos incluyen
 
-* [Operador Suma (`+`)](operators.md#addition-operator)
-* [Operador Resta (`-`)](operators.md#subtraction-operator)
-* [Operador Multiplicación (`*`)](operators.md#multiplication-operator)
-* [Operador División (`/`)](operators.md#division-operator)
-* [Operador Resto (`%`)](operators.md#remainder-operator)
+- [Operador Suma (`+`)](#addition-operator)
+- [Operador Resta (`-`)](#subtraction-operator)
+- [Operador Multiplicación (`*`)](#multiplication-operator)
+- [Operador División (`/`)](#division-operator)
+- [Operador Resto (`%`)](#remainder-operator)
 
-#### Operador Suma (`+`) <a href="#addition-operator" id="addition-operator"></a>
+#### Operador Suma (`+`) {#addition-operator}
 
 El operador de suma suma dos números. Por ejemplo:
 
@@ -48,7 +45,7 @@ console.log(1 + 2); // 3
 console.log(1 + -2); // -1
 ```
 
-#### Operador Resta (`-`) <a href="#subtraction-operator" id="subtraction-operator"></a>
+#### Operador Resta (`-`) {#subtraction-operator}
 
 El operador de resta resta un número de otro. Por ejemplo:
 
@@ -57,7 +54,7 @@ console.log(3 - 2); // 1
 console.log(3 - -2); // 5
 ```
 
-#### Operador Multiplicación (`*`) <a href="#multiplication-operator" id="multiplication-operator"></a>
+#### Operador Multiplicación (`*`) {#multiplication-operator}
 
 El operador de multiplicación multiplica dos números. Por ejemplo:
 
@@ -66,7 +63,7 @@ console.log(2 * 3); // 6
 console.log(2 * -3); // -6
 ```
 
-#### Operador División (`/`) <a href="#division-operator" id="division-operator"></a>
+#### Operador División (`/`) {#division-operator}
 
 El operador de división divide un número por otro. Por ejemplo:
 
@@ -75,7 +72,7 @@ console.log(6 / 2); // 3
 console.log(6 / -2); // -3
 ```
 
-#### Operador Resto (`%`) <a href="#remainder-operator" id="remainder-operator"></a>
+#### Operador Resto (`%`) {#remainder-operator}
 
 El operador de resto devuelve el resto de una operación de división. Por ejemplo:
 
@@ -87,7 +84,7 @@ console.log(12 % 3); // 0
 
 El intérprete de JavaScript funciona de izquierda a derecha. Se pueden utilizar paréntesis, como en matemáticas, para separar y agrupar expresiones.: `c = (a / b) + d`
 
-{% hint style="info" %}
+{% hint style="working" %}
 JavaScript utiliza el operador `+` tanto para la suma como para la concatenación. Los números se suman mientras que las cadenas se concatenan.
 {% endhint %}
 
@@ -116,13 +113,53 @@ let x = 2 / 0; // Infinity
 let y = -2 / 0; // -Infinity
 ```
 
-### Operadores de asignación <a href="#assignment-operators" id="assignment-operators"></a>
+{% exercise %}
+Use los operadores matemáticos +, -, \*, /, y % para realizar las siguientes operaciones sobre `num1` y `num2`.
+
+{% initial %}
+let num1 = 10;
+let num2 = 5;
+
+// Sume num1 y num2.
+let addResult =
+// Reste num2 de num1.
+let subtractResult =
+// Multiplique num1 por num2.
+let multiplyResult =
+// Divida num1 por num2.
+let divideResult =
+// Encuentre el resto cuando num1 se divide por num2.
+let reminderResult =
+
+{% solution %}
+let num1 = 10;
+let num2 = 5;
+
+// Sume num1 y num2.
+let addResult = (num1 + num2);
+// Reste num2 de num1.
+let subtractResult = (num1 - num2);
+// Multiplique num1 por num2.
+let multiplyResult = (num1 \* num2);
+// Divida num1 por num2.
+let divideResult = (num1 / num2);
+// Encuentre el resto cuando num1 se divide por num2.
+let reminderResult = (num1 % num2);
+
+{% validation %}
+assert(addResult === 15 && subtractResult === 5 && multiplyResult === 50 && divideResult === 2 && reminderResult === 0 );
+
+{% context %}
+{% endexercise %}
+
+### Operadores de asignación {#assignment-operators}
 
 Los operadores de asignación se utilizan para asignar valores a variables o evaluar el valor asignado. Es posible encadenar el operador de asignación para asignar un único valor a varios valores. Incluyen el operador de asignación (`=`) y operadores de asignación compuestos como `+=`, `-=`, `*=` y `/=`.
 
 #### `=` (Operador de asignación)
 
-Este operador se usa para asignar el valor del lado derecho a la variable en el lado izquierdo. Por ejemplo:
+Este operador se usa para asignar el valor del lado derecho a la variable en el lado izquierdo.
+Por ejemplo:
 
 ```javascript
 let x = 10; //Asigna el valor 10 a la variable x.
@@ -130,25 +167,26 @@ let x = 10; //Asigna el valor 10 a la variable x.
 
 #### Operadores de asignación compuestos
 
-Estos operadores combinan la operación aritmética con la operación de asignación. Son atajos para realizar una operación y luego asignar el resultado nuevamente a la variable. Por ejemplo:
+Estos operadores combinan la operación aritmética con la operación de asignación. Son atajos para realizar una operación y luego asignar el resultado nuevamente a la variable.
+Por ejemplo:
 
-**`+=` (Asignación de suma)**
+##### `+=` (Asignación de suma)
 
 Agrega el valor del lado derecho a la variable y asigna el resultado nuevamente a la variable.
 
-**`-=` (Asignación de resta)**
+##### `-=` (Asignación de resta)
 
 Resta el valor del lado derecho de la variable y asigna el resultado nuevamente a la variable.
 
-**`*=-` (Asignación de multiplicación)**
+##### `*=-` (Asignación de multiplicación)
 
 Multiplica la variable por el valor del lado derecho y asigna el resultado nuevamente a la variable.
 
-**`/=` (Asignación de división)**
+##### `/=` (Asignación de división)
 
 Divide la variable por el valor del lado derecho y asigna el resultado nuevamente a la variable.
 
-**`%=` (Módulo/Asignación de resto)**
+##### `%=` (Módulo/Asignación de resto)
 
 Calcula el resto cuando la variable se divide por el valor del lado derecho y asigna el resultado nuevamente a la variable.
 
@@ -161,7 +199,7 @@ a /= 4; // Equivalente a a = a / 4; (a se convierte en 6)
 a %= 5; // Equivalente a a = a % 5; (a se convierte en 1)
 ```
 
-### Operadores de comparación <a href="#comparison-operators" id="comparison-operators"></a>
+### Operadores de comparación {#comparison-operators}
 
 Los operadores de comparación se utilizan para comparar dos valores o expresiones y devolver un resultado `boolean`, que puede ser `true` o `false`. Estos operadores se utilizan habitualmente en declaraciones condicionales para tomar decisiones o evaluar condiciones.
 
@@ -237,7 +275,7 @@ Este operador comprueba si el valor de la izquierda es menor o igual que el valo
 8 <= 2; // falso (muestra 'false' en la consola)
 ```
 
-### Operadores lógicos <a href="#logical-operators" id="logical-operators"></a>
+### Operadores lógicos {#logical-operators}
 
 Los operadores lógicos se utilizan para realizar operaciones lógicas con valores o expresiones booleanos. Estos operadores permiten combinar o manipular valores booleanos para tomar decisiones o evaluar condiciones complejas.
 
@@ -272,7 +310,7 @@ El operador lógico NOT niega el valor de un operando. Devuelve `true` si el ope
 !false; // devuelve 'true'
 ```
 
-### Operador ternario <a href="#ternary-operators" id="ternary-operators"></a>
+### Operador ternario {#ternary-operators}
 
 El operador ternario tiene tres operandos. Es el operador simplificado del if/else.
 
@@ -290,7 +328,7 @@ let esPar = 8 % 2 === 0 ? "Par" : "Impar";
 console.log(esPar); // "Par"
 ```
 
-### Operadores bit a bit <a href="#bitwise-operators" id="bitwise-operators"></a>
+### Operadores bit a bit {#bitwise-operators}
 
 Los operadores bit a bit se utilizan para manipular bits individuales de números binarios. Realizan operaciones a nivel de bit, lo que resulta especialmente útil en situaciones en las que es necesario controlar o analizar datos de bajo nivel.
 
@@ -342,7 +380,7 @@ Este operador desplaza los bits de un número hacia la derecha una cantidad espe
 1010 >> 2; // 0010 (desplazado 2 posiciones hacia la derecha)
 ```
 
-### Operador `typeof` <a href="#typeof-operators" id="typeof-operators"></a>
+### Operador `typeof` {#typeof-operators}
 
 Devuelve el tipo de operando. Los tipos posibles que existen en javascript son undefined, Object, boolean, number, string, symbol, and function.
 

@@ -1,15 +1,11 @@
 ---
 chapter: 15
 pageNumber: 96
-description: >-
-  Inheritance refers to the ability of an object (subclass) to inherit
-  properties and methods from another object (superclass). JavaScript supports
-  prototypal inheritance, which means that objects can i
+description:  Inheritance refers to the ability of an object (subclass) to inherit properties and methods from another object (superclass). JavaScript supports prototypal inheritance, which means that objects can inherit properties and methods directly from other objects, known as prototypes.
 ---
-
 # Inheritance
 
-The inheritance is useful for code reusability purposes as it extends existing properties and methods of a class. The `extends` keyword is used to create a class inheritance.
+The inheritance is useful for code reusability purposes as it extends existing properties and methods of a class. The `extends` keyword is used to create a class inheritance. &#x20;
 
 ```javascript
 class Car {
@@ -36,11 +32,12 @@ console.log(myCar.show()); // I have a Camry, it is a Toyota.
 ```
 
 {% hint style="info" %}
-The prototype of the parent class must be an `Object` or `null`.
+The prototype of the parent class must be an `Object` or `null`.&#x20;
 {% endhint %}
 
-The `super` method is used inside a constructor and refers to the parent class. With this, one can access the parent class properties and methods. In the example above we use `super(brand)` in the Model subclass so it can get that `Car` superclasses properties.
+The `super` method is used inside a constructor and refers to the parent class. With this, one can access the parent class properties and methods. In  the example above we use `super(brand)` in the Model subclass so it can get that `Car` superclasses properties.
 
 {% hint style="info" %}
 Super classes are the main classes used while subclasses are classes that are extended from superclasses.
 {% endhint %}
+

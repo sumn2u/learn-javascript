@@ -1,11 +1,8 @@
 ---
+layout: editorial
 chapter: 17
 pageNumber: 136
-description: >-
-  En programación, los eventos son acciones o sucesos en un sistema sobre los
-  que el sistema le informa para que pueda responder a ellos. Por ejemplo,
-  cuando hace clic en el botón Restablecer, se borra
-layout: editorial
+description: En programación, los eventos son acciones o sucesos en un sistema sobre los que el sistema le informa para que pueda responder a ellos. Por ejemplo, cuando hace clic en el botón Restablecer, se borra la entrada.
 ---
 
 # Capítulo 17
@@ -39,7 +36,7 @@ Algunos de los eventos HTML comunes se mencionan aquí.
 | ------------- | ------------------------------------------------------------------------- |
 | `onclick`     | Cuando el usuario hace clic en el elemento.                               |
 | `onchange`    | Cuando el usuario cambia o modifica el valor de la entrada del formulario |
-| `onkeydown`   | Cuando el usuario presiona una tecla.                                     |
+| `onkeydown`   | Cuando el usuario presiona una tecla.                       |
 | `onload`      | Cuando el navegador haya terminado de cargar                              |
 | `onmouseout`  | Cuando el cursor del mouse sale del elemento.                             |
 | `onmouseover` | Cuando el cursor del mouse pasa sobre el elemento                         |

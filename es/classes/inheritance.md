@@ -1,12 +1,8 @@
 ---
 chapter: 15
 pageNumber: 126
-description: >-
-  La herencia se refiere a la capacidad de un objeto (subclase) de heredar
-  propiedades y métodos de otro objeto (superclase). JavaScript admite la
-  herencia de prototipos, lo que significa que los objeto
+description: La herencia se refiere a la capacidad de un objeto (subclase) de heredar propiedades y métodos de otro objeto (superclase). JavaScript admite la herencia de prototipos, lo que significa que los objetos pueden heredar propiedades y métodos directamente de otros objetos, lo que se conoce como prototipos.
 ---
-
 # Herencia
 
 La herencia es útil para fines de reutilización del código, ya que amplía las propiedades y métodos existentes de una clase. La palabra clave `extends` se utiliza para crear una herencia de clase.

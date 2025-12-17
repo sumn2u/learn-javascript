@@ -1,11 +1,8 @@
 ---
+layout: editorial
 chapter: 11
 pageNumber: 112
-description: >-
-  JSON (JavaScript Object Notation, Notación de objetos JavaScript en español )
-  es un formato de intercambio de datos ligero que se utiliza para representar e
-  intercambiar datos entre diferentes sistema
-layout: editorial
+description: JSON (JavaScript Object Notation, Notación de objetos JavaScript en español ) es un formato de intercambio de datos ligero que se utiliza para representar e intercambiar datos entre diferentes sistemas y plataformas. Es ampliamente utilizado para la transmisión y almacenamiento de datos, especialmente en el desarrollo web.
 ---
 
 # Capítulo 11
@@ -32,18 +29,18 @@ console.log(JSONoriginal);
 
 `stringify` y `parse` son los dos métodos admitidos por JSON.
 
-| Método        | Descripción                                               |
-| ------------- | --------------------------------------------------------- |
+| Método        | Descripción                                            |
+| ------------- | ------------------------------------------------------ |
 | `parse()`     | Devuelve un objeto JavaScript de la cadena JSON analizada |
-| `stringify()` | Devuelve una cadena JSON del objeto JavaScript            |
+| `stringify()` | Devuelve una cadena JSON del objeto JavaScript |
 
 Los siguientes tipos de datos son compatibles con JSON.
 
-* [string](strings/)
-* [number](numbers/)
-* [array](arrays/)
-* [boolean](basics/types.md#Boolean)
-* [object](basics/types.md#Object) con valores JSON válidos
-* [null](basics/types.md#NULL)
+* [string](./strings/README.md)
+* [number](./numbers/README.md)
+* [array](./arrays/README.md)
+* [boolean](./basics/types.md#Boolean)
+* [object](./basics/types.md#Object) con valores JSON válidos
+* [null](./basics/types.md#NULL)
 
 No puede ser `function`, `date` o `undefined`.

@@ -1,12 +1,8 @@
 ---
 chapter: 9
 pageNumber: 72
-description: >-
-  An object is a composite data type that allows you to store and organize data
-  in key-value pairs. Each key-value pair in an object is referred to as a
-  property. Properties are used to represent charac
+description: An object is a composite data type that allows you to store and organize data in key-value pairs. Each key-value pair in an object is referred to as a property. Properties are used to represent characteristics, attributes, or features of the object.
 ---
-
 # Properties
 
 Object's property is a `propertyName`: `propertyValue` pair, where **property name can be only a string**. If it's not a string, it gets casted into a string. You can specify properties **when creating** an object **or later**. There may be zero or more properties separated by commas.

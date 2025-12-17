@@ -1,12 +1,8 @@
 ---
 chapter: 9
 pageNumber: 100
-description: >-
-  La enumeración se refiere al proceso de iterar sobre las propiedades de un
-  objeto y realizar una determinada acción para cada propiedad. Una forma de
-  enumerar las propiedades de un objeto es utilizar
+description: La enumeración se refiere al proceso de iterar sobre las propiedades de un objeto y realizar una determinada acción para cada propiedad. Una forma de enumerar las propiedades de un objeto es utilizar el bucle `for-in`. El bucle `for-in` itera sobre las propiedades enumerables de un objeto en un orden arbitrario, y para cada propiedad ejecuta un bloque de código determinado.
 ---
-
 # Enumeración
 
 La _enumeración_ se refiere al proceso de iterar sobre las propiedades de un objeto y realizar una determinada acción para cada propiedad. Hay varias formas de enumerar las propiedades de un objeto en JavaScript.

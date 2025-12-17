@@ -1,15 +1,12 @@
 ---
 chapter: 6
 pageNumber: 60
-description: >-
-  El método sort ordena los elementos de una matriz en un orden específico. De
-  forma predeterminada, clasifica los elementos como cadenas y los organiza en
-  orden ascendente según sus valores de unidad d
+description: El método sort ordena los elementos de una matriz en un orden específico. De forma predeterminada, clasifica los elementos como cadenas y los organiza en orden ascendente según sus valores de unidad de código UTF-16.  
 ---
-
 # Sort
 
 El método `sort` ordena los elementos de una matriz en un orden específico (ascendente o descendente). De forma predeterminada, el método `sort` ordena los elementos como cadenas y los organiza en orden ascendente según sus valores de unidad de código UTF-16.
+
 
 Aquí está la sintaxis para usar `sort`:
 
@@ -48,6 +45,6 @@ puntos.sort((a, b) => {return a-b});
 // Resultado: [1, 5, 10, 25, 40, 100]
 ```
 
-{% hint style="info" %}
+{% hint style="working" %}
 El método `sort()` anula la matriz original.
 {% endhint %}

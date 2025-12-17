@@ -1,10 +1,7 @@
 ---
 chapter: 18
 pageNumber: 139
-description: >-
-  Promise es un objeto que representa la eventual finalización (o falla) de una
-  operación asincrónica y su valor resultante. Las promesas proporcionan una
-  forma más estructurada y organizada de manejar
+description: Promise es un objeto que representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante. Las promesas proporcionan una forma más estructurada y organizada de manejar operaciones asincrónicas, como realizar solicitudes de red, leer archivos o interactuar con bases de datos.
 ---
 
 # Promise, async/await
@@ -37,7 +34,7 @@ Las propiedades internas del objeto `promise` devuelta por el constructor `new P
 * `state` - inicialmente `pending`, luego cambia a `fulfill` al resolverse o `rejected` cuando se llama a `reject`
 * `result` - inicialmente `undefined`, luego cambia a `value` al resolverse `resolve` o `error` cuando se llama a `reject`
 
-{% hint style="info" %}
+{% hint style="working" %}
 No se puede acceder a las propiedades de la promesa: `state` y `result`. Se necesitan métodos de promesa para manejar las promesas.
 {% endhint %}
 
@@ -90,6 +87,6 @@ let promesaTres = new Promise((resuelve, rechaza) => {
 promesaTres.catch(alert); // muestra "Error: ¡vaya!" después de un segundo
 ```
 
-{% hint style="info" %}
+{% hint style="working" %}
 En el método `Promise.then()`, ambas retrollamadas son opcionales.
 {% endhint %}

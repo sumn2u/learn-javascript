@@ -1,10 +1,7 @@
 ---
 chapter: 3
 pageNumber: 17
-description: >-
-  L'objet Math permet d'effectuer des opérations mathématiques en JavaScript.
-  C'est un objet statique qui ne possède pas de constructeur. Cela signifie
-  qu'il est possible d'utiliser les méthodes de l'ob
+description: L'objet Math permet d'effectuer des opérations mathématiques en JavaScript. C'est un objet statique qui ne possède pas de constructeur. Cela signifie qu'il est possible d'utiliser les méthodes de l'objet Math sans l'instancier au préalable.
 ---
 
 # Math

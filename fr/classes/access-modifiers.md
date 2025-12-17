@@ -1,10 +1,7 @@
 ---
 chapter: 15
 pageNumber: 78
-description: >-
-  Les modificateurs d'accès contrôlent la visibilité et l'accessibilité des
-  membres de la classe (propriétés et méthodes). public, private et protected
-  sont les trois modificateurs d'accès utilisés dans
+description: Les modificateurs d'accès contrôlent la visibilité et l'accessibilité des membres de la classe (propriétés et méthodes). public, private et protected sont les trois modificateurs d'accès utilisés dans la classe pour contrôler son accès depuis l'extérieur. Par défaut, tous les membres (propriétés, champs, méthodes ou fonctions) sont accessibles publiquement depuis l'extérieur de la classe.
 ---
 
 # Modificateurs d'accès

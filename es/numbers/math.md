@@ -1,12 +1,8 @@
 ---
 chapter: 3
 pageNumber: 18
-description: >-
-  El objeto Math permite realizar operaciones matemáticas en JavaScript. Es
-  estático y no tiene constructor. Se pueden utilizar el método y las
-  propiedades del objeto Math sin crear primero un objeto Ma
+description: El objeto Math permite realizar operaciones matemáticas en JavaScript. Es estático y no tiene constructor. Se pueden utilizar el método y las propiedades del objeto Math sin crear primero un objeto Math.
 ---
-
 # Math
 
 El objeto `Math` permite realizar operaciones matemáticas en JavaScript. Es estático y no tiene constructor. Se pueden utilizar el método y las propiedades del objeto Math sin crear primero un objeto Math. Para acceder a su propiedad se puede utilizar _Math.property._ Algunas de las propiedades matemáticas se describen a continuación:

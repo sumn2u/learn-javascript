@@ -1,15 +1,12 @@
 ---
 chapter: 3
 pageNumber: 28
-description: >-
-  There are several advanced operators that provide powerful functionality and
-  allow us to perform various operations beyond basic arithmetic and logical
-  operations. These advanced operators can be very
+description: There are several advanced operators that provide powerful functionality and allow us to perform various operations beyond basic arithmetic and logical operations. These advanced operators can be very helpful for manipulating data, performing bitwise operations, working with objects, and more.
 ---
 
 # 高级运算符
 
-当多个运算符在没有使用括号的情况下连在一起时，它们的执行顺序由运算符的 _优先级_ 决定。乘法 `(*)` 与除法 `(/)` 的优先级高于加法 `(+)` 与减法 `(-)`。
+当多个运算符在没有使用括号的情况下连在一起时，它们的执行顺序由运算符的 *优先级* 决定。乘法 `(*)` 与除法 `(/)` 的优先级高于加法 `(+)` 与减法 `(-)`。
 
 ```javascript
 // 先进行乘法运算，然后再进行加法
@@ -30,7 +27,7 @@ console.log(11 % 3); // 2
 console.log(12 % 3); // 0
 ```
 
-* \*_幂运算符 (_ \*)\*\*：幂运算符将一个数字提升为另一个数字的幂。它是一个较新的运算符，并未被所有浏览器支持，因此你可能需要使用 `Math.pow` 函数来代替。例如：
+* **幂运算符 (* *)**：幂运算符将一个数字提升为另一个数字的幂。它是一个较新的运算符，并未被所有浏览器支持，因此你可能需要使用 `Math.pow` 函数来代替。例如：
 
 ```javascript
 console.log(2 ** 3); // 8
@@ -63,6 +60,45 @@ console.log(Math.random()); // 0 到 1 之间的随机数
 ```
 
 这些只是 JavaScript 中可用的高级数学运算符和函数的一些例子。还有很多其它的运算符和函数可以在编写程序时用于执行更复杂的数学运算。
+
+{% exercise %}
+使用以下高级运算符对 `num1` 和 `num2` 进行运算。
+
+{% initial %}
+let num1 = 10;
+let num2 = 5;
+
+// 使用 ++ 运算符将 num1 的值加一。
+const result1 =
+// 使用 -- 运算符将 num2 的值减一。
+const result2 =
+// 使用 += 运算符将 num2 加到 num1 上。
+const result3 =
+// 使用 -= 运算符将 num2 从 num1 中减去。
+const result4 =
+
+{% solution %}
+let num1 = 10;
+let num2 = 5;
+
+// 使用 ++ 运算符将 num1 的值加一。
+num1++;
+const result1 = num1; // 11
+// 使用 -- 运算符将 num2 的值减一。
+num2--;
+const result2 = num2; // 4
+// 使用 += 运算符将 num2 加到 num1 上。
+num1 += num2;
+const result3 = num1 // 15
+// 使用 -= 运算符将 num2 从 num1 中减去。
+num1 -= num2;
+const result4 = num1 // 11
+
+{% validation %}
+assert(result1 === 11 && result2 === 4 && result3 === 15 && result4 === 11 );
+
+{% context %}
+{% endexercise %}
 
 ## 空值合并运算符 '??'
 

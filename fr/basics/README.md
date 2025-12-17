@@ -1,18 +1,13 @@
 ---
+layout: editorial
 chapter: 2
 pageNumber: 8
-description: >-
-  Programmer signifie écrire du code. À l'image d'un livre qui est fait de
-  chapitres, de paragraphes, de phrases, de mots, de lettres et de ponctuation,
-  un programme est un tout qui peut être réduit à s
-layout: editorial
+description: Programmer signifie écrire du code. À l'image d'un livre qui est fait de chapitres, de paragraphes, de phrases, de mots, de lettres et de ponctuation, un programme est un tout qui peut être réduit à sa plus petite portion.
 ---
 
-# basics
+# Chapitre 2
 
-## Chapitre 2
-
-## Bases du langage
+# Bases du langage
 
 Dans ce premier chapitre, nous allons découvrir les bases de la programmation en JavaScript.
 

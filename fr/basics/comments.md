@@ -1,10 +1,7 @@
 ---
 chapter: 2
 pageNumber: 10
-description: >-
-  Les commentaires sont utilisés pour faire apparaître des annotations à
-  destination des autres programmeurs. Les commentaires permettent aussi de
-  fournir de courtes descriptions sur le code afin d'aide
+description: Les commentaires sont utilisés pour faire apparaître des annotations à destination des autres programmeurs. Les commentaires permettent aussi de fournir de courtes descriptions sur le code afin d'aider le lecteur à comprendre ce dernier. Les commentaires sont ignorés par l'interpréteur.
 ---
 
 # Commentaires
@@ -13,14 +10,14 @@ Les commentaires sont des déclarations qui ne sont pas exécutées par l'interp
 
 En JavaScript, les commentaires peuvent être écrits de deux manières:
 
-* _Commentaire monoligne_: Le commentaire commence avec deux slashs (`//`) et se prolonge jusqu'à la fin de la ligne courante. Tout ce qui suit le double slash sera ignoré par l'interpréteur JavaScript. Par exemple:
+- _Commentaire monoligne_: Le commentaire commence avec deux slashs (`//`) et se prolonge jusqu'à la fin de la ligne courante. Tout ce qui suit le double slash sera ignoré par l'interpréteur JavaScript. Par exemple:
 
 ```javascript
 // Ceci est un commentaire monoligne, il sera ignoré par l'interpréteur
 let a = "ceci est une variable définie dans une déclaration";
 ```
 
-* _Commentaires multilignes_: Le commentaire commence avec un slash suivi directement par un astérisque (`/*`) et se termine par un astérisque suivi directement par un slash (`*/`). Tout ce qui est contenu entre ces deux paires de signes sera ignoré par l'interpréteur JavaScript. Par exemple:
+- _Commentaires multilignes_: Le commentaire commence avec un slash suivi directement par un astérisque (`/*`) et se termine par un astérisque suivi directement par un slash (`*/`). Tout ce qui est contenu entre ces deux paires de signes sera ignoré par l'interpréteur JavaScript. Par exemple:
 
 ```javascript
 /*

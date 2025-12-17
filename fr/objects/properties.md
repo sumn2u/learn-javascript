@@ -1,12 +1,8 @@
 ---
 chapter: 9
 pageNumber: 57
-description: >-
-  Un objet est un type de données composite qui nous permet de stocker et
-  organiser les données en des paires de clé-valeur. Chaque paire est appelée
-  propriété. Les propriétés sont utilisée pour représe
+description: Un objet est un type de données composite qui nous permet de stocker et organiser les données en des paires de clé-valeur. Chaque paire est appelée propriété. Les propriétés sont utilisée pour représenter des caractéristiques, des attributs ou des fonctionnalités de l'objet.
 ---
-
 # Les propriétés
 
 On appelle propriété une paire `nom propriété`: `valeur propriété` où **nom propriété** est une chaîne de caractères. Si ce n'est pas le cas, il est transformé en chaîne. On précise la propriété lors de la création de l'objet ou plutard. On peut avoir plusieurs propriétés, séparées par des virgules ou aucune.

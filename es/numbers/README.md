@@ -1,11 +1,8 @@
 ---
+layout: editorial
 chapter: 3
 pageNumber: 17
-description: >-
-  Los números se refieren al tipo de datos utilizado para representar valores
-  numéricos. Los números en JavaScript pueden ser números enteros (números
-  enteros) o números de punto flotante (números decim
-layout: editorial
+description: Los números se refieren al tipo de datos utilizado para representar valores numéricos. Los números en JavaScript pueden ser números enteros (números enteros) o números de punto flotante (números decimales)
 ---
 
 # Capítulo 3
@@ -46,6 +43,6 @@ let z = 0xFF; // 255
 
 En este capítulo, exploraremos los siguientes temas:
 
-* [Math](math.md)
-* [Operadores básicos](operators.md)
-* [Operadores avanzados](advanced.md)
+* [Math](./math.md)
+* [Operadores básicos](./operators.md)
+* [Operadores avanzados](./advanced.md)

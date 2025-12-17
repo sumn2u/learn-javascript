@@ -1,10 +1,7 @@
 ---
 chapter: 16
 pageNumber: 86
-description: >-
-  L'objet Location (emplacement) est un objet intégré qui représente l'URL
-  actuelle de la page web affichée dans le navigateur. Il fournit l'emplacement
-  de la page Web actuelle et permet d'effectuer div
+description: L'objet Location (emplacement) est un objet intégré qui représente l'URL actuelle de la page web affichée dans le navigateur. Il fournit l'emplacement de la page Web actuelle et permet d'effectuer diverses opérations liées aux URL.
 ---
 
 # Location
@@ -23,7 +20,7 @@ location
 
 Prenons l'exemple de l'URL suivante et explorons les différentes propriétés de `location`:
 
-[`http://localhost:3000/js/index.html?type=listing&page=2#title`](http://localhost:8080/js/index.html?type=listing\&page=2#title)
+[`http://localhost:3000/js/index.html?type=listing&page=2#title`](http://localhost:8080/js/index.html?type=listing&page=2#title)
 
 ```javascript
 location.href; //affiche l'URL du document actuel

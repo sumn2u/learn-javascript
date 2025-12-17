@@ -1,10 +1,7 @@
 ---
 chapter: 19
 pageNumber: 152
-description: >-
-  En programación, pueden ocurrir errores al escribir código. Podría deberse a
-  errores sintácticos o lógicos. El proceso de encontrar errores puede llevar
-  mucho tiempo y ser complicado y se denomina dep
+description: En programación, pueden ocurrir errores al escribir código. Podría deberse a errores sintácticos o lógicos. El proceso de encontrar errores puede llevar mucho tiempo y ser complicado y se denomina depuración de código.
 ---
 
 # Depuración
@@ -30,16 +27,16 @@ calcularTotal(100, 0.2);
 
 Usa `console.log()` para:
 
-* Verificar si una función se está ejecutando.
-* Imprimir el valor de las variables.
-* Monitorear el flujo de control (por ejemplo, si se cumple una condición).
+- Verificar si una función se está ejecutando.
+- Imprimir el valor de las variables.
+- Monitorear el flujo de control (por ejemplo, si se cumple una condición).
 
 Otras funciones útiles de console:
 
-* `console.error()` – para registrar errores.
-* `console.warn()` – para advertencias.
-* `console.table()` – para imprimir datos en forma de tabla.
-* `console.trace()` – para imprimir el seguimiento de llamadas (stack trace).
+- `console.error()` – para registrar errores.
+- `console.warn()` – para advertencias.
+- `console.table()` – para imprimir datos en forma de tabla.
+- `console.trace()` – para imprimir el seguimiento de llamadas (stack trace).
 
 ## Uso de puntos de interrupción (Breakpoints)
 
@@ -55,10 +52,10 @@ Los navegadores modernos ofrecen herramientas para desarrolladores con capacidad
 
 Una vez pausado el código, puedes:
 
-* **Step over (pasar por encima)** – avanzar a la siguiente línea.
-* **Step into (entrar en)** – entrar dentro de una llamada a función.
-* **Step out (salir de)** – salir de la función actual.
-* **Resume (reanudar)** – continuar la ejecución hasta el siguiente punto de interrupción.
+- **Step over (pasar por encima)** – avanzar a la siguiente línea.
+- **Step into (entrar en)** – entrar dentro de una llamada a función.
+- **Step out (salir de)** – salir de la función actual.
+- **Resume (reanudar)** – continuar la ejecución hasta el siguiente punto de interrupción.
 
 Los puntos de interrupción no son intrusivos y pueden agregarse o eliminarse sin modificar el código fuente.
 
@@ -76,15 +73,16 @@ Los navegadores modernos vienen equipados con potentes herramientas de desarroll
 
 ### Acceso a las herramientas del navegador
 
-Los navegadores ofrecen herramientas para inspeccionar HTML, CSS y JavaScript. Podemos acceder a ellas: Haciendo clic derecho sobre la página y seleccionando "Inspeccionar" o presionando `F12` o `Ctrl + Shift + I` / `Cmd + Option + I` (Mac)
+Los navegadores ofrecen herramientas para inspeccionar HTML, CSS y JavaScript. Podemos acceder a ellas:
+Haciendo clic derecho sobre la página y seleccionando "Inspeccionar" o presionando `F12` o `Ctrl + Shift + I` / `Cmd + Option + I` (Mac)
 
 ### Paneles clave en las herramientas del navegador
 
-* **Console (Consola)**: Muestra registros, errores y permite ejecutar JavaScript en tiempo real.
-* **Elements / Inspector**: Permite examinar y modificar el HTML y CSS del documento.
-* **Sources**: Lugar donde se depura JavaScript usando puntos de interrupción.
-* **Network (Red)**: Visualiza la carga de recursos, tiempos, y solicitudes/respuestas.
-* **Performance / Memory**: Útil para identificar cuellos de botella y fugas de memoria.
+- **Console (Consola)**: Muestra registros, errores y permite ejecutar JavaScript en tiempo real.
+- **Elements / Inspector**: Permite examinar y modificar el HTML y CSS del documento.
+- **Sources**: Lugar donde se depura JavaScript usando puntos de interrupción.
+- **Network (Red)**: Visualiza la carga de recursos, tiempos, y solicitudes/respuestas.
+- **Performance / Memory**: Útil para identificar cuellos de botella y fugas de memoria.
 
 Podemos insertar la instrucción debugger directamente en el código para crear un punto de interrupción de forma programada. Cuando el código encuentra debugger, se pausará la ejecución y se abrirán las herramientas de desarrollo del navegador (si están abiertas).
 
@@ -92,21 +90,22 @@ Podemos insertar la instrucción debugger directamente en el código para crear 
 
 En las DevTools puedes vigilar variables o expresiones. Esto es útil cuando depuras lógica compleja o haces seguimiento de una variable a lo largo del tiempo.
 
-* Usa el panel Watch para seguir expresiones como `usuario.nombre` o `carrito.length`.
-* Examina los alcances Local, Closure y Global para inspeccionar las variables disponibles en cada contexto.
+- Usa el panel Watch para seguir expresiones como `usuario.nombre` o `carrito.length`.
+- Examina los alcances Local, Closure y Global para inspeccionar las variables disponibles en cada contexto.
 
 ### Rastreo de pila y Call Stack
 
 Cuando el código se detiene en un punto de interrupción (o tras un error), puedes inspeccionar el panel de Call Stack:
 
-* Muestra la secuencia de funciones llamadas que llevaron hasta el punto actual.
-* Al hacer clic en un marco (frame), puedes examinar variables en ese contexto. Entender la pila de llamadas es esencial para corregir comportamientos inesperados producidos por un flujo de ejecución incorrecto.
+- Muestra la secuencia de funciones llamadas que llevaron hasta el punto actual.
+- Al hacer clic en un marco (frame), puedes examinar variables en ese contexto.
+  Entender la pila de llamadas es esencial para corregir comportamientos inesperados producidos por un flujo de ejecución incorrecto.
 
 ## Estrategias comunes de depuración
 
-* **Simplifica el problema**: Intenta aislar el ejemplo más pequeño y reproducible.
-* **Usa afirmaciones (assertions)**: Verifica manualmente supuestos en tu código.
-* **Depuración con pato de goma (rubber duck debugging)**: Explica tu código a otra persona (¡o a un objeto!) para descubrir errores lógicos.
-* **Busca mensajes de error**: Los errores de JavaScript a menudo contienen información útil.
-* **Verifica la compatibilidad con navegadores**: No todos los navegadores se comportan igual.
-* **Usa linters**: Herramientas como ESLint pueden detectar errores comunes antes de que se ejecute el código.
+- **Simplifica el problema**: Intenta aislar el ejemplo más pequeño y reproducible.
+- **Usa afirmaciones (assertions)**: Verifica manualmente supuestos en tu código.
+- **Depuración con pato de goma (rubber duck debugging)**: Explica tu código a otra persona (¡o a un objeto!) para descubrir errores lógicos.
+- **Busca mensajes de error**: Los errores de JavaScript a menudo contienen información útil.
+- **Verifica la compatibilidad con navegadores**: No todos los navegadores se comportan igual.
+- **Usa linters**: Herramientas como ESLint pueden detectar errores comunes antes de que se ejecute el código.

@@ -1,11 +1,8 @@
 ---
+layout: editorial
 chapter: 7
 pageNumber: 64
-description: >-
-  Los bucles son estructuras de control que le permiten ejecutar un bloque de
-  código repetidamente hasta que se cumpla una condición específica. Son
-  esenciales para automatizar tareas repetitivas e iter
-layout: editorial
+description: Los bucles son estructuras de control que le permiten ejecutar un bloque de código repetidamente hasta que se cumpla una condición específica. Son esenciales para automatizar tareas repetitivas e iterar sobre estructuras de datos como matrices y cadenas.
 ---
 
 # Capítulo 7
@@ -34,8 +31,8 @@ for (var i = 0; i < coches.length; i++) {
 
 En este capítulo vamos a discutir los siguientes temas:
 
-* [For](for.md)
-* [While](while.md)
-* [Do...While](dowhile.md)
-* [Continue](continue.md)
-* [Break](break.md)
+* [For](./for.md)
+* [While](./while.md)
+* [Do...While](./dowhile.md)
+* [Continue](./continue.md)
+* [Break](./break.md)

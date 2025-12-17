@@ -1,12 +1,8 @@
 ---
 chapter: 19
 pageNumber: 146
-description: >-
-  Polyfills y transpilers son dos herramientas importantes que se utilizan en el
-  desarrollo web para ayudar a garantizar que el código JavaScript moderno pueda
-  ejecutarse en navegadores más antiguos y a
+description: Polyfills y transpilers son dos herramientas importantes que se utilizan en el desarrollo web para ayudar a garantizar que el código JavaScript moderno pueda ejecutarse en navegadores más antiguos y aprovechar las últimas funciones de JavaScript manteniendo la compatibilidad con entornos más antiguos.
 ---
-
 # Polyfills y transpiladores
 
 JavaScript evoluciona de vez en cuando. Regularmente, se envían, analizan y agregan nuevas propuestas de lenguaje a [https://tc39.github.io/ecma262/](https://tc39.github.io/ecma262/) y luego se incorporan a la especificación. Puede haber diferencias en cómo se implementa en los motores JavaScript según el navegador. Algunos pueden implementar las propuestas preliminares, mientras que otros esperan hasta que se publique la especificación completa. Surgen problemas de compatibilidad con versiones anteriores a medida que se introducen cosas nuevas.
@@ -15,7 +11,7 @@ Para admitir el código moderno en navegadores antiguos utilizamos dos herramien
 
 ## **Transpiladores**
 
-Es un programa que traduce código moderno y lo reescribe utilizando estructuras de sintaxis más antiguas para que el motor más antiguo pueda entenderlo. Por ejemplo, el operador coalescente "nulo" `??` se introdujo en 2020 y los navegadores obsoletos no pueden entenderlo.
+Es un programa que traduce código moderno y lo reescribe utilizando estructuras de sintaxis más antiguas para que el motor más antiguo pueda entenderlo. Por ejemplo, el operador coalescente  "nulo" `??` se introdujo en 2020 y los navegadores obsoletos no pueden entenderlo.
 
 Ahora, el trabajo del transpilador es hacer que el operador coalescente "nulo" `??` sea comprensible para los navegadores antiguos.
 

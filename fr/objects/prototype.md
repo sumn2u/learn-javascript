@@ -1,18 +1,13 @@
 ---
 chapter: 9
 pageNumber: 61
-description: >-
-  Chaque objet a une propriété spécifique appellée prototype qui est une
-  référence d'un autre objet. La proprité prototype est une notion essentielle
-  du système d'héritage par prototype en JavaScript et
+description: Chaque objet a une propriété spécifique appellée prototype qui est une référence d'un autre objet. La proprité prototype est une notion essentielle du système d'héritage par prototype en JavaScript et elle permet à un objet d'hériter les propriétés et méthodes d'un autre objet.
 ---
-
 # Prototype
 
 Chaque objet est lié à une propriété `prototype` qui est un autre objet duquel il hérite des propriéts. Les objets créés directement avec les accolades (`{}`) sont automatiquement associés à `Object.prototype`, qui est un standard du JavaScript.
 
 Lorsque l'interpréteur JavaScrit essaye de trouver une propriété à laquelle on essaie d'accéder comme à travers ce code:
-
 ```javascript
 let adult = { age: 26 },
   retrievedProperty = adult.age;
@@ -26,7 +21,7 @@ let stringRepresentation = adult.toString();
 // the variable has value of '[object Object]'
 ```
 
-La méthode `toString` est une propriété de l'objet `Object.prototype` dont `adult` a hérité. C'est une fonction qui renvoie la représentation textuelle de l'objet. Si vous voulez avoir une représentation plus personnalisée, alors vous pouvez surcharger la méthode (ou la fonction); c'est-à-dire, définir votre propre version de la méthode. Et pour ce faire, on procède comme suit:
+La méthode `toString` est une propriété de l'objet `Object.prototype ` dont `adult` a hérité. C'est une fonction qui renvoie la représentation textuelle de l'objet. Si vous voulez avoir une représentation plus personnalisée, alors vous pouvez surcharger la méthode (ou la fonction); c'est-à-dire, définir votre propre version de la méthode. Et pour ce faire, on procède comme suit:
 
 ```javascript
 adult.toString = function () {

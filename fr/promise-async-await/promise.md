@@ -1,17 +1,11 @@
 ---
 chapter: 18
 pageNumber: 89
-description: >-
-  Une Promesse (Promise en anglais) est un objet qui représente l'achèvement (ou
-  l'échec) d'une tâche asychrone et sa valeur de retour. Les Promesses nous
-  donnent une meilleur struture de gestion des op
+description: Une Promesse (Promise en anglais) est un objet qui représente l'achèvement (ou l'échec) d'une tâche asychrone et sa valeur de retour. Les Promesses nous donnent une meilleur struture de gestion des opérations asynchrones telles que les appels réseaux, la lecture des fichiers ou l'interation avec les bases de données.
 ---
 
-# promise
-
-## Chapitre 18
-
-## Les Promesses, async/await
+# Chapitre 18
+# Les Promesses, async/await
 
 Alors, mettez-vous dans la peau d'un écrivain et vous êtes actuellement en train de planifier la sortie de votre prochaine oeuvre. Les lecteurs qui s'intéressent à ce livre l'ajoutent à leur liste de souhait et sont notifiés lorsque le livre paraît ou même quand la date de sortie est repoussée. Le jour de la sortie, tout le monde peut l'acheter et tout le monde est content. Ceci est une analogie avec le fonctionnement des promesses (autrement appelées **Promises**) en JavaScript.
 
@@ -19,7 +13,7 @@ Alors, mettez-vous dans la peau d'un écrivain et vous êtes actuellement en tra
 2. Le "_consommateur_" est quelque chose qui consomme ce que produit le producteur une fois que c'est prêt. Dans notre parabole, il s'agit du "lecteur".
 3. Ce qui lie le "_producteur_" et le "_consommateur_" peut être appellé une _promesse_ parce qu'elle permet de fournir le résultat du "_producteur_" au "_consommateur_".
 
-## Promise
+# Promise
 
 L'analogie qui nous avons faite est aussi vraie pour les objets de type `promise` en JavaScript. La syntaxe de création à partir du constructeur est comme suit:
 
@@ -41,7 +35,7 @@ Les propriétés internes de la promesse retournée par l'appel du constructeur 
 * `state` - initialement `pending` (en cours), ensuite change à soit `fulfill` (accomplie) lorsque `resolve` est appelée, soit `rejected` (rejetée) lorsque c'est `reject` qui est appelée.
 * `result` - initialement `undefined`, ensuite change à `value` en cas d'appel à `resolve` ou `error` lorsque c'est `reject` qui est appelée.
 
-{% hint style="info" %}
+{% hint style="working" %}
 Nous ne pouvons pas accéder aux propriétés : `state` et `result`. Les méthodes spécifiques au type Promise sont nécessaires pour gérer les promesses.
 {% endhint %}
 
@@ -63,7 +57,7 @@ let promiseTwo = new Promise(function(resolve, reject) {
 })
 ```
 
-Ici, la promesse `promiseOne` est un exemple de promesse "_fulfilled_", (i.e _accomplie_) parce qu'elle est résolue (appel de _resolve()_) tandis que la promesse `promiseTwo` est une promesse "_rejected_" (i.e _rejetée_) parce que c'est la fonction _reject_ qui fut appelée par l'exécuteur.
+Ici, la promesse `promiseOne` est un exemple de promesse "_fulfilled_", (i.e _accomplie_) parce qu'elle est résolue (appel de _resolve()_) tandis que la promesse `promiseTwo` est une promesse "_rejected_" (i.e _rejetée_) parce que c'est la fonction _reject_ qui fut appelée par l'exécuteur. 
 
 Une promesse qui n'est ni _rejected_, ni _resolved_ est appelée _settled_ en opposition à l'état _pending_ initial. On peut consommer la promesse en utilisant les méthodes `.then` et `.catch`. Nous pouvons également ajouter `.finally` pour effectuer des actions après l'appel de l'une des méthodes précédentes.
 
@@ -96,6 +90,6 @@ let promiseThree = new Promise((resolve, reject) => {
 promiseThree.catch(alert); // montre l'erreur "Error: Whoops!" après une seconde
 ```
 
-{% hint style="info" %}
+{% hint style="working" %}
 Dans la méthode `Promise.then()`, toutes les deux fonctions de callback sont optionels.
 {% endhint %}

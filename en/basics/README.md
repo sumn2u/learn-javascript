@@ -1,18 +1,12 @@
 ---
+layout: editorial
 chapter: 2
 pageNumber: 11
-description: >-
-  Programming means writing code. A book is made up of chapters, paragraphs,
-  sentences, phrases, words, and finally punctuation and letters, likewise a
-  program can be broken down into smaller and smalle
-layout: editorial
+description: Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words, and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components.
 ---
 
-# basics
-
-## Chapter 2
-
-## Basics
+# Chapter 2
+# Basics
 
 In this first chapter, we'll learn the basics of programming and the Javascript language.
 
@@ -33,8 +27,7 @@ let message = hello + " " + world;
 This code can be executed by another program called an _interpreter_ that will read the code, and execute all the statements in the right order.
 
 In this chapter, we will explore following topics:
-
-* [Comments](comments.md)
-* [Equality](equality.md)
-* [Types](types.md)
-* [Variables](variables.md)
+* [Comments](./comments.md)
+* [Equality](./equality.md)
+* [Types](./types.md)
+* [Variables](./variables.md)
