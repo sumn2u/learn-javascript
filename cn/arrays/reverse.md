@@ -33,5 +33,5 @@ reverse 方法会原地调换调用数组对象的元素，修改原数组，并
 以下是 reverse 用于数组的示例：
 
 const numbers = [1, 2, 3];
-const newLength = numbers.reverse();
-console.log(numbers); // [3, 2, 1]
+const reversedArray = numbers.reverse();
+console.log(reversedArray); // [3, 2, 1]
