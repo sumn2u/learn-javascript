@@ -23,11 +23,12 @@ let array = ['a', 'b', 'c', 'd', 'e'];
 //  索引：     0    1    2    3    4
 array[4] = 'f';
 console.log(array); // 结果：['a', 'b', 'c', 'd', 'f']
-
+```
 
 请注意，如果你尝试使用超出数组范围的索引来访问或设置元素（即索引小于 `0`，或大于等于数组的长度），将会得到 `undefined` 值。
 
 ```javascript
 console.log(array[5]); // 输出：undefined
 array[5] = 'g';
-console.log(array); // 结果：['a', 'b', 'c', 'd', 'f', undefined, 'g']
+console.log(array); // 结果：['a', 'b', 'c', 'd', 'f', 'g']
+```

@@ -17,7 +17,7 @@ array.forEach(function(element, index, array) {
 
 例如，假设你有一个数字数组，并希望在控制台中输出每个数字的两倍，可以使用 `forEach` 如下所示：
 
-```typescript
+```javascript
 let 数字 = [1, 2, 3, 4, 5];
 数字.forEach(function(数值) {
   console.log(数值 * 2);
@@ -26,7 +26,7 @@ let 数字 = [1, 2, 3, 4, 5];
 
 你也可以使用箭头函数语法来定义传递给 `forEach` 的函数：
 
-```typescript
+```javascript
 数字.forEach((数值) => {
   console.log(数值 * 2);
 });
@@ -34,7 +34,7 @@ let 数字 = [1, 2, 3, 4, 5];
 
 或者：
 
-```typescript
+```javascript
 数字.forEach(数值 => console.log(数值 * 2));
 ```
 
