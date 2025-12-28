@@ -7,7 +7,7 @@
 
 `join` 方法会将数组转换为一个字符串，并将所有元素连接在一起。它**不会改变原始数组**。以下是使用 `join` 的语法：
 
-```c
+```javascript
 array.join([separator]);
 ```
 
@@ -34,4 +34,5 @@ function printArguments() {
   console.log(Array.prototype.slice.call(arguments).join(', '));
 }
 
-printArguments('a', 'b', 'c'); // 结果："a, b, c"
+printArguments('a', 'b', 'c'); // 结果：a, b, c
+```
