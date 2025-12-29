@@ -1,26 +1,44 @@
-章节：6
-页码：48
-描述：要在数组开头添加元素，可以使用 unshift 方法。它会修改原数组，并返回数组的新长度。
+---
+章节: 6
+页码: 48
+描述: unshift 方法可以向数组开头添加一个或多个元素，并返回数组的新长度。
+---
 
-Unshift
+# Unshift
 
-unshift 方法会将一个或多个新元素依次添加到数组的开头。它会修改原数组，并返回数组的新长度。例如：
+`unshift()` 方法会将一个或多个新元素添加到数组的**开头**。  
+它会**修改原数组**，并返回数组的**新长度**。
 
+## 语法
+
+```javascript
+array.unshift(element1[, element2[, ...[, elementN]]])
+```
+
+`element1, ..., elementN` 表示要添加到数组开头的一个或多个元素。
+
+## 示例 1：向数组开头添加单个元素
+```javascript
 let array = [0, 5, 10];
-array.unshift(-5);  // 返回 4
+let newLength = array.unshift(-5);  // 返回 4
 
-// 结果: array = [-5, 0, 5, 10]
+console.log(array);
+// 结果: [-5, 0, 5, 10]
+console.log(newLength); 
+// 结果: 4
+```
 
-
-{% hint style="working" %}
-unshift() 方法会覆盖原数组。
-{% endhint %}
-
-unshift 方法可以接受一个或多个参数，这些参数表示要添加到数组开头的元素。它会按照参数顺序添加元素，因此第一个参数会成为数组的第一个元素。
-
-示例，向数组添加多个元素：
-
+## 示例 2：向数组开头添加多个元素
+```javascript
 const numbers = [1, 2, 3];
 const newLength = numbers.unshift(-1, 0);
-console.log(numbers);    // [-1, 0, 1, 2, 3]
-console.log(newLength);  // 5
+
+console.log(numbers);    
+// 结果: [-1, 0, 1, 2, 3]
+console.log(newLength);  
+// 结果: 5
+```
+
+{% hint style="working" %}
+`unshift()` 方法会修改原数组，不会创建新数组。
+{% endhint %}

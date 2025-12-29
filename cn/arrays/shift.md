@@ -1,33 +1,45 @@
-章节：6
-页码：51
-描述：shift 方法删除数组的第一个元素，并将所有索引左移。它会修改原数组。
+---
+章节: 6
+页码: 51
+描述: shift 方法用于删除数组的第一个元素，并将剩余元素的索引依次左移。它会修改原数组。
+---
 
-Shift
+# Shift
 
-shift 方法会删除数组的第一个元素，并将所有元素的索引左移。它会改变原数组。
+`shift()` 方法会删除数组的**第一个元素**，并将所有元素的索引左移。  
+此方法会**直接修改原数组**，并返回被删除的元素。
 
-shift 的语法如下：
+## 语法
+
+```javascript
+array.shift();
+```
+
+示例:
+
+```javascript
+let array = [1, 2, 3];
 
 array.shift();
 
+console.log(array);
+// 结果：[2, 3]
+```
 
-例如：
+你也可以结合循环使用 `shift()` 方法来移除数组中的所有元素：
 
-let array = [1, 2, 3]; 
-array.shift(); 
-
-// 结果: array = [2, 3]
-
-
-你也可以结合循环使用 shift 方法来移除数组中的所有元素。示例：
+```javascript
+let array = [1, 2, 3];
 
 while (array.length > 0) {
   array.shift();
 }
 
-console.log(array); // 结果: []
-
+console.log(array);
+// 结果：[]
+```
 
 {% hint style="working" %}
-shift 方法只适用于数组，而不适用于类似数组的对象，例如 arguments 对象或 NodeList 对象。如果你需要从这些类型的对象中移除元素，需要先使用 Array.prototype.slice() 方法将其转换为数组。
+`shift()` 方法只适用于数组，而不适用于类数组对象（如 arguments 或 NodeList）。
+如果需要操作这些对象，可以先使用 `Array.prototype.slice()` 将它们转换为真正的数组。
 {% endhint %}
