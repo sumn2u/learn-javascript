@@ -4,7 +4,7 @@ pageNumber: 60
 description: JavaScript 的 `arr.slice()` 方法返回一个包含原数组部分元素的新数组，原数组保持不变。
 ---
 
-# Slice
+# 切片 (Slice)
 
 `slice()` 方法用于从数组中提取一部分元素，并返回一个新的数组，原数组不会被修改。
 
