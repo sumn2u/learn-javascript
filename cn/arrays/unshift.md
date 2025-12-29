@@ -1,7 +1,7 @@
 ---
-章节: 6
-页码: 48
-描述: unshift 方法可以向数组开头添加一个或多个元素，并返回数组的新长度。
+chapter: 6
+pageNumber: 48
+description: unshift 方法可以向数组开头添加一个或多个元素，并返回数组的新长度。
 ---
 
 # Unshift

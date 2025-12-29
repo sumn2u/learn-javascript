@@ -1,7 +1,7 @@
 ---
-章节: 6
-页码: 44
-描述: 数组有一个名为 length 的属性，用于测量数组的长度（元素数量）。
+chapter: 6
+pageNumber: 44
+description: 数组有一个名为 length 的属性，用于测量数组的长度（元素数量）。
 ---
 
 # 长度（Length）

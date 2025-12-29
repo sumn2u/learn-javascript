@@ -1,7 +1,7 @@
 ---
-章节: 6
-页码: 59
-描述: reverse 方法用于反转数组中元素的顺序。它会修改原数组，并返回对该数组的引用。
+chapter: 6
+pageNumber: 59
+description: reverse 方法用于反转数组中元素的顺序。它会修改原数组，并返回对该数组的引用。
 ---
 
 # Reverse

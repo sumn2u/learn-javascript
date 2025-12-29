@@ -1,7 +1,7 @@
 ---
-章节: 6
-页码: 60
-描述: JavaScript 的 `arr.slice()` 方法返回一个包含原数组部分元素的新数组，原数组保持不变。
+chapter: 6
+pageNumber: 60
+description: JavaScript 的 `arr.slice()` 方法返回一个包含原数组部分元素的新数组，原数组保持不变。
 ---
 
 # Slice
