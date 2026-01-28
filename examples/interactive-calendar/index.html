@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <header class="calendar-header">
+            <div class="calendar-navigation">
+                <span id="month-prev" class="nav-btn">&lt;</span>
+                <h2 id="month-year"></h2>
+                <span id="month-next" class="nav-btn">&gt;</span>
+            </div>
+        </header>
+
+        <div class="calendar-weekdays">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+
+        <div class="calendar-dates" id="calendar-dates"></div>
+    </div>
+
+    <div id="event-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="selected-date"></h3>
+            <textarea id="event-input" placeholder="Add an event/note..."></textarea>
+            <button id="save-event-btn">Save Event</button>
+            <button id="delete-event-btn" class="secondary">Clear Event</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
