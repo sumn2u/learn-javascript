@@ -3,7 +3,6 @@ const datesElement = document.getElementById('calendar-dates');
 const prevBtn = document.getElementById('month-prev');
 const nextBtn = document.getElementById('month-next');
 
-// Modal Elements
 const modal = document.getElementById('event-modal');
 const closeModalBtn = document.querySelector('.close-btn');
 const selectedDateTitle = document.getElementById('selected-date');
@@ -20,7 +19,8 @@ const months = [
     "July", "August", "September", "October", "November", "December"
 ];
 
-// --- Core Functions ---
+// Helper: Zero-pad numbers (Fixed: Date formatting consistency)
+const pad = (n) => (n < 10 ? '0' + n : n);
 
 function renderCalendar() {
     const year = currentDate.getFullYear();
@@ -29,48 +29,54 @@ function renderCalendar() {
     monthYearElement.innerText = `${months[month]} ${year}`;
     datesElement.innerHTML = '';
 
-    // First day of the month (0 = Sunday, 1 = Monday, etc.)
     const firstDay = new Date(year, month, 1).getDay();
-    // Total days in the current month
     const totalDays = new Date(year, month + 1, 0).getDate();
 
-    // Add empty divs for days before the first day of the month
     for (let i = 0; i < firstDay; i++) {
         const emptyDiv = document.createElement('div');
         datesElement.appendChild(emptyDiv);
     }
 
-    // Render days
     for (let day = 1; day <= totalDays; day++) {
         const dayDiv = document.createElement('div');
         dayDiv.classList.add('day');
         dayDiv.innerText = day;
 
-        // Check if this day is "Today"
         const today = new Date();
         if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
             dayDiv.classList.add('current-date');
         }
 
-        // Check for Events
-        const dateString = `${year}-${month + 1}-${day}`;
+        // Fixed: Use padded date format YYYY-MM-DD
+        const dateString = `${year}-${pad(month + 1)}-${pad(day)}`;
+        
+        // Store date in data attribute for Event Delegation
+        dayDiv.dataset.date = dateString;
+
         if (events[dateString]) {
             dayDiv.classList.add('has-event');
-            dayDiv.title = events[dateString]; // Tooltip
+            dayDiv.title = events[dateString];
         }
 
-        // Add Click Event for Modal
-        dayDiv.addEventListener('click', () => openModal(dateString));
-        
+        // Removed individual event listeners here (Performance fix)
         datesElement.appendChild(dayDiv);
     }
 }
+
+// Fixed: Event Delegation (One listener for all days)
+datesElement.addEventListener('click', (e) => {
+    const target = e.target.closest('.day');
+    if (target && target.dataset.date) {
+        openModal(target.dataset.date);
+    }
+});
 
 function openModal(dateStr) {
     clickedDate = dateStr;
     selectedDateTitle.innerText = `Event for: ${dateStr}`;
     eventInput.value = events[dateStr] || '';
     modal.classList.remove('hidden');
+    eventInput.focus();
 }
 
 function closeModal() {
@@ -78,25 +84,17 @@ function closeModal() {
     clickedDate = null;
 }
 
-// --- Event Listeners ---
-
-prevBtn.addEventListener('click', () => {
-    currentDate.setMonth(currentDate.getMonth() - 1);
-    renderCalendar();
-});
-
-nextBtn.addEventListener('click', () => {
-    currentDate.setMonth(currentDate.getMonth() + 1);
-    renderCalendar();
-});
-
-closeModalBtn.addEventListener('click', closeModal);
-
+// Fixed: Save logic handles whitespace and deletion
 saveEventBtn.addEventListener('click', () => {
-    if (eventInput.value.trim()) {
-        events[clickedDate] = eventInput.value;
-        localStorage.setItem('events', JSON.stringify(events));
+    const eventText = eventInput.value.trim();
+    
+    if (eventText) {
+        events[clickedDate] = eventText;
+    } else {
+        delete events[clickedDate]; // Remove event if input is cleared
     }
+    
+    localStorage.setItem('events', JSON.stringify(events));
     closeModal();
     renderCalendar();
 });
@@ -110,12 +108,31 @@ deleteEventBtn.addEventListener('click', () => {
     renderCalendar();
 });
 
-// Close modal if clicking outside
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        closeModal();
-    }
+// Navigation & Close
+prevBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    renderCalendar();
 });
 
-// Initial Render
+nextBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    renderCalendar();
+});
+
+closeModalBtn.addEventListener('click', closeModal);
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
+// Fixed: Keyboard Accessibility for Nav Buttons
+[prevBtn, nextBtn, closeModalBtn].forEach(btn => {
+    btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+        }
+    });
+});
+
 renderCalendar();
