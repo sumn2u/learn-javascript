@@ -131,6 +131,8 @@ textarea {
     height: 60px;
     margin: 10px 0;
     padding: 5px;
+    box-sizing: border-box; /* Fixed: prevents width overflow */
+    resize: vertical; /* Optional: improves UX */
 }
 
 button {

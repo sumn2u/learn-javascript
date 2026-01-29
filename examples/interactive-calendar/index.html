@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Calendar</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="styles.css"> </head>
 <body>
 
     <div class="calendar-container">
         <header class="calendar-header">
             <div class="calendar-navigation">
-                <span id="month-prev" class="nav-btn">&lt;</span>
+                <span id="month-prev" class="nav-btn" role="button" tabindex="0" aria-label="Previous month">&lt;</span>
                 <h2 id="month-year"></h2>
-                <span id="month-next" class="nav-btn">&gt;</span>
+                <span id="month-next" class="nav-btn" role="button" tabindex="0" aria-label="Next month">&gt;</span>
             </div>
         </header>
 
@@ -24,9 +23,9 @@
         <div class="calendar-dates" id="calendar-dates"></div>
     </div>
 
-    <div id="event-modal" class="modal hidden">
+    <div id="event-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="selected-date">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
+            <span class="close-btn" role="button" tabindex="0" aria-label="Close">&times;</span>
             <h3 id="selected-date"></h3>
             <textarea id="event-input" placeholder="Add an event/note..."></textarea>
             <button id="save-event-btn">Save Event</button>
