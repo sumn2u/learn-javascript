@@ -62,6 +62,7 @@ chapter:
 - [Digital Clock](./beginner-projects/digital-clock.md)
 - [Drum Kits](./beginner-projects/electronic-drum-kit.md)
 - [Image Search App](./beginner-projects/image-search.md)
+- [Interactive Calendar](./beginner-projects/interactive-calendar.md)
 - [Month Calendar](./beginner-projects/monthly-calendar.md)
 - [Random Photos](./beginner-projects/random-photos-generator.md)
 - [Rock Paper Scissors Game](./beginner-projects/rock-paper-scissors-game.md)
