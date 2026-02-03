@@ -33,10 +33,10 @@ A fun and fast-paced reflex game where players “whack” moles as they randoml
 ## Live Demo
 
 <div align="center">
-<iframe src="https://codesandbox.io/p/sandbox/hwr4cq"
+<iframe src="https://codesandbox.io/embed/hwr4cq?view=preview&module=%2Fsrc%2Findex.html"
      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="whack-a-mole-game"
+     title="whackAMole"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+   ></iframe>
 </div>

@@ -30,10 +30,10 @@ A memory game where players repeat sequences of colored buttons. Each round adds
 ## Live Demo
 
 <div align="center">
-<iframe src="https://codesandbox.io/p/sandbox/frosty-nobel-849xrz"
+<iframe src="https://codesandbox.io/embed/849xrz?view=preview"
      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="simon-says-game"
+     title="eager-pascal-849xrz"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+   ></iframe>
 </div>
