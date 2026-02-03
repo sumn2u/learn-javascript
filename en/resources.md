@@ -71,3 +71,4 @@ chapter:
 - [Tip Calculator](./beginner-projects/tip-calculator.md)
 - [Video Trailer Popup](./beginner-projects/video-trailer-popup.md)
 - [Weather App](./beginner-projects/weather-app.md)
+- [Whack a Mole](./beginner-projects/whack-a-mole.md)
