@@ -1,0 +1,41 @@
+.code-wrapper {
+    position: relative;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 6px;
+    background-color: #f7f7f7;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a737d;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.copy-code-button:hover {
+    opacity: 1;
+    background-color: #eeeeee;
+    border-color: #d1d5da;
+    color: #24292e;
+}
+
+.copy-code-button.success {
+    color: #28a745;
+}
+
+.copy-code-button svg {
+    display: block;
+}
+
+.code-wrapper pre {
+    margin-top: 0 !important;
+    padding-right: 42px !important;
+}
