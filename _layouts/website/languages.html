@@ -257,8 +257,9 @@ body {
 }
 
 .language-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(67, 97, 238, 0.3);
+    border-color: var(--primary-color);
 }
 
 .card-content {
@@ -281,8 +282,13 @@ body {
     margin-bottom: 1.5rem;
     color: white;
     font-size: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.language-card:hover .language-icon {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.5);
+}
 .language-card h3 {
     margin: 0;
     color: var(--dark-color);
