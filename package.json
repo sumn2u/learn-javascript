@@ -1,6 +1,6 @@
 {
   "name": "javascript_tutorial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Learn JavaScript",
   "main": "index.js",
   "devDependencies": {
@@ -17,7 +17,7 @@
     "gitbook-plugin-sharing": "github:sumn2u/plugin-sharing",
     "gitbook-plugin-sidebar-ad": "github:sumn2u/gitbook-plugin-sidebar-ad",
     "gitbook-plugin-sitemap": "^1.2.0",
-    "gitbook-plugin-theme-creative": "github:sumn2u/gitbook-plugin-theme-creative",
+    "gitbook-plugin-theme-creative": "github:sumn2u/gitbook-plugin-theme-creative#f2e0b1f",
     "honkit": "^4.0.4",
     "honkit-plugin-i18nsettings": "^1.0.0"
   },
