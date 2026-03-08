@@ -261,6 +261,10 @@ html.dark-mode .section-header h2 {
     color: var(--text-color);
 }
 
+html.dark-mode body {
+    background-color: var(--bg-color);
+}
+
 /* Toggle Button Styling */
 #dark-mode-toggle {
     cursor: pointer;
