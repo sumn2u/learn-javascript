@@ -1,0 +1,296 @@
+/* Default Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --code-bg: #f7f7f7;
+    --sidebar-bg: #f5f7f9;
+
+    /* Content semantics */
+    --muted-text: #666666;
+    --border-color: #dddddd;
+    --hr-color: #e7e7e7;
+    --link-color: #4183c4;
+
+    /* Tables */
+    --table-row-bg: #ffffff;
+    --table-row-alt-bg: #f8f8f8;
+    --table-header-bg: #ffffff;
+
+    /* Exercises (match gitbook-plugin-exercises light defaults) */
+    --exercise-bg: #ffffff;
+    --exercise-text: #333333;
+    --exercise-border: #2f8cde;
+    --exercise-header-bg: #2f8cde;
+    --exercise-header-text: #ffffff;
+    --exercise-editor-bg: #ffffff;
+    --exercise-editor-border: #dddddd;
+}
+
+/* Dark Theme Overrides */
+.dark-mode {
+    --bg-color: #1a1a1b;
+    --text-color: #9DAAB6;
+    --code-bg: #2d2d2d;
+    --sidebar-bg: #121213;
+
+    /* Content semantics */
+    --muted-text: #7f8b96;
+    --border-color: #2f3336;
+    --hr-color: #2b2f33;
+    --link-color: #7ab7ff;
+
+    /* Tables */
+    --table-row-bg: #1f2124;
+    --table-row-alt-bg: #1b1d20;
+    --table-header-bg: #23262a;
+
+    /* Exercises (dark mode) */
+    --exercise-bg: #161718;
+    --exercise-text: var(--text-color);
+    --exercise-border: #2f8cde;
+    --exercise-header-bg: #2f8cde;
+    --exercise-header-text: #ffffff;
+    --exercise-editor-bg: #121213;
+    --exercise-editor-border: var(--border-color);
+}
+
+body .book-summary ul.summary li a,
+body .book-body .markdown-section {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-wrapper {
+    background-color: var(--bg-color);
+}
+
+.book-header {
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.book-summary ul.summary li.active > a {
+    background-color: var(--sidebar-bg);
+}
+
+.book-summary ul.summary li {
+    background-color: var(--sidebar-bg);
+}
+
+.book.with-summary .book-summary {
+    background-color: var(--sidebar-bg);
+}
+
+.book-body .body-inner {
+    background-color: var(--bg-color);
+}
+
+/* Exercises (fix unfinished look + restore light mode appearance) */
+.book .book-body .page-wrapper .page-inner .exercise {
+    background-color: var(--exercise-bg);
+    color: var(--exercise-text);
+    border-color: var(--exercise-border);
+}
+
+html.dark-mode .alert-warning {
+    background-color: rgba(255, 193, 7, 0.12);
+    border-color: rgba(255, 193, 7, 0.28);
+    color: #f3d98b;
+}
+
+html.dark-mode .alert-warning a {
+    color: #ffd76a;
+}
+
+html.dark-mode .alert-warning code {
+    background-color: rgba(255, 193, 7, 0.08) !important;
+    color: #ffe08a;
+    border-color: rgba(255, 193, 7, 0.2);
+}
+
+html.dark-mode .alert-info {
+    background-color: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.28);
+    color: #9edcff;
+}
+
+html.dark-mode .alert-info a {
+    color: #7dd3fc;
+}
+
+html.dark-mode .alert-info code {
+    background-color: rgba(56, 189, 248, 0.08) !important;
+    color: #b6e7ff;
+    border-color: rgba(56, 189, 248, 0.2);
+}
+
+html.dark-mode .alert-success {
+    background-color: rgba(34, 197, 94, 0.12);
+    border-color: rgba(34, 197, 94, 0.28);
+    color: #9ee6b3;
+}
+
+html.dark-mode .alert-success a {
+    color: #86efac;
+}
+
+html.dark-mode .alert-success code {
+    background-color: rgba(34, 197, 94, 0.08) !important;
+    color: #b8f5c8;
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+html.dark-mode .alert-danger {
+    background-color: rgba(239, 68, 68, 0.12);
+    border-color: rgba(239, 68, 68, 0.28);
+    color: #ffb4b4;
+}
+
+html.dark-mode .alert-danger a {
+    color: #fca5a5;
+}
+
+html.dark-mode .alert-danger code {
+    background-color: rgba(239, 68, 68, 0.08) !important;
+    color: #ffc7c7;
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.page-inner .exercise .header {
+    background-color: var(--exercise-header-bg);
+    color: var(--exercise-header-text);
+}
+
+.page-inner .exercise .message {
+    color: var(--exercise-text);
+}
+
+.page-inner .exercise .editor {
+    background-color: var(--exercise-editor-bg);
+    border-top-color: var(--exercise-editor-border);
+    border-bottom-color: var(--exercise-editor-border);
+}
+
+pre,
+code {
+    background-color: var(--code-bg) !important;
+}
+
+
+.book-body .markdown-section a {
+    color: var(--link-color);
+}
+
+.book-body .markdown-section a:hover,
+.book-body .markdown-section a:focus {
+    color: var(--link-color);
+}
+
+.book-body .markdown-section hr {
+    background-color: var(--hr-color);
+}
+
+.book-body .markdown-section blockquote {
+    color: var(--muted-text);
+    border-left-color: var(--border-color);
+}
+
+/* Inline code readability (GitBook theme sets its own; this keeps it consistent with your vars) */
+.book-body .markdown-section :not(pre) > code {
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Tables */
+.book-body .markdown-section table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.book-body .markdown-section table th,
+.book-body .markdown-section table td {
+    border: 1px solid var(--border-color);
+}
+
+.book-body .markdown-section table thead tr {
+    background-color: var(--table-header-bg);
+}
+
+.book-body .markdown-section table tbody tr {
+    background-color: var(--table-row-bg);
+}
+
+.book-body .markdown-section table tbody tr:nth-child(2n) {
+    background-color: var(--table-row-alt-bg);
+}
+
+html.dark-mode .language-selector-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+html.dark-mode .language-card {
+    background-color: #1f2124;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+html.dark-mode .language-card:hover,
+html.dark-mode .language-card:focus {
+    background-color: #23262a;
+    border-color: #3a4046;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+html.dark-mode .language-card a,
+html.dark-mode .language-card h1,
+html.dark-mode .language-card h2,
+html.dark-mode .language-card h3,
+html.dark-mode .language-card p,
+html.dark-mode .language-card span {
+    color: var(--text-color);
+}
+
+html.dark-mode .section-header h2 {
+    color: var(--text-color);
+}
+
+html.dark-mode body {
+    background-color: var(--bg-color);
+}
+
+/* Toggle Button Styling */
+#dark-mode-toggle {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+}
+
+html.dark-mode .icon-sun {
+    display: inline-flex;
+}
+
+html.dark-mode .icon-moon {
+    display: none;
+}
+
+html:not(.dark-mode) .icon-sun {
+    display: none;
+}
+
+html:not(.dark-mode) .icon-moon {
+    display: inline-flex;
+}
