@@ -16,7 +16,6 @@
       "theme-creative",
       "sidebar-ad",
       "intopic-toc",
-      "sharing",
       "exercises",
       "@honkit/honkit-plugin-ga",
       "sitemap",
@@ -25,6 +24,7 @@
       "chapter-fold",
       "hide-published-with",
       "edit-link",
+      "sharing",
       "ace-editor"
     ],
     "pdf": {
@@ -45,15 +45,6 @@
                 "base": "https://github.com/sumn2u/learn-javascript/edit/main",
                 "label": ""
             },
-      "sharing": {
-        "facebook": true,
-        "twitter": true,
-        "google": false,
-        "weibo": false,
-        "instapaper": false,
-        "vk": false,
-        "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
-      },
       "ga": {
             "trackingID": "G-57X6JSDN82",
             "anonymizeIP": true
@@ -65,6 +56,15 @@
       },
       "sitemap": {
         "hostname": "https://javascript.sumankunwar.com.np/"
+      },
+      "sharing": {
+        "facebook": false,
+        "twitter": false,
+        "google": false,
+        "weibo": false,
+        "instapaper": false,
+        "vk": false,
+        "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
       },
       "i18nsettings": {
         "language": "en",
