@@ -10,16 +10,36 @@
 
 {% block body %}
 <div class="book-container">
-    <!-- Simple Header -->
+    <!--Header with improved responsive design -->
     <div class="header">
         <div class="logo">
             <i class="fas fa-book-open"></i>
             <span>Learn JavaScript</span>
         </div>
+        
+        <!-- Hamburger menu for mobile -->
+        <button class="mobile-menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
         <div class="header-links">
             <a href="#book">The Book</a>
             <a href="#languages">Languages</a>
             <a href="https://github.com/sumn2u/learn-javascript" target="_blank">GitHub</a>
+            <!-- Dark Mode Toggle -->
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <span class="icon-sun">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+                    </svg>
+                </span>
+                <span class="icon-moon">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+                    </svg>
+                </span>
+            </button>
         </div>
     </div>
 
@@ -59,7 +79,6 @@
 
         <div class="book-cover-wrapper">
             <div class="book-3d">
-                <!-- <div class="book-spine"></div> -->
                 <div class="book-front">
                     <img src="./cover.jpg" alt="Learn JavaScript Book Cover">
                     <div class="book-shine"></div>
@@ -93,7 +112,7 @@
                     <div class="flip-back">
                         <h4>{{ lang.title }}</h4>
                         <div class="language-actions">
-                            <a href="{{ (lang.id + "/README.md")|contentURL }}"  class="action-preview">
+                            <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-preview">
                                 <i class="fas fa-eye"></i> Preview
                             </a>
                             
@@ -146,9 +165,9 @@
 
         <div class="author-card">
             <div class="author-avatar">
-                 <img src="https://avatars.githubusercontent.com/u/6531541?s=400&u=c98c6bd1ad4acc20682443682860707523e3523d&v=4" 
-             alt="Suman Kunwar" 
-             style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                <img src="https://avatars.githubusercontent.com/u/6531541?s=400&u=c98c6bd1ad4acc20682443682860707523e3523d&v=4" 
+                     alt="Suman Kunwar" 
+                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
             </div>
             <h3>Suman Kunwar</h3>
             <p>Author & JavaScript Educator</p>
@@ -205,6 +224,7 @@ body {
     color: var(--text);
     line-height: 1.6;
     background: var(--background);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .book-container {
@@ -213,43 +233,138 @@ body {
     padding: 0 24px;
 }
 
-/* Header */
+/* Header - Fixed Responsive Design */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 20px 0;
     border-bottom: 1px solid var(--border);
     margin-bottom: 48px;
+    position: relative;
+    gap: 20px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 1.25rem;
     font-weight: 600;
+    flex-shrink: 0;
+    z-index: 10;
 }
 
 .logo i {
     color: var(--primary);
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
+.logo:hover i {
+    transform: rotate(-5deg);
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.mobile-menu-toggle:hover {
+    background: var(--gray-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Header links container */
 .header-links {
     display: flex;
-    gap: 32px;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 .header-links a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 500;
-    transition: color 0.2s;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    position: relative;
+    padding: 4px 0;
+}
+
+.header-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.2s ease;
 }
 
 .header-links a:hover {
     color: var(--primary);
+}
+
+.header-links a:hover::after {
+    width: 100%;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    background: var(--gray-light);
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text);
+    transition: all 0.3s ease;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.dark-mode-toggle:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: rotate(15deg);
+}
+
+.dark-mode-toggle .icon-moon {
+    display: none;
+}
+
+.dark-mode-toggle .icon-sun {
+    display: block;
+}
+
+/* Dark mode would toggle these */
+body.dark .dark-mode-toggle .icon-moon {
+    display: block;
+}
+
+body.dark .dark-mode-toggle .icon-sun {
+    display: none;
 }
 
 /* Book Hero */
@@ -293,6 +408,7 @@ body {
     display: flex;
     gap: 24px;
     margin-bottom: 32px;
+    flex-wrap: wrap;
 }
 
 .metadata-item {
@@ -310,6 +426,7 @@ body {
 .book-buttons {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .btn-primary, .btn-secondary {
@@ -380,17 +497,6 @@ body {
     object-fit: cover;
 }
 
-.book-spine {
-    position: absolute;
-    left: -24px;
-    width: 24px;
-    height: 100%;
-    background: linear-gradient(to right, #b85e1a, #e67e22);
-    transform: rotateY(90deg) translateZ(-12px);
-    transform-origin: right;
-    border-radius: 4px 0 0 4px;
-}
-
 .book-back {
     position: absolute;
     width: 100%;
@@ -456,7 +562,8 @@ body {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-inner {
+.flip-card:hover .flip-inner,
+.flip-card.touch-flip .flip-inner {
     transform: rotateY(180deg);
 }
 
@@ -616,6 +723,7 @@ body {
     border-top: 1px solid var(--border);
     color: var(--text-light);
     font-size: 0.9rem;
+    flex-wrap: wrap;
 }
 
 .isbn-info i {
@@ -636,9 +744,9 @@ body {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    overflow: hidden; /* This ensures the image stays inside the circle */
+    overflow: hidden;
     margin: 0 auto 16px;
-    border: 3px solid var(--primary); /* Optional: adds a nice colored border */
+    border: 3px solid var(--primary);
 }
 
 .author-card h3 {
@@ -656,6 +764,7 @@ body {
     display: flex;
     gap: 12px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .author-social {
@@ -690,6 +799,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .footer-copyright {
@@ -706,6 +817,7 @@ body {
 .footer-license {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .footer-license a {
@@ -721,7 +833,17 @@ body {
     color: var(--primary);
 }
 
-/* Responsive */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .book-hero {
+        gap: 40px;
+    }
+    
+    .book-info h1 {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 900px) {
     .book-hero {
         grid-template-columns: 1fr;
@@ -744,24 +866,100 @@ body {
     
     .footer-content {
         flex-direction: column;
-        gap: 16px;
         text-align: center;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .header {
+        padding: 16px 0;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .header-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--background);
         flex-direction: column;
-        gap: 16px;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        border: 1px solid transparent;
+        transition: max-height 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+    }
+
+    .header-links.active {
+        max-height: 300px;
+        padding: 16px;
+        border-color: var(--border);
+        overflow-y: auto;
+    }
+
+    .header-links a {
+        padding: 12px 16px;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .header-links a::after {
+        display: none;
+    }
+
+    .header-links a:hover {
+        background: var(--gray-light);
+    }
+
+    .dark-mode-toggle {
+        margin: 8px auto 0;
+        width: 100%;
+        max-width: 200px;
+        border-radius: 8px;
     }
     
     .book-info h1 {
         font-size: 2.5rem;
     }
     
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .languages-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .book-info h1 {
+        font-size: 2.2rem;
+    }
+    
     .book-metadata {
         flex-direction: column;
         gap: 8px;
+        align-items: center;
+    }
+    
+    .book-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
     }
     
     .book-details {
@@ -783,6 +981,84 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 0;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .logo i {
+        font-size: 1.3rem;
+    }
+
+    .header-links.active {
+        padding: 12px;
+    }
+
+    .header-links a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .book-info h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .about-section {
+        padding: 24px;
+    }
+    
+    .author-card {
+        padding: 24px;
+    }
+}
+
+/* Dark mode styles */
+body.dark {
+    --background: #1a1a1a;
+    --text: #ffffff;
+    --text-light: #cccccc;
+    --gray-light: #2d2d2d;
+    --border: #404040;
+    --shadow: 0 20px 40px -15px rgba(230, 126, 34, 0.4);
+}
+
+body.dark .header-links {
+    background: var(--background);
+}
+
+body.dark .flip-front,
+body.dark .author-card,
+body.dark .flip-front {
+    background: var(--background);
+    color: var(--text);
+}
+
+body.dark .flip-front h3 {
+    color: var(--text);
+}
+
+body.dark .btn-secondary {
+    background: var(--gray-light);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+body.dark .btn-secondary:hover {
+    background: var(--border);
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -791,6 +1067,21 @@ body {
 
 .book-hero, .languages-section, .about-section {
     animation: fadeIn 0.8s ease-out;
+}
+
+/* Print styles */
+@media print {
+    .header, .footer, .book-buttons, .dark-mode-toggle, .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .book-3d {
+        transform: none;
+    }
+    
+    .flip-card {
+        break-inside: avoid;
+    }
 }
 </style>
 
@@ -809,14 +1100,98 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Optional: Add touch support for mobile devices
-if ('ontouchstart' in window) {
-    document.querySelectorAll('.flip-card').forEach(card => {
-        card.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-            this.classList.toggle('touch-flip');
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const headerLinks = document.querySelector('.header-links');
+    
+    if (menuToggle && headerLinks) {
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            headerLinks.classList.toggle('active');
+            
+            // Toggle icon between hamburger and close
+            const icon = this.querySelector('i');
+            if (headerLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!headerLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+                headerLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+
+        // Close menu when clicking on a link
+        headerLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                headerLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    }
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            if (headerLinks) {
+                headerLinks.classList.remove('active');
+            }
+            if (menuToggle) {
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        }
     });
-}
+
+    // Touch support for flip cards on mobile
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                this.classList.toggle('touch-flip');
+            });
+        });
+    }
+
+    // Dark mode toggle functionality
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    if (darkModeToggle) {
+        // Check for saved dark mode preference
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode === 'enabled') {
+            document.body.classList.add('dark');
+        }
+
+        darkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark');
+            
+            // Save preference
+            if (document.body.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', null);
+            }
+        });
+    }
+});
 </script>
 {% endblock %}
