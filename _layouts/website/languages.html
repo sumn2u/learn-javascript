@@ -5,446 +5,818 @@
 {% block head %}
 {{ super() }}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
-<div class="language-selector-container">
-    <!-- hero section -->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Learn JavaScript</h1>
-            <p class="subtitle">Beginner's Edition</p>
-            <div class="version-badge">First Edition</div>
-            
-            <div class="hero-meta">
-                <span><i class="fas fa-globe"></i> Web Version</span>
-                <span><i class="fas fa-calendar-alt"></i> Updated: 2025-05-21</span>
-            </div>
+<div class="book-container">
+    <!-- Simple Header -->
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <span>Learn JavaScript</span>
         </div>
-        
-        <div class="book-cover-container">
-            <img src="./cover.jpg" alt="Learn JavaScript Book Cover" class="book-cover">
-            <div class="cover-shine"></div>
+        <div class="header-links">
+            <a href="#book">The Book</a>
+            <a href="#languages">Languages</a>
+            <a href="https://github.com/sumn2u/learn-javascript" target="_blank">GitHub</a>
         </div>
     </div>
 
-    <!-- language selection -->
-    <div class="language-selection-section">
-        <div class="section-header">
-            <h2><i class="fas fa-language"></i> {{ "LANGS_CHOOSE"|t }}</h2>
-            <p>Select your preferred language to begin your JavaScript journey</p>
-        </div>
-        
-        <div class="language-grid">
-            {% for lang in languages.list %}
-            <div class="language-card">
-                <div class="card-content">
-                    <div class="language-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>{{ lang.title }}</h3>
+    <!-- Book Hero -->
+    <div class="book-hero" id="book">
+        <div class="book-info">
+            <span class="edition-badge">First Edition</span>
+            <h1>Learn JavaScript</h1>
+            <p class="subtitle">Beginner's Edition</p>
+            
+            <div class="book-metadata">
+                <div class="metadata-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Available in 12 languages</span>
                 </div>
-                <div class="card-actions">
-                    {% if lang.id == 'de' or lang.id == 'cn' %}
-                        <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
-                            <i class="fas fa-eye"></i> Preview
-                        </a>
-                    {% else %}
-                        <a href="{{ (lang.id + "/README.md")|contentURL }}" class="action-btn preview">
-                            <i class="fas fa-eye"></i> Preview
-                        </a>
-                        <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf" class="action-btn download">
-                            <i class="fas fa-download"></i> PDF
-                        </a>
-                    {% endif %}
+                <div class="metadata-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Updated 2026</span>
+                </div>
+                <div class="metadata-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>PDF Downloads</span>
+                </div>
+            </div>
+
+            <div class="book-buttons">
+                <a href="#languages" class="btn-primary">
+                    <i class="fas fa-book"></i>
+                    Start Reading
+                </a>
+                <a href="https://github.com/sumn2u/learn-javascript" target="_blank" class="btn-secondary">
+                    <i class="fab fa-github"></i>
+                    View Source
+                </a>
+            </div>
+        </div>
+
+        <div class="book-cover-wrapper">
+            <div class="book-3d">
+                <!-- <div class="book-spine"></div> -->
+                <div class="book-front">
+                    <img src="./cover.jpg" alt="Learn JavaScript Book Cover">
+                    <div class="book-shine"></div>
+                </div>
+                <div class="book-back"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Languages Grid with Flip Cards -->
+    <div class="languages-section" id="languages">
+        <div class="section-header">
+            <h2>Choose Your Language</h2>
+            <p>Hover or tap on any card to see options</p>
+        </div>
+
+        <div class="languages-grid">
+            {% for lang in languages.list %}
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <!-- Front of card -->
+                    <div class="flip-front">
+                        <div class="language-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>{{ lang.title }}</h3>
+                        <span class="language-code">{{ lang.id }}</span>
+                    </div>
+                    
+                    <!-- Back of card -->
+                    <div class="flip-back">
+                        <h4>{{ lang.title }}</h4>
+                        <div class="language-actions">
+                            <a href="{{ (lang.id + "/README.md")|contentURL }}"  class="action-preview">
+                                <i class="fas fa-eye"></i> Preview
+                            </a>
+                            
+                            {% if lang.id != 'de' and lang.id != 'cn' %}
+                            <a href="https://github.com/sumn2u/learn-javascript/raw/main/books/book_{{ lang.id }}.pdf" class="action-download">
+                                <i class="fas fa-download"></i> PDF
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
 
-    <!-- footer -->
-    <div class="footer-section">
-        <div class="author-info">
-            <div class="author-avatar">
-                <i class="fas fa-user-tie"></i>
-            </div>
-            <div class="author-details">
-                <h4>Suman Kunwar</h4>
-                <div class="publication-info">
-                    <span>ASIN: B0C53J11V7</span>
-                    <span>ISBN: 9789937171892</span>
+    <!-- About the Book -->
+    <div class="about-section">
+        <div class="about-content">
+            <h2>About the Book</h2>
+            <p class="about-description">
+                A comprehensive introduction to JavaScript for absolute beginners. 
+                Learn programming fundamentals through practical examples and exercises.
+            </p>
+
+            <div class="book-details">
+                <div class="detail">
+                    <i class="fas fa-check-circle"></i>
+                    <span>12 language editions</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-check-circle"></i>
+                    <span>100+ code examples</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Beginner friendly</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Free PDF downloads</span>
                 </div>
             </div>
+
+            <div class="isbn-info">
+                <span><i class="fas fa-barcode"></i> ASIN: B0C53J11V7</span>
+                <span><i class="fas fa-isbn"></i> ISBN: 9789937171892</span>
+            </div>
         </div>
-        
-        <div class="license-info">
-            <p>
-                <i class="fas fa-balance-scale"></i> Licensed under 
-                <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>
-            </p>
-            <p>
-                <i class="fab fa-github"></i> Source at 
-                <a href="https://github.com/sumn2u/learn-javascript" target="_blank">GitHub</a>
-            </p>
+
+        <div class="author-card">
+            <div class="author-avatar">
+                 <img src="https://avatars.githubusercontent.com/u/6531541?s=400&u=c98c6bd1ad4acc20682443682860707523e3523d&v=4" 
+             alt="Suman Kunwar" 
+             style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <h3>Suman Kunwar</h3>
+            <p>Author & JavaScript Educator</p>
+            <div class="author-links">
+                <a href="https://www.sumankunwar.com.np" class="author-social" target="_blank"><i class="fa fa-globe"></i></a>
+                <a href="https://github.com/sumn2u" class="author-social" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sumn2u" class="author-social" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <i class="fas fa-book-open"></i>
+                <span>Learn JavaScript © 2026</span>
+            </div>
+            <div class="footer-license">
+                <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">
+                    <i class="fas fa-balance-scale"></i> Apache 2.0
+                </a>
+                <a href="https://github.com/sumn2u/learn-javascript" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
-
 :root {
-    --primary-color: #4361ee;
-    --secondary-color: #3a0ca3;
-    --accent-color: #f72585;
-    --light-color: #f8f9fa;
-    --dark-color: #212529;
-    --text-color: #495057;
-    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --primary: #e67e22;        /* Warm orange */
+    --primary-dark: #d35400;    /* Darker orange */
+    --secondary: #f39c12;       /* Yellow-orange */
+    --accent: #f1c40f;          /* Yellow */
+    --text: #2c3e50;            /* Dark blue-gray */
+    --text-light: #7f8c8d;      /* Medium gray */
+    --background: #ffffff;
+    --gray-light: #fef5e7;      /* Light orange-tinted gray */
+    --border: #fdebd0;          /* Light orange border */
+    --shadow: 0 20px 40px -15px rgba(230, 126, 34, 0.2);
+    --gradient: linear-gradient(135deg, #e7e7e7, #4a4742);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
     line-height: 1.6;
-    background-color: #f5f7ff;
-    margin: 0;
-    padding: 0;
+    background: var(--background);
 }
 
-.language-selector-container {
+.book-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 24px;
 }
 
-/* hero styles */
-.hero-section {
+/* Header */
+.header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
-    padding: 3rem 0;
-    position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
 }
 
-.hero-content {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 3rem;
-    z-index: 2;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
-.hero-content h1 {
+.logo i {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.header-links {
+    display: flex;
+    gap: 32px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header-links a:hover {
+    color: var(--primary);
+}
+
+/* Book Hero */
+.book-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.book-info h1 {
     font-size: 3.5rem;
-    margin: 0;
-    color: var(--dark-color);
-    font-weight: 800;
+    font-weight: 700;
+    margin: 16px 0 8px;
     line-height: 1.2;
-    background: linear-gradient(90deg, #4361ee, #3a0ca3);
+    background: var(--gradient);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+}
+
+.edition-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--gray-light);
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin: 0.5rem 0 1.5rem;
-    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
 }
 
-.version-badge {
-    display: inline-block;
-    background: var(--accent-color);
-    color: white;
-    padding: 0.5rem 1.2rem;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 15px rgba(247, 37, 133, 0.3);
-}
-
-.hero-meta {
+.book-metadata {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 24px;
+    margin-bottom: 32px;
 }
 
-.hero-meta span {
+.metadata-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
+    color: var(--text-light);
     font-size: 0.95rem;
-    color: var(--text-color);
 }
 
-.book-cover-container {
+.metadata-item i {
+    color: var(--primary);
+}
+
+.book-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px var(--primary);
+}
+
+.btn-secondary {
+    background: var(--gray-light);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+    background: var(--border);
+    transform: translateY(-2px);
+}
+
+/* 3D Book Cover */
+.book-cover-wrapper {
+    perspective: 1500px;
+}
+
+.book-3d {
     position: relative;
     width: 300px;
     height: 400px;
-    perspective: 1000px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateY(-15deg) rotateX(5deg);
+    transition: transform 0.5s;
 }
 
-.book-cover {
+.book-3d:hover {
+    transform: rotateY(-5deg) rotateX(0deg);
+}
+
+.book-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px 8px 8px 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.book-front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
-    transform: rotateY(-10deg);
-    transition: transform 0.5s ease;
-    position: relative;
-    z-index: 1;
 }
 
-.cover-shine {
+.book-spine {
+    position: absolute;
+    left: -24px;
+    width: 24px;
+    height: 100%;
+    background: linear-gradient(to right, #b85e1a, #e67e22);
+    transform: rotateY(90deg) translateZ(-12px);
+    transform-origin: right;
+    border-radius: 4px 0 0 4px;
+}
+
+.book-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    transform: translateZ(-40px) rotateY(180deg);
+    border-radius: 8px 4px 4px 8px;
+    opacity: 0.8;
+}
+
+.book-shine {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 60%);
-    border-radius: 8px;
-    z-index: 2;
+    pointer-events: none;
 }
 
-/* language selection styles */
-.language-selection-section {
-    margin: 5rem 0;
+/* Languages Section with Flip Cards */
+.languages-section {
+    margin: 80px 0;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 
 .section-header h2 {
-    font-size: 2.2rem;
-    color: var(--dark-color);
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: var(--text);
 }
 
 .section-header p {
-    color: var(--text-color);
+    color: var(--text-light);
     font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
-.language-grid {
+.languages-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 24px;
 }
 
-.language-card {
-    background: white;
+/* Flip Card Styles */
+.flip-card {
+    background: transparent;
+    width: 100%;
+    height: 280px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.language-card:hover {
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 25px 50px rgba(67, 97, 238, 0.3);
-    border-color: var(--primary-color);
-}
-
-.card-content {
-    padding: 2rem;
-    flex-grow: 1;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background: white;
 }
 
-.language-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+.flip-front {
+    background: white;
+}
+
+.flip-back {
+    background: var(--gradient);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Front card content */
+.flip-front .language-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--gray-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    color: white;
+    margin: 0 auto 16px;
     font-size: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--primary);
+    border: 1px solid var(--border);
 }
 
-.language-card:hover .language-icon {
-    transform: scale(1.2);
-    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.5);
+.flip-front h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    color: var(--text);
 }
-.language-card h3 {
-    margin: 0;
-    color: var(--dark-color);
-    font-size: 1.3rem;
+
+.flip-front .language-code {
+    display: inline-block;
+    padding: 4px 8px;
+    background: var(--gray-light);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--primary);
     font-weight: 600;
+    border: 1px solid var(--border);
 }
 
-.card-actions {
-    display: flex;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.action-btn {
-    flex: 1;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
+/* Back card content */
+.flip-back h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
     font-weight: 500;
-    transition: all 0.2s;
+}
+
+.flip-back .language-actions {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.flip-back .action-preview,
+.flip-back .action-download {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 4px;
+    transition: all 0.2s;
 }
 
-.preview {
-    background: var(--light-color);
-    color: var(--primary-color);
-}
-
-.preview:hover {
-    background: #e9ecef;
-}
-
-.download {
-    background: var(--primary-color);
+.flip-back .action-preview {
+    background: rgba(255,255,255,0.2);
     color: white;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
-.download:hover {
-    background: var(--secondary-color);
+.flip-back .action-preview:hover {
+    background: rgba(255,255,255,0.3);
 }
 
-/* footer selection styles */
-.footer-section {
-    margin-top: 6rem;
-    padding-top: 3rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+.flip-back .action-download {
+    background: white;
+    color: var(--primary);
 }
 
-.author-info {
+.flip-back .action-download:hover {
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    margin: 80px 0;
+    padding: 48px;
+    background: var(--gray-light);
+    border-radius: 24px;
+    border: 1px solid var(--border);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.book-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.detail {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 8px;
+    color: var(--text);
+}
+
+.detail i {
+    color: var(--primary);
+}
+
+.isbn-info {
+    display: flex;
+    gap: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.isbn-info i {
+    margin-right: 4px;
+    color: var(--primary);
+}
+
+.author-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
 }
 
 .author-avatar {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
+    overflow: hidden; /* This ensures the image stays inside the circle */
+    margin: 0 auto 16px;
+    border: 3px solid var(--primary); /* Optional: adds a nice colored border */
+}
+
+.author-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.author-card p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.author-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.author-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray-light);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid var(--border);
+}
+
+.author-social:hover {
+    background: var(--primary);
     color: white;
-    font-size: 1.8rem;
+    transform: translateY(-2px);
+    border-color: var(--primary);
 }
 
-.author-details h4 {
-    margin: 0 0 0.5rem;
-    font-size: 1.3rem;
-    color: var(--dark-color);
+/* Footer */
+.footer {
+    margin: 60px 0 30px;
+    padding: 30px 0 0;
+    border-top: 1px solid var(--border);
 }
 
-.publication-info {
+.footer-content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-color);
+    justify-content: space-between;
+    align-items: center;
 }
 
-.license-info {
-    max-width: 400px;
-}
-
-.license-info p {
-    margin: 0.5rem 0;
+.footer-copyright {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
+    color: var(--text-light);
 }
 
-.license-info a {
-    color: var(--primary-color);
+.footer-copyright i {
+    color: var(--primary);
+}
+
+.footer-license {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-license a {
     text-decoration: none;
-    font-weight: 500;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
 }
 
-.license-info a:hover {
-    text-decoration: underline;
+.footer-license a:hover {
+    color: var(--primary);
 }
 
-/* responsive */
-@media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
+/* Responsive */
+@media (max-width: 900px) {
+    .book-hero {
+        grid-template-columns: 1fr;
         text-align: center;
-        padding: 2rem 0;
+        gap: 40px;
     }
     
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 3rem;
-    }
-    
-    .hero-meta {
+    .book-metadata {
         justify-content: center;
     }
     
-    .book-cover-container {
-        margin: 0 auto;
+    .book-buttons {
+        justify-content: center;
     }
     
-    .footer-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 32px;
     }
     
-    .author-info {
+    .footer-content {
         flex-direction: column;
+        gap: 16px;
         text-align: center;
     }
 }
 
-/* animate */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .book-info h1 {
+        font-size: 2.5rem;
+    }
+    
+    .book-metadata {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .book-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .isbn-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .footer-license {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .flip-card {
+        height: 260px;
+    }
+}
+
+/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.language-card {
-    animation: fadeIn 0.6s ease forwards;
-    opacity: 0;
+.book-hero, .languages-section, .about-section {
+    animation: fadeIn 0.8s ease-out;
 }
-
-.language-card:nth-child(1) { animation-delay: 0.1s; }
-.language-card:nth-child(2) { animation-delay: 0.2s; }
-.language-card:nth-child(3) { animation-delay: 0.3s; }
-.language-card:nth-child(4) { animation-delay: 0.4s; }
-.language-card:nth-child(5) { animation-delay: 0.5s; }
-.language-card:nth-child(6) { animation-delay: 0.6s; }
 </style>
+
+<script>
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Optional: Add touch support for mobile devices
+if ('ontouchstart' in window) {
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            this.classList.toggle('touch-flip');
+        });
+    });
+}
+</script>
 {% endblock %}
