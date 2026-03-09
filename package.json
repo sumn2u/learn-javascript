@@ -36,5 +36,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "overrides": {
+    "lodash": "^4.17.21"
   }
 }
