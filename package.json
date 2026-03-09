@@ -38,7 +38,9 @@
     }
   },
   "overrides": {
-    "lodash": "^4.17.21"
+    "gitbook-plugin-sharing": {
+      "lodash": "4.17.21"
+    }
   },
   "resolutions": {
     "lodash": "^4.17.21"
