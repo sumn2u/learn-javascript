@@ -6,3 +6,4 @@
 - [Español](es/)
 - [Deutsch](de/)
 - [中文 (简体)](cn/)
+- [தமிழ் (Tamil)](ta/)

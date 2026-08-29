@@ -1,0 +1,74 @@
+---
+pageNumber: V
+chapter: 
+---
+# கற்றல் வளங்கள் (Learning Resources)
+
+## ஜாவாஸ்கிரிப்டைக் கற்றுக்கொள்வதற்கான கட்டுரைகள் 
+
+
+1. Document Object Model குறிப்பு [Link](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+2. நிகழ்வுகளின் (Events) அறிமுகம் [Link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
+3. Hostinger இன் ஜாவாஸ்கிரிப்ட் அறிமுகம் [Link](https://www.hostinger.com/tutorials/what-is-javascript)
+
+4. Microverse இன் ஜாவாஸ்கிரிப்ட் அறிமுகம் [Link](https://www.microverse.org/blog/introduction-to-javascript-a-guide-for-beginners)
+
+5. Mozilla Developer இன் ஜாவாஸ்கிரிப்ட் அடிப்படைகள் [Link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+
+6. Geeks for Geeks இன் ஜாவாஸ்கிரிப்ட் பயிற்சி (Tutorial) [Link](https://www.geeksforgeeks.org/javascript/)
+
+7. Stackify இன் ஜாவாஸ்கிரிப்ட் பயிற்சி [Link]( https://stackify.com/learn-javascript-tutorials/)
+
+8. ஜாவாஸ்கிரிப்ட் HTML DOM குறிப்பு [Link](https://www.w3schools.com/js/js_htmldom.asp)
+
+9. DOM என்றால் என்ன? (CSS-Tricks) [Link](https://css-tricks.com/dom/)
+
+## ஜாவாஸ்கிரிப்டைக் கற்றுக்கொள்வதற்கான புத்தகங்கள்  
+
+1. A Smarter Way to Learn JavaScript – Mark Myers [Link](https://www.amazon.in/Smarter-Way-Learn-JavaScript-technology-ebook/dp/B00H1W9I6C)
+
+2. Eloquent JavaScript – Marijn Haverbeke [Link](https://www.amazon.in/Eloquent-JavaScript-3rd-Introduction-Programming-ebook/dp/B07C96Q217)
+
+3. Head First JavaScript [Link](https://www.amazon.com/Head-First-JavaScript-Programming-Brain-Friendly/dp/144934013X?tag=javamysqlanta-20)
+
+4. JavaScript: The Good Parts – Douglas Crockford [Link](https://www.amazon.in/Javascript-Good-Parts-D-Crockford/dp/0596517742)
+
+5. Professional JavaScript for Web Developers [Link](https://www.amazon.com/dp/1118026691)
+
+6. Secrets of the JavaScript Ninja [Link](https://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X?tag=javamysqlanta-20)
+
+7. The Principles of Object-Oriented JavaScript [Link](https://www.amazon.com/Principles-Object-Oriented-JavaScript-Nicholas-Zakas/dp/1593275404?tag=javamysqlanta-20)
+
+8. You Don’t Know JS – Kyle Simpson [Link](https://www.amazon.in/You-Dont-Know-Set-Volumes/dp/9352136268)
+
+## ஜாவாஸ்கிரிப்டைக் கற்கப் பின்பற்ற வேண்டிய யூடியூப் வளங்கள்  
+
+1. Academind - [Link]( https://www.youtube.com/c/Academind)
+2. Akshay Saini - [Link](https://www.youtube.com/@akshaymarch7)
+3. Clever Programmer - [Link](https://www.youtube.com/@CleverProgrammer)
+4. CodeWithHarry - [Link](https://www.youtube.com/c/CodeWithHarry)
+5. Dave Gray - [Link](https://www.youtube.com/@DaveGrayTeachesCode)
+6. freeCodeCamp - [Link](https://www.youtube.com/c/Freecodecamp)
+7. JavaScript Mastery - [Link](https://www.youtube.com/@javascriptmastery)
+8. SuperSimpleDev - [Link](https://www.youtube.com/@SuperSimpleDev)
+9. The Net Ninja - [Link](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+10. thenewboston - [Link](https://www.youtube.com/@thenewboston)
+11. Traversy Media - [Link](https://www.youtube.com/user/TechGuyWeb)
+
+## பயிற்சி செய்வதற்கான திட்டங்கள் (Projects to Practice)
+
+- [Digital Clock](./beginner-projects/digital-clock.md)
+- [Drum Kits](./beginner-projects/electronic-drum-kit.md)
+- [Expense Tracker](./beginner-projects/expense-tracker.md)
+- [Image Search](./beginner-projects/image-search.md)
+- [Monthly Calendar](./beginner-projects/monthly-calendar.md)
+- [Random Photos Generator](./beginner-projects/random-photos-generator.md)
+- [Rock Paper Scissors Game](./beginner-projects/rock-paper-scissors-game.md)
+- [Simon Says](./beginner-projects/simon-says.md)
+- [Stopwatch](./beginner-projects/simple-stopwatch.md)
+- [Tip Calculator](./beginner-projects/tip-calculator.md)
+- [Video Trailer Popup](./beginner-projects/video-trailer-popup.md)
+- [Weather App](./beginner-projects/weather-app.md)
+- [Whack a Mole](./beginner-projects/whack-a-mole.md)
