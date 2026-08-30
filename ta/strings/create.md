@@ -42,19 +42,19 @@ Template literals பல வரிகளை கொண்டிருக்கல
 {% endhint %}
 
 {% exercise %}
-`name` மற்றும் `age` இன் மதிப்புகளை உள்ளடக்கிய ஒரு சரத்தை உருவாக்க ஒரு template literal ஐப் பயன்படுத்தவும். சரம் பின்வரும் வடிவத்தில் இருக்க வேண்டும்: "என் பெயர் John மற்றும் நான் 25 வயதானவன்."
+`name` மற்றும் `age` இன் மதிப்புகளை உள்ளடக்கிய ஒரு சரத்தை உருவாக்க ஒரு template literal ஐப் பயன்படுத்தவும். சரம் பின்வரும் வடிவத்தில் இருக்க வேண்டும்: "My name is John and I am 25 years old."
 
 {% initial %}
 let name = "John";
 let age = 25;
 
-// என் பெயர் John மற்றும் நான் 25 வயதானவன்.
+// My name is John and I am 25 years old.
 let result =  
 {% solution %}
 let name = "John";
 let age = 25;
 
-// என் பெயர் John மற்றும் நான் 25 வயதானவன்.
+// My name is John and I am 25 years old.
 let result = `My name is ${name} and I am ${age} years old.`
 
 {% validation %}

@@ -8,11 +8,11 @@ description: டெம்ப்ளேட் லிட்டரல்கள் (T
 டெம்ப்ளேட் லிட்டரல்கள் (Template literals) என்பவை பேக்டிக் `(``)` உடன் பிரிக்கப்பட்ட லிட்டரல்கள் மற்றும் சரங்களில் (strings) மாறி மற்றும் கோவை இடைக்கணிப்பில் பயன்படுத்தப்படுகின்றன.&#x20;
 
 ```javascript
-let text = `Hello World!`;
+let text1 = `Hello World!`;
 // template literals with both single and double code inside a single string
-let text = `He's often called "Johnny"`;
+let text2 = `He's often called "Johnny"`;
 // template literals with multiline strings
-let text =
+let text3 =
 `The quick
 brown fox
 jumps over

@@ -17,7 +17,7 @@ description: ஒரு அல்காரிதத்தின் (algorithm) �
 ஒரு உதாரணத்தை எடுத்துக்கொள்வோம்:
 ```javascript
 function printElement(arr){
-    for (let i=0; i<arr.length; t++){
+    for (let i=0; i<arr.length; i++){
         console.log(arr[i])
     }
 }

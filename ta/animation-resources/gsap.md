@@ -53,9 +53,9 @@ npm install gsap
 டைம்லைன்கள் அனிமேஷன்களை வரிசைப்படுத்த (sequence) உங்களை அனுமதிக்கின்றன. ஒரு உதாரணம் இங்கே:
 
 ```javascript
-const name = "John";
-const greeting = `Hello, ${name}!`;
-console.log(greeting); // Output: Hello, John!
+const tl = gsap.timeline();
+tl.to("#box", { x: 100, duration: 1 })
+  .to("#box", { y: 100, duration: 1 });
 ```
 
 

@@ -28,7 +28,7 @@ class Model extends Car {
 }
 
 let myCar = new Model("Toyota", "Camry");
-console.log(myCar.show()); // I have a Camry, it is a Toyota.
+console.log(myCar.show()); // I have a Toyota, it is a Camry.
 ```
 
 {% hint style="info" %}

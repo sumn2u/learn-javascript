@@ -10,15 +10,15 @@ pageNumber: 38
 
 `string.substring(StartIndex, EndIndex)`
 
-### தொடரியல்:
+### தொடரியல்
 
-* `str.substr(start , length)` பயன்படுத்தி
-* `substr()` முறையைப் பயன்படுத்தி
+* `str.substring(startIndex, endIndex)`
+* `substring()` முறையைப் பயன்படுத்தி
 * template `(``)` literal ஐப் பயன்படுத்தி ([ES6](../es6-concepts/template-literals.md) இல் அறிமுகப்படுத்தப்பட்டது)
 
-`substr()` முறை ஏற்கிறது:
+`substring()` முறை ஏற்கிறது:
 
-* **அளவுருக்கள்**: இங்கே StartIndex மற்றும் EndIndex சரத்தின் உள்சரமாக எடுக்கப்படும் பகுதியை விவரிக்கின்றன. இங்கே, EndIndex விரும்பினால் மட்டுமே.
+* **அளவுருக்கள்**: `startIndex` மற்றும் `endIndex` (விரும்பினால்) — உள்சரத்தை எடுக்க வேண்டிய தொடக்க/இறுதி குறியீடுகள். `endIndex` சேர்க்கப்படவில்லை என்றால் சரத்தின் முடிவு வரை எடுத்துக்கொள்கிறது.
 * **திரும்ப மதிப்பு**: இது கொடுக்கப்பட்ட சரத்தின் ஒரு பகுதியான புதிய சரத்தை திரும்பப் பெறுகிறது. `string.substring()` செயல்பாட்டின் செயல்பாட்டை காட்ட JavaScript குறியீடு:
 
 ```javascript
@@ -39,7 +39,7 @@ Geeks
 ```javascript
 
 //எடுத்துக்காட்டு 2: 
-// ஒரு சரத்தை letiable ஆக எடுத்தல்
+// ஒரு சரத்தை variable ஆக எடுத்தல்
 let string = "geeksforgeeks";
 a = string.substring(-1)
 b = string.substring(2.5)
