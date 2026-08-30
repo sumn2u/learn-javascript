@@ -23,7 +23,7 @@ pageNumber: 38
 
 ```javascript
 //எடுத்துக்காட்டு 1:
-// substr() முறையை விளக்க JavaScript
+// substring() முறையை விளக்க JavaScript
 
 const str = "GeeksforGeeks";
 const result = str.substring(8);
