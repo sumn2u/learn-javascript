@@ -32,7 +32,7 @@ console.log(result);
 
 
 //வெளியீடு
-for
+Geeks
 
 ```
 
