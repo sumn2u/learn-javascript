@@ -237,27 +237,27 @@ console.log(aLet); // 10
 ஃபால்சி மதிப்புகளின் எடுத்துக்காட்டுகள்:
 ```javascript
 if (false) {
-    // This code block won't execute because false is falsy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படாது, ஏனெனில் false என்பது falsy.
 }
 
 if (0) {
-    // This code block won't execute because 0 is falsy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படாது, ஏனெனில் 0 என்பது falsy.
 }
 
 if ("" === false) {
-    // This comparison is true because an empty string is falsy.
+    // இந்த ஒப்பீடு உண்மை, ஏனெனில் வெற்றுச் சரம் (empty string) falsy ஆகும்.
 }
 
 if (null) {
-    // This code block won't execute because null is falsy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படாது, ஏனெனில் null என்பது falsy.
 }
 
 if (undefined) {
-    // This code block won't execute because undefined is falsy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படாது, ஏனெனில் undefined என்பது falsy.
 }
 
 if (NaN) {
-    // This code block won't execute because NaN is falsy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படாது, ஏனெனில் NaN என்பது falsy.
 }
 ```
 #### ட்ரூத்தி மதிப்புகள் (Truthy Values):
@@ -267,23 +267,23 @@ if (NaN) {
 ட்ரூத்தி (truth) மதிப்புகளின் எடுத்துக்காட்டு:
 ```javascript
 if (true) {
-    // This code block will execute because true is truthy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படும், ஏனெனில் true என்பது truthy.
 }
 
 if (42) {
-    // This code block will execute because 42 is truthy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படும், ஏனெனில் 42 என்பது truthy.
 }
 
 if ("Hello") {
-    // This code block will execute because a non-empty string is truthy.
+    // இந்தக் குறியீட்டு தொகுதி செயல்படும், ஏனெனில் காலியில்லாத சரம் truthy ஆகும்.
 }
 
 if ({} === true) {
-    // This comparison is false because an empty object is truthy but not equal to true.
+    // இந்த ஒப்பீடு தவறு, ஏனெனில் காலி பொருள் (empty object) truthy ஆனாலும் true க்கு சமம் இல்லை.
 }
 
 if ([] === true) {
-    // This comparison is false because an empty array is truthy but not equal to true.
+    // இந்த ஒப்பீடு தவறு, ஏனெனில் காலி வரிசை (empty array) truthy ஆனாலும் true க்கு சமம் இல்லை.
 }
 ```
 
@@ -348,21 +348,21 @@ if ([] === true) {
     #description;
 
     constructor(id, description, ) {
-      //  Use setters instead of directly modifying the private fields
+      //  தனியார் புலங்களை (private fields) நேரடியாக மாற்றாமல் செட்டர்களை (setters) பயன்படுத்துக
       this.id = id;
       this.description = description;
     }
 
-    //  Use getters to read the values
+    //  மதிப்புகளை வாசிக்க கெட்டர்களை (getters) பயன்படுத்துக
     get id() {
       return this.#id;
     }
 
     //  ...
 
-    //  Use setters to validate data before writing
+    //  தரவை எழுதுவதற்கு முன் சரிபார்க்க செட்டர்களை (setters) பயன்படுத்துக
     set id(id) {
-      //  ...validate new ID
+      //  ...புதிய ID ஐ சரிபார்க்கவும்
       this.#id = id;
     }
 

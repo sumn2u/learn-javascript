@@ -9,22 +9,22 @@ description: டெம்ப்ளேட் லிட்டரல்கள் (T
 
 ```javascript
 let text1 = `Hello World!`;
-// template literals with both single and double code inside a single string
+// ஒரு சரத்தில் (single string) ஒற்றை மற்றும் இரட்டை மேற்கோள்களுடன் (single and double quotes) டெம்ப்ளேட் லிட்டரல்கள் (template literals)
 let text2 = `He's often called "Johnny"`;
-// template literals with multiline strings
+// பல் வரி சரங்களுடன் (multiline strings) டெம்ப்ளேட் லிட்டரல்கள்
 let text3 =
 `The quick
 brown fox
 jumps over
 the lazy dog`;
 
-// template literals with variable interpolation
+// மாறி இடைக்கணிப்புடன் (variable interpolation) டெம்ப்ளேட் லிட்டரல்கள்
 const firstName = "John";
 const lastName = "Doe";
 
 const welcomeText = `Welcome ${firstName}, ${lastName}!`;
 
-// template literals with expression interpolation
+// கோவை இடைக்கணிப்புடன் (expression interpolation) டெம்ப்ளேட் லிட்டரல்கள்
 const price = 10;
 const VAT = 0.25;
 

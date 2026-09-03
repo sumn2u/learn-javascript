@@ -27,22 +27,22 @@ description: ஜாவாஸ்கிரிப்ட் என்பது ஒ�
 ## எடுத்துக்காட்டு
 
 ```javascript
-// Simulating an asynchronous operation with a callback
+// கால்பேக்குடன் ஒத்திசைவற்ற செயல்பாடை (asynchronous operation) உருவகப்படுத்துதல்
 function simulateAsyncOperation(callback) {
   setTimeout(function () {
-    console.log("Async operation completed.");
+    console.log("ஒத்திசைவற்ற செயல்பாடு முடிந்தது (Async operation completed).");
     callback();
-  }, 2000); // Simulating a 2-second delay
+  }, 2000); // 2-வினாடி தாமதத்தை உருவகப்படுத்துதல்
 }
 
-console.log("Start of the program");
+console.log("நிரலின் தொடக்கம் (Start of the program)");
 
-// Initiating an asynchronous operation
+// ஒத்திசைவற்ற செயல்பாடைத் தொடங்குதல்
 simulateAsyncOperation(function () {
-  console.log("Callback executed: Handling the result.");
+  console.log("கால்பேக் செயல்படுத்தப்பட்டது: முடிவைக் கையாளுதல் (Callback executed: Handling the result).");
 });
 
-console.log("End of the program");
+console.log("நிரலின் முடிவு (End of the program)");
 ```
 
 இந்த எடுத்துக்காட்டில், ஜாவாஸ்கிரிப்ட்டின் ஒற்றை நூல் தன்மை மற்றும் கால்பேக்குகளைப் (callbacks) பயன்படுத்தி ஒத்திசைவற்ற செயல்பாடுகளை அது எவ்வாறு கையாளுகிறது என்பதை விளக்குகிறோம்.
